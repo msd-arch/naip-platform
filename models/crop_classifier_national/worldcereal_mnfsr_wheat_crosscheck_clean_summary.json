@@ -1,0 +1,10 @@
+{
+  "methodology_note": "Two real issues found and handled in sequence: (1) a raw total-district-area denominator gave a spurious negative correlation (-0.53) -- fixed by re-expressing WorldCereal wintercereals as a share of WorldCereal cropland, matching MNFSR wheat_share's own share-of-cropped-area definition; (2) even after that fix, a real subset of districts (up to 42/97 depending on threshold) show a wintercereals/cropland ratio exceeding 1.0 -- a real internal inconsistency between WorldCereal's own independently-classified wintercereals and temporarycrops products, not a bug in this cross-check's own arithmetic. Filtered to districts with cropland fraction >= 10% of total area AND a plausible (<=1.0) ratio.",
+  "n_all_115": 115,
+  "n_with_any_real_worldcereal_wintercereals_value": 97,
+  "n_after_10pct_cropland_threshold": 73,
+  "n_excluded_implausible_ratio_over_1": 21,
+  "n_clean_final": 52,
+  "clean_pearson_correlation": 0.118,
+  "clean_mean_absolute_difference": 0.222
+}

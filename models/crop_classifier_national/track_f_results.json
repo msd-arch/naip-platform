@@ -1,0 +1,206 @@
+{
+  "features_used": [
+    "ndvi_peak_value",
+    "ndvi_peak_month",
+    "ndvi_trough_value",
+    "ndvi_trough_month",
+    "ndvi_green_up_slope",
+    "ndvi_senescence_slope",
+    "ndvi_annual_mean",
+    "ndvi_annual_std",
+    "ndwi_peak_value",
+    "ndwi_peak_month",
+    "ndwi_trough_value",
+    "ndwi_trough_month",
+    "ndwi_green_up_slope",
+    "ndwi_senescence_slope",
+    "ndwi_annual_mean",
+    "ndwi_annual_std",
+    "evi_peak_value",
+    "evi_peak_month",
+    "evi_trough_value",
+    "evi_trough_month",
+    "evi_green_up_slope",
+    "evi_senescence_slope",
+    "evi_annual_mean",
+    "evi_annual_std"
+  ],
+  "n_train_districts": 81,
+  "n_val_districts": 17,
+  "n_test_districts": 17,
+  "test_districts": [
+    "Awaran",
+    "Bannu",
+    "Haripur",
+    "Jamshoro",
+    "Kachhi",
+    "Kalat",
+    "Khanewal",
+    "Khushab",
+    "Khuzdar",
+    "Mansehra",
+    "Matiari",
+    "Mohmand",
+    "Multan",
+    "Musakhel",
+    "Orakzai",
+    "Shikarpur",
+    "Tank"
+  ],
+  "n_train_points": 1483,
+  "n_val_points": 346,
+  "n_test_points": 323,
+  "role": "headline_result",
+  "note_on_no_geo_features": "lat/lon and district-identity deliberately excluded from FEATURES, per Track E's lat/lon-leak lesson -- confirmed absent, not just unused.",
+  "ridge_val_point_level": {
+    "wheat": {
+      "mae": 0.1500682502684738,
+      "r2": 0.34522282759144063
+    },
+    "cotton": {
+      "mae": 0.08040851039719045,
+      "r2": -0.34659129177769876
+    },
+    "rice": {
+      "mae": 0.12249788701232615,
+      "r2": 0.25058083320970514
+    },
+    "sugarcane": {
+      "mae": 0.02973817022440727,
+      "r2": 0.06582563609581737
+    },
+    "overall_mae": 0.09567820447559942,
+    "role": "baseline_model"
+  },
+  "ridge_test_point_level": {
+    "wheat": {
+      "mae": 0.14546429977879313,
+      "r2": 0.13858748254958775
+    },
+    "cotton": {
+      "mae": 0.10810478010638193,
+      "r2": 0.18371820892462054
+    },
+    "rice": {
+      "mae": 0.08106566745825768,
+      "r2": -0.13019767047007513
+    },
+    "sugarcane": {
+      "mae": 0.021747206460754592,
+      "r2": -2.4976190960937577
+    },
+    "overall_mae": 0.08909548845104684
+  },
+  "gbt_val_point_level": {
+    "wheat": {
+      "mae": 0.1394453367894538,
+      "r2": 0.3753872328564689
+    },
+    "cotton": {
+      "mae": 0.07053039957917652,
+      "r2": -0.3377777244008191
+    },
+    "rice": {
+      "mae": 0.12462279429020376,
+      "r2": 0.2029937919986552
+    },
+    "sugarcane": {
+      "mae": 0.03204190180415043,
+      "r2": -0.2821235068485106
+    },
+    "overall_mae": 0.09166010811574613,
+    "role": "headline_result"
+  },
+  "gbt_test_point_level": {
+    "wheat": {
+      "mae": 0.12552638414620798,
+      "r2": 0.275585800738012
+    },
+    "cotton": {
+      "mae": 0.09071875385568451,
+      "r2": 0.2999115185010448
+    },
+    "rice": {
+      "mae": 0.0732525020941501,
+      "r2": 0.10687724299730628
+    },
+    "sugarcane": {
+      "mae": 0.021699261526948854,
+      "r2": -3.8542458274858324
+    },
+    "overall_mae": 0.07779922540574787,
+    "role": "headline_result"
+  },
+  "gbt_test_district_level": {
+    "wheat": {
+      "mae": 0.11551207075602248,
+      "r2": 0.5805704677086045
+    },
+    "cotton": {
+      "mae": 0.08679918761845476,
+      "r2": 0.506955533885734
+    },
+    "rice": {
+      "mae": 0.07411668694774148,
+      "r2": 0.4204017630542667
+    },
+    "sugarcane": {
+      "mae": 0.016307876714544783,
+      "r2": -1.1199141228727036
+    },
+    "overall_mae": 0.07318395550919088,
+    "role": "headline_result_district_granularity"
+  },
+  "gbt_feature_importance": {
+    "ndwi_annual_std": 0.36766091144350366,
+    "ndvi_annual_std": 0.34324591675440097,
+    "evi_annual_mean": 0.2941041676507852,
+    "evi_peak_value": 0.19537579327948384,
+    "ndwi_trough_value": 0.17511806384706416,
+    "ndvi_trough_value": 0.17436499503350114,
+    "ndvi_annual_mean": 0.13805365106973927,
+    "evi_green_up_slope": 0.10397886364325423,
+    "ndwi_annual_mean": 0.08484622240930684,
+    "ndwi_peak_value": 0.08370201076973494,
+    "ndvi_peak_value": 0.08300625050485026,
+    "evi_trough_value": 0.049278174965448285,
+    "ndvi_senescence_slope": 0.0446982015879096,
+    "evi_trough_month": 0.019779772510341687,
+    "ndwi_peak_month": 0.018601713819411357,
+    "ndwi_senescence_slope": 0.016890249874216345,
+    "ndvi_green_up_slope": 0.00901272329786713,
+    "ndwi_green_up_slope": 0.006982573571809203,
+    "evi_peak_month": 0.0003039890954764646,
+    "ndvi_trough_month": -0.0033124489868458394,
+    "ndwi_trough_month": -0.003561266921816175,
+    "evi_annual_std": -0.023007195088170083,
+    "evi_senescence_slope": -0.026662592992513345,
+    "ndvi_peak_month": -0.028119743414554366
+  },
+  "baseline_constant_national_mean": {
+    "wheat": {
+      "mae": 0.20140219933237155,
+      "r2": -0.21433083732387037
+    },
+    "cotton": {
+      "mae": 0.1253811005638725,
+      "r2": -0.0031115860688593067
+    },
+    "rice": {
+      "mae": 0.09839989874929282,
+      "r2": -0.24735909396603928
+    },
+    "sugarcane": {
+      "mae": 0.02394045247584075,
+      "r2": -2.1814543975026934
+    },
+    "overall_mae": 0.11228091278034459,
+    "role": "baseline"
+  },
+  "baseline_national_mean_vector": {
+    "wheat": 0.7719084288604182,
+    "cotton": 0.08731368846931895,
+    "rice": 0.11508826702629806,
+    "sugarcane": 0.02569055967633176
+  }
+}

@@ -1,0 +1,138 @@
+{
+  "ood_z_threshold": 2.0,
+  "note": "Districts flagged out_of_distribution have phenology that looks meaningfully different from the real lowland/plains training data (115 MNFSR districts) -- their predictions should be treated as unreliable extrapolation, not used as a real crop_mix_source tier without explicit review.",
+  "districts": [
+    {
+      "district": "Astore",
+      "n_points": 15,
+      "predicted_shares": {
+        "wheat": 0.7821914857756546,
+        "cotton": 0.04450278637759915,
+        "rice": 0.11079548143455235,
+        "sugarcane": 0.02736127393873351
+      },
+      "mean_abs_zscore_vs_training_distribution": 0.56,
+      "flagged_out_of_distribution": false
+    },
+    {
+      "district": "Azad Kashmir",
+      "n_points": 15,
+      "predicted_shares": {
+        "wheat": 0.7167633032184281,
+        "cotton": 0.09165818073815446,
+        "rice": 0.17377172291078244,
+        "sugarcane": 0.04047909085638583
+      },
+      "mean_abs_zscore_vs_training_distribution": 0.78,
+      "flagged_out_of_distribution": false
+    },
+    {
+      "district": "Diamer",
+      "n_points": 15,
+      "predicted_shares": {
+        "wheat": 0.830984170242548,
+        "cotton": 0.08292902632933158,
+        "rice": 0.08840748089708374,
+        "sugarcane": 0.014190604443467496
+      },
+      "mean_abs_zscore_vs_training_distribution": 0.67,
+      "flagged_out_of_distribution": false
+    },
+    {
+      "district": "Ghanche",
+      "n_points": 15,
+      "predicted_shares": {
+        "wheat": 0.7516728208235971,
+        "cotton": 0.09005214994665917,
+        "rice": 0.17152093799045076,
+        "sugarcane": 0.013259720841277838
+      },
+      "mean_abs_zscore_vs_training_distribution": 0.72,
+      "flagged_out_of_distribution": false
+    },
+    {
+      "district": "Ghizer",
+      "n_points": 15,
+      "predicted_shares": {
+        "wheat": 0.743690014333435,
+        "cotton": 0.1088276338619028,
+        "rice": 0.09096841394021363,
+        "sugarcane": -0.0008032932500879326
+      },
+      "mean_abs_zscore_vs_training_distribution": 1.11,
+      "flagged_out_of_distribution": false
+    },
+    {
+      "district": "Gilgit",
+      "n_points": 15,
+      "predicted_shares": {
+        "wheat": 0.7758502923040277,
+        "cotton": 0.06196337503381303,
+        "rice": 0.13313927421312632,
+        "sugarcane": 0.004668981308236752
+      },
+      "mean_abs_zscore_vs_training_distribution": 0.75,
+      "flagged_out_of_distribution": false
+    },
+    {
+      "district": "Hunza",
+      "n_points": 15,
+      "predicted_shares": {
+        "wheat": 0.7368042348396784,
+        "cotton": 0.11989702074520057,
+        "rice": 0.0923315173035841,
+        "sugarcane": -0.01693279796042095
+      },
+      "mean_abs_zscore_vs_training_distribution": 0.81,
+      "flagged_out_of_distribution": false
+    },
+    {
+      "district": "Kharmang",
+      "n_points": 15,
+      "predicted_shares": {
+        "wheat": 0.7856224073733951,
+        "cotton": 0.055061533162871885,
+        "rice": 0.12987096313661275,
+        "sugarcane": 0.018888710709204462
+      },
+      "mean_abs_zscore_vs_training_distribution": 0.65,
+      "flagged_out_of_distribution": false
+    },
+    {
+      "district": "Nagar",
+      "n_points": 15,
+      "predicted_shares": {
+        "wheat": 0.6976213670660356,
+        "cotton": 0.11383733150756674,
+        "rice": 0.15534987694036936,
+        "sugarcane": -0.008518026014227449
+      },
+      "mean_abs_zscore_vs_training_distribution": 0.76,
+      "flagged_out_of_distribution": false
+    },
+    {
+      "district": "Shigar",
+      "n_points": 15,
+      "predicted_shares": {
+        "wheat": 0.7677745171733648,
+        "cotton": 0.05134879230389992,
+        "rice": 0.14302848568034682,
+        "sugarcane": 0.001958216940749639
+      },
+      "mean_abs_zscore_vs_training_distribution": 0.95,
+      "flagged_out_of_distribution": false
+    },
+    {
+      "district": "Skardu",
+      "n_points": 13,
+      "predicted_shares": {
+        "wheat": 0.694081360564783,
+        "cotton": 0.047263473439937406,
+        "rice": 0.20216777975719918,
+        "sugarcane": 0.030932008651677285
+      },
+      "mean_abs_zscore_vs_training_distribution": 0.74,
+      "flagged_out_of_distribution": false
+    }
+  ]
+}

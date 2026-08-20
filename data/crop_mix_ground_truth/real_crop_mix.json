@@ -1,0 +1,2814 @@
+{
+  "Abbottabad": {
+    "tier": "real_district_area",
+    "source": "Government of Pakistan, Ministry of National Food Security & Research, 'Crops Area & Production (District wise) 2022-23' -- real district estimates from the four provincial Crop Reporting Services, compiled federally. Area figures in '000 hectares, year 2022-23.",
+    "total_4crop_area_000ha": 14.44,
+    "crops": {
+      "wheat": {
+        "area_2022_23_000ha": 14.44,
+        "production_2022_23_000t": 21.86,
+        "share_of_4crop_area": 1.0
+      },
+      "rice": {
+        "area_2022_23_000ha": 0.0,
+        "production_2022_23_000t": 0.0,
+        "share_of_4crop_area": 0.0
+      }
+    },
+    "crops_unreliable_source_data": [
+      "cotton"
+    ]
+  },
+  "Astore": {
+    "tier": "hand_classified_mask",
+    "source": "naip/models/fusion/crop_plausibility.py -- Week 4 hand-classified agronomic-geography mask (NOT real crop-area data). This district was not matched in the real MNFSR district table (Gilgit-Baltistan/Azad Kashmir, which the MNFSR report does not cover at all). Track G (Week 9) real attempt: Track F's trained crop-share model WAS run on real Sentinel-2 phenology features for this district (real WorldCereal cropland coverage here is only 0.117% of district area -- near-zero, high-altitude terrain) and REJECTED as unreliable, confirmed with you: predicted shares were suspiciously close to the national-mean baseline regardless of real terrain differences, real evidence of tree-model extrapolation failure outside its lowland-plains training domain -- a real z-score input check alone did not catch this, the output implausibility did. See naip/models/crop_classifier_national/gb_ajk_predictions.json for the real rejected prediction and naip/docs/STATUS_WEEK9.md for detail. Stays on the hand-classified mask deliberately, not as an unresolved gap."
+  },
+  "Attock": {
+    "tier": "real_district_area",
+    "source": "Government of Pakistan, Ministry of National Food Security & Research, 'Crops Area & Production (District wise) 2022-23' -- real district estimates from the four provincial Crop Reporting Services, compiled federally. Area figures in '000 hectares, year 2022-23.",
+    "total_4crop_area_000ha": 190.2,
+    "crops": {
+      "wheat": {
+        "area_2022_23_000ha": 190.2,
+        "production_2022_23_000t": 348.21,
+        "share_of_4crop_area": 1.0
+      },
+      "cotton": {
+        "area_2022_23_000ha": 0.0,
+        "production_2022_23_000t": 0.0,
+        "share_of_4crop_area": 0.0
+      },
+      "rice": {
+        "area_2022_23_000ha": 0.0,
+        "production_2022_23_000t": 0.0,
+        "share_of_4crop_area": 0.0
+      },
+      "sugarcane": {
+        "area_2022_23_000ha": 0.0,
+        "production_2022_23_000t": 0.0,
+        "share_of_4crop_area": 0.0
+      }
+    },
+    "crops_unreliable_source_data": null
+  },
+  "Awaran": {
+    "tier": "real_district_area",
+    "source": "Government of Pakistan, Ministry of National Food Security & Research, 'Crops Area & Production (District wise) 2022-23' -- real district estimates from the four provincial Crop Reporting Services, compiled federally. Area figures in '000 hectares, year 2022-23.",
+    "total_4crop_area_000ha": 21.28,
+    "crops": {
+      "wheat": {
+        "area_2022_23_000ha": 21.0,
+        "production_2022_23_000t": 55.66,
+        "share_of_4crop_area": 0.9868
+      },
+      "rice": {
+        "area_2022_23_000ha": 0.28,
+        "production_2022_23_000t": 0.62,
+        "share_of_4crop_area": 0.0132
+      },
+      "sugarcane": {
+        "area_2022_23_000ha": 0.0,
+        "production_2022_23_000t": 0.0,
+        "share_of_4crop_area": 0.0
+      }
+    },
+    "crops_unreliable_source_data": [
+      "cotton"
+    ]
+  },
+  "Azad Kashmir": {
+    "tier": "hand_classified_mask",
+    "source": "naip/models/fusion/crop_plausibility.py -- Week 4 hand-classified agronomic-geography mask (NOT real crop-area data). This district was not matched in the real MNFSR district table (Gilgit-Baltistan/Azad Kashmir, which the MNFSR report does not cover at all). Track G (Week 9) real attempt: Track F's trained crop-share model WAS run on real Sentinel-2 phenology features for this district (real WorldCereal cropland coverage here is only 4.446% of district area -- near-zero, high-altitude terrain) and REJECTED as unreliable, confirmed with you: predicted shares were suspiciously close to the national-mean baseline regardless of real terrain differences, real evidence of tree-model extrapolation failure outside its lowland-plains training domain -- a real z-score input check alone did not catch this, the output implausibility did. See naip/models/crop_classifier_national/gb_ajk_predictions.json for the real rejected prediction and naip/docs/STATUS_WEEK9.md for detail. Stays on the hand-classified mask deliberately, not as an unresolved gap."
+  },
+  "Badin": {
+    "tier": "real_district_area",
+    "source": "Government of Pakistan, Ministry of National Food Security & Research, 'Crops Area & Production (District wise) 2022-23' -- real district estimates from the four provincial Crop Reporting Services, compiled federally. Area figures in '000 hectares, year 2022-23.",
+    "total_4crop_area_000ha": 176.9,
+    "crops": {
+      "wheat": {
+        "area_2022_23_000ha": 39.63,
+        "production_2022_23_000t": 90.03,
+        "share_of_4crop_area": 0.224
+      },
+      "cotton": {
+        "area_2022_23_000ha": 12.69,
+        "production_2022_23_000t": 42.57,
+        "share_of_4crop_area": 0.0717
+      },
+      "rice": {
+        "area_2022_23_000ha": 124.58,
+        "production_2022_23_000t": 382.85,
+        "share_of_4crop_area": 0.7042
+      }
+    },
+    "crops_unreliable_source_data": [
+      "sugarcane"
+    ]
+  },
+  "Bahawalnagar": {
+    "tier": "real_district_area",
+    "source": "Government of Pakistan, Ministry of National Food Security & Research, 'Crops Area & Production (District wise) 2022-23' -- real district estimates from the four provincial Crop Reporting Services, compiled federally. Area figures in '000 hectares, year 2022-23.",
+    "total_4crop_area_000ha": 807.33,
+    "crops": {
+      "wheat": {
+        "area_2022_23_000ha": 423.29,
+        "production_2022_23_000t": 1563.04,
+        "share_of_4crop_area": 0.5243
+      },
+      "cotton": {
+        "area_2022_23_000ha": 263.85,
+        "production_2022_23_000t": 593.2,
+        "share_of_4crop_area": 0.3268
+      },
+      "rice": {
+        "area_2022_23_000ha": 104.81,
+        "production_2022_23_000t": 239.02,
+        "share_of_4crop_area": 0.1298
+      },
+      "sugarcane": {
+        "area_2022_23_000ha": 15.38,
+        "production_2022_23_000t": 1100.48,
+        "share_of_4crop_area": 0.0191
+      }
+    },
+    "crops_unreliable_source_data": null
+  },
+  "Bahawalpur": {
+    "tier": "real_district_area",
+    "source": "Government of Pakistan, Ministry of National Food Security & Research, 'Crops Area & Production (District wise) 2022-23' -- real district estimates from the four provincial Crop Reporting Services, compiled federally. Area figures in '000 hectares, year 2022-23.",
+    "total_4crop_area_000ha": 555.22,
+    "crops": {
+      "wheat": {
+        "area_2022_23_000ha": 287.73,
+        "production_2022_23_000t": 1073.61,
+        "share_of_4crop_area": 0.5182
+      },
+      "cotton": {
+        "area_2022_23_000ha": 233.9,
+        "production_2022_23_000t": 525.5,
+        "share_of_4crop_area": 0.4213
+      },
+      "rice": {
+        "area_2022_23_000ha": 10.12,
+        "production_2022_23_000t": 21.54,
+        "share_of_4crop_area": 0.0182
+      },
+      "sugarcane": {
+        "area_2022_23_000ha": 23.47,
+        "production_2022_23_000t": 1482.48,
+        "share_of_4crop_area": 0.0423
+      }
+    },
+    "crops_unreliable_source_data": null
+  },
+  "Bajaur": {
+    "tier": "real_district_area",
+    "source": "Government of Pakistan, Ministry of National Food Security & Research, 'Crops Area & Production (District wise) 2022-23' -- real district estimates from the four provincial Crop Reporting Services, compiled federally. Area figures in '000 hectares, year 2022-23.",
+    "total_4crop_area_000ha": 44.63,
+    "crops": {
+      "wheat": {
+        "area_2022_23_000ha": 39.84,
+        "production_2022_23_000t": 69.94,
+        "share_of_4crop_area": 0.8927
+      },
+      "rice": {
+        "area_2022_23_000ha": 4.79,
+        "production_2022_23_000t": 7.55,
+        "share_of_4crop_area": 0.1073
+      }
+    },
+    "crops_unreliable_source_data": [
+      "cotton",
+      "sugarcane"
+    ]
+  },
+  "Bannu": {
+    "tier": "real_district_area",
+    "source": "Government of Pakistan, Ministry of National Food Security & Research, 'Crops Area & Production (District wise) 2022-23' -- real district estimates from the four provincial Crop Reporting Services, compiled federally. Area figures in '000 hectares, year 2022-23.",
+    "total_4crop_area_000ha": 27.26,
+    "crops": {
+      "wheat": {
+        "area_2022_23_000ha": 24.19,
+        "production_2022_23_000t": 50.04,
+        "share_of_4crop_area": 0.8874
+      },
+      "rice": {
+        "area_2022_23_000ha": 3.07,
+        "production_2022_23_000t": 5.69,
+        "share_of_4crop_area": 0.1126
+      }
+    },
+    "crops_unreliable_source_data": [
+      "cotton",
+      "sugarcane"
+    ]
+  },
+  "Barkhan": {
+    "tier": "real_district_area",
+    "source": "Government of Pakistan, Ministry of National Food Security & Research, 'Crops Area & Production (District wise) 2022-23' -- real district estimates from the four provincial Crop Reporting Services, compiled federally. Area figures in '000 hectares, year 2022-23.",
+    "total_4crop_area_000ha": 16.75,
+    "crops": {
+      "wheat": {
+        "area_2022_23_000ha": 16.75,
+        "production_2022_23_000t": 42.21,
+        "share_of_4crop_area": 1.0
+      },
+      "rice": {
+        "area_2022_23_000ha": 0.0,
+        "production_2022_23_000t": 0.0,
+        "share_of_4crop_area": 0.0
+      },
+      "sugarcane": {
+        "area_2022_23_000ha": 0.0,
+        "production_2022_23_000t": 0.0,
+        "share_of_4crop_area": 0.0
+      }
+    },
+    "crops_unreliable_source_data": [
+      "cotton"
+    ]
+  },
+  "Battagram": {
+    "tier": "real_district_area",
+    "source": "Government of Pakistan, Ministry of National Food Security & Research, 'Crops Area & Production (District wise) 2022-23' -- real district estimates from the four provincial Crop Reporting Services, compiled federally. Area figures in '000 hectares, year 2022-23.",
+    "total_4crop_area_000ha": 9.62,
+    "crops": {
+      "wheat": {
+        "area_2022_23_000ha": 7.99,
+        "production_2022_23_000t": 12.44,
+        "share_of_4crop_area": 0.8306
+      },
+      "rice": {
+        "area_2022_23_000ha": 1.63,
+        "production_2022_23_000t": 3.58,
+        "share_of_4crop_area": 0.1694
+      }
+    },
+    "crops_unreliable_source_data": [
+      "cotton",
+      "sugarcane"
+    ]
+  },
+  "Bhakkar": {
+    "tier": "real_district_area",
+    "source": "Government of Pakistan, Ministry of National Food Security & Research, 'Crops Area & Production (District wise) 2022-23' -- real district estimates from the four provincial Crop Reporting Services, compiled federally. Area figures in '000 hectares, year 2022-23.",
+    "total_4crop_area_000ha": 216.7,
+    "crops": {
+      "wheat": {
+        "area_2022_23_000ha": 163.09,
+        "production_2022_23_000t": 471.66,
+        "share_of_4crop_area": 0.7526
+      },
+      "cotton": {
+        "area_2022_23_000ha": 8.5,
+        "production_2022_23_000t": 27.1,
+        "share_of_4crop_area": 0.0392
+      },
+      "rice": {
+        "area_2022_23_000ha": 1.0,
+        "production_2022_23_000t": 1.86,
+        "share_of_4crop_area": 0.0046
+      },
+      "sugarcane": {
+        "area_2022_23_000ha": 44.11,
+        "production_2022_23_000t": 2860.16,
+        "share_of_4crop_area": 0.2036
+      }
+    },
+    "crops_unreliable_source_data": null
+  },
+  "Buner": {
+    "tier": "real_district_area",
+    "source": "Government of Pakistan, Ministry of National Food Security & Research, 'Crops Area & Production (District wise) 2022-23' -- real district estimates from the four provincial Crop Reporting Services, compiled federally. Area figures in '000 hectares, year 2022-23.",
+    "total_4crop_area_000ha": 49.43,
+    "crops": {
+      "wheat": {
+        "area_2022_23_000ha": 49.26,
+        "production_2022_23_000t": 70.26,
+        "share_of_4crop_area": 0.9966
+      },
+      "rice": {
+        "area_2022_23_000ha": 0.17,
+        "production_2022_23_000t": 0.4,
+        "share_of_4crop_area": 0.0034
+      }
+    },
+    "crops_unreliable_source_data": [
+      "cotton"
+    ]
+  },
+  "Chagai": {
+    "tier": "real_district_area",
+    "source": "Government of Pakistan, Ministry of National Food Security & Research, 'Crops Area & Production (District wise) 2022-23' -- real district estimates from the four provincial Crop Reporting Services, compiled federally. Area figures in '000 hectares, year 2022-23.",
+    "total_4crop_area_000ha": 6.03,
+    "crops": {
+      "wheat": {
+        "area_2022_23_000ha": 6.03,
+        "production_2022_23_000t": 15.37,
+        "share_of_4crop_area": 1.0
+      },
+      "rice": {
+        "area_2022_23_000ha": 0.0,
+        "production_2022_23_000t": 0.0,
+        "share_of_4crop_area": 0.0
+      },
+      "sugarcane": {
+        "area_2022_23_000ha": 0.0,
+        "production_2022_23_000t": 0.0,
+        "share_of_4crop_area": 0.0
+      }
+    },
+    "crops_unreliable_source_data": [
+      "cotton"
+    ]
+  },
+  "Chakwal": {
+    "tier": "real_district_area",
+    "source": "Government of Pakistan, Ministry of National Food Security & Research, 'Crops Area & Production (District wise) 2022-23' -- real district estimates from the four provincial Crop Reporting Services, compiled federally. Area figures in '000 hectares, year 2022-23.",
+    "total_4crop_area_000ha": 154.18,
+    "crops": {
+      "wheat": {
+        "area_2022_23_000ha": 154.18,
+        "production_2022_23_000t": 272.69,
+        "share_of_4crop_area": 1.0
+      },
+      "cotton": {
+        "area_2022_23_000ha": 0.0,
+        "production_2022_23_000t": 0.0,
+        "share_of_4crop_area": 0.0
+      },
+      "rice": {
+        "area_2022_23_000ha": 0.0,
+        "production_2022_23_000t": 0.0,
+        "share_of_4crop_area": 0.0
+      },
+      "sugarcane": {
+        "area_2022_23_000ha": 0.0,
+        "production_2022_23_000t": 0.0,
+        "share_of_4crop_area": 0.0
+      }
+    },
+    "crops_unreliable_source_data": null
+  },
+  "Charsadda": {
+    "tier": "real_district_area",
+    "source": "Government of Pakistan, Ministry of National Food Security & Research, 'Crops Area & Production (District wise) 2022-23' -- real district estimates from the four provincial Crop Reporting Services, compiled federally. Area figures in '000 hectares, year 2022-23.",
+    "total_4crop_area_000ha": 35.85,
+    "crops": {
+      "wheat": {
+        "area_2022_23_000ha": 35.78,
+        "production_2022_23_000t": 101.33,
+        "share_of_4crop_area": 0.998
+      },
+      "rice": {
+        "area_2022_23_000ha": 0.07,
+        "production_2022_23_000t": 0.15,
+        "share_of_4crop_area": 0.002
+      }
+    },
+    "crops_unreliable_source_data": [
+      "cotton",
+      "sugarcane"
+    ]
+  },
+  "Chitral": {
+    "tier": "real_district_area",
+    "source": "Government of Pakistan, Ministry of National Food Security & Research, 'Crops Area & Production (District wise) 2022-23' -- real district estimates from the four provincial Crop Reporting Services, compiled federally. Area figures in '000 hectares, year 2022-23.",
+    "total_4crop_area_000ha": 10.18,
+    "crops": {
+      "wheat": {
+        "area_2022_23_000ha": 8.35,
+        "production_2022_23_000t": 16.12,
+        "share_of_4crop_area": 0.8202
+      },
+      "rice": {
+        "area_2022_23_000ha": 1.83,
+        "production_2022_23_000t": 5.2,
+        "share_of_4crop_area": 0.1798
+      }
+    },
+    "crops_unreliable_source_data": [
+      "cotton",
+      "sugarcane"
+    ]
+  },
+  "Dadu": {
+    "tier": "real_district_area",
+    "source": "Government of Pakistan, Ministry of National Food Security & Research, 'Crops Area & Production (District wise) 2022-23' -- real district estimates from the four provincial Crop Reporting Services, compiled federally. Area figures in '000 hectares, year 2022-23.",
+    "total_4crop_area_000ha": 114.62,
+    "crops": {
+      "wheat": {
+        "area_2022_23_000ha": 79.88,
+        "production_2022_23_000t": 284.23,
+        "share_of_4crop_area": 0.6969
+      },
+      "cotton": {
+        "area_2022_23_000ha": 12.68,
+        "production_2022_23_000t": 26.38,
+        "share_of_4crop_area": 0.1106
+      },
+      "rice": {
+        "area_2022_23_000ha": 22.06,
+        "production_2022_23_000t": 66.38,
+        "share_of_4crop_area": 0.1925
+      }
+    },
+    "crops_unreliable_source_data": [
+      "sugarcane"
+    ]
+  },
+  "Dera Bugti": {
+    "tier": "real_district_area",
+    "source": "Government of Pakistan, Ministry of National Food Security & Research, 'Crops Area & Production (District wise) 2022-23' -- real district estimates from the four provincial Crop Reporting Services, compiled federally. Area figures in '000 hectares, year 2022-23.",
+    "total_4crop_area_000ha": 27.57,
+    "crops": {
+      "wheat": {
+        "area_2022_23_000ha": 27.4,
+        "production_2022_23_000t": 48.8,
+        "share_of_4crop_area": 0.9938
+      },
+      "rice": {
+        "area_2022_23_000ha": 0.17,
+        "production_2022_23_000t": 0.47,
+        "share_of_4crop_area": 0.0062
+      },
+      "sugarcane": {
+        "area_2022_23_000ha": 0.0,
+        "production_2022_23_000t": 0.0,
+        "share_of_4crop_area": 0.0
+      }
+    },
+    "crops_unreliable_source_data": [
+      "cotton"
+    ]
+  },
+  "Dera Ghazi Khan": {
+    "tier": "real_district_area",
+    "source": "Government of Pakistan, Ministry of National Food Security & Research, 'Crops Area & Production (District wise) 2022-23' -- real district estimates from the four provincial Crop Reporting Services, compiled federally. Area figures in '000 hectares, year 2022-23.",
+    "total_4crop_area_000ha": 335.88,
+    "crops": {
+      "wheat": {
+        "area_2022_23_000ha": 220.55,
+        "production_2022_23_000t": 739.46,
+        "share_of_4crop_area": 0.6566
+      },
+      "cotton": {
+        "area_2022_23_000ha": 46.54,
+        "production_2022_23_000t": 50.9,
+        "share_of_4crop_area": 0.1386
+      },
+      "rice": {
+        "area_2022_23_000ha": 59.08,
+        "production_2022_23_000t": 168.42,
+        "share_of_4crop_area": 0.1759
+      },
+      "sugarcane": {
+        "area_2022_23_000ha": 9.71,
+        "production_2022_23_000t": 712.32,
+        "share_of_4crop_area": 0.0289
+      }
+    },
+    "crops_unreliable_source_data": null
+  },
+  "Dera Ismail Khan": {
+    "tier": "real_district_area",
+    "source": "Government of Pakistan, Ministry of National Food Security & Research, 'Crops Area & Production (District wise) 2022-23' -- real district estimates from the four provincial Crop Reporting Services, compiled federally. Area figures in '000 hectares, year 2022-23.",
+    "total_4crop_area_000ha": 67.33,
+    "crops": {
+      "wheat": {
+        "area_2022_23_000ha": 57.95,
+        "production_2022_23_000t": 112.45,
+        "share_of_4crop_area": 0.8607
+      },
+      "rice": {
+        "area_2022_23_000ha": 9.38,
+        "production_2022_23_000t": 25.69,
+        "share_of_4crop_area": 0.1393
+      }
+    },
+    "crops_unreliable_source_data": [
+      "cotton",
+      "sugarcane"
+    ]
+  },
+  "Diamer": {
+    "tier": "hand_classified_mask",
+    "source": "naip/models/fusion/crop_plausibility.py -- Week 4 hand-classified agronomic-geography mask (NOT real crop-area data). This district was not matched in the real MNFSR district table (Gilgit-Baltistan/Azad Kashmir, which the MNFSR report does not cover at all). Track G (Week 9) real attempt: Track F's trained crop-share model WAS run on real Sentinel-2 phenology features for this district (real WorldCereal cropland coverage here is only 0.135% of district area -- near-zero, high-altitude terrain) and REJECTED as unreliable, confirmed with you: predicted shares were suspiciously close to the national-mean baseline regardless of real terrain differences, real evidence of tree-model extrapolation failure outside its lowland-plains training domain -- a real z-score input check alone did not catch this, the output implausibility did. See naip/models/crop_classifier_national/gb_ajk_predictions.json for the real rejected prediction and naip/docs/STATUS_WEEK9.md for detail. Stays on the hand-classified mask deliberately, not as an unresolved gap."
+  },
+  "Faisalabad": {
+    "tier": "real_district_area",
+    "source": "Government of Pakistan, Ministry of National Food Security & Research, 'Crops Area & Production (District wise) 2022-23' -- real district estimates from the four provincial Crop Reporting Services, compiled federally. Area figures in '000 hectares, year 2022-23.",
+    "total_4crop_area_000ha": 367.44,
+    "crops": {
+      "wheat": {
+        "area_2022_23_000ha": 233.09,
+        "production_2022_23_000t": 852.94,
+        "share_of_4crop_area": 0.6344
+      },
+      "cotton": {
+        "area_2022_23_000ha": 10.52,
+        "production_2022_23_000t": 44.7,
+        "share_of_4crop_area": 0.0286
+      },
+      "rice": {
+        "area_2022_23_000ha": 32.37,
+        "production_2022_23_000t": 72.6,
+        "share_of_4crop_area": 0.0881
+      },
+      "sugarcane": {
+        "area_2022_23_000ha": 91.46,
+        "production_2022_23_000t": 6409.36,
+        "share_of_4crop_area": 0.2489
+      }
+    },
+    "crops_unreliable_source_data": null
+  },
+  "Ghanche": {
+    "tier": "hand_classified_mask",
+    "source": "naip/models/fusion/crop_plausibility.py -- Week 4 hand-classified agronomic-geography mask (NOT real crop-area data). This district was not matched in the real MNFSR district table (Gilgit-Baltistan/Azad Kashmir, which the MNFSR report does not cover at all). Track G (Week 9) real attempt: Track F's trained crop-share model WAS run on real Sentinel-2 phenology features for this district (real WorldCereal cropland coverage here is only 0.141% of district area -- near-zero, high-altitude terrain) and REJECTED as unreliable, confirmed with you: predicted shares were suspiciously close to the national-mean baseline regardless of real terrain differences, real evidence of tree-model extrapolation failure outside its lowland-plains training domain -- a real z-score input check alone did not catch this, the output implausibility did. See naip/models/crop_classifier_national/gb_ajk_predictions.json for the real rejected prediction and naip/docs/STATUS_WEEK9.md for detail. Stays on the hand-classified mask deliberately, not as an unresolved gap."
+  },
+  "Ghizer": {
+    "tier": "hand_classified_mask",
+    "source": "naip/models/fusion/crop_plausibility.py -- Week 4 hand-classified agronomic-geography mask (NOT real crop-area data). This district was not matched in the real MNFSR district table (Gilgit-Baltistan/Azad Kashmir, which the MNFSR report does not cover at all). Track G (Week 9) real attempt: Track F's trained crop-share model WAS run on real Sentinel-2 phenology features for this district (real WorldCereal cropland coverage here is only 0.106% of district area -- near-zero, high-altitude terrain) and REJECTED as unreliable, confirmed with you: predicted shares were suspiciously close to the national-mean baseline regardless of real terrain differences, and predicted an impossible negative share for ['sugarcane'] in this district, real evidence of tree-model extrapolation failure outside its lowland-plains training domain -- a real z-score input check alone did not catch this, the output implausibility did. See naip/models/crop_classifier_national/gb_ajk_predictions.json for the real rejected prediction and naip/docs/STATUS_WEEK9.md for detail. Stays on the hand-classified mask deliberately, not as an unresolved gap."
+  },
+  "Ghotki": {
+    "tier": "real_district_area",
+    "source": "Government of Pakistan, Ministry of National Food Security & Research, 'Crops Area & Production (District wise) 2022-23' -- real district estimates from the four provincial Crop Reporting Services, compiled federally. Area figures in '000 hectares, year 2022-23.",
+    "total_4crop_area_000ha": 197.48,
+    "crops": {
+      "wheat": {
+        "area_2022_23_000ha": 107.86,
+        "production_2022_23_000t": 289.65,
+        "share_of_4crop_area": 0.5462
+      },
+      "cotton": {
+        "area_2022_23_000ha": 89.62,
+        "production_2022_23_000t": 144.83,
+        "share_of_4crop_area": 0.4538
+      },
+      "rice": {
+        "area_2022_23_000ha": 0.0,
+        "production_2022_23_000t": 0.0,
+        "share_of_4crop_area": 0.0
+      }
+    },
+    "crops_unreliable_source_data": null
+  },
+  "Gilgit": {
+    "tier": "hand_classified_mask",
+    "source": "naip/models/fusion/crop_plausibility.py -- Week 4 hand-classified agronomic-geography mask (NOT real crop-area data). This district was not matched in the real MNFSR district table (Gilgit-Baltistan/Azad Kashmir, which the MNFSR report does not cover at all). Track G (Week 9) real attempt: Track F's trained crop-share model WAS run on real Sentinel-2 phenology features for this district (real WorldCereal cropland coverage here is only 0.065% of district area -- near-zero, high-altitude terrain) and REJECTED as unreliable, confirmed with you: predicted shares were suspiciously close to the national-mean baseline regardless of real terrain differences, real evidence of tree-model extrapolation failure outside its lowland-plains training domain -- a real z-score input check alone did not catch this, the output implausibility did. See naip/models/crop_classifier_national/gb_ajk_predictions.json for the real rejected prediction and naip/docs/STATUS_WEEK9.md for detail. Stays on the hand-classified mask deliberately, not as an unresolved gap."
+  },
+  "Gujranwala": {
+    "tier": "real_district_area",
+    "source": "Government of Pakistan, Ministry of National Food Security & Research, 'Crops Area & Production (District wise) 2022-23' -- real district estimates from the four provincial Crop Reporting Services, compiled federally. Area figures in '000 hectares, year 2022-23.",
+    "total_4crop_area_000ha": 423.52,
+    "crops": {
+      "wheat": {
+        "area_2022_23_000ha": 162.28,
+        "production_2022_23_000t": 544.56,
+        "share_of_4crop_area": 0.3832
+      },
+      "cotton": {
+        "area_2022_23_000ha": 0.0,
+        "production_2022_23_000t": 0.0,
+        "share_of_4crop_area": 0.0
+      },
+      "rice": {
+        "area_2022_23_000ha": 258.0,
+        "production_2022_23_000t": 377.04,
+        "share_of_4crop_area": 0.6092
+      },
+      "sugarcane": {
+        "area_2022_23_000ha": 3.24,
+        "production_2022_23_000t": 188.16,
+        "share_of_4crop_area": 0.0077
+      }
+    },
+    "crops_unreliable_source_data": null
+  },
+  "Gujrat": {
+    "tier": "real_district_area",
+    "source": "Government of Pakistan, Ministry of National Food Security & Research, 'Crops Area & Production (District wise) 2022-23' -- real district estimates from the four provincial Crop Reporting Services, compiled federally. Area figures in '000 hectares, year 2022-23.",
+    "total_4crop_area_000ha": 197.08,
+    "crops": {
+      "wheat": {
+        "area_2022_23_000ha": 159.44,
+        "production_2022_23_000t": 363.43,
+        "share_of_4crop_area": 0.809
+      },
+      "cotton": {
+        "area_2022_23_000ha": 0.0,
+        "production_2022_23_000t": 0.0,
+        "share_of_4crop_area": 0.0
+      },
+      "rice": {
+        "area_2022_23_000ha": 34.81,
+        "production_2022_23_000t": 64.8,
+        "share_of_4crop_area": 0.1766
+      },
+      "sugarcane": {
+        "area_2022_23_000ha": 2.83,
+        "production_2022_23_000t": 120.12,
+        "share_of_4crop_area": 0.0144
+      }
+    },
+    "crops_unreliable_source_data": null
+  },
+  "Gwadar": {
+    "tier": "real_district_area",
+    "source": "Government of Pakistan, Ministry of National Food Security & Research, 'Crops Area & Production (District wise) 2022-23' -- real district estimates from the four provincial Crop Reporting Services, compiled federally. Area figures in '000 hectares, year 2022-23.",
+    "total_4crop_area_000ha": 0.42,
+    "crops": {
+      "wheat": {
+        "area_2022_23_000ha": 0.42,
+        "production_2022_23_000t": 0.92,
+        "share_of_4crop_area": 1.0
+      },
+      "sugarcane": {
+        "area_2022_23_000ha": 0.0,
+        "production_2022_23_000t": 0.0,
+        "share_of_4crop_area": 0.0
+      }
+    },
+    "crops_unreliable_source_data": [
+      "cotton"
+    ]
+  },
+  "Hafizabad": {
+    "tier": "real_district_area",
+    "source": "Government of Pakistan, Ministry of National Food Security & Research, 'Crops Area & Production (District wise) 2022-23' -- real district estimates from the four provincial Crop Reporting Services, compiled federally. Area figures in '000 hectares, year 2022-23.",
+    "total_4crop_area_000ha": 301.96,
+    "crops": {
+      "wheat": {
+        "area_2022_23_000ha": 150.94,
+        "production_2022_23_000t": 595.46,
+        "share_of_4crop_area": 0.4999
+      },
+      "cotton": {
+        "area_2022_23_000ha": 0.0,
+        "production_2022_23_000t": 0.0,
+        "share_of_4crop_area": 0.0
+      },
+      "rice": {
+        "area_2022_23_000ha": 149.0,
+        "production_2022_23_000t": 138.43,
+        "share_of_4crop_area": 0.4934
+      },
+      "sugarcane": {
+        "area_2022_23_000ha": 2.02,
+        "production_2022_23_000t": 86.4,
+        "share_of_4crop_area": 0.0067
+      }
+    },
+    "crops_unreliable_source_data": null
+  },
+  "Hangu": {
+    "tier": "real_district_area",
+    "source": "Government of Pakistan, Ministry of National Food Security & Research, 'Crops Area & Production (District wise) 2022-23' -- real district estimates from the four provincial Crop Reporting Services, compiled federally. Area figures in '000 hectares, year 2022-23.",
+    "total_4crop_area_000ha": 8.29,
+    "crops": {
+      "wheat": {
+        "area_2022_23_000ha": 8.18,
+        "production_2022_23_000t": 11.43,
+        "share_of_4crop_area": 0.9867
+      },
+      "rice": {
+        "area_2022_23_000ha": 0.11,
+        "production_2022_23_000t": 0.2,
+        "share_of_4crop_area": 0.0133
+      }
+    },
+    "crops_unreliable_source_data": [
+      "cotton",
+      "sugarcane"
+    ]
+  },
+  "Haripur": {
+    "tier": "real_district_area",
+    "source": "Government of Pakistan, Ministry of National Food Security & Research, 'Crops Area & Production (District wise) 2022-23' -- real district estimates from the four provincial Crop Reporting Services, compiled federally. Area figures in '000 hectares, year 2022-23.",
+    "total_4crop_area_000ha": 35.26,
+    "crops": {
+      "wheat": {
+        "area_2022_23_000ha": 35.26,
+        "production_2022_23_000t": 55.1,
+        "share_of_4crop_area": 1.0
+      },
+      "rice": {
+        "area_2022_23_000ha": 0.0,
+        "production_2022_23_000t": 0.0,
+        "share_of_4crop_area": 0.0
+      }
+    },
+    "crops_unreliable_source_data": [
+      "cotton"
+    ]
+  },
+  "Hunza": {
+    "tier": "hand_classified_mask",
+    "source": "naip/models/fusion/crop_plausibility.py -- Week 4 hand-classified agronomic-geography mask (NOT real crop-area data). This district was not matched in the real MNFSR district table (Gilgit-Baltistan/Azad Kashmir, which the MNFSR report does not cover at all). Track G (Week 9) real attempt: Track F's trained crop-share model WAS run on real Sentinel-2 phenology features for this district (real WorldCereal cropland coverage here is only 0.018% of district area -- near-zero, high-altitude terrain) and REJECTED as unreliable, confirmed with you: predicted shares were suspiciously close to the national-mean baseline regardless of real terrain differences, and predicted an impossible negative share for ['sugarcane'] in this district, real evidence of tree-model extrapolation failure outside its lowland-plains training domain -- a real z-score input check alone did not catch this, the output implausibility did. See naip/models/crop_classifier_national/gb_ajk_predictions.json for the real rejected prediction and naip/docs/STATUS_WEEK9.md for detail. Stays on the hand-classified mask deliberately, not as an unresolved gap."
+  },
+  "Hyderabad": {
+    "tier": "real_district_area",
+    "source": "Government of Pakistan, Ministry of National Food Security & Research, 'Crops Area & Production (District wise) 2022-23' -- real district estimates from the four provincial Crop Reporting Services, compiled federally. Area figures in '000 hectares, year 2022-23.",
+    "total_4crop_area_000ha": 21.14,
+    "crops": {
+      "wheat": {
+        "area_2022_23_000ha": 15.24,
+        "production_2022_23_000t": 63.27,
+        "share_of_4crop_area": 0.7209
+      },
+      "cotton": {
+        "area_2022_23_000ha": 4.99,
+        "production_2022_23_000t": 21.77,
+        "share_of_4crop_area": 0.236
+      },
+      "rice": {
+        "area_2022_23_000ha": 0.91,
+        "production_2022_23_000t": 3.36,
+        "share_of_4crop_area": 0.043
+      }
+    },
+    "crops_unreliable_source_data": [
+      "sugarcane"
+    ]
+  },
+  "Islamabad Capital Territory": {
+    "tier": "real_district_area",
+    "source": "Government of Pakistan, Ministry of National Food Security & Research, 'Crops Area & Production (District wise) 2022-23' -- real district estimates from the four provincial Crop Reporting Services, compiled federally. Area figures in '000 hectares, year 2022-23.",
+    "total_4crop_area_000ha": 33.18,
+    "crops": {
+      "wheat": {
+        "area_2022_23_000ha": 33.18,
+        "production_2022_23_000t": 64.19,
+        "share_of_4crop_area": 1.0
+      },
+      "cotton": {
+        "area_2022_23_000ha": 0.0,
+        "production_2022_23_000t": 0.0,
+        "share_of_4crop_area": 0.0
+      },
+      "rice": {
+        "area_2022_23_000ha": 0.0,
+        "production_2022_23_000t": 0.0,
+        "share_of_4crop_area": 0.0
+      },
+      "sugarcane": {
+        "area_2022_23_000ha": 0.0,
+        "production_2022_23_000t": 0.0,
+        "share_of_4crop_area": 0.0
+      }
+    },
+    "crops_unreliable_source_data": null
+  },
+  "Jacobabad": {
+    "tier": "real_district_area",
+    "source": "Government of Pakistan, Ministry of National Food Security & Research, 'Crops Area & Production (District wise) 2022-23' -- real district estimates from the four provincial Crop Reporting Services, compiled federally. Area figures in '000 hectares, year 2022-23.",
+    "total_4crop_area_000ha": 129.56,
+    "crops": {
+      "wheat": {
+        "area_2022_23_000ha": 27.33,
+        "production_2022_23_000t": 86.52,
+        "share_of_4crop_area": 0.2109
+      },
+      "cotton": {
+        "area_2022_23_000ha": 0.0,
+        "production_2022_23_000t": 0.0,
+        "share_of_4crop_area": 0.0
+      },
+      "rice": {
+        "area_2022_23_000ha": 102.23,
+        "production_2022_23_000t": 401.89,
+        "share_of_4crop_area": 0.7891
+      }
+    },
+    "crops_unreliable_source_data": [
+      "sugarcane"
+    ]
+  },
+  "Jafarabad": {
+    "tier": "real_district_area",
+    "source": "Government of Pakistan, Ministry of National Food Security & Research, 'Crops Area & Production (District wise) 2022-23' -- real district estimates from the four provincial Crop Reporting Services, compiled federally. Area figures in '000 hectares, year 2022-23.",
+    "total_4crop_area_000ha": 149.14,
+    "crops": {
+      "wheat": {
+        "area_2022_23_000ha": 73.98,
+        "production_2022_23_000t": 214.54,
+        "share_of_4crop_area": 0.496
+      },
+      "rice": {
+        "area_2022_23_000ha": 75.15,
+        "production_2022_23_000t": 85.51,
+        "share_of_4crop_area": 0.5039
+      },
+      "sugarcane": {
+        "area_2022_23_000ha": 0.01,
+        "production_2022_23_000t": 0.53,
+        "share_of_4crop_area": 0.0001
+      }
+    },
+    "crops_unreliable_source_data": [
+      "cotton"
+    ]
+  },
+  "Jamshoro": {
+    "tier": "real_district_area",
+    "source": "Government of Pakistan, Ministry of National Food Security & Research, 'Crops Area & Production (District wise) 2022-23' -- real district estimates from the four provincial Crop Reporting Services, compiled federally. Area figures in '000 hectares, year 2022-23.",
+    "total_4crop_area_000ha": 58.91,
+    "crops": {
+      "wheat": {
+        "area_2022_23_000ha": 42.59,
+        "production_2022_23_000t": 110.37,
+        "share_of_4crop_area": 0.723
+      },
+      "cotton": {
+        "area_2022_23_000ha": 15.78,
+        "production_2022_23_000t": 55.15,
+        "share_of_4crop_area": 0.2679
+      },
+      "rice": {
+        "area_2022_23_000ha": 0.54,
+        "production_2022_23_000t": 1.59,
+        "share_of_4crop_area": 0.0092
+      }
+    },
+    "crops_unreliable_source_data": null
+  },
+  "Jhal Magsi": {
+    "tier": "real_district_area",
+    "source": "Government of Pakistan, Ministry of National Food Security & Research, 'Crops Area & Production (District wise) 2022-23' -- real district estimates from the four provincial Crop Reporting Services, compiled federally. Area figures in '000 hectares, year 2022-23.",
+    "total_4crop_area_000ha": 58.74,
+    "crops": {
+      "wheat": {
+        "area_2022_23_000ha": 58.53,
+        "production_2022_23_000t": 174.68,
+        "share_of_4crop_area": 0.9964
+      },
+      "rice": {
+        "area_2022_23_000ha": 0.21,
+        "production_2022_23_000t": 0.16,
+        "share_of_4crop_area": 0.0036
+      },
+      "sugarcane": {
+        "area_2022_23_000ha": 0.0,
+        "production_2022_23_000t": 0.0,
+        "share_of_4crop_area": 0.0
+      }
+    },
+    "crops_unreliable_source_data": [
+      "cotton"
+    ]
+  },
+  "Jhang": {
+    "tier": "real_district_area",
+    "source": "Government of Pakistan, Ministry of National Food Security & Research, 'Crops Area & Production (District wise) 2022-23' -- real district estimates from the four provincial Crop Reporting Services, compiled federally. Area figures in '000 hectares, year 2022-23.",
+    "total_4crop_area_000ha": 627.58,
+    "crops": {
+      "wheat": {
+        "area_2022_23_000ha": 263.44,
+        "production_2022_23_000t": 934.32,
+        "share_of_4crop_area": 0.4198
+      },
+      "cotton": {
+        "area_2022_23_000ha": 12.55,
+        "production_2022_23_000t": 31.0,
+        "share_of_4crop_area": 0.02
+      },
+      "rice": {
+        "area_2022_23_000ha": 188.5,
+        "production_2022_23_000t": 446.92,
+        "share_of_4crop_area": 0.3004
+      },
+      "sugarcane": {
+        "area_2022_23_000ha": 163.09,
+        "production_2022_23_000t": 11758.24,
+        "share_of_4crop_area": 0.2599
+      }
+    },
+    "crops_unreliable_source_data": null
+  },
+  "Jhelum": {
+    "tier": "real_district_area",
+    "source": "Government of Pakistan, Ministry of National Food Security & Research, 'Crops Area & Production (District wise) 2022-23' -- real district estimates from the four provincial Crop Reporting Services, compiled federally. Area figures in '000 hectares, year 2022-23.",
+    "total_4crop_area_000ha": 87.82,
+    "crops": {
+      "wheat": {
+        "area_2022_23_000ha": 85.39,
+        "production_2022_23_000t": 193.87,
+        "share_of_4crop_area": 0.9723
+      },
+      "cotton": {
+        "area_2022_23_000ha": 0.0,
+        "production_2022_23_000t": 0.0,
+        "share_of_4crop_area": 0.0
+      },
+      "rice": {
+        "area_2022_23_000ha": 2.43,
+        "production_2022_23_000t": 4.83,
+        "share_of_4crop_area": 0.0277
+      },
+      "sugarcane": {
+        "area_2022_23_000ha": 0.0,
+        "production_2022_23_000t": 0.0,
+        "share_of_4crop_area": 0.0
+      }
+    },
+    "crops_unreliable_source_data": null
+  },
+  "Kachhi": {
+    "tier": "real_district_area",
+    "source": "Government of Pakistan, Ministry of National Food Security & Research, 'Crops Area & Production (District wise) 2022-23' -- real district estimates from the four provincial Crop Reporting Services, compiled federally. Area figures in '000 hectares, year 2022-23.",
+    "total_4crop_area_000ha": 30.99,
+    "crops": {
+      "wheat": {
+        "area_2022_23_000ha": 30.99,
+        "production_2022_23_000t": 86.61,
+        "share_of_4crop_area": 1.0
+      },
+      "rice": {
+        "area_2022_23_000ha": 0.0,
+        "production_2022_23_000t": 0.0,
+        "share_of_4crop_area": 0.0
+      },
+      "sugarcane": {
+        "area_2022_23_000ha": 0.0,
+        "production_2022_23_000t": 0.0,
+        "share_of_4crop_area": 0.0
+      }
+    },
+    "crops_unreliable_source_data": null
+  },
+  "Kalat": {
+    "tier": "real_district_area",
+    "source": "Government of Pakistan, Ministry of National Food Security & Research, 'Crops Area & Production (District wise) 2022-23' -- real district estimates from the four provincial Crop Reporting Services, compiled federally. Area figures in '000 hectares, year 2022-23.",
+    "total_4crop_area_000ha": 7.58,
+    "crops": {
+      "wheat": {
+        "area_2022_23_000ha": 7.58,
+        "production_2022_23_000t": 19.76,
+        "share_of_4crop_area": 1.0
+      },
+      "rice": {
+        "area_2022_23_000ha": 0.0,
+        "production_2022_23_000t": 0.0,
+        "share_of_4crop_area": 0.0
+      },
+      "sugarcane": {
+        "area_2022_23_000ha": 0.0,
+        "production_2022_23_000t": 0.0,
+        "share_of_4crop_area": 0.0
+      }
+    },
+    "crops_unreliable_source_data": null
+  },
+  "Karachi": {
+    "tier": "real_district_area",
+    "source": "Government of Pakistan, Ministry of National Food Security & Research, 'Crops Area & Production (District wise) 2022-23' -- real district estimates from the four provincial Crop Reporting Services, compiled federally. Area figures in '000 hectares, year 2022-23.",
+    "total_4crop_area_000ha": 1.97,
+    "crops": {
+      "wheat": {
+        "area_2022_23_000ha": 1.58,
+        "production_2022_23_000t": 4.52,
+        "share_of_4crop_area": 0.802
+      },
+      "cotton": {
+        "area_2022_23_000ha": 0.39,
+        "production_2022_23_000t": 1.51,
+        "share_of_4crop_area": 0.198
+      }
+    },
+    "crops_unreliable_source_data": [
+      "sugarcane"
+    ]
+  },
+  "Karak": {
+    "tier": "real_district_area",
+    "source": "Government of Pakistan, Ministry of National Food Security & Research, 'Crops Area & Production (District wise) 2022-23' -- real district estimates from the four provincial Crop Reporting Services, compiled federally. Area figures in '000 hectares, year 2022-23.",
+    "total_4crop_area_000ha": 5.9,
+    "crops": {
+      "wheat": {
+        "area_2022_23_000ha": 5.9,
+        "production_2022_23_000t": 3.42,
+        "share_of_4crop_area": 1.0
+      },
+      "rice": {
+        "area_2022_23_000ha": 0.0,
+        "production_2022_23_000t": 0.0,
+        "share_of_4crop_area": 0.0
+      }
+    },
+    "crops_unreliable_source_data": [
+      "cotton"
+    ]
+  },
+  "Kashmore": {
+    "tier": "real_district_area",
+    "source": "Government of Pakistan, Ministry of National Food Security & Research, 'Crops Area & Production (District wise) 2022-23' -- real district estimates from the four provincial Crop Reporting Services, compiled federally. Area figures in '000 hectares, year 2022-23.",
+    "total_4crop_area_000ha": 112.15,
+    "crops": {
+      "wheat": {
+        "area_2022_23_000ha": 41.96,
+        "production_2022_23_000t": 121.12,
+        "share_of_4crop_area": 0.3741
+      },
+      "cotton": {
+        "area_2022_23_000ha": 0.03,
+        "production_2022_23_000t": 0.0,
+        "share_of_4crop_area": 0.0003
+      },
+      "rice": {
+        "area_2022_23_000ha": 70.16,
+        "production_2022_23_000t": 177.81,
+        "share_of_4crop_area": 0.6256
+      }
+    },
+    "crops_unreliable_source_data": null
+  },
+  "Kasur": {
+    "tier": "real_district_area",
+    "source": "Government of Pakistan, Ministry of National Food Security & Research, 'Crops Area & Production (District wise) 2022-23' -- real district estimates from the four provincial Crop Reporting Services, compiled federally. Area figures in '000 hectares, year 2022-23.",
+    "total_4crop_area_000ha": 231.96,
+    "crops": {
+      "wheat": {
+        "area_2022_23_000ha": 127.47,
+        "production_2022_23_000t": 434.32,
+        "share_of_4crop_area": 0.5495
+      },
+      "cotton": {
+        "area_2022_23_000ha": 2.02,
+        "production_2022_23_000t": 3.6,
+        "share_of_4crop_area": 0.0087
+      },
+      "rice": {
+        "area_2022_23_000ha": 79.0,
+        "production_2022_23_000t": 190.01,
+        "share_of_4crop_area": 0.3406
+      },
+      "sugarcane": {
+        "area_2022_23_000ha": 23.47,
+        "production_2022_23_000t": 1329.36,
+        "share_of_4crop_area": 0.1012
+      }
+    },
+    "crops_unreliable_source_data": null
+  },
+  "Kech": {
+    "tier": "real_district_area",
+    "source": "Government of Pakistan, Ministry of National Food Security & Research, 'Crops Area & Production (District wise) 2022-23' -- real district estimates from the four provincial Crop Reporting Services, compiled federally. Area figures in '000 hectares, year 2022-23.",
+    "total_4crop_area_000ha": 6.23,
+    "crops": {
+      "wheat": {
+        "area_2022_23_000ha": 5.21,
+        "production_2022_23_000t": 13.57,
+        "share_of_4crop_area": 0.8363
+      },
+      "rice": {
+        "area_2022_23_000ha": 1.02,
+        "production_2022_23_000t": 2.19,
+        "share_of_4crop_area": 0.1637
+      },
+      "sugarcane": {
+        "area_2022_23_000ha": 0.0,
+        "production_2022_23_000t": 0.0,
+        "share_of_4crop_area": 0.0
+      }
+    },
+    "crops_unreliable_source_data": [
+      "cotton"
+    ]
+  },
+  "Khairpur": {
+    "tier": "real_district_area",
+    "source": "Government of Pakistan, Ministry of National Food Security & Research, 'Crops Area & Production (District wise) 2022-23' -- real district estimates from the four provincial Crop Reporting Services, compiled federally. Area figures in '000 hectares, year 2022-23.",
+    "total_4crop_area_000ha": 204.09,
+    "crops": {
+      "wheat": {
+        "area_2022_23_000ha": 115.52,
+        "production_2022_23_000t": 336.29,
+        "share_of_4crop_area": 0.566
+      },
+      "cotton": {
+        "area_2022_23_000ha": 88.57,
+        "production_2022_23_000t": 123.55,
+        "share_of_4crop_area": 0.434
+      },
+      "rice": {
+        "area_2022_23_000ha": 0.0,
+        "production_2022_23_000t": 0.0,
+        "share_of_4crop_area": 0.0
+      }
+    },
+    "crops_unreliable_source_data": null
+  },
+  "Khanewal": {
+    "tier": "real_district_area",
+    "source": "Government of Pakistan, Ministry of National Food Security & Research, 'Crops Area & Production (District wise) 2022-23' -- real district estimates from the four provincial Crop Reporting Services, compiled federally. Area figures in '000 hectares, year 2022-23.",
+    "total_4crop_area_000ha": 352.48,
+    "crops": {
+      "wheat": {
+        "area_2022_23_000ha": 194.25,
+        "production_2022_23_000t": 726.91,
+        "share_of_4crop_area": 0.5511
+      },
+      "cotton": {
+        "area_2022_23_000ha": 106.03,
+        "production_2022_23_000t": 255.5,
+        "share_of_4crop_area": 0.3008
+      },
+      "rice": {
+        "area_2022_23_000ha": 45.73,
+        "production_2022_23_000t": 112.58,
+        "share_of_4crop_area": 0.1297
+      },
+      "sugarcane": {
+        "area_2022_23_000ha": 6.47,
+        "production_2022_23_000t": 472.96,
+        "share_of_4crop_area": 0.0184
+      }
+    },
+    "crops_unreliable_source_data": null
+  },
+  "Kharan": {
+    "tier": "real_district_area",
+    "source": "Government of Pakistan, Ministry of National Food Security & Research, 'Crops Area & Production (District wise) 2022-23' -- real district estimates from the four provincial Crop Reporting Services, compiled federally. Area figures in '000 hectares, year 2022-23.",
+    "total_4crop_area_000ha": 9.73,
+    "crops": {
+      "wheat": {
+        "area_2022_23_000ha": 9.73,
+        "production_2022_23_000t": 25.75,
+        "share_of_4crop_area": 1.0
+      },
+      "rice": {
+        "area_2022_23_000ha": 0.0,
+        "production_2022_23_000t": 0.0,
+        "share_of_4crop_area": 0.0
+      },
+      "sugarcane": {
+        "area_2022_23_000ha": 0.0,
+        "production_2022_23_000t": 0.0,
+        "share_of_4crop_area": 0.0
+      }
+    },
+    "crops_unreliable_source_data": null
+  },
+  "Kharmang": {
+    "tier": "hand_classified_mask",
+    "source": "naip/models/fusion/crop_plausibility.py -- Week 4 hand-classified agronomic-geography mask (NOT real crop-area data). This district was not matched in the real MNFSR district table (Gilgit-Baltistan/Azad Kashmir, which the MNFSR report does not cover at all). Track G (Week 9) real attempt: Track F's trained crop-share model WAS run on real Sentinel-2 phenology features for this district (real WorldCereal cropland coverage here is only 0.032% of district area -- near-zero, high-altitude terrain) and REJECTED as unreliable, confirmed with you: predicted shares were suspiciously close to the national-mean baseline regardless of real terrain differences, real evidence of tree-model extrapolation failure outside its lowland-plains training domain -- a real z-score input check alone did not catch this, the output implausibility did. See naip/models/crop_classifier_national/gb_ajk_predictions.json for the real rejected prediction and naip/docs/STATUS_WEEK9.md for detail. Stays on the hand-classified mask deliberately, not as an unresolved gap."
+  },
+  "Khushab": {
+    "tier": "real_district_area",
+    "source": "Government of Pakistan, Ministry of National Food Security & Research, 'Crops Area & Production (District wise) 2022-23' -- real district estimates from the four provincial Crop Reporting Services, compiled federally. Area figures in '000 hectares, year 2022-23.",
+    "total_4crop_area_000ha": 130.71,
+    "crops": {
+      "wheat": {
+        "area_2022_23_000ha": 123.02,
+        "production_2022_23_000t": 290.75,
+        "share_of_4crop_area": 0.9412
+      },
+      "cotton": {
+        "area_2022_23_000ha": 0.81,
+        "production_2022_23_000t": 1.8,
+        "share_of_4crop_area": 0.0062
+      },
+      "sugarcane": {
+        "area_2022_23_000ha": 6.88,
+        "production_2022_23_000t": 375.36,
+        "share_of_4crop_area": 0.0526
+      }
+    },
+    "crops_unreliable_source_data": null
+  },
+  "Khuzdar": {
+    "tier": "real_district_area",
+    "source": "Government of Pakistan, Ministry of National Food Security & Research, 'Crops Area & Production (District wise) 2022-23' -- real district estimates from the four provincial Crop Reporting Services, compiled federally. Area figures in '000 hectares, year 2022-23.",
+    "total_4crop_area_000ha": 68.29,
+    "crops": {
+      "wheat": {
+        "area_2022_23_000ha": 67.0,
+        "production_2022_23_000t": 182.51,
+        "share_of_4crop_area": 0.9811
+      },
+      "rice": {
+        "area_2022_23_000ha": 1.29,
+        "production_2022_23_000t": 3.24,
+        "share_of_4crop_area": 0.0189
+      },
+      "sugarcane": {
+        "area_2022_23_000ha": 0.0,
+        "production_2022_23_000t": 0.0,
+        "share_of_4crop_area": 0.0
+      }
+    },
+    "crops_unreliable_source_data": null
+  },
+  "Khyber": {
+    "tier": "real_district_area",
+    "source": "Government of Pakistan, Ministry of National Food Security & Research, 'Crops Area & Production (District wise) 2022-23' -- real district estimates from the four provincial Crop Reporting Services, compiled federally. Area figures in '000 hectares, year 2022-23.",
+    "total_4crop_area_000ha": 12.63,
+    "crops": {
+      "wheat": {
+        "area_2022_23_000ha": 12.63,
+        "production_2022_23_000t": 25.29,
+        "share_of_4crop_area": 1.0
+      },
+      "rice": {
+        "area_2022_23_000ha": 0.0,
+        "production_2022_23_000t": 0.0,
+        "share_of_4crop_area": 0.0
+      }
+    },
+    "crops_unreliable_source_data": [
+      "sugarcane"
+    ]
+  },
+  "Kohat": {
+    "tier": "real_district_area",
+    "source": "Government of Pakistan, Ministry of National Food Security & Research, 'Crops Area & Production (District wise) 2022-23' -- real district estimates from the four provincial Crop Reporting Services, compiled federally. Area figures in '000 hectares, year 2022-23.",
+    "total_4crop_area_000ha": 27.26,
+    "crops": {
+      "wheat": {
+        "area_2022_23_000ha": 27.25,
+        "production_2022_23_000t": 43.8,
+        "share_of_4crop_area": 0.9996
+      },
+      "rice": {
+        "area_2022_23_000ha": 0.01,
+        "production_2022_23_000t": 0.01,
+        "share_of_4crop_area": 0.0004
+      }
+    },
+    "crops_unreliable_source_data": [
+      "cotton",
+      "sugarcane"
+    ]
+  },
+  "Kohistan": {
+    "tier": "real_district_area",
+    "source": "Government of Pakistan, Ministry of National Food Security & Research, 'Crops Area & Production (District wise) 2022-23' -- real district estimates from the four provincial Crop Reporting Services, compiled federally. Area figures in '000 hectares, year 2022-23.",
+    "total_4crop_area_000ha": 2.15,
+    "crops": {
+      "wheat": {
+        "area_2022_23_000ha": 2.07,
+        "production_2022_23_000t": 3.14,
+        "share_of_4crop_area": 0.9628
+      },
+      "rice": {
+        "area_2022_23_000ha": 0.08,
+        "production_2022_23_000t": 0.17,
+        "share_of_4crop_area": 0.0372
+      }
+    },
+    "crops_unreliable_source_data": [
+      "cotton",
+      "sugarcane"
+    ]
+  },
+  "Kohlu": {
+    "tier": "real_district_area",
+    "source": "Government of Pakistan, Ministry of National Food Security & Research, 'Crops Area & Production (District wise) 2022-23' -- real district estimates from the four provincial Crop Reporting Services, compiled federally. Area figures in '000 hectares, year 2022-23.",
+    "total_4crop_area_000ha": 10.3,
+    "crops": {
+      "wheat": {
+        "area_2022_23_000ha": 10.3,
+        "production_2022_23_000t": 26.03,
+        "share_of_4crop_area": 1.0
+      },
+      "rice": {
+        "area_2022_23_000ha": 0.0,
+        "production_2022_23_000t": 0.0,
+        "share_of_4crop_area": 0.0
+      },
+      "sugarcane": {
+        "area_2022_23_000ha": 0.0,
+        "production_2022_23_000t": 0.0,
+        "share_of_4crop_area": 0.0
+      }
+    },
+    "crops_unreliable_source_data": null
+  },
+  "Kurram": {
+    "tier": "real_district_area",
+    "source": "Government of Pakistan, Ministry of National Food Security & Research, 'Crops Area & Production (District wise) 2022-23' -- real district estimates from the four provincial Crop Reporting Services, compiled federally. Area figures in '000 hectares, year 2022-23.",
+    "total_4crop_area_000ha": 33.13,
+    "crops": {
+      "wheat": {
+        "area_2022_23_000ha": 27.13,
+        "production_2022_23_000t": 54.32,
+        "share_of_4crop_area": 0.8189
+      },
+      "rice": {
+        "area_2022_23_000ha": 6.0,
+        "production_2022_23_000t": 17.45,
+        "share_of_4crop_area": 0.1811
+      }
+    },
+    "crops_unreliable_source_data": [
+      "cotton",
+      "sugarcane"
+    ]
+  },
+  "Lahore": {
+    "tier": "real_district_area",
+    "source": "Government of Pakistan, Ministry of National Food Security & Research, 'Crops Area & Production (District wise) 2022-23' -- real district estimates from the four provincial Crop Reporting Services, compiled federally. Area figures in '000 hectares, year 2022-23.",
+    "total_4crop_area_000ha": 70.81,
+    "crops": {
+      "wheat": {
+        "area_2022_23_000ha": 45.73,
+        "production_2022_23_000t": 159.6,
+        "share_of_4crop_area": 0.6458
+      },
+      "cotton": {
+        "area_2022_23_000ha": 0.0,
+        "production_2022_23_000t": 0.0,
+        "share_of_4crop_area": 0.0
+      },
+      "rice": {
+        "area_2022_23_000ha": 24.68,
+        "production_2022_23_000t": 52.76,
+        "share_of_4crop_area": 0.3485
+      },
+      "sugarcane": {
+        "area_2022_23_000ha": 0.4,
+        "production_2022_23_000t": 24.24,
+        "share_of_4crop_area": 0.0056
+      }
+    },
+    "crops_unreliable_source_data": null
+  },
+  "Lakki Marwat": {
+    "tier": "real_district_area",
+    "source": "Government of Pakistan, Ministry of National Food Security & Research, 'Crops Area & Production (District wise) 2022-23' -- real district estimates from the four provincial Crop Reporting Services, compiled federally. Area figures in '000 hectares, year 2022-23.",
+    "total_4crop_area_000ha": 18.52,
+    "crops": {
+      "wheat": {
+        "area_2022_23_000ha": 18.32,
+        "production_2022_23_000t": 20.85,
+        "share_of_4crop_area": 0.9892
+      },
+      "rice": {
+        "area_2022_23_000ha": 0.2,
+        "production_2022_23_000t": 0.31,
+        "share_of_4crop_area": 0.0108
+      }
+    },
+    "crops_unreliable_source_data": [
+      "cotton",
+      "sugarcane"
+    ]
+  },
+  "Lasbela": {
+    "tier": "real_district_area",
+    "source": "Government of Pakistan, Ministry of National Food Security & Research, 'Crops Area & Production (District wise) 2022-23' -- real district estimates from the four provincial Crop Reporting Services, compiled federally. Area figures in '000 hectares, year 2022-23.",
+    "total_4crop_area_000ha": 25.53,
+    "crops": {
+      "wheat": {
+        "area_2022_23_000ha": 25.52,
+        "production_2022_23_000t": 71.47,
+        "share_of_4crop_area": 0.9996
+      },
+      "rice": {
+        "area_2022_23_000ha": 0.0,
+        "production_2022_23_000t": 0.0,
+        "share_of_4crop_area": 0.0
+      },
+      "sugarcane": {
+        "area_2022_23_000ha": 0.01,
+        "production_2022_23_000t": 0.36,
+        "share_of_4crop_area": 0.0004
+      }
+    },
+    "crops_unreliable_source_data": null
+  },
+  "Layyah": {
+    "tier": "real_district_area",
+    "source": "Government of Pakistan, Ministry of National Food Security & Research, 'Crops Area & Production (District wise) 2022-23' -- real district estimates from the four provincial Crop Reporting Services, compiled federally. Area figures in '000 hectares, year 2022-23.",
+    "total_4crop_area_000ha": 331.43,
+    "crops": {
+      "wheat": {
+        "area_2022_23_000ha": 271.54,
+        "production_2022_23_000t": 837.94,
+        "share_of_4crop_area": 0.8193
+      },
+      "cotton": {
+        "area_2022_23_000ha": 40.87,
+        "production_2022_23_000t": 94.9,
+        "share_of_4crop_area": 0.1233
+      },
+      "rice": {
+        "area_2022_23_000ha": 0.81,
+        "production_2022_23_000t": 1.6,
+        "share_of_4crop_area": 0.0024
+      },
+      "sugarcane": {
+        "area_2022_23_000ha": 18.21,
+        "production_2022_23_000t": 1146.6,
+        "share_of_4crop_area": 0.0549
+      }
+    },
+    "crops_unreliable_source_data": null
+  },
+  "Lodhran": {
+    "tier": "real_district_area",
+    "source": "Government of Pakistan, Ministry of National Food Security & Research, 'Crops Area & Production (District wise) 2022-23' -- real district estimates from the four provincial Crop Reporting Services, compiled federally. Area figures in '000 hectares, year 2022-23.",
+    "total_4crop_area_000ha": 277.6,
+    "crops": {
+      "wheat": {
+        "area_2022_23_000ha": 155.4,
+        "production_2022_23_000t": 594.74,
+        "share_of_4crop_area": 0.5598
+      },
+      "cotton": {
+        "area_2022_23_000ha": 107.64,
+        "production_2022_23_000t": 264.5,
+        "share_of_4crop_area": 0.3878
+      },
+      "rice": {
+        "area_2022_23_000ha": 10.92,
+        "production_2022_23_000t": 24.34,
+        "share_of_4crop_area": 0.0393
+      },
+      "sugarcane": {
+        "area_2022_23_000ha": 3.64,
+        "production_2022_23_000t": 327.24,
+        "share_of_4crop_area": 0.0131
+      }
+    },
+    "crops_unreliable_source_data": null
+  },
+  "Loralai": {
+    "tier": "real_district_area",
+    "source": "Government of Pakistan, Ministry of National Food Security & Research, 'Crops Area & Production (District wise) 2022-23' -- real district estimates from the four provincial Crop Reporting Services, compiled federally. Area figures in '000 hectares, year 2022-23.",
+    "total_4crop_area_000ha": 12.07,
+    "crops": {
+      "wheat": {
+        "area_2022_23_000ha": 12.07,
+        "production_2022_23_000t": 27.62,
+        "share_of_4crop_area": 1.0
+      },
+      "rice": {
+        "area_2022_23_000ha": 0.0,
+        "production_2022_23_000t": 0.0,
+        "share_of_4crop_area": 0.0
+      },
+      "sugarcane": {
+        "area_2022_23_000ha": 0.0,
+        "production_2022_23_000t": 0.0,
+        "share_of_4crop_area": 0.0
+      }
+    },
+    "crops_unreliable_source_data": [
+      "cotton"
+    ]
+  },
+  "Lower Dir": {
+    "tier": "real_district_area",
+    "source": "Government of Pakistan, Ministry of National Food Security & Research, 'Crops Area & Production (District wise) 2022-23' -- real district estimates from the four provincial Crop Reporting Services, compiled federally. Area figures in '000 hectares, year 2022-23.",
+    "total_4crop_area_000ha": 36.97,
+    "crops": {
+      "wheat": {
+        "area_2022_23_000ha": 28.86,
+        "production_2022_23_000t": 55.86,
+        "share_of_4crop_area": 0.7806
+      },
+      "rice": {
+        "area_2022_23_000ha": 8.11,
+        "production_2022_23_000t": 19.64,
+        "share_of_4crop_area": 0.2194
+      }
+    },
+    "crops_unreliable_source_data": [
+      "cotton",
+      "sugarcane"
+    ]
+  },
+  "Malakand": {
+    "tier": "real_district_area",
+    "source": "Government of Pakistan, Ministry of National Food Security & Research, 'Crops Area & Production (District wise) 2022-23' -- real district estimates from the four provincial Crop Reporting Services, compiled federally. Area figures in '000 hectares, year 2022-23.",
+    "total_4crop_area_000ha": 29.63,
+    "crops": {
+      "wheat": {
+        "area_2022_23_000ha": 26.5,
+        "production_2022_23_000t": 46.41,
+        "share_of_4crop_area": 0.8944
+      },
+      "rice": {
+        "area_2022_23_000ha": 3.13,
+        "production_2022_23_000t": 8.86,
+        "share_of_4crop_area": 0.1056
+      }
+    },
+    "crops_unreliable_source_data": [
+      "cotton"
+    ]
+  },
+  "Mandi Bahauddin": {
+    "tier": "real_district_area",
+    "source": "Government of Pakistan, Ministry of National Food Security & Research, 'Crops Area & Production (District wise) 2022-23' -- real district estimates from the four provincial Crop Reporting Services, compiled federally. Area figures in '000 hectares, year 2022-23.",
+    "total_4crop_area_000ha": 242.4,
+    "crops": {
+      "wheat": {
+        "area_2022_23_000ha": 133.54,
+        "production_2022_23_000t": 432.43,
+        "share_of_4crop_area": 0.5509
+      },
+      "cotton": {
+        "area_2022_23_000ha": 0.0,
+        "production_2022_23_000t": 0.0,
+        "share_of_4crop_area": 0.0
+      },
+      "rice": {
+        "area_2022_23_000ha": 83.77,
+        "production_2022_23_000t": 178.69,
+        "share_of_4crop_area": 0.3456
+      },
+      "sugarcane": {
+        "area_2022_23_000ha": 25.09,
+        "production_2022_23_000t": 1321.84,
+        "share_of_4crop_area": 0.1035
+      }
+    },
+    "crops_unreliable_source_data": null
+  },
+  "Mansehra": {
+    "tier": "real_district_area",
+    "source": "Government of Pakistan, Ministry of National Food Security & Research, 'Crops Area & Production (District wise) 2022-23' -- real district estimates from the four provincial Crop Reporting Services, compiled federally. Area figures in '000 hectares, year 2022-23.",
+    "total_4crop_area_000ha": 35.82,
+    "crops": {
+      "wheat": {
+        "area_2022_23_000ha": 34.4,
+        "production_2022_23_000t": 56.36,
+        "share_of_4crop_area": 0.9604
+      },
+      "rice": {
+        "area_2022_23_000ha": 1.42,
+        "production_2022_23_000t": 3.73,
+        "share_of_4crop_area": 0.0396
+      }
+    },
+    "crops_unreliable_source_data": [
+      "cotton"
+    ]
+  },
+  "Mardan": {
+    "tier": "real_district_area",
+    "source": "Government of Pakistan, Ministry of National Food Security & Research, 'Crops Area & Production (District wise) 2022-23' -- real district estimates from the four provincial Crop Reporting Services, compiled federally. Area figures in '000 hectares, year 2022-23.",
+    "total_4crop_area_000ha": 47.1,
+    "crops": {
+      "wheat": {
+        "area_2022_23_000ha": 44.45,
+        "production_2022_23_000t": 115.97,
+        "share_of_4crop_area": 0.9437
+      },
+      "rice": {
+        "area_2022_23_000ha": 2.65,
+        "production_2022_23_000t": 4.38,
+        "share_of_4crop_area": 0.0563
+      }
+    },
+    "crops_unreliable_source_data": [
+      "cotton"
+    ]
+  },
+  "Mastung": {
+    "tier": "real_district_area",
+    "source": "Government of Pakistan, Ministry of National Food Security & Research, 'Crops Area & Production (District wise) 2022-23' -- real district estimates from the four provincial Crop Reporting Services, compiled federally. Area figures in '000 hectares, year 2022-23.",
+    "total_4crop_area_000ha": 4.9,
+    "crops": {
+      "wheat": {
+        "area_2022_23_000ha": 4.9,
+        "production_2022_23_000t": 13.18,
+        "share_of_4crop_area": 1.0
+      },
+      "rice": {
+        "area_2022_23_000ha": 0.0,
+        "production_2022_23_000t": 0.0,
+        "share_of_4crop_area": 0.0
+      },
+      "sugarcane": {
+        "area_2022_23_000ha": 0.0,
+        "production_2022_23_000t": 0.0,
+        "share_of_4crop_area": 0.0
+      }
+    },
+    "crops_unreliable_source_data": [
+      "cotton"
+    ]
+  },
+  "Matiari": {
+    "tier": "real_district_area",
+    "source": "Government of Pakistan, Ministry of National Food Security & Research, 'Crops Area & Production (District wise) 2022-23' -- real district estimates from the four provincial Crop Reporting Services, compiled federally. Area figures in '000 hectares, year 2022-23.",
+    "total_4crop_area_000ha": 87.1,
+    "crops": {
+      "wheat": {
+        "area_2022_23_000ha": 47.6,
+        "production_2022_23_000t": 188.23,
+        "share_of_4crop_area": 0.5465
+      },
+      "cotton": {
+        "area_2022_23_000ha": 39.5,
+        "production_2022_23_000t": 142.69,
+        "share_of_4crop_area": 0.4535
+      },
+      "rice": {
+        "area_2022_23_000ha": 0.0,
+        "production_2022_23_000t": 0.0,
+        "share_of_4crop_area": 0.0
+      }
+    },
+    "crops_unreliable_source_data": null
+  },
+  "Mianwali": {
+    "tier": "real_district_area",
+    "source": "Government of Pakistan, Ministry of National Food Security & Research, 'Crops Area & Production (District wise) 2022-23' -- real district estimates from the four provincial Crop Reporting Services, compiled federally. Area figures in '000 hectares, year 2022-23.",
+    "total_4crop_area_000ha": 241.6,
+    "crops": {
+      "wheat": {
+        "area_2022_23_000ha": 190.2,
+        "production_2022_23_000t": 588.45,
+        "share_of_4crop_area": 0.7873
+      },
+      "cotton": {
+        "area_2022_23_000ha": 42.49,
+        "production_2022_23_000t": 163.3,
+        "share_of_4crop_area": 0.1759
+      },
+      "rice": {
+        "area_2022_23_000ha": 3.24,
+        "production_2022_23_000t": 8.47,
+        "share_of_4crop_area": 0.0134
+      },
+      "sugarcane": {
+        "area_2022_23_000ha": 5.67,
+        "production_2022_23_000t": 392.0,
+        "share_of_4crop_area": 0.0235
+      }
+    },
+    "crops_unreliable_source_data": null
+  },
+  "Mirpurkhas": {
+    "tier": "real_district_area",
+    "source": "Government of Pakistan, Ministry of National Food Security & Research, 'Crops Area & Production (District wise) 2022-23' -- real district estimates from the four provincial Crop Reporting Services, compiled federally. Area figures in '000 hectares, year 2022-23.",
+    "total_4crop_area_000ha": 111.76,
+    "crops": {
+      "wheat": {
+        "area_2022_23_000ha": 73.89,
+        "production_2022_23_000t": 223.34,
+        "share_of_4crop_area": 0.6611
+      },
+      "cotton": {
+        "area_2022_23_000ha": 37.87,
+        "production_2022_23_000t": 127.04,
+        "share_of_4crop_area": 0.3389
+      },
+      "rice": {
+        "area_2022_23_000ha": 0.0,
+        "production_2022_23_000t": 0.0,
+        "share_of_4crop_area": 0.0
+      }
+    },
+    "crops_unreliable_source_data": [
+      "sugarcane"
+    ]
+  },
+  "Mohmand": {
+    "tier": "real_district_area",
+    "source": "Government of Pakistan, Ministry of National Food Security & Research, 'Crops Area & Production (District wise) 2022-23' -- real district estimates from the four provincial Crop Reporting Services, compiled federally. Area figures in '000 hectares, year 2022-23.",
+    "total_4crop_area_000ha": 8.32,
+    "crops": {
+      "wheat": {
+        "area_2022_23_000ha": 8.32,
+        "production_2022_23_000t": 13.1,
+        "share_of_4crop_area": 1.0
+      },
+      "rice": {
+        "area_2022_23_000ha": 0.0,
+        "production_2022_23_000t": 0.0,
+        "share_of_4crop_area": 0.0
+      }
+    },
+    "crops_unreliable_source_data": [
+      "sugarcane"
+    ]
+  },
+  "Multan": {
+    "tier": "real_district_area",
+    "source": "Government of Pakistan, Ministry of National Food Security & Research, 'Crops Area & Production (District wise) 2022-23' -- real district estimates from the four provincial Crop Reporting Services, compiled federally. Area figures in '000 hectares, year 2022-23.",
+    "total_4crop_area_000ha": 304.73,
+    "crops": {
+      "wheat": {
+        "area_2022_23_000ha": 173.2,
+        "production_2022_23_000t": 641.49,
+        "share_of_4crop_area": 0.5684
+      },
+      "cotton": {
+        "area_2022_23_000ha": 97.53,
+        "production_2022_23_000t": 189.0,
+        "share_of_4crop_area": 0.3201
+      },
+      "rice": {
+        "area_2022_23_000ha": 29.95,
+        "production_2022_23_000t": 68.74,
+        "share_of_4crop_area": 0.0983
+      },
+      "sugarcane": {
+        "area_2022_23_000ha": 4.05,
+        "production_2022_23_000t": 260.0,
+        "share_of_4crop_area": 0.0133
+      }
+    },
+    "crops_unreliable_source_data": null
+  },
+  "Musakhel": {
+    "tier": "real_district_area",
+    "source": "Government of Pakistan, Ministry of National Food Security & Research, 'Crops Area & Production (District wise) 2022-23' -- real district estimates from the four provincial Crop Reporting Services, compiled federally. Area figures in '000 hectares, year 2022-23.",
+    "total_4crop_area_000ha": 3.53,
+    "crops": {
+      "wheat": {
+        "area_2022_23_000ha": 3.53,
+        "production_2022_23_000t": 6.73,
+        "share_of_4crop_area": 1.0
+      },
+      "rice": {
+        "area_2022_23_000ha": 0.0,
+        "production_2022_23_000t": 0.0,
+        "share_of_4crop_area": 0.0
+      },
+      "sugarcane": {
+        "area_2022_23_000ha": 0.0,
+        "production_2022_23_000t": 0.0,
+        "share_of_4crop_area": 0.0
+      }
+    },
+    "crops_unreliable_source_data": null
+  },
+  "Muzaffargarh": {
+    "tier": "real_district_area",
+    "source": "Government of Pakistan, Ministry of National Food Security & Research, 'Crops Area & Production (District wise) 2022-23' -- real district estimates from the four provincial Crop Reporting Services, compiled federally. Area figures in '000 hectares, year 2022-23.",
+    "total_4crop_area_000ha": 411.97,
+    "crops": {
+      "wheat": {
+        "area_2022_23_000ha": 234.31,
+        "production_2022_23_000t": 730.8,
+        "share_of_4crop_area": 0.5688
+      },
+      "cotton": {
+        "area_2022_23_000ha": 90.65,
+        "production_2022_23_000t": 126.6,
+        "share_of_4crop_area": 0.22
+      },
+      "rice": {
+        "area_2022_23_000ha": 28.33,
+        "production_2022_23_000t": 60.78,
+        "share_of_4crop_area": 0.0688
+      },
+      "sugarcane": {
+        "area_2022_23_000ha": 58.68,
+        "production_2022_23_000t": 4158.6,
+        "share_of_4crop_area": 0.1424
+      }
+    },
+    "crops_unreliable_source_data": null
+  },
+  "Nagar": {
+    "tier": "hand_classified_mask",
+    "source": "naip/models/fusion/crop_plausibility.py -- Week 4 hand-classified agronomic-geography mask (NOT real crop-area data). This district was not matched in the real MNFSR district table (Gilgit-Baltistan/Azad Kashmir, which the MNFSR report does not cover at all). Track G (Week 9) real attempt: Track F's trained crop-share model WAS run on real Sentinel-2 phenology features for this district (real WorldCereal cropland coverage here is only 0.084% of district area -- near-zero, high-altitude terrain) and REJECTED as unreliable, confirmed with you: predicted shares were suspiciously close to the national-mean baseline regardless of real terrain differences, and predicted an impossible negative share for ['sugarcane'] in this district, real evidence of tree-model extrapolation failure outside its lowland-plains training domain -- a real z-score input check alone did not catch this, the output implausibility did. See naip/models/crop_classifier_national/gb_ajk_predictions.json for the real rejected prediction and naip/docs/STATUS_WEEK9.md for detail. Stays on the hand-classified mask deliberately, not as an unresolved gap."
+  },
+  "Narowal": {
+    "tier": "real_district_area",
+    "source": "Government of Pakistan, Ministry of National Food Security & Research, 'Crops Area & Production (District wise) 2022-23' -- real district estimates from the four provincial Crop Reporting Services, compiled federally. Area figures in '000 hectares, year 2022-23.",
+    "total_4crop_area_000ha": 203.06,
+    "crops": {
+      "wheat": {
+        "area_2022_23_000ha": 126.25,
+        "production_2022_23_000t": 364.83,
+        "share_of_4crop_area": 0.6217
+      },
+      "cotton": {
+        "area_2022_23_000ha": 0.0,
+        "production_2022_23_000t": 0.0,
+        "share_of_4crop_area": 0.0
+      },
+      "rice": {
+        "area_2022_23_000ha": 76.0,
+        "production_2022_23_000t": 584.89,
+        "share_of_4crop_area": 0.3743
+      },
+      "sugarcane": {
+        "area_2022_23_000ha": 0.81,
+        "production_2022_23_000t": 44.8,
+        "share_of_4crop_area": 0.004
+      }
+    },
+    "crops_unreliable_source_data": null
+  },
+  "Nasirabad": {
+    "tier": "real_district_area",
+    "source": "Government of Pakistan, Ministry of National Food Security & Research, 'Crops Area & Production (District wise) 2022-23' -- real district estimates from the four provincial Crop Reporting Services, compiled federally. Area figures in '000 hectares, year 2022-23.",
+    "total_4crop_area_000ha": 142.03,
+    "crops": {
+      "wheat": {
+        "area_2022_23_000ha": 93.25,
+        "production_2022_23_000t": 325.62,
+        "share_of_4crop_area": 0.6566
+      },
+      "rice": {
+        "area_2022_23_000ha": 48.78,
+        "production_2022_23_000t": 10.8,
+        "share_of_4crop_area": 0.3434
+      },
+      "sugarcane": {
+        "area_2022_23_000ha": 0.0,
+        "production_2022_23_000t": 0.0,
+        "share_of_4crop_area": 0.0
+      }
+    },
+    "crops_unreliable_source_data": null
+  },
+  "Naushehro Feroze": {
+    "tier": "real_district_area",
+    "source": "Government of Pakistan, Ministry of National Food Security & Research, 'Crops Area & Production (District wise) 2022-23' -- real district estimates from the four provincial Crop Reporting Services, compiled federally. Area figures in '000 hectares, year 2022-23.",
+    "total_4crop_area_000ha": 136.28,
+    "crops": {
+      "wheat": {
+        "area_2022_23_000ha": 95.12,
+        "production_2022_23_000t": 339.5,
+        "share_of_4crop_area": 0.698
+      },
+      "cotton": {
+        "area_2022_23_000ha": 38.61,
+        "production_2022_23_000t": 65.75,
+        "share_of_4crop_area": 0.2833
+      },
+      "rice": {
+        "area_2022_23_000ha": 2.55,
+        "production_2022_23_000t": 7.61,
+        "share_of_4crop_area": 0.0187
+      }
+    },
+    "crops_unreliable_source_data": null
+  },
+  "Nawabshah": {
+    "tier": "real_district_area",
+    "source": "Government of Pakistan, Ministry of National Food Security & Research, 'Crops Area & Production (District wise) 2022-23' -- real district estimates from the four provincial Crop Reporting Services, compiled federally. Area figures in '000 hectares, year 2022-23.",
+    "total_4crop_area_000ha": 154.87,
+    "crops": {
+      "wheat": {
+        "area_2022_23_000ha": 84.98,
+        "production_2022_23_000t": 356.66,
+        "share_of_4crop_area": 0.5487
+      },
+      "cotton": {
+        "area_2022_23_000ha": 66.34,
+        "production_2022_23_000t": 108.84,
+        "share_of_4crop_area": 0.4284
+      },
+      "rice": {
+        "area_2022_23_000ha": 3.55,
+        "production_2022_23_000t": 12.38,
+        "share_of_4crop_area": 0.0229
+      }
+    },
+    "crops_unreliable_source_data": [
+      "sugarcane"
+    ]
+  },
+  "North Waziristan": {
+    "tier": "real_district_area",
+    "source": "Government of Pakistan, Ministry of National Food Security & Research, 'Crops Area & Production (District wise) 2022-23' -- real district estimates from the four provincial Crop Reporting Services, compiled federally. Area figures in '000 hectares, year 2022-23.",
+    "total_4crop_area_000ha": 6.0,
+    "crops": {
+      "wheat": {
+        "area_2022_23_000ha": 5.81,
+        "production_2022_23_000t": 13.12,
+        "share_of_4crop_area": 0.9683
+      },
+      "rice": {
+        "area_2022_23_000ha": 0.19,
+        "production_2022_23_000t": 0.3,
+        "share_of_4crop_area": 0.0317
+      }
+    },
+    "crops_unreliable_source_data": [
+      "cotton",
+      "sugarcane"
+    ]
+  },
+  "Nowshera": {
+    "tier": "real_district_area",
+    "source": "Government of Pakistan, Ministry of National Food Security & Research, 'Crops Area & Production (District wise) 2022-23' -- real district estimates from the four provincial Crop Reporting Services, compiled federally. Area figures in '000 hectares, year 2022-23.",
+    "total_4crop_area_000ha": 28.02,
+    "crops": {
+      "wheat": {
+        "area_2022_23_000ha": 28.0,
+        "production_2022_23_000t": 68.1,
+        "share_of_4crop_area": 0.9993
+      },
+      "rice": {
+        "area_2022_23_000ha": 0.02,
+        "production_2022_23_000t": 0.05,
+        "share_of_4crop_area": 0.0007
+      }
+    },
+    "crops_unreliable_source_data": [
+      "sugarcane"
+    ]
+  },
+  "Nushki": {
+    "tier": "real_district_area",
+    "source": "Government of Pakistan, Ministry of National Food Security & Research, 'Crops Area & Production (District wise) 2022-23' -- real district estimates from the four provincial Crop Reporting Services, compiled federally. Area figures in '000 hectares, year 2022-23.",
+    "total_4crop_area_000ha": 8.42,
+    "crops": {
+      "wheat": {
+        "area_2022_23_000ha": 8.42,
+        "production_2022_23_000t": 21.01,
+        "share_of_4crop_area": 1.0
+      }
+    },
+    "crops_unreliable_source_data": null
+  },
+  "Okara": {
+    "tier": "real_district_area",
+    "source": "Government of Pakistan, Ministry of National Food Security & Research, 'Crops Area & Production (District wise) 2022-23' -- real district estimates from the four provincial Crop Reporting Services, compiled federally. Area figures in '000 hectares, year 2022-23.",
+    "total_4crop_area_000ha": 271.13,
+    "crops": {
+      "wheat": {
+        "area_2022_23_000ha": 129.09,
+        "production_2022_23_000t": 506.44,
+        "share_of_4crop_area": 0.4761
+      },
+      "cotton": {
+        "area_2022_23_000ha": 4.45,
+        "production_2022_23_000t": 19.3,
+        "share_of_4crop_area": 0.0164
+      },
+      "rice": {
+        "area_2022_23_000ha": 126.26,
+        "production_2022_23_000t": 349.42,
+        "share_of_4crop_area": 0.4657
+      },
+      "sugarcane": {
+        "area_2022_23_000ha": 11.33,
+        "production_2022_23_000t": 1150.24,
+        "share_of_4crop_area": 0.0418
+      }
+    },
+    "crops_unreliable_source_data": null
+  },
+  "Orakzai": {
+    "tier": "real_district_area",
+    "source": "Government of Pakistan, Ministry of National Food Security & Research, 'Crops Area & Production (District wise) 2022-23' -- real district estimates from the four provincial Crop Reporting Services, compiled federally. Area figures in '000 hectares, year 2022-23.",
+    "total_4crop_area_000ha": 5.16,
+    "crops": {
+      "wheat": {
+        "area_2022_23_000ha": 4.77,
+        "production_2022_23_000t": 8.69,
+        "share_of_4crop_area": 0.9244
+      },
+      "rice": {
+        "area_2022_23_000ha": 0.39,
+        "production_2022_23_000t": 0.7,
+        "share_of_4crop_area": 0.0756
+      }
+    },
+    "crops_unreliable_source_data": [
+      "cotton",
+      "sugarcane"
+    ]
+  },
+  "Pakpattan": {
+    "tier": "real_district_area",
+    "source": "Government of Pakistan, Ministry of National Food Security & Research, 'Crops Area & Production (District wise) 2022-23' -- real district estimates from the four provincial Crop Reporting Services, compiled federally. Area figures in '000 hectares, year 2022-23.",
+    "total_4crop_area_000ha": 178.31,
+    "crops": {
+      "wheat": {
+        "area_2022_23_000ha": 85.39,
+        "production_2022_23_000t": 324.77,
+        "share_of_4crop_area": 0.4789
+      },
+      "cotton": {
+        "area_2022_23_000ha": 8.9,
+        "production_2022_23_000t": 32.8,
+        "share_of_4crop_area": 0.0499
+      },
+      "rice": {
+        "area_2022_23_000ha": 82.0,
+        "production_2022_23_000t": 218.06,
+        "share_of_4crop_area": 0.4599
+      },
+      "sugarcane": {
+        "area_2022_23_000ha": 2.02,
+        "production_2022_23_000t": 122.2,
+        "share_of_4crop_area": 0.0113
+      }
+    },
+    "crops_unreliable_source_data": null
+  },
+  "Panjgur": {
+    "tier": "real_district_area",
+    "source": "Government of Pakistan, Ministry of National Food Security & Research, 'Crops Area & Production (District wise) 2022-23' -- real district estimates from the four provincial Crop Reporting Services, compiled federally. Area figures in '000 hectares, year 2022-23.",
+    "total_4crop_area_000ha": 6.51,
+    "crops": {
+      "wheat": {
+        "area_2022_23_000ha": 6.49,
+        "production_2022_23_000t": 13.64,
+        "share_of_4crop_area": 0.9969
+      },
+      "rice": {
+        "area_2022_23_000ha": 0.02,
+        "production_2022_23_000t": 0.03,
+        "share_of_4crop_area": 0.0031
+      },
+      "sugarcane": {
+        "area_2022_23_000ha": 0.0,
+        "production_2022_23_000t": 0.0,
+        "share_of_4crop_area": 0.0
+      }
+    },
+    "crops_unreliable_source_data": null
+  },
+  "Peshawar": {
+    "tier": "real_district_area",
+    "source": "Government of Pakistan, Ministry of National Food Security & Research, 'Crops Area & Production (District wise) 2022-23' -- real district estimates from the four provincial Crop Reporting Services, compiled federally. Area figures in '000 hectares, year 2022-23.",
+    "total_4crop_area_000ha": 34.73,
+    "crops": {
+      "wheat": {
+        "area_2022_23_000ha": 34.67,
+        "production_2022_23_000t": 84.93,
+        "share_of_4crop_area": 0.9983
+      },
+      "rice": {
+        "area_2022_23_000ha": 0.06,
+        "production_2022_23_000t": 0.22,
+        "share_of_4crop_area": 0.0017
+      }
+    },
+    "crops_unreliable_source_data": [
+      "sugarcane"
+    ]
+  },
+  "Pishin": {
+    "tier": "real_district_area",
+    "source": "Government of Pakistan, Ministry of National Food Security & Research, 'Crops Area & Production (District wise) 2022-23' -- real district estimates from the four provincial Crop Reporting Services, compiled federally. Area figures in '000 hectares, year 2022-23.",
+    "total_4crop_area_000ha": 4.97,
+    "crops": {
+      "wheat": {
+        "area_2022_23_000ha": 4.97,
+        "production_2022_23_000t": 13.23,
+        "share_of_4crop_area": 1.0
+      },
+      "rice": {
+        "area_2022_23_000ha": 0.0,
+        "production_2022_23_000t": 0.0,
+        "share_of_4crop_area": 0.0
+      },
+      "sugarcane": {
+        "area_2022_23_000ha": 0.0,
+        "production_2022_23_000t": 0.0,
+        "share_of_4crop_area": 0.0
+      }
+    },
+    "crops_unreliable_source_data": [
+      "cotton"
+    ]
+  },
+  "Qambar Shahdadkot": {
+    "tier": "real_district_area",
+    "source": "Government of Pakistan, Ministry of National Food Security & Research, 'Crops Area & Production (District wise) 2022-23' -- real district estimates from the four provincial Crop Reporting Services, compiled federally. Area figures in '000 hectares, year 2022-23.",
+    "total_4crop_area_000ha": 105.31,
+    "crops": {
+      "wheat": {
+        "area_2022_23_000ha": 78.38,
+        "production_2022_23_000t": 234.16,
+        "share_of_4crop_area": 0.7443
+      },
+      "cotton": {
+        "area_2022_23_000ha": 0.0,
+        "production_2022_23_000t": 0.0,
+        "share_of_4crop_area": 0.0
+      },
+      "rice": {
+        "area_2022_23_000ha": 26.93,
+        "production_2022_23_000t": 48.22,
+        "share_of_4crop_area": 0.2557
+      }
+    },
+    "crops_unreliable_source_data": [
+      "sugarcane"
+    ]
+  },
+  "Qilla Abdullah": {
+    "tier": "real_district_area",
+    "source": "Government of Pakistan, Ministry of National Food Security & Research, 'Crops Area & Production (District wise) 2022-23' -- real district estimates from the four provincial Crop Reporting Services, compiled federally. Area figures in '000 hectares, year 2022-23.",
+    "total_4crop_area_000ha": 1.79,
+    "crops": {
+      "wheat": {
+        "area_2022_23_000ha": 1.79,
+        "production_2022_23_000t": 4.28,
+        "share_of_4crop_area": 1.0
+      },
+      "rice": {
+        "area_2022_23_000ha": 0.0,
+        "production_2022_23_000t": 0.0,
+        "share_of_4crop_area": 0.0
+      },
+      "sugarcane": {
+        "area_2022_23_000ha": 0.0,
+        "production_2022_23_000t": 0.0,
+        "share_of_4crop_area": 0.0
+      }
+    },
+    "crops_unreliable_source_data": null
+  },
+  "Qilla Saifullah": {
+    "tier": "real_district_area",
+    "source": "Government of Pakistan, Ministry of National Food Security & Research, 'Crops Area & Production (District wise) 2022-23' -- real district estimates from the four provincial Crop Reporting Services, compiled federally. Area figures in '000 hectares, year 2022-23.",
+    "total_4crop_area_000ha": 8.37,
+    "crops": {
+      "wheat": {
+        "area_2022_23_000ha": 8.37,
+        "production_2022_23_000t": 21.37,
+        "share_of_4crop_area": 1.0
+      },
+      "rice": {
+        "area_2022_23_000ha": 0.0,
+        "production_2022_23_000t": 0.0,
+        "share_of_4crop_area": 0.0
+      },
+      "sugarcane": {
+        "area_2022_23_000ha": 0.0,
+        "production_2022_23_000t": 0.0,
+        "share_of_4crop_area": 0.0
+      }
+    },
+    "crops_unreliable_source_data": null
+  },
+  "Quetta": {
+    "tier": "real_district_area",
+    "source": "Government of Pakistan, Ministry of National Food Security & Research, 'Crops Area & Production (District wise) 2022-23' -- real district estimates from the four provincial Crop Reporting Services, compiled federally. Area figures in '000 hectares, year 2022-23.",
+    "total_4crop_area_000ha": 2.39,
+    "crops": {
+      "wheat": {
+        "area_2022_23_000ha": 2.39,
+        "production_2022_23_000t": 5.59,
+        "share_of_4crop_area": 1.0
+      },
+      "rice": {
+        "area_2022_23_000ha": 0.0,
+        "production_2022_23_000t": 0.0,
+        "share_of_4crop_area": 0.0
+      },
+      "sugarcane": {
+        "area_2022_23_000ha": 0.0,
+        "production_2022_23_000t": 0.0,
+        "share_of_4crop_area": 0.0
+      }
+    },
+    "crops_unreliable_source_data": null
+  },
+  "Rahim Yar Khan": {
+    "tier": "real_district_area",
+    "source": "Government of Pakistan, Ministry of National Food Security & Research, 'Crops Area & Production (District wise) 2022-23' -- real district estimates from the four provincial Crop Reporting Services, compiled federally. Area figures in '000 hectares, year 2022-23.",
+    "total_4crop_area_000ha": 723.95,
+    "crops": {
+      "wheat": {
+        "area_2022_23_000ha": 289.34,
+        "production_2022_23_000t": 1093.66,
+        "share_of_4crop_area": 0.3997
+      },
+      "cotton": {
+        "area_2022_23_000ha": 189.79,
+        "production_2022_23_000t": 362.7,
+        "share_of_4crop_area": 0.2622
+      },
+      "rice": {
+        "area_2022_23_000ha": 28.32,
+        "production_2022_23_000t": 56.1,
+        "share_of_4crop_area": 0.0391
+      },
+      "sugarcane": {
+        "area_2022_23_000ha": 216.5,
+        "production_2022_23_000t": 17505.2,
+        "share_of_4crop_area": 0.2991
+      }
+    },
+    "crops_unreliable_source_data": null
+  },
+  "Rajanpur": {
+    "tier": "real_district_area",
+    "source": "Government of Pakistan, Ministry of National Food Security & Research, 'Crops Area & Production (District wise) 2022-23' -- real district estimates from the four provincial Crop Reporting Services, compiled federally. Area figures in '000 hectares, year 2022-23.",
+    "total_4crop_area_000ha": 365.02,
+    "crops": {
+      "wheat": {
+        "area_2022_23_000ha": 185.34,
+        "production_2022_23_000t": 649.12,
+        "share_of_4crop_area": 0.5078
+      },
+      "cotton": {
+        "area_2022_23_000ha": 110.07,
+        "production_2022_23_000t": 133.7,
+        "share_of_4crop_area": 0.3015
+      },
+      "rice": {
+        "area_2022_23_000ha": 16.19,
+        "production_2022_23_000t": 31.41,
+        "share_of_4crop_area": 0.0444
+      },
+      "sugarcane": {
+        "area_2022_23_000ha": 53.42,
+        "production_2022_23_000t": 3944.16,
+        "share_of_4crop_area": 0.1463
+      }
+    },
+    "crops_unreliable_source_data": null
+  },
+  "Rawalpindi": {
+    "tier": "real_district_area",
+    "source": "Government of Pakistan, Ministry of National Food Security & Research, 'Crops Area & Production (District wise) 2022-23' -- real district estimates from the four provincial Crop Reporting Services, compiled federally. Area figures in '000 hectares, year 2022-23.",
+    "total_4crop_area_000ha": 168.34,
+    "crops": {
+      "wheat": {
+        "area_2022_23_000ha": 168.34,
+        "production_2022_23_000t": 349.03,
+        "share_of_4crop_area": 1.0
+      },
+      "cotton": {
+        "area_2022_23_000ha": 0.0,
+        "production_2022_23_000t": 0.0,
+        "share_of_4crop_area": 0.0
+      },
+      "rice": {
+        "area_2022_23_000ha": 0.0,
+        "production_2022_23_000t": 0.0,
+        "share_of_4crop_area": 0.0
+      },
+      "sugarcane": {
+        "area_2022_23_000ha": 0.0,
+        "production_2022_23_000t": 0.0,
+        "share_of_4crop_area": 0.0
+      }
+    },
+    "crops_unreliable_source_data": null
+  },
+  "Sahiwal": {
+    "tier": "real_district_area",
+    "source": "Government of Pakistan, Ministry of National Food Security & Research, 'Crops Area & Production (District wise) 2022-23' -- real district estimates from the four provincial Crop Reporting Services, compiled federally. Area figures in '000 hectares, year 2022-23.",
+    "total_4crop_area_000ha": 178.06,
+    "crops": {
+      "wheat": {
+        "area_2022_23_000ha": 111.29,
+        "production_2022_23_000t": 407.77,
+        "share_of_4crop_area": 0.625
+      },
+      "cotton": {
+        "area_2022_23_000ha": 28.33,
+        "production_2022_23_000t": 86.4,
+        "share_of_4crop_area": 0.1591
+      },
+      "rice": {
+        "area_2022_23_000ha": 34.8,
+        "production_2022_23_000t": 95.27,
+        "share_of_4crop_area": 0.1954
+      },
+      "sugarcane": {
+        "area_2022_23_000ha": 3.64,
+        "production_2022_23_000t": 231.48,
+        "share_of_4crop_area": 0.0204
+      }
+    },
+    "crops_unreliable_source_data": null
+  },
+  "Sanghar": {
+    "tier": "real_district_area",
+    "source": "Government of Pakistan, Ministry of National Food Security & Research, 'Crops Area & Production (District wise) 2022-23' -- real district estimates from the four provincial Crop Reporting Services, compiled federally. Area figures in '000 hectares, year 2022-23.",
+    "total_4crop_area_000ha": 209.16,
+    "crops": {
+      "wheat": {
+        "area_2022_23_000ha": 123.79,
+        "production_2022_23_000t": 348.1,
+        "share_of_4crop_area": 0.5918
+      },
+      "cotton": {
+        "area_2022_23_000ha": 79.68,
+        "production_2022_23_000t": 384.34,
+        "share_of_4crop_area": 0.381
+      },
+      "rice": {
+        "area_2022_23_000ha": 5.69,
+        "production_2022_23_000t": 17.81,
+        "share_of_4crop_area": 0.0272
+      }
+    },
+    "crops_unreliable_source_data": [
+      "sugarcane"
+    ]
+  },
+  "Sargodha": {
+    "tier": "real_district_area",
+    "source": "Government of Pakistan, Ministry of National Food Security & Research, 'Crops Area & Production (District wise) 2022-23' -- real district estimates from the four provincial Crop Reporting Services, compiled federally. Area figures in '000 hectares, year 2022-23.",
+    "total_4crop_area_000ha": 314.84,
+    "crops": {
+      "wheat": {
+        "area_2022_23_000ha": 200.72,
+        "production_2022_23_000t": 630.12,
+        "share_of_4crop_area": 0.6375
+      },
+      "cotton": {
+        "area_2022_23_000ha": 1.62,
+        "production_2022_23_000t": 2.7,
+        "share_of_4crop_area": 0.0051
+      },
+      "rice": {
+        "area_2022_23_000ha": 43.71,
+        "production_2022_23_000t": 83.25,
+        "share_of_4crop_area": 0.1388
+      },
+      "sugarcane": {
+        "area_2022_23_000ha": 68.79,
+        "production_2022_23_000t": 4318.0,
+        "share_of_4crop_area": 0.2185
+      }
+    },
+    "crops_unreliable_source_data": null
+  },
+  "Shangla": {
+    "tier": "real_district_area",
+    "source": "Government of Pakistan, Ministry of National Food Security & Research, 'Crops Area & Production (District wise) 2022-23' -- real district estimates from the four provincial Crop Reporting Services, compiled federally. Area figures in '000 hectares, year 2022-23.",
+    "total_4crop_area_000ha": 26.94,
+    "crops": {
+      "wheat": {
+        "area_2022_23_000ha": 25.58,
+        "production_2022_23_000t": 33.84,
+        "share_of_4crop_area": 0.9495
+      },
+      "rice": {
+        "area_2022_23_000ha": 1.36,
+        "production_2022_23_000t": 3.81,
+        "share_of_4crop_area": 0.0505
+      }
+    },
+    "crops_unreliable_source_data": [
+      "cotton",
+      "sugarcane"
+    ]
+  },
+  "Sheikhpura": {
+    "tier": "real_district_area",
+    "source": "Government of Pakistan, Ministry of National Food Security & Research, 'Crops Area & Production (District wise) 2022-23' -- real district estimates from the four provincial Crop Reporting Services, compiled federally. Area figures in '000 hectares, year 2022-23.",
+    "total_4crop_area_000ha": 716.28,
+    "crops": {
+      "wheat": {
+        "area_2022_23_000ha": 356.93,
+        "production_2022_23_000t": 1211.54,
+        "share_of_4crop_area": 0.4983
+      },
+      "cotton": {
+        "area_2022_23_000ha": 0.0,
+        "production_2022_23_000t": 0.0,
+        "share_of_4crop_area": 0.0
+      },
+      "rice": {
+        "area_2022_23_000ha": 343.97,
+        "production_2022_23_000t": 805.53,
+        "share_of_4crop_area": 0.4802
+      },
+      "sugarcane": {
+        "area_2022_23_000ha": 15.38,
+        "production_2022_23_000t": 968.64,
+        "share_of_4crop_area": 0.0215
+      }
+    },
+    "crops_unreliable_source_data": null
+  },
+  "Shigar": {
+    "tier": "hand_classified_mask",
+    "source": "naip/models/fusion/crop_plausibility.py -- Week 4 hand-classified agronomic-geography mask (NOT real crop-area data). This district was not matched in the real MNFSR district table (Gilgit-Baltistan/Azad Kashmir, which the MNFSR report does not cover at all). Track G (Week 9) real attempt: Track F's trained crop-share model WAS run on real Sentinel-2 phenology features for this district (real WorldCereal cropland coverage here is only 0.168% of district area -- near-zero, high-altitude terrain) and REJECTED as unreliable, confirmed with you: predicted shares were suspiciously close to the national-mean baseline regardless of real terrain differences, real evidence of tree-model extrapolation failure outside its lowland-plains training domain -- a real z-score input check alone did not catch this, the output implausibility did. See naip/models/crop_classifier_national/gb_ajk_predictions.json for the real rejected prediction and naip/docs/STATUS_WEEK9.md for detail. Stays on the hand-classified mask deliberately, not as an unresolved gap."
+  },
+  "Shikarpur": {
+    "tier": "real_district_area",
+    "source": "Government of Pakistan, Ministry of National Food Security & Research, 'Crops Area & Production (District wise) 2022-23' -- real district estimates from the four provincial Crop Reporting Services, compiled federally. Area figures in '000 hectares, year 2022-23.",
+    "total_4crop_area_000ha": 132.55,
+    "crops": {
+      "wheat": {
+        "area_2022_23_000ha": 45.32,
+        "production_2022_23_000t": 127.85,
+        "share_of_4crop_area": 0.3419
+      },
+      "cotton": {
+        "area_2022_23_000ha": 0.28,
+        "production_2022_23_000t": 0.0,
+        "share_of_4crop_area": 0.0021
+      },
+      "rice": {
+        "area_2022_23_000ha": 86.95,
+        "production_2022_23_000t": 299.59,
+        "share_of_4crop_area": 0.656
+      }
+    },
+    "crops_unreliable_source_data": [
+      "sugarcane"
+    ]
+  },
+  "Sialkot": {
+    "tier": "real_district_area",
+    "source": "Government of Pakistan, Ministry of National Food Security & Research, 'Crops Area & Production (District wise) 2022-23' -- real district estimates from the four provincial Crop Reporting Services, compiled federally. Area figures in '000 hectares, year 2022-23.",
+    "total_4crop_area_000ha": 382.06,
+    "crops": {
+      "wheat": {
+        "area_2022_23_000ha": 190.2,
+        "production_2022_23_000t": 565.13,
+        "share_of_4crop_area": 0.4978
+      },
+      "cotton": {
+        "area_2022_23_000ha": 0.0,
+        "production_2022_23_000t": 0.0,
+        "share_of_4crop_area": 0.0
+      },
+      "rice": {
+        "area_2022_23_000ha": 187.0,
+        "production_2022_23_000t": 364.35,
+        "share_of_4crop_area": 0.4895
+      },
+      "sugarcane": {
+        "area_2022_23_000ha": 4.86,
+        "production_2022_23_000t": 395.52,
+        "share_of_4crop_area": 0.0127
+      }
+    },
+    "crops_unreliable_source_data": null
+  },
+  "Sibi": {
+    "tier": "real_district_area",
+    "source": "Government of Pakistan, Ministry of National Food Security & Research, 'Crops Area & Production (District wise) 2022-23' -- real district estimates from the four provincial Crop Reporting Services, compiled federally. Area figures in '000 hectares, year 2022-23.",
+    "total_4crop_area_000ha": 17.32,
+    "crops": {
+      "wheat": {
+        "area_2022_23_000ha": 17.32,
+        "production_2022_23_000t": 44.08,
+        "share_of_4crop_area": 1.0
+      },
+      "rice": {
+        "area_2022_23_000ha": 0.0,
+        "production_2022_23_000t": 0.0,
+        "share_of_4crop_area": 0.0
+      },
+      "sugarcane": {
+        "area_2022_23_000ha": 0.0,
+        "production_2022_23_000t": 0.0,
+        "share_of_4crop_area": 0.0
+      }
+    },
+    "crops_unreliable_source_data": [
+      "cotton"
+    ]
+  },
+  "Skardu": {
+    "tier": "hand_classified_mask",
+    "source": "naip/models/fusion/crop_plausibility.py -- Week 4 hand-classified agronomic-geography mask (NOT real crop-area data). This district was not matched in the real MNFSR district table (Gilgit-Baltistan/Azad Kashmir, which the MNFSR report does not cover at all). Track G (Week 9) real attempt: Track F's trained crop-share model WAS run on real Sentinel-2 phenology features for this district (real WorldCereal cropland coverage here is only 0.181% of district area -- near-zero, high-altitude terrain) and REJECTED as unreliable, confirmed with you: predicted shares were suspiciously close to the national-mean baseline regardless of real terrain differences, real evidence of tree-model extrapolation failure outside its lowland-plains training domain -- a real z-score input check alone did not catch this, the output implausibility did. See naip/models/crop_classifier_national/gb_ajk_predictions.json for the real rejected prediction and naip/docs/STATUS_WEEK9.md for detail. Stays on the hand-classified mask deliberately, not as an unresolved gap."
+  },
+  "South Waziristan": {
+    "tier": "real_district_area",
+    "source": "Government of Pakistan, Ministry of National Food Security & Research, 'Crops Area & Production (District wise) 2022-23' -- real district estimates from the four provincial Crop Reporting Services, compiled federally. Area figures in '000 hectares, year 2022-23.",
+    "total_4crop_area_000ha": 9.88,
+    "crops": {
+      "wheat": {
+        "area_2022_23_000ha": 9.88,
+        "production_2022_23_000t": 13.13,
+        "share_of_4crop_area": 1.0
+      },
+      "rice": {
+        "area_2022_23_000ha": 0.0,
+        "production_2022_23_000t": 0.0,
+        "share_of_4crop_area": 0.0
+      }
+    },
+    "crops_unreliable_source_data": [
+      "sugarcane"
+    ]
+  },
+  "Sukkur": {
+    "tier": "real_district_area",
+    "source": "Government of Pakistan, Ministry of National Food Security & Research, 'Crops Area & Production (District wise) 2022-23' -- real district estimates from the four provincial Crop Reporting Services, compiled federally. Area figures in '000 hectares, year 2022-23.",
+    "total_4crop_area_000ha": 91.92,
+    "crops": {
+      "wheat": {
+        "area_2022_23_000ha": 49.66,
+        "production_2022_23_000t": 171.77,
+        "share_of_4crop_area": 0.5403
+      },
+      "cotton": {
+        "area_2022_23_000ha": 40.67,
+        "production_2022_23_000t": 109.58,
+        "share_of_4crop_area": 0.4424
+      },
+      "rice": {
+        "area_2022_23_000ha": 1.59,
+        "production_2022_23_000t": 5.37,
+        "share_of_4crop_area": 0.0173
+      }
+    },
+    "crops_unreliable_source_data": [
+      "sugarcane"
+    ]
+  },
+  "Swabi": {
+    "tier": "real_district_area",
+    "source": "Government of Pakistan, Ministry of National Food Security & Research, 'Crops Area & Production (District wise) 2022-23' -- real district estimates from the four provincial Crop Reporting Services, compiled federally. Area figures in '000 hectares, year 2022-23.",
+    "total_4crop_area_000ha": 39.47,
+    "crops": {
+      "wheat": {
+        "area_2022_23_000ha": 39.0,
+        "production_2022_23_000t": 97.4,
+        "share_of_4crop_area": 0.9881
+      },
+      "rice": {
+        "area_2022_23_000ha": 0.47,
+        "production_2022_23_000t": 0.77,
+        "share_of_4crop_area": 0.0119
+      }
+    },
+    "crops_unreliable_source_data": [
+      "cotton",
+      "sugarcane"
+    ]
+  },
+  "Swat": {
+    "tier": "real_district_area",
+    "source": "Government of Pakistan, Ministry of National Food Security & Research, 'Crops Area & Production (District wise) 2022-23' -- real district estimates from the four provincial Crop Reporting Services, compiled federally. Area figures in '000 hectares, year 2022-23.",
+    "total_4crop_area_000ha": 63.03,
+    "crops": {
+      "wheat": {
+        "area_2022_23_000ha": 58.75,
+        "production_2022_23_000t": 113.52,
+        "share_of_4crop_area": 0.9321
+      },
+      "rice": {
+        "area_2022_23_000ha": 4.28,
+        "production_2022_23_000t": 14.86,
+        "share_of_4crop_area": 0.0679
+      }
+    },
+    "crops_unreliable_source_data": [
+      "cotton",
+      "sugarcane"
+    ]
+  },
+  "Tando Allahyar": {
+    "tier": "real_district_area",
+    "source": "Government of Pakistan, Ministry of National Food Security & Research, 'Crops Area & Production (District wise) 2022-23' -- real district estimates from the four provincial Crop Reporting Services, compiled federally. Area figures in '000 hectares, year 2022-23.",
+    "total_4crop_area_000ha": 59.88,
+    "crops": {
+      "wheat": {
+        "area_2022_23_000ha": 36.0,
+        "production_2022_23_000t": 112.36,
+        "share_of_4crop_area": 0.6012
+      },
+      "cotton": {
+        "area_2022_23_000ha": 23.88,
+        "production_2022_23_000t": 99.63,
+        "share_of_4crop_area": 0.3988
+      },
+      "rice": {
+        "area_2022_23_000ha": 0.0,
+        "production_2022_23_000t": 0.0,
+        "share_of_4crop_area": 0.0
+      }
+    },
+    "crops_unreliable_source_data": [
+      "sugarcane"
+    ]
+  },
+  "Tando Muhammad Khan": {
+    "tier": "real_district_area",
+    "source": "Government of Pakistan, Ministry of National Food Security & Research, 'Crops Area & Production (District wise) 2022-23' -- real district estimates from the four provincial Crop Reporting Services, compiled federally. Area figures in '000 hectares, year 2022-23.",
+    "total_4crop_area_000ha": 23.56,
+    "crops": {
+      "wheat": {
+        "area_2022_23_000ha": 8.22,
+        "production_2022_23_000t": 26.01,
+        "share_of_4crop_area": 0.3489
+      },
+      "cotton": {
+        "area_2022_23_000ha": 3.89,
+        "production_2022_23_000t": 11.48,
+        "share_of_4crop_area": 0.1651
+      },
+      "rice": {
+        "area_2022_23_000ha": 11.45,
+        "production_2022_23_000t": 30.85,
+        "share_of_4crop_area": 0.486
+      }
+    },
+    "crops_unreliable_source_data": null
+  },
+  "Tank": {
+    "tier": "real_district_area",
+    "source": "Government of Pakistan, Ministry of National Food Security & Research, 'Crops Area & Production (District wise) 2022-23' -- real district estimates from the four provincial Crop Reporting Services, compiled federally. Area figures in '000 hectares, year 2022-23.",
+    "total_4crop_area_000ha": 15.63,
+    "crops": {
+      "wheat": {
+        "area_2022_23_000ha": 14.91,
+        "production_2022_23_000t": 31.35,
+        "share_of_4crop_area": 0.9539
+      },
+      "rice": {
+        "area_2022_23_000ha": 0.72,
+        "production_2022_23_000t": 1.19,
+        "share_of_4crop_area": 0.0461
+      }
+    },
+    "crops_unreliable_source_data": [
+      "cotton",
+      "sugarcane"
+    ]
+  },
+  "Tharparkar": {
+    "tier": "real_district_area",
+    "source": "Government of Pakistan, Ministry of National Food Security & Research, 'Crops Area & Production (District wise) 2022-23' -- real district estimates from the four provincial Crop Reporting Services, compiled federally. Area figures in '000 hectares, year 2022-23.",
+    "total_4crop_area_000ha": 3.33,
+    "crops": {
+      "wheat": {
+        "area_2022_23_000ha": 2.38,
+        "production_2022_23_000t": 5.97,
+        "share_of_4crop_area": 0.7147
+      },
+      "cotton": {
+        "area_2022_23_000ha": 0.95,
+        "production_2022_23_000t": 2.99,
+        "share_of_4crop_area": 0.2853
+      },
+      "rice": {
+        "area_2022_23_000ha": 0.0,
+        "production_2022_23_000t": 0.0,
+        "share_of_4crop_area": 0.0
+      }
+    },
+    "crops_unreliable_source_data": null
+  },
+  "Thatta": {
+    "tier": "real_district_area",
+    "source": "Government of Pakistan, Ministry of National Food Security & Research, 'Crops Area & Production (District wise) 2022-23' -- real district estimates from the four provincial Crop Reporting Services, compiled federally. Area figures in '000 hectares, year 2022-23.",
+    "total_4crop_area_000ha": 80.17,
+    "crops": {
+      "wheat": {
+        "area_2022_23_000ha": 15.54,
+        "production_2022_23_000t": 35.49,
+        "share_of_4crop_area": 0.1938
+      },
+      "cotton": {
+        "area_2022_23_000ha": 5.19,
+        "production_2022_23_000t": 20.12,
+        "share_of_4crop_area": 0.0647
+      },
+      "rice": {
+        "area_2022_23_000ha": 59.44,
+        "production_2022_23_000t": 254.12,
+        "share_of_4crop_area": 0.7414
+      }
+    },
+    "crops_unreliable_source_data": null
+  },
+  "Toba Tek Singh": {
+    "tier": "real_district_area",
+    "source": "Government of Pakistan, Ministry of National Food Security & Research, 'Crops Area & Production (District wise) 2022-23' -- real district estimates from the four provincial Crop Reporting Services, compiled federally. Area figures in '000 hectares, year 2022-23.",
+    "total_4crop_area_000ha": 225.0,
+    "crops": {
+      "wheat": {
+        "area_2022_23_000ha": 130.31,
+        "production_2022_23_000t": 470.51,
+        "share_of_4crop_area": 0.5792
+      },
+      "cotton": {
+        "area_2022_23_000ha": 12.14,
+        "production_2022_23_000t": 32.8,
+        "share_of_4crop_area": 0.054
+      },
+      "rice": {
+        "area_2022_23_000ha": 46.13,
+        "production_2022_23_000t": 119.58,
+        "share_of_4crop_area": 0.205
+      },
+      "sugarcane": {
+        "area_2022_23_000ha": 36.42,
+        "production_2022_23_000t": 2520.0,
+        "share_of_4crop_area": 0.1619
+      }
+    },
+    "crops_unreliable_source_data": null
+  },
+  "Umerkot": {
+    "tier": "real_district_area",
+    "source": "Government of Pakistan, Ministry of National Food Security & Research, 'Crops Area & Production (District wise) 2022-23' -- real district estimates from the four provincial Crop Reporting Services, compiled federally. Area figures in '000 hectares, year 2022-23.",
+    "total_4crop_area_000ha": 76.84,
+    "crops": {
+      "wheat": {
+        "area_2022_23_000ha": 48.88,
+        "production_2022_23_000t": 143.05,
+        "share_of_4crop_area": 0.6361
+      },
+      "cotton": {
+        "area_2022_23_000ha": 27.96,
+        "production_2022_23_000t": 98.1,
+        "share_of_4crop_area": 0.3639
+      },
+      "rice": {
+        "area_2022_23_000ha": 0.0,
+        "production_2022_23_000t": 0.0,
+        "share_of_4crop_area": 0.0
+      }
+    },
+    "crops_unreliable_source_data": null
+  },
+  "Upper Dir": {
+    "tier": "real_district_area",
+    "source": "Government of Pakistan, Ministry of National Food Security & Research, 'Crops Area & Production (District wise) 2022-23' -- real district estimates from the four provincial Crop Reporting Services, compiled federally. Area figures in '000 hectares, year 2022-23.",
+    "total_4crop_area_000ha": 32.21,
+    "crops": {
+      "wheat": {
+        "area_2022_23_000ha": 25.67,
+        "production_2022_23_000t": 46.71,
+        "share_of_4crop_area": 0.797
+      },
+      "rice": {
+        "area_2022_23_000ha": 6.54,
+        "production_2022_23_000t": 12.37,
+        "share_of_4crop_area": 0.203
+      }
+    },
+    "crops_unreliable_source_data": [
+      "cotton"
+    ]
+  },
+  "Vihari": {
+    "tier": "real_district_area",
+    "source": "Government of Pakistan, Ministry of National Food Security & Research, 'Crops Area & Production (District wise) 2022-23' -- real district estimates from the four provincial Crop Reporting Services, compiled federally. Area figures in '000 hectares, year 2022-23.",
+    "total_4crop_area_000ha": 275.81,
+    "crops": {
+      "wheat": {
+        "area_2022_23_000ha": 159.85,
+        "production_2022_23_000t": 594.24,
+        "share_of_4crop_area": 0.5796
+      },
+      "cotton": {
+        "area_2022_23_000ha": 65.96,
+        "production_2022_23_000t": 168.3,
+        "share_of_4crop_area": 0.2392
+      },
+      "rice": {
+        "area_2022_23_000ha": 33.0,
+        "production_2022_23_000t": 84.3,
+        "share_of_4crop_area": 0.1196
+      },
+      "sugarcane": {
+        "area_2022_23_000ha": 17.0,
+        "production_2022_23_000t": 1206.24,
+        "share_of_4crop_area": 0.0616
+      }
+    },
+    "crops_unreliable_source_data": null
+  },
+  "Zhob": {
+    "tier": "real_district_area",
+    "source": "Government of Pakistan, Ministry of National Food Security & Research, 'Crops Area & Production (District wise) 2022-23' -- real district estimates from the four provincial Crop Reporting Services, compiled federally. Area figures in '000 hectares, year 2022-23.",
+    "total_4crop_area_000ha": 6.21,
+    "crops": {
+      "wheat": {
+        "area_2022_23_000ha": 6.21,
+        "production_2022_23_000t": 14.34,
+        "share_of_4crop_area": 1.0
+      },
+      "rice": {
+        "area_2022_23_000ha": 0.0,
+        "production_2022_23_000t": 0.0,
+        "share_of_4crop_area": 0.0
+      },
+      "sugarcane": {
+        "area_2022_23_000ha": 0.0,
+        "production_2022_23_000t": 0.0,
+        "share_of_4crop_area": 0.0
+      }
+    },
+    "crops_unreliable_source_data": null
+  },
+  "Ziarat": {
+    "tier": "real_district_area",
+    "source": "Government of Pakistan, Ministry of National Food Security & Research, 'Crops Area & Production (District wise) 2022-23' -- real district estimates from the four provincial Crop Reporting Services, compiled federally. Area figures in '000 hectares, year 2022-23.",
+    "total_4crop_area_000ha": 0.53,
+    "crops": {
+      "wheat": {
+        "area_2022_23_000ha": 0.53,
+        "production_2022_23_000t": 1.33,
+        "share_of_4crop_area": 1.0
+      },
+      "rice": {
+        "area_2022_23_000ha": 0.0,
+        "production_2022_23_000t": 0.0,
+        "share_of_4crop_area": 0.0
+      },
+      "sugarcane": {
+        "area_2022_23_000ha": 0.0,
+        "production_2022_23_000t": 0.0,
+        "share_of_4crop_area": 0.0
+      }
+    },
+    "crops_unreliable_source_data": null
+  }
+}

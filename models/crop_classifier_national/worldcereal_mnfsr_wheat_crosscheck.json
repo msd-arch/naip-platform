@@ -1,0 +1,813 @@
+{
+  "n_districts_compared": 97,
+  "pearson_correlation": 0.424,
+  "mean_absolute_difference": 1.676,
+  "note": "WorldCereal 'wintercereals' SHARE OF CROPLAND (not of total district area -- denominator-matched to MNFSR's own share-of-cropped-area definition, after a first raw-area-fraction attempt gave a spurious negative correlation caused by exactly this denominator mismatch, see naip/docs/STATUS_WEEK8.md) vs. real MNFSR wheat area share -- the ONE crop both real sources can be compared on, WorldCereal has no cotton/rice/sugarcane product for Pakistan.",
+  "records": [
+    {
+      "district": "Abbottabad",
+      "worldcereal_wintercereals_frac_of_total_area": 0.21568274099115106,
+      "worldcereal_cropland_frac_of_total_area": 0.02768294507391324,
+      "worldcereal_wintercereals_share_of_cropland": 7.791177579382536,
+      "mnfsr_wheat_share_of_4crop_area": 1.0
+    },
+    {
+      "district": "Attock",
+      "worldcereal_wintercereals_frac_of_total_area": 0.5338742536171457,
+      "worldcereal_cropland_frac_of_total_area": 0.3903108130335994,
+      "worldcereal_wintercereals_share_of_cropland": 1.3678182509670513,
+      "mnfsr_wheat_share_of_4crop_area": 1.0
+    },
+    {
+      "district": "Awaran",
+      "worldcereal_wintercereals_frac_of_total_area": 0.1497801802624652,
+      "worldcereal_cropland_frac_of_total_area": 0.004639597781135266,
+      "worldcereal_wintercereals_share_of_cropland": null,
+      "mnfsr_wheat_share_of_4crop_area": 0.9868
+    },
+    {
+      "district": "Badin",
+      "worldcereal_wintercereals_frac_of_total_area": 0.1260570084487614,
+      "worldcereal_cropland_frac_of_total_area": 0.6019545657107336,
+      "worldcereal_wintercereals_share_of_cropland": 0.2094128288568169,
+      "mnfsr_wheat_share_of_4crop_area": 0.224
+    },
+    {
+      "district": "Bahawalnagar",
+      "worldcereal_wintercereals_frac_of_total_area": 0.8041073441321973,
+      "worldcereal_cropland_frac_of_total_area": 0.7207089703484857,
+      "worldcereal_wintercereals_share_of_cropland": 1.1157171302355038,
+      "mnfsr_wheat_share_of_4crop_area": 0.5243
+    },
+    {
+      "district": "Bahawalpur",
+      "worldcereal_wintercereals_frac_of_total_area": 0.7301459784821205,
+      "worldcereal_cropland_frac_of_total_area": 0.2728643663594969,
+      "worldcereal_wintercereals_share_of_cropland": 2.6758568303497654,
+      "mnfsr_wheat_share_of_4crop_area": 0.5182
+    },
+    {
+      "district": "Bajaur",
+      "worldcereal_wintercereals_frac_of_total_area": 0.19650865929685832,
+      "worldcereal_cropland_frac_of_total_area": 0.21873072796219223,
+      "worldcereal_wintercereals_share_of_cropland": 0.8984044497434535,
+      "mnfsr_wheat_share_of_4crop_area": 0.8927
+    },
+    {
+      "district": "Bannu",
+      "worldcereal_wintercereals_frac_of_total_area": 0.32037204053490254,
+      "worldcereal_cropland_frac_of_total_area": 0.40848199884651726,
+      "worldcereal_wintercereals_share_of_cropland": 0.7842990424047521,
+      "mnfsr_wheat_share_of_4crop_area": 0.8874
+    },
+    {
+      "district": "Barkhan",
+      "worldcereal_wintercereals_frac_of_total_area": 0.05372268318361884,
+      "worldcereal_cropland_frac_of_total_area": 0.06762604812940583,
+      "worldcereal_wintercereals_share_of_cropland": 0.794408141088147,
+      "mnfsr_wheat_share_of_4crop_area": 1.0
+    },
+    {
+      "district": "Battagram",
+      "worldcereal_wintercereals_frac_of_total_area": 0.06616786707922671,
+      "worldcereal_cropland_frac_of_total_area": 0.00495839912314793,
+      "worldcereal_wintercereals_share_of_cropland": null,
+      "mnfsr_wheat_share_of_4crop_area": 0.8306
+    },
+    {
+      "district": "Bhakkar",
+      "worldcereal_wintercereals_frac_of_total_area": 0.2812991106840833,
+      "worldcereal_cropland_frac_of_total_area": 0.44293922732300495,
+      "worldcereal_wintercereals_share_of_cropland": 0.6350738280377035,
+      "mnfsr_wheat_share_of_4crop_area": 0.7526
+    },
+    {
+      "district": "Buner",
+      "worldcereal_wintercereals_frac_of_total_area": 0.35738902186615934,
+      "worldcereal_cropland_frac_of_total_area": 0.17690934453595822,
+      "worldcereal_wintercereals_share_of_cropland": 2.020181708341117,
+      "mnfsr_wheat_share_of_4crop_area": 0.9966
+    },
+    {
+      "district": "Chagai",
+      "worldcereal_wintercereals_frac_of_total_area": 0.43067562914306756,
+      "worldcereal_cropland_frac_of_total_area": 0.0029000575151911442,
+      "worldcereal_wintercereals_share_of_cropland": null,
+      "mnfsr_wheat_share_of_4crop_area": 1.0
+    },
+    {
+      "district": "Chakwal",
+      "worldcereal_wintercereals_frac_of_total_area": 0.3582959377473924,
+      "worldcereal_cropland_frac_of_total_area": 0.3940788639082446,
+      "worldcereal_wintercereals_share_of_cropland": 0.9091985654699214,
+      "mnfsr_wheat_share_of_4crop_area": 1.0
+    },
+    {
+      "district": "Charsadda",
+      "worldcereal_wintercereals_frac_of_total_area": 0.1895481676065544,
+      "worldcereal_cropland_frac_of_total_area": 0.6927088016977605,
+      "worldcereal_wintercereals_share_of_cropland": 0.27363325995279786,
+      "mnfsr_wheat_share_of_4crop_area": 0.998
+    },
+    {
+      "district": "Chitral",
+      "worldcereal_wintercereals_frac_of_total_area": 0.00892403591999803,
+      "worldcereal_cropland_frac_of_total_area": 0.0019124499001499267,
+      "worldcereal_wintercereals_share_of_cropland": null,
+      "mnfsr_wheat_share_of_4crop_area": 0.8202
+    },
+    {
+      "district": "Dadu",
+      "worldcereal_wintercereals_frac_of_total_area": 0.6394633239159224,
+      "worldcereal_cropland_frac_of_total_area": 0.3491581184409475,
+      "worldcereal_wintercereals_share_of_cropland": 1.8314433780638948,
+      "mnfsr_wheat_share_of_4crop_area": 0.6969
+    },
+    {
+      "district": "Dera Bugti",
+      "worldcereal_wintercereals_frac_of_total_area": 0.43967335168789773,
+      "worldcereal_cropland_frac_of_total_area": 0.057236695412563654,
+      "worldcereal_wintercereals_share_of_cropland": 7.6816690502259135,
+      "mnfsr_wheat_share_of_4crop_area": 0.9938
+    },
+    {
+      "district": "Dera Ghazi Khan",
+      "worldcereal_wintercereals_frac_of_total_area": 0.7019839669668863,
+      "worldcereal_cropland_frac_of_total_area": 0.23715219632228263,
+      "worldcereal_wintercereals_share_of_cropland": 2.9600567814810006,
+      "mnfsr_wheat_share_of_4crop_area": 0.6566
+    },
+    {
+      "district": "Dera Ismail Khan",
+      "worldcereal_wintercereals_frac_of_total_area": 0.29590392413403144,
+      "worldcereal_cropland_frac_of_total_area": 0.3841933745562443,
+      "worldcereal_wintercereals_share_of_cropland": 0.7701952811544707,
+      "mnfsr_wheat_share_of_4crop_area": 0.8607
+    },
+    {
+      "district": "Faisalabad",
+      "worldcereal_wintercereals_frac_of_total_area": 0.5143925287877548,
+      "worldcereal_cropland_frac_of_total_area": 0.8470985302079848,
+      "worldcereal_wintercereals_share_of_cropland": 0.6072404926277679,
+      "mnfsr_wheat_share_of_4crop_area": 0.6344
+    },
+    {
+      "district": "Ghotki",
+      "worldcereal_wintercereals_frac_of_total_area": 0.604440706518669,
+      "worldcereal_cropland_frac_of_total_area": 0.40984415265514673,
+      "worldcereal_wintercereals_share_of_cropland": 1.474806222323393,
+      "mnfsr_wheat_share_of_4crop_area": 0.5462
+    },
+    {
+      "district": "Gujranwala",
+      "worldcereal_wintercereals_frac_of_total_area": 0.5194087281732989,
+      "worldcereal_cropland_frac_of_total_area": 0.8833353462318599,
+      "worldcereal_wintercereals_share_of_cropland": 0.5880085410246487,
+      "mnfsr_wheat_share_of_4crop_area": 0.3832
+    },
+    {
+      "district": "Gujrat",
+      "worldcereal_wintercereals_frac_of_total_area": 0.25003646558763926,
+      "worldcereal_cropland_frac_of_total_area": 0.7553777369558804,
+      "worldcereal_wintercereals_share_of_cropland": 0.3310085184602723,
+      "mnfsr_wheat_share_of_4crop_area": 0.809
+    },
+    {
+      "district": "Gwadar",
+      "worldcereal_wintercereals_frac_of_total_area": 0.011745871543668527,
+      "worldcereal_cropland_frac_of_total_area": 8.886176816406486e-05,
+      "worldcereal_wintercereals_share_of_cropland": null,
+      "mnfsr_wheat_share_of_4crop_area": 1.0
+    },
+    {
+      "district": "Hafizabad",
+      "worldcereal_wintercereals_frac_of_total_area": 0.7051316578435913,
+      "worldcereal_cropland_frac_of_total_area": 0.93438015682597,
+      "worldcereal_wintercereals_share_of_cropland": 0.7546517899511894,
+      "mnfsr_wheat_share_of_4crop_area": 0.4999
+    },
+    {
+      "district": "Hangu",
+      "worldcereal_wintercereals_frac_of_total_area": 0.1239819680626254,
+      "worldcereal_cropland_frac_of_total_area": 0.062271551051807796,
+      "worldcereal_wintercereals_share_of_cropland": 1.9909889181895704,
+      "mnfsr_wheat_share_of_4crop_area": 0.9867
+    },
+    {
+      "district": "Haripur",
+      "worldcereal_wintercereals_frac_of_total_area": 0.3944357865130645,
+      "worldcereal_cropland_frac_of_total_area": 0.1997278056760075,
+      "worldcereal_wintercereals_share_of_cropland": 1.974866670056479,
+      "mnfsr_wheat_share_of_4crop_area": 1.0
+    },
+    {
+      "district": "Hyderabad",
+      "worldcereal_wintercereals_frac_of_total_area": 0.31571013855222796,
+      "worldcereal_cropland_frac_of_total_area": 0.5615991412582726,
+      "worldcereal_wintercereals_share_of_cropland": 0.562162787223773,
+      "mnfsr_wheat_share_of_4crop_area": 0.7209
+    },
+    {
+      "district": "Islamabad Capital Territory",
+      "worldcereal_wintercereals_frac_of_total_area": 0.2419374722995111,
+      "worldcereal_cropland_frac_of_total_area": 0.2009828207964514,
+      "worldcereal_wintercereals_share_of_cropland": 1.2037719012041193,
+      "mnfsr_wheat_share_of_4crop_area": 1.0
+    },
+    {
+      "district": "Jacobabad",
+      "worldcereal_wintercereals_frac_of_total_area": 0.38756990183118756,
+      "worldcereal_cropland_frac_of_total_area": 0.7613371663040543,
+      "worldcereal_wintercereals_share_of_cropland": 0.5090647337140563,
+      "mnfsr_wheat_share_of_4crop_area": 0.2109
+    },
+    {
+      "district": "Jafarabad",
+      "worldcereal_wintercereals_frac_of_total_area": 0.3815795928382617,
+      "worldcereal_cropland_frac_of_total_area": 0.7337856247565467,
+      "worldcereal_wintercereals_share_of_cropland": 0.5200150833765121,
+      "mnfsr_wheat_share_of_4crop_area": 0.496
+    },
+    {
+      "district": "Jamshoro",
+      "worldcereal_wintercereals_frac_of_total_area": 0.4705801910612043,
+      "worldcereal_cropland_frac_of_total_area": 0.08792684980103138,
+      "worldcereal_wintercereals_share_of_cropland": 5.351950992513374,
+      "mnfsr_wheat_share_of_4crop_area": 0.723
+    },
+    {
+      "district": "Jhal Magsi",
+      "worldcereal_wintercereals_frac_of_total_area": 0.370600773504276,
+      "worldcereal_cropland_frac_of_total_area": 0.3257570047395169,
+      "worldcereal_wintercereals_share_of_cropland": 1.1376601826278985,
+      "mnfsr_wheat_share_of_4crop_area": 0.9964
+    },
+    {
+      "district": "Jhang",
+      "worldcereal_wintercereals_frac_of_total_area": 0.4280009402452735,
+      "worldcereal_cropland_frac_of_total_area": 0.738854552382107,
+      "worldcereal_wintercereals_share_of_cropland": 0.5792763120500177,
+      "mnfsr_wheat_share_of_4crop_area": 0.4198
+    },
+    {
+      "district": "Jhelum",
+      "worldcereal_wintercereals_frac_of_total_area": 0.1496823882733343,
+      "worldcereal_cropland_frac_of_total_area": 0.42751640352002607,
+      "worldcereal_wintercereals_share_of_cropland": 0.3501208071571054,
+      "mnfsr_wheat_share_of_4crop_area": 0.9723
+    },
+    {
+      "district": "Kachhi",
+      "worldcereal_wintercereals_frac_of_total_area": 0.03516002765850505,
+      "worldcereal_cropland_frac_of_total_area": 0.1647343282059066,
+      "worldcereal_wintercereals_share_of_cropland": 0.21343473483290884,
+      "mnfsr_wheat_share_of_4crop_area": 1.0
+    },
+    {
+      "district": "Kalat",
+      "worldcereal_wintercereals_frac_of_total_area": 0.20830505045374811,
+      "worldcereal_cropland_frac_of_total_area": 0.008828269665412523,
+      "worldcereal_wintercereals_share_of_cropland": null,
+      "mnfsr_wheat_share_of_4crop_area": 1.0
+    },
+    {
+      "district": "Karachi",
+      "worldcereal_wintercereals_frac_of_total_area": 0.10321224165479019,
+      "worldcereal_cropland_frac_of_total_area": 0.0356062891039646,
+      "worldcereal_wintercereals_share_of_cropland": 2.8987081847655385,
+      "mnfsr_wheat_share_of_4crop_area": 0.802
+    },
+    {
+      "district": "Karak",
+      "worldcereal_wintercereals_frac_of_total_area": 0.13999856274851993,
+      "worldcereal_cropland_frac_of_total_area": 0.06868723161765003,
+      "worldcereal_wintercereals_share_of_cropland": 2.0382035998746755,
+      "mnfsr_wheat_share_of_4crop_area": 1.0
+    },
+    {
+      "district": "Kashmore",
+      "worldcereal_wintercereals_frac_of_total_area": 0.6198978533566079,
+      "worldcereal_cropland_frac_of_total_area": 0.6914624562155235,
+      "worldcereal_wintercereals_share_of_cropland": 0.8965025472957717,
+      "mnfsr_wheat_share_of_4crop_area": 0.3741
+    },
+    {
+      "district": "Kasur",
+      "worldcereal_wintercereals_frac_of_total_area": 0.5013948116794051,
+      "worldcereal_cropland_frac_of_total_area": 0.8637084855928533,
+      "worldcereal_wintercereals_share_of_cropland": 0.5805139350173751,
+      "mnfsr_wheat_share_of_4crop_area": 0.5495
+    },
+    {
+      "district": "Kech",
+      "worldcereal_wintercereals_frac_of_total_area": 0.10136320378320172,
+      "worldcereal_cropland_frac_of_total_area": 0.0037201879678686552,
+      "worldcereal_wintercereals_share_of_cropland": null,
+      "mnfsr_wheat_share_of_4crop_area": 0.8363
+    },
+    {
+      "district": "Khairpur",
+      "worldcereal_wintercereals_frac_of_total_area": 0.6655931789366702,
+      "worldcereal_cropland_frac_of_total_area": 0.17319914253160387,
+      "worldcereal_wintercereals_share_of_cropland": 3.842935762890504,
+      "mnfsr_wheat_share_of_4crop_area": 0.566
+    },
+    {
+      "district": "Khanewal",
+      "worldcereal_wintercereals_frac_of_total_area": 0.6208783754458291,
+      "worldcereal_cropland_frac_of_total_area": 0.8245414186367198,
+      "worldcereal_wintercereals_share_of_cropland": 0.7529984078572753,
+      "mnfsr_wheat_share_of_4crop_area": 0.5511
+    },
+    {
+      "district": "Kharan",
+      "worldcereal_wintercereals_frac_of_total_area": 0.16243872057514352,
+      "worldcereal_cropland_frac_of_total_area": 0.0037797048579604558,
+      "worldcereal_wintercereals_share_of_cropland": null,
+      "mnfsr_wheat_share_of_4crop_area": 1.0
+    },
+    {
+      "district": "Khushab",
+      "worldcereal_wintercereals_frac_of_total_area": 0.2038767567716795,
+      "worldcereal_cropland_frac_of_total_area": 0.37522960195077637,
+      "worldcereal_wintercereals_share_of_cropland": 0.5433386804019386,
+      "mnfsr_wheat_share_of_4crop_area": 0.9412
+    },
+    {
+      "district": "Khuzdar",
+      "worldcereal_wintercereals_frac_of_total_area": 0.1754684801380744,
+      "worldcereal_cropland_frac_of_total_area": 0.0186035905799537,
+      "worldcereal_wintercereals_share_of_cropland": 9.431968489306064,
+      "mnfsr_wheat_share_of_4crop_area": 0.9811
+    },
+    {
+      "district": "Khyber",
+      "worldcereal_wintercereals_frac_of_total_area": 0.09906027222260468,
+      "worldcereal_cropland_frac_of_total_area": 0.02309301091655277,
+      "worldcereal_wintercereals_share_of_cropland": 4.289621330910971,
+      "mnfsr_wheat_share_of_4crop_area": 1.0
+    },
+    {
+      "district": "Kohat",
+      "worldcereal_wintercereals_frac_of_total_area": 0.5743999759708508,
+      "worldcereal_cropland_frac_of_total_area": 0.14397513931096115,
+      "worldcereal_wintercereals_share_of_cropland": 3.9895774973361697,
+      "mnfsr_wheat_share_of_4crop_area": 0.9996
+    },
+    {
+      "district": "Kohistan",
+      "worldcereal_wintercereals_frac_of_total_area": 0.003627805452073312,
+      "worldcereal_cropland_frac_of_total_area": 0.0004109792177705213,
+      "worldcereal_wintercereals_share_of_cropland": null,
+      "mnfsr_wheat_share_of_4crop_area": 0.9628
+    },
+    {
+      "district": "Kohlu",
+      "worldcereal_wintercereals_frac_of_total_area": 0.063137905470566,
+      "worldcereal_cropland_frac_of_total_area": 0.006310831173411845,
+      "worldcereal_wintercereals_share_of_cropland": null,
+      "mnfsr_wheat_share_of_4crop_area": 1.0
+    },
+    {
+      "district": "Kurram",
+      "worldcereal_wintercereals_frac_of_total_area": 0.0772554596270233,
+      "worldcereal_cropland_frac_of_total_area": 0.04314695615608726,
+      "worldcereal_wintercereals_share_of_cropland": 1.790519343880158,
+      "mnfsr_wheat_share_of_4crop_area": 0.8189
+    },
+    {
+      "district": "Lahore",
+      "worldcereal_wintercereals_frac_of_total_area": 0.37197460325384746,
+      "worldcereal_cropland_frac_of_total_area": 0.5728670081589947,
+      "worldcereal_wintercereals_share_of_cropland": 0.6493210430275099,
+      "mnfsr_wheat_share_of_4crop_area": 0.6458
+    },
+    {
+      "district": "Lakki Marwat",
+      "worldcereal_wintercereals_frac_of_total_area": 0.2799149355960514,
+      "worldcereal_cropland_frac_of_total_area": 0.098887385126743,
+      "worldcereal_wintercereals_share_of_cropland": 2.8306435167366106,
+      "mnfsr_wheat_share_of_4crop_area": 0.9892
+    },
+    {
+      "district": "Lasbela",
+      "worldcereal_wintercereals_frac_of_total_area": 0.23668935724645768,
+      "worldcereal_cropland_frac_of_total_area": 0.03770869153235069,
+      "worldcereal_wintercereals_share_of_cropland": 6.276785208614289,
+      "mnfsr_wheat_share_of_4crop_area": 0.9996
+    },
+    {
+      "district": "Layyah",
+      "worldcereal_wintercereals_frac_of_total_area": 0.6973446847533346,
+      "worldcereal_cropland_frac_of_total_area": 0.6093578233270964,
+      "worldcereal_wintercereals_share_of_cropland": 1.1443927657247912,
+      "mnfsr_wheat_share_of_4crop_area": 0.8193
+    },
+    {
+      "district": "Lodhran",
+      "worldcereal_wintercereals_frac_of_total_area": 0.717000278264235,
+      "worldcereal_cropland_frac_of_total_area": 0.9178640226253403,
+      "worldcereal_wintercereals_share_of_cropland": 0.7811617631699078,
+      "mnfsr_wheat_share_of_4crop_area": 0.5598
+    },
+    {
+      "district": "Loralai",
+      "worldcereal_wintercereals_frac_of_total_area": 0.24977627387790385,
+      "worldcereal_cropland_frac_of_total_area": 0.02319969337495191,
+      "worldcereal_wintercereals_share_of_cropland": 10.76636099628716,
+      "mnfsr_wheat_share_of_4crop_area": 1.0
+    },
+    {
+      "district": "Lower Dir",
+      "worldcereal_wintercereals_frac_of_total_area": 0.13804331032578857,
+      "worldcereal_cropland_frac_of_total_area": 0.15812501321975436,
+      "worldcereal_wintercereals_share_of_cropland": 0.8730010990351208,
+      "mnfsr_wheat_share_of_4crop_area": 0.7806
+    },
+    {
+      "district": "Malakand",
+      "worldcereal_wintercereals_frac_of_total_area": 0.19314270887370175,
+      "worldcereal_cropland_frac_of_total_area": 0.29807599263159174,
+      "worldcereal_wintercereals_share_of_cropland": 0.6479646588392554,
+      "mnfsr_wheat_share_of_4crop_area": 0.8944
+    },
+    {
+      "district": "Mandi Bahauddin",
+      "worldcereal_wintercereals_frac_of_total_area": 0.45192315223602314,
+      "worldcereal_cropland_frac_of_total_area": 0.8717816647703225,
+      "worldcereal_wintercereals_share_of_cropland": 0.5183902925454228,
+      "mnfsr_wheat_share_of_4crop_area": 0.5509
+    },
+    {
+      "district": "Mansehra",
+      "worldcereal_wintercereals_frac_of_total_area": 0.16500204291338016,
+      "worldcereal_cropland_frac_of_total_area": 0.026372110240182118,
+      "worldcereal_wintercereals_share_of_cropland": 6.256687136927451,
+      "mnfsr_wheat_share_of_4crop_area": 0.9604
+    },
+    {
+      "district": "Mardan",
+      "worldcereal_wintercereals_frac_of_total_area": 0.2953632684257852,
+      "worldcereal_cropland_frac_of_total_area": 0.6653280443328673,
+      "worldcereal_wintercereals_share_of_cropland": 0.443936297202006,
+      "mnfsr_wheat_share_of_4crop_area": 0.9437
+    },
+    {
+      "district": "Mastung",
+      "worldcereal_wintercereals_frac_of_total_area": 0.2546684168724797,
+      "worldcereal_cropland_frac_of_total_area": 0.013976864943245857,
+      "worldcereal_wintercereals_share_of_cropland": 18.220711003975538,
+      "mnfsr_wheat_share_of_4crop_area": 1.0
+    },
+    {
+      "district": "Matiari",
+      "worldcereal_wintercereals_frac_of_total_area": 0.6845690852348902,
+      "worldcereal_cropland_frac_of_total_area": 0.7076339958477639,
+      "worldcereal_wintercereals_share_of_cropland": 0.9674055927948441,
+      "mnfsr_wheat_share_of_4crop_area": 0.5465
+    },
+    {
+      "district": "Mianwali",
+      "worldcereal_wintercereals_frac_of_total_area": 0.50299386768799,
+      "worldcereal_cropland_frac_of_total_area": 0.5446246645522417,
+      "worldcereal_wintercereals_share_of_cropland": 0.9235605737788647,
+      "mnfsr_wheat_share_of_4crop_area": 0.7873
+    },
+    {
+      "district": "Mirpurkhas",
+      "worldcereal_wintercereals_frac_of_total_area": 0.4322766337202012,
+      "worldcereal_cropland_frac_of_total_area": 0.5838286472660292,
+      "worldcereal_wintercereals_share_of_cropland": 0.7404169626558743,
+      "mnfsr_wheat_share_of_4crop_area": 0.6611
+    },
+    {
+      "district": "Mohmand",
+      "worldcereal_wintercereals_frac_of_total_area": 0.48140740249269076,
+      "worldcereal_cropland_frac_of_total_area": 0.12267566302235916,
+      "worldcereal_wintercereals_share_of_cropland": 3.9242290657516015,
+      "mnfsr_wheat_share_of_4crop_area": 1.0
+    },
+    {
+      "district": "Multan",
+      "worldcereal_wintercereals_frac_of_total_area": 0.6241472644070862,
+      "worldcereal_cropland_frac_of_total_area": 0.7606428104003068,
+      "worldcereal_wintercereals_share_of_cropland": 0.8205523747455308,
+      "mnfsr_wheat_share_of_4crop_area": 0.5684
+    },
+    {
+      "district": "Musakhel",
+      "worldcereal_wintercereals_frac_of_total_area": 0.1650796640849943,
+      "worldcereal_cropland_frac_of_total_area": 0.014956681786973484,
+      "worldcereal_wintercereals_share_of_cropland": 11.037185014444205,
+      "mnfsr_wheat_share_of_4crop_area": 1.0
+    },
+    {
+      "district": "Muzaffargarh",
+      "worldcereal_wintercereals_frac_of_total_area": 0.6172436081729242,
+      "worldcereal_cropland_frac_of_total_area": 0.6906866812458904,
+      "worldcereal_wintercereals_share_of_cropland": 0.893666585635492,
+      "mnfsr_wheat_share_of_4crop_area": 0.5688
+    },
+    {
+      "district": "Narowal",
+      "worldcereal_wintercereals_frac_of_total_area": 0.3958994977599649,
+      "worldcereal_cropland_frac_of_total_area": 0.9266570572166477,
+      "worldcereal_wintercereals_share_of_cropland": 0.42723410422093794,
+      "mnfsr_wheat_share_of_4crop_area": 0.6217
+    },
+    {
+      "district": "Nasirabad",
+      "worldcereal_wintercereals_frac_of_total_area": 0.5926818043624974,
+      "worldcereal_cropland_frac_of_total_area": 0.765009558322223,
+      "worldcereal_wintercereals_share_of_cropland": 0.7747377766917509,
+      "mnfsr_wheat_share_of_4crop_area": 0.6566
+    },
+    {
+      "district": "Naushehro Feroze",
+      "worldcereal_wintercereals_frac_of_total_area": 0.6569138881257176,
+      "worldcereal_cropland_frac_of_total_area": 0.7575281749828002,
+      "worldcereal_wintercereals_share_of_cropland": 0.8671807991044465,
+      "mnfsr_wheat_share_of_4crop_area": 0.698
+    },
+    {
+      "district": "Nawabshah",
+      "worldcereal_wintercereals_frac_of_total_area": 0.662038931057583,
+      "worldcereal_cropland_frac_of_total_area": 0.5931046204009457,
+      "worldcereal_wintercereals_share_of_cropland": 1.116226224321161,
+      "mnfsr_wheat_share_of_4crop_area": 0.5487
+    },
+    {
+      "district": "North Waziristan",
+      "worldcereal_wintercereals_frac_of_total_area": 0.13034281148664087,
+      "worldcereal_cropland_frac_of_total_area": 0.03868631032717735,
+      "worldcereal_wintercereals_share_of_cropland": 3.3692231278792777,
+      "mnfsr_wheat_share_of_4crop_area": 0.9683
+    },
+    {
+      "district": "Nowshera",
+      "worldcereal_wintercereals_frac_of_total_area": 0.3693564465902694,
+      "worldcereal_cropland_frac_of_total_area": 0.21050630719871674,
+      "worldcereal_wintercereals_share_of_cropland": 1.7546098808412378,
+      "mnfsr_wheat_share_of_4crop_area": 0.9993
+    },
+    {
+      "district": "Nushki",
+      "worldcereal_wintercereals_frac_of_total_area": 0.1602082024669949,
+      "worldcereal_cropland_frac_of_total_area": 0.0088326380671631,
+      "worldcereal_wintercereals_share_of_cropland": null,
+      "mnfsr_wheat_share_of_4crop_area": 1.0
+    },
+    {
+      "district": "Okara",
+      "worldcereal_wintercereals_frac_of_total_area": 0.4326867772582717,
+      "worldcereal_cropland_frac_of_total_area": 0.9088983857374251,
+      "worldcereal_wintercereals_share_of_cropland": 0.476056272129052,
+      "mnfsr_wheat_share_of_4crop_area": 0.4761
+    },
+    {
+      "district": "Orakzai",
+      "worldcereal_wintercereals_frac_of_total_area": 0.37978426685752936,
+      "worldcereal_cropland_frac_of_total_area": 0.0516877769200081,
+      "worldcereal_wintercereals_share_of_cropland": 7.347661081367123,
+      "mnfsr_wheat_share_of_4crop_area": 0.9244
+    },
+    {
+      "district": "Pakpattan",
+      "worldcereal_wintercereals_frac_of_total_area": 0.4804392057568406,
+      "worldcereal_cropland_frac_of_total_area": 0.9246697878989091,
+      "worldcereal_wintercereals_share_of_cropland": 0.5195792184889308,
+      "mnfsr_wheat_share_of_4crop_area": 0.4789
+    },
+    {
+      "district": "Panjgur",
+      "worldcereal_wintercereals_frac_of_total_area": 0.23862737886600496,
+      "worldcereal_cropland_frac_of_total_area": 0.000772349299618589,
+      "worldcereal_wintercereals_share_of_cropland": null,
+      "mnfsr_wheat_share_of_4crop_area": 0.9969
+    },
+    {
+      "district": "Peshawar",
+      "worldcereal_wintercereals_frac_of_total_area": 0.3777077353962517,
+      "worldcereal_cropland_frac_of_total_area": 0.3984845296148163,
+      "worldcereal_wintercereals_share_of_cropland": 0.9478604746873163,
+      "mnfsr_wheat_share_of_4crop_area": 0.9983
+    },
+    {
+      "district": "Pishin",
+      "worldcereal_wintercereals_frac_of_total_area": 0.2059191810876748,
+      "worldcereal_cropland_frac_of_total_area": 0.009995449295584696,
+      "worldcereal_wintercereals_share_of_cropland": null,
+      "mnfsr_wheat_share_of_4crop_area": 1.0
+    },
+    {
+      "district": "Qambar Shahdadkot",
+      "worldcereal_wintercereals_frac_of_total_area": 0.5760158925338219,
+      "worldcereal_cropland_frac_of_total_area": 0.5814664764918843,
+      "worldcereal_wintercereals_share_of_cropland": 0.9906261423858053,
+      "mnfsr_wheat_share_of_4crop_area": 0.7443
+    },
+    {
+      "district": "Qilla Abdullah",
+      "worldcereal_wintercereals_frac_of_total_area": 0.24188604711456566,
+      "worldcereal_cropland_frac_of_total_area": 0.00863711561090869,
+      "worldcereal_wintercereals_share_of_cropland": null,
+      "mnfsr_wheat_share_of_4crop_area": 1.0
+    },
+    {
+      "district": "Qilla Saifullah",
+      "worldcereal_wintercereals_frac_of_total_area": 0.21074143455002936,
+      "worldcereal_cropland_frac_of_total_area": 0.018825540666055077,
+      "worldcereal_wintercereals_share_of_cropland": 11.19444260796312,
+      "mnfsr_wheat_share_of_4crop_area": 1.0
+    },
+    {
+      "district": "Quetta",
+      "worldcereal_wintercereals_frac_of_total_area": 0.19503552145663125,
+      "worldcereal_cropland_frac_of_total_area": 0.013619225834530298,
+      "worldcereal_wintercereals_share_of_cropland": 14.320602641167502,
+      "mnfsr_wheat_share_of_4crop_area": 1.0
+    },
+    {
+      "district": "Rahim Yar Khan",
+      "worldcereal_wintercereals_frac_of_total_area": 0.5918722927073474,
+      "worldcereal_cropland_frac_of_total_area": 0.4833213388108854,
+      "worldcereal_wintercereals_share_of_cropland": 1.224593754050938,
+      "mnfsr_wheat_share_of_4crop_area": 0.3997
+    },
+    {
+      "district": "Rajanpur",
+      "worldcereal_wintercereals_frac_of_total_area": 0.6338062281498233,
+      "worldcereal_cropland_frac_of_total_area": 0.4989638350292201,
+      "worldcereal_wintercereals_share_of_cropland": 1.2702448226787952,
+      "mnfsr_wheat_share_of_4crop_area": 0.5078
+    },
+    {
+      "district": "Rawalpindi",
+      "worldcereal_wintercereals_frac_of_total_area": 0.22110164644767394,
+      "worldcereal_cropland_frac_of_total_area": 0.36320761052835504,
+      "worldcereal_wintercereals_share_of_cropland": 0.6087472840286557,
+      "mnfsr_wheat_share_of_4crop_area": 1.0
+    },
+    {
+      "district": "Sahiwal",
+      "worldcereal_wintercereals_frac_of_total_area": 0.4711629446869775,
+      "worldcereal_cropland_frac_of_total_area": 0.8876367932417542,
+      "worldcereal_wintercereals_share_of_cropland": 0.5308060101544855,
+      "mnfsr_wheat_share_of_4crop_area": 0.625
+    },
+    {
+      "district": "Sanghar",
+      "worldcereal_wintercereals_frac_of_total_area": 0.59184979033595,
+      "worldcereal_cropland_frac_of_total_area": 0.37346133529561437,
+      "worldcereal_wintercereals_share_of_cropland": 1.5847685808424308,
+      "mnfsr_wheat_share_of_4crop_area": 0.5918
+    },
+    {
+      "district": "Sargodha",
+      "worldcereal_wintercereals_frac_of_total_area": 0.21537594700354507,
+      "worldcereal_cropland_frac_of_total_area": 0.8422861482175312,
+      "worldcereal_wintercereals_share_of_cropland": 0.2557040115871898,
+      "mnfsr_wheat_share_of_4crop_area": 0.6375
+    },
+    {
+      "district": "Shangla",
+      "worldcereal_wintercereals_frac_of_total_area": 0.20539547237406702,
+      "worldcereal_cropland_frac_of_total_area": 0.0022050810675882265,
+      "worldcereal_wintercereals_share_of_cropland": null,
+      "mnfsr_wheat_share_of_4crop_area": 0.9495
+    },
+    {
+      "district": "Sheikhpura",
+      "worldcereal_wintercereals_frac_of_total_area": 0.6027627548386321,
+      "worldcereal_cropland_frac_of_total_area": 0.8898961039797244,
+      "worldcereal_wintercereals_share_of_cropland": 0.6773405930681157,
+      "mnfsr_wheat_share_of_4crop_area": 0.4983
+    },
+    {
+      "district": "Shikarpur",
+      "worldcereal_wintercereals_frac_of_total_area": 0.47375478168861984,
+      "worldcereal_cropland_frac_of_total_area": 0.6853617960199191,
+      "worldcereal_wintercereals_share_of_cropland": 0.6912477241069487,
+      "mnfsr_wheat_share_of_4crop_area": 0.3419
+    },
+    {
+      "district": "Sialkot",
+      "worldcereal_wintercereals_frac_of_total_area": 0.40816611538636594,
+      "worldcereal_cropland_frac_of_total_area": 0.8716644570990175,
+      "worldcereal_wintercereals_share_of_cropland": 0.4682605927799118,
+      "mnfsr_wheat_share_of_4crop_area": 0.4978
+    },
+    {
+      "district": "Sibi",
+      "worldcereal_wintercereals_frac_of_total_area": 0.036231635419041446,
+      "worldcereal_cropland_frac_of_total_area": 0.05383176913375121,
+      "worldcereal_wintercereals_share_of_cropland": 0.6730530317333578,
+      "mnfsr_wheat_share_of_4crop_area": 1.0
+    },
+    {
+      "district": "South Waziristan",
+      "worldcereal_wintercereals_frac_of_total_area": 0.04980011601042852,
+      "worldcereal_cropland_frac_of_total_area": 0.013561305368973018,
+      "worldcereal_wintercereals_share_of_cropland": 3.672221416410729,
+      "mnfsr_wheat_share_of_4crop_area": 1.0
+    },
+    {
+      "district": "Sukkur",
+      "worldcereal_wintercereals_frac_of_total_area": 0.7028939613381594,
+      "worldcereal_cropland_frac_of_total_area": 0.28233178260505615,
+      "worldcereal_wintercereals_share_of_cropland": 2.4896026754501555,
+      "mnfsr_wheat_share_of_4crop_area": 0.5403
+    },
+    {
+      "district": "Swabi",
+      "worldcereal_wintercereals_frac_of_total_area": 0.3916338351437855,
+      "worldcereal_cropland_frac_of_total_area": 0.5813478632972068,
+      "worldcereal_wintercereals_share_of_cropland": 0.6736652181407737,
+      "mnfsr_wheat_share_of_4crop_area": 0.9881
+    },
+    {
+      "district": "Swat",
+      "worldcereal_wintercereals_frac_of_total_area": 0.1072732264387209,
+      "worldcereal_cropland_frac_of_total_area": 0.020371192342257177,
+      "worldcereal_wintercereals_share_of_cropland": 5.265927719714161,
+      "mnfsr_wheat_share_of_4crop_area": 0.9321
+    },
+    {
+      "district": "Tando Allahyar",
+      "worldcereal_wintercereals_frac_of_total_area": 0.35467555366406506,
+      "worldcereal_cropland_frac_of_total_area": 0.6951439483819755,
+      "worldcereal_wintercereals_share_of_cropland": 0.5102188611288521,
+      "mnfsr_wheat_share_of_4crop_area": 0.6012
+    },
+    {
+      "district": "Tando Muhammad Khan",
+      "worldcereal_wintercereals_frac_of_total_area": 0.08189268794554908,
+      "worldcereal_cropland_frac_of_total_area": 0.7437083510223499,
+      "worldcereal_wintercereals_share_of_cropland": 0.1101139819567362,
+      "mnfsr_wheat_share_of_4crop_area": 0.3489
+    },
+    {
+      "district": "Tank",
+      "worldcereal_wintercereals_frac_of_total_area": 0.05466770199258231,
+      "worldcereal_cropland_frac_of_total_area": 0.2663989956202991,
+      "worldcereal_wintercereals_share_of_cropland": 0.20520986524476495,
+      "mnfsr_wheat_share_of_4crop_area": 0.9539
+    },
+    {
+      "district": "Tharparkar",
+      "worldcereal_wintercereals_frac_of_total_area": 0.013597446663334584,
+      "worldcereal_cropland_frac_of_total_area": 0.06484676486695329,
+      "worldcereal_wintercereals_share_of_cropland": 0.20968581379861576,
+      "mnfsr_wheat_share_of_4crop_area": 0.7147
+    },
+    {
+      "district": "Thatta",
+      "worldcereal_wintercereals_frac_of_total_area": 0.06610570146141134,
+      "worldcereal_cropland_frac_of_total_area": 0.18829921081310413,
+      "worldcereal_wintercereals_share_of_cropland": 0.3510673314877797,
+      "mnfsr_wheat_share_of_4crop_area": 0.1938
+    },
+    {
+      "district": "Toba Tek Singh",
+      "worldcereal_wintercereals_frac_of_total_area": 0.5905156513375749,
+      "worldcereal_cropland_frac_of_total_area": 0.8509062068383912,
+      "worldcereal_wintercereals_share_of_cropland": 0.6939844210699581,
+      "mnfsr_wheat_share_of_4crop_area": 0.5792
+    },
+    {
+      "district": "Umerkot",
+      "worldcereal_wintercereals_frac_of_total_area": 0.4543486726028833,
+      "worldcereal_cropland_frac_of_total_area": 0.2696280844779443,
+      "worldcereal_wintercereals_share_of_cropland": 1.685094019351123,
+      "mnfsr_wheat_share_of_4crop_area": 0.6361
+    },
+    {
+      "district": "Upper Dir",
+      "worldcereal_wintercereals_frac_of_total_area": 0.06010728791819946,
+      "worldcereal_cropland_frac_of_total_area": 0.007498093446467242,
+      "worldcereal_wintercereals_share_of_cropland": null,
+      "mnfsr_wheat_share_of_4crop_area": 0.797
+    },
+    {
+      "district": "Vihari",
+      "worldcereal_wintercereals_frac_of_total_area": 0.5150142634730159,
+      "worldcereal_cropland_frac_of_total_area": 0.9037520035492501,
+      "worldcereal_wintercereals_share_of_cropland": 0.5698623753534507,
+      "mnfsr_wheat_share_of_4crop_area": 0.5796
+    },
+    {
+      "district": "Zhob",
+      "worldcereal_wintercereals_frac_of_total_area": 0.1354832956150767,
+      "worldcereal_cropland_frac_of_total_area": 0.0034776705562188717,
+      "worldcereal_wintercereals_share_of_cropland": null,
+      "mnfsr_wheat_share_of_4crop_area": 1.0
+    },
+    {
+      "district": "Ziarat",
+      "worldcereal_wintercereals_frac_of_total_area": 0.01571475341528022,
+      "worldcereal_cropland_frac_of_total_area": 0.000586703094076536,
+      "worldcereal_wintercereals_share_of_cropland": null,
+      "mnfsr_wheat_share_of_4crop_area": 1.0
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+# Raw MSG3 archive (45 real .nat scenes, ~12GB, Nov 2023) -- too large for
+# git, and it's raw satellite input, not code/output. Derived JSON/parquet
+# outputs in the same folder (hazards_district_nov2023*.json,
+# track_e_results.json, grid_dataset.parquet, etc.) are real, small, and kept.
+data/msg_oct_nov_2023/nat_in/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Local secrets (never used in this project, kept as a guard rail)
+.env
+.env.local
+*.env

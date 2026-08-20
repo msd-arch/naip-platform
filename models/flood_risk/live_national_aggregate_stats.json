@@ -1,0 +1,16 @@
+{
+  "note": "real national-average Sentinel-1/JRC stats, live 2026 monsoon-vs-dry-season windows, single reduceRegion over the national bbox (not per-point) -- used only for the domain-shift comparison in build_dashboard_summary.py",
+  "during_window": [
+    "2026-07-20",
+    "2026-08-19"
+  ],
+  "pre_window": [
+    "2026-03-01",
+    "2026-04-15"
+  ],
+  "VV_during": -10.259057277844356,
+  "VH_during": -18.904024095490183,
+  "VV_change": -0.30535426714173397,
+  "VH_change": -0.3457804351645031,
+  "jrc_occurrence": 2.3916949002155863
+}

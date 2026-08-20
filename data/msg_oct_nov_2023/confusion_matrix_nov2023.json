@@ -1,0 +1,12 @@
+{
+  "n_attempted": 3210,
+  "tp": 5,
+  "fp": 1,
+  "fn": 1989,
+  "tn": 1215,
+  "precision": 0.8333333333333334,
+  "recall": 0.0025075225677031092,
+  "tolerance": "50km, +/-1 day",
+  "window": "2023-11-01..2023-11-15",
+  "sampling_caveat": "district-centroid points (126), 3 scans/day (02:00/12:00/20:00 UTC) -- NOT full-grid or full-15min-cadence, so this recall is bounded to the actual sampling frame this run used, not a claim about detector recall against every real fire nationally in this window"
+}

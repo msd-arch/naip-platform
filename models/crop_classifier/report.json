@@ -1,0 +1,67 @@
+{
+  "task": "irrigated vs. not-irrigated (binary) -- NOT the 4-crop-type classifier",
+  "scope_note": "architecture.md 6.3 specifies a wheat/cotton/rice/sugarcane classifier. No public crop-type dataset (checked: ESA WorldCereal) has those classes for Pakistan -- confirmed against the real GEE catalog, not assumed. This report covers the one real, non-degenerate binary task available: WorldCereal irrigation status, predicted from real Sentinel-2 NDVI monthly composites. The 'cropland' task was dropped -- all 120 farms are WorldCereal-labeled cropland (zero variance, nothing to validate).",
+  "n_farms_total": 120,
+  "n_farms_used": 120,
+  "n_farms_dropped_missing_data": 0,
+  "class_balance": {
+    "irrigated": 25,
+    "not_irrigated": 95
+  },
+  "majority_class_baseline_accuracy": 0.792,
+  "features": "Sentinel-2 SR Harmonized, cloud-masked (SCL), monthly median NDVI, 2025-04..2025-09, per-farm mean (reduceRegions, scale=10m)",
+  "labels": "ESA WorldCereal 2021 v100 'irrigation' product, per-farm mode (reduceRegions, scale=10m)",
+  "train_test_split": "stratified 75/25 held-out, seed=42",
+  "models": {
+    "logistic_regression": {
+      "held_out_test_accuracy": 0.7,
+      "held_out_test_precision_irrigated": 0.364,
+      "held_out_test_recall_irrigated": 0.667,
+      "held_out_test_f1_irrigated": 0.471,
+      "held_out_confusion_matrix_rows_actual_cols_pred": [
+        [
+          17,
+          7
+        ],
+        [
+          2,
+          4
+        ]
+      ],
+      "cv_5fold_accuracy_mean": 0.767,
+      "cv_5fold_accuracy_std": 0.062,
+      "cv_5fold_scores": [
+        0.792,
+        0.708,
+        0.875,
+        0.75,
+        0.708
+      ]
+    },
+    "random_forest": {
+      "held_out_test_accuracy": 0.7,
+      "held_out_test_precision_irrigated": 0.364,
+      "held_out_test_recall_irrigated": 0.667,
+      "held_out_test_f1_irrigated": 0.471,
+      "held_out_confusion_matrix_rows_actual_cols_pred": [
+        [
+          17,
+          7
+        ],
+        [
+          2,
+          4
+        ]
+      ],
+      "cv_5fold_accuracy_mean": 0.8,
+      "cv_5fold_accuracy_std": 0.122,
+      "cv_5fold_scores": [
+        0.792,
+        0.625,
+        1.0,
+        0.833,
+        0.75
+      ]
+    }
+  }
+}

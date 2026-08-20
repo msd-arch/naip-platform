@@ -1,0 +1,51 @@
+district,date,hazard,hazard_flag,hazard_confidence,crop,crop_stage,vulnerability_weight,crop_weight,exposure_score,agronomically_plausible,crop_mix_source,crop_mix_share_of_4crop_area,lat,lon
+Jafarabad,20260706,fog,True,0.75,cotton,flowering,0.3,1.0,0.225,True,real_district_area,,28.283821923384817,68.3340524148427
+Jafarabad,20260710,fog,True,0.75,cotton,flowering,0.3,1.0,0.225,True,real_district_area,,28.283821923384817,68.3340524148427
+Jafarabad,20260720,fog,True,0.75,cotton,flowering,0.3,1.0,0.225,True,real_district_area,,28.283821923384817,68.3340524148427
+Dera Ismail Khan,20260622,residue_burning,True,0.55,sugarcane,vegetative,0.4,1.0,0.22,True,real_district_area,,31.85139122217311,70.74179274934062
+Jafarabad,20260623,uv_index,True,0.55,cotton,vegetative,0.4,1.0,0.22,True,real_district_area,,28.283821923384817,68.3340524148427
+Hyderabad,20260623,uv_index,True,0.55,sugarcane,vegetative,0.4,1.0,0.22,True,real_district_area,,25.386847921402374,68.4882872626284
+Tando Allahyar,20260623,uv_index,True,0.55,sugarcane,vegetative,0.4,1.0,0.22,True,real_district_area,,25.440386667031124,68.78524324414445
+Badin,20260623,uv_index,True,0.55,sugarcane,vegetative,0.4,1.0,0.22,True,real_district_area,,24.721969980491448,68.83381906213141
+Mirpurkhas,20260623,uv_index,True,0.55,sugarcane,vegetative,0.4,1.0,0.22,True,real_district_area,,25.22578109140304,69.1864815369011
+Nawabshah,20260623,uv_index,True,0.55,sugarcane,vegetative,0.4,1.0,0.22,True,real_district_area,,26.272782618303935,68.39749418172028
+Dera Ismail Khan,20260623,uv_index,True,0.55,sugarcane,vegetative,0.4,1.0,0.22,True,real_district_area,,31.85139122217311,70.74179274934062
+Bannu,20260623,uv_index,True,0.55,sugarcane,vegetative,0.4,1.0,0.22,True,real_district_area,,32.80469584713567,70.62129594655778
+Peshawar,20260623,uv_index,True,0.55,sugarcane,vegetative,0.4,1.0,0.22,True,real_district_area,,33.9043530181635,71.5685717969027
+Charsadda,20260623,uv_index,True,0.55,sugarcane,vegetative,0.4,1.0,0.22,True,real_district_area,,34.19233482303397,71.70912216994965
+Nowshera,20260623,uv_index,True,0.55,sugarcane,vegetative,0.4,1.0,0.22,True,real_district_area,,33.88460336750447,71.96471589336815
+Swabi,20260623,uv_index,True,0.55,sugarcane,vegetative,0.4,1.0,0.22,True,real_district_area,,34.14909286355751,72.46411036861973
+Jafarabad,20260713,residue_burning,True,0.55,cotton,flowering,0.4,1.0,0.22,True,real_district_area,,28.283821923384817,68.3340524148427
+Peshawar,20260715,residue_burning,True,0.55,sugarcane,vegetative,0.4,1.0,0.22,True,real_district_area,,33.9043530181635,71.5685717969027
+Charsadda,20260715,residue_burning,True,0.55,sugarcane,vegetative,0.4,1.0,0.22,True,real_district_area,,34.19233482303397,71.70912216994965
+Charsadda,20260712,frost,True,0.52,sugarcane,vegetative,0.4,1.0,0.208,True,real_district_area,,34.19233482303397,71.70912216994965
+Charsadda,20260712,frost,True,0.52,sugarcane,vegetative,0.4,1.0,0.208,True,real_district_area,,34.19233482303397,71.70912216994965
+Charsadda,20260715,frost,True,0.52,sugarcane,vegetative,0.4,1.0,0.208,True,real_district_area,,34.19233482303397,71.70912216994965
+Sialkot,20260720,hail,True,0.65,rice,vegetative,0.6,0.4895,0.1909,True,real_district_area,0.4895,32.424270516378186,74.52050975811137
+Jacobabad,20260623,uv_index,True,0.55,rice,establishment,0.4,0.7891,0.1736,True,real_district_area,0.7891,28.079200745318197,68.45319087854767
+Thatta,20260623,uv_index,True,0.55,rice,establishment,0.4,0.7414,0.1631,True,real_district_area,0.7414,24.60358755549684,67.99278352700438
+Badin,20260623,uv_index,True,0.55,rice,establishment,0.4,0.7042,0.1549,True,real_district_area,0.7042,24.721969980491448,68.83381906213141
+Mirpurkhas,20260707,fog,True,0.75,sugarcane,vegetative,0.2,1.0,0.15,True,real_district_area,,25.22578109140304,69.1864815369011
+Bannu,20260708,fog,True,0.75,sugarcane,vegetative,0.2,1.0,0.15,True,real_district_area,,32.80469584713567,70.62129594655778
+Peshawar,20260709,fog,True,0.75,sugarcane,vegetative,0.2,1.0,0.15,True,real_district_area,,33.9043530181635,71.5685717969027
+Swabi,20260709,fog,True,0.75,sugarcane,vegetative,0.2,1.0,0.15,True,real_district_area,,34.14909286355751,72.46411036861973
+Nawabshah,20260710,fog,True,0.75,sugarcane,vegetative,0.2,1.0,0.15,True,real_district_area,,26.272782618303935,68.39749418172028
+Charsadda,20260710,fog,True,0.75,sugarcane,vegetative,0.2,1.0,0.15,True,real_district_area,,34.19233482303397,71.70912216994965
+Nowshera,20260710,fog,True,0.75,sugarcane,vegetative,0.2,1.0,0.15,True,real_district_area,,33.88460336750447,71.96471589336815
+Dera Ismail Khan,20260711,fog,True,0.75,sugarcane,vegetative,0.2,1.0,0.15,True,real_district_area,,31.85139122217311,70.74179274934062
+Bannu,20260711,fog,True,0.75,sugarcane,vegetative,0.2,1.0,0.15,True,real_district_area,,32.80469584713567,70.62129594655778
+Peshawar,20260711,fog,True,0.75,sugarcane,vegetative,0.2,1.0,0.15,True,real_district_area,,33.9043530181635,71.5685717969027
+Badin,20260712,fog,True,0.75,sugarcane,vegetative,0.2,1.0,0.15,True,real_district_area,,24.721969980491448,68.83381906213141
+Nowshera,20260713,fog,True,0.75,sugarcane,vegetative,0.2,1.0,0.15,True,real_district_area,,33.88460336750447,71.96471589336815
+Swabi,20260713,fog,True,0.75,sugarcane,vegetative,0.2,1.0,0.15,True,real_district_area,,34.14909286355751,72.46411036861973
+Nowshera,20260714,fog,True,0.75,sugarcane,vegetative,0.2,1.0,0.15,True,real_district_area,,33.88460336750447,71.96471589336815
+Swabi,20260714,fog,True,0.75,sugarcane,vegetative,0.2,1.0,0.15,True,real_district_area,,34.14909286355751,72.46411036861973
+Badin,20260720,fog,True,0.75,sugarcane,vegetative,0.2,1.0,0.15,True,real_district_area,,24.721969980491448,68.83381906213141
+Nawabshah,20260720,fog,True,0.75,sugarcane,vegetative,0.2,1.0,0.15,True,real_district_area,,26.272782618303935,68.39749418172028
+Dera Ismail Khan,20260720,fog,True,0.75,sugarcane,vegetative,0.2,1.0,0.15,True,real_district_area,,31.85139122217311,70.74179274934062
+Bannu,20260720,fog,True,0.75,sugarcane,vegetative,0.2,1.0,0.15,True,real_district_area,,32.80469584713567,70.62129594655778
+Shikarpur,20260623,uv_index,True,0.55,rice,establishment,0.4,0.656,0.1443,True,real_district_area,0.656,27.8577398521839,68.66895370840413
+Kashmore,20260623,uv_index,True,0.55,rice,establishment,0.4,0.6256,0.1376,True,real_district_area,0.6256,28.178160777797537,69.38141703613834
+Gujranwala,20260623,uv_index,True,0.55,rice,establishment,0.4,0.6092,0.134,True,real_district_area,0.6092,32.15422178347083,74.12874209292401
+Hafizabad,20260712,hail,True,0.65,rice,establishment,0.4,0.4934,0.1283,True,real_district_area,0.4934,31.985829168595675,73.4554526384932
+Gujranwala,20260715,frost,True,0.52,rice,vegetative,0.4,0.6092,0.1267,True,real_district_area,0.6092,32.15422178347083,74.12874209292401

@@ -1,0 +1,575 @@
+{
+  "n_flagged": 46,
+  "n_confirmed_real_fire_nearby": 25,
+  "tolerance": "50km, +/-1 day",
+  "records": [
+    {
+      "district": "Buner",
+      "date": "20260622",
+      "lat": 34.45091928795438,
+      "lon": 72.4883443099026,
+      "n_real_firms_matches_within_50km_1day": 14,
+      "nearest_match": {
+        "dist_km": 29.1,
+        "lat": 34.49284,
+        "lon": 72.80223,
+        "date": "2026-06-23",
+        "confidence": "n",
+        "frp": 1.9,
+        "daynight": "N"
+      }
+    },
+    {
+      "district": "Charsadda",
+      "date": "20260715",
+      "lat": 34.19233482303397,
+      "lon": 71.70912216994965,
+      "n_real_firms_matches_within_50km_1day": 4,
+      "nearest_match": {
+        "dist_km": 29.6,
+        "lat": 34.09266,
+        "lon": 72.0076,
+        "date": "2026-07-14",
+        "confidence": "l",
+        "frp": 1.9,
+        "daynight": "D"
+      }
+    },
+    {
+      "district": "Chitral",
+      "date": "20260710",
+      "lat": 36.118821869290485,
+      "lon": 72.42661125111606,
+      "n_real_firms_matches_within_50km_1day": 0,
+      "nearest_match": null
+    },
+    {
+      "district": "Dadu",
+      "date": "20260715",
+      "lat": 26.759217238863204,
+      "lon": 67.64464122249369,
+      "n_real_firms_matches_within_50km_1day": 0,
+      "nearest_match": null
+    },
+    {
+      "district": "Dera Bugti",
+      "date": "20260622",
+      "lat": 28.97707671343281,
+      "lon": 69.12499679264064,
+      "n_real_firms_matches_within_50km_1day": 0,
+      "nearest_match": null
+    },
+    {
+      "district": "Dera Ismail Khan",
+      "date": "20260622",
+      "lat": 31.85139122217311,
+      "lon": 70.74179274934062,
+      "n_real_firms_matches_within_50km_1day": 5,
+      "nearest_match": {
+        "dist_km": 48.7,
+        "lat": 31.6511,
+        "lon": 70.28392,
+        "date": "2026-06-22",
+        "confidence": "n",
+        "frp": 8.01,
+        "daynight": "D"
+      }
+    },
+    {
+      "district": "Faisalabad",
+      "date": "20260622",
+      "lat": 31.199605971371717,
+      "lon": 73.09325166145219,
+      "n_real_firms_matches_within_50km_1day": 20,
+      "nearest_match": {
+        "dist_km": 20.2,
+        "lat": 31.02197,
+        "lon": 73.05003,
+        "date": "2026-06-23",
+        "confidence": "l",
+        "frp": 2.39,
+        "daynight": "D"
+      }
+    },
+    {
+      "district": "Faisalabad",
+      "date": "20260709",
+      "lat": 31.199605971371717,
+      "lon": 73.09325166145219,
+      "n_real_firms_matches_within_50km_1day": 16,
+      "nearest_match": {
+        "dist_km": 17.4,
+        "lat": 31.06485,
+        "lon": 73.18635,
+        "date": "2026-07-08",
+        "confidence": "n",
+        "frp": 3.87,
+        "daynight": "D"
+      }
+    },
+    {
+      "district": "Gwadar",
+      "date": "20260708",
+      "lat": 25.403053323845104,
+      "lon": 63.26325114763529,
+      "n_real_firms_matches_within_50km_1day": 0,
+      "nearest_match": null
+    },
+    {
+      "district": "Hafizabad",
+      "date": "20260622",
+      "lat": 31.985829168595675,
+      "lon": 73.4554526384932,
+      "n_real_firms_matches_within_50km_1day": 8,
+      "nearest_match": {
+        "dist_km": 19.3,
+        "lat": 32.00459,
+        "lon": 73.65844,
+        "date": "2026-06-22",
+        "confidence": "n",
+        "frp": 1.86,
+        "daynight": "N"
+      }
+    },
+    {
+      "district": "Jafarabad",
+      "date": "20260713",
+      "lat": 28.283821923384817,
+      "lon": 68.3340524148427,
+      "n_real_firms_matches_within_50km_1day": 6,
+      "nearest_match": {
+        "dist_km": 20.4,
+        "lat": 28.29502,
+        "lon": 68.1256,
+        "date": "2026-07-13",
+        "confidence": "n",
+        "frp": 3.45,
+        "daynight": "D"
+      }
+    },
+    {
+      "district": "Jhelum",
+      "date": "20260708",
+      "lat": 32.75677108475934,
+      "lon": 73.18117515608306,
+      "n_real_firms_matches_within_50km_1day": 2,
+      "nearest_match": {
+        "dist_km": 23.9,
+        "lat": 32.56101,
+        "lon": 73.28552,
+        "date": "2026-07-08",
+        "confidence": "n",
+        "frp": 4.45,
+        "daynight": "D"
+      }
+    },
+    {
+      "district": "Kalat",
+      "date": "20260622",
+      "lat": 28.86860302433158,
+      "lon": 66.68662305433648,
+      "n_real_firms_matches_within_50km_1day": 0,
+      "nearest_match": null
+    },
+    {
+      "district": "Kalat",
+      "date": "20260709",
+      "lat": 28.86860302433158,
+      "lon": 66.68662305433648,
+      "n_real_firms_matches_within_50km_1day": 0,
+      "nearest_match": null
+    },
+    {
+      "district": "Kasur",
+      "date": "20260709",
+      "lat": 31.031981126992218,
+      "lon": 74.0671594418965,
+      "n_real_firms_matches_within_50km_1day": 21,
+      "nearest_match": {
+        "dist_km": 20.9,
+        "lat": 30.84926,
+        "lon": 74.1198,
+        "date": "2026-07-09",
+        "confidence": "n",
+        "frp": 2.21,
+        "daynight": "D"
+      }
+    },
+    {
+      "district": "Khairpur",
+      "date": "20260711",
+      "lat": 26.8551437884378,
+      "lon": 68.98577019557749,
+      "n_real_firms_matches_within_50km_1day": 0,
+      "nearest_match": null
+    },
+    {
+      "district": "Khanewal",
+      "date": "20260710",
+      "lat": 30.35528727902074,
+      "lon": 71.91468452184928,
+      "n_real_firms_matches_within_50km_1day": 12,
+      "nearest_match": {
+        "dist_km": 20.1,
+        "lat": 30.44563,
+        "lon": 71.73295,
+        "date": "2026-07-09",
+        "confidence": "l",
+        "frp": 1.21,
+        "daynight": "D"
+      }
+    },
+    {
+      "district": "Khuzdar",
+      "date": "20260706",
+      "lat": 27.20113851571389,
+      "lon": 66.68632009201552,
+      "n_real_firms_matches_within_50km_1day": 0,
+      "nearest_match": null
+    },
+    {
+      "district": "Khuzdar",
+      "date": "20260712",
+      "lat": 27.20113851571389,
+      "lon": 66.68632009201552,
+      "n_real_firms_matches_within_50km_1day": 0,
+      "nearest_match": null
+    },
+    {
+      "district": "Kohat",
+      "date": "20260714",
+      "lat": 33.418824943554064,
+      "lon": 71.5366026095573,
+      "n_real_firms_matches_within_50km_1day": 5,
+      "nearest_match": {
+        "dist_km": 14.1,
+        "lat": 33.54558,
+        "lon": 71.54987,
+        "date": "2026-07-14",
+        "confidence": "n",
+        "frp": 0.8,
+        "daynight": "N"
+      }
+    },
+    {
+      "district": "Kohat",
+      "date": "20260715",
+      "lat": 33.418824943554064,
+      "lon": 71.5366026095573,
+      "n_real_firms_matches_within_50km_1day": 5,
+      "nearest_match": {
+        "dist_km": 14.1,
+        "lat": 33.54558,
+        "lon": 71.54987,
+        "date": "2026-07-14",
+        "confidence": "n",
+        "frp": 0.8,
+        "daynight": "N"
+      }
+    },
+    {
+      "district": "Kohlu",
+      "date": "20260622",
+      "lat": 29.568958221108144,
+      "lon": 68.88747489694028,
+      "n_real_firms_matches_within_50km_1day": 0,
+      "nearest_match": null
+    },
+    {
+      "district": "Kurram",
+      "date": "20260714",
+      "lat": 33.62449227750573,
+      "lon": 70.40444482790119,
+      "n_real_firms_matches_within_50km_1day": 4,
+      "nearest_match": {
+        "dist_km": 48.9,
+        "lat": 33.26176,
+        "lon": 70.70278,
+        "date": "2026-07-13",
+        "confidence": "n",
+        "frp": 14.54,
+        "daynight": "D"
+      }
+    },
+    {
+      "district": "Lodhran",
+      "date": "20260715",
+      "lat": 29.6947473198121,
+      "lon": 71.73476503298319,
+      "n_real_firms_matches_within_50km_1day": 21,
+      "nearest_match": {
+        "dist_km": 6.5,
+        "lat": 29.74278,
+        "lon": 71.69563,
+        "date": "2026-07-16",
+        "confidence": "n",
+        "frp": 15.06,
+        "daynight": "D"
+      }
+    },
+    {
+      "district": "Malakand",
+      "date": "20260622",
+      "lat": 34.490702704742134,
+      "lon": 71.90262504844601,
+      "n_real_firms_matches_within_50km_1day": 3,
+      "nearest_match": {
+        "dist_km": 27.1,
+        "lat": 34.61112,
+        "lon": 72.15991,
+        "date": "2026-06-23",
+        "confidence": "n",
+        "frp": 7.13,
+        "daynight": "D"
+      }
+    },
+    {
+      "district": "Mohmand",
+      "date": "20260715",
+      "lat": 34.395923647311605,
+      "lon": 71.38243453761203,
+      "n_real_firms_matches_within_50km_1day": 3,
+      "nearest_match": {
+        "dist_km": 15.5,
+        "lat": 34.25696,
+        "lon": 71.39233,
+        "date": "2026-07-15",
+        "confidence": "l",
+        "frp": 7.04,
+        "daynight": "D"
+      }
+    },
+    {
+      "district": "Multan",
+      "date": "20260715",
+      "lat": 29.915989031052323,
+      "lon": 71.38805588266719,
+      "n_real_firms_matches_within_50km_1day": 15,
+      "nearest_match": {
+        "dist_km": 8.8,
+        "lat": 29.83792,
+        "lon": 71.40358,
+        "date": "2026-07-16",
+        "confidence": "n",
+        "frp": 1.86,
+        "daynight": "D"
+      }
+    },
+    {
+      "district": "Musakhel",
+      "date": "20260713",
+      "lat": 30.770812553546975,
+      "lon": 69.9196119125459,
+      "n_real_firms_matches_within_50km_1day": 0,
+      "nearest_match": null
+    },
+    {
+      "district": "Nasirabad",
+      "date": "20260713",
+      "lat": 28.577938681107945,
+      "lon": 68.17483870785871,
+      "n_real_firms_matches_within_50km_1day": 3,
+      "nearest_match": {
+        "dist_km": 26.2,
+        "lat": 28.47896,
+        "lon": 67.93106,
+        "date": "2026-07-13",
+        "confidence": "n",
+        "frp": 7.49,
+        "daynight": "D"
+      }
+    },
+    {
+      "district": "North Waziristan",
+      "date": "20260714",
+      "lat": 32.9054178025012,
+      "lon": 70.18032140546671,
+      "n_real_firms_matches_within_50km_1day": 0,
+      "nearest_match": null
+    },
+    {
+      "district": "Nushki",
+      "date": "20260706",
+      "lat": 29.37106828007525,
+      "lon": 65.81661972402063,
+      "n_real_firms_matches_within_50km_1day": 0,
+      "nearest_match": null
+    },
+    {
+      "district": "Nushki",
+      "date": "20260707",
+      "lat": 29.37106828007525,
+      "lon": 65.81661972402063,
+      "n_real_firms_matches_within_50km_1day": 0,
+      "nearest_match": null
+    },
+    {
+      "district": "Okara",
+      "date": "20260709",
+      "lat": 30.749666998637263,
+      "lon": 73.61217517041936,
+      "n_real_firms_matches_within_50km_1day": 54,
+      "nearest_match": {
+        "dist_km": 7.8,
+        "lat": 30.73073,
+        "lon": 73.69073,
+        "date": "2026-07-09",
+        "confidence": "n",
+        "frp": 4.84,
+        "daynight": "D"
+      }
+    },
+    {
+      "district": "Panjgur",
+      "date": "20260706",
+      "lat": 26.740202346432632,
+      "lon": 64.23901530890942,
+      "n_real_firms_matches_within_50km_1day": 0,
+      "nearest_match": null
+    },
+    {
+      "district": "Peshawar",
+      "date": "20260715",
+      "lat": 33.9043530181635,
+      "lon": 71.5685717969027,
+      "n_real_firms_matches_within_50km_1day": 5,
+      "nearest_match": {
+        "dist_km": 39.9,
+        "lat": 33.54558,
+        "lon": 71.54987,
+        "date": "2026-07-14",
+        "confidence": "n",
+        "frp": 0.8,
+        "daynight": "N"
+      }
+    },
+    {
+      "district": "Qilla Saifullah",
+      "date": "20260622",
+      "lat": 31.005740183814446,
+      "lon": 68.2450113307759,
+      "n_real_firms_matches_within_50km_1day": 0,
+      "nearest_match": null
+    },
+    {
+      "district": "Qilla Saifullah",
+      "date": "20260714",
+      "lat": 31.005740183814446,
+      "lon": 68.2450113307759,
+      "n_real_firms_matches_within_50km_1day": 0,
+      "nearest_match": null
+    },
+    {
+      "district": "Rahim Yar Khan",
+      "date": "20260710",
+      "lat": 28.524274232993303,
+      "lon": 70.5136351971601,
+      "n_real_firms_matches_within_50km_1day": 0,
+      "nearest_match": null
+    },
+    {
+      "district": "Rajanpur",
+      "date": "20260715",
+      "lat": 29.10671443314065,
+      "lon": 70.15043117103322,
+      "n_real_firms_matches_within_50km_1day": 0,
+      "nearest_match": null
+    },
+    {
+      "district": "Shangla",
+      "date": "20260711",
+      "lat": 34.82751209348109,
+      "lon": 72.71689385428617,
+      "n_real_firms_matches_within_50km_1day": 3,
+      "nearest_match": {
+        "dist_km": 44.9,
+        "lat": 34.42387,
+        "lon": 72.70828,
+        "date": "2026-07-12",
+        "confidence": "n",
+        "frp": 1.42,
+        "daynight": "N"
+      }
+    },
+    {
+      "district": "Sibi",
+      "date": "20260713",
+      "lat": 29.80669330044533,
+      "lon": 67.9238294640467,
+      "n_real_firms_matches_within_50km_1day": 0,
+      "nearest_match": null
+    },
+    {
+      "district": "Sibi",
+      "date": "20260715",
+      "lat": 29.80669330044533,
+      "lon": 67.9238294640467,
+      "n_real_firms_matches_within_50km_1day": 2,
+      "nearest_match": {
+        "dist_km": 34.5,
+        "lat": 29.86099,
+        "lon": 68.27555,
+        "date": "2026-07-16",
+        "confidence": "n",
+        "frp": 1.67,
+        "daynight": "N"
+      }
+    },
+    {
+      "district": "South Waziristan",
+      "date": "20260709",
+      "lat": 32.01149043479542,
+      "lon": 70.07105273312659,
+      "n_real_firms_matches_within_50km_1day": 0,
+      "nearest_match": null
+    },
+    {
+      "district": "Tank",
+      "date": "20260707",
+      "lat": 32.17412320499081,
+      "lon": 70.37629849614294,
+      "n_real_firms_matches_within_50km_1day": 3,
+      "nearest_match": {
+        "dist_km": 35.8,
+        "lat": 32.29273,
+        "lon": 70.72965,
+        "date": "2026-07-07",
+        "confidence": "n",
+        "frp": 6.13,
+        "daynight": "N"
+      }
+    },
+    {
+      "district": "Tank",
+      "date": "20260709",
+      "lat": 32.17412320499081,
+      "lon": 70.37629849614294,
+      "n_real_firms_matches_within_50km_1day": 1,
+      "nearest_match": {
+        "dist_km": 36.5,
+        "lat": 32.29147,
+        "lon": 70.73858,
+        "date": "2026-07-08",
+        "confidence": "n",
+        "frp": 0.89,
+        "daynight": "N"
+      }
+    },
+    {
+      "district": "Vihari",
+      "date": "20260715",
+      "lat": 30.024742542603743,
+      "lon": 72.38113460647409,
+      "n_real_firms_matches_within_50km_1day": 41,
+      "nearest_match": {
+        "dist_km": 10.2,
+        "lat": 30.01751,
+        "lon": 72.27537,
+        "date": "2026-07-16",
+        "confidence": "n",
+        "frp": 2.3,
+        "daynight": "D"
+      }
+    }
+  ]
+}

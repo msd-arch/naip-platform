@@ -1,0 +1,437 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.6126125,
+          31.979200999999986
+        ]
+      },
+      "properties": {
+        "segment_id": 0,
+        "dist_from_head_km": 0.0,
+        "position": "head",
+        "season_et_mm": 213.0,
+        "season_pet_mm": 1610.9,
+        "stress_index": 0.868
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.58989301070221,
+          31.96285939306105
+        ]
+      },
+      "properties": {
+        "segment_id": 1,
+        "dist_from_head_km": 3.0,
+        "position": "mid",
+        "season_et_mm": 226.9,
+        "season_pet_mm": 1560.5,
+        "stress_index": 0.855
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.55929944706021,
+          31.95712848602971
+        ]
+      },
+      "properties": {
+        "segment_id": 2,
+        "dist_from_head_km": 6.0,
+        "position": "mid",
+        "season_et_mm": 243.3,
+        "season_pet_mm": 1588.1,
+        "stress_index": 0.847
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.52890321817358,
+          31.951950561930477
+        ]
+      },
+      "properties": {
+        "segment_id": 3,
+        "dist_from_head_km": 9.0,
+        "position": "mid",
+        "season_et_mm": 236.6,
+        "season_pet_mm": 1624.6,
+        "stress_index": 0.854
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.50287838963496,
+          31.937893695723577
+        ]
+      },
+      "properties": {
+        "segment_id": 4,
+        "dist_from_head_km": 12.0,
+        "position": "mid",
+        "season_et_mm": 265.5,
+        "season_pet_mm": 1646.0,
+        "stress_index": 0.839
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.4769107359367,
+          31.922860071684852
+        ]
+      },
+      "properties": {
+        "segment_id": 5,
+        "dist_from_head_km": 15.0,
+        "position": "mid",
+        "season_et_mm": 254.5,
+        "season_pet_mm": 1642.3,
+        "stress_index": 0.845
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.44980678272272,
+          31.90919186016995
+        ]
+      },
+      "properties": {
+        "segment_id": 6,
+        "dist_from_head_km": 18.0,
+        "position": "mid",
+        "season_et_mm": 256.5,
+        "season_pet_mm": 1624.9,
+        "stress_index": 0.842
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.41863187987889,
+          31.905773716356354
+        ]
+      },
+      "properties": {
+        "segment_id": 7,
+        "dist_from_head_km": 21.0,
+        "position": "mid",
+        "season_et_mm": 292.0,
+        "season_pet_mm": 1604.2,
+        "stress_index": 0.818
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.39294007406684,
+          31.890302912495336
+        ]
+      },
+      "properties": {
+        "segment_id": 8,
+        "dist_from_head_km": 24.0,
+        "position": "mid",
+        "season_et_mm": 275.8,
+        "season_pet_mm": 1629.9,
+        "stress_index": 0.831
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.36191139032051,
+          31.888783424424506
+        ]
+      },
+      "properties": {
+        "segment_id": 9,
+        "dist_from_head_km": 27.0,
+        "position": "mid",
+        "season_et_mm": 226.2,
+        "season_pet_mm": 1557.5,
+        "stress_index": 0.855
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.33462599362001,
+          31.876346421399756
+        ]
+      },
+      "properties": {
+        "segment_id": 10,
+        "dist_from_head_km": 30.0,
+        "position": "mid",
+        "season_et_mm": 189.2,
+        "season_pet_mm": 1655.7,
+        "stress_index": 0.886
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.30509603205483,
+          31.86801719119342
+        ]
+      },
+      "properties": {
+        "segment_id": 11,
+        "dist_from_head_km": 33.0,
+        "position": "mid",
+        "season_et_mm": 227.8,
+        "season_pet_mm": 1626.6,
+        "stress_index": 0.86
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.28488862006111,
+          31.847956659964265
+        ]
+      },
+      "properties": {
+        "segment_id": 12,
+        "dist_from_head_km": 36.0,
+        "position": "mid",
+        "season_et_mm": 254.6,
+        "season_pet_mm": 1653.8,
+        "stress_index": 0.846
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.27048545750847,
+          31.823964182395656
+        ]
+      },
+      "properties": {
+        "segment_id": 13,
+        "dist_from_head_km": 39.0,
+        "position": "mid",
+        "season_et_mm": 162.5,
+        "season_pet_mm": 1677.0,
+        "stress_index": 0.903
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.2482972399086,
+          31.810813064438957
+        ]
+      },
+      "properties": {
+        "segment_id": 14,
+        "dist_from_head_km": 42.0,
+        "position": "mid",
+        "season_et_mm": null,
+        "season_pet_mm": null,
+        "stress_index": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.25440283953702,
+          31.784402121540232
+        ]
+      },
+      "properties": {
+        "segment_id": 15,
+        "dist_from_head_km": 45.0,
+        "position": "mid",
+        "season_et_mm": null,
+        "season_pet_mm": null,
+        "stress_index": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.23803165281777,
+          31.762715995431915
+        ]
+      },
+      "properties": {
+        "segment_id": 16,
+        "dist_from_head_km": 48.0,
+        "position": "mid",
+        "season_et_mm": 221.6,
+        "season_pet_mm": 1667.5,
+        "stress_index": 0.867
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.22547183627638,
+          31.739954179460348
+        ]
+      },
+      "properties": {
+        "segment_id": 17,
+        "dist_from_head_km": 51.0,
+        "position": "mid",
+        "season_et_mm": 225.2,
+        "season_pet_mm": 1668.8,
+        "stress_index": 0.865
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.19865782621955,
+          31.729311600234766
+        ]
+      },
+      "properties": {
+        "segment_id": 18,
+        "dist_from_head_km": 54.0,
+        "position": "mid",
+        "season_et_mm": 281.1,
+        "season_pet_mm": 1656.7,
+        "stress_index": 0.83
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.17239966354454,
+          31.715139484862586
+        ]
+      },
+      "properties": {
+        "segment_id": 19,
+        "dist_from_head_km": 57.0,
+        "position": "mid",
+        "season_et_mm": 259.9,
+        "season_pet_mm": 1650.1,
+        "stress_index": 0.843
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.15840242153969,
+          31.69182444169689
+        ]
+      },
+      "properties": {
+        "segment_id": 20,
+        "dist_from_head_km": 60.0,
+        "position": "mid",
+        "season_et_mm": 176.4,
+        "season_pet_mm": 1704.4,
+        "stress_index": 0.897
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.14189520105602,
+          31.66972495003577
+        ]
+      },
+      "properties": {
+        "segment_id": 21,
+        "dist_from_head_km": 63.0,
+        "position": "mid",
+        "season_et_mm": 133.8,
+        "season_pet_mm": 1739.9,
+        "stress_index": 0.923
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.13163190365587,
+          31.64486203429385
+        ]
+      },
+      "properties": {
+        "segment_id": 22,
+        "dist_from_head_km": 66.0,
+        "position": "mid",
+        "season_et_mm": 167.2,
+        "season_pet_mm": 1719.9,
+        "stress_index": 0.903
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.13148153640346,
+          31.617797610228966
+        ]
+      },
+      "properties": {
+        "segment_id": 23,
+        "dist_from_head_km": 69.0,
+        "position": "tail",
+        "season_et_mm": 147.2,
+        "season_pet_mm": 1716.0,
+        "stress_index": 0.914
+      }
+    }
+  ]
+}

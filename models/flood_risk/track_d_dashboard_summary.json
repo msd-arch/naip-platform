@@ -1,0 +1,139 @@
+{
+  "generated_note": "Phase 3 Track D integration -- real live national Sentinel-1/JRC screen using the trained Week 10 flood classifier. Decision made with you after seeing this result: NOT merged into district_alerts.json as trigger rows -- reported here instead.",
+  "during_window": [
+    "2026-07-20",
+    "2026-08-19"
+  ],
+  "pre_monsoon_baseline_window": [
+    "2026-03-01",
+    "2026-04-15"
+  ],
+  "flag_threshold": 0.5,
+  "n_districts_flagged_raw": 122,
+  "n_districts_total": 126,
+  "score_distribution": {
+    "n": 126,
+    "min": 0.4445,
+    "max": 0.938,
+    "p10": 0.559,
+    "p25": 0.6202,
+    "median": 0.6832,
+    "p75": 0.7551,
+    "p90": 0.8161,
+    "mean": 0.6834
+  },
+  "districts_below_threshold": [
+    {
+      "district": "Malakand",
+      "mean_model_score": 0.4445
+    },
+    {
+      "district": "Bannu",
+      "mean_model_score": 0.4538
+    },
+    {
+      "district": "Sargodha",
+      "mean_model_score": 0.4783
+    },
+    {
+      "district": "Lodhran",
+      "mean_model_score": 0.487
+    }
+  ],
+  "top5_by_score": [
+    {
+      "district": "Gwadar",
+      "mean_model_score": 0.938,
+      "n_rule_flagged": 1,
+      "n_points": 5
+    },
+    {
+      "district": "Ghanche",
+      "mean_model_score": 0.9085,
+      "n_rule_flagged": 2,
+      "n_points": 15
+    },
+    {
+      "district": "Shigar",
+      "mean_model_score": 0.8709,
+      "n_rule_flagged": 4,
+      "n_points": 15
+    },
+    {
+      "district": "Jhal Magsi",
+      "mean_model_score": 0.8532,
+      "n_rule_flagged": 6,
+      "n_points": 15
+    },
+    {
+      "district": "Nagar",
+      "mean_model_score": 0.8513,
+      "n_rule_flagged": 1,
+      "n_points": 15
+    }
+  ],
+  "bottom5_by_score": [
+    {
+      "district": "Malakand",
+      "mean_model_score": 0.4445,
+      "n_rule_flagged": 0,
+      "n_points": 15
+    },
+    {
+      "district": "Bannu",
+      "mean_model_score": 0.4538,
+      "n_rule_flagged": 1,
+      "n_points": 15
+    },
+    {
+      "district": "Sargodha",
+      "mean_model_score": 0.4783,
+      "n_rule_flagged": 0,
+      "n_points": 15
+    },
+    {
+      "district": "Lodhran",
+      "mean_model_score": 0.487,
+      "n_rule_flagged": 0,
+      "n_points": 15
+    },
+    {
+      "district": "Peshawar",
+      "mean_model_score": 0.523,
+      "n_rule_flagged": 0,
+      "n_points": 15
+    }
+  ],
+  "domain_shift_finding": {
+    "headline": "Live 2026 national-average Sentinel-1 stats sit almost exactly on the 2022 TRAINING DATA's 'flooded' class centroid, not the 'not-flooded' one -- the real reason 122/126 districts flag, and why this is read as a generalization gap, not evidence of real current flooding.",
+    "training_flooded_class_centroid": {
+      "VV_during": -10.564037406534364,
+      "VH_during": -18.197178076688104,
+      "VV_change": -0.40485597135814905,
+      "VH_change": -0.32714007952053,
+      "jrc_occurrence": 1.0631944444444446
+    },
+    "training_not_flooded_class_centroid": {
+      "VV_during": -9.899072900799604,
+      "VH_during": -16.949408878904975,
+      "VV_change": -1.9768454013326022,
+      "VH_change": -1.8077702667438096,
+      "jrc_occurrence": 0.13333333333333333
+    },
+    "live_2026_national_mean": {
+      "VV_during": -10.259057277844356,
+      "VH_during": -18.904024095490183,
+      "VV_change": -0.30535426714173397,
+      "VH_change": -0.3457804351645031,
+      "jrc_occurrence": 2.3916949002155863
+    },
+    "explanation": "Track D's non-flooded training examples were other real Pakistani districts during the SAME 2022 monsoon -- there is no example in training data of an ordinary, non-disaster monsoon year. The model learned 'monsoon-season SAR change' more than 'flood-disaster-specific SAR change' at this sampling density, and cannot yet tell them apart."
+  },
+  "caveats": [
+    "Trained on a single real disaster window (Aug-Sep 2022) and not validated against a second real flood event -- same single-window caveat every other Phase 3 track carries.",
+    "Track D's own permutation-importance check found jrc_occurrence contributes almost nothing to the model (0.0012 importance) -- the permanent-water baseline discounting it was included to provide may not be doing what it was designed to do. Score is driven mainly by real SAR backscatter change.",
+    "This integration did not attempt to recalibrate the 0.5 threshold to force a cleaner-looking result -- the real gradient (min 0.44, max 0.94) is reported as-is. A future recalibration pass would need a genuine non-disaster-monsoon negative class (e.g. Sentinel-1 from a Pakistani monsoon year with no declared calamity), not just a lower cutoff on the same confounded score."
+  ],
+  "not_merged_into_district_alerts": true,
+  "not_merged_reason": "Merging near-universal flags into the same district_alerts.json schema as the other 11 real hazard detectors risked this being read as a genuine national flood alert. merge_into_district_alerts.py exists and is real/tested but was deliberately not run this week."
+}

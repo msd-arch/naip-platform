@@ -1,0 +1,1197 @@
+{
+  "generated": "2026-08-19T13:23:37.176676",
+  "ground_truth_source": "FAO Desert Locusts Observations (data.apps.fao.org, CC-BY, no login), hopper+band records, Country ISO2 Code == 'PA' (verified = Pakistan via real place names/coordinates), real static extract 2020-01-01..2020-05-10 (the tail of the real 2019-2021 upsurge -- NOT a rolling since-2020 window, that was a wrong initial assumption corrected by checking the actual file).",
+  "n_real_distinct_event_clusters_available": 291,
+  "n_sampled_and_run": 49,
+  "stride": 6,
+  "n_data_complete": 49,
+  "n_would_have_flagged": 3,
+  "hit_rate_existing_thresholds": 0.061,
+  "thresholds_tested": {
+    "sm_anomaly_favorable": 0.02,
+    "ndvi_greenup_delta": 0.03
+  },
+  "caveat": "Small real sample (see n_sampled_and_run) from a single real upsurge episode -- do not over-generalize a threshold recalibration from this alone.",
+  "events": [
+    {
+      "date": "2020-01-01",
+      "lat": 27.7994,
+      "lon": 69.798,
+      "n_points": 3,
+      "categories": [
+        "hopper"
+      ],
+      "sample_location_name": "garo pat",
+      "window_recent": [
+        "2019-12-02",
+        "2020-01-01"
+      ],
+      "window_prior": [
+        "2019-11-02",
+        "2019-12-02"
+      ],
+      "sm_surface_anomaly_m3m3": 0.021,
+      "ndvi_delta": 0.014,
+      "soil_favorable": true,
+      "vegetation_greenup": false,
+      "would_have_flagged": false,
+      "data_complete": true
+    },
+    {
+      "date": "2020-02-25",
+      "lat": 26.0964,
+      "lon": 62.3214,
+      "n_points": 1,
+      "categories": [
+        "hopper"
+      ],
+      "sample_location_name": "Tump (Turbat)",
+      "window_recent": [
+        "2020-01-26",
+        "2020-02-25"
+      ],
+      "window_prior": [
+        "2019-12-27",
+        "2020-01-26"
+      ],
+      "sm_surface_anomaly_m3m3": 0.0145,
+      "ndvi_delta": 0.023,
+      "soil_favorable": false,
+      "vegetation_greenup": false,
+      "would_have_flagged": false,
+      "data_complete": true
+    },
+    {
+      "date": "2020-03-05",
+      "lat": 28.3081,
+      "lon": 65.6144,
+      "n_points": 3,
+      "categories": [
+        "hopper"
+      ],
+      "sample_location_name": "Kalat (Kharan)",
+      "window_recent": [
+        "2020-02-04",
+        "2020-03-05"
+      ],
+      "window_prior": [
+        "2020-01-05",
+        "2020-02-04"
+      ],
+      "sm_surface_anomaly_m3m3": 0.0155,
+      "ndvi_delta": 0.006,
+      "soil_favorable": false,
+      "vegetation_greenup": false,
+      "would_have_flagged": false,
+      "data_complete": true
+    },
+    {
+      "date": "2020-03-09",
+      "lat": 29.1153,
+      "lon": 64.1636,
+      "n_points": 1,
+      "categories": [
+        "hopper"
+      ],
+      "sample_location_name": "Hal Hal kour",
+      "window_recent": [
+        "2020-02-08",
+        "2020-03-09"
+      ],
+      "window_prior": [
+        "2020-01-09",
+        "2020-02-08"
+      ],
+      "sm_surface_anomaly_m3m3": 0.006,
+      "ndvi_delta": 0.015,
+      "soil_favorable": false,
+      "vegetation_greenup": false,
+      "would_have_flagged": false,
+      "data_complete": true
+    },
+    {
+      "date": "2020-03-17",
+      "lat": 26.19,
+      "lon": 64.0756,
+      "n_points": 1,
+      "categories": [
+        "hopper"
+      ],
+      "sample_location_name": "Baront area",
+      "window_recent": [
+        "2020-02-16",
+        "2020-03-17"
+      ],
+      "window_prior": [
+        "2020-01-17",
+        "2020-02-16"
+      ],
+      "sm_surface_anomaly_m3m3": -0.0103,
+      "ndvi_delta": 0.007,
+      "soil_favorable": false,
+      "vegetation_greenup": false,
+      "would_have_flagged": false,
+      "data_complete": true
+    },
+    {
+      "date": "2020-03-18",
+      "lat": 27.8288,
+      "lon": 65.1652,
+      "n_points": 4,
+      "categories": [
+        "hopper"
+      ],
+      "sample_location_name": "kaghazo",
+      "window_recent": [
+        "2020-02-17",
+        "2020-03-18"
+      ],
+      "window_prior": [
+        "2020-01-18",
+        "2020-02-17"
+      ],
+      "sm_surface_anomaly_m3m3": -0.0029,
+      "ndvi_delta": 0.003,
+      "soil_favorable": false,
+      "vegetation_greenup": false,
+      "would_have_flagged": false,
+      "data_complete": true
+    },
+    {
+      "date": "2020-03-20",
+      "lat": 28.9324,
+      "lon": 65.6863,
+      "n_points": 2,
+      "categories": [
+        "hopper"
+      ],
+      "sample_location_name": "gerdayna",
+      "window_recent": [
+        "2020-02-19",
+        "2020-03-20"
+      ],
+      "window_prior": [
+        "2020-01-20",
+        "2020-02-19"
+      ],
+      "sm_surface_anomaly_m3m3": 0.0145,
+      "ndvi_delta": 0.005,
+      "soil_favorable": false,
+      "vegetation_greenup": false,
+      "would_have_flagged": false,
+      "data_complete": true
+    },
+    {
+      "date": "2020-03-23",
+      "lat": 28.1463,
+      "lon": 65.4691,
+      "n_points": 7,
+      "categories": [
+        "hopper"
+      ],
+      "sample_location_name": "chuki",
+      "window_recent": [
+        "2020-02-22",
+        "2020-03-23"
+      ],
+      "window_prior": [
+        "2020-01-23",
+        "2020-02-22"
+      ],
+      "sm_surface_anomaly_m3m3": 0.0073,
+      "ndvi_delta": 0.011,
+      "soil_favorable": false,
+      "vegetation_greenup": false,
+      "would_have_flagged": false,
+      "data_complete": true
+    },
+    {
+      "date": "2020-03-25",
+      "lat": 29.0106,
+      "lon": 65.6198,
+      "n_points": 3,
+      "categories": [
+        "hopper"
+      ],
+      "sample_location_name": "Masjidi and Arooni (",
+      "window_recent": [
+        "2020-02-24",
+        "2020-03-25"
+      ],
+      "window_prior": [
+        "2020-01-25",
+        "2020-02-24"
+      ],
+      "sm_surface_anomaly_m3m3": 0.0213,
+      "ndvi_delta": 0.007,
+      "soil_favorable": true,
+      "vegetation_greenup": false,
+      "would_have_flagged": false,
+      "data_complete": true
+    },
+    {
+      "date": "2020-03-30",
+      "lat": 28.5531,
+      "lon": 69.1247,
+      "n_points": 2,
+      "categories": [
+        "hopper"
+      ],
+      "sample_location_name": "Kachi  canal (dera B",
+      "window_recent": [
+        "2020-02-29",
+        "2020-03-30"
+      ],
+      "window_prior": [
+        "2020-01-30",
+        "2020-02-29"
+      ],
+      "sm_surface_anomaly_m3m3": 0.0373,
+      "ndvi_delta": -0.022,
+      "soil_favorable": true,
+      "vegetation_greenup": false,
+      "would_have_flagged": false,
+      "data_complete": true
+    },
+    {
+      "date": "2020-03-31",
+      "lat": 27.9699,
+      "lon": 65.3716,
+      "n_points": 8,
+      "categories": [
+        "hopper"
+      ],
+      "sample_location_name": "Grahi",
+      "window_recent": [
+        "2020-03-01",
+        "2020-03-31"
+      ],
+      "window_prior": [
+        "2020-01-31",
+        "2020-03-01"
+      ],
+      "sm_surface_anomaly_m3m3": 0.0105,
+      "ndvi_delta": 0.007,
+      "soil_favorable": false,
+      "vegetation_greenup": false,
+      "would_have_flagged": false,
+      "data_complete": true
+    },
+    {
+      "date": "2020-04-01",
+      "lat": 29.0286,
+      "lon": 65.6542,
+      "n_points": 5,
+      "categories": [
+        "hopper"
+      ],
+      "sample_location_name": "Shoori (Kharan)",
+      "window_recent": [
+        "2020-03-02",
+        "2020-04-01"
+      ],
+      "window_prior": [
+        "2020-02-01",
+        "2020-03-02"
+      ],
+      "sm_surface_anomaly_m3m3": 0.0235,
+      "ndvi_delta": 0.009,
+      "soil_favorable": true,
+      "vegetation_greenup": false,
+      "would_have_flagged": false,
+      "data_complete": true
+    },
+    {
+      "date": "2020-04-02",
+      "lat": 32.4158,
+      "lon": 70.7029,
+      "n_points": 2,
+      "categories": [
+        "hopper"
+      ],
+      "sample_location_name": "teri shehbaz khel",
+      "window_recent": [
+        "2020-03-03",
+        "2020-04-02"
+      ],
+      "window_prior": [
+        "2020-02-02",
+        "2020-03-03"
+      ],
+      "sm_surface_anomaly_m3m3": 0.0803,
+      "ndvi_delta": 0.057,
+      "soil_favorable": true,
+      "vegetation_greenup": true,
+      "would_have_flagged": true,
+      "data_complete": true
+    },
+    {
+      "date": "2020-04-04",
+      "lat": 30.6982,
+      "lon": 73.4872,
+      "n_points": 4,
+      "categories": [
+        "hopper"
+      ],
+      "sample_location_name": "Punjab",
+      "window_recent": [
+        "2020-03-05",
+        "2020-04-04"
+      ],
+      "window_prior": [
+        "2020-02-04",
+        "2020-03-05"
+      ],
+      "sm_surface_anomaly_m3m3": 0.0983,
+      "ndvi_delta": -0.027,
+      "soil_favorable": true,
+      "vegetation_greenup": false,
+      "would_have_flagged": false,
+      "data_complete": true
+    },
+    {
+      "date": "2020-04-06",
+      "lat": 28.1959,
+      "lon": 65.6418,
+      "n_points": 3,
+      "categories": [
+        "hopper"
+      ],
+      "sample_location_name": "Dirage",
+      "window_recent": [
+        "2020-03-07",
+        "2020-04-06"
+      ],
+      "window_prior": [
+        "2020-02-06",
+        "2020-03-07"
+      ],
+      "sm_surface_anomaly_m3m3": 0.01,
+      "ndvi_delta": 0.009,
+      "soil_favorable": false,
+      "vegetation_greenup": false,
+      "would_have_flagged": false,
+      "data_complete": true
+    },
+    {
+      "date": "2020-04-07",
+      "lat": 25.5311,
+      "lon": 62.9153,
+      "n_points": 1,
+      "categories": [
+        "hopper"
+      ],
+      "sample_location_name": "Zahro",
+      "window_recent": [
+        "2020-03-08",
+        "2020-04-07"
+      ],
+      "window_prior": [
+        "2020-02-07",
+        "2020-03-08"
+      ],
+      "sm_surface_anomaly_m3m3": 0.008,
+      "ndvi_delta": -0.014,
+      "soil_favorable": false,
+      "vegetation_greenup": false,
+      "would_have_flagged": false,
+      "data_complete": true
+    },
+    {
+      "date": "2020-04-07",
+      "lat": 28.5075,
+      "lon": 69.679,
+      "n_points": 7,
+      "categories": [
+        "band",
+        "hopper"
+      ],
+      "sample_location_name": "Dera Mor Post (Rojha",
+      "window_recent": [
+        "2020-03-08",
+        "2020-04-07"
+      ],
+      "window_prior": [
+        "2020-02-07",
+        "2020-03-08"
+      ],
+      "sm_surface_anomaly_m3m3": 0.0336,
+      "ndvi_delta": -0.074,
+      "soil_favorable": true,
+      "vegetation_greenup": false,
+      "would_have_flagged": false,
+      "data_complete": true
+    },
+    {
+      "date": "2020-04-07",
+      "lat": 32.4171,
+      "lon": 70.7017,
+      "n_points": 2,
+      "categories": [
+        "hopper"
+      ],
+      "sample_location_name": "teri lakki marwat",
+      "window_recent": [
+        "2020-03-08",
+        "2020-04-07"
+      ],
+      "window_prior": [
+        "2020-02-07",
+        "2020-03-08"
+      ],
+      "sm_surface_anomaly_m3m3": 0.0814,
+      "ndvi_delta": 0.052,
+      "soil_favorable": true,
+      "vegetation_greenup": true,
+      "would_have_flagged": true,
+      "data_complete": true
+    },
+    {
+      "date": "2020-04-08",
+      "lat": 31.3974,
+      "lon": 72.023,
+      "n_points": 4,
+      "categories": [
+        "band",
+        "hopper"
+      ],
+      "sample_location_name": "Punjab",
+      "window_recent": [
+        "2020-03-09",
+        "2020-04-08"
+      ],
+      "window_prior": [
+        "2020-02-08",
+        "2020-03-09"
+      ],
+      "sm_surface_anomaly_m3m3": 0.0623,
+      "ndvi_delta": 0.05,
+      "soil_favorable": true,
+      "vegetation_greenup": true,
+      "would_have_flagged": true,
+      "data_complete": true
+    },
+    {
+      "date": "2020-04-10",
+      "lat": 28.0219,
+      "lon": 69.5689,
+      "n_points": 1,
+      "categories": [
+        "hopper"
+      ],
+      "sample_location_name": "Sindh",
+      "window_recent": [
+        "2020-03-11",
+        "2020-04-10"
+      ],
+      "window_prior": [
+        "2020-02-10",
+        "2020-03-11"
+      ],
+      "sm_surface_anomaly_m3m3": 0.0238,
+      "ndvi_delta": -0.112,
+      "soil_favorable": true,
+      "vegetation_greenup": false,
+      "would_have_flagged": false,
+      "data_complete": true
+    },
+    {
+      "date": "2020-04-11",
+      "lat": 30.7167,
+      "lon": 73.7431,
+      "n_points": 1,
+      "categories": [
+        "hopper"
+      ],
+      "sample_location_name": "Punjab",
+      "window_recent": [
+        "2020-03-12",
+        "2020-04-11"
+      ],
+      "window_prior": [
+        "2020-02-11",
+        "2020-03-12"
+      ],
+      "sm_surface_anomaly_m3m3": 0.0734,
+      "ndvi_delta": -0.037,
+      "soil_favorable": true,
+      "vegetation_greenup": false,
+      "would_have_flagged": false,
+      "data_complete": true
+    },
+    {
+      "date": "2020-04-13",
+      "lat": 28.7672,
+      "lon": 69.8643,
+      "n_points": 3,
+      "categories": [
+        "hopper"
+      ],
+      "sample_location_name": "Arbi Gibbs (Rajanpur",
+      "window_recent": [
+        "2020-03-14",
+        "2020-04-13"
+      ],
+      "window_prior": [
+        "2020-02-13",
+        "2020-03-14"
+      ],
+      "sm_surface_anomaly_m3m3": 0.0344,
+      "ndvi_delta": -0.065,
+      "soil_favorable": true,
+      "vegetation_greenup": false,
+      "would_have_flagged": false,
+      "data_complete": true
+    },
+    {
+      "date": "2020-04-13",
+      "lat": 31.7515,
+      "lon": 72.0694,
+      "n_points": 7,
+      "categories": [
+        "hopper"
+      ],
+      "sample_location_name": "Punjab",
+      "window_recent": [
+        "2020-03-14",
+        "2020-04-13"
+      ],
+      "window_prior": [
+        "2020-02-13",
+        "2020-03-14"
+      ],
+      "sm_surface_anomaly_m3m3": 0.0489,
+      "ndvi_delta": -0.023,
+      "soil_favorable": true,
+      "vegetation_greenup": false,
+      "would_have_flagged": false,
+      "data_complete": true
+    },
+    {
+      "date": "2020-04-14",
+      "lat": 28.6028,
+      "lon": 69.7804,
+      "n_points": 2,
+      "categories": [
+        "hopper"
+      ],
+      "sample_location_name": "Punjab",
+      "window_recent": [
+        "2020-03-15",
+        "2020-04-14"
+      ],
+      "window_prior": [
+        "2020-02-14",
+        "2020-03-15"
+      ],
+      "sm_surface_anomaly_m3m3": 0.0242,
+      "ndvi_delta": -0.09,
+      "soil_favorable": true,
+      "vegetation_greenup": false,
+      "would_have_flagged": false,
+      "data_complete": true
+    },
+    {
+      "date": "2020-04-15",
+      "lat": 27.8044,
+      "lon": 66.6142,
+      "n_points": 1,
+      "categories": [
+        "hopper"
+      ],
+      "sample_location_name": "Balochistan",
+      "window_recent": [
+        "2020-03-16",
+        "2020-04-15"
+      ],
+      "window_prior": [
+        "2020-02-15",
+        "2020-03-16"
+      ],
+      "sm_surface_anomaly_m3m3": 0.0051,
+      "ndvi_delta": -0.001,
+      "soil_favorable": false,
+      "vegetation_greenup": false,
+      "would_have_flagged": false,
+      "data_complete": true
+    },
+    {
+      "date": "2020-04-16",
+      "lat": 28.4246,
+      "lon": 66.6315,
+      "n_points": 5,
+      "categories": [
+        "hopper"
+      ],
+      "sample_location_name": "Shaban zai (Khuzdar)",
+      "window_recent": [
+        "2020-03-17",
+        "2020-04-16"
+      ],
+      "window_prior": [
+        "2020-02-16",
+        "2020-03-17"
+      ],
+      "sm_surface_anomaly_m3m3": 0.0039,
+      "ndvi_delta": 0.012,
+      "soil_favorable": false,
+      "vegetation_greenup": false,
+      "would_have_flagged": false,
+      "data_complete": true
+    },
+    {
+      "date": "2020-04-19",
+      "lat": 29.1053,
+      "lon": 65.5631,
+      "n_points": 1,
+      "categories": [
+        "hopper"
+      ],
+      "sample_location_name": "kochaki",
+      "window_recent": [
+        "2020-03-20",
+        "2020-04-19"
+      ],
+      "window_prior": [
+        "2020-02-19",
+        "2020-03-20"
+      ],
+      "sm_surface_anomaly_m3m3": 0.0143,
+      "ndvi_delta": -0.007,
+      "soil_favorable": false,
+      "vegetation_greenup": false,
+      "would_have_flagged": false,
+      "data_complete": true
+    },
+    {
+      "date": "2020-04-20",
+      "lat": 28.4086,
+      "lon": 65.5928,
+      "n_points": 1,
+      "categories": [
+        "hopper"
+      ],
+      "sample_location_name": "moza e naroo",
+      "window_recent": [
+        "2020-03-21",
+        "2020-04-20"
+      ],
+      "window_prior": [
+        "2020-02-20",
+        "2020-03-21"
+      ],
+      "sm_surface_anomaly_m3m3": 0.0122,
+      "ndvi_delta": -0.018,
+      "soil_favorable": false,
+      "vegetation_greenup": false,
+      "would_have_flagged": false,
+      "data_complete": true
+    },
+    {
+      "date": "2020-04-20",
+      "lat": 30.6841,
+      "lon": 73.4672,
+      "n_points": 11,
+      "categories": [
+        "hopper"
+      ],
+      "sample_location_name": "Punjab",
+      "window_recent": [
+        "2020-03-21",
+        "2020-04-20"
+      ],
+      "window_prior": [
+        "2020-02-20",
+        "2020-03-21"
+      ],
+      "sm_surface_anomaly_m3m3": 0.0585,
+      "ndvi_delta": -0.064,
+      "soil_favorable": true,
+      "vegetation_greenup": false,
+      "would_have_flagged": false,
+      "data_complete": true
+    },
+    {
+      "date": "2020-04-20",
+      "lat": 31.8136,
+      "lon": 71.9864,
+      "n_points": 2,
+      "categories": [
+        "band",
+        "hopper"
+      ],
+      "sample_location_name": "Punjab",
+      "window_recent": [
+        "2020-03-21",
+        "2020-04-20"
+      ],
+      "window_prior": [
+        "2020-02-20",
+        "2020-03-21"
+      ],
+      "sm_surface_anomaly_m3m3": 0.0463,
+      "ndvi_delta": -0.058,
+      "soil_favorable": true,
+      "vegetation_greenup": false,
+      "would_have_flagged": false,
+      "data_complete": true
+    },
+    {
+      "date": "2020-04-21",
+      "lat": 28.2954,
+      "lon": 65.1467,
+      "n_points": 10,
+      "categories": [
+        "hopper"
+      ],
+      "sample_location_name": "Soray Amag",
+      "window_recent": [
+        "2020-03-22",
+        "2020-04-21"
+      ],
+      "window_prior": [
+        "2020-02-21",
+        "2020-03-22"
+      ],
+      "sm_surface_anomaly_m3m3": 0.0121,
+      "ndvi_delta": -0.01,
+      "soil_favorable": false,
+      "vegetation_greenup": false,
+      "would_have_flagged": false,
+      "data_complete": true
+    },
+    {
+      "date": "2020-04-21",
+      "lat": 30.6025,
+      "lon": 73.016,
+      "n_points": 3,
+      "categories": [
+        "hopper"
+      ],
+      "sample_location_name": "Punjab",
+      "window_recent": [
+        "2020-03-22",
+        "2020-04-21"
+      ],
+      "window_prior": [
+        "2020-02-21",
+        "2020-03-22"
+      ],
+      "sm_surface_anomaly_m3m3": 0.0585,
+      "ndvi_delta": -0.095,
+      "soil_favorable": true,
+      "vegetation_greenup": false,
+      "would_have_flagged": false,
+      "data_complete": true
+    },
+    {
+      "date": "2020-04-22",
+      "lat": 32.0795,
+      "lon": 72.2244,
+      "n_points": 3,
+      "categories": [
+        "hopper"
+      ],
+      "sample_location_name": "Punjab",
+      "window_recent": [
+        "2020-03-23",
+        "2020-04-22"
+      ],
+      "window_prior": [
+        "2020-02-22",
+        "2020-03-23"
+      ],
+      "sm_surface_anomaly_m3m3": 0.0499,
+      "ndvi_delta": -0.09,
+      "soil_favorable": true,
+      "vegetation_greenup": false,
+      "would_have_flagged": false,
+      "data_complete": true
+    },
+    {
+      "date": "2020-04-23",
+      "lat": 29.0889,
+      "lon": 65.5342,
+      "n_points": 1,
+      "categories": [
+        "hopper"
+      ],
+      "sample_location_name": "kuchaki",
+      "window_recent": [
+        "2020-03-24",
+        "2020-04-23"
+      ],
+      "window_prior": [
+        "2020-02-23",
+        "2020-03-24"
+      ],
+      "sm_surface_anomaly_m3m3": 0.0135,
+      "ndvi_delta": -0.011,
+      "soil_favorable": false,
+      "vegetation_greenup": false,
+      "would_have_flagged": false,
+      "data_complete": true
+    },
+    {
+      "date": "2020-04-24",
+      "lat": 25.3256,
+      "lon": 63.0267,
+      "n_points": 1,
+      "categories": [
+        "hopper"
+      ],
+      "sample_location_name": "Shatangi",
+      "window_recent": [
+        "2020-03-25",
+        "2020-04-24"
+      ],
+      "window_prior": [
+        "2020-02-24",
+        "2020-03-25"
+      ],
+      "sm_surface_anomaly_m3m3": 0.0093,
+      "ndvi_delta": -0.009,
+      "soil_favorable": false,
+      "vegetation_greenup": false,
+      "would_have_flagged": false,
+      "data_complete": true
+    },
+    {
+      "date": "2020-04-25",
+      "lat": 29.4631,
+      "lon": 63.7364,
+      "n_points": 1,
+      "categories": [
+        "hopper"
+      ],
+      "sample_location_name": "Killi khan jan",
+      "window_recent": [
+        "2020-03-26",
+        "2020-04-25"
+      ],
+      "window_prior": [
+        "2020-02-25",
+        "2020-03-26"
+      ],
+      "sm_surface_anomaly_m3m3": 0.0203,
+      "ndvi_delta": -0.003,
+      "soil_favorable": true,
+      "vegetation_greenup": false,
+      "would_have_flagged": false,
+      "data_complete": true
+    },
+    {
+      "date": "2020-04-27",
+      "lat": 28.4827,
+      "lon": 69.3209,
+      "n_points": 10,
+      "categories": [
+        "hopper"
+      ],
+      "sample_location_name": "Sindh",
+      "window_recent": [
+        "2020-03-28",
+        "2020-04-27"
+      ],
+      "window_prior": [
+        "2020-02-27",
+        "2020-03-28"
+      ],
+      "sm_surface_anomaly_m3m3": 0.0214,
+      "ndvi_delta": -0.102,
+      "soil_favorable": true,
+      "vegetation_greenup": false,
+      "would_have_flagged": false,
+      "data_complete": true
+    },
+    {
+      "date": "2020-04-27",
+      "lat": 30.6324,
+      "lon": 72.9938,
+      "n_points": 6,
+      "categories": [
+        "hopper"
+      ],
+      "sample_location_name": "Punjab",
+      "window_recent": [
+        "2020-03-28",
+        "2020-04-27"
+      ],
+      "window_prior": [
+        "2020-02-27",
+        "2020-03-28"
+      ],
+      "sm_surface_anomaly_m3m3": 0.0485,
+      "ndvi_delta": -0.052,
+      "soil_favorable": true,
+      "vegetation_greenup": false,
+      "would_have_flagged": false,
+      "data_complete": true
+    },
+    {
+      "date": "2020-04-28",
+      "lat": 29.0847,
+      "lon": 64.1948,
+      "n_points": 5,
+      "categories": [
+        "hopper"
+      ],
+      "sample_location_name": "Sabza poh",
+      "window_recent": [
+        "2020-03-29",
+        "2020-04-28"
+      ],
+      "window_prior": [
+        "2020-02-28",
+        "2020-03-29"
+      ],
+      "sm_surface_anomaly_m3m3": 0.0077,
+      "ndvi_delta": -0.022,
+      "soil_favorable": false,
+      "vegetation_greenup": false,
+      "would_have_flagged": false,
+      "data_complete": true
+    },
+    {
+      "date": "2020-04-28",
+      "lat": 32.6089,
+      "lon": 70.9064,
+      "n_points": 1,
+      "categories": [
+        "band"
+      ],
+      "sample_location_name": "Khyber Pakhtunkhwa",
+      "window_recent": [
+        "2020-03-29",
+        "2020-04-28"
+      ],
+      "window_prior": [
+        "2020-02-28",
+        "2020-03-29"
+      ],
+      "sm_surface_anomaly_m3m3": 0.0513,
+      "ndvi_delta": -0.044,
+      "soil_favorable": true,
+      "vegetation_greenup": false,
+      "would_have_flagged": false,
+      "data_complete": true
+    },
+    {
+      "date": "2020-04-30",
+      "lat": 26.8349,
+      "lon": 63.8967,
+      "n_points": 2,
+      "categories": [
+        "hopper"
+      ],
+      "sample_location_name": "Sorwan area",
+      "window_recent": [
+        "2020-03-31",
+        "2020-04-30"
+      ],
+      "window_prior": [
+        "2020-03-01",
+        "2020-03-31"
+      ],
+      "sm_surface_anomaly_m3m3": 0.0133,
+      "ndvi_delta": -0.006,
+      "soil_favorable": false,
+      "vegetation_greenup": false,
+      "would_have_flagged": false,
+      "data_complete": true
+    },
+    {
+      "date": "2020-05-01",
+      "lat": 29.2036,
+      "lon": 65.7056,
+      "n_points": 1,
+      "categories": [
+        "hopper"
+      ],
+      "sample_location_name": "Killi Abdullah Karee",
+      "window_recent": [
+        "2020-04-01",
+        "2020-05-01"
+      ],
+      "window_prior": [
+        "2020-03-02",
+        "2020-04-01"
+      ],
+      "sm_surface_anomaly_m3m3": 0.009,
+      "ndvi_delta": -0.027,
+      "soil_favorable": false,
+      "vegetation_greenup": false,
+      "would_have_flagged": false,
+      "data_complete": true
+    },
+    {
+      "date": "2020-05-03",
+      "lat": 28.7778,
+      "lon": 64.2313,
+      "n_points": 2,
+      "categories": [
+        "hopper"
+      ],
+      "sample_location_name": "Killi Shahswar",
+      "window_recent": [
+        "2020-04-03",
+        "2020-05-03"
+      ],
+      "window_prior": [
+        "2020-03-04",
+        "2020-04-03"
+      ],
+      "sm_surface_anomaly_m3m3": 0.0039,
+      "ndvi_delta": -0.015,
+      "soil_favorable": false,
+      "vegetation_greenup": false,
+      "would_have_flagged": false,
+      "data_complete": true
+    },
+    {
+      "date": "2020-05-04",
+      "lat": 28.5297,
+      "lon": 65.1968,
+      "n_points": 6,
+      "categories": [
+        "hopper"
+      ],
+      "sample_location_name": "darrch",
+      "window_recent": [
+        "2020-04-04",
+        "2020-05-04"
+      ],
+      "window_prior": [
+        "2020-03-05",
+        "2020-04-04"
+      ],
+      "sm_surface_anomaly_m3m3": 0.0036,
+      "ndvi_delta": -0.042,
+      "soil_favorable": false,
+      "vegetation_greenup": false,
+      "would_have_flagged": false,
+      "data_complete": true
+    },
+    {
+      "date": "2020-05-04",
+      "lat": 31.1545,
+      "lon": 71.7528,
+      "n_points": 12,
+      "categories": [
+        "band",
+        "hopper"
+      ],
+      "sample_location_name": "Punjab",
+      "window_recent": [
+        "2020-04-04",
+        "2020-05-04"
+      ],
+      "window_prior": [
+        "2020-03-05",
+        "2020-04-04"
+      ],
+      "sm_surface_anomaly_m3m3": 0.0198,
+      "ndvi_delta": -0.259,
+      "soil_favorable": false,
+      "vegetation_greenup": false,
+      "would_have_flagged": false,
+      "data_complete": true
+    },
+    {
+      "date": "2020-05-05",
+      "lat": 29.1863,
+      "lon": 69.3127,
+      "n_points": 4,
+      "categories": [
+        "hopper"
+      ],
+      "sample_location_name": "Dera Bugti 1 (Dera B",
+      "window_recent": [
+        "2020-04-05",
+        "2020-05-05"
+      ],
+      "window_prior": [
+        "2020-03-06",
+        "2020-04-05"
+      ],
+      "sm_surface_anomaly_m3m3": 0.0062,
+      "ndvi_delta": -0.031,
+      "soil_favorable": false,
+      "vegetation_greenup": false,
+      "would_have_flagged": false,
+      "data_complete": true
+    },
+    {
+      "date": "2020-05-06",
+      "lat": 26.8431,
+      "lon": 63.8545,
+      "n_points": 4,
+      "categories": [
+        "hopper"
+      ],
+      "sample_location_name": "Sorwan area 1",
+      "window_recent": [
+        "2020-04-06",
+        "2020-05-06"
+      ],
+      "window_prior": [
+        "2020-03-07",
+        "2020-04-06"
+      ],
+      "sm_surface_anomaly_m3m3": 0.0097,
+      "ndvi_delta": -0.01,
+      "soil_favorable": false,
+      "vegetation_greenup": false,
+      "would_have_flagged": false,
+      "data_complete": true
+    },
+    {
+      "date": "2020-05-08",
+      "lat": 28.8933,
+      "lon": 64.5389,
+      "n_points": 1,
+      "categories": [
+        "hopper"
+      ],
+      "sample_location_name": " ",
+      "window_recent": [
+        "2020-04-08",
+        "2020-05-08"
+      ],
+      "window_prior": [
+        "2020-03-09",
+        "2020-04-08"
+      ],
+      "sm_surface_anomaly_m3m3": 0.0101,
+      "ndvi_delta": -0.017,
+      "soil_favorable": false,
+      "vegetation_greenup": false,
+      "would_have_flagged": false,
+      "data_complete": true
+    },
+    {
+      "date": "2020-05-09",
+      "lat": 29.5719,
+      "lon": 66.1544,
+      "n_points": 1,
+      "categories": [
+        "hopper"
+      ],
+      "sample_location_name": " ",
+      "window_recent": [
+        "2020-04-09",
+        "2020-05-09"
+      ],
+      "window_prior": [
+        "2020-03-10",
+        "2020-04-09"
+      ],
+      "sm_surface_anomaly_m3m3": 0.0094,
+      "ndvi_delta": -0.005,
+      "soil_favorable": false,
+      "vegetation_greenup": false,
+      "would_have_flagged": false,
+      "data_complete": true
+    }
+  ]
+}

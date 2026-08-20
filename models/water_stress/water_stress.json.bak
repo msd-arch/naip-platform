@@ -1,0 +1,257 @@
+{
+  "canal_name": "Muridke Distributary",
+  "scope": "SATELLITE-ET-ONLY DEMO MODE. No official WAPDA/PID canal-command boundary exists (checked, none found) -- geometry is a real OSM canal centerline buffered by an assumed 500m half-width, not a surveyed command area. Head/tail direction is a geometric guess from line topology, not verified against real flow direction. No IRSA/PID allocation records are used or compared -- that partnership doesn't exist yet, per architecture.md \u00a75. Do not treat stress_index as validated against any ground allocation truth.",
+  "geometry_source": "OpenStreetMap, waterway=canal, name='Muridke Distributary', 15 way segments stitched, 69.4 km total",
+  "et_source": "MODIS MOD16A2 (real, 8-day composite, 500m native), QC-masked, summed over 2025-04-01..2025-11-01 (Kharif 2025, same window as 6.3)",
+  "stress_index_definition": "1 - (season ET mm / season PET mm) per segment -- higher = more water-stressed",
+  "n_segments": 24,
+  "n_segments_with_valid_index": 22,
+  "segments": [
+    {
+      "segment_id": 0,
+      "dist_from_head_km": 0.0,
+      "position": "head",
+      "lat": 31.979200999999986,
+      "lon": 74.6126125,
+      "season_et_mm": 213.0,
+      "season_pet_mm": 1610.9,
+      "stress_index": 0.868
+    },
+    {
+      "segment_id": 1,
+      "dist_from_head_km": 3.0,
+      "position": "mid",
+      "lat": 31.96285939306105,
+      "lon": 74.58989301070221,
+      "season_et_mm": 226.9,
+      "season_pet_mm": 1560.5,
+      "stress_index": 0.855
+    },
+    {
+      "segment_id": 2,
+      "dist_from_head_km": 6.0,
+      "position": "mid",
+      "lat": 31.95712848602971,
+      "lon": 74.55929944706021,
+      "season_et_mm": 243.3,
+      "season_pet_mm": 1588.1,
+      "stress_index": 0.847
+    },
+    {
+      "segment_id": 3,
+      "dist_from_head_km": 9.0,
+      "position": "mid",
+      "lat": 31.951950561930477,
+      "lon": 74.52890321817358,
+      "season_et_mm": 236.6,
+      "season_pet_mm": 1624.6,
+      "stress_index": 0.854
+    },
+    {
+      "segment_id": 4,
+      "dist_from_head_km": 12.0,
+      "position": "mid",
+      "lat": 31.937893695723577,
+      "lon": 74.50287838963496,
+      "season_et_mm": 265.5,
+      "season_pet_mm": 1646.0,
+      "stress_index": 0.839
+    },
+    {
+      "segment_id": 5,
+      "dist_from_head_km": 15.0,
+      "position": "mid",
+      "lat": 31.922860071684852,
+      "lon": 74.4769107359367,
+      "season_et_mm": 254.5,
+      "season_pet_mm": 1642.3,
+      "stress_index": 0.845
+    },
+    {
+      "segment_id": 6,
+      "dist_from_head_km": 18.0,
+      "position": "mid",
+      "lat": 31.90919186016995,
+      "lon": 74.44980678272272,
+      "season_et_mm": 256.5,
+      "season_pet_mm": 1624.9,
+      "stress_index": 0.842
+    },
+    {
+      "segment_id": 7,
+      "dist_from_head_km": 21.0,
+      "position": "mid",
+      "lat": 31.905773716356354,
+      "lon": 74.41863187987889,
+      "season_et_mm": 292.0,
+      "season_pet_mm": 1604.2,
+      "stress_index": 0.818
+    },
+    {
+      "segment_id": 8,
+      "dist_from_head_km": 24.0,
+      "position": "mid",
+      "lat": 31.890302912495336,
+      "lon": 74.39294007406684,
+      "season_et_mm": 275.8,
+      "season_pet_mm": 1629.9,
+      "stress_index": 0.831
+    },
+    {
+      "segment_id": 9,
+      "dist_from_head_km": 27.0,
+      "position": "mid",
+      "lat": 31.888783424424506,
+      "lon": 74.36191139032051,
+      "season_et_mm": 226.2,
+      "season_pet_mm": 1557.5,
+      "stress_index": 0.855
+    },
+    {
+      "segment_id": 10,
+      "dist_from_head_km": 30.0,
+      "position": "mid",
+      "lat": 31.876346421399756,
+      "lon": 74.33462599362001,
+      "season_et_mm": 189.2,
+      "season_pet_mm": 1655.7,
+      "stress_index": 0.886
+    },
+    {
+      "segment_id": 11,
+      "dist_from_head_km": 33.0,
+      "position": "mid",
+      "lat": 31.86801719119342,
+      "lon": 74.30509603205483,
+      "season_et_mm": 227.8,
+      "season_pet_mm": 1626.6,
+      "stress_index": 0.86
+    },
+    {
+      "segment_id": 12,
+      "dist_from_head_km": 36.0,
+      "position": "mid",
+      "lat": 31.847956659964265,
+      "lon": 74.28488862006111,
+      "season_et_mm": 254.6,
+      "season_pet_mm": 1653.8,
+      "stress_index": 0.846
+    },
+    {
+      "segment_id": 13,
+      "dist_from_head_km": 39.0,
+      "position": "mid",
+      "lat": 31.823964182395656,
+      "lon": 74.27048545750847,
+      "season_et_mm": 162.5,
+      "season_pet_mm": 1677.0,
+      "stress_index": 0.903
+    },
+    {
+      "segment_id": 14,
+      "dist_from_head_km": 42.0,
+      "position": "mid",
+      "lat": 31.810813064438957,
+      "lon": 74.2482972399086,
+      "season_et_mm": null,
+      "season_pet_mm": null,
+      "stress_index": null
+    },
+    {
+      "segment_id": 15,
+      "dist_from_head_km": 45.0,
+      "position": "mid",
+      "lat": 31.784402121540232,
+      "lon": 74.25440283953702,
+      "season_et_mm": null,
+      "season_pet_mm": null,
+      "stress_index": null
+    },
+    {
+      "segment_id": 16,
+      "dist_from_head_km": 48.0,
+      "position": "mid",
+      "lat": 31.762715995431915,
+      "lon": 74.23803165281777,
+      "season_et_mm": 221.6,
+      "season_pet_mm": 1667.5,
+      "stress_index": 0.867
+    },
+    {
+      "segment_id": 17,
+      "dist_from_head_km": 51.0,
+      "position": "mid",
+      "lat": 31.739954179460348,
+      "lon": 74.22547183627638,
+      "season_et_mm": 225.2,
+      "season_pet_mm": 1668.8,
+      "stress_index": 0.865
+    },
+    {
+      "segment_id": 18,
+      "dist_from_head_km": 54.0,
+      "position": "mid",
+      "lat": 31.729311600234766,
+      "lon": 74.19865782621955,
+      "season_et_mm": 281.1,
+      "season_pet_mm": 1656.7,
+      "stress_index": 0.83
+    },
+    {
+      "segment_id": 19,
+      "dist_from_head_km": 57.0,
+      "position": "mid",
+      "lat": 31.715139484862586,
+      "lon": 74.17239966354454,
+      "season_et_mm": 259.9,
+      "season_pet_mm": 1650.1,
+      "stress_index": 0.843
+    },
+    {
+      "segment_id": 20,
+      "dist_from_head_km": 60.0,
+      "position": "mid",
+      "lat": 31.69182444169689,
+      "lon": 74.15840242153969,
+      "season_et_mm": 176.4,
+      "season_pet_mm": 1704.4,
+      "stress_index": 0.897
+    },
+    {
+      "segment_id": 21,
+      "dist_from_head_km": 63.0,
+      "position": "mid",
+      "lat": 31.66972495003577,
+      "lon": 74.14189520105602,
+      "season_et_mm": 133.8,
+      "season_pet_mm": 1739.9,
+      "stress_index": 0.923
+    },
+    {
+      "segment_id": 22,
+      "dist_from_head_km": 66.0,
+      "position": "mid",
+      "lat": 31.64486203429385,
+      "lon": 74.13163190365587,
+      "season_et_mm": 167.2,
+      "season_pet_mm": 1719.9,
+      "stress_index": 0.903
+    },
+    {
+      "segment_id": 23,
+      "dist_from_head_km": 69.0,
+      "position": "tail",
+      "lat": 31.617797610228966,
+      "lon": 74.13148153640346,
+      "season_et_mm": 147.2,
+      "season_pet_mm": 1716.0,
+      "stress_index": 0.914
+    }
+  ],
+  "head_vs_tail": {
+    "head_dist_km": 0.0,
+    "head_stress_index": 0.868,
+    "tail_dist_km": 69.0,
+    "tail_stress_index": 0.914
+  }
+}
