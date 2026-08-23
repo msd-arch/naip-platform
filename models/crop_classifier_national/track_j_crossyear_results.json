@@ -1,0 +1,153 @@
+{
+  "features_used": [
+    "ndvi_peak_value",
+    "ndvi_peak_month",
+    "ndvi_trough_value",
+    "ndvi_trough_month",
+    "ndvi_green_up_slope",
+    "ndvi_senescence_slope",
+    "ndvi_annual_mean",
+    "ndvi_annual_std",
+    "ndwi_peak_value",
+    "ndwi_peak_month",
+    "ndwi_trough_value",
+    "ndwi_trough_month",
+    "ndwi_green_up_slope",
+    "ndwi_senescence_slope",
+    "ndwi_annual_mean",
+    "ndwi_annual_std",
+    "evi_peak_value",
+    "evi_peak_month",
+    "evi_trough_value",
+    "evi_trough_month",
+    "evi_green_up_slope",
+    "evi_senescence_slope",
+    "evi_annual_mean",
+    "evi_annual_std"
+  ],
+  "note": "Genuine temporal-holdout cross-year validation, both directions, real Track F points reused unchanged (same lat/lon both years, isolates the real temporal effect). Compare against original_week8_within_year_district_level for the real cross-year vs. within-year degradation.",
+  "direction_A_train2122_test2223": {
+    "n_train_points": 2248,
+    "n_test_points": 2152,
+    "n_train_districts": 115,
+    "n_test_districts": 115,
+    "point_level": {
+      "wheat": {
+        "mae": 0.13568005297157,
+        "r2": 0.32576108448089935
+      },
+      "cotton": {
+        "mae": 0.08332391561954414,
+        "r2": 0.2680201295479855
+      },
+      "rice": {
+        "mae": 0.10962021182618516,
+        "r2": 0.1538774246592538
+      },
+      "sugarcane": {
+        "mae": 0.03258261080459429,
+        "r2": -0.010882453905258105
+      },
+      "overall_mae": 0.0903016978054734
+    },
+    "district_level": {
+      "wheat": {
+        "mae": 0.12865168926965542,
+        "r2": 0.4748746034639514
+      },
+      "cotton": {
+        "mae": 0.07626403608126509,
+        "r2": 0.46687723589849206
+      },
+      "rice": {
+        "mae": 0.10971658321653811,
+        "r2": 0.2885942932384856
+      },
+      "sugarcane": {
+        "mae": 0.029039405259719254,
+        "r2": 0.11645579147583218
+      },
+      "overall_mae": 0.08591792845679448
+    },
+    "feature_importance_top5": {
+      "evi_annual_mean": 0.1213882330578682,
+      "ndwi_peak_value": 0.07782169582309742,
+      "ndwi_senescence_slope": 0.04392088264451503,
+      "evi_annual_std": 0.04152054922759157,
+      "evi_peak_month": 0.02922662457425209
+    },
+    "role": "headline_result_crossyear"
+  },
+  "direction_B_train2223_test2122": {
+    "n_train_points": 2152,
+    "n_test_points": 2248,
+    "n_train_districts": 115,
+    "n_test_districts": 115,
+    "point_level": {
+      "wheat": {
+        "mae": 0.14521867086216872,
+        "r2": 0.28147794400611115
+      },
+      "cotton": {
+        "mae": 0.08246951864704573,
+        "r2": 0.20941454771291657
+      },
+      "rice": {
+        "mae": 0.1330194088176785,
+        "r2": 0.037093464975384904
+      },
+      "sugarcane": {
+        "mae": 0.031187903811598732,
+        "r2": -0.011895924084516007
+      },
+      "overall_mae": 0.09797387553462292
+    },
+    "district_level": {
+      "wheat": {
+        "mae": 0.1337480770393714,
+        "r2": 0.47033427151921847
+      },
+      "cotton": {
+        "mae": 0.07475581427203304,
+        "r2": 0.38855815053141496
+      },
+      "rice": {
+        "mae": 0.13048099842182892,
+        "r2": 0.23907256709200697
+      },
+      "sugarcane": {
+        "mae": 0.027311980821934777,
+        "r2": 0.12864361264814095
+      },
+      "overall_mae": 0.09157421763879202
+    },
+    "feature_importance_top5": {
+      "evi_annual_mean": 0.08067218745022453,
+      "evi_trough_value": 0.054019165891416886,
+      "ndwi_peak_value": 0.041635085692423565,
+      "ndwi_annual_std": 0.02805128093547505,
+      "ndvi_peak_month": 0.027232064030242968
+    },
+    "role": "headline_result_crossyear"
+  },
+  "original_week8_within_year_district_level": {
+    "wheat": {
+      "mae": 0.11551207075602248,
+      "r2": 0.5805704677086045
+    },
+    "cotton": {
+      "mae": 0.08679918761845476,
+      "r2": 0.506955533885734
+    },
+    "rice": {
+      "mae": 0.07411668694774148,
+      "r2": 0.4204017630542667
+    },
+    "sugarcane": {
+      "mae": 0.016307876714544783,
+      "r2": -1.1199141228727036
+    },
+    "overall_mae": 0.07318395550919088,
+    "role": "headline_result_district_granularity"
+  }
+}

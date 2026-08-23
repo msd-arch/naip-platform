@@ -1,0 +1,1497 @@
+{
+  "Abbottabad": {
+    "tier": "model_estimated_interim",
+    "season": "2024-25",
+    "source": "Track F's deployed GBT crop-share model (trained on real 2022-23 MNFSR labels, unchanged) applied to real Sentinel-2 phenology features for 2024-25 -- a MODEL ESTIMATE, not real MNFSR data. Unvalidatable until a real MNFSR report covering this season arrives. Never overrides real_crop_mix.json's real_district_area tier (this district's real authoritative tier there: real_district_area).",
+    "predicted_shares": {
+      "wheat": 0.8093828696364689,
+      "cotton": -0.003517477736870028,
+      "rice": 0.20117213593703712,
+      "sugarcane": 0.021172577751075016
+    },
+    "flagged_negative_share": true,
+    "n_real_s2_points": 23
+  },
+  "Attock": {
+    "tier": "model_estimated_interim",
+    "season": "2024-25",
+    "source": "Track F's deployed GBT crop-share model (trained on real 2022-23 MNFSR labels, unchanged) applied to real Sentinel-2 phenology features for 2024-25 -- a MODEL ESTIMATE, not real MNFSR data. Unvalidatable until a real MNFSR report covering this season arrives. Never overrides real_crop_mix.json's real_district_area tier (this district's real authoritative tier there: real_district_area).",
+    "predicted_shares": {
+      "wheat": 0.8799140994059907,
+      "cotton": 0.04862112495431756,
+      "rice": 0.08545625718604595,
+      "sugarcane": 0.011209078865194283
+    },
+    "flagged_negative_share": false,
+    "n_real_s2_points": 23
+  },
+  "Awaran": {
+    "tier": "model_estimated_interim",
+    "season": "2024-25",
+    "source": "Track F's deployed GBT crop-share model (trained on real 2022-23 MNFSR labels, unchanged) applied to real Sentinel-2 phenology features for 2024-25 -- a MODEL ESTIMATE, not real MNFSR data. Unvalidatable until a real MNFSR report covering this season arrives. Never overrides real_crop_mix.json's real_district_area tier (this district's real authoritative tier there: real_district_area).",
+    "predicted_shares": {
+      "wheat": 0.7787151076983573,
+      "cotton": 0.11122275479683752,
+      "rice": 0.09338301779678423,
+      "sugarcane": 0.02254336606026229
+    },
+    "flagged_negative_share": false,
+    "n_real_s2_points": 20
+  },
+  "Badin": {
+    "tier": "model_estimated_interim",
+    "season": "2024-25",
+    "source": "Track F's deployed GBT crop-share model (trained on real 2022-23 MNFSR labels, unchanged) applied to real Sentinel-2 phenology features for 2024-25 -- a MODEL ESTIMATE, not real MNFSR data. Unvalidatable until a real MNFSR report covering this season arrives. Never overrides real_crop_mix.json's real_district_area tier (this district's real authoritative tier there: real_district_area).",
+    "predicted_shares": {
+      "wheat": 0.6187559995418447,
+      "cotton": 0.1235330732755828,
+      "rice": 0.22779056771784356,
+      "sugarcane": 0.034564420418200424
+    },
+    "flagged_negative_share": false,
+    "n_real_s2_points": 14
+  },
+  "Bahawalnagar": {
+    "tier": "model_estimated_interim",
+    "season": "2024-25",
+    "source": "Track F's deployed GBT crop-share model (trained on real 2022-23 MNFSR labels, unchanged) applied to real Sentinel-2 phenology features for 2024-25 -- a MODEL ESTIMATE, not real MNFSR data. Unvalidatable until a real MNFSR report covering this season arrives. Never overrides real_crop_mix.json's real_district_area tier (this district's real authoritative tier there: real_district_area).",
+    "predicted_shares": {
+      "wheat": 0.6221395342147598,
+      "cotton": 0.17119145124369906,
+      "rice": 0.1529377385570736,
+      "sugarcane": 0.05710798094169262
+    },
+    "flagged_negative_share": false,
+    "n_real_s2_points": 22
+  },
+  "Bahawalpur": {
+    "tier": "model_estimated_interim",
+    "season": "2024-25",
+    "source": "Track F's deployed GBT crop-share model (trained on real 2022-23 MNFSR labels, unchanged) applied to real Sentinel-2 phenology features for 2024-25 -- a MODEL ESTIMATE, not real MNFSR data. Unvalidatable until a real MNFSR report covering this season arrives. Never overrides real_crop_mix.json's real_district_area tier (this district's real authoritative tier there: real_district_area).",
+    "predicted_shares": {
+      "wheat": 0.6384986695500453,
+      "cotton": 0.15213502974505963,
+      "rice": 0.16164833664198575,
+      "sugarcane": 0.03821003947146624
+    },
+    "flagged_negative_share": false,
+    "n_real_s2_points": 22
+  },
+  "Bajaur": {
+    "tier": "model_estimated_interim",
+    "season": "2024-25",
+    "source": "Track F's deployed GBT crop-share model (trained on real 2022-23 MNFSR labels, unchanged) applied to real Sentinel-2 phenology features for 2024-25 -- a MODEL ESTIMATE, not real MNFSR data. Unvalidatable until a real MNFSR report covering this season arrives. Never overrides real_crop_mix.json's real_district_area tier (this district's real authoritative tier there: real_district_area).",
+    "predicted_shares": {
+      "wheat": 0.8633411000892862,
+      "cotton": -0.0008799588393157107,
+      "rice": 0.14306422842627683,
+      "sugarcane": 0.014065703338362958
+    },
+    "flagged_negative_share": true,
+    "n_real_s2_points": 23
+  },
+  "Bannu": {
+    "tier": "model_estimated_interim",
+    "season": "2024-25",
+    "source": "Track F's deployed GBT crop-share model (trained on real 2022-23 MNFSR labels, unchanged) applied to real Sentinel-2 phenology features for 2024-25 -- a MODEL ESTIMATE, not real MNFSR data. Unvalidatable until a real MNFSR report covering this season arrives. Never overrides real_crop_mix.json's real_district_area tier (this district's real authoritative tier there: real_district_area).",
+    "predicted_shares": {
+      "wheat": 0.879316945295027,
+      "cotton": 0.029951931831698978,
+      "rice": 0.061915950590533786,
+      "sugarcane": 0.013173809364883342
+    },
+    "flagged_negative_share": false,
+    "n_real_s2_points": 15
+  },
+  "Barkhan": {
+    "tier": "model_estimated_interim",
+    "season": "2024-25",
+    "source": "Track F's deployed GBT crop-share model (trained on real 2022-23 MNFSR labels, unchanged) applied to real Sentinel-2 phenology features for 2024-25 -- a MODEL ESTIMATE, not real MNFSR data. Unvalidatable until a real MNFSR report covering this season arrives. Never overrides real_crop_mix.json's real_district_area tier (this district's real authoritative tier there: real_district_area).",
+    "predicted_shares": {
+      "wheat": 0.8868022436950398,
+      "cotton": 0.03724186752969839,
+      "rice": 0.07016237560072004,
+      "sugarcane": 0.017470780089146643
+    },
+    "flagged_negative_share": false,
+    "n_real_s2_points": 23
+  },
+  "Battagram": {
+    "tier": "model_estimated_interim",
+    "season": "2024-25",
+    "source": "Track F's deployed GBT crop-share model (trained on real 2022-23 MNFSR labels, unchanged) applied to real Sentinel-2 phenology features for 2024-25 -- a MODEL ESTIMATE, not real MNFSR data. Unvalidatable until a real MNFSR report covering this season arrives. Never overrides real_crop_mix.json's real_district_area tier (this district's real authoritative tier there: real_district_area).",
+    "predicted_shares": {
+      "wheat": 0.8171367959483851,
+      "cotton": 0.004895542289201544,
+      "rice": 0.19360862640537677,
+      "sugarcane": 0.014273349595894625
+    },
+    "flagged_negative_share": false,
+    "n_real_s2_points": 23
+  },
+  "Bhakkar": {
+    "tier": "model_estimated_interim",
+    "season": "2024-25",
+    "source": "Track F's deployed GBT crop-share model (trained on real 2022-23 MNFSR labels, unchanged) applied to real Sentinel-2 phenology features for 2024-25 -- a MODEL ESTIMATE, not real MNFSR data. Unvalidatable until a real MNFSR report covering this season arrives. Never overrides real_crop_mix.json's real_district_area tier (this district's real authoritative tier there: real_district_area).",
+    "predicted_shares": {
+      "wheat": 0.7073870301527365,
+      "cotton": 0.09834765171379435,
+      "rice": 0.13640564500443136,
+      "sugarcane": 0.042593611689008035
+    },
+    "flagged_negative_share": false,
+    "n_real_s2_points": 18
+  },
+  "Buner": {
+    "tier": "model_estimated_interim",
+    "season": "2024-25",
+    "source": "Track F's deployed GBT crop-share model (trained on real 2022-23 MNFSR labels, unchanged) applied to real Sentinel-2 phenology features for 2024-25 -- a MODEL ESTIMATE, not real MNFSR data. Unvalidatable until a real MNFSR report covering this season arrives. Never overrides real_crop_mix.json's real_district_area tier (this district's real authoritative tier there: real_district_area).",
+    "predicted_shares": {
+      "wheat": 0.8119122609792789,
+      "cotton": 0.026512461702365604,
+      "rice": 0.1530216218135312,
+      "sugarcane": 0.01772804436540254
+    },
+    "flagged_negative_share": false,
+    "n_real_s2_points": 23
+  },
+  "Chagai": {
+    "tier": "model_estimated_interim",
+    "season": "2024-25",
+    "source": "Track F's deployed GBT crop-share model (trained on real 2022-23 MNFSR labels, unchanged) applied to real Sentinel-2 phenology features for 2024-25 -- a MODEL ESTIMATE, not real MNFSR data. Unvalidatable until a real MNFSR report covering this season arrives. Never overrides real_crop_mix.json's real_district_area tier (this district's real authoritative tier there: real_district_area).",
+    "predicted_shares": {
+      "wheat": 0.974186657550343,
+      "cotton": 0.006225793512596205,
+      "rice": 0.025124181510079082,
+      "sugarcane": 0.006261611858554791
+    },
+    "flagged_negative_share": false,
+    "n_real_s2_points": 16
+  },
+  "Chakwal": {
+    "tier": "model_estimated_interim",
+    "season": "2024-25",
+    "source": "Track F's deployed GBT crop-share model (trained on real 2022-23 MNFSR labels, unchanged) applied to real Sentinel-2 phenology features for 2024-25 -- a MODEL ESTIMATE, not real MNFSR data. Unvalidatable until a real MNFSR report covering this season arrives. Never overrides real_crop_mix.json's real_district_area tier (this district's real authoritative tier there: real_district_area).",
+    "predicted_shares": {
+      "wheat": 0.8835192632309391,
+      "cotton": 0.057615891955652594,
+      "rice": 0.045905354926586504,
+      "sugarcane": 0.010651014536191668
+    },
+    "flagged_negative_share": false,
+    "n_real_s2_points": 24
+  },
+  "Charsadda": {
+    "tier": "model_estimated_interim",
+    "season": "2024-25",
+    "source": "Track F's deployed GBT crop-share model (trained on real 2022-23 MNFSR labels, unchanged) applied to real Sentinel-2 phenology features for 2024-25 -- a MODEL ESTIMATE, not real MNFSR data. Unvalidatable until a real MNFSR report covering this season arrives. Never overrides real_crop_mix.json's real_district_area tier (this district's real authoritative tier there: real_district_area).",
+    "predicted_shares": {
+      "wheat": 0.850086522165717,
+      "cotton": 0.02633578333207971,
+      "rice": 0.12240157424582734,
+      "sugarcane": 0.01481430798015199
+    },
+    "flagged_negative_share": false,
+    "n_real_s2_points": 19
+  },
+  "Chitral": {
+    "tier": "model_estimated_interim",
+    "season": "2024-25",
+    "source": "Track F's deployed GBT crop-share model (trained on real 2022-23 MNFSR labels, unchanged) applied to real Sentinel-2 phenology features for 2024-25 -- a MODEL ESTIMATE, not real MNFSR data. Unvalidatable until a real MNFSR report covering this season arrives. Never overrides real_crop_mix.json's real_district_area tier (this district's real authoritative tier there: real_district_area).",
+    "predicted_shares": {
+      "wheat": 0.8174022668993235,
+      "cotton": 0.029618485159732942,
+      "rice": 0.10519423869841567,
+      "sugarcane": 0.011453533970575917
+    },
+    "flagged_negative_share": false,
+    "n_real_s2_points": 20
+  },
+  "Dadu": {
+    "tier": "model_estimated_interim",
+    "season": "2024-25",
+    "source": "Track F's deployed GBT crop-share model (trained on real 2022-23 MNFSR labels, unchanged) applied to real Sentinel-2 phenology features for 2024-25 -- a MODEL ESTIMATE, not real MNFSR data. Unvalidatable until a real MNFSR report covering this season arrives. Never overrides real_crop_mix.json's real_district_area tier (this district's real authoritative tier there: real_district_area).",
+    "predicted_shares": {
+      "wheat": 0.6882530166460213,
+      "cotton": 0.14595444692501883,
+      "rice": 0.1208184805999526,
+      "sugarcane": 0.025439562907759044
+    },
+    "flagged_negative_share": false,
+    "n_real_s2_points": 20
+  },
+  "Dera Bugti": {
+    "tier": "model_estimated_interim",
+    "season": "2024-25",
+    "source": "Track F's deployed GBT crop-share model (trained on real 2022-23 MNFSR labels, unchanged) applied to real Sentinel-2 phenology features for 2024-25 -- a MODEL ESTIMATE, not real MNFSR data. Unvalidatable until a real MNFSR report covering this season arrives. Never overrides real_crop_mix.json's real_district_area tier (this district's real authoritative tier there: real_district_area).",
+    "predicted_shares": {
+      "wheat": 0.770290540061368,
+      "cotton": 0.07094242945607004,
+      "rice": 0.17817994500416606,
+      "sugarcane": 0.010262708824799299
+    },
+    "flagged_negative_share": false,
+    "n_real_s2_points": 22
+  },
+  "Dera Ghazi Khan": {
+    "tier": "model_estimated_interim",
+    "season": "2024-25",
+    "source": "Track F's deployed GBT crop-share model (trained on real 2022-23 MNFSR labels, unchanged) applied to real Sentinel-2 phenology features for 2024-25 -- a MODEL ESTIMATE, not real MNFSR data. Unvalidatable until a real MNFSR report covering this season arrives. Never overrides real_crop_mix.json's real_district_area tier (this district's real authoritative tier there: real_district_area).",
+    "predicted_shares": {
+      "wheat": 0.686038843370438,
+      "cotton": 0.14854375140614792,
+      "rice": 0.09624645304619013,
+      "sugarcane": 0.04232151775493448
+    },
+    "flagged_negative_share": false,
+    "n_real_s2_points": 19
+  },
+  "Dera Ismail Khan": {
+    "tier": "model_estimated_interim",
+    "season": "2024-25",
+    "source": "Track F's deployed GBT crop-share model (trained on real 2022-23 MNFSR labels, unchanged) applied to real Sentinel-2 phenology features for 2024-25 -- a MODEL ESTIMATE, not real MNFSR data. Unvalidatable until a real MNFSR report covering this season arrives. Never overrides real_crop_mix.json's real_district_area tier (this district's real authoritative tier there: real_district_area).",
+    "predicted_shares": {
+      "wheat": 0.719171416259532,
+      "cotton": 0.07332591835304028,
+      "rice": 0.1481073667899779,
+      "sugarcane": 0.031409841213907566
+    },
+    "flagged_negative_share": false,
+    "n_real_s2_points": 17
+  },
+  "Faisalabad": {
+    "tier": "model_estimated_interim",
+    "season": "2024-25",
+    "source": "Track F's deployed GBT crop-share model (trained on real 2022-23 MNFSR labels, unchanged) applied to real Sentinel-2 phenology features for 2024-25 -- a MODEL ESTIMATE, not real MNFSR data. Unvalidatable until a real MNFSR report covering this season arrives. Never overrides real_crop_mix.json's real_district_area tier (this district's real authoritative tier there: real_district_area).",
+    "predicted_shares": {
+      "wheat": 0.6267868660799311,
+      "cotton": 0.07733491282046642,
+      "rice": 0.260317454253196,
+      "sugarcane": 0.05426216857720076
+    },
+    "flagged_negative_share": false,
+    "n_real_s2_points": 24
+  },
+  "Ghotki": {
+    "tier": "model_estimated_interim",
+    "season": "2024-25",
+    "source": "Track F's deployed GBT crop-share model (trained on real 2022-23 MNFSR labels, unchanged) applied to real Sentinel-2 phenology features for 2024-25 -- a MODEL ESTIMATE, not real MNFSR data. Unvalidatable until a real MNFSR report covering this season arrives. Never overrides real_crop_mix.json's real_district_area tier (this district's real authoritative tier there: real_district_area).",
+    "predicted_shares": {
+      "wheat": 0.6432252199502307,
+      "cotton": 0.17103739216387026,
+      "rice": 0.14046970888382102,
+      "sugarcane": 0.04574578814228925
+    },
+    "flagged_negative_share": false,
+    "n_real_s2_points": 16
+  },
+  "Gujranwala": {
+    "tier": "model_estimated_interim",
+    "season": "2024-25",
+    "source": "Track F's deployed GBT crop-share model (trained on real 2022-23 MNFSR labels, unchanged) applied to real Sentinel-2 phenology features for 2024-25 -- a MODEL ESTIMATE, not real MNFSR data. Unvalidatable until a real MNFSR report covering this season arrives. Never overrides real_crop_mix.json's real_district_area tier (this district's real authoritative tier there: real_district_area).",
+    "predicted_shares": {
+      "wheat": 0.542531950877297,
+      "cotton": 0.05189283118583019,
+      "rice": 0.3880130453164007,
+      "sugarcane": 0.039146785331487556
+    },
+    "flagged_negative_share": false,
+    "n_real_s2_points": 21
+  },
+  "Gujrat": {
+    "tier": "model_estimated_interim",
+    "season": "2024-25",
+    "source": "Track F's deployed GBT crop-share model (trained on real 2022-23 MNFSR labels, unchanged) applied to real Sentinel-2 phenology features for 2024-25 -- a MODEL ESTIMATE, not real MNFSR data. Unvalidatable until a real MNFSR report covering this season arrives. Never overrides real_crop_mix.json's real_district_area tier (this district's real authoritative tier there: real_district_area).",
+    "predicted_shares": {
+      "wheat": 0.7266234694740956,
+      "cotton": 0.026951015816843813,
+      "rice": 0.2738468203972793,
+      "sugarcane": 0.01737155720204023
+    },
+    "flagged_negative_share": false,
+    "n_real_s2_points": 22
+  },
+  "Gwadar": {
+    "tier": "model_estimated_interim",
+    "season": "2024-25",
+    "source": "Track F's deployed GBT crop-share model (trained on real 2022-23 MNFSR labels, unchanged) applied to real Sentinel-2 phenology features for 2024-25 -- a MODEL ESTIMATE, not real MNFSR data. Unvalidatable until a real MNFSR report covering this season arrives. Never overrides real_crop_mix.json's real_district_area tier (this district's real authoritative tier there: real_district_area).",
+    "predicted_shares": {
+      "wheat": 0.6351966763828427,
+      "cotton": 0.1309104406534809,
+      "rice": 0.10839574871889186,
+      "sugarcane": 0.042063083596704146
+    },
+    "flagged_negative_share": false,
+    "n_real_s2_points": 2
+  },
+  "Hafizabad": {
+    "tier": "model_estimated_interim",
+    "season": "2024-25",
+    "source": "Track F's deployed GBT crop-share model (trained on real 2022-23 MNFSR labels, unchanged) applied to real Sentinel-2 phenology features for 2024-25 -- a MODEL ESTIMATE, not real MNFSR data. Unvalidatable until a real MNFSR report covering this season arrives. Never overrides real_crop_mix.json's real_district_area tier (this district's real authoritative tier there: real_district_area).",
+    "predicted_shares": {
+      "wheat": 0.5697752503902445,
+      "cotton": 0.053329540085173904,
+      "rice": 0.3659888695958485,
+      "sugarcane": 0.028001860719338276
+    },
+    "flagged_negative_share": false,
+    "n_real_s2_points": 24
+  },
+  "Hangu": {
+    "tier": "model_estimated_interim",
+    "season": "2024-25",
+    "source": "Track F's deployed GBT crop-share model (trained on real 2022-23 MNFSR labels, unchanged) applied to real Sentinel-2 phenology features for 2024-25 -- a MODEL ESTIMATE, not real MNFSR data. Unvalidatable until a real MNFSR report covering this season arrives. Never overrides real_crop_mix.json's real_district_area tier (this district's real authoritative tier there: real_district_area).",
+    "predicted_shares": {
+      "wheat": 0.9139315904980405,
+      "cotton": 0.03411841778628076,
+      "rice": 0.04965386951616877,
+      "sugarcane": 0.006261116672356226
+    },
+    "flagged_negative_share": false,
+    "n_real_s2_points": 20
+  },
+  "Haripur": {
+    "tier": "model_estimated_interim",
+    "season": "2024-25",
+    "source": "Track F's deployed GBT crop-share model (trained on real 2022-23 MNFSR labels, unchanged) applied to real Sentinel-2 phenology features for 2024-25 -- a MODEL ESTIMATE, not real MNFSR data. Unvalidatable until a real MNFSR report covering this season arrives. Never overrides real_crop_mix.json's real_district_area tier (this district's real authoritative tier there: real_district_area).",
+    "predicted_shares": {
+      "wheat": 0.785734108869613,
+      "cotton": 0.0407575942503839,
+      "rice": 0.14514500066988298,
+      "sugarcane": 0.03253443248497546
+    },
+    "flagged_negative_share": false,
+    "n_real_s2_points": 24
+  },
+  "Hyderabad": {
+    "tier": "model_estimated_interim",
+    "season": "2024-25",
+    "source": "Track F's deployed GBT crop-share model (trained on real 2022-23 MNFSR labels, unchanged) applied to real Sentinel-2 phenology features for 2024-25 -- a MODEL ESTIMATE, not real MNFSR data. Unvalidatable until a real MNFSR report covering this season arrives. Never overrides real_crop_mix.json's real_district_area tier (this district's real authoritative tier there: real_district_area).",
+    "predicted_shares": {
+      "wheat": 0.649610527133228,
+      "cotton": 0.1829584009386204,
+      "rice": 0.16052852282753519,
+      "sugarcane": 0.03494584563630899
+    },
+    "flagged_negative_share": false,
+    "n_real_s2_points": 16
+  },
+  "Islamabad Capital Territory": {
+    "tier": "model_estimated_interim",
+    "season": "2024-25",
+    "source": "Track F's deployed GBT crop-share model (trained on real 2022-23 MNFSR labels, unchanged) applied to real Sentinel-2 phenology features for 2024-25 -- a MODEL ESTIMATE, not real MNFSR data. Unvalidatable until a real MNFSR report covering this season arrives. Never overrides real_crop_mix.json's real_district_area tier (this district's real authoritative tier there: real_district_area).",
+    "predicted_shares": {
+      "wheat": 0.7802114656485812,
+      "cotton": 0.024238947831662448,
+      "rice": 0.22316831805168902,
+      "sugarcane": 0.01250928541117713
+    },
+    "flagged_negative_share": false,
+    "n_real_s2_points": 23
+  },
+  "Jacobabad": {
+    "tier": "model_estimated_interim",
+    "season": "2024-25",
+    "source": "Track F's deployed GBT crop-share model (trained on real 2022-23 MNFSR labels, unchanged) applied to real Sentinel-2 phenology features for 2024-25 -- a MODEL ESTIMATE, not real MNFSR data. Unvalidatable until a real MNFSR report covering this season arrives. Never overrides real_crop_mix.json's real_district_area tier (this district's real authoritative tier there: real_district_area).",
+    "predicted_shares": {
+      "wheat": 0.580156954247096,
+      "cotton": 0.10075896368137575,
+      "rice": 0.3083335510472957,
+      "sugarcane": 0.02212640459486871
+    },
+    "flagged_negative_share": false,
+    "n_real_s2_points": 19
+  },
+  "Jafarabad": {
+    "tier": "model_estimated_interim",
+    "season": "2024-25",
+    "source": "Track F's deployed GBT crop-share model (trained on real 2022-23 MNFSR labels, unchanged) applied to real Sentinel-2 phenology features for 2024-25 -- a MODEL ESTIMATE, not real MNFSR data. Unvalidatable until a real MNFSR report covering this season arrives. Never overrides real_crop_mix.json's real_district_area tier (this district's real authoritative tier there: real_district_area).",
+    "predicted_shares": {
+      "wheat": 0.6266173592982085,
+      "cotton": 0.09456698033700595,
+      "rice": 0.25786217428273633,
+      "sugarcane": 0.018368974939347926
+    },
+    "flagged_negative_share": false,
+    "n_real_s2_points": 15
+  },
+  "Jamshoro": {
+    "tier": "model_estimated_interim",
+    "season": "2024-25",
+    "source": "Track F's deployed GBT crop-share model (trained on real 2022-23 MNFSR labels, unchanged) applied to real Sentinel-2 phenology features for 2024-25 -- a MODEL ESTIMATE, not real MNFSR data. Unvalidatable until a real MNFSR report covering this season arrives. Never overrides real_crop_mix.json's real_district_area tier (this district's real authoritative tier there: real_district_area).",
+    "predicted_shares": {
+      "wheat": 0.6755905509978726,
+      "cotton": 0.1681996309779533,
+      "rice": 0.11305969992136514,
+      "sugarcane": 0.028511810693392987
+    },
+    "flagged_negative_share": false,
+    "n_real_s2_points": 18
+  },
+  "Jhal Magsi": {
+    "tier": "model_estimated_interim",
+    "season": "2024-25",
+    "source": "Track F's deployed GBT crop-share model (trained on real 2022-23 MNFSR labels, unchanged) applied to real Sentinel-2 phenology features for 2024-25 -- a MODEL ESTIMATE, not real MNFSR data. Unvalidatable until a real MNFSR report covering this season arrives. Never overrides real_crop_mix.json's real_district_area tier (this district's real authoritative tier there: real_district_area).",
+    "predicted_shares": {
+      "wheat": 0.8748467380046165,
+      "cotton": 0.05501027908751256,
+      "rice": 0.04069910460207648,
+      "sugarcane": 0.007923727317055262
+    },
+    "flagged_negative_share": false,
+    "n_real_s2_points": 14
+  },
+  "Jhang": {
+    "tier": "model_estimated_interim",
+    "season": "2024-25",
+    "source": "Track F's deployed GBT crop-share model (trained on real 2022-23 MNFSR labels, unchanged) applied to real Sentinel-2 phenology features for 2024-25 -- a MODEL ESTIMATE, not real MNFSR data. Unvalidatable until a real MNFSR report covering this season arrives. Never overrides real_crop_mix.json's real_district_area tier (this district's real authoritative tier there: real_district_area).",
+    "predicted_shares": {
+      "wheat": 0.6938261129979824,
+      "cotton": 0.07900048269774762,
+      "rice": 0.18496706177492617,
+      "sugarcane": 0.04240674257972444
+    },
+    "flagged_negative_share": false,
+    "n_real_s2_points": 21
+  },
+  "Jhelum": {
+    "tier": "model_estimated_interim",
+    "season": "2024-25",
+    "source": "Track F's deployed GBT crop-share model (trained on real 2022-23 MNFSR labels, unchanged) applied to real Sentinel-2 phenology features for 2024-25 -- a MODEL ESTIMATE, not real MNFSR data. Unvalidatable until a real MNFSR report covering this season arrives. Never overrides real_crop_mix.json's real_district_area tier (this district's real authoritative tier there: real_district_area).",
+    "predicted_shares": {
+      "wheat": 0.7902666968846757,
+      "cotton": 0.045552529109799095,
+      "rice": 0.19641130351919908,
+      "sugarcane": 0.020324772664815634
+    },
+    "flagged_negative_share": false,
+    "n_real_s2_points": 22
+  },
+  "Kachhi": {
+    "tier": "model_estimated_interim",
+    "season": "2024-25",
+    "source": "Track F's deployed GBT crop-share model (trained on real 2022-23 MNFSR labels, unchanged) applied to real Sentinel-2 phenology features for 2024-25 -- a MODEL ESTIMATE, not real MNFSR data. Unvalidatable until a real MNFSR report covering this season arrives. Never overrides real_crop_mix.json's real_district_area tier (this district's real authoritative tier there: real_district_area).",
+    "predicted_shares": {
+      "wheat": 0.9457237530825346,
+      "cotton": 0.03383693514566585,
+      "rice": 0.049373677649807636,
+      "sugarcane": 0.004995447934649635
+    },
+    "flagged_negative_share": false,
+    "n_real_s2_points": 9
+  },
+  "Kalat": {
+    "tier": "model_estimated_interim",
+    "season": "2024-25",
+    "source": "Track F's deployed GBT crop-share model (trained on real 2022-23 MNFSR labels, unchanged) applied to real Sentinel-2 phenology features for 2024-25 -- a MODEL ESTIMATE, not real MNFSR data. Unvalidatable until a real MNFSR report covering this season arrives. Never overrides real_crop_mix.json's real_district_area tier (this district's real authoritative tier there: real_district_area).",
+    "predicted_shares": {
+      "wheat": 0.929168387046887,
+      "cotton": 0.0401407741741273,
+      "rice": 0.026472459225681803,
+      "sugarcane": 0.0050087825789626
+    },
+    "flagged_negative_share": false,
+    "n_real_s2_points": 20
+  },
+  "Karachi": {
+    "tier": "model_estimated_interim",
+    "season": "2024-25",
+    "source": "Track F's deployed GBT crop-share model (trained on real 2022-23 MNFSR labels, unchanged) applied to real Sentinel-2 phenology features for 2024-25 -- a MODEL ESTIMATE, not real MNFSR data. Unvalidatable until a real MNFSR report covering this season arrives. Never overrides real_crop_mix.json's real_district_area tier (this district's real authoritative tier there: real_district_area).",
+    "predicted_shares": {
+      "wheat": 0.7506972358780172,
+      "cotton": 0.06612074836070278,
+      "rice": 0.14664586697040155,
+      "sugarcane": 0.020675092139920134
+    },
+    "flagged_negative_share": false,
+    "n_real_s2_points": 13
+  },
+  "Karak": {
+    "tier": "model_estimated_interim",
+    "season": "2024-25",
+    "source": "Track F's deployed GBT crop-share model (trained on real 2022-23 MNFSR labels, unchanged) applied to real Sentinel-2 phenology features for 2024-25 -- a MODEL ESTIMATE, not real MNFSR data. Unvalidatable until a real MNFSR report covering this season arrives. Never overrides real_crop_mix.json's real_district_area tier (this district's real authoritative tier there: real_district_area).",
+    "predicted_shares": {
+      "wheat": 0.8725976573500035,
+      "cotton": 0.06967343789356141,
+      "rice": 0.07108998212928322,
+      "sugarcane": 0.003018209929393237
+    },
+    "flagged_negative_share": false,
+    "n_real_s2_points": 22
+  },
+  "Kashmore": {
+    "tier": "model_estimated_interim",
+    "season": "2024-25",
+    "source": "Track F's deployed GBT crop-share model (trained on real 2022-23 MNFSR labels, unchanged) applied to real Sentinel-2 phenology features for 2024-25 -- a MODEL ESTIMATE, not real MNFSR data. Unvalidatable until a real MNFSR report covering this season arrives. Never overrides real_crop_mix.json's real_district_area tier (this district's real authoritative tier there: real_district_area).",
+    "predicted_shares": {
+      "wheat": 0.6445874051471384,
+      "cotton": 0.12057336468575339,
+      "rice": 0.17279009793480693,
+      "sugarcane": 0.025181115497026247
+    },
+    "flagged_negative_share": false,
+    "n_real_s2_points": 20
+  },
+  "Kasur": {
+    "tier": "model_estimated_interim",
+    "season": "2024-25",
+    "source": "Track F's deployed GBT crop-share model (trained on real 2022-23 MNFSR labels, unchanged) applied to real Sentinel-2 phenology features for 2024-25 -- a MODEL ESTIMATE, not real MNFSR data. Unvalidatable until a real MNFSR report covering this season arrives. Never overrides real_crop_mix.json's real_district_area tier (this district's real authoritative tier there: real_district_area).",
+    "predicted_shares": {
+      "wheat": 0.6316806123018135,
+      "cotton": 0.10277572063868357,
+      "rice": 0.25229260240697504,
+      "sugarcane": 0.041926773438690695
+    },
+    "flagged_negative_share": false,
+    "n_real_s2_points": 18
+  },
+  "Kech": {
+    "tier": "model_estimated_interim",
+    "season": "2024-25",
+    "source": "Track F's deployed GBT crop-share model (trained on real 2022-23 MNFSR labels, unchanged) applied to real Sentinel-2 phenology features for 2024-25 -- a MODEL ESTIMATE, not real MNFSR data. Unvalidatable until a real MNFSR report covering this season arrives. Never overrides real_crop_mix.json's real_district_area tier (this district's real authoritative tier there: real_district_area).",
+    "predicted_shares": {
+      "wheat": 0.7977710564616283,
+      "cotton": 0.09469474018237696,
+      "rice": 0.1016664047112009,
+      "sugarcane": 0.026113681737996036
+    },
+    "flagged_negative_share": false,
+    "n_real_s2_points": 12
+  },
+  "Khairpur": {
+    "tier": "model_estimated_interim",
+    "season": "2024-25",
+    "source": "Track F's deployed GBT crop-share model (trained on real 2022-23 MNFSR labels, unchanged) applied to real Sentinel-2 phenology features for 2024-25 -- a MODEL ESTIMATE, not real MNFSR data. Unvalidatable until a real MNFSR report covering this season arrives. Never overrides real_crop_mix.json's real_district_area tier (this district's real authoritative tier there: real_district_area).",
+    "predicted_shares": {
+      "wheat": 0.6991144242360467,
+      "cotton": 0.1833083831803935,
+      "rice": 0.08982671364263702,
+      "sugarcane": 0.031058434522412484
+    },
+    "flagged_negative_share": false,
+    "n_real_s2_points": 19
+  },
+  "Khanewal": {
+    "tier": "model_estimated_interim",
+    "season": "2024-25",
+    "source": "Track F's deployed GBT crop-share model (trained on real 2022-23 MNFSR labels, unchanged) applied to real Sentinel-2 phenology features for 2024-25 -- a MODEL ESTIMATE, not real MNFSR data. Unvalidatable until a real MNFSR report covering this season arrives. Never overrides real_crop_mix.json's real_district_area tier (this district's real authoritative tier there: real_district_area).",
+    "predicted_shares": {
+      "wheat": 0.6562981947599869,
+      "cotton": 0.15124274585409786,
+      "rice": 0.15896790892030985,
+      "sugarcane": 0.06663935976110949
+    },
+    "flagged_negative_share": false,
+    "n_real_s2_points": 19
+  },
+  "Kharan": {
+    "tier": "model_estimated_interim",
+    "season": "2024-25",
+    "source": "Track F's deployed GBT crop-share model (trained on real 2022-23 MNFSR labels, unchanged) applied to real Sentinel-2 phenology features for 2024-25 -- a MODEL ESTIMATE, not real MNFSR data. Unvalidatable until a real MNFSR report covering this season arrives. Never overrides real_crop_mix.json's real_district_area tier (this district's real authoritative tier there: real_district_area).",
+    "predicted_shares": {
+      "wheat": 0.8862170629061205,
+      "cotton": 0.08397489125073465,
+      "rice": 0.01957162520284243,
+      "sugarcane": 0.013375092234758412
+    },
+    "flagged_negative_share": false,
+    "n_real_s2_points": 16
+  },
+  "Khushab": {
+    "tier": "model_estimated_interim",
+    "season": "2024-25",
+    "source": "Track F's deployed GBT crop-share model (trained on real 2022-23 MNFSR labels, unchanged) applied to real Sentinel-2 phenology features for 2024-25 -- a MODEL ESTIMATE, not real MNFSR data. Unvalidatable until a real MNFSR report covering this season arrives. Never overrides real_crop_mix.json's real_district_area tier (this district's real authoritative tier there: real_district_area).",
+    "predicted_shares": {
+      "wheat": 0.7855303407117028,
+      "cotton": 0.060402683568104396,
+      "rice": 0.11004096219910986,
+      "sugarcane": 0.03353417582731149
+    },
+    "flagged_negative_share": false,
+    "n_real_s2_points": 20
+  },
+  "Khuzdar": {
+    "tier": "model_estimated_interim",
+    "season": "2024-25",
+    "source": "Track F's deployed GBT crop-share model (trained on real 2022-23 MNFSR labels, unchanged) applied to real Sentinel-2 phenology features for 2024-25 -- a MODEL ESTIMATE, not real MNFSR data. Unvalidatable until a real MNFSR report covering this season arrives. Never overrides real_crop_mix.json's real_district_area tier (this district's real authoritative tier there: real_district_area).",
+    "predicted_shares": {
+      "wheat": 0.891219815993939,
+      "cotton": 0.06935700999683993,
+      "rice": 0.028238436260508315,
+      "sugarcane": 0.017059718744305234
+    },
+    "flagged_negative_share": false,
+    "n_real_s2_points": 22
+  },
+  "Khyber": {
+    "tier": "model_estimated_interim",
+    "season": "2024-25",
+    "source": "Track F's deployed GBT crop-share model (trained on real 2022-23 MNFSR labels, unchanged) applied to real Sentinel-2 phenology features for 2024-25 -- a MODEL ESTIMATE, not real MNFSR data. Unvalidatable until a real MNFSR report covering this season arrives. Never overrides real_crop_mix.json's real_district_area tier (this district's real authoritative tier there: real_district_area).",
+    "predicted_shares": {
+      "wheat": 0.8942320277125915,
+      "cotton": 0.01353336169297853,
+      "rice": 0.07891994541025081,
+      "sugarcane": 0.012332644320329616
+    },
+    "flagged_negative_share": false,
+    "n_real_s2_points": 24
+  },
+  "Kohat": {
+    "tier": "model_estimated_interim",
+    "season": "2024-25",
+    "source": "Track F's deployed GBT crop-share model (trained on real 2022-23 MNFSR labels, unchanged) applied to real Sentinel-2 phenology features for 2024-25 -- a MODEL ESTIMATE, not real MNFSR data. Unvalidatable until a real MNFSR report covering this season arrives. Never overrides real_crop_mix.json's real_district_area tier (this district's real authoritative tier there: real_district_area).",
+    "predicted_shares": {
+      "wheat": 0.9198677140591248,
+      "cotton": 0.016945923320402085,
+      "rice": 0.07165369788410994,
+      "sugarcane": 0.010531003900369451
+    },
+    "flagged_negative_share": false,
+    "n_real_s2_points": 25
+  },
+  "Kohistan": {
+    "tier": "model_estimated_interim",
+    "season": "2024-25",
+    "source": "Track F's deployed GBT crop-share model (trained on real 2022-23 MNFSR labels, unchanged) applied to real Sentinel-2 phenology features for 2024-25 -- a MODEL ESTIMATE, not real MNFSR data. Unvalidatable until a real MNFSR report covering this season arrives. Never overrides real_crop_mix.json's real_district_area tier (this district's real authoritative tier there: real_district_area).",
+    "predicted_shares": {
+      "wheat": 0.8186332487544073,
+      "cotton": 0.043091564676057265,
+      "rice": 0.1304899629335137,
+      "sugarcane": 0.01172167601109192
+    },
+    "flagged_negative_share": false,
+    "n_real_s2_points": 17
+  },
+  "Kohlu": {
+    "tier": "model_estimated_interim",
+    "season": "2024-25",
+    "source": "Track F's deployed GBT crop-share model (trained on real 2022-23 MNFSR labels, unchanged) applied to real Sentinel-2 phenology features for 2024-25 -- a MODEL ESTIMATE, not real MNFSR data. Unvalidatable until a real MNFSR report covering this season arrives. Never overrides real_crop_mix.json's real_district_area tier (this district's real authoritative tier there: real_district_area).",
+    "predicted_shares": {
+      "wheat": 0.8451402344341004,
+      "cotton": 0.07766391498145211,
+      "rice": 0.07688146550152052,
+      "sugarcane": 0.019668255728061804
+    },
+    "flagged_negative_share": false,
+    "n_real_s2_points": 18
+  },
+  "Kurram": {
+    "tier": "model_estimated_interim",
+    "season": "2024-25",
+    "source": "Track F's deployed GBT crop-share model (trained on real 2022-23 MNFSR labels, unchanged) applied to real Sentinel-2 phenology features for 2024-25 -- a MODEL ESTIMATE, not real MNFSR data. Unvalidatable until a real MNFSR report covering this season arrives. Never overrides real_crop_mix.json's real_district_area tier (this district's real authoritative tier there: real_district_area).",
+    "predicted_shares": {
+      "wheat": 0.8529667827618941,
+      "cotton": 0.008080804467879326,
+      "rice": 0.12276616601678,
+      "sugarcane": 0.008264556685833205
+    },
+    "flagged_negative_share": false,
+    "n_real_s2_points": 18
+  },
+  "Lahore": {
+    "tier": "model_estimated_interim",
+    "season": "2024-25",
+    "source": "Track F's deployed GBT crop-share model (trained on real 2022-23 MNFSR labels, unchanged) applied to real Sentinel-2 phenology features for 2024-25 -- a MODEL ESTIMATE, not real MNFSR data. Unvalidatable until a real MNFSR report covering this season arrives. Never overrides real_crop_mix.json's real_district_area tier (this district's real authoritative tier there: real_district_area).",
+    "predicted_shares": {
+      "wheat": 0.6541155308071525,
+      "cotton": 0.04637909017700105,
+      "rice": 0.2623779023951124,
+      "sugarcane": 0.04110714282259879
+    },
+    "flagged_negative_share": false,
+    "n_real_s2_points": 18
+  },
+  "Lakki Marwat": {
+    "tier": "model_estimated_interim",
+    "season": "2024-25",
+    "source": "Track F's deployed GBT crop-share model (trained on real 2022-23 MNFSR labels, unchanged) applied to real Sentinel-2 phenology features for 2024-25 -- a MODEL ESTIMATE, not real MNFSR data. Unvalidatable until a real MNFSR report covering this season arrives. Never overrides real_crop_mix.json's real_district_area tier (this district's real authoritative tier there: real_district_area).",
+    "predicted_shares": {
+      "wheat": 0.8686563984317506,
+      "cotton": 0.04223080197294012,
+      "rice": 0.07310480706525771,
+      "sugarcane": 0.020054124611723123
+    },
+    "flagged_negative_share": false,
+    "n_real_s2_points": 19
+  },
+  "Lasbela": {
+    "tier": "model_estimated_interim",
+    "season": "2024-25",
+    "source": "Track F's deployed GBT crop-share model (trained on real 2022-23 MNFSR labels, unchanged) applied to real Sentinel-2 phenology features for 2024-25 -- a MODEL ESTIMATE, not real MNFSR data. Unvalidatable until a real MNFSR report covering this season arrives. Never overrides real_crop_mix.json's real_district_area tier (this district's real authoritative tier there: real_district_area).",
+    "predicted_shares": {
+      "wheat": 0.7167786078837768,
+      "cotton": 0.13463880550531024,
+      "rice": 0.11721445825480922,
+      "sugarcane": 0.022836636729937413
+    },
+    "flagged_negative_share": false,
+    "n_real_s2_points": 16
+  },
+  "Layyah": {
+    "tier": "model_estimated_interim",
+    "season": "2024-25",
+    "source": "Track F's deployed GBT crop-share model (trained on real 2022-23 MNFSR labels, unchanged) applied to real Sentinel-2 phenology features for 2024-25 -- a MODEL ESTIMATE, not real MNFSR data. Unvalidatable until a real MNFSR report covering this season arrives. Never overrides real_crop_mix.json's real_district_area tier (this district's real authoritative tier there: real_district_area).",
+    "predicted_shares": {
+      "wheat": 0.698680472134472,
+      "cotton": 0.104525578766005,
+      "rice": 0.1410261652330221,
+      "sugarcane": 0.028246937530670285
+    },
+    "flagged_negative_share": false,
+    "n_real_s2_points": 17
+  },
+  "Lodhran": {
+    "tier": "model_estimated_interim",
+    "season": "2024-25",
+    "source": "Track F's deployed GBT crop-share model (trained on real 2022-23 MNFSR labels, unchanged) applied to real Sentinel-2 phenology features for 2024-25 -- a MODEL ESTIMATE, not real MNFSR data. Unvalidatable until a real MNFSR report covering this season arrives. Never overrides real_crop_mix.json's real_district_area tier (this district's real authoritative tier there: real_district_area).",
+    "predicted_shares": {
+      "wheat": 0.6425355878392491,
+      "cotton": 0.17749460733220643,
+      "rice": 0.13458014311417432,
+      "sugarcane": 0.04170374121603994
+    },
+    "flagged_negative_share": false,
+    "n_real_s2_points": 21
+  },
+  "Loralai": {
+    "tier": "model_estimated_interim",
+    "season": "2024-25",
+    "source": "Track F's deployed GBT crop-share model (trained on real 2022-23 MNFSR labels, unchanged) applied to real Sentinel-2 phenology features for 2024-25 -- a MODEL ESTIMATE, not real MNFSR data. Unvalidatable until a real MNFSR report covering this season arrives. Never overrides real_crop_mix.json's real_district_area tier (this district's real authoritative tier there: real_district_area).",
+    "predicted_shares": {
+      "wheat": 0.9173409334173337,
+      "cotton": 0.034350187713767716,
+      "rice": 0.056768465492185255,
+      "sugarcane": 0.008275349296331969
+    },
+    "flagged_negative_share": false,
+    "n_real_s2_points": 18
+  },
+  "Lower Dir": {
+    "tier": "model_estimated_interim",
+    "season": "2024-25",
+    "source": "Track F's deployed GBT crop-share model (trained on real 2022-23 MNFSR labels, unchanged) applied to real Sentinel-2 phenology features for 2024-25 -- a MODEL ESTIMATE, not real MNFSR data. Unvalidatable until a real MNFSR report covering this season arrives. Never overrides real_crop_mix.json's real_district_area tier (this district's real authoritative tier there: real_district_area).",
+    "predicted_shares": {
+      "wheat": 0.8189791730302243,
+      "cotton": 0.035309123311420124,
+      "rice": 0.1257972225831387,
+      "sugarcane": 0.026266047705927106
+    },
+    "flagged_negative_share": false,
+    "n_real_s2_points": 22
+  },
+  "Malakand": {
+    "tier": "model_estimated_interim",
+    "season": "2024-25",
+    "source": "Track F's deployed GBT crop-share model (trained on real 2022-23 MNFSR labels, unchanged) applied to real Sentinel-2 phenology features for 2024-25 -- a MODEL ESTIMATE, not real MNFSR data. Unvalidatable until a real MNFSR report covering this season arrives. Never overrides real_crop_mix.json's real_district_area tier (this district's real authoritative tier there: real_district_area).",
+    "predicted_shares": {
+      "wheat": 0.821490366990023,
+      "cotton": 0.02291791478196538,
+      "rice": 0.14754607031514488,
+      "sugarcane": 0.016591154939537424
+    },
+    "flagged_negative_share": false,
+    "n_real_s2_points": 24
+  },
+  "Mandi Bahauddin": {
+    "tier": "model_estimated_interim",
+    "season": "2024-25",
+    "source": "Track F's deployed GBT crop-share model (trained on real 2022-23 MNFSR labels, unchanged) applied to real Sentinel-2 phenology features for 2024-25 -- a MODEL ESTIMATE, not real MNFSR data. Unvalidatable until a real MNFSR report covering this season arrives. Never overrides real_crop_mix.json's real_district_area tier (this district's real authoritative tier there: real_district_area).",
+    "predicted_shares": {
+      "wheat": 0.6653451136408236,
+      "cotton": 0.04457906289068605,
+      "rice": 0.3161133548819403,
+      "sugarcane": 0.03077198652229447
+    },
+    "flagged_negative_share": false,
+    "n_real_s2_points": 23
+  },
+  "Mansehra": {
+    "tier": "model_estimated_interim",
+    "season": "2024-25",
+    "source": "Track F's deployed GBT crop-share model (trained on real 2022-23 MNFSR labels, unchanged) applied to real Sentinel-2 phenology features for 2024-25 -- a MODEL ESTIMATE, not real MNFSR data. Unvalidatable until a real MNFSR report covering this season arrives. Never overrides real_crop_mix.json's real_district_area tier (this district's real authoritative tier there: real_district_area).",
+    "predicted_shares": {
+      "wheat": 0.8467740895221857,
+      "cotton": -0.0017276027707492734,
+      "rice": 0.15347764603997796,
+      "sugarcane": 0.008012244221850566
+    },
+    "flagged_negative_share": true,
+    "n_real_s2_points": 21
+  },
+  "Mardan": {
+    "tier": "model_estimated_interim",
+    "season": "2024-25",
+    "source": "Track F's deployed GBT crop-share model (trained on real 2022-23 MNFSR labels, unchanged) applied to real Sentinel-2 phenology features for 2024-25 -- a MODEL ESTIMATE, not real MNFSR data. Unvalidatable until a real MNFSR report covering this season arrives. Never overrides real_crop_mix.json's real_district_area tier (this district's real authoritative tier there: real_district_area).",
+    "predicted_shares": {
+      "wheat": 0.8137611468965206,
+      "cotton": 0.02673258674937415,
+      "rice": 0.13511801296683654,
+      "sugarcane": 0.02340936304894167
+    },
+    "flagged_negative_share": false,
+    "n_real_s2_points": 24
+  },
+  "Mastung": {
+    "tier": "model_estimated_interim",
+    "season": "2024-25",
+    "source": "Track F's deployed GBT crop-share model (trained on real 2022-23 MNFSR labels, unchanged) applied to real Sentinel-2 phenology features for 2024-25 -- a MODEL ESTIMATE, not real MNFSR data. Unvalidatable until a real MNFSR report covering this season arrives. Never overrides real_crop_mix.json's real_district_area tier (this district's real authoritative tier there: real_district_area).",
+    "predicted_shares": {
+      "wheat": 0.9562151265670052,
+      "cotton": 0.026400884428390416,
+      "rice": 0.01353043114570394,
+      "sugarcane": 0.0041466424167694235
+    },
+    "flagged_negative_share": false,
+    "n_real_s2_points": 23
+  },
+  "Matiari": {
+    "tier": "model_estimated_interim",
+    "season": "2024-25",
+    "source": "Track F's deployed GBT crop-share model (trained on real 2022-23 MNFSR labels, unchanged) applied to real Sentinel-2 phenology features for 2024-25 -- a MODEL ESTIMATE, not real MNFSR data. Unvalidatable until a real MNFSR report covering this season arrives. Never overrides real_crop_mix.json's real_district_area tier (this district's real authoritative tier there: real_district_area).",
+    "predicted_shares": {
+      "wheat": 0.6131909802384549,
+      "cotton": 0.21414042090820187,
+      "rice": 0.14061580764777934,
+      "sugarcane": 0.03188246976401443
+    },
+    "flagged_negative_share": false,
+    "n_real_s2_points": 22
+  },
+  "Mianwali": {
+    "tier": "model_estimated_interim",
+    "season": "2024-25",
+    "source": "Track F's deployed GBT crop-share model (trained on real 2022-23 MNFSR labels, unchanged) applied to real Sentinel-2 phenology features for 2024-25 -- a MODEL ESTIMATE, not real MNFSR data. Unvalidatable until a real MNFSR report covering this season arrives. Never overrides real_crop_mix.json's real_district_area tier (this district's real authoritative tier there: real_district_area).",
+    "predicted_shares": {
+      "wheat": 0.80514596937598,
+      "cotton": 0.08254948198633488,
+      "rice": 0.10226178415462013,
+      "sugarcane": 0.03399603391000657
+    },
+    "flagged_negative_share": false,
+    "n_real_s2_points": 21
+  },
+  "Mirpurkhas": {
+    "tier": "model_estimated_interim",
+    "season": "2024-25",
+    "source": "Track F's deployed GBT crop-share model (trained on real 2022-23 MNFSR labels, unchanged) applied to real Sentinel-2 phenology features for 2024-25 -- a MODEL ESTIMATE, not real MNFSR data. Unvalidatable until a real MNFSR report covering this season arrives. Never overrides real_crop_mix.json's real_district_area tier (this district's real authoritative tier there: real_district_area).",
+    "predicted_shares": {
+      "wheat": 0.6845752712272414,
+      "cotton": 0.18421144332375985,
+      "rice": 0.09935173423000698,
+      "sugarcane": 0.015559180536909962
+    },
+    "flagged_negative_share": false,
+    "n_real_s2_points": 14
+  },
+  "Mohmand": {
+    "tier": "model_estimated_interim",
+    "season": "2024-25",
+    "source": "Track F's deployed GBT crop-share model (trained on real 2022-23 MNFSR labels, unchanged) applied to real Sentinel-2 phenology features for 2024-25 -- a MODEL ESTIMATE, not real MNFSR data. Unvalidatable until a real MNFSR report covering this season arrives. Never overrides real_crop_mix.json's real_district_area tier (this district's real authoritative tier there: real_district_area).",
+    "predicted_shares": {
+      "wheat": 0.848251130810749,
+      "cotton": 0.039926312203871064,
+      "rice": 0.10845274154378688,
+      "sugarcane": 0.020628811952676532
+    },
+    "flagged_negative_share": false,
+    "n_real_s2_points": 21
+  },
+  "Multan": {
+    "tier": "model_estimated_interim",
+    "season": "2024-25",
+    "source": "Track F's deployed GBT crop-share model (trained on real 2022-23 MNFSR labels, unchanged) applied to real Sentinel-2 phenology features for 2024-25 -- a MODEL ESTIMATE, not real MNFSR data. Unvalidatable until a real MNFSR report covering this season arrives. Never overrides real_crop_mix.json's real_district_area tier (this district's real authoritative tier there: real_district_area).",
+    "predicted_shares": {
+      "wheat": 0.6878587237526917,
+      "cotton": 0.11218073700670587,
+      "rice": 0.14291634175356957,
+      "sugarcane": 0.03958419676178804
+    },
+    "flagged_negative_share": false,
+    "n_real_s2_points": 17
+  },
+  "Musakhel": {
+    "tier": "model_estimated_interim",
+    "season": "2024-25",
+    "source": "Track F's deployed GBT crop-share model (trained on real 2022-23 MNFSR labels, unchanged) applied to real Sentinel-2 phenology features for 2024-25 -- a MODEL ESTIMATE, not real MNFSR data. Unvalidatable until a real MNFSR report covering this season arrives. Never overrides real_crop_mix.json's real_district_area tier (this district's real authoritative tier there: real_district_area).",
+    "predicted_shares": {
+      "wheat": 0.8981548044926374,
+      "cotton": 0.04516137893374915,
+      "rice": 0.04788182871815087,
+      "sugarcane": 0.00864392771639792
+    },
+    "flagged_negative_share": false,
+    "n_real_s2_points": 25
+  },
+  "Muzaffargarh": {
+    "tier": "model_estimated_interim",
+    "season": "2024-25",
+    "source": "Track F's deployed GBT crop-share model (trained on real 2022-23 MNFSR labels, unchanged) applied to real Sentinel-2 phenology features for 2024-25 -- a MODEL ESTIMATE, not real MNFSR data. Unvalidatable until a real MNFSR report covering this season arrives. Never overrides real_crop_mix.json's real_district_area tier (this district's real authoritative tier there: real_district_area).",
+    "predicted_shares": {
+      "wheat": 0.6649873087396686,
+      "cotton": 0.12380560477234875,
+      "rice": 0.1680257089065557,
+      "sugarcane": 0.04290105643935095
+    },
+    "flagged_negative_share": false,
+    "n_real_s2_points": 18
+  },
+  "Narowal": {
+    "tier": "model_estimated_interim",
+    "season": "2024-25",
+    "source": "Track F's deployed GBT crop-share model (trained on real 2022-23 MNFSR labels, unchanged) applied to real Sentinel-2 phenology features for 2024-25 -- a MODEL ESTIMATE, not real MNFSR data. Unvalidatable until a real MNFSR report covering this season arrives. Never overrides real_crop_mix.json's real_district_area tier (this district's real authoritative tier there: real_district_area).",
+    "predicted_shares": {
+      "wheat": 0.6128852396535535,
+      "cotton": 0.03517422843501567,
+      "rice": 0.3282575811750626,
+      "sugarcane": 0.05364262560932568
+    },
+    "flagged_negative_share": false,
+    "n_real_s2_points": 24
+  },
+  "Nasirabad": {
+    "tier": "model_estimated_interim",
+    "season": "2024-25",
+    "source": "Track F's deployed GBT crop-share model (trained on real 2022-23 MNFSR labels, unchanged) applied to real Sentinel-2 phenology features for 2024-25 -- a MODEL ESTIMATE, not real MNFSR data. Unvalidatable until a real MNFSR report covering this season arrives. Never overrides real_crop_mix.json's real_district_area tier (this district's real authoritative tier there: real_district_area).",
+    "predicted_shares": {
+      "wheat": 0.7612110800892025,
+      "cotton": 0.08774149443143857,
+      "rice": 0.12481229221572926,
+      "sugarcane": 0.023120863421652697
+    },
+    "flagged_negative_share": false,
+    "n_real_s2_points": 23
+  },
+  "Naushehro Feroze": {
+    "tier": "model_estimated_interim",
+    "season": "2024-25",
+    "source": "Track F's deployed GBT crop-share model (trained on real 2022-23 MNFSR labels, unchanged) applied to real Sentinel-2 phenology features for 2024-25 -- a MODEL ESTIMATE, not real MNFSR data. Unvalidatable until a real MNFSR report covering this season arrives. Never overrides real_crop_mix.json's real_district_area tier (this district's real authoritative tier there: real_district_area).",
+    "predicted_shares": {
+      "wheat": 0.6659871591146336,
+      "cotton": 0.13856952342282172,
+      "rice": 0.1540514074171629,
+      "sugarcane": 0.04927451243325097
+    },
+    "flagged_negative_share": false,
+    "n_real_s2_points": 15
+  },
+  "Nawabshah": {
+    "tier": "model_estimated_interim",
+    "season": "2024-25",
+    "source": "Track F's deployed GBT crop-share model (trained on real 2022-23 MNFSR labels, unchanged) applied to real Sentinel-2 phenology features for 2024-25 -- a MODEL ESTIMATE, not real MNFSR data. Unvalidatable until a real MNFSR report covering this season arrives. Never overrides real_crop_mix.json's real_district_area tier (this district's real authoritative tier there: real_district_area).",
+    "predicted_shares": {
+      "wheat": 0.6392969277892481,
+      "cotton": 0.1819973415250929,
+      "rice": 0.1458976880803927,
+      "sugarcane": 0.03456740565184974
+    },
+    "flagged_negative_share": false,
+    "n_real_s2_points": 17
+  },
+  "North Waziristan": {
+    "tier": "model_estimated_interim",
+    "season": "2024-25",
+    "source": "Track F's deployed GBT crop-share model (trained on real 2022-23 MNFSR labels, unchanged) applied to real Sentinel-2 phenology features for 2024-25 -- a MODEL ESTIMATE, not real MNFSR data. Unvalidatable until a real MNFSR report covering this season arrives. Never overrides real_crop_mix.json's real_district_area tier (this district's real authoritative tier there: real_district_area).",
+    "predicted_shares": {
+      "wheat": 0.8540542896170762,
+      "cotton": 0.04742395745975264,
+      "rice": 0.09981865619646832,
+      "sugarcane": 0.01832518194593681
+    },
+    "flagged_negative_share": false,
+    "n_real_s2_points": 19
+  },
+  "Nowshera": {
+    "tier": "model_estimated_interim",
+    "season": "2024-25",
+    "source": "Track F's deployed GBT crop-share model (trained on real 2022-23 MNFSR labels, unchanged) applied to real Sentinel-2 phenology features for 2024-25 -- a MODEL ESTIMATE, not real MNFSR data. Unvalidatable until a real MNFSR report covering this season arrives. Never overrides real_crop_mix.json's real_district_area tier (this district's real authoritative tier there: real_district_area).",
+    "predicted_shares": {
+      "wheat": 0.9133179820511373,
+      "cotton": 0.028456458448334453,
+      "rice": 0.05244885620129929,
+      "sugarcane": 0.0123372768469539
+    },
+    "flagged_negative_share": false,
+    "n_real_s2_points": 14
+  },
+  "Nushki": {
+    "tier": "model_estimated_interim",
+    "season": "2024-25",
+    "source": "Track F's deployed GBT crop-share model (trained on real 2022-23 MNFSR labels, unchanged) applied to real Sentinel-2 phenology features for 2024-25 -- a MODEL ESTIMATE, not real MNFSR data. Unvalidatable until a real MNFSR report covering this season arrives. Never overrides real_crop_mix.json's real_district_area tier (this district's real authoritative tier there: real_district_area).",
+    "predicted_shares": {
+      "wheat": 0.9166809826507105,
+      "cotton": 0.041731178401470635,
+      "rice": 0.028591356340202483,
+      "sugarcane": 0.00747006818993897
+    },
+    "flagged_negative_share": false,
+    "n_real_s2_points": 15
+  },
+  "Okara": {
+    "tier": "model_estimated_interim",
+    "season": "2024-25",
+    "source": "Track F's deployed GBT crop-share model (trained on real 2022-23 MNFSR labels, unchanged) applied to real Sentinel-2 phenology features for 2024-25 -- a MODEL ESTIMATE, not real MNFSR data. Unvalidatable until a real MNFSR report covering this season arrives. Never overrides real_crop_mix.json's real_district_area tier (this district's real authoritative tier there: real_district_area).",
+    "predicted_shares": {
+      "wheat": 0.668891572427447,
+      "cotton": 0.09160990823750594,
+      "rice": 0.19377556634559878,
+      "sugarcane": 0.04712958023482139
+    },
+    "flagged_negative_share": false,
+    "n_real_s2_points": 22
+  },
+  "Orakzai": {
+    "tier": "model_estimated_interim",
+    "season": "2024-25",
+    "source": "Track F's deployed GBT crop-share model (trained on real 2022-23 MNFSR labels, unchanged) applied to real Sentinel-2 phenology features for 2024-25 -- a MODEL ESTIMATE, not real MNFSR data. Unvalidatable until a real MNFSR report covering this season arrives. Never overrides real_crop_mix.json's real_district_area tier (this district's real authoritative tier there: real_district_area).",
+    "predicted_shares": {
+      "wheat": 0.8691047024994263,
+      "cotton": 0.01755260061785244,
+      "rice": 0.09870705336532558,
+      "sugarcane": 0.015869319982194714
+    },
+    "flagged_negative_share": false,
+    "n_real_s2_points": 19
+  },
+  "Pakpattan": {
+    "tier": "model_estimated_interim",
+    "season": "2024-25",
+    "source": "Track F's deployed GBT crop-share model (trained on real 2022-23 MNFSR labels, unchanged) applied to real Sentinel-2 phenology features for 2024-25 -- a MODEL ESTIMATE, not real MNFSR data. Unvalidatable until a real MNFSR report covering this season arrives. Never overrides real_crop_mix.json's real_district_area tier (this district's real authoritative tier there: real_district_area).",
+    "predicted_shares": {
+      "wheat": 0.5962348369483367,
+      "cotton": 0.11709365812458629,
+      "rice": 0.2616509582753724,
+      "sugarcane": 0.0443726249675137
+    },
+    "flagged_negative_share": false,
+    "n_real_s2_points": 21
+  },
+  "Panjgur": {
+    "tier": "model_estimated_interim",
+    "season": "2024-25",
+    "source": "Track F's deployed GBT crop-share model (trained on real 2022-23 MNFSR labels, unchanged) applied to real Sentinel-2 phenology features for 2024-25 -- a MODEL ESTIMATE, not real MNFSR data. Unvalidatable until a real MNFSR report covering this season arrives. Never overrides real_crop_mix.json's real_district_area tier (this district's real authoritative tier there: real_district_area).",
+    "predicted_shares": {
+      "wheat": 0.8520343102979361,
+      "cotton": 0.07134416952001324,
+      "rice": 0.048865393740225464,
+      "sugarcane": 0.016307884953417777
+    },
+    "flagged_negative_share": false,
+    "n_real_s2_points": 16
+  },
+  "Peshawar": {
+    "tier": "model_estimated_interim",
+    "season": "2024-25",
+    "source": "Track F's deployed GBT crop-share model (trained on real 2022-23 MNFSR labels, unchanged) applied to real Sentinel-2 phenology features for 2024-25 -- a MODEL ESTIMATE, not real MNFSR data. Unvalidatable until a real MNFSR report covering this season arrives. Never overrides real_crop_mix.json's real_district_area tier (this district's real authoritative tier there: real_district_area).",
+    "predicted_shares": {
+      "wheat": 0.8714110273625809,
+      "cotton": 0.0425831555815384,
+      "rice": 0.08844595021188595,
+      "sugarcane": 0.013208375214338437
+    },
+    "flagged_negative_share": false,
+    "n_real_s2_points": 15
+  },
+  "Pishin": {
+    "tier": "model_estimated_interim",
+    "season": "2024-25",
+    "source": "Track F's deployed GBT crop-share model (trained on real 2022-23 MNFSR labels, unchanged) applied to real Sentinel-2 phenology features for 2024-25 -- a MODEL ESTIMATE, not real MNFSR data. Unvalidatable until a real MNFSR report covering this season arrives. Never overrides real_crop_mix.json's real_district_area tier (this district's real authoritative tier there: real_district_area).",
+    "predicted_shares": {
+      "wheat": 0.9416309175566546,
+      "cotton": 0.02367682599143314,
+      "rice": 0.03623549636224246,
+      "sugarcane": 0.017069770285075902
+    },
+    "flagged_negative_share": false,
+    "n_real_s2_points": 20
+  },
+  "Qambar Shahdadkot": {
+    "tier": "model_estimated_interim",
+    "season": "2024-25",
+    "source": "Track F's deployed GBT crop-share model (trained on real 2022-23 MNFSR labels, unchanged) applied to real Sentinel-2 phenology features for 2024-25 -- a MODEL ESTIMATE, not real MNFSR data. Unvalidatable until a real MNFSR report covering this season arrives. Never overrides real_crop_mix.json's real_district_area tier (this district's real authoritative tier there: real_district_area).",
+    "predicted_shares": {
+      "wheat": 0.6087190938105204,
+      "cotton": 0.11721042356385893,
+      "rice": 0.2544784420222177,
+      "sugarcane": 0.03317776997194839
+    },
+    "flagged_negative_share": false,
+    "n_real_s2_points": 14
+  },
+  "Qilla Abdullah": {
+    "tier": "model_estimated_interim",
+    "season": "2024-25",
+    "source": "Track F's deployed GBT crop-share model (trained on real 2022-23 MNFSR labels, unchanged) applied to real Sentinel-2 phenology features for 2024-25 -- a MODEL ESTIMATE, not real MNFSR data. Unvalidatable until a real MNFSR report covering this season arrives. Never overrides real_crop_mix.json's real_district_area tier (this district's real authoritative tier there: real_district_area).",
+    "predicted_shares": {
+      "wheat": 0.8925419537991712,
+      "cotton": 0.02932526528979286,
+      "rice": 0.05528468435964531,
+      "sugarcane": 0.01236367375666088
+    },
+    "flagged_negative_share": false,
+    "n_real_s2_points": 18
+  },
+  "Qilla Saifullah": {
+    "tier": "model_estimated_interim",
+    "season": "2024-25",
+    "source": "Track F's deployed GBT crop-share model (trained on real 2022-23 MNFSR labels, unchanged) applied to real Sentinel-2 phenology features for 2024-25 -- a MODEL ESTIMATE, not real MNFSR data. Unvalidatable until a real MNFSR report covering this season arrives. Never overrides real_crop_mix.json's real_district_area tier (this district's real authoritative tier there: real_district_area).",
+    "predicted_shares": {
+      "wheat": 0.9492476093440304,
+      "cotton": 0.01621695104529501,
+      "rice": 0.030998503771479873,
+      "sugarcane": 0.0030543753731843474
+    },
+    "flagged_negative_share": false,
+    "n_real_s2_points": 18
+  },
+  "Quetta": {
+    "tier": "model_estimated_interim",
+    "season": "2024-25",
+    "source": "Track F's deployed GBT crop-share model (trained on real 2022-23 MNFSR labels, unchanged) applied to real Sentinel-2 phenology features for 2024-25 -- a MODEL ESTIMATE, not real MNFSR data. Unvalidatable until a real MNFSR report covering this season arrives. Never overrides real_crop_mix.json's real_district_area tier (this district's real authoritative tier there: real_district_area).",
+    "predicted_shares": {
+      "wheat": 0.9545239892980695,
+      "cotton": 0.027040648055979166,
+      "rice": 0.026479967630915553,
+      "sugarcane": -0.0004953235585665901
+    },
+    "flagged_negative_share": true,
+    "n_real_s2_points": 13
+  },
+  "Rahim Yar Khan": {
+    "tier": "model_estimated_interim",
+    "season": "2024-25",
+    "source": "Track F's deployed GBT crop-share model (trained on real 2022-23 MNFSR labels, unchanged) applied to real Sentinel-2 phenology features for 2024-25 -- a MODEL ESTIMATE, not real MNFSR data. Unvalidatable until a real MNFSR report covering this season arrives. Never overrides real_crop_mix.json's real_district_area tier (this district's real authoritative tier there: real_district_area).",
+    "predicted_shares": {
+      "wheat": 0.6916216708923003,
+      "cotton": 0.17514806645625366,
+      "rice": 0.10448555809161231,
+      "sugarcane": 0.049296489492313564
+    },
+    "flagged_negative_share": false,
+    "n_real_s2_points": 21
+  },
+  "Rajanpur": {
+    "tier": "model_estimated_interim",
+    "season": "2024-25",
+    "source": "Track F's deployed GBT crop-share model (trained on real 2022-23 MNFSR labels, unchanged) applied to real Sentinel-2 phenology features for 2024-25 -- a MODEL ESTIMATE, not real MNFSR data. Unvalidatable until a real MNFSR report covering this season arrives. Never overrides real_crop_mix.json's real_district_area tier (this district's real authoritative tier there: real_district_area).",
+    "predicted_shares": {
+      "wheat": 0.6686862383262787,
+      "cotton": 0.18960693782332996,
+      "rice": 0.1239165025080288,
+      "sugarcane": 0.02782385459622306
+    },
+    "flagged_negative_share": false,
+    "n_real_s2_points": 20
+  },
+  "Rawalpindi": {
+    "tier": "model_estimated_interim",
+    "season": "2024-25",
+    "source": "Track F's deployed GBT crop-share model (trained on real 2022-23 MNFSR labels, unchanged) applied to real Sentinel-2 phenology features for 2024-25 -- a MODEL ESTIMATE, not real MNFSR data. Unvalidatable until a real MNFSR report covering this season arrives. Never overrides real_crop_mix.json's real_district_area tier (this district's real authoritative tier there: real_district_area).",
+    "predicted_shares": {
+      "wheat": 0.8744056472089041,
+      "cotton": 0.030402719188126107,
+      "rice": 0.1247422914143866,
+      "sugarcane": 0.009705102017311264
+    },
+    "flagged_negative_share": false,
+    "n_real_s2_points": 24
+  },
+  "Sahiwal": {
+    "tier": "model_estimated_interim",
+    "season": "2024-25",
+    "source": "Track F's deployed GBT crop-share model (trained on real 2022-23 MNFSR labels, unchanged) applied to real Sentinel-2 phenology features for 2024-25 -- a MODEL ESTIMATE, not real MNFSR data. Unvalidatable until a real MNFSR report covering this season arrives. Never overrides real_crop_mix.json's real_district_area tier (this district's real authoritative tier there: real_district_area).",
+    "predicted_shares": {
+      "wheat": 0.6450566004227224,
+      "cotton": 0.14298100007737552,
+      "rice": 0.19654118674171872,
+      "sugarcane": 0.03792088422520417
+    },
+    "flagged_negative_share": false,
+    "n_real_s2_points": 20
+  },
+  "Sanghar": {
+    "tier": "model_estimated_interim",
+    "season": "2024-25",
+    "source": "Track F's deployed GBT crop-share model (trained on real 2022-23 MNFSR labels, unchanged) applied to real Sentinel-2 phenology features for 2024-25 -- a MODEL ESTIMATE, not real MNFSR data. Unvalidatable until a real MNFSR report covering this season arrives. Never overrides real_crop_mix.json's real_district_area tier (this district's real authoritative tier there: real_district_area).",
+    "predicted_shares": {
+      "wheat": 0.6509050056315506,
+      "cotton": 0.23440340283302302,
+      "rice": 0.12079946311961187,
+      "sugarcane": 0.02620335307107541
+    },
+    "flagged_negative_share": false,
+    "n_real_s2_points": 15
+  },
+  "Sargodha": {
+    "tier": "model_estimated_interim",
+    "season": "2024-25",
+    "source": "Track F's deployed GBT crop-share model (trained on real 2022-23 MNFSR labels, unchanged) applied to real Sentinel-2 phenology features for 2024-25 -- a MODEL ESTIMATE, not real MNFSR data. Unvalidatable until a real MNFSR report covering this season arrives. Never overrides real_crop_mix.json's real_district_area tier (this district's real authoritative tier there: real_district_area).",
+    "predicted_shares": {
+      "wheat": 0.6874083066863858,
+      "cotton": 0.07150527370189452,
+      "rice": 0.1960034017724006,
+      "sugarcane": 0.03556083044603965
+    },
+    "flagged_negative_share": false,
+    "n_real_s2_points": 19
+  },
+  "Shangla": {
+    "tier": "model_estimated_interim",
+    "season": "2024-25",
+    "source": "Track F's deployed GBT crop-share model (trained on real 2022-23 MNFSR labels, unchanged) applied to real Sentinel-2 phenology features for 2024-25 -- a MODEL ESTIMATE, not real MNFSR data. Unvalidatable until a real MNFSR report covering this season arrives. Never overrides real_crop_mix.json's real_district_area tier (this district's real authoritative tier there: real_district_area).",
+    "predicted_shares": {
+      "wheat": 0.7638503103976712,
+      "cotton": 0.0133540387168914,
+      "rice": 0.22714148477035503,
+      "sugarcane": 0.022701312463041887
+    },
+    "flagged_negative_share": false,
+    "n_real_s2_points": 24
+  },
+  "Sheikhpura": {
+    "tier": "model_estimated_interim",
+    "season": "2024-25",
+    "source": "Track F's deployed GBT crop-share model (trained on real 2022-23 MNFSR labels, unchanged) applied to real Sentinel-2 phenology features for 2024-25 -- a MODEL ESTIMATE, not real MNFSR data. Unvalidatable until a real MNFSR report covering this season arrives. Never overrides real_crop_mix.json's real_district_area tier (this district's real authoritative tier there: real_district_area).",
+    "predicted_shares": {
+      "wheat": 0.5781889936203736,
+      "cotton": 0.07112616630112731,
+      "rice": 0.32393303651070066,
+      "sugarcane": 0.030827038060602767
+    },
+    "flagged_negative_share": false,
+    "n_real_s2_points": 23
+  },
+  "Shikarpur": {
+    "tier": "model_estimated_interim",
+    "season": "2024-25",
+    "source": "Track F's deployed GBT crop-share model (trained on real 2022-23 MNFSR labels, unchanged) applied to real Sentinel-2 phenology features for 2024-25 -- a MODEL ESTIMATE, not real MNFSR data. Unvalidatable until a real MNFSR report covering this season arrives. Never overrides real_crop_mix.json's real_district_area tier (this district's real authoritative tier there: real_district_area).",
+    "predicted_shares": {
+      "wheat": 0.6203431149269438,
+      "cotton": 0.12666956746392177,
+      "rice": 0.2289736830330705,
+      "sugarcane": 0.027763907853486803
+    },
+    "flagged_negative_share": false,
+    "n_real_s2_points": 11
+  },
+  "Sialkot": {
+    "tier": "model_estimated_interim",
+    "season": "2024-25",
+    "source": "Track F's deployed GBT crop-share model (trained on real 2022-23 MNFSR labels, unchanged) applied to real Sentinel-2 phenology features for 2024-25 -- a MODEL ESTIMATE, not real MNFSR data. Unvalidatable until a real MNFSR report covering this season arrives. Never overrides real_crop_mix.json's real_district_area tier (this district's real authoritative tier there: real_district_area).",
+    "predicted_shares": {
+      "wheat": 0.6042977944483066,
+      "cotton": 0.0423351304304983,
+      "rice": 0.35141631360943604,
+      "sugarcane": 0.04559991753673595
+    },
+    "flagged_negative_share": false,
+    "n_real_s2_points": 19
+  },
+  "Sibi": {
+    "tier": "model_estimated_interim",
+    "season": "2024-25",
+    "source": "Track F's deployed GBT crop-share model (trained on real 2022-23 MNFSR labels, unchanged) applied to real Sentinel-2 phenology features for 2024-25 -- a MODEL ESTIMATE, not real MNFSR data. Unvalidatable until a real MNFSR report covering this season arrives. Never overrides real_crop_mix.json's real_district_area tier (this district's real authoritative tier there: real_district_area).",
+    "predicted_shares": {
+      "wheat": 0.8628592510137638,
+      "cotton": 0.04715082495584135,
+      "rice": 0.05930721333416616,
+      "sugarcane": 0.011793238860623374
+    },
+    "flagged_negative_share": false,
+    "n_real_s2_points": 6
+  },
+  "South Waziristan": {
+    "tier": "model_estimated_interim",
+    "season": "2024-25",
+    "source": "Track F's deployed GBT crop-share model (trained on real 2022-23 MNFSR labels, unchanged) applied to real Sentinel-2 phenology features for 2024-25 -- a MODEL ESTIMATE, not real MNFSR data. Unvalidatable until a real MNFSR report covering this season arrives. Never overrides real_crop_mix.json's real_district_area tier (this district's real authoritative tier there: real_district_area).",
+    "predicted_shares": {
+      "wheat": 0.874142468301372,
+      "cotton": 0.05499850211629457,
+      "rice": 0.07343418806827985,
+      "sugarcane": 0.0034832978794067443
+    },
+    "flagged_negative_share": false,
+    "n_real_s2_points": 23
+  },
+  "Sukkur": {
+    "tier": "model_estimated_interim",
+    "season": "2024-25",
+    "source": "Track F's deployed GBT crop-share model (trained on real 2022-23 MNFSR labels, unchanged) applied to real Sentinel-2 phenology features for 2024-25 -- a MODEL ESTIMATE, not real MNFSR data. Unvalidatable until a real MNFSR report covering this season arrives. Never overrides real_crop_mix.json's real_district_area tier (this district's real authoritative tier there: real_district_area).",
+    "predicted_shares": {
+      "wheat": 0.6585300421551892,
+      "cotton": 0.2244644022323676,
+      "rice": 0.12804097778969306,
+      "sugarcane": 0.023565693109016017
+    },
+    "flagged_negative_share": false,
+    "n_real_s2_points": 13
+  },
+  "Swabi": {
+    "tier": "model_estimated_interim",
+    "season": "2024-25",
+    "source": "Track F's deployed GBT crop-share model (trained on real 2022-23 MNFSR labels, unchanged) applied to real Sentinel-2 phenology features for 2024-25 -- a MODEL ESTIMATE, not real MNFSR data. Unvalidatable until a real MNFSR report covering this season arrives. Never overrides real_crop_mix.json's real_district_area tier (this district's real authoritative tier there: real_district_area).",
+    "predicted_shares": {
+      "wheat": 0.8406630485198209,
+      "cotton": 0.03295734498738656,
+      "rice": 0.09446315196203528,
+      "sugarcane": 0.01709905445591202
+    },
+    "flagged_negative_share": false,
+    "n_real_s2_points": 19
+  },
+  "Swat": {
+    "tier": "model_estimated_interim",
+    "season": "2024-25",
+    "source": "Track F's deployed GBT crop-share model (trained on real 2022-23 MNFSR labels, unchanged) applied to real Sentinel-2 phenology features for 2024-25 -- a MODEL ESTIMATE, not real MNFSR data. Unvalidatable until a real MNFSR report covering this season arrives. Never overrides real_crop_mix.json's real_district_area tier (this district's real authoritative tier there: real_district_area).",
+    "predicted_shares": {
+      "wheat": 0.8541367403770068,
+      "cotton": 0.01633551409554554,
+      "rice": 0.1559678118439207,
+      "sugarcane": 0.010713658258679922
+    },
+    "flagged_negative_share": false,
+    "n_real_s2_points": 19
+  },
+  "Tando Allahyar": {
+    "tier": "model_estimated_interim",
+    "season": "2024-25",
+    "source": "Track F's deployed GBT crop-share model (trained on real 2022-23 MNFSR labels, unchanged) applied to real Sentinel-2 phenology features for 2024-25 -- a MODEL ESTIMATE, not real MNFSR data. Unvalidatable until a real MNFSR report covering this season arrives. Never overrides real_crop_mix.json's real_district_area tier (this district's real authoritative tier there: real_district_area).",
+    "predicted_shares": {
+      "wheat": 0.6726798033486514,
+      "cotton": 0.20725525665757996,
+      "rice": 0.11750206735563021,
+      "sugarcane": 0.02884230032710349
+    },
+    "flagged_negative_share": false,
+    "n_real_s2_points": 10
+  },
+  "Tando Muhammad Khan": {
+    "tier": "model_estimated_interim",
+    "season": "2024-25",
+    "source": "Track F's deployed GBT crop-share model (trained on real 2022-23 MNFSR labels, unchanged) applied to real Sentinel-2 phenology features for 2024-25 -- a MODEL ESTIMATE, not real MNFSR data. Unvalidatable until a real MNFSR report covering this season arrives. Never overrides real_crop_mix.json's real_district_area tier (this district's real authoritative tier there: real_district_area).",
+    "predicted_shares": {
+      "wheat": 0.5576127888211966,
+      "cotton": 0.12036803713695786,
+      "rice": 0.31013512695313916,
+      "sugarcane": 0.017187561284498942
+    },
+    "flagged_negative_share": false,
+    "n_real_s2_points": 16
+  },
+  "Tank": {
+    "tier": "model_estimated_interim",
+    "season": "2024-25",
+    "source": "Track F's deployed GBT crop-share model (trained on real 2022-23 MNFSR labels, unchanged) applied to real Sentinel-2 phenology features for 2024-25 -- a MODEL ESTIMATE, not real MNFSR data. Unvalidatable until a real MNFSR report covering this season arrives. Never overrides real_crop_mix.json's real_district_area tier (this district's real authoritative tier there: real_district_area).",
+    "predicted_shares": {
+      "wheat": 0.814957639018324,
+      "cotton": 0.07665372543969147,
+      "rice": 0.08650005871127213,
+      "sugarcane": 0.013380828895204692
+    },
+    "flagged_negative_share": false,
+    "n_real_s2_points": 15
+  },
+  "Tharparkar": {
+    "tier": "model_estimated_interim",
+    "season": "2024-25",
+    "source": "Track F's deployed GBT crop-share model (trained on real 2022-23 MNFSR labels, unchanged) applied to real Sentinel-2 phenology features for 2024-25 -- a MODEL ESTIMATE, not real MNFSR data. Unvalidatable until a real MNFSR report covering this season arrives. Never overrides real_crop_mix.json's real_district_area tier (this district's real authoritative tier there: real_district_area).",
+    "predicted_shares": {
+      "wheat": 0.8023020872175972,
+      "cotton": 0.0882234343865931,
+      "rice": 0.10099114726802284,
+      "sugarcane": 0.005833024489768409
+    },
+    "flagged_negative_share": false,
+    "n_real_s2_points": 18
+  },
+  "Thatta": {
+    "tier": "model_estimated_interim",
+    "season": "2024-25",
+    "source": "Track F's deployed GBT crop-share model (trained on real 2022-23 MNFSR labels, unchanged) applied to real Sentinel-2 phenology features for 2024-25 -- a MODEL ESTIMATE, not real MNFSR data. Unvalidatable until a real MNFSR report covering this season arrives. Never overrides real_crop_mix.json's real_district_area tier (this district's real authoritative tier there: real_district_area).",
+    "predicted_shares": {
+      "wheat": 0.6169308810157186,
+      "cotton": 0.1255227727966107,
+      "rice": 0.21803699749747663,
+      "sugarcane": 0.03994581603596817
+    },
+    "flagged_negative_share": false,
+    "n_real_s2_points": 13
+  },
+  "Toba Tek Singh": {
+    "tier": "model_estimated_interim",
+    "season": "2024-25",
+    "source": "Track F's deployed GBT crop-share model (trained on real 2022-23 MNFSR labels, unchanged) applied to real Sentinel-2 phenology features for 2024-25 -- a MODEL ESTIMATE, not real MNFSR data. Unvalidatable until a real MNFSR report covering this season arrives. Never overrides real_crop_mix.json's real_district_area tier (this district's real authoritative tier there: real_district_area).",
+    "predicted_shares": {
+      "wheat": 0.7243937613058342,
+      "cotton": 0.1109081533835736,
+      "rice": 0.13768343361994434,
+      "sugarcane": 0.03921497173646623
+    },
+    "flagged_negative_share": false,
+    "n_real_s2_points": 20
+  },
+  "Umerkot": {
+    "tier": "model_estimated_interim",
+    "season": "2024-25",
+    "source": "Track F's deployed GBT crop-share model (trained on real 2022-23 MNFSR labels, unchanged) applied to real Sentinel-2 phenology features for 2024-25 -- a MODEL ESTIMATE, not real MNFSR data. Unvalidatable until a real MNFSR report covering this season arrives. Never overrides real_crop_mix.json's real_district_area tier (this district's real authoritative tier there: real_district_area).",
+    "predicted_shares": {
+      "wheat": 0.6589245049156216,
+      "cotton": 0.17834453152347804,
+      "rice": 0.1289881314782161,
+      "sugarcane": 0.014000824784236046
+    },
+    "flagged_negative_share": false,
+    "n_real_s2_points": 19
+  },
+  "Upper Dir": {
+    "tier": "model_estimated_interim",
+    "season": "2024-25",
+    "source": "Track F's deployed GBT crop-share model (trained on real 2022-23 MNFSR labels, unchanged) applied to real Sentinel-2 phenology features for 2024-25 -- a MODEL ESTIMATE, not real MNFSR data. Unvalidatable until a real MNFSR report covering this season arrives. Never overrides real_crop_mix.json's real_district_area tier (this district's real authoritative tier there: real_district_area).",
+    "predicted_shares": {
+      "wheat": 0.8126513926911137,
+      "cotton": 0.027065741270738734,
+      "rice": 0.16454202807055243,
+      "sugarcane": 0.018090724538864733
+    },
+    "flagged_negative_share": false,
+    "n_real_s2_points": 20
+  },
+  "Vihari": {
+    "tier": "model_estimated_interim",
+    "season": "2024-25",
+    "source": "Track F's deployed GBT crop-share model (trained on real 2022-23 MNFSR labels, unchanged) applied to real Sentinel-2 phenology features for 2024-25 -- a MODEL ESTIMATE, not real MNFSR data. Unvalidatable until a real MNFSR report covering this season arrives. Never overrides real_crop_mix.json's real_district_area tier (this district's real authoritative tier there: real_district_area).",
+    "predicted_shares": {
+      "wheat": 0.6402060380862081,
+      "cotton": 0.16863448775706333,
+      "rice": 0.16179808524980818,
+      "sugarcane": 0.03927520637664522
+    },
+    "flagged_negative_share": false,
+    "n_real_s2_points": 22
+  },
+  "Zhob": {
+    "tier": "model_estimated_interim",
+    "season": "2024-25",
+    "source": "Track F's deployed GBT crop-share model (trained on real 2022-23 MNFSR labels, unchanged) applied to real Sentinel-2 phenology features for 2024-25 -- a MODEL ESTIMATE, not real MNFSR data. Unvalidatable until a real MNFSR report covering this season arrives. Never overrides real_crop_mix.json's real_district_area tier (this district's real authoritative tier there: real_district_area).",
+    "predicted_shares": {
+      "wheat": 0.9077413680551092,
+      "cotton": 0.029574275592905347,
+      "rice": 0.04748405612154999,
+      "sugarcane": 0.010889892828123094
+    },
+    "flagged_negative_share": false,
+    "n_real_s2_points": 23
+  },
+  "Ziarat": {
+    "tier": "model_estimated_interim",
+    "season": "2024-25",
+    "source": "Track F's deployed GBT crop-share model (trained on real 2022-23 MNFSR labels, unchanged) applied to real Sentinel-2 phenology features for 2024-25 -- a MODEL ESTIMATE, not real MNFSR data. Unvalidatable until a real MNFSR report covering this season arrives. Never overrides real_crop_mix.json's real_district_area tier (this district's real authoritative tier there: real_district_area).",
+    "predicted_shares": {
+      "wheat": 0.919613220527741,
+      "cotton": 0.030874903168055058,
+      "rice": 0.03398915933678519,
+      "sugarcane": 0.02064045665452857
+    },
+    "flagged_negative_share": false,
+    "n_real_s2_points": 20
+  }
+}

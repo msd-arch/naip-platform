@@ -4,6 +4,24 @@
 # track_e_results.json, grid_dataset.parquet, etc.) are real, small, and kept.
 data/msg_oct_nov_2023/nat_in/
 
+# Track H live nowcasting loop (Week 13+): same real reasoning as above --
+# the rolling raw .nat window is large binary satellite input, not code/
+# output, and regenerates automatically every ~15min the loop runs. The
+# derived web_data/msg_hazard grids (small, ~23MB) and the real
+# district_alerts_live.json/csv/hazards_district_live.json evidence files
+# ARE kept. cycle.lock is ephemeral runtime state, never meaningful to commit.
+data/live_nowcast/nat_in/
+data/live_nowcast/web_data/_hazard_grid_tmp/
+data/live_nowcast/cycle.lock
+
+# Real operational logs and one-off scratch/diagnostic scripts from Track H's
+# build (nrt_retry_check.sh, observe_3h.sh) -- contain real local file paths
+# (this machine's directory structure) in failure-traceback output, and
+# aren't real reusable pipeline code. The real per-cycle pipeline script
+# itself (pipelines/scheduler/live_nowcast_cycle.py) IS kept.
+logs/
+data/live_nowcast/*.sh
+
 # Python
 __pycache__/
 *.pyc

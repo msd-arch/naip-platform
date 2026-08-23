@@ -1,0 +1,127 @@
+{
+  "generated": "2026-08-23T11:38:16.194556+00:00",
+  "bbox": [
+    55.0,
+    20.0,
+    85.0,
+    40.0
+  ],
+  "grid_res_deg": 0.25,
+  "source": "real MSG/SEVIRI .nat archive (nat_in), SatPy seviri_l1b_native",
+  "fields": [
+    "overshooting_tops",
+    "night_fog_diff",
+    "glaciation",
+    "dust_a",
+    "dust_b",
+    "ndvi",
+    "cloud_proxy",
+    "skin_temp"
+  ],
+  "timesteps": [
+    {
+      "stamp": "20260823_0857",
+      "grids": {
+        "overshooting_tops": "overshooting_tops/20260823_0857.json",
+        "night_fog_diff": "night_fog_diff/20260823_0857.json",
+        "glaciation": "glaciation/20260823_0857.json",
+        "dust_a": "dust_a/20260823_0857.json",
+        "dust_b": "dust_b/20260823_0857.json",
+        "ndvi": "ndvi/20260823_0857.json",
+        "cloud_proxy": "cloud_proxy/20260823_0857.json",
+        "skin_temp": "skin_temp/20260823_0857.json"
+      }
+    },
+    {
+      "stamp": "20260823_0912",
+      "grids": {
+        "overshooting_tops": "overshooting_tops/20260823_0912.json",
+        "night_fog_diff": "night_fog_diff/20260823_0912.json",
+        "glaciation": "glaciation/20260823_0912.json",
+        "dust_a": "dust_a/20260823_0912.json",
+        "dust_b": "dust_b/20260823_0912.json",
+        "ndvi": "ndvi/20260823_0912.json",
+        "cloud_proxy": "cloud_proxy/20260823_0912.json",
+        "skin_temp": "skin_temp/20260823_0912.json"
+      }
+    },
+    {
+      "stamp": "20260823_0927",
+      "grids": {
+        "overshooting_tops": "overshooting_tops/20260823_0927.json",
+        "night_fog_diff": "night_fog_diff/20260823_0927.json",
+        "glaciation": "glaciation/20260823_0927.json",
+        "dust_a": "dust_a/20260823_0927.json",
+        "dust_b": "dust_b/20260823_0927.json",
+        "ndvi": "ndvi/20260823_0927.json",
+        "cloud_proxy": "cloud_proxy/20260823_0927.json",
+        "skin_temp": "skin_temp/20260823_0927.json"
+      }
+    },
+    {
+      "stamp": "20260823_0942",
+      "grids": {
+        "overshooting_tops": "overshooting_tops/20260823_0942.json",
+        "night_fog_diff": "night_fog_diff/20260823_0942.json",
+        "glaciation": "glaciation/20260823_0942.json",
+        "dust_a": "dust_a/20260823_0942.json",
+        "dust_b": "dust_b/20260823_0942.json",
+        "ndvi": "ndvi/20260823_0942.json",
+        "cloud_proxy": "cloud_proxy/20260823_0942.json",
+        "skin_temp": "skin_temp/20260823_0942.json"
+      }
+    },
+    {
+      "stamp": "20260823_0957",
+      "grids": {
+        "overshooting_tops": "overshooting_tops/20260823_0957.json",
+        "night_fog_diff": "night_fog_diff/20260823_0957.json",
+        "glaciation": "glaciation/20260823_0957.json",
+        "dust_a": "dust_a/20260823_0957.json",
+        "dust_b": "dust_b/20260823_0957.json",
+        "ndvi": "ndvi/20260823_0957.json",
+        "cloud_proxy": "cloud_proxy/20260823_0957.json",
+        "skin_temp": "skin_temp/20260823_0957.json"
+      }
+    },
+    {
+      "stamp": "20260823_1012",
+      "grids": {
+        "overshooting_tops": "overshooting_tops/20260823_1012.json",
+        "night_fog_diff": "night_fog_diff/20260823_1012.json",
+        "glaciation": "glaciation/20260823_1012.json",
+        "dust_a": "dust_a/20260823_1012.json",
+        "dust_b": "dust_b/20260823_1012.json",
+        "ndvi": "ndvi/20260823_1012.json",
+        "cloud_proxy": "cloud_proxy/20260823_1012.json",
+        "skin_temp": "skin_temp/20260823_1012.json"
+      }
+    },
+    {
+      "stamp": "20260823_1027",
+      "grids": {
+        "overshooting_tops": "overshooting_tops/20260823_1027.json",
+        "night_fog_diff": "night_fog_diff/20260823_1027.json",
+        "glaciation": "glaciation/20260823_1027.json",
+        "dust_a": "dust_a/20260823_1027.json",
+        "dust_b": "dust_b/20260823_1027.json",
+        "ndvi": "ndvi/20260823_1027.json",
+        "cloud_proxy": "cloud_proxy/20260823_1027.json",
+        "skin_temp": "skin_temp/20260823_1027.json"
+      }
+    },
+    {
+      "stamp": "20260823_1042",
+      "grids": {
+        "overshooting_tops": "overshooting_tops/20260823_1042.json",
+        "night_fog_diff": "night_fog_diff/20260823_1042.json",
+        "glaciation": "glaciation/20260823_1042.json",
+        "dust_a": "dust_a/20260823_1042.json",
+        "dust_b": "dust_b/20260823_1042.json",
+        "ndvi": "ndvi/20260823_1042.json",
+        "cloud_proxy": "cloud_proxy/20260823_1042.json",
+        "skin_temp": "skin_temp/20260823_1042.json"
+      }
+    }
+  ]
+}

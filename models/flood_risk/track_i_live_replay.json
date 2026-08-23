@@ -1,0 +1,783 @@
+{
+  "generated": "2026-08-20T21:22:10.090808+00:00",
+  "during_window": [
+    "2026-07-21",
+    "2026-08-20"
+  ],
+  "pre_monsoon_baseline_window": [
+    "2026-03-01",
+    "2026-04-15"
+  ],
+  "flag_threshold": 0.5,
+  "n_districts_total": 126,
+  "original_model": {
+    "n_flagged": 122,
+    "mean_score": 0.6754722222222223,
+    "min_score": 0.4445,
+    "max_score": 0.938
+  },
+  "v2_model": {
+    "n_flagged": 29,
+    "mean_score": 0.4697238095238096,
+    "min_score": 0.3024,
+    "max_score": 0.5915
+  },
+  "district_results": [
+    {
+      "district": "Abbottabad",
+      "n_points": 15,
+      "orig_mean_score": 0.6016,
+      "v2_mean_score": 0.466
+    },
+    {
+      "district": "Astore",
+      "n_points": 15,
+      "orig_mean_score": 0.6176,
+      "v2_mean_score": 0.4567
+    },
+    {
+      "district": "Attock",
+      "n_points": 15,
+      "orig_mean_score": 0.6202,
+      "v2_mean_score": 0.4714
+    },
+    {
+      "district": "Awaran",
+      "n_points": 15,
+      "orig_mean_score": 0.7322,
+      "v2_mean_score": 0.4812
+    },
+    {
+      "district": "Azad Kashmir",
+      "n_points": 15,
+      "orig_mean_score": 0.5923,
+      "v2_mean_score": 0.4516
+    },
+    {
+      "district": "Badin",
+      "n_points": 15,
+      "orig_mean_score": 0.8272,
+      "v2_mean_score": 0.5683
+    },
+    {
+      "district": "Bahawalnagar",
+      "n_points": 15,
+      "orig_mean_score": 0.6765,
+      "v2_mean_score": 0.4402
+    },
+    {
+      "district": "Bahawalpur",
+      "n_points": 15,
+      "orig_mean_score": 0.7476,
+      "v2_mean_score": 0.5539
+    },
+    {
+      "district": "Bajaur",
+      "n_points": 15,
+      "orig_mean_score": 0.5895,
+      "v2_mean_score": 0.4458
+    },
+    {
+      "district": "Bannu",
+      "n_points": 15,
+      "orig_mean_score": 0.4538,
+      "v2_mean_score": 0.4588
+    },
+    {
+      "district": "Barkhan",
+      "n_points": 15,
+      "orig_mean_score": 0.6855,
+      "v2_mean_score": 0.519
+    },
+    {
+      "district": "Battagram",
+      "n_points": 15,
+      "orig_mean_score": 0.6345,
+      "v2_mean_score": 0.4659
+    },
+    {
+      "district": "Bhakkar",
+      "n_points": 15,
+      "orig_mean_score": 0.6556,
+      "v2_mean_score": 0.4452
+    },
+    {
+      "district": "Buner",
+      "n_points": 15,
+      "orig_mean_score": 0.613,
+      "v2_mean_score": 0.4805
+    },
+    {
+      "district": "Chagai",
+      "n_points": 15,
+      "orig_mean_score": 0.8078,
+      "v2_mean_score": 0.5179
+    },
+    {
+      "district": "Chakwal",
+      "n_points": 15,
+      "orig_mean_score": 0.5293,
+      "v2_mean_score": 0.4089
+    },
+    {
+      "district": "Charsadda",
+      "n_points": 15,
+      "orig_mean_score": 0.5777,
+      "v2_mean_score": 0.4543
+    },
+    {
+      "district": "Chitral",
+      "n_points": 15,
+      "orig_mean_score": 0.723,
+      "v2_mean_score": 0.5343
+    },
+    {
+      "district": "Dadu",
+      "n_points": 15,
+      "orig_mean_score": 0.7695,
+      "v2_mean_score": 0.4692
+    },
+    {
+      "district": "Dera Bugti",
+      "n_points": 15,
+      "orig_mean_score": 0.7748,
+      "v2_mean_score": 0.5124
+    },
+    {
+      "district": "Dera Ghazi Khan",
+      "n_points": 15,
+      "orig_mean_score": 0.646,
+      "v2_mean_score": 0.4626
+    },
+    {
+      "district": "Dera Ismail Khan",
+      "n_points": 15,
+      "orig_mean_score": 0.7992,
+      "v2_mean_score": 0.486
+    },
+    {
+      "district": "Diamer",
+      "n_points": 15,
+      "orig_mean_score": 0.6226,
+      "v2_mean_score": 0.4566
+    },
+    {
+      "district": "Faisalabad",
+      "n_points": 15,
+      "orig_mean_score": 0.628,
+      "v2_mean_score": 0.3849
+    },
+    {
+      "district": "Ghanche",
+      "n_points": 15,
+      "orig_mean_score": 0.8988,
+      "v2_mean_score": 0.5915
+    },
+    {
+      "district": "Ghizer",
+      "n_points": 15,
+      "orig_mean_score": 0.7221,
+      "v2_mean_score": 0.5321
+    },
+    {
+      "district": "Ghotki",
+      "n_points": 15,
+      "orig_mean_score": 0.7139,
+      "v2_mean_score": 0.4024
+    },
+    {
+      "district": "Gilgit",
+      "n_points": 15,
+      "orig_mean_score": 0.738,
+      "v2_mean_score": 0.5584
+    },
+    {
+      "district": "Gujranwala",
+      "n_points": 15,
+      "orig_mean_score": 0.5944,
+      "v2_mean_score": 0.4176
+    },
+    {
+      "district": "Gujrat",
+      "n_points": 15,
+      "orig_mean_score": 0.5454,
+      "v2_mean_score": 0.4536
+    },
+    {
+      "district": "Gwadar",
+      "n_points": 5,
+      "orig_mean_score": 0.938,
+      "v2_mean_score": 0.3839
+    },
+    {
+      "district": "Hafizabad",
+      "n_points": 15,
+      "orig_mean_score": 0.767,
+      "v2_mean_score": 0.4399
+    },
+    {
+      "district": "Hangu",
+      "n_points": 15,
+      "orig_mean_score": 0.6217,
+      "v2_mean_score": 0.4519
+    },
+    {
+      "district": "Haripur",
+      "n_points": 15,
+      "orig_mean_score": 0.6263,
+      "v2_mean_score": 0.5271
+    },
+    {
+      "district": "Hunza",
+      "n_points": 15,
+      "orig_mean_score": 0.7344,
+      "v2_mean_score": 0.5394
+    },
+    {
+      "district": "Hyderabad",
+      "n_points": 15,
+      "orig_mean_score": 0.5855,
+      "v2_mean_score": 0.4467
+    },
+    {
+      "district": "Islamabad Capital Territory",
+      "n_points": 15,
+      "orig_mean_score": 0.6301,
+      "v2_mean_score": 0.4691
+    },
+    {
+      "district": "Jacobabad",
+      "n_points": 15,
+      "orig_mean_score": 0.6765,
+      "v2_mean_score": 0.3916
+    },
+    {
+      "district": "Jafarabad",
+      "n_points": 15,
+      "orig_mean_score": 0.771,
+      "v2_mean_score": 0.4329
+    },
+    {
+      "district": "Jamshoro",
+      "n_points": 15,
+      "orig_mean_score": 0.6912,
+      "v2_mean_score": 0.4905
+    },
+    {
+      "district": "Jhal Magsi",
+      "n_points": 15,
+      "orig_mean_score": 0.8588,
+      "v2_mean_score": 0.5146
+    },
+    {
+      "district": "Jhang",
+      "n_points": 15,
+      "orig_mean_score": 0.5796,
+      "v2_mean_score": 0.463
+    },
+    {
+      "district": "Jhelum",
+      "n_points": 15,
+      "orig_mean_score": 0.5543,
+      "v2_mean_score": 0.4751
+    },
+    {
+      "district": "Kachhi",
+      "n_points": 15,
+      "orig_mean_score": 0.8635,
+      "v2_mean_score": 0.4485
+    },
+    {
+      "district": "Kalat",
+      "n_points": 15,
+      "orig_mean_score": 0.6608,
+      "v2_mean_score": 0.5411
+    },
+    {
+      "district": "Karachi",
+      "n_points": 15,
+      "orig_mean_score": 0.6314,
+      "v2_mean_score": 0.4174
+    },
+    {
+      "district": "Karak",
+      "n_points": 15,
+      "orig_mean_score": 0.7457,
+      "v2_mean_score": 0.4696
+    },
+    {
+      "district": "Kashmore",
+      "n_points": 15,
+      "orig_mean_score": 0.7068,
+      "v2_mean_score": 0.5764
+    },
+    {
+      "district": "Kasur",
+      "n_points": 15,
+      "orig_mean_score": 0.5625,
+      "v2_mean_score": 0.4194
+    },
+    {
+      "district": "Kech",
+      "n_points": 13,
+      "orig_mean_score": 0.7571,
+      "v2_mean_score": 0.5591
+    },
+    {
+      "district": "Khairpur",
+      "n_points": 15,
+      "orig_mean_score": 0.7036,
+      "v2_mean_score": 0.4145
+    },
+    {
+      "district": "Khanewal",
+      "n_points": 15,
+      "orig_mean_score": 0.5496,
+      "v2_mean_score": 0.3977
+    },
+    {
+      "district": "Kharan",
+      "n_points": 15,
+      "orig_mean_score": 0.7863,
+      "v2_mean_score": 0.4417
+    },
+    {
+      "district": "Kharmang",
+      "n_points": 15,
+      "orig_mean_score": 0.7085,
+      "v2_mean_score": 0.4641
+    },
+    {
+      "district": "Khushab",
+      "n_points": 15,
+      "orig_mean_score": 0.6229,
+      "v2_mean_score": 0.5074
+    },
+    {
+      "district": "Khuzdar",
+      "n_points": 15,
+      "orig_mean_score": 0.6907,
+      "v2_mean_score": 0.4915
+    },
+    {
+      "district": "Khyber",
+      "n_points": 15,
+      "orig_mean_score": 0.714,
+      "v2_mean_score": 0.5061
+    },
+    {
+      "district": "Kohat",
+      "n_points": 15,
+      "orig_mean_score": 0.6832,
+      "v2_mean_score": 0.4507
+    },
+    {
+      "district": "Kohistan",
+      "n_points": 15,
+      "orig_mean_score": 0.6455,
+      "v2_mean_score": 0.4658
+    },
+    {
+      "district": "Kohlu",
+      "n_points": 15,
+      "orig_mean_score": 0.7994,
+      "v2_mean_score": 0.5099
+    },
+    {
+      "district": "Kurram",
+      "n_points": 15,
+      "orig_mean_score": 0.7179,
+      "v2_mean_score": 0.4745
+    },
+    {
+      "district": "Lahore",
+      "n_points": 15,
+      "orig_mean_score": 0.6641,
+      "v2_mean_score": 0.4778
+    },
+    {
+      "district": "Lakki Marwat",
+      "n_points": 15,
+      "orig_mean_score": 0.7063,
+      "v2_mean_score": 0.4651
+    },
+    {
+      "district": "Lasbela",
+      "n_points": 15,
+      "orig_mean_score": 0.8397,
+      "v2_mean_score": 0.4662
+    },
+    {
+      "district": "Layyah",
+      "n_points": 15,
+      "orig_mean_score": 0.6607,
+      "v2_mean_score": 0.454
+    },
+    {
+      "district": "Lodhran",
+      "n_points": 15,
+      "orig_mean_score": 0.487,
+      "v2_mean_score": 0.3939
+    },
+    {
+      "district": "Loralai",
+      "n_points": 15,
+      "orig_mean_score": 0.7345,
+      "v2_mean_score": 0.5147
+    },
+    {
+      "district": "Lower Dir",
+      "n_points": 15,
+      "orig_mean_score": 0.5906,
+      "v2_mean_score": 0.4182
+    },
+    {
+      "district": "Malakand",
+      "n_points": 15,
+      "orig_mean_score": 0.4445,
+      "v2_mean_score": 0.4285
+    },
+    {
+      "district": "Mandi Bahauddin",
+      "n_points": 15,
+      "orig_mean_score": 0.5841,
+      "v2_mean_score": 0.4729
+    },
+    {
+      "district": "Mansehra",
+      "n_points": 15,
+      "orig_mean_score": 0.6227,
+      "v2_mean_score": 0.4689
+    },
+    {
+      "district": "Mardan",
+      "n_points": 15,
+      "orig_mean_score": 0.5469,
+      "v2_mean_score": 0.4384
+    },
+    {
+      "district": "Mastung",
+      "n_points": 15,
+      "orig_mean_score": 0.5542,
+      "v2_mean_score": 0.4953
+    },
+    {
+      "district": "Matiari",
+      "n_points": 15,
+      "orig_mean_score": 0.7567,
+      "v2_mean_score": 0.5147
+    },
+    {
+      "district": "Mianwali",
+      "n_points": 15,
+      "orig_mean_score": 0.5617,
+      "v2_mean_score": 0.4222
+    },
+    {
+      "district": "Mirpurkhas",
+      "n_points": 15,
+      "orig_mean_score": 0.647,
+      "v2_mean_score": 0.4697
+    },
+    {
+      "district": "Mohmand",
+      "n_points": 15,
+      "orig_mean_score": 0.5961,
+      "v2_mean_score": 0.4428
+    },
+    {
+      "district": "Multan",
+      "n_points": 15,
+      "orig_mean_score": 0.6857,
+      "v2_mean_score": 0.487
+    },
+    {
+      "district": "Musakhel",
+      "n_points": 15,
+      "orig_mean_score": 0.6801,
+      "v2_mean_score": 0.5262
+    },
+    {
+      "district": "Muzaffargarh",
+      "n_points": 15,
+      "orig_mean_score": 0.6834,
+      "v2_mean_score": 0.4573
+    },
+    {
+      "district": "Nagar",
+      "n_points": 15,
+      "orig_mean_score": 0.7912,
+      "v2_mean_score": 0.5762
+    },
+    {
+      "district": "Narowal",
+      "n_points": 15,
+      "orig_mean_score": 0.6017,
+      "v2_mean_score": 0.4206
+    },
+    {
+      "district": "Nasirabad",
+      "n_points": 15,
+      "orig_mean_score": 0.6872,
+      "v2_mean_score": 0.4013
+    },
+    {
+      "district": "Naushehro Feroze",
+      "n_points": 15,
+      "orig_mean_score": 0.5886,
+      "v2_mean_score": 0.4837
+    },
+    {
+      "district": "Nawabshah",
+      "n_points": 15,
+      "orig_mean_score": 0.6369,
+      "v2_mean_score": 0.4931
+    },
+    {
+      "district": "North Waziristan",
+      "n_points": 15,
+      "orig_mean_score": 0.7028,
+      "v2_mean_score": 0.4545
+    },
+    {
+      "district": "Nowshera",
+      "n_points": 15,
+      "orig_mean_score": 0.5322,
+      "v2_mean_score": 0.4602
+    },
+    {
+      "district": "Nushki",
+      "n_points": 15,
+      "orig_mean_score": 0.8169,
+      "v2_mean_score": 0.4948
+    },
+    {
+      "district": "Okara",
+      "n_points": 15,
+      "orig_mean_score": 0.7319,
+      "v2_mean_score": 0.4985
+    },
+    {
+      "district": "Orakzai",
+      "n_points": 15,
+      "orig_mean_score": 0.6565,
+      "v2_mean_score": 0.4695
+    },
+    {
+      "district": "Pakpattan",
+      "n_points": 15,
+      "orig_mean_score": 0.7034,
+      "v2_mean_score": 0.5275
+    },
+    {
+      "district": "Panjgur",
+      "n_points": 15,
+      "orig_mean_score": 0.7508,
+      "v2_mean_score": 0.4845
+    },
+    {
+      "district": "Peshawar",
+      "n_points": 15,
+      "orig_mean_score": 0.523,
+      "v2_mean_score": 0.3988
+    },
+    {
+      "district": "Pishin",
+      "n_points": 15,
+      "orig_mean_score": 0.7395,
+      "v2_mean_score": 0.4614
+    },
+    {
+      "district": "Qambar Shahdadkot",
+      "n_points": 15,
+      "orig_mean_score": 0.7413,
+      "v2_mean_score": 0.5181
+    },
+    {
+      "district": "Qilla Abdullah",
+      "n_points": 15,
+      "orig_mean_score": 0.7027,
+      "v2_mean_score": 0.5095
+    },
+    {
+      "district": "Qilla Saifullah",
+      "n_points": 15,
+      "orig_mean_score": 0.8261,
+      "v2_mean_score": 0.4378
+    },
+    {
+      "district": "Quetta",
+      "n_points": 15,
+      "orig_mean_score": 0.7441,
+      "v2_mean_score": 0.4941
+    },
+    {
+      "district": "Rahim Yar Khan",
+      "n_points": 15,
+      "orig_mean_score": 0.6804,
+      "v2_mean_score": 0.4048
+    },
+    {
+      "district": "Rajanpur",
+      "n_points": 15,
+      "orig_mean_score": 0.6705,
+      "v2_mean_score": 0.4504
+    },
+    {
+      "district": "Rawalpindi",
+      "n_points": 15,
+      "orig_mean_score": 0.5259,
+      "v2_mean_score": 0.4236
+    },
+    {
+      "district": "Sahiwal",
+      "n_points": 15,
+      "orig_mean_score": 0.7277,
+      "v2_mean_score": 0.4777
+    },
+    {
+      "district": "Sanghar",
+      "n_points": 15,
+      "orig_mean_score": 0.6076,
+      "v2_mean_score": 0.402
+    },
+    {
+      "district": "Sargodha",
+      "n_points": 15,
+      "orig_mean_score": 0.4783,
+      "v2_mean_score": 0.371
+    },
+    {
+      "district": "Shangla",
+      "n_points": 15,
+      "orig_mean_score": 0.6487,
+      "v2_mean_score": 0.4985
+    },
+    {
+      "district": "Sheikhpura",
+      "n_points": 15,
+      "orig_mean_score": 0.5833,
+      "v2_mean_score": 0.4245
+    },
+    {
+      "district": "Shigar",
+      "n_points": 15,
+      "orig_mean_score": 0.8408,
+      "v2_mean_score": 0.4921
+    },
+    {
+      "district": "Shikarpur",
+      "n_points": 15,
+      "orig_mean_score": 0.6486,
+      "v2_mean_score": 0.4713
+    },
+    {
+      "district": "Sialkot",
+      "n_points": 15,
+      "orig_mean_score": 0.6532,
+      "v2_mean_score": 0.4875
+    },
+    {
+      "district": "Sibi",
+      "n_points": 15,
+      "orig_mean_score": 0.7767,
+      "v2_mean_score": 0.4614
+    },
+    {
+      "district": "Skardu",
+      "n_points": 15,
+      "orig_mean_score": 0.7766,
+      "v2_mean_score": 0.456
+    },
+    {
+      "district": "South Waziristan",
+      "n_points": 15,
+      "orig_mean_score": 0.7172,
+      "v2_mean_score": 0.4774
+    },
+    {
+      "district": "Sukkur",
+      "n_points": 15,
+      "orig_mean_score": 0.739,
+      "v2_mean_score": 0.3024
+    },
+    {
+      "district": "Swabi",
+      "n_points": 15,
+      "orig_mean_score": 0.5763,
+      "v2_mean_score": 0.4919
+    },
+    {
+      "district": "Swat",
+      "n_points": 15,
+      "orig_mean_score": 0.6274,
+      "v2_mean_score": 0.4217
+    },
+    {
+      "district": "Tando Allahyar",
+      "n_points": 15,
+      "orig_mean_score": 0.5793,
+      "v2_mean_score": 0.502
+    },
+    {
+      "district": "Tando Muhammad Khan",
+      "n_points": 15,
+      "orig_mean_score": 0.6726,
+      "v2_mean_score": 0.4529
+    },
+    {
+      "district": "Tank",
+      "n_points": 15,
+      "orig_mean_score": 0.7829,
+      "v2_mean_score": 0.534
+    },
+    {
+      "district": "Tharparkar",
+      "n_points": 15,
+      "orig_mean_score": 0.7222,
+      "v2_mean_score": 0.4534
+    },
+    {
+      "district": "Thatta",
+      "n_points": 15,
+      "orig_mean_score": 0.7457,
+      "v2_mean_score": 0.4971
+    },
+    {
+      "district": "Toba Tek Singh",
+      "n_points": 15,
+      "orig_mean_score": 0.5526,
+      "v2_mean_score": 0.4139
+    },
+    {
+      "district": "Umerkot",
+      "n_points": 15,
+      "orig_mean_score": 0.7897,
+      "v2_mean_score": 0.4894
+    },
+    {
+      "district": "Upper Dir",
+      "n_points": 15,
+      "orig_mean_score": 0.5718,
+      "v2_mean_score": 0.415
+    },
+    {
+      "district": "Vihari",
+      "n_points": 15,
+      "orig_mean_score": 0.7012,
+      "v2_mean_score": 0.5513
+    },
+    {
+      "district": "Zhob",
+      "n_points": 15,
+      "orig_mean_score": 0.7703,
+      "v2_mean_score": 0.4994
+    },
+    {
+      "district": "Ziarat",
+      "n_points": 15,
+      "orig_mean_score": 0.6988,
+      "v2_mean_score": 0.5364
+    }
+  ]
+}

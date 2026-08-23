@@ -1,0 +1,171 @@
+{
+  "note": "Real side-by-side comparison at the exact same real locations (the original 120-farm Layyah/Muridke seed) -- OLD = 0.25deg/27km MSG-grid regional bbox signal (real Kharif 2026 archive), NEW = real 10m Sentinel-2 NDVI sampled directly at real farm centroids (Nov 2022-Oct 2023, real cloud-masked composites).",
+  "layyah": {
+    "old_msg_27km": {
+      "region_en": "Layyah farm cluster",
+      "region_ur": "لیّہ فارم کلسٹر",
+      "bbox": [
+        70.6877044,
+        30.51453675,
+        74.30854613671143,
+        32.08567170096851
+      ],
+      "category": "slow",
+      "hazard": "drought",
+      "flag": true,
+      "confidence": 0.55,
+      "message_en": "NDVI trend over 14 real days: mean 0.07, slope +0.0123/day. Monitoring product on a multi-week to multi-month timescale, not an acute alert -- present as a trend, not a warning. Trigger: low absolute NDVI (sparse vegetation baseline, not necessarily a trend) -- primary long-lead crop-stress and irrigation-planning signal.",
+      "message_ur": "خشک سالی کا رجحان -- فصل کی نگرانی اور آبپاشی کی منصوبہ بندی",
+      "source": "NDVI trend over 14 real days (slope=0.0123/day, mean=0.07)",
+      "series": [
+        {
+          "date": "20260622",
+          "ndvi": 0.058
+        },
+        {
+          "date": "20260623",
+          "ndvi": 0.081
+        },
+        {
+          "date": "20260629",
+          "ndvi": 0.032
+        },
+        {
+          "date": "20260706",
+          "ndvi": 0.026
+        },
+        {
+          "date": "20260707",
+          "ndvi": 0.034
+        },
+        {
+          "date": "20260708",
+          "ndvi": 0.031
+        },
+        {
+          "date": "20260709",
+          "ndvi": 0.018
+        },
+        {
+          "date": "20260710",
+          "ndvi": 0.022
+        },
+        {
+          "date": "20260711",
+          "ndvi": 0.03
+        },
+        {
+          "date": "20260712",
+          "ndvi": 0.023
+        },
+        {
+          "date": "20260713",
+          "ndvi": 0.06
+        },
+        {
+          "date": "20260714",
+          "ndvi": 0.057
+        },
+        {
+          "date": "20260715",
+          "ndvi": 0.022
+        },
+        {
+          "date": "20260720",
+          "ndvi": 0.507
+        }
+      ]
+    },
+    "new_s2_10m_at_real_farms": {
+      "n_real_farm_month_samples": 732,
+      "mean_ndvi": 0.4955,
+      "min_ndvi": -0.0141,
+      "max_ndvi": 0.9085,
+      "stdev_ndvi": 0.268
+    }
+  },
+  "muridke": {
+    "old_msg_27km": {
+      "region_en": "Muridke farm cluster",
+      "region_ur": "مریدکے فارم کلسٹر",
+      "bbox": [
+        74.06812126497056,
+        31.59664857035635,
+        74.4776612181285,
+        32.05986982825076
+      ],
+      "category": "slow",
+      "hazard": "drought",
+      "flag": true,
+      "confidence": 0.55,
+      "message_en": "NDVI trend over 14 real days: mean 0.06, slope +0.0165/day. Monitoring product on a multi-week to multi-month timescale, not an acute alert -- present as a trend, not a warning. Trigger: low absolute NDVI (sparse vegetation baseline, not necessarily a trend) -- primary long-lead crop-stress and irrigation-planning signal.",
+      "message_ur": "خشک سالی کا رجحان -- فصل کی نگرانی اور آبپاشی کی منصوبہ بندی",
+      "source": "NDVI trend over 14 real days (slope=0.0165/day, mean=0.06)",
+      "series": [
+        {
+          "date": "20260622",
+          "ndvi": 0.042
+        },
+        {
+          "date": "20260623",
+          "ndvi": 0.02
+        },
+        {
+          "date": "20260629",
+          "ndvi": 0.019
+        },
+        {
+          "date": "20260706",
+          "ndvi": -0.002
+        },
+        {
+          "date": "20260707",
+          "ndvi": 0.021
+        },
+        {
+          "date": "20260708",
+          "ndvi": -0.021
+        },
+        {
+          "date": "20260709",
+          "ndvi": -0.012
+        },
+        {
+          "date": "20260710",
+          "ndvi": -0.007
+        },
+        {
+          "date": "20260711",
+          "ndvi": -0.003
+        },
+        {
+          "date": "20260712",
+          "ndvi": 0.042
+        },
+        {
+          "date": "20260713",
+          "ndvi": 0.053
+        },
+        {
+          "date": "20260714",
+          "ndvi": 0.059
+        },
+        {
+          "date": "20260715",
+          "ndvi": 0.043
+        },
+        {
+          "date": "20260720",
+          "ndvi": 0.529
+        }
+      ]
+    },
+    "new_s2_10m_at_real_farms": {
+      "n_real_farm_month_samples": 708,
+      "mean_ndvi": 0.4627,
+      "min_ndvi": -0.0631,
+      "max_ndvi": 0.9143,
+      "stdev_ndvi": 0.2717
+    }
+  }
+}

@@ -1,0 +1,117 @@
+{
+  "features_used": [
+    "VV_during",
+    "VH_during",
+    "VV_change",
+    "VH_change",
+    "jrc_occurrence"
+  ],
+  "original_test_districts_reused": [
+    "Abbottabad",
+    "Awaran",
+    "Azad Kashmir",
+    "Badin",
+    "Bannu",
+    "Ghotki",
+    "Gujrat",
+    "Haripur",
+    "Hunza",
+    "Karachi",
+    "Kharan",
+    "Lahore",
+    "Malakand",
+    "Nawabshah",
+    "Nowshera",
+    "Pakpattan",
+    "Quetta",
+    "Rawalpindi",
+    "Sahiwal",
+    "Sanghar",
+    "South Waziristan",
+    "Sukkur",
+    "Swabi",
+    "Vihari",
+    "Zhob"
+  ],
+  "eval1_before_after_original_2022_test": {
+    "original_track_d_week10": {
+      "n": 375,
+      "n_positive": 285,
+      "tp": 192,
+      "fp": 43,
+      "fn": 93,
+      "tn": 47,
+      "precision": 0.8170212765957446,
+      "recall": 0.6736842105263158,
+      "f1": 0.7384615384615385,
+      "roc_auc": 0.655672514619883,
+      "role": "headline_result"
+    },
+    "v2_2021_expanded": {
+      "n": 375,
+      "n_positive": 285,
+      "tp": 119,
+      "fp": 33,
+      "fn": 166,
+      "tn": 57,
+      "precision": 0.7828947368421053,
+      "recall": 0.41754385964912283,
+      "f1": 0.5446224256292906,
+      "roc_auc": 0.5491617933723196,
+      "role": "before_after_comparison"
+    },
+    "feature_importance_v2": {
+      "VV_change": 0.07110906116122062,
+      "VH_change": 0.04252693724537847,
+      "jrc_occurrence": 0.0035368800507359468,
+      "VH_during": -0.01418632398979558,
+      "VV_during": -0.05733121394167806
+    }
+  },
+  "eval2_cross_year_2024": {
+    "result": {
+      "n": 210,
+      "n_positive": 210,
+      "recall": 0.3952380952380952,
+      "role": "recall_only_cross_year_positive_class_test"
+    },
+    "self_check_v2full_on_2022_test": {
+      "n": 375,
+      "n_positive": 285,
+      "tp": 200,
+      "fp": 21,
+      "fn": 85,
+      "tn": 69,
+      "precision": 0.9049773755656109,
+      "recall": 0.7017543859649122,
+      "f1": 0.7905138339920948,
+      "roc_auc": 0.8391033138401559,
+      "role": "self_check_not_headline"
+    }
+  },
+  "real_2021_exclusions": [
+    "Islamabad Capital Territory",
+    "Karachi",
+    "Lower Dir",
+    "Abbottabad",
+    "Tank",
+    "Dera Ismail Khan",
+    "Kohistan"
+  ],
+  "real_2024_districts_matched": [
+    "Awaran",
+    "Badin",
+    "Chagai",
+    "Jafarabad",
+    "Jhal Magsi",
+    "Kachhi",
+    "Kalat",
+    "Khuzdar",
+    "Lasbela",
+    "Loralai",
+    "Mirpurkhas",
+    "Qilla Saifullah",
+    "Thatta",
+    "Ziarat"
+  ]
+}

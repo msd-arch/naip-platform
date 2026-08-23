@@ -1,0 +1,143 @@
+{
+  "n_real_districts": 126,
+  "n_covered_by_real_mnfsr_data": 115,
+  "n_falling_back_to_hand_classified_mask": 11,
+  "uncovered_real_districts": [
+    "Astore",
+    "Azad Kashmir",
+    "Diamer",
+    "Ghanche",
+    "Ghizer",
+    "Gilgit",
+    "Hunza",
+    "Kharmang",
+    "Nagar",
+    "Shigar",
+    "Skardu"
+  ],
+  "unmatched_parsed_names_needing_review": [
+    "Bolan",
+    "Harnai",
+    "Larkana",
+    "Sherani",
+    "Torgar",
+    "Washuk"
+  ],
+  "table_validations": [
+    {
+      "crop": "wheat",
+      "province": "PUNJAB",
+      "n_rows_parsed": 39,
+      "parsed_sum_area_000ha": 6463.11,
+      "printed_total_area_2021_22_000ha": 6559.83
+    },
+    {
+      "crop": "wheat",
+      "province": "SINDH",
+      "n_rows_parsed": 23,
+      "parsed_sum_area_000ha": 1181.72,
+      "printed_total_area_2021_22_000ha": 1181.71
+    },
+    {
+      "crop": "wheat",
+      "province": "SINDH",
+      "n_rows_parsed": 36,
+      "parsed_sum_area_000ha": 760.63,
+      "printed_total_area_2021_22_000ha": 760.62
+    },
+    {
+      "crop": "wheat",
+      "province": "BALOCHISTAN",
+      "n_rows_parsed": 31,
+      "parsed_sum_area_000ha": 474.8,
+      "printed_total_area_2021_22_000ha": 474.74
+    },
+    {
+      "crop": "cotton",
+      "province": "PUNJAB",
+      "n_rows_parsed": 37,
+      "parsed_sum_area_000ha": 1279.2,
+      "printed_total_area_2021_22_000ha": 1279.2
+    },
+    {
+      "crop": "cotton",
+      "province": "SINDH",
+      "n_rows_parsed": 23,
+      "parsed_sum_area_000ha": 593.9,
+      "printed_total_area_2021_22_000ha": 593.89
+    },
+    {
+      "crop": "cotton",
+      "province": "SINDH",
+      "n_rows_parsed": 28,
+      "parsed_sum_area_000ha": 0.17,
+      "printed_total_area_2021_22_000ha": 0.17
+    },
+    {
+      "crop": "cotton",
+      "province": "BALOCHISTAN",
+      "n_rows_parsed": 14,
+      "parsed_sum_area_000ha": 49.13,
+      "printed_total_area_2021_22_000ha": 63.73,
+      "REJECTED_exceeds_5pct_tolerance_or_missing_total": true
+    },
+    {
+      "crop": "rice",
+      "province": "PUNJAB",
+      "n_rows_parsed": 36,
+      "parsed_sum_area_000ha": 2309.91,
+      "printed_total_area_2021_22_000ha": 2309.91
+    },
+    {
+      "crop": "rice",
+      "province": "SINDH",
+      "n_rows_parsed": 22,
+      "parsed_sum_area_000ha": 756.57,
+      "printed_total_area_2021_22_000ha": 756.57
+    },
+    {
+      "crop": "rice",
+      "province": "SINDH",
+      "n_rows_parsed": 35,
+      "parsed_sum_area_000ha": 64.26,
+      "printed_total_area_2021_22_000ha": 64.24
+    },
+    {
+      "crop": "rice",
+      "province": "BALOCHISTAN",
+      "n_rows_parsed": 28,
+      "parsed_sum_area_000ha": 161.43,
+      "printed_total_area_2021_22_000ha": 161.42
+    },
+    {
+      "crop": "sugarcane",
+      "province": "PUNJAB",
+      "n_rows_parsed": 37,
+      "parsed_sum_area_000ha": 869.25,
+      "printed_total_area_2021_22_000ha": 869.25
+    },
+    {
+      "crop": "sugarcane",
+      "province": "SINDH",
+      "n_rows_parsed": 12,
+      "parsed_sum_area_000ha": 163.44,
+      "printed_total_area_2021_22_000ha": null,
+      "REJECTED_exceeds_5pct_tolerance_or_missing_total": true
+    },
+    {
+      "crop": "sugarcane",
+      "province": "SINDH",
+      "n_rows_parsed": 26,
+      "parsed_sum_area_000ha": 168.93,
+      "printed_total_area_2021_22_000ha": 95.1,
+      "REJECTED_exceeds_5pct_tolerance_or_missing_total": true
+    },
+    {
+      "crop": "sugarcane",
+      "province": "BALOCHISTAN",
+      "n_rows_parsed": 29,
+      "parsed_sum_area_000ha": 0.7,
+      "printed_total_area_2021_22_000ha": 0.7
+    }
+  ]
+}
