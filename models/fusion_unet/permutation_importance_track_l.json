@@ -1,0 +1,74 @@
+{
+  "baseline_rmse": 12.908346875508625,
+  "n_samples": 45,
+  "channels": {
+    "Total_cloud_cover_entire_atmosphere": {
+      "permuted_rmse": 13.324146419101291,
+      "delta_rmse": 0.4157995435926658
+    },
+    "Low_cloud_cover_low_cloud": {
+      "permuted_rmse": 12.789215681287978,
+      "delta_rmse": -0.11913119422064788
+    },
+    "Temperature_surface": {
+      "permuted_rmse": 13.261716249254015,
+      "delta_rmse": 0.3533693737453891
+    },
+    "Pressure_reduced_to_MSL_msl": {
+      "permuted_rmse": 13.089820088280572,
+      "delta_rmse": 0.18147321277194628
+    },
+    "u-component_of_wind_height_above_ground": {
+      "permuted_rmse": 12.846395280626085,
+      "delta_rmse": -0.061951594882540206
+    },
+    "v-component_of_wind_height_above_ground": {
+      "permuted_rmse": 12.863188775380452,
+      "delta_rmse": -0.04515810012817312
+    },
+    "Medium_cloud_cover_middle_cloud": {
+      "permuted_rmse": 14.391636922624375,
+      "delta_rmse": 1.4832900471157497
+    },
+    "Cloud_water_entire_atmosphere_single_layer": {
+      "permuted_rmse": 12.811541165245904,
+      "delta_rmse": -0.09680571026272133
+    },
+    "Precipitable_water_entire_atmosphere_single_layer": {
+      "permuted_rmse": 13.074860625796848,
+      "delta_rmse": 0.1665137502882228
+    },
+    "Temperature_height_above_ground": {
+      "permuted_rmse": 12.704675314161513,
+      "delta_rmse": -0.20367156134711273
+    },
+    "High_cloud_cover_high_cloud": {
+      "permuted_rmse": 13.819300863477919,
+      "delta_rmse": 0.9109539879692932
+    },
+    "Relative_humidity_entire_atmosphere_single_layer": {
+      "permuted_rmse": 13.161567857530382,
+      "delta_rmse": 0.253220982021757
+    },
+    "Convective_available_potential_energy_surface": {
+      "permuted_rmse": 12.884826607174343,
+      "delta_rmse": -0.023520268334282335
+    },
+    "solar_zenith": {
+      "permuted_rmse": 12.90417381922404,
+      "delta_rmse": -0.004173056284585641
+    },
+    "cos_solar_zenith": {
+      "permuted_rmse": 12.894216145409478,
+      "delta_rmse": -0.014130730099147115
+    },
+    "lat": {
+      "permuted_rmse": 13.298357391357422,
+      "delta_rmse": 0.39001051584879676
+    },
+    "lon": {
+      "permuted_rmse": 12.421098062727186,
+      "delta_rmse": -0.4872488127814396
+    }
+  }
+}

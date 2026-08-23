@@ -1,0 +1,864 @@
+{
+  "generated": "2026-08-23T13:15:54.934492+00:00",
+  "task": "GFS -> MSG (ir108) -- Track L real-scale expansion",
+  "source": "gfs_aws",
+  "target": "ir108",
+  "grid": {
+    "bbox": {
+      "west": 60.1,
+      "south": 21.8,
+      "east": 79.9,
+      "north": 38.1
+    },
+    "res_deg": 0.05,
+    "height": 327,
+    "width": 397
+  },
+  "x_names": [
+    "Total_cloud_cover_entire_atmosphere",
+    "Low_cloud_cover_low_cloud",
+    "Temperature_surface",
+    "Pressure_reduced_to_MSL_msl",
+    "u-component_of_wind_height_above_ground",
+    "v-component_of_wind_height_above_ground",
+    "Medium_cloud_cover_middle_cloud",
+    "Cloud_water_entire_atmosphere_single_layer",
+    "Precipitable_water_entire_atmosphere_single_layer",
+    "Temperature_height_above_ground",
+    "High_cloud_cover_high_cloud",
+    "Relative_humidity_entire_atmosphere_single_layer",
+    "Convective_available_potential_energy_surface",
+    "solar_zenith",
+    "cos_solar_zenith",
+    "lat",
+    "lon"
+  ],
+  "y_names": [
+    "IR_108"
+  ],
+  "n_in": 17,
+  "n_out": 1,
+  "pairing": {
+    "tolerance_min": 20
+  },
+  "split_method": "temporal block: test=entire Nov2023 archive (different season+year), val=chronologically-last Kharif dates, train=remaining Kharif dates -- not a random per-sample shuffle",
+  "counts": {
+    "total": 81,
+    "train": 30,
+    "val": 6,
+    "test": 45
+  },
+  "samples": [
+    {
+      "valid": "2026-06-22T02:00:00",
+      "file": "20260622_0200.npz",
+      "date": "2026-06-22",
+      "msg_time": "2026-06-22T02:00:00",
+      "delta_min": 0.0,
+      "cycle": 0,
+      "fhr": 2,
+      "split": "train"
+    },
+    {
+      "valid": "2026-06-22T12:00:00",
+      "file": "20260622_1200.npz",
+      "date": "2026-06-22",
+      "msg_time": "2026-06-22T12:00:00",
+      "delta_min": 0.0,
+      "cycle": 0,
+      "fhr": 12,
+      "split": "train"
+    },
+    {
+      "valid": "2026-06-22T20:00:00",
+      "file": "20260622_2000.npz",
+      "date": "2026-06-22",
+      "msg_time": "2026-06-22T20:00:00",
+      "delta_min": 0.0,
+      "cycle": 0,
+      "fhr": 20,
+      "split": "train"
+    },
+    {
+      "valid": "2026-06-23T02:00:00",
+      "file": "20260623_0200.npz",
+      "date": "2026-06-23",
+      "msg_time": "2026-06-23T02:00:00",
+      "delta_min": 0.0,
+      "cycle": 0,
+      "fhr": 2,
+      "split": "train"
+    },
+    {
+      "valid": "2026-06-23T09:00:00",
+      "file": "20260623_0900.npz",
+      "date": "2026-06-23",
+      "msg_time": "2026-06-23T08:45:00",
+      "delta_min": 15.0,
+      "cycle": 0,
+      "fhr": 9,
+      "split": "train"
+    },
+    {
+      "valid": "2026-06-29T01:00:00",
+      "file": "20260629_0100.npz",
+      "date": "2026-06-29",
+      "msg_time": "2026-06-29T01:00:00",
+      "delta_min": 0.0,
+      "cycle": 0,
+      "fhr": 1,
+      "split": "train"
+    },
+    {
+      "valid": "2026-07-06T02:00:00",
+      "file": "20260706_0200.npz",
+      "date": "2026-07-06",
+      "msg_time": "2026-07-06T02:00:00",
+      "delta_min": 0.0,
+      "cycle": 0,
+      "fhr": 2,
+      "split": "train"
+    },
+    {
+      "valid": "2026-07-06T12:00:00",
+      "file": "20260706_1200.npz",
+      "date": "2026-07-06",
+      "msg_time": "2026-07-06T12:00:00",
+      "delta_min": 0.0,
+      "cycle": 0,
+      "fhr": 12,
+      "split": "train"
+    },
+    {
+      "valid": "2026-07-06T20:00:00",
+      "file": "20260706_2000.npz",
+      "date": "2026-07-06",
+      "msg_time": "2026-07-06T20:00:00",
+      "delta_min": 0.0,
+      "cycle": 0,
+      "fhr": 20,
+      "split": "train"
+    },
+    {
+      "valid": "2026-07-07T02:00:00",
+      "file": "20260707_0200.npz",
+      "date": "2026-07-07",
+      "msg_time": "2026-07-07T02:00:00",
+      "delta_min": 0.0,
+      "cycle": 0,
+      "fhr": 2,
+      "split": "train"
+    },
+    {
+      "valid": "2026-07-07T12:00:00",
+      "file": "20260707_1200.npz",
+      "date": "2026-07-07",
+      "msg_time": "2026-07-07T12:00:00",
+      "delta_min": 0.0,
+      "cycle": 0,
+      "fhr": 12,
+      "split": "train"
+    },
+    {
+      "valid": "2026-07-07T20:00:00",
+      "file": "20260707_2000.npz",
+      "date": "2026-07-07",
+      "msg_time": "2026-07-07T20:00:00",
+      "delta_min": 0.0,
+      "cycle": 0,
+      "fhr": 20,
+      "split": "train"
+    },
+    {
+      "valid": "2026-07-08T02:00:00",
+      "file": "20260708_0200.npz",
+      "date": "2026-07-08",
+      "msg_time": "2026-07-08T02:00:00",
+      "delta_min": 0.0,
+      "cycle": 0,
+      "fhr": 2,
+      "split": "train"
+    },
+    {
+      "valid": "2026-07-08T12:00:00",
+      "file": "20260708_1200.npz",
+      "date": "2026-07-08",
+      "msg_time": "2026-07-08T12:00:00",
+      "delta_min": 0.0,
+      "cycle": 0,
+      "fhr": 12,
+      "split": "train"
+    },
+    {
+      "valid": "2026-07-08T20:00:00",
+      "file": "20260708_2000.npz",
+      "date": "2026-07-08",
+      "msg_time": "2026-07-08T20:00:00",
+      "delta_min": 0.0,
+      "cycle": 0,
+      "fhr": 20,
+      "split": "train"
+    },
+    {
+      "valid": "2026-07-09T02:00:00",
+      "file": "20260709_0200.npz",
+      "date": "2026-07-09",
+      "msg_time": "2026-07-09T02:00:00",
+      "delta_min": 0.0,
+      "cycle": 0,
+      "fhr": 2,
+      "split": "train"
+    },
+    {
+      "valid": "2026-07-09T12:00:00",
+      "file": "20260709_1200.npz",
+      "date": "2026-07-09",
+      "msg_time": "2026-07-09T12:00:00",
+      "delta_min": 0.0,
+      "cycle": 0,
+      "fhr": 12,
+      "split": "train"
+    },
+    {
+      "valid": "2026-07-09T20:00:00",
+      "file": "20260709_2000.npz",
+      "date": "2026-07-09",
+      "msg_time": "2026-07-09T20:00:00",
+      "delta_min": 0.0,
+      "cycle": 0,
+      "fhr": 20,
+      "split": "train"
+    },
+    {
+      "valid": "2026-07-10T02:00:00",
+      "file": "20260710_0200.npz",
+      "date": "2026-07-10",
+      "msg_time": "2026-07-10T02:00:00",
+      "delta_min": 0.0,
+      "cycle": 0,
+      "fhr": 2,
+      "split": "train"
+    },
+    {
+      "valid": "2026-07-10T12:00:00",
+      "file": "20260710_1200.npz",
+      "date": "2026-07-10",
+      "msg_time": "2026-07-10T12:00:00",
+      "delta_min": 0.0,
+      "cycle": 0,
+      "fhr": 12,
+      "split": "train"
+    },
+    {
+      "valid": "2026-07-10T20:00:00",
+      "file": "20260710_2000.npz",
+      "date": "2026-07-10",
+      "msg_time": "2026-07-10T20:00:00",
+      "delta_min": 0.0,
+      "cycle": 0,
+      "fhr": 20,
+      "split": "train"
+    },
+    {
+      "valid": "2026-07-11T02:00:00",
+      "file": "20260711_0200.npz",
+      "date": "2026-07-11",
+      "msg_time": "2026-07-11T02:00:00",
+      "delta_min": 0.0,
+      "cycle": 0,
+      "fhr": 2,
+      "split": "train"
+    },
+    {
+      "valid": "2026-07-11T12:00:00",
+      "file": "20260711_1200.npz",
+      "date": "2026-07-11",
+      "msg_time": "2026-07-11T12:00:00",
+      "delta_min": 0.0,
+      "cycle": 0,
+      "fhr": 12,
+      "split": "train"
+    },
+    {
+      "valid": "2026-07-11T20:00:00",
+      "file": "20260711_2000.npz",
+      "date": "2026-07-11",
+      "msg_time": "2026-07-11T20:00:00",
+      "delta_min": 0.0,
+      "cycle": 0,
+      "fhr": 20,
+      "split": "train"
+    },
+    {
+      "valid": "2026-07-12T02:00:00",
+      "file": "20260712_0200.npz",
+      "date": "2026-07-12",
+      "msg_time": "2026-07-12T02:00:00",
+      "delta_min": 0.0,
+      "cycle": 0,
+      "fhr": 2,
+      "split": "train"
+    },
+    {
+      "valid": "2026-07-12T12:00:00",
+      "file": "20260712_1200.npz",
+      "date": "2026-07-12",
+      "msg_time": "2026-07-12T12:00:00",
+      "delta_min": 0.0,
+      "cycle": 0,
+      "fhr": 12,
+      "split": "train"
+    },
+    {
+      "valid": "2026-07-12T20:00:00",
+      "file": "20260712_2000.npz",
+      "date": "2026-07-12",
+      "msg_time": "2026-07-12T20:00:00",
+      "delta_min": 0.0,
+      "cycle": 0,
+      "fhr": 20,
+      "split": "train"
+    },
+    {
+      "valid": "2026-07-13T02:00:00",
+      "file": "20260713_0200.npz",
+      "date": "2026-07-13",
+      "msg_time": "2026-07-13T02:00:00",
+      "delta_min": 0.0,
+      "cycle": 0,
+      "fhr": 2,
+      "split": "train"
+    },
+    {
+      "valid": "2026-07-13T12:00:00",
+      "file": "20260713_1200.npz",
+      "date": "2026-07-13",
+      "msg_time": "2026-07-13T12:00:00",
+      "delta_min": 0.0,
+      "cycle": 0,
+      "fhr": 12,
+      "split": "train"
+    },
+    {
+      "valid": "2026-07-13T20:00:00",
+      "file": "20260713_2000.npz",
+      "date": "2026-07-13",
+      "msg_time": "2026-07-13T20:00:00",
+      "delta_min": 0.0,
+      "cycle": 0,
+      "fhr": 20,
+      "split": "train"
+    },
+    {
+      "valid": "2026-07-14T02:00:00",
+      "file": "20260714_0200.npz",
+      "date": "2026-07-14",
+      "msg_time": "2026-07-14T02:00:00",
+      "delta_min": 0.0,
+      "cycle": 0,
+      "fhr": 2,
+      "split": "val"
+    },
+    {
+      "valid": "2026-07-14T12:00:00",
+      "file": "20260714_1200.npz",
+      "date": "2026-07-14",
+      "msg_time": "2026-07-14T12:00:00",
+      "delta_min": 0.0,
+      "cycle": 0,
+      "fhr": 12,
+      "split": "val"
+    },
+    {
+      "valid": "2026-07-14T20:00:00",
+      "file": "20260714_2000.npz",
+      "date": "2026-07-14",
+      "msg_time": "2026-07-14T20:00:00",
+      "delta_min": 0.0,
+      "cycle": 0,
+      "fhr": 20,
+      "split": "val"
+    },
+    {
+      "valid": "2026-07-15T02:00:00",
+      "file": "20260715_0200.npz",
+      "date": "2026-07-15",
+      "msg_time": "2026-07-15T02:00:00",
+      "delta_min": 0.0,
+      "cycle": 0,
+      "fhr": 2,
+      "split": "val"
+    },
+    {
+      "valid": "2026-07-15T05:00:00",
+      "file": "20260715_0500.npz",
+      "date": "2026-07-15",
+      "msg_time": "2026-07-15T05:00:00",
+      "delta_min": 0.0,
+      "cycle": 0,
+      "fhr": 5,
+      "split": "val"
+    },
+    {
+      "valid": "2026-07-20T00:00:00",
+      "file": "20260720_0000.npz",
+      "date": "2026-07-20",
+      "msg_time": "2026-07-20T00:00:00",
+      "delta_min": 0.0,
+      "cycle": 0,
+      "fhr": 0,
+      "split": "val"
+    },
+    {
+      "valid": "2023-11-01T02:00:00",
+      "file": "20231101_0200.npz",
+      "date": "2023-11-01",
+      "msg_time": "2023-11-01T02:12:00",
+      "delta_min": 12.0,
+      "cycle": 0,
+      "fhr": 2,
+      "split": "test"
+    },
+    {
+      "valid": "2023-11-01T12:00:00",
+      "file": "20231101_1200.npz",
+      "date": "2023-11-01",
+      "msg_time": "2023-11-01T12:12:00",
+      "delta_min": 12.0,
+      "cycle": 0,
+      "fhr": 12,
+      "split": "test"
+    },
+    {
+      "valid": "2023-11-01T20:00:00",
+      "file": "20231101_2000.npz",
+      "date": "2023-11-01",
+      "msg_time": "2023-11-01T20:12:00",
+      "delta_min": 12.0,
+      "cycle": 0,
+      "fhr": 20,
+      "split": "test"
+    },
+    {
+      "valid": "2023-11-02T02:00:00",
+      "file": "20231102_0200.npz",
+      "date": "2023-11-02",
+      "msg_time": "2023-11-02T02:12:00",
+      "delta_min": 12.0,
+      "cycle": 0,
+      "fhr": 2,
+      "split": "test"
+    },
+    {
+      "valid": "2023-11-02T12:00:00",
+      "file": "20231102_1200.npz",
+      "date": "2023-11-02",
+      "msg_time": "2023-11-02T12:12:00",
+      "delta_min": 12.0,
+      "cycle": 0,
+      "fhr": 12,
+      "split": "test"
+    },
+    {
+      "valid": "2023-11-02T20:00:00",
+      "file": "20231102_2000.npz",
+      "date": "2023-11-02",
+      "msg_time": "2023-11-02T20:12:00",
+      "delta_min": 12.0,
+      "cycle": 0,
+      "fhr": 20,
+      "split": "test"
+    },
+    {
+      "valid": "2023-11-03T02:00:00",
+      "file": "20231103_0200.npz",
+      "date": "2023-11-03",
+      "msg_time": "2023-11-03T02:12:00",
+      "delta_min": 12.0,
+      "cycle": 0,
+      "fhr": 2,
+      "split": "test"
+    },
+    {
+      "valid": "2023-11-03T12:00:00",
+      "file": "20231103_1200.npz",
+      "date": "2023-11-03",
+      "msg_time": "2023-11-03T12:12:00",
+      "delta_min": 12.0,
+      "cycle": 0,
+      "fhr": 12,
+      "split": "test"
+    },
+    {
+      "valid": "2023-11-03T20:00:00",
+      "file": "20231103_2000.npz",
+      "date": "2023-11-03",
+      "msg_time": "2023-11-03T20:12:00",
+      "delta_min": 12.0,
+      "cycle": 0,
+      "fhr": 20,
+      "split": "test"
+    },
+    {
+      "valid": "2023-11-04T02:00:00",
+      "file": "20231104_0200.npz",
+      "date": "2023-11-04",
+      "msg_time": "2023-11-04T02:12:00",
+      "delta_min": 12.0,
+      "cycle": 0,
+      "fhr": 2,
+      "split": "test"
+    },
+    {
+      "valid": "2023-11-04T12:00:00",
+      "file": "20231104_1200.npz",
+      "date": "2023-11-04",
+      "msg_time": "2023-11-04T12:12:00",
+      "delta_min": 12.0,
+      "cycle": 0,
+      "fhr": 12,
+      "split": "test"
+    },
+    {
+      "valid": "2023-11-04T20:00:00",
+      "file": "20231104_2000.npz",
+      "date": "2023-11-04",
+      "msg_time": "2023-11-04T20:12:00",
+      "delta_min": 12.0,
+      "cycle": 0,
+      "fhr": 20,
+      "split": "test"
+    },
+    {
+      "valid": "2023-11-05T02:00:00",
+      "file": "20231105_0200.npz",
+      "date": "2023-11-05",
+      "msg_time": "2023-11-05T02:12:00",
+      "delta_min": 12.0,
+      "cycle": 0,
+      "fhr": 2,
+      "split": "test"
+    },
+    {
+      "valid": "2023-11-05T12:00:00",
+      "file": "20231105_1200.npz",
+      "date": "2023-11-05",
+      "msg_time": "2023-11-05T12:12:00",
+      "delta_min": 12.0,
+      "cycle": 0,
+      "fhr": 12,
+      "split": "test"
+    },
+    {
+      "valid": "2023-11-05T20:00:00",
+      "file": "20231105_2000.npz",
+      "date": "2023-11-05",
+      "msg_time": "2023-11-05T20:12:00",
+      "delta_min": 12.0,
+      "cycle": 0,
+      "fhr": 20,
+      "split": "test"
+    },
+    {
+      "valid": "2023-11-06T02:00:00",
+      "file": "20231106_0200.npz",
+      "date": "2023-11-06",
+      "msg_time": "2023-11-06T02:12:00",
+      "delta_min": 12.0,
+      "cycle": 0,
+      "fhr": 2,
+      "split": "test"
+    },
+    {
+      "valid": "2023-11-06T12:00:00",
+      "file": "20231106_1200.npz",
+      "date": "2023-11-06",
+      "msg_time": "2023-11-06T12:12:00",
+      "delta_min": 12.0,
+      "cycle": 0,
+      "fhr": 12,
+      "split": "test"
+    },
+    {
+      "valid": "2023-11-06T20:00:00",
+      "file": "20231106_2000.npz",
+      "date": "2023-11-06",
+      "msg_time": "2023-11-06T20:12:00",
+      "delta_min": 12.0,
+      "cycle": 0,
+      "fhr": 20,
+      "split": "test"
+    },
+    {
+      "valid": "2023-11-07T02:00:00",
+      "file": "20231107_0200.npz",
+      "date": "2023-11-07",
+      "msg_time": "2023-11-07T02:12:00",
+      "delta_min": 12.0,
+      "cycle": 0,
+      "fhr": 2,
+      "split": "test"
+    },
+    {
+      "valid": "2023-11-07T12:00:00",
+      "file": "20231107_1200.npz",
+      "date": "2023-11-07",
+      "msg_time": "2023-11-07T12:12:00",
+      "delta_min": 12.0,
+      "cycle": 0,
+      "fhr": 12,
+      "split": "test"
+    },
+    {
+      "valid": "2023-11-07T20:00:00",
+      "file": "20231107_2000.npz",
+      "date": "2023-11-07",
+      "msg_time": "2023-11-07T20:12:00",
+      "delta_min": 12.0,
+      "cycle": 0,
+      "fhr": 20,
+      "split": "test"
+    },
+    {
+      "valid": "2023-11-08T02:00:00",
+      "file": "20231108_0200.npz",
+      "date": "2023-11-08",
+      "msg_time": "2023-11-08T02:12:00",
+      "delta_min": 12.0,
+      "cycle": 0,
+      "fhr": 2,
+      "split": "test"
+    },
+    {
+      "valid": "2023-11-08T12:00:00",
+      "file": "20231108_1200.npz",
+      "date": "2023-11-08",
+      "msg_time": "2023-11-08T12:12:00",
+      "delta_min": 12.0,
+      "cycle": 0,
+      "fhr": 12,
+      "split": "test"
+    },
+    {
+      "valid": "2023-11-08T20:00:00",
+      "file": "20231108_2000.npz",
+      "date": "2023-11-08",
+      "msg_time": "2023-11-08T20:12:00",
+      "delta_min": 12.0,
+      "cycle": 0,
+      "fhr": 20,
+      "split": "test"
+    },
+    {
+      "valid": "2023-11-09T02:00:00",
+      "file": "20231109_0200.npz",
+      "date": "2023-11-09",
+      "msg_time": "2023-11-09T02:12:00",
+      "delta_min": 12.0,
+      "cycle": 0,
+      "fhr": 2,
+      "split": "test"
+    },
+    {
+      "valid": "2023-11-09T12:00:00",
+      "file": "20231109_1200.npz",
+      "date": "2023-11-09",
+      "msg_time": "2023-11-09T12:12:00",
+      "delta_min": 12.0,
+      "cycle": 0,
+      "fhr": 12,
+      "split": "test"
+    },
+    {
+      "valid": "2023-11-09T20:00:00",
+      "file": "20231109_2000.npz",
+      "date": "2023-11-09",
+      "msg_time": "2023-11-09T20:12:00",
+      "delta_min": 12.0,
+      "cycle": 0,
+      "fhr": 20,
+      "split": "test"
+    },
+    {
+      "valid": "2023-11-10T02:00:00",
+      "file": "20231110_0200.npz",
+      "date": "2023-11-10",
+      "msg_time": "2023-11-10T02:12:00",
+      "delta_min": 12.0,
+      "cycle": 0,
+      "fhr": 2,
+      "split": "test"
+    },
+    {
+      "valid": "2023-11-10T12:00:00",
+      "file": "20231110_1200.npz",
+      "date": "2023-11-10",
+      "msg_time": "2023-11-10T12:12:00",
+      "delta_min": 12.0,
+      "cycle": 0,
+      "fhr": 12,
+      "split": "test"
+    },
+    {
+      "valid": "2023-11-10T20:00:00",
+      "file": "20231110_2000.npz",
+      "date": "2023-11-10",
+      "msg_time": "2023-11-10T20:12:00",
+      "delta_min": 12.0,
+      "cycle": 0,
+      "fhr": 20,
+      "split": "test"
+    },
+    {
+      "valid": "2023-11-11T02:00:00",
+      "file": "20231111_0200.npz",
+      "date": "2023-11-11",
+      "msg_time": "2023-11-11T02:12:00",
+      "delta_min": 12.0,
+      "cycle": 0,
+      "fhr": 2,
+      "split": "test"
+    },
+    {
+      "valid": "2023-11-11T12:00:00",
+      "file": "20231111_1200.npz",
+      "date": "2023-11-11",
+      "msg_time": "2023-11-11T12:12:00",
+      "delta_min": 12.0,
+      "cycle": 0,
+      "fhr": 12,
+      "split": "test"
+    },
+    {
+      "valid": "2023-11-11T20:00:00",
+      "file": "20231111_2000.npz",
+      "date": "2023-11-11",
+      "msg_time": "2023-11-11T20:12:00",
+      "delta_min": 12.0,
+      "cycle": 0,
+      "fhr": 20,
+      "split": "test"
+    },
+    {
+      "valid": "2023-11-12T02:00:00",
+      "file": "20231112_0200.npz",
+      "date": "2023-11-12",
+      "msg_time": "2023-11-12T02:12:00",
+      "delta_min": 12.0,
+      "cycle": 0,
+      "fhr": 2,
+      "split": "test"
+    },
+    {
+      "valid": "2023-11-12T12:00:00",
+      "file": "20231112_1200.npz",
+      "date": "2023-11-12",
+      "msg_time": "2023-11-12T12:12:00",
+      "delta_min": 12.0,
+      "cycle": 0,
+      "fhr": 12,
+      "split": "test"
+    },
+    {
+      "valid": "2023-11-12T20:00:00",
+      "file": "20231112_2000.npz",
+      "date": "2023-11-12",
+      "msg_time": "2023-11-12T20:12:00",
+      "delta_min": 12.0,
+      "cycle": 0,
+      "fhr": 20,
+      "split": "test"
+    },
+    {
+      "valid": "2023-11-13T02:00:00",
+      "file": "20231113_0200.npz",
+      "date": "2023-11-13",
+      "msg_time": "2023-11-13T02:12:00",
+      "delta_min": 12.0,
+      "cycle": 0,
+      "fhr": 2,
+      "split": "test"
+    },
+    {
+      "valid": "2023-11-13T12:00:00",
+      "file": "20231113_1200.npz",
+      "date": "2023-11-13",
+      "msg_time": "2023-11-13T12:12:00",
+      "delta_min": 12.0,
+      "cycle": 0,
+      "fhr": 12,
+      "split": "test"
+    },
+    {
+      "valid": "2023-11-13T20:00:00",
+      "file": "20231113_2000.npz",
+      "date": "2023-11-13",
+      "msg_time": "2023-11-13T20:12:00",
+      "delta_min": 12.0,
+      "cycle": 0,
+      "fhr": 20,
+      "split": "test"
+    },
+    {
+      "valid": "2023-11-14T02:00:00",
+      "file": "20231114_0200.npz",
+      "date": "2023-11-14",
+      "msg_time": "2023-11-14T02:12:00",
+      "delta_min": 12.0,
+      "cycle": 0,
+      "fhr": 2,
+      "split": "test"
+    },
+    {
+      "valid": "2023-11-14T12:00:00",
+      "file": "20231114_1200.npz",
+      "date": "2023-11-14",
+      "msg_time": "2023-11-14T12:12:00",
+      "delta_min": 12.0,
+      "cycle": 0,
+      "fhr": 12,
+      "split": "test"
+    },
+    {
+      "valid": "2023-11-14T20:00:00",
+      "file": "20231114_2000.npz",
+      "date": "2023-11-14",
+      "msg_time": "2023-11-14T20:12:00",
+      "delta_min": 12.0,
+      "cycle": 0,
+      "fhr": 20,
+      "split": "test"
+    },
+    {
+      "valid": "2023-11-15T02:00:00",
+      "file": "20231115_0200.npz",
+      "date": "2023-11-15",
+      "msg_time": "2023-11-15T02:12:00",
+      "delta_min": 12.0,
+      "cycle": 0,
+      "fhr": 2,
+      "split": "test"
+    },
+    {
+      "valid": "2023-11-15T12:00:00",
+      "file": "20231115_1200.npz",
+      "date": "2023-11-15",
+      "msg_time": "2023-11-15T12:12:00",
+      "delta_min": 12.0,
+      "cycle": 0,
+      "fhr": 12,
+      "split": "test"
+    },
+    {
+      "valid": "2023-11-15T20:00:00",
+      "file": "20231115_2000.npz",
+      "date": "2023-11-15",
+      "msg_time": "2023-11-15T20:12:00",
+      "delta_min": 12.0,
+      "cycle": 0,
+      "fhr": 20,
+      "split": "test"
+    }
+  ],
+  "usable_for_training": true
+}
