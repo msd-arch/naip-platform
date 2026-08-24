@@ -4,6 +4,18 @@
 # track_e_results.json, grid_dataset.parquet, etc.) are real, small, and kept.
 data/msg_oct_nov_2023/nat_in/
 
+# Raw MSG4 archive (45 real .nat scenes, ~12GB, Nov 2021, Track K's second
+# validation year) -- same real reasoning as the Nov 2023 archive above.
+# Derived outputs (web_data/msg_hazard grids, grid_dataset.parquet,
+# track_k_results.json) are real, small, and kept.
+data/msg_oct_nov_2021/nat_in/
+# One-off scratch download scripts (real local paths hardcoded, same category
+# as nrt_retry_check.sh/observe_3h.sh below) -- not real reusable pipeline
+# code. build_grid_dataset_2021.py and replay_track_k_2021.py (the real,
+# reusable methodology scripts) live in models/residue_burning/ and ARE kept.
+data/msg_oct_nov_2021/find_products.sh
+data/msg_oct_nov_2021/download_products.sh
+
 # Track H live nowcasting loop (Week 13+): same real reasoning as above --
 # the rolling raw .nat window is large binary satellite input, not code/
 # output, and regenerates automatically every ~15min the loop runs. The

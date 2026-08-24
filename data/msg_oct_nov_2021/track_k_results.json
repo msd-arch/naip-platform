@@ -1,0 +1,56 @@
+{
+  "note": "VALIDATION REPLAY ONLY -- model trained on Nov 2023 data, not retrained here",
+  "model_trained_on": "Nov 2023 (Track E original)",
+  "evaluated_on": "Nov 2021 (Track K, full 15-day grid, never seen during training)",
+  "n_2021_rows": 183150,
+  "n_2021_positive": 20986,
+  "n_2021_dates": 15,
+  "gbt_thermal_only_2021_full": {
+    "n": 183150,
+    "n_positive": 20986,
+    "tp": 16005,
+    "fp": 53470,
+    "fn": 4981,
+    "tn": 108694,
+    "precision": 0.23037063691975532,
+    "recall": 0.7626512913370819,
+    "f1": 0.3538541470910116,
+    "roc_auc": 0.78641197975124
+  },
+  "rule_2021_full_grid": {
+    "n": 183150,
+    "n_positive": 20986,
+    "tp": 20,
+    "fp": 286,
+    "fn": 20966,
+    "tn": 161878,
+    "precision": 0.06535947712418301,
+    "recall": 0.0009530162965786714,
+    "f1": 0.0018786398647379298,
+    "roc_auc": null
+  },
+  "original_2023_thermal_only_test": {
+    "n": 36630,
+    "n_positive": 4824,
+    "tp": 2832,
+    "fp": 8724,
+    "fn": 1992,
+    "tn": 23082,
+    "precision": 0.245067497403946,
+    "recall": 0.5870646766169154,
+    "f1": 0.3457875457875458,
+    "roc_auc": 0.7370073737612636
+  },
+  "original_2023_rule_full_grid": {
+    "n": 183150,
+    "n_positive": 22090,
+    "tp": 99,
+    "fp": 653,
+    "fn": 21991,
+    "tn": 160407,
+    "precision": 0.13164893617021275,
+    "recall": 0.004481665912177456,
+    "f1": 0.008668242710795903,
+    "roc_auc": null
+  }
+}
