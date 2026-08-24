@@ -63,14 +63,20 @@ from exposure_risk import compute_exposure_rows  # noqa: E402
 from in_memory_registry import load_registry  # noqa: E402
 
 BASIS_RISK_NOTE = (
-    "Index trigger, NOT confirmed farm-level loss. Two real, unmitigated basis-risk sources: "
+    "Index trigger, NOT confirmed farm-level loss. Real, unmitigated basis-risk sources: "
     "(1) the crop-mix check is district-level regardless of source -- even where Phase 2 Track C's "
     "real MNFSR district-area data applies (see this record's crop_mix_source), it's still a "
     "district-wide proportion, not proof of what any individual farm within a triggered district "
     "grows; districts still on the Week 4 hand-classified mask (crop_mix_source == "
     "'hand_classified_mask') carry the same coarseness as ever; (2) the underlying hazard reading "
     "is a single 0.25 deg (~27km) grid-cell sample per district, not confirmed uniform across the "
-    "whole district. A trigger event here is a reason to investigate/pay against an index, not "
+    "whole district; (3) PHASE 4 FINAL ITEM: crop_mix_source == 'model_estimated_interim' means "
+    "this record's crop-mix share came from Track F's trained model's real prediction, NOT a "
+    "government survey -- used only for a real growing season MNFSR has no report for at all, and "
+    "per Track J's own finding, genuinely unvalidatable until a future real MNFSR report arrives to "
+    "check it against. A trigger event on an interim-tier record carries this extra, real, "
+    "model-estimation uncertainty on top of sources (1) and (2), not instead of them. "
+    "A trigger event here is a reason to investigate/pay against an index, not "
     "proof of individual loss. PHASE 3 WEEK 9 (Track G): exposure_score now bakes in crop_weight "
     "(the real crop_mix_share where available) rather than only gating on presence -- this reduces "
     "but does NOT eliminate basis risk source (1): a district-wide 48.95% rice share still means "
@@ -113,9 +119,11 @@ def build_audit_record(row, threshold, registry):
         "exposure_score": row["exposure_score"],
         "threshold": threshold,
         "agronomically_plausible": row["agronomically_plausible"],
-        "crop_mix_source": row.get("crop_mix_source", "hand_classified_mask"),  # Phase 2 Track C:
-                            # 'real_district_area' (real MNFSR data) vs 'hand_classified_mask' (Week 4
-                            # fallback) -- never silently indistinguishable, per direction
+        "crop_mix_source": row.get("crop_mix_source", "hand_classified_mask"),  # three real tiers:
+                            # 'real_district_area' (real MNFSR data, season 2022-23 only) ->
+                            # 'model_estimated_interim' (Phase 4 final item: Track F's trained model's
+                            # real prediction, for any season after 2022-23) -> 'hand_classified_mask'
+                            # (Week 4 fallback, 11 GB/AJK districts) -- never silently indistinguishable
         "crop_mix_share_of_4crop_area": row.get("crop_mix_share_of_4crop_area"),
         "lat": row.get("lat"), "lon": row.get("lon"),
         "n_real_farms_matched_in_district": len(farms_in_district),

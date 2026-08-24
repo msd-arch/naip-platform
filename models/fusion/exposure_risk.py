@@ -44,30 +44,32 @@ from crop_plausibility import is_plausible  # noqa: E402
 from real_crop_mix import crop_mix_tier, crop_share, is_plausible_real  # noqa: E402
 
 
-def resolve_plausibility(district, crop):
-    """PHASE 2 WEEK 6 (Track C): agronomically_plausible now prefers real
-    MNFSR district-area data over Week 4's hand-classified mask wherever real
-    data actually answers the question for this (district, crop) cell -- the
-    hand mask is now a fallback for cells real data can't cover (11 GB/AJK
-    districts, or crop tables that failed the parser's cross-validation),
-    not the default everywhere."""
-    real = is_plausible_real(district, crop)
+def resolve_plausibility(district, crop, date):
+    """PHASE 2 WEEK 6 (Track C), extended PHASE 4 final item (real
+    model_estimated_interim tier): agronomically_plausible now prefers real
+    MNFSR district-area data for the season it covers (2022-23), then Track
+    F's real model-estimated interim tier for any later season, over Week
+    4's hand-classified mask -- the hand mask is now a fallback only for
+    cells neither real tier can cover (the 11 GB/AJK districts), not the
+    default everywhere."""
+    real = is_plausible_real(district, crop, date)
     if real is not None:
         return real
     return is_plausible(district, crop)
 
 
-def resolve_crop_weight(district, crop, plausible):
-    """PHASE 3 WEEK 9 (Track G): exposure_score's crop factor -- confirmed
-    with you before regenerating national output. Real crop_mix_share
-    (real_district_area or model_predicted tier, clipped to [0,1]) is used
-    as a real proportional weight wherever it exists; hand_classified_mask
-    districts (no proportional data -- currently all 11 GB/AJK districts,
-    Track G's real model-predicted attempt there was reviewed and rejected
-    as unreliable extrapolation, see real_crop_mix.json) keep the exact
-    original boolean gate (1.0 plausible / 0.0 not) -- no regression versus
-    Week 4/6 behavior for districts real data still can't reach."""
-    share = crop_share(district, crop)
+def resolve_crop_weight(district, crop, plausible, date):
+    """PHASE 3 WEEK 9 (Track G), extended PHASE 4 final item: exposure_score's
+    crop factor. Real crop_mix_share (real_district_area for the 2022-23
+    season it covers, model_estimated_interim for any later season, clipped
+    to [0,1] -- the interim tier's predictions can be slightly negative for
+    near-zero crops) is used as a real proportional weight wherever either
+    real tier applies; hand_classified_mask districts (no proportional data
+    -- the 11 GB/AJK districts, Track G's real model-predicted attempt there
+    was reviewed and rejected as unreliable extrapolation, see
+    STATUS_WEEK9.md -- unaffected by this week's change) keep the exact
+    original boolean gate (1.0 plausible / 0.0 not)."""
+    share = crop_share(district, crop, date)
     if share is not None:
         return max(0.0, min(1.0, share))
     return 1.0 if plausible else 0.0
@@ -104,8 +106,8 @@ def compute_exposure_rows(hazards_json_path):
             continue
         for crop in crops:
             weight, stage, note = vulnerability(al["hazard"], crop, d)
-            plausible = resolve_plausibility(al["city_en"], crop)
-            crop_weight = resolve_crop_weight(al["city_en"], crop, plausible)
+            plausible = resolve_plausibility(al["city_en"], crop, d)
+            crop_weight = resolve_crop_weight(al["city_en"], crop, plausible, d)
             score = round(al["confidence"] * weight * crop_weight, 4) if al["flag"] else 0.0
             rows.append({
                 "district": al["city_en"], "date": al["date"], "hazard": al["hazard"],
@@ -114,8 +116,8 @@ def compute_exposure_rows(hazards_json_path):
                 "crop_weight": round(crop_weight, 4),
                 "exposure_score": score,
                 "agronomically_plausible": plausible,
-                "crop_mix_source": crop_mix_tier(al["city_en"]),
-                "crop_mix_share_of_4crop_area": crop_share(al["city_en"], crop),
+                "crop_mix_source": crop_mix_tier(al["city_en"], d),
+                "crop_mix_share_of_4crop_area": crop_share(al["city_en"], crop, d),
                 "lat": al.get("lat"), "lon": al.get("lon"),
             })
     data["_skipped_dates"] = skipped_dates
@@ -144,6 +146,10 @@ def main():
     plausible_rows = [r for r in rows if r["agronomically_plausible"]]
     top_plausible = sorted(plausible_rows, key=lambda r: r["exposure_score"], reverse=True)[:a.top_n]
     n_implausible_nonzero = sum(1 for r in rows if r["exposure_score"] > 0 and not r["agronomically_plausible"])
+
+    crop_mix_source_breakdown = {}
+    for r in rows:
+        crop_mix_source_breakdown[r["crop_mix_source"]] = crop_mix_source_breakdown.get(r["crop_mix_source"], 0) + 1
 
     out = {
         "generated": dt.datetime.utcnow().isoformat(),
@@ -178,7 +184,21 @@ def main():
             "the exact original 1.0/0.0 gate -- no regression there. Confirmed with you before this "
             "regenerated the national output: e.g. Kasur cotton (real 0.87% share) dropped from "
             "0.468 to ~0.004, Sialkot rice (real 48.95% share) from 0.39 to ~0.191 -- see "
-            "naip/docs/STATUS_WEEK9.md for the full real before/after."
+            "naip/docs/STATUS_WEEK9.md for the full real before/after. "
+            "PHASE 4 FINAL ITEM ADDITION: 'crop_mix_source' is now THREE-TIER, resolved per "
+            "(district, crop, date): 'real_district_area' (real MNFSR data, ONLY for the 2022-23 "
+            "season it actually covers) -> 'model_estimated_interim' (Track F's trained model's "
+            "real per-district crop-share prediction, for any growing season AFTER 2022-23 that "
+            "real MNFSR has no report for at all -- a trained model's ESTIMATE, not a government "
+            "survey, unvalidatable until a future real MNFSR report arrives, see "
+            "naip/docs/STATUS_WEEK20.md) -> 'hand_classified_mask' (the 11 GB/AJK districts neither "
+            "real tier covers, unchanged from Track G's standing rejection there, regardless of "
+            "date). Real, structurally significant consequence: NAIP's actual hazard archives all "
+            "postdate 2022-23 (they start mid-2026), so essentially every real_district_area row "
+            "this pipeline previously produced now resolves to model_estimated_interim instead -- "
+            "not a regression, but the correct real consequence of adding date-awareness for the "
+            "first time (previously every row silently used the 2022-23 snapshot regardless of the "
+            "alert's actual date). See STATUS_WEEK20.md for the full real before/after."
         ),
         "source_hazards_json": a.hazards_json,
         "crops": crops,
@@ -187,6 +207,9 @@ def main():
         "n_nonzero_exposure_implausible": n_implausible_nonzero,
         "n_source_alerts": len(data["alerts"]),
         "n_source_alerts_flagged": n_flagged_source_alerts,
+        "crop_mix_source_breakdown": crop_mix_source_breakdown,  # PHASE 4 FINAL ITEM: real, full-
+                        # archive row-level tier counts (not a per-126-districts data-coverage
+                        # count -- this reflects the actual dates in source_hazards_json)
         "top_exposure_events": top,
         "top_plausible_exposure_events": top_plausible,
     }
