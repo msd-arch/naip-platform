@@ -80,7 +80,16 @@ BASIS_RISK_NOTE = (
     "proof of individual loss. PHASE 3 WEEK 9 (Track G): exposure_score now bakes in crop_weight "
     "(the real crop_mix_share where available) rather than only gating on presence -- this reduces "
     "but does NOT eliminate basis risk source (1): a district-wide 48.95% rice share still means "
-    "51.05% of that district's real cropped area is something else."
+    "51.05% of that district's real cropped area is something else. THRESHOLD RECALIBRATION "
+    "(real, tier-and-crop-aware, structural not just prose): exposure_score itself now bakes in a "
+    "real per-crop confidence discount for model_estimated_interim rows -- see this record's "
+    "'interim_confidence_multiplier' and 'exposure_score_before_confidence_discount'. The "
+    "multiplier is the mean of Track F's own validated cross-year R2 per crop (wheat 0.4725, "
+    "cotton 0.428, rice 0.264, sugarcane 0.1225), applied directly with no further transform -- "
+    "real_district_area/hand_classified_mask rows are unaffected (multiplier 1.0). This means an "
+    "interim-tier trigger on a weak-R2 crop (sugarcane) required a real raw score ~8.2x higher "
+    "than a real-tier row would to clear the same threshold; even wheat (the model's best "
+    "real-world crop) required ~2.1x. See STATUS_WEEK21.md for the real before/after."
 )
 
 RAAST_STUB_NOTE = (
@@ -116,6 +125,10 @@ def build_audit_record(row, threshold, registry):
         "vulnerability_weight": row["vulnerability_weight"],
         "crop_weight": row.get("crop_weight"),  # Phase 3 Track G: real proportional weight baked
                         # into exposure_score itself now, not just a pass/fail gate -- see exposure_risk.py
+        "interim_confidence_multiplier": row.get("interim_confidence_multiplier", 1.0),  # threshold
+                        # recalibration: real per-crop Track F cross-year R2 discount, interim-tier
+                        # rows only -- see exposure_risk.py / real_crop_mix.py
+        "exposure_score_before_confidence_discount": row.get("exposure_score_before_confidence_discount"),
         "exposure_score": row["exposure_score"],
         "threshold": threshold,
         "agronomically_plausible": row["agronomically_plausible"],

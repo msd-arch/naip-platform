@@ -41,7 +41,7 @@ import sys
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from crop_calendar import SOWING_HARVEST, vulnerability  # noqa: E402
 from crop_plausibility import is_plausible  # noqa: E402
-from real_crop_mix import crop_mix_tier, crop_share, is_plausible_real  # noqa: E402
+from real_crop_mix import crop_mix_tier, crop_share, is_plausible_real, resolve_interim_confidence  # noqa: E402
 
 
 def resolve_plausibility(district, crop, date):
@@ -108,12 +108,19 @@ def compute_exposure_rows(hazards_json_path):
             weight, stage, note = vulnerability(al["hazard"], crop, d)
             plausible = resolve_plausibility(al["city_en"], crop, d)
             crop_weight = resolve_crop_weight(al["city_en"], crop, plausible, d)
-            score = round(al["confidence"] * weight * crop_weight, 4) if al["flag"] else 0.0
+            raw_score = round(al["confidence"] * weight * crop_weight, 4) if al["flag"] else 0.0
+            confidence_multiplier = resolve_interim_confidence(al["city_en"], crop, d)
+            score = round(raw_score * confidence_multiplier, 4)
             rows.append({
                 "district": al["city_en"], "date": al["date"], "hazard": al["hazard"],
                 "hazard_flag": al["flag"], "hazard_confidence": al["confidence"],
                 "crop": crop, "crop_stage": stage, "vulnerability_weight": weight,
                 "crop_weight": round(crop_weight, 4),
+                "interim_confidence_multiplier": round(confidence_multiplier, 4),  # threshold
+                        # recalibration: 1.0 for real_district_area/hand_classified_mask (current
+                        # effective bar unchanged); Track F's real, validated per-crop cross-year
+                        # R2 for model_estimated_interim rows -- see real_crop_mix.py
+                "exposure_score_before_confidence_discount": raw_score,
                 "exposure_score": score,
                 "agronomically_plausible": plausible,
                 "crop_mix_source": crop_mix_tier(al["city_en"], d),
@@ -198,7 +205,21 @@ def main():
             "this pipeline previously produced now resolves to model_estimated_interim instead -- "
             "not a regression, but the correct real consequence of adding date-awareness for the "
             "first time (previously every row silently used the 2022-23 snapshot regardless of the "
-            "alert's actual date). See STATUS_WEEK20.md for the full real before/after."
+            "alert's actual date). See STATUS_WEEK20.md for the full real before/after. "
+            "THRESHOLD RECALIBRATION ADDITION (real, tier-and-crop-aware): every row now carries "
+            "'interim_confidence_multiplier' and 'exposure_score_before_confidence_discount'. "
+            "real_district_area/hand_classified_mask rows keep multiplier=1.0 (current effective "
+            "bar unchanged). model_estimated_interim rows get a real per-crop discount = the mean "
+            "of Track F's own validated cross-year R2 (STATUS_WEEK17.md's district-level table, "
+            "not the original within-year figures) -- wheat 0.4725, cotton 0.428, rice 0.264, "
+            "sugarcane 0.1225 -- applied directly (multiplier = clamp(mean_r2, 0, 1), no further "
+            "transform). 'exposure_score' is the discounted, threshold-comparable value; "
+            "'exposure_score_before_confidence_discount' is what it would have been without this "
+            "crop's real confidence discount -- kept so nothing is silently lost. Real, deliberate "
+            "consequence: an interim-tier wheat row needs ~2.1x the raw score of a real-tier row "
+            "to clear the same threshold; sugarcane needs ~8.2x, discounted hard enough to "
+            "essentially not fire on a marginal score alone. See STATUS_WEEK21.md for the full "
+            "real before/after."
         ),
         "source_hazards_json": a.hazards_json,
         "crops": crops,

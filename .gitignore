@@ -24,6 +24,7 @@ data/msg_oct_nov_2021/download_products.sh
 # ARE kept. cycle.lock is ephemeral runtime state, never meaningful to commit.
 data/live_nowcast/nat_in/
 data/live_nowcast/web_data/_hazard_grid_tmp/
+data/live_nowcast/web_data/_skin_temp_tmp/
 data/live_nowcast/cycle.lock
 
 # Real operational logs and one-off scratch/diagnostic scripts from Track H's

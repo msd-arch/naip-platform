@@ -53,6 +53,64 @@ _INTERIM_PATH = os.path.join(_HERE, "..", "..", "data", "crop_mix_ground_truth",
 MNFSR_LAST_REAL_SEASON = "2022-23"
 MNFSR_LAST_REAL_SEASON_START_YEAR = 2022
 
+# Threshold recalibration (real, tier-aware, crop-aware): per-crop confidence
+# multiplier applied to model_estimated_interim rows only, derived directly
+# from Track F's own validated cross-year R² (STATUS_WEEK17.md's real
+# district-level cross-year table -- the fairer, harder-tested numbers, NOT
+# the original within-year figures which never held out a genuinely
+# different year). Each crop's value here is the mean of the two real
+# cross-year directions (train2122->test2223, train2223->test2122) --
+# neither direction is more "correct" than the other, both are real,
+# equally-valid temporal holdouts, so the mean is the natural single-number
+# summary rather than picking one arbitrarily.
+#   wheat:     (0.475 + 0.470) / 2 = 0.4725
+#   cotton:    (0.467 + 0.389) / 2 = 0.428
+#   rice:      (0.289 + 0.239) / 2 = 0.264
+#   sugarcane: (0.116 + 0.129) / 2 = 0.1225
+# Mapping formula, confirmed with you before wiring into live trigger logic:
+# multiplier = clamp(mean_r2, 0, 1) -- the direct R² value itself, no
+# additional transform. R² already IS a real 0-1 "fraction of variance
+# explained" quantity for a non-negative value, so this is the most literal,
+# least-arbitrary use of the validated statistic (no free parameter to
+# separately justify, unlike sqrt(R²) or a relative-to-best-crop rescaling,
+# both considered and rejected -- see STATUS_WEEK21.md). Real, deliberate
+# consequence: even wheat (the model's best-performing crop) still needs
+# ~2.1x the raw exposure_score of a real-tier row to clear the same
+# threshold, because R²=0.4725 means more than half the real variance is
+# still unexplained -- a genuinely modest result, not near-ground-truth.
+# Sugarcane (R²~0.12, barely above zero) needs ~8.2x -- discounted hard
+# enough that it essentially cannot fire on a marginal score alone, exactly
+# the real, intended effect.
+INTERIM_CROP_R2_MEAN = {
+    "wheat": 0.4725,
+    "cotton": 0.428,
+    "rice": 0.264,
+    "sugarcane": 0.1225,
+}
+
+
+def interim_confidence_multiplier(crop):
+    """Real per-crop confidence multiplier for model_estimated_interim rows
+    -- 1.0 (no discount) for real_district_area and hand_classified_mask
+    tiers, which are unaffected by this (see resolve_interim_confidence
+    below, the actual per-row entry point). Clamped to [0, 1] as a safety
+    bound even though every real value here already falls in that range."""
+    r2 = INTERIM_CROP_R2_MEAN.get(crop)
+    if r2 is None:
+        return 1.0  # unknown crop -- no real R² to discount by, don't invent one
+    return max(0.0, min(1.0, r2))
+
+
+def resolve_interim_confidence(district, crop, date):
+    """The real per-row entry point: returns 1.0 for real_district_area and
+    hand_classified_mask tiers (current effective bar unchanged, per
+    direction), the real per-crop multiplier only for model_estimated_interim
+    rows."""
+    if crop_mix_tier(district, date) == "model_estimated_interim":
+        return interim_confidence_multiplier(crop)
+    return 1.0
+
+
 _cache = None
 _interim_cache = None
 

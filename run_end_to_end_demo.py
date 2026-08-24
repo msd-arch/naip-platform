@@ -39,8 +39,19 @@ alive artificially, the demo scenario changed to Gujranwala/uv_index/rice
 found by checking which real farm-registry-covered districts have any real
 event clearing the new demo threshold -- not picked to fit a story.
 
+THRESHOLD RECALIBRATION (real, tier-and-crop-aware): exposure_score now
+bakes in a real per-crop confidence discount for model_estimated_interim
+rows (Track F's own validated cross-year R2 per crop -- wheat 0.4725,
+cotton 0.428, rice 0.264, sugarcane 0.1225, applied directly). Real
+consequence: the 0.07 demo threshold's real selectivity (9/1243 nonzero
+rows, ~0.72%) is re-matched against the new post-discount distribution --
+same real selectivity-matching method as the Week 9 recalibration above,
+not picked to preserve the Gujranwala scenario (it happens to still clear
+the new threshold, checked not assumed -- see STATUS_WEEK21.md). New real
+demo threshold: 0.0216.
+
 Usage:
-    python run_end_to_end_demo.py --district Gujranwala --threshold 0.07
+    python run_end_to_end_demo.py --district Gujranwala --threshold 0.0216
 """
 import argparse
 import json
@@ -70,10 +81,11 @@ def main():
                           "(Phase 3 Week 9: changed from Layyah after the crop-weighting "
                           "recalibration -- Layyah's real score no longer clears the new "
                           "threshold, see module docstring)")
-    ap.add_argument("--threshold", type=float, default=0.07,
-                     help="demo threshold -- Phase 3 Week 9 recalibration after the crop-weight "
-                          "formula change, chosen by matching the ORIGINAL 0.20 threshold's real "
-                          "selectivity (~24% of nonzero rows) against the new score distribution, "
+    ap.add_argument("--threshold", type=float, default=0.0216,
+                     help="demo threshold -- re-derived for the threshold-recalibration pass "
+                          "(real per-crop confidence discount on model_estimated_interim rows) "
+                          "by matching the prior 0.07 threshold's real selectivity (9/1243 nonzero "
+                          "rows, ~0.72%) against the new post-discount score distribution, "
                           "not chosen to fit any specific scenario -- see module docstring")
     a = ap.parse_args()
 
