@@ -1,0 +1,282 @@
+{
+  "features_used": [
+    "ndvi_peak_value",
+    "ndvi_peak_month",
+    "ndvi_trough_value",
+    "ndvi_trough_month",
+    "ndvi_green_up_slope",
+    "ndvi_senescence_slope",
+    "ndvi_annual_mean",
+    "ndvi_annual_std",
+    "ndwi_peak_value",
+    "ndwi_peak_month",
+    "ndwi_trough_value",
+    "ndwi_trough_month",
+    "ndwi_green_up_slope",
+    "ndwi_senescence_slope",
+    "ndwi_annual_mean",
+    "ndwi_annual_std",
+    "evi_peak_value",
+    "evi_peak_month",
+    "evi_trough_value",
+    "evi_trough_month",
+    "evi_green_up_slope",
+    "evi_senescence_slope",
+    "evi_annual_mean",
+    "evi_annual_std"
+  ],
+  "crops": {
+    "wheat": {
+      "n_real_yield_cells_2022_23": 2152,
+      "n_real_yield_cells_2021_22": 2248,
+      "direction_A_train2122_test2223": {
+        "n_train_rows": 2248,
+        "n_test_rows": 2152,
+        "n_train_districts": 115,
+        "n_test_districts": 115,
+        "point_level": {
+          "n": 2152,
+          "mae": 0.5432091545843012,
+          "r2": 0.23356679016075366
+        },
+        "district_level": {
+          "n": 115,
+          "mae": 0.47585377461628303,
+          "r2": 0.3804654978765434
+        },
+        "feature_importance_top5": {
+          "evi_annual_mean": 0.12613989510851165,
+          "ndwi_peak_value": 0.09705216346985032,
+          "evi_peak_month": 0.08902861762788916,
+          "ndwi_annual_mean": 0.05219860348761546,
+          "ndvi_annual_std": 0.03447910582351443
+        }
+      },
+      "direction_B_train2223_test2122": {
+        "n_train_rows": 2152,
+        "n_test_rows": 2248,
+        "n_train_districts": 115,
+        "n_test_districts": 115,
+        "point_level": {
+          "n": 2248,
+          "mae": 0.5185017306772953,
+          "r2": 0.20666461245422385
+        },
+        "district_level": {
+          "n": 115,
+          "mae": 0.435611101664347,
+          "r2": 0.414384405726252
+        },
+        "feature_importance_top5": {
+          "evi_peak_month": 0.12643278889380144,
+          "evi_annual_mean": 0.06134405779320404,
+          "ndwi_peak_value": 0.048409622663155,
+          "evi_trough_value": 0.03722294340840994,
+          "ndvi_annual_mean": 0.0276149254604611
+        }
+      },
+      "naive_baseline_A_predict2223_from2122": {
+        "n": 115,
+        "mae": 0.2639852173913043,
+        "r2": 0.7686163543239688,
+        "n_districts": 115
+      },
+      "naive_baseline_B_predict2122_from2223": {
+        "n": 115,
+        "mae": 0.2639852173913043,
+        "r2": 0.7785017076870471,
+        "n_districts": 115
+      }
+    },
+    "cotton": {
+      "n_real_yield_cells_2022_23": 731,
+      "n_real_yield_cells_2021_22": 761,
+      "direction_A_train2122_test2223": {
+        "n_train_rows": 761,
+        "n_test_rows": 731,
+        "n_train_districts": 41,
+        "n_test_districts": 40,
+        "point_level": {
+          "n": 731,
+          "mae": 1.655215852731718,
+          "r2": -2.7636188585350148
+        },
+        "district_level": {
+          "n": 40,
+          "mae": 1.5543179398196019,
+          "r2": -2.30716079137945
+        },
+        "feature_importance_top5": {
+          "evi_annual_std": 0.25325740749662823,
+          "ndvi_green_up_slope": 0.1375254436568229,
+          "ndvi_senescence_slope": 0.08799326531354096,
+          "ndvi_annual_std": 0.07076352694352989,
+          "ndwi_peak_month": 0.05966691200407437
+        }
+      },
+      "direction_B_train2223_test2122": {
+        "n_train_rows": 731,
+        "n_test_rows": 761,
+        "n_train_districts": 40,
+        "n_test_districts": 41,
+        "point_level": {
+          "n": 761,
+          "mae": 1.6760768296294266,
+          "r2": -1.5971944122910404
+        },
+        "district_level": {
+          "n": 41,
+          "mae": 1.6414461044838604,
+          "r2": -1.3635695844304214
+        },
+        "feature_importance_top5": {
+          "ndvi_peak_value": 0.13903294369793523,
+          "ndvi_annual_std": 0.042985059228051625,
+          "ndvi_trough_month": 0.03941211797463229,
+          "ndwi_senescence_slope": 0.03256525065756227,
+          "ndwi_annual_std": 0.028919900447377078
+        }
+      },
+      "naive_baseline_A_predict2223_from2122": {
+        "n": 40,
+        "mae": 1.6394174999999997,
+        "r2": -2.6453270246007636,
+        "n_districts": 40
+      },
+      "naive_baseline_B_predict2122_from2223": {
+        "n": 40,
+        "mae": 1.6394174999999997,
+        "r2": -1.5992672971815818,
+        "n_districts": 40
+      }
+    },
+    "rice": {
+      "n_real_yield_cells_2022_23": 1418,
+      "n_real_yield_cells_2021_22": 1301,
+      "direction_A_train2122_test2223": {
+        "n_train_rows": 1301,
+        "n_test_rows": 1418,
+        "n_train_districts": 69,
+        "n_test_districts": 76,
+        "point_level": {
+          "n": 1418,
+          "mae": 0.5660615581113166,
+          "r2": -0.007188659345747972
+        },
+        "district_level": {
+          "n": 76,
+          "mae": 0.5537660053314039,
+          "r2": 0.0573101084594031
+        },
+        "feature_importance_top5": {
+          "evi_trough_value": 0.028277333215319417,
+          "evi_green_up_slope": 0.027886071810708346,
+          "ndvi_peak_month": 0.02190449970343386,
+          "ndvi_senescence_slope": 0.021556477792022688,
+          "ndwi_annual_std": 0.014243518745271216
+        }
+      },
+      "direction_B_train2223_test2122": {
+        "n_train_rows": 1418,
+        "n_test_rows": 1301,
+        "n_train_districts": 76,
+        "n_test_districts": 69,
+        "point_level": {
+          "n": 1301,
+          "mae": 0.6238529744030477,
+          "r2": -0.6174506718707473
+        },
+        "district_level": {
+          "n": 69,
+          "mae": 0.5592899947167893,
+          "r2": -0.11024414400012383
+        },
+        "feature_importance_top5": {
+          "evi_senescence_slope": 0.24247486846745694,
+          "evi_peak_value": 0.0932847866942659,
+          "ndwi_peak_value": 0.06231821975601995,
+          "evi_trough_value": 0.05213023529645705,
+          "ndwi_annual_std": 0.04979187889262249
+        }
+      },
+      "naive_baseline_A_predict2223_from2122": {
+        "n": 65,
+        "mae": 0.4126384615384615,
+        "r2": 0.14062960651152612,
+        "n_districts": 65
+      },
+      "naive_baseline_B_predict2122_from2223": {
+        "n": 65,
+        "mae": 0.4126384615384615,
+        "r2": -0.7655497486644827,
+        "n_districts": 65
+      }
+    },
+    "sugarcane": {
+      "n_real_yield_cells_2022_23": 628,
+      "n_real_yield_cells_2021_22": 611,
+      "direction_A_train2122_test2223": {
+        "n_train_rows": 611,
+        "n_test_rows": 628,
+        "n_train_districts": 32,
+        "n_test_districts": 32,
+        "point_level": {
+          "n": 628,
+          "mae": 9.47402653861268,
+          "r2": -0.06891688761325776
+        },
+        "district_level": {
+          "n": 32,
+          "mae": 8.877789280787741,
+          "r2": 0.10308943343020016
+        },
+        "feature_importance_top5": {
+          "ndwi_trough_value": 0.03119411562818497,
+          "ndvi_trough_value": 0.028539715701252855,
+          "ndvi_senescence_slope": 0.02812955947612167,
+          "ndvi_annual_std": 0.027695867489631126,
+          "evi_trough_month": 0.015354995257159137
+        }
+      },
+      "direction_B_train2223_test2122": {
+        "n_train_rows": 628,
+        "n_test_rows": 611,
+        "n_train_districts": 32,
+        "n_test_districts": 32,
+        "point_level": {
+          "n": 611,
+          "mae": 9.43785791698181,
+          "r2": -0.11030002078102541
+        },
+        "district_level": {
+          "n": 32,
+          "mae": 8.288311260283873,
+          "r2": 0.0796880369416958
+        },
+        "feature_importance_top5": {
+          "evi_trough_month": 0.05303033199826207,
+          "evi_annual_std": 0.036966095289171386,
+          "evi_trough_value": 0.03668571047337099,
+          "evi_peak_month": 0.018892190913858076,
+          "ndwi_annual_mean": 0.01719030391130219
+        }
+      },
+      "naive_baseline_A_predict2223_from2122": {
+        "n": 32,
+        "mae": 6.863553125,
+        "r2": 0.3516536354381741,
+        "n_districts": 32
+      },
+      "naive_baseline_B_predict2122_from2223": {
+        "n": 32,
+        "mae": 6.863553125,
+        "r2": 0.1226987698587585,
+        "n_districts": 32
+      }
+    }
+  },
+  "real_hazard_ablation": {
+    "attempted": false,
+    "reason": "Checked directly, not assumed: NAIP's only real MSG archives are Nov 2021 (15 days) and Nov 2023 (15 days) -- neither gives meaningful coverage of either real yield-label growing season (2021-22 = Nov 2021-Oct 2022; 2022-23 = Nov 2022-Oct 2023). A 15-day slice at the start of one season is not real 'heat/drought exposure during the growing season'. Real-data-infeasible with what's on disk -- not attempted, not faked with a placeholder feature. See STATUS_WEEK22.md."
+  }
+}

@@ -1,0 +1,430 @@
+{
+  "2022-23": {
+    "n_districts_covered": 115,
+    "n_cells": 263,
+    "n_blocks_area_rejected": 4,
+    "n_blocks_production_rejected_new_check": 0,
+    "n_not_grown_real_zero_area": 78,
+    "n_excluded_data_quality": 3,
+    "excluded_cells": [
+      {
+        "district": "Kashmore",
+        "crop": "cotton",
+        "area_000ha": 0.03,
+        "reason": "production_rounds_to_exactly_zero_print_precision_floor"
+      },
+      {
+        "district": "Shikarpur",
+        "crop": "cotton",
+        "area_000ha": 0.28,
+        "reason": "production_rounds_to_exactly_zero_print_precision_floor"
+      },
+      {
+        "district": "Nasirabad",
+        "crop": "rice",
+        "area_000ha": 48.78,
+        "production_000t": 10.8,
+        "yield_tons_per_ha": 0.2214,
+        "reason": "outside_real_plausible_band_0.3-8.0_t_per_ha"
+      }
+    ]
+  },
+  "2021-22": {
+    "n_districts_covered": 115,
+    "n_cells": 257,
+    "n_blocks_area_rejected": 3,
+    "n_blocks_production_rejected_new_check": 1,
+    "n_not_grown_real_zero_area": 83,
+    "n_excluded_data_quality": 4,
+    "excluded_cells": [
+      {
+        "district": "Sukkur",
+        "crop": "rice",
+        "area_000ha": 1.81,
+        "reason": "production_rounds_to_exactly_zero_print_precision_floor"
+      },
+      {
+        "district": "Naushehro Feroze",
+        "crop": "rice",
+        "area_000ha": 9.54,
+        "reason": "production_rounds_to_exactly_zero_print_precision_floor"
+      },
+      {
+        "district": "Nawabshah",
+        "crop": "rice",
+        "area_000ha": 4.7,
+        "reason": "production_rounds_to_exactly_zero_print_precision_floor"
+      },
+      {
+        "district": "Matiari",
+        "crop": "rice",
+        "area_000ha": 0.41,
+        "reason": "production_rounds_to_exactly_zero_print_precision_floor"
+      }
+    ]
+  },
+  "validations_2022_23": [
+    {
+      "crop": "wheat",
+      "province": "PUNJAB",
+      "n_rows_parsed": 39,
+      "parsed_area": 6308.51,
+      "printed_area": 6480.5,
+      "area_ok": true,
+      "parsed_prod": 20622.03,
+      "printed_prod": 21225.03,
+      "prod_ok": true
+    },
+    {
+      "crop": "wheat",
+      "province": "SINDH",
+      "n_rows_parsed": 23,
+      "parsed_area": 1238.24,
+      "printed_area": 1238.23,
+      "area_ok": true,
+      "parsed_prod": 3940.19,
+      "printed_prod": 3940.17,
+      "prod_ok": true
+    },
+    {
+      "crop": "wheat",
+      "province": "SINDH",
+      "n_rows_parsed": 36,
+      "parsed_area": 770.29,
+      "printed_area": 770.27,
+      "area_ok": true,
+      "parsed_prod": 1479.14,
+      "printed_prod": 1479.13,
+      "prod_ok": true
+    },
+    {
+      "crop": "wheat",
+      "province": "BALOCHISTAN",
+      "n_rows_parsed": 31,
+      "parsed_area": 543.67,
+      "printed_area": 543.67,
+      "area_ok": true,
+      "parsed_prod": 1516.25,
+      "printed_prod": 1516.23,
+      "prod_ok": true
+    },
+    {
+      "crop": "cotton",
+      "province": "PUNJAB",
+      "n_rows_parsed": 37,
+      "parsed_area": 1485.16,
+      "printed_area": 1485.16,
+      "area_ok": true,
+      "parsed_prod": 3210.3,
+      "printed_prod": 3210.3,
+      "prod_ok": true
+    },
+    {
+      "crop": "cotton",
+      "province": "SINDH",
+      "n_rows_parsed": 23,
+      "parsed_area": 589.84,
+      "printed_area": 589.81,
+      "area_ok": true,
+      "parsed_prod": 1586.32,
+      "printed_prod": 1586.29,
+      "prod_ok": true
+    },
+    {
+      "crop": "cotton",
+      "province": "SINDH",
+      "n_rows_parsed": 28,
+      "parsed_area": 0.18,
+      "printed_area": null,
+      "area_ok": false,
+      "parsed_prod": 0.54,
+      "printed_prod": null,
+      "prod_ok": false,
+      "REJECTED": "area"
+    },
+    {
+      "crop": "cotton",
+      "province": "BALOCHISTAN",
+      "n_rows_parsed": 14,
+      "parsed_area": 12.06,
+      "printed_area": 0.0,
+      "area_ok": false,
+      "parsed_prod": 54.95,
+      "printed_prod": 0.0,
+      "prod_ok": false,
+      "REJECTED": "area"
+    },
+    {
+      "crop": "rice",
+      "province": "PUNJAB",
+      "n_rows_parsed": 36,
+      "parsed_area": 2163.93,
+      "printed_area": 2188.61,
+      "area_ok": true,
+      "parsed_prod": 5025.59,
+      "printed_prod": 5070.0,
+      "prod_ok": true
+    },
+    {
+      "crop": "rice",
+      "province": "SINDH",
+      "n_rows_parsed": 22,
+      "parsed_area": 603.32,
+      "printed_area": 603.31,
+      "area_ok": true,
+      "parsed_prod": 2011.82,
+      "printed_prod": 2011.8,
+      "prod_ok": true
+    },
+    {
+      "crop": "rice",
+      "province": "SINDH",
+      "n_rows_parsed": 35,
+      "parsed_area": 56.68,
+      "printed_area": 56.67,
+      "area_ok": true,
+      "parsed_prod": 137.28,
+      "printed_prod": 137.27,
+      "prod_ok": true
+    },
+    {
+      "crop": "rice",
+      "province": "BALOCHISTAN",
+      "n_rows_parsed": 28,
+      "parsed_area": 126.97,
+      "printed_area": 126.95,
+      "area_ok": true,
+      "parsed_prod": 103.16,
+      "printed_prod": 103.16,
+      "prod_ok": true
+    },
+    {
+      "crop": "sugarcane",
+      "province": "PUNJAB",
+      "n_rows_parsed": 37,
+      "parsed_area": 938.04,
+      "printed_area": 938.04,
+      "area_ok": true,
+      "parsed_prod": 66932.4,
+      "printed_prod": 66932.4,
+      "prod_ok": true
+    },
+    {
+      "crop": "sugarcane",
+      "province": "SINDH",
+      "n_rows_parsed": 12,
+      "parsed_area": 160.78,
+      "printed_area": null,
+      "area_ok": false,
+      "parsed_prod": 9338.69,
+      "printed_prod": null,
+      "prod_ok": false,
+      "REJECTED": "area"
+    },
+    {
+      "crop": "sugarcane",
+      "province": "SINDH",
+      "n_rows_parsed": 26,
+      "parsed_area": 163.96,
+      "printed_area": 90.74,
+      "area_ok": false,
+      "parsed_prod": 8917.11,
+      "printed_prod": 4844.24,
+      "prod_ok": false,
+      "REJECTED": "area"
+    },
+    {
+      "crop": "sugarcane",
+      "province": "BALOCHISTAN",
+      "n_rows_parsed": 29,
+      "parsed_area": 0.7,
+      "printed_area": 0.69,
+      "area_ok": true,
+      "parsed_prod": 33.16,
+      "printed_prod": 33.17,
+      "prod_ok": true
+    }
+  ],
+  "validations_2021_22": [
+    {
+      "crop": "wheat",
+      "province": "PUNJAB",
+      "n_rows_parsed": 39,
+      "parsed_area": 6463.11,
+      "printed_area": 6559.83,
+      "area_ok": true,
+      "parsed_prod": 19699.89,
+      "printed_prod": 20031.81,
+      "prod_ok": true
+    },
+    {
+      "crop": "wheat",
+      "province": "SINDH",
+      "n_rows_parsed": 23,
+      "parsed_area": 1181.72,
+      "printed_area": 1181.71,
+      "area_ok": true,
+      "parsed_prod": 3556.75,
+      "printed_prod": 3556.74,
+      "prod_ok": true
+    },
+    {
+      "crop": "wheat",
+      "province": "SINDH",
+      "n_rows_parsed": 36,
+      "parsed_area": 760.63,
+      "printed_area": 760.62,
+      "area_ok": true,
+      "parsed_prod": 1362.85,
+      "printed_prod": 1362.84,
+      "prod_ok": true
+    },
+    {
+      "crop": "wheat",
+      "province": "BALOCHISTAN",
+      "n_rows_parsed": 31,
+      "parsed_area": 474.8,
+      "printed_area": 474.74,
+      "area_ok": true,
+      "parsed_prod": 1257.1,
+      "printed_prod": 1257.09,
+      "prod_ok": true
+    },
+    {
+      "crop": "cotton",
+      "province": "PUNJAB",
+      "n_rows_parsed": 37,
+      "parsed_area": 1279.2,
+      "printed_area": 1279.2,
+      "area_ok": true,
+      "parsed_prod": 5168.0,
+      "printed_prod": 5168.0,
+      "prod_ok": true
+    },
+    {
+      "crop": "cotton",
+      "province": "SINDH",
+      "n_rows_parsed": 23,
+      "parsed_area": 593.9,
+      "printed_area": 593.89,
+      "area_ok": true,
+      "parsed_prod": 2998.42,
+      "printed_prod": 2998.41,
+      "prod_ok": true
+    },
+    {
+      "crop": "cotton",
+      "province": "SINDH",
+      "n_rows_parsed": 28,
+      "parsed_area": 0.17,
+      "printed_area": 0.17,
+      "area_ok": true,
+      "parsed_prod": 0.51,
+      "printed_prod": null,
+      "prod_ok": false,
+      "REJECTED": "production"
+    },
+    {
+      "crop": "cotton",
+      "province": "BALOCHISTAN",
+      "n_rows_parsed": 14,
+      "parsed_area": 49.13,
+      "printed_area": 63.73,
+      "area_ok": false,
+      "parsed_prod": 39.91,
+      "printed_prod": 0.0,
+      "prod_ok": false,
+      "REJECTED": "area"
+    },
+    {
+      "crop": "rice",
+      "province": "PUNJAB",
+      "n_rows_parsed": 36,
+      "parsed_area": 2309.91,
+      "printed_area": 2309.91,
+      "area_ok": true,
+      "parsed_prod": 5195.63,
+      "printed_prod": 5195.63,
+      "prod_ok": true
+    },
+    {
+      "crop": "rice",
+      "province": "SINDH",
+      "n_rows_parsed": 22,
+      "parsed_area": 756.57,
+      "printed_area": 756.57,
+      "area_ok": true,
+      "parsed_prod": 2566.16,
+      "printed_prod": 2566.16,
+      "prod_ok": true
+    },
+    {
+      "crop": "rice",
+      "province": "SINDH",
+      "n_rows_parsed": 35,
+      "parsed_area": 64.26,
+      "printed_area": 64.24,
+      "area_ok": true,
+      "parsed_prod": 157.58,
+      "printed_prod": 157.58,
+      "prod_ok": true
+    },
+    {
+      "crop": "rice",
+      "province": "BALOCHISTAN",
+      "n_rows_parsed": 28,
+      "parsed_area": 161.43,
+      "printed_area": 161.42,
+      "area_ok": true,
+      "parsed_prod": 524.76,
+      "printed_prod": 524.75,
+      "prod_ok": true
+    },
+    {
+      "crop": "sugarcane",
+      "province": "PUNJAB",
+      "n_rows_parsed": 37,
+      "parsed_area": 869.25,
+      "printed_area": 869.25,
+      "area_ok": true,
+      "parsed_prod": 64244.68,
+      "printed_prod": 64244.68,
+      "prod_ok": true
+    },
+    {
+      "crop": "sugarcane",
+      "province": "SINDH",
+      "n_rows_parsed": 12,
+      "parsed_area": 163.44,
+      "printed_area": null,
+      "area_ok": false,
+      "parsed_prod": 11375.02,
+      "printed_prod": null,
+      "prod_ok": false,
+      "REJECTED": "area"
+    },
+    {
+      "crop": "sugarcane",
+      "province": "SINDH",
+      "n_rows_parsed": 26,
+      "parsed_area": 168.93,
+      "printed_area": 95.1,
+      "area_ok": false,
+      "parsed_prod": 10100.21,
+      "printed_prod": 4909.95,
+      "prod_ok": false,
+      "REJECTED": "area"
+    },
+    {
+      "crop": "sugarcane",
+      "province": "BALOCHISTAN",
+      "n_rows_parsed": 29,
+      "parsed_area": 0.7,
+      "printed_area": 0.7,
+      "area_ok": true,
+      "parsed_prod": 34.92,
+      "printed_prod": 34.92,
+      "prod_ok": true
+    }
+  ]
+}

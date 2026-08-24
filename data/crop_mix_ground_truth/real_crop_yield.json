@@ -1,0 +1,3066 @@
+{
+  "2022-23": {
+    "Attock": {
+      "wheat": {
+        "area_000ha": 190.2,
+        "production_000t": 348.21,
+        "yield_tons_per_ha": 1.8308
+      }
+    },
+    "Rawalpindi": {
+      "wheat": {
+        "area_000ha": 168.34,
+        "production_000t": 349.03,
+        "yield_tons_per_ha": 2.0734
+      }
+    },
+    "Islamabad Capital Territory": {
+      "wheat": {
+        "area_000ha": 33.18,
+        "production_000t": 64.19,
+        "yield_tons_per_ha": 1.9346
+      }
+    },
+    "Jhelum": {
+      "wheat": {
+        "area_000ha": 85.39,
+        "production_000t": 193.87,
+        "yield_tons_per_ha": 2.2704
+      },
+      "rice": {
+        "area_000ha": 2.43,
+        "production_000t": 4.83,
+        "yield_tons_per_ha": 1.9877
+      }
+    },
+    "Chakwal": {
+      "wheat": {
+        "area_000ha": 154.18,
+        "production_000t": 272.69,
+        "yield_tons_per_ha": 1.7686
+      }
+    },
+    "Sargodha": {
+      "wheat": {
+        "area_000ha": 200.72,
+        "production_000t": 630.12,
+        "yield_tons_per_ha": 3.1393
+      },
+      "cotton": {
+        "area_000ha": 1.62,
+        "production_000t": 2.7,
+        "yield_tons_per_ha": 1.6667
+      },
+      "rice": {
+        "area_000ha": 43.71,
+        "production_000t": 83.25,
+        "yield_tons_per_ha": 1.9046
+      },
+      "sugarcane": {
+        "area_000ha": 68.79,
+        "production_000t": 4318.0,
+        "yield_tons_per_ha": 62.7708
+      }
+    },
+    "Khushab": {
+      "wheat": {
+        "area_000ha": 123.02,
+        "production_000t": 290.75,
+        "yield_tons_per_ha": 2.3634
+      },
+      "cotton": {
+        "area_000ha": 0.81,
+        "production_000t": 1.8,
+        "yield_tons_per_ha": 2.2222
+      },
+      "sugarcane": {
+        "area_000ha": 6.88,
+        "production_000t": 375.36,
+        "yield_tons_per_ha": 54.5581
+      }
+    },
+    "Mianwali": {
+      "wheat": {
+        "area_000ha": 190.2,
+        "production_000t": 588.45,
+        "yield_tons_per_ha": 3.0938
+      },
+      "cotton": {
+        "area_000ha": 42.49,
+        "production_000t": 163.3,
+        "yield_tons_per_ha": 3.8433
+      },
+      "rice": {
+        "area_000ha": 3.24,
+        "production_000t": 8.47,
+        "yield_tons_per_ha": 2.6142
+      },
+      "sugarcane": {
+        "area_000ha": 5.67,
+        "production_000t": 392.0,
+        "yield_tons_per_ha": 69.1358
+      }
+    },
+    "Bhakkar": {
+      "wheat": {
+        "area_000ha": 163.09,
+        "production_000t": 471.66,
+        "yield_tons_per_ha": 2.892
+      },
+      "cotton": {
+        "area_000ha": 8.5,
+        "production_000t": 27.1,
+        "yield_tons_per_ha": 3.1882
+      },
+      "rice": {
+        "area_000ha": 1.0,
+        "production_000t": 1.86,
+        "yield_tons_per_ha": 1.86
+      },
+      "sugarcane": {
+        "area_000ha": 44.11,
+        "production_000t": 2860.16,
+        "yield_tons_per_ha": 64.8415
+      }
+    },
+    "Faisalabad": {
+      "wheat": {
+        "area_000ha": 233.09,
+        "production_000t": 852.94,
+        "yield_tons_per_ha": 3.6593
+      },
+      "cotton": {
+        "area_000ha": 10.52,
+        "production_000t": 44.7,
+        "yield_tons_per_ha": 4.249
+      },
+      "rice": {
+        "area_000ha": 32.37,
+        "production_000t": 72.6,
+        "yield_tons_per_ha": 2.2428
+      },
+      "sugarcane": {
+        "area_000ha": 91.46,
+        "production_000t": 6409.36,
+        "yield_tons_per_ha": 70.0783
+      }
+    },
+    "Toba Tek Singh": {
+      "wheat": {
+        "area_000ha": 130.31,
+        "production_000t": 470.51,
+        "yield_tons_per_ha": 3.6107
+      },
+      "cotton": {
+        "area_000ha": 12.14,
+        "production_000t": 32.8,
+        "yield_tons_per_ha": 2.7018
+      },
+      "rice": {
+        "area_000ha": 46.13,
+        "production_000t": 119.58,
+        "yield_tons_per_ha": 2.5922
+      },
+      "sugarcane": {
+        "area_000ha": 36.42,
+        "production_000t": 2520.0,
+        "yield_tons_per_ha": 69.1928
+      }
+    },
+    "Jhang": {
+      "wheat": {
+        "area_000ha": 263.44,
+        "production_000t": 934.32,
+        "yield_tons_per_ha": 3.5466
+      },
+      "cotton": {
+        "area_000ha": 12.55,
+        "production_000t": 31.0,
+        "yield_tons_per_ha": 2.4701
+      },
+      "rice": {
+        "area_000ha": 188.5,
+        "production_000t": 446.92,
+        "yield_tons_per_ha": 2.3709
+      },
+      "sugarcane": {
+        "area_000ha": 163.09,
+        "production_000t": 11758.24,
+        "yield_tons_per_ha": 72.0966
+      }
+    },
+    "Gujrat": {
+      "wheat": {
+        "area_000ha": 159.44,
+        "production_000t": 363.43,
+        "yield_tons_per_ha": 2.2794
+      },
+      "rice": {
+        "area_000ha": 34.81,
+        "production_000t": 64.8,
+        "yield_tons_per_ha": 1.8615
+      },
+      "sugarcane": {
+        "area_000ha": 2.83,
+        "production_000t": 120.12,
+        "yield_tons_per_ha": 42.4452
+      }
+    },
+    "Mandi Bahauddin": {
+      "wheat": {
+        "area_000ha": 133.54,
+        "production_000t": 432.43,
+        "yield_tons_per_ha": 3.2382
+      },
+      "rice": {
+        "area_000ha": 83.77,
+        "production_000t": 178.69,
+        "yield_tons_per_ha": 2.1331
+      },
+      "sugarcane": {
+        "area_000ha": 25.09,
+        "production_000t": 1321.84,
+        "yield_tons_per_ha": 52.6839
+      }
+    },
+    "Sialkot": {
+      "wheat": {
+        "area_000ha": 190.2,
+        "production_000t": 565.13,
+        "yield_tons_per_ha": 2.9712
+      },
+      "rice": {
+        "area_000ha": 187.0,
+        "production_000t": 364.35,
+        "yield_tons_per_ha": 1.9484
+      },
+      "sugarcane": {
+        "area_000ha": 4.86,
+        "production_000t": 395.52,
+        "yield_tons_per_ha": 81.3827
+      }
+    },
+    "Narowal": {
+      "wheat": {
+        "area_000ha": 126.25,
+        "production_000t": 364.83,
+        "yield_tons_per_ha": 2.8897
+      },
+      "rice": {
+        "area_000ha": 76.0,
+        "production_000t": 584.89,
+        "yield_tons_per_ha": 7.6959
+      },
+      "sugarcane": {
+        "area_000ha": 0.81,
+        "production_000t": 44.8,
+        "yield_tons_per_ha": 55.3086
+      }
+    },
+    "Gujranwala": {
+      "wheat": {
+        "area_000ha": 162.28,
+        "production_000t": 544.56,
+        "yield_tons_per_ha": 3.3557
+      },
+      "rice": {
+        "area_000ha": 258.0,
+        "production_000t": 377.04,
+        "yield_tons_per_ha": 1.4614
+      },
+      "sugarcane": {
+        "area_000ha": 3.24,
+        "production_000t": 188.16,
+        "yield_tons_per_ha": 58.0741
+      }
+    },
+    "Hafizabad": {
+      "wheat": {
+        "area_000ha": 150.94,
+        "production_000t": 595.46,
+        "yield_tons_per_ha": 3.945
+      },
+      "rice": {
+        "area_000ha": 149.0,
+        "production_000t": 138.43,
+        "yield_tons_per_ha": 0.9291
+      },
+      "sugarcane": {
+        "area_000ha": 2.02,
+        "production_000t": 86.4,
+        "yield_tons_per_ha": 42.7723
+      }
+    },
+    "Sheikhpura": {
+      "wheat": {
+        "area_000ha": 356.93,
+        "production_000t": 1211.54,
+        "yield_tons_per_ha": 3.3943
+      },
+      "rice": {
+        "area_000ha": 343.97,
+        "production_000t": 805.53,
+        "yield_tons_per_ha": 2.3419
+      },
+      "sugarcane": {
+        "area_000ha": 15.38,
+        "production_000t": 968.64,
+        "yield_tons_per_ha": 62.9805
+      }
+    },
+    "Lahore": {
+      "wheat": {
+        "area_000ha": 45.73,
+        "production_000t": 159.6,
+        "yield_tons_per_ha": 3.4901
+      },
+      "rice": {
+        "area_000ha": 24.68,
+        "production_000t": 52.76,
+        "yield_tons_per_ha": 2.1378
+      },
+      "sugarcane": {
+        "area_000ha": 0.4,
+        "production_000t": 24.24,
+        "yield_tons_per_ha": 60.6
+      }
+    },
+    "Kasur": {
+      "wheat": {
+        "area_000ha": 127.47,
+        "production_000t": 434.32,
+        "yield_tons_per_ha": 3.4072
+      },
+      "cotton": {
+        "area_000ha": 2.02,
+        "production_000t": 3.6,
+        "yield_tons_per_ha": 1.7822
+      },
+      "rice": {
+        "area_000ha": 79.0,
+        "production_000t": 190.01,
+        "yield_tons_per_ha": 2.4052
+      },
+      "sugarcane": {
+        "area_000ha": 23.47,
+        "production_000t": 1329.36,
+        "yield_tons_per_ha": 56.6408
+      }
+    },
+    "Okara": {
+      "wheat": {
+        "area_000ha": 129.09,
+        "production_000t": 506.44,
+        "yield_tons_per_ha": 3.9232
+      },
+      "cotton": {
+        "area_000ha": 4.45,
+        "production_000t": 19.3,
+        "yield_tons_per_ha": 4.3371
+      },
+      "rice": {
+        "area_000ha": 126.26,
+        "production_000t": 349.42,
+        "yield_tons_per_ha": 2.7675
+      },
+      "sugarcane": {
+        "area_000ha": 11.33,
+        "production_000t": 1150.24,
+        "yield_tons_per_ha": 101.5216
+      }
+    },
+    "Sahiwal": {
+      "wheat": {
+        "area_000ha": 111.29,
+        "production_000t": 407.77,
+        "yield_tons_per_ha": 3.664
+      },
+      "cotton": {
+        "area_000ha": 28.33,
+        "production_000t": 86.4,
+        "yield_tons_per_ha": 3.0498
+      },
+      "rice": {
+        "area_000ha": 34.8,
+        "production_000t": 95.27,
+        "yield_tons_per_ha": 2.7376
+      },
+      "sugarcane": {
+        "area_000ha": 3.64,
+        "production_000t": 231.48,
+        "yield_tons_per_ha": 63.5934
+      }
+    },
+    "Pakpattan": {
+      "wheat": {
+        "area_000ha": 85.39,
+        "production_000t": 324.77,
+        "yield_tons_per_ha": 3.8034
+      },
+      "cotton": {
+        "area_000ha": 8.9,
+        "production_000t": 32.8,
+        "yield_tons_per_ha": 3.6854
+      },
+      "rice": {
+        "area_000ha": 82.0,
+        "production_000t": 218.06,
+        "yield_tons_per_ha": 2.6593
+      },
+      "sugarcane": {
+        "area_000ha": 2.02,
+        "production_000t": 122.2,
+        "yield_tons_per_ha": 60.495
+      }
+    },
+    "Multan": {
+      "wheat": {
+        "area_000ha": 173.2,
+        "production_000t": 641.49,
+        "yield_tons_per_ha": 3.7038
+      },
+      "cotton": {
+        "area_000ha": 97.53,
+        "production_000t": 189.0,
+        "yield_tons_per_ha": 1.9379
+      },
+      "rice": {
+        "area_000ha": 29.95,
+        "production_000t": 68.74,
+        "yield_tons_per_ha": 2.2952
+      },
+      "sugarcane": {
+        "area_000ha": 4.05,
+        "production_000t": 260.0,
+        "yield_tons_per_ha": 64.1975
+      }
+    },
+    "Lodhran": {
+      "wheat": {
+        "area_000ha": 155.4,
+        "production_000t": 594.74,
+        "yield_tons_per_ha": 3.8272
+      },
+      "cotton": {
+        "area_000ha": 107.64,
+        "production_000t": 264.5,
+        "yield_tons_per_ha": 2.4573
+      },
+      "rice": {
+        "area_000ha": 10.92,
+        "production_000t": 24.34,
+        "yield_tons_per_ha": 2.2289
+      },
+      "sugarcane": {
+        "area_000ha": 3.64,
+        "production_000t": 327.24,
+        "yield_tons_per_ha": 89.9011
+      }
+    },
+    "Khanewal": {
+      "wheat": {
+        "area_000ha": 194.25,
+        "production_000t": 726.91,
+        "yield_tons_per_ha": 3.7421
+      },
+      "cotton": {
+        "area_000ha": 106.03,
+        "production_000t": 255.5,
+        "yield_tons_per_ha": 2.4097
+      },
+      "rice": {
+        "area_000ha": 45.73,
+        "production_000t": 112.58,
+        "yield_tons_per_ha": 2.4618
+      },
+      "sugarcane": {
+        "area_000ha": 6.47,
+        "production_000t": 472.96,
+        "yield_tons_per_ha": 73.1005
+      }
+    },
+    "Vihari": {
+      "wheat": {
+        "area_000ha": 159.85,
+        "production_000t": 594.24,
+        "yield_tons_per_ha": 3.7175
+      },
+      "cotton": {
+        "area_000ha": 65.96,
+        "production_000t": 168.3,
+        "yield_tons_per_ha": 2.5515
+      },
+      "rice": {
+        "area_000ha": 33.0,
+        "production_000t": 84.3,
+        "yield_tons_per_ha": 2.5545
+      },
+      "sugarcane": {
+        "area_000ha": 17.0,
+        "production_000t": 1206.24,
+        "yield_tons_per_ha": 70.9553
+      }
+    },
+    "Muzaffargarh": {
+      "wheat": {
+        "area_000ha": 234.31,
+        "production_000t": 730.8,
+        "yield_tons_per_ha": 3.1189
+      },
+      "cotton": {
+        "area_000ha": 90.65,
+        "production_000t": 126.6,
+        "yield_tons_per_ha": 1.3966
+      },
+      "rice": {
+        "area_000ha": 28.33,
+        "production_000t": 60.78,
+        "yield_tons_per_ha": 2.1454
+      },
+      "sugarcane": {
+        "area_000ha": 58.68,
+        "production_000t": 4158.6,
+        "yield_tons_per_ha": 70.8691
+      }
+    },
+    "Layyah": {
+      "wheat": {
+        "area_000ha": 271.54,
+        "production_000t": 837.94,
+        "yield_tons_per_ha": 3.0859
+      },
+      "cotton": {
+        "area_000ha": 40.87,
+        "production_000t": 94.9,
+        "yield_tons_per_ha": 2.322
+      },
+      "rice": {
+        "area_000ha": 0.81,
+        "production_000t": 1.6,
+        "yield_tons_per_ha": 1.9753
+      },
+      "sugarcane": {
+        "area_000ha": 18.21,
+        "production_000t": 1146.6,
+        "yield_tons_per_ha": 62.9654
+      }
+    },
+    "Dera Ghazi Khan": {
+      "wheat": {
+        "area_000ha": 220.55,
+        "production_000t": 739.46,
+        "yield_tons_per_ha": 3.3528
+      },
+      "cotton": {
+        "area_000ha": 46.54,
+        "production_000t": 50.9,
+        "yield_tons_per_ha": 1.0937
+      },
+      "rice": {
+        "area_000ha": 59.08,
+        "production_000t": 168.42,
+        "yield_tons_per_ha": 2.8507
+      },
+      "sugarcane": {
+        "area_000ha": 9.71,
+        "production_000t": 712.32,
+        "yield_tons_per_ha": 73.3594
+      }
+    },
+    "Rajanpur": {
+      "wheat": {
+        "area_000ha": 185.34,
+        "production_000t": 649.12,
+        "yield_tons_per_ha": 3.5023
+      },
+      "cotton": {
+        "area_000ha": 110.07,
+        "production_000t": 133.7,
+        "yield_tons_per_ha": 1.2147
+      },
+      "rice": {
+        "area_000ha": 16.19,
+        "production_000t": 31.41,
+        "yield_tons_per_ha": 1.9401
+      },
+      "sugarcane": {
+        "area_000ha": 53.42,
+        "production_000t": 3944.16,
+        "yield_tons_per_ha": 73.833
+      }
+    },
+    "Bahawalpur": {
+      "wheat": {
+        "area_000ha": 287.73,
+        "production_000t": 1073.61,
+        "yield_tons_per_ha": 3.7313
+      },
+      "cotton": {
+        "area_000ha": 233.9,
+        "production_000t": 525.5,
+        "yield_tons_per_ha": 2.2467
+      },
+      "rice": {
+        "area_000ha": 10.12,
+        "production_000t": 21.54,
+        "yield_tons_per_ha": 2.1285
+      },
+      "sugarcane": {
+        "area_000ha": 23.47,
+        "production_000t": 1482.48,
+        "yield_tons_per_ha": 63.1649
+      }
+    },
+    "Rahim Yar Khan": {
+      "wheat": {
+        "area_000ha": 289.34,
+        "production_000t": 1093.66,
+        "yield_tons_per_ha": 3.7798
+      },
+      "cotton": {
+        "area_000ha": 189.79,
+        "production_000t": 362.7,
+        "yield_tons_per_ha": 1.9111
+      },
+      "rice": {
+        "area_000ha": 28.32,
+        "production_000t": 56.1,
+        "yield_tons_per_ha": 1.9809
+      },
+      "sugarcane": {
+        "area_000ha": 216.5,
+        "production_000t": 17505.2,
+        "yield_tons_per_ha": 80.8554
+      }
+    },
+    "Bahawalnagar": {
+      "wheat": {
+        "area_000ha": 423.29,
+        "production_000t": 1563.04,
+        "yield_tons_per_ha": 3.6926
+      },
+      "cotton": {
+        "area_000ha": 263.85,
+        "production_000t": 593.2,
+        "yield_tons_per_ha": 2.2482
+      },
+      "rice": {
+        "area_000ha": 104.81,
+        "production_000t": 239.02,
+        "yield_tons_per_ha": 2.2805
+      },
+      "sugarcane": {
+        "area_000ha": 15.38,
+        "production_000t": 1100.48,
+        "yield_tons_per_ha": 71.5527
+      }
+    },
+    "Khairpur": {
+      "wheat": {
+        "area_000ha": 115.52,
+        "production_000t": 336.29,
+        "yield_tons_per_ha": 2.9111
+      },
+      "cotton": {
+        "area_000ha": 88.57,
+        "production_000t": 123.55,
+        "yield_tons_per_ha": 1.3949
+      }
+    },
+    "Ghotki": {
+      "wheat": {
+        "area_000ha": 107.86,
+        "production_000t": 289.65,
+        "yield_tons_per_ha": 2.6854
+      },
+      "cotton": {
+        "area_000ha": 89.62,
+        "production_000t": 144.83,
+        "yield_tons_per_ha": 1.616
+      }
+    },
+    "Sukkur": {
+      "wheat": {
+        "area_000ha": 49.66,
+        "production_000t": 171.77,
+        "yield_tons_per_ha": 3.4589
+      },
+      "cotton": {
+        "area_000ha": 40.67,
+        "production_000t": 109.58,
+        "yield_tons_per_ha": 2.6944
+      },
+      "rice": {
+        "area_000ha": 1.59,
+        "production_000t": 5.37,
+        "yield_tons_per_ha": 3.3774
+      }
+    },
+    "Naushehro Feroze": {
+      "wheat": {
+        "area_000ha": 95.12,
+        "production_000t": 339.5,
+        "yield_tons_per_ha": 3.5692
+      },
+      "cotton": {
+        "area_000ha": 38.61,
+        "production_000t": 65.75,
+        "yield_tons_per_ha": 1.7029
+      },
+      "rice": {
+        "area_000ha": 2.55,
+        "production_000t": 7.61,
+        "yield_tons_per_ha": 2.9843
+      }
+    },
+    "Nawabshah": {
+      "wheat": {
+        "area_000ha": 84.98,
+        "production_000t": 356.66,
+        "yield_tons_per_ha": 4.197
+      },
+      "cotton": {
+        "area_000ha": 66.34,
+        "production_000t": 108.84,
+        "yield_tons_per_ha": 1.6406
+      },
+      "rice": {
+        "area_000ha": 3.55,
+        "production_000t": 12.38,
+        "yield_tons_per_ha": 3.4873
+      }
+    },
+    "Jacobabad": {
+      "wheat": {
+        "area_000ha": 27.33,
+        "production_000t": 86.52,
+        "yield_tons_per_ha": 3.1658
+      },
+      "rice": {
+        "area_000ha": 102.23,
+        "production_000t": 401.89,
+        "yield_tons_per_ha": 3.9312
+      }
+    },
+    "Kashmore": {
+      "wheat": {
+        "area_000ha": 41.96,
+        "production_000t": 121.12,
+        "yield_tons_per_ha": 2.8866
+      },
+      "rice": {
+        "area_000ha": 70.16,
+        "production_000t": 177.81,
+        "yield_tons_per_ha": 2.5344
+      }
+    },
+    "Shikarpur": {
+      "wheat": {
+        "area_000ha": 45.32,
+        "production_000t": 127.85,
+        "yield_tons_per_ha": 2.8211
+      },
+      "rice": {
+        "area_000ha": 86.95,
+        "production_000t": 299.59,
+        "yield_tons_per_ha": 3.4455
+      }
+    },
+    "Qambar Shahdadkot": {
+      "wheat": {
+        "area_000ha": 78.38,
+        "production_000t": 234.16,
+        "yield_tons_per_ha": 2.9875
+      },
+      "rice": {
+        "area_000ha": 26.93,
+        "production_000t": 48.22,
+        "yield_tons_per_ha": 1.7906
+      }
+    },
+    "Sanghar": {
+      "wheat": {
+        "area_000ha": 123.79,
+        "production_000t": 348.1,
+        "yield_tons_per_ha": 2.812
+      },
+      "cotton": {
+        "area_000ha": 79.68,
+        "production_000t": 384.34,
+        "yield_tons_per_ha": 4.8235
+      },
+      "rice": {
+        "area_000ha": 5.69,
+        "production_000t": 17.81,
+        "yield_tons_per_ha": 3.1301
+      }
+    },
+    "Tharparkar": {
+      "wheat": {
+        "area_000ha": 2.38,
+        "production_000t": 5.97,
+        "yield_tons_per_ha": 2.5084
+      },
+      "cotton": {
+        "area_000ha": 0.95,
+        "production_000t": 2.99,
+        "yield_tons_per_ha": 3.1474
+      }
+    },
+    "Mirpurkhas": {
+      "wheat": {
+        "area_000ha": 73.89,
+        "production_000t": 223.34,
+        "yield_tons_per_ha": 3.0226
+      },
+      "cotton": {
+        "area_000ha": 37.87,
+        "production_000t": 127.04,
+        "yield_tons_per_ha": 3.3546
+      }
+    },
+    "Umerkot": {
+      "wheat": {
+        "area_000ha": 48.88,
+        "production_000t": 143.05,
+        "yield_tons_per_ha": 2.9266
+      },
+      "cotton": {
+        "area_000ha": 27.96,
+        "production_000t": 98.1,
+        "yield_tons_per_ha": 3.5086
+      }
+    },
+    "Dadu": {
+      "wheat": {
+        "area_000ha": 79.88,
+        "production_000t": 284.23,
+        "yield_tons_per_ha": 3.5582
+      },
+      "cotton": {
+        "area_000ha": 12.68,
+        "production_000t": 26.38,
+        "yield_tons_per_ha": 2.0804
+      },
+      "rice": {
+        "area_000ha": 22.06,
+        "production_000t": 66.38,
+        "yield_tons_per_ha": 3.0091
+      }
+    },
+    "Jamshoro": {
+      "wheat": {
+        "area_000ha": 42.59,
+        "production_000t": 110.37,
+        "yield_tons_per_ha": 2.5915
+      },
+      "cotton": {
+        "area_000ha": 15.78,
+        "production_000t": 55.15,
+        "yield_tons_per_ha": 3.4949
+      },
+      "rice": {
+        "area_000ha": 0.54,
+        "production_000t": 1.59,
+        "yield_tons_per_ha": 2.9444
+      }
+    },
+    "Hyderabad": {
+      "wheat": {
+        "area_000ha": 15.24,
+        "production_000t": 63.27,
+        "yield_tons_per_ha": 4.1516
+      },
+      "cotton": {
+        "area_000ha": 4.99,
+        "production_000t": 21.77,
+        "yield_tons_per_ha": 4.3627
+      },
+      "rice": {
+        "area_000ha": 0.91,
+        "production_000t": 3.36,
+        "yield_tons_per_ha": 3.6923
+      }
+    },
+    "Matiari": {
+      "wheat": {
+        "area_000ha": 47.6,
+        "production_000t": 188.23,
+        "yield_tons_per_ha": 3.9544
+      },
+      "cotton": {
+        "area_000ha": 39.5,
+        "production_000t": 142.69,
+        "yield_tons_per_ha": 3.6124
+      }
+    },
+    "Tando Allahyar": {
+      "wheat": {
+        "area_000ha": 36.0,
+        "production_000t": 112.36,
+        "yield_tons_per_ha": 3.1211
+      },
+      "cotton": {
+        "area_000ha": 23.88,
+        "production_000t": 99.63,
+        "yield_tons_per_ha": 4.1721
+      }
+    },
+    "Tando Muhammad Khan": {
+      "wheat": {
+        "area_000ha": 8.22,
+        "production_000t": 26.01,
+        "yield_tons_per_ha": 3.1642
+      },
+      "cotton": {
+        "area_000ha": 3.89,
+        "production_000t": 11.48,
+        "yield_tons_per_ha": 2.9512
+      },
+      "rice": {
+        "area_000ha": 11.45,
+        "production_000t": 30.85,
+        "yield_tons_per_ha": 2.6943
+      }
+    },
+    "Badin": {
+      "wheat": {
+        "area_000ha": 39.63,
+        "production_000t": 90.03,
+        "yield_tons_per_ha": 2.2718
+      },
+      "cotton": {
+        "area_000ha": 12.69,
+        "production_000t": 42.57,
+        "yield_tons_per_ha": 3.3546
+      },
+      "rice": {
+        "area_000ha": 124.58,
+        "production_000t": 382.85,
+        "yield_tons_per_ha": 3.0731
+      }
+    },
+    "Thatta": {
+      "wheat": {
+        "area_000ha": 15.54,
+        "production_000t": 35.49,
+        "yield_tons_per_ha": 2.2838
+      },
+      "cotton": {
+        "area_000ha": 5.19,
+        "production_000t": 20.12,
+        "yield_tons_per_ha": 3.8767
+      },
+      "rice": {
+        "area_000ha": 59.44,
+        "production_000t": 254.12,
+        "yield_tons_per_ha": 4.2752
+      }
+    },
+    "Karachi": {
+      "wheat": {
+        "area_000ha": 1.58,
+        "production_000t": 4.52,
+        "yield_tons_per_ha": 2.8608
+      },
+      "cotton": {
+        "area_000ha": 0.39,
+        "production_000t": 1.51,
+        "yield_tons_per_ha": 3.8718
+      }
+    },
+    "Bannu": {
+      "wheat": {
+        "area_000ha": 24.19,
+        "production_000t": 50.04,
+        "yield_tons_per_ha": 2.0686
+      },
+      "rice": {
+        "area_000ha": 3.07,
+        "production_000t": 5.69,
+        "yield_tons_per_ha": 1.8534
+      }
+    },
+    "Lakki Marwat": {
+      "wheat": {
+        "area_000ha": 18.32,
+        "production_000t": 20.85,
+        "yield_tons_per_ha": 1.1381
+      },
+      "rice": {
+        "area_000ha": 0.2,
+        "production_000t": 0.31,
+        "yield_tons_per_ha": 1.55
+      }
+    },
+    "Dera Ismail Khan": {
+      "wheat": {
+        "area_000ha": 57.95,
+        "production_000t": 112.45,
+        "yield_tons_per_ha": 1.9405
+      },
+      "rice": {
+        "area_000ha": 9.38,
+        "production_000t": 25.69,
+        "yield_tons_per_ha": 2.7388
+      }
+    },
+    "Tank": {
+      "wheat": {
+        "area_000ha": 14.91,
+        "production_000t": 31.35,
+        "yield_tons_per_ha": 2.1026
+      },
+      "rice": {
+        "area_000ha": 0.72,
+        "production_000t": 1.19,
+        "yield_tons_per_ha": 1.6528
+      }
+    },
+    "Abbottabad": {
+      "wheat": {
+        "area_000ha": 14.44,
+        "production_000t": 21.86,
+        "yield_tons_per_ha": 1.5139
+      }
+    },
+    "Battagram": {
+      "wheat": {
+        "area_000ha": 7.99,
+        "production_000t": 12.44,
+        "yield_tons_per_ha": 1.5569
+      },
+      "rice": {
+        "area_000ha": 1.63,
+        "production_000t": 3.58,
+        "yield_tons_per_ha": 2.1963
+      }
+    },
+    "Haripur": {
+      "wheat": {
+        "area_000ha": 35.26,
+        "production_000t": 55.1,
+        "yield_tons_per_ha": 1.5627
+      }
+    },
+    "Kohistan": {
+      "wheat": {
+        "area_000ha": 2.07,
+        "production_000t": 3.14,
+        "yield_tons_per_ha": 1.5169
+      },
+      "rice": {
+        "area_000ha": 0.08,
+        "production_000t": 0.17,
+        "yield_tons_per_ha": 2.125
+      }
+    },
+    "Mansehra": {
+      "wheat": {
+        "area_000ha": 34.4,
+        "production_000t": 56.36,
+        "yield_tons_per_ha": 1.6384
+      },
+      "rice": {
+        "area_000ha": 1.42,
+        "production_000t": 3.73,
+        "yield_tons_per_ha": 2.6268
+      }
+    },
+    "Kohat": {
+      "wheat": {
+        "area_000ha": 27.25,
+        "production_000t": 43.8,
+        "yield_tons_per_ha": 1.6073
+      },
+      "rice": {
+        "area_000ha": 0.01,
+        "production_000t": 0.01,
+        "yield_tons_per_ha": 1.0
+      }
+    },
+    "Karak": {
+      "wheat": {
+        "area_000ha": 5.9,
+        "production_000t": 3.42,
+        "yield_tons_per_ha": 0.5797
+      }
+    },
+    "Hangu": {
+      "wheat": {
+        "area_000ha": 8.18,
+        "production_000t": 11.43,
+        "yield_tons_per_ha": 1.3973
+      },
+      "rice": {
+        "area_000ha": 0.11,
+        "production_000t": 0.2,
+        "yield_tons_per_ha": 1.8182
+      }
+    },
+    "Mardan": {
+      "wheat": {
+        "area_000ha": 44.45,
+        "production_000t": 115.97,
+        "yield_tons_per_ha": 2.609
+      },
+      "rice": {
+        "area_000ha": 2.65,
+        "production_000t": 4.38,
+        "yield_tons_per_ha": 1.6528
+      }
+    },
+    "Swabi": {
+      "wheat": {
+        "area_000ha": 39.0,
+        "production_000t": 97.4,
+        "yield_tons_per_ha": 2.4974
+      },
+      "rice": {
+        "area_000ha": 0.47,
+        "production_000t": 0.77,
+        "yield_tons_per_ha": 1.6383
+      }
+    },
+    "Buner": {
+      "wheat": {
+        "area_000ha": 49.26,
+        "production_000t": 70.26,
+        "yield_tons_per_ha": 1.4263
+      },
+      "rice": {
+        "area_000ha": 0.17,
+        "production_000t": 0.4,
+        "yield_tons_per_ha": 2.3529
+      }
+    },
+    "Chitral": {
+      "wheat": {
+        "area_000ha": 8.35,
+        "production_000t": 16.12,
+        "yield_tons_per_ha": 1.9305
+      },
+      "rice": {
+        "area_000ha": 1.83,
+        "production_000t": 5.2,
+        "yield_tons_per_ha": 2.8415
+      }
+    },
+    "Malakand": {
+      "wheat": {
+        "area_000ha": 26.5,
+        "production_000t": 46.41,
+        "yield_tons_per_ha": 1.7513
+      },
+      "rice": {
+        "area_000ha": 3.13,
+        "production_000t": 8.86,
+        "yield_tons_per_ha": 2.8307
+      }
+    },
+    "Lower Dir": {
+      "wheat": {
+        "area_000ha": 28.86,
+        "production_000t": 55.86,
+        "yield_tons_per_ha": 1.9356
+      },
+      "rice": {
+        "area_000ha": 8.11,
+        "production_000t": 19.64,
+        "yield_tons_per_ha": 2.4217
+      }
+    },
+    "Upper Dir": {
+      "wheat": {
+        "area_000ha": 25.67,
+        "production_000t": 46.71,
+        "yield_tons_per_ha": 1.8196
+      },
+      "rice": {
+        "area_000ha": 6.54,
+        "production_000t": 12.37,
+        "yield_tons_per_ha": 1.8914
+      }
+    },
+    "Shangla": {
+      "wheat": {
+        "area_000ha": 25.58,
+        "production_000t": 33.84,
+        "yield_tons_per_ha": 1.3229
+      },
+      "rice": {
+        "area_000ha": 1.36,
+        "production_000t": 3.81,
+        "yield_tons_per_ha": 2.8015
+      }
+    },
+    "Swat": {
+      "wheat": {
+        "area_000ha": 58.75,
+        "production_000t": 113.52,
+        "yield_tons_per_ha": 1.9323
+      },
+      "rice": {
+        "area_000ha": 4.28,
+        "production_000t": 14.86,
+        "yield_tons_per_ha": 3.472
+      }
+    },
+    "Peshawar": {
+      "wheat": {
+        "area_000ha": 34.67,
+        "production_000t": 84.93,
+        "yield_tons_per_ha": 2.4497
+      },
+      "rice": {
+        "area_000ha": 0.06,
+        "production_000t": 0.22,
+        "yield_tons_per_ha": 3.6667
+      }
+    },
+    "Charsadda": {
+      "wheat": {
+        "area_000ha": 35.78,
+        "production_000t": 101.33,
+        "yield_tons_per_ha": 2.832
+      },
+      "rice": {
+        "area_000ha": 0.07,
+        "production_000t": 0.15,
+        "yield_tons_per_ha": 2.1429
+      }
+    },
+    "Nowshera": {
+      "wheat": {
+        "area_000ha": 28.0,
+        "production_000t": 68.1,
+        "yield_tons_per_ha": 2.4321
+      },
+      "rice": {
+        "area_000ha": 0.02,
+        "production_000t": 0.05,
+        "yield_tons_per_ha": 2.5
+      }
+    },
+    "Bajaur": {
+      "wheat": {
+        "area_000ha": 39.84,
+        "production_000t": 69.94,
+        "yield_tons_per_ha": 1.7555
+      },
+      "rice": {
+        "area_000ha": 4.79,
+        "production_000t": 7.55,
+        "yield_tons_per_ha": 1.5762
+      }
+    },
+    "Khyber": {
+      "wheat": {
+        "area_000ha": 12.63,
+        "production_000t": 25.29,
+        "yield_tons_per_ha": 2.0024
+      }
+    },
+    "Kurram": {
+      "wheat": {
+        "area_000ha": 27.13,
+        "production_000t": 54.32,
+        "yield_tons_per_ha": 2.0022
+      },
+      "rice": {
+        "area_000ha": 6.0,
+        "production_000t": 17.45,
+        "yield_tons_per_ha": 2.9083
+      }
+    },
+    "Mohmand": {
+      "wheat": {
+        "area_000ha": 8.32,
+        "production_000t": 13.1,
+        "yield_tons_per_ha": 1.5745
+      }
+    },
+    "North Waziristan": {
+      "wheat": {
+        "area_000ha": 5.81,
+        "production_000t": 13.12,
+        "yield_tons_per_ha": 2.2582
+      },
+      "rice": {
+        "area_000ha": 0.19,
+        "production_000t": 0.3,
+        "yield_tons_per_ha": 1.5789
+      }
+    },
+    "South Waziristan": {
+      "wheat": {
+        "area_000ha": 9.88,
+        "production_000t": 13.13,
+        "yield_tons_per_ha": 1.3289
+      }
+    },
+    "Orakzai": {
+      "wheat": {
+        "area_000ha": 4.77,
+        "production_000t": 8.69,
+        "yield_tons_per_ha": 1.8218
+      },
+      "rice": {
+        "area_000ha": 0.39,
+        "production_000t": 0.7,
+        "yield_tons_per_ha": 1.7949
+      }
+    },
+    "Quetta": {
+      "wheat": {
+        "area_000ha": 2.39,
+        "production_000t": 5.59,
+        "yield_tons_per_ha": 2.3389
+      }
+    },
+    "Pishin": {
+      "wheat": {
+        "area_000ha": 4.97,
+        "production_000t": 13.23,
+        "yield_tons_per_ha": 2.662
+      }
+    },
+    "Qilla Abdullah": {
+      "wheat": {
+        "area_000ha": 1.79,
+        "production_000t": 4.28,
+        "yield_tons_per_ha": 2.3911
+      }
+    },
+    "Chagai": {
+      "wheat": {
+        "area_000ha": 6.03,
+        "production_000t": 15.37,
+        "yield_tons_per_ha": 2.5489
+      }
+    },
+    "Nushki": {
+      "wheat": {
+        "area_000ha": 8.42,
+        "production_000t": 21.01,
+        "yield_tons_per_ha": 2.4952
+      }
+    },
+    "Loralai": {
+      "wheat": {
+        "area_000ha": 12.07,
+        "production_000t": 27.62,
+        "yield_tons_per_ha": 2.2883
+      }
+    },
+    "Musakhel": {
+      "wheat": {
+        "area_000ha": 3.53,
+        "production_000t": 6.73,
+        "yield_tons_per_ha": 1.9065
+      }
+    },
+    "Barkhan": {
+      "wheat": {
+        "area_000ha": 16.75,
+        "production_000t": 42.21,
+        "yield_tons_per_ha": 2.52
+      }
+    },
+    "Zhob": {
+      "wheat": {
+        "area_000ha": 6.21,
+        "production_000t": 14.34,
+        "yield_tons_per_ha": 2.3092
+      }
+    },
+    "Qilla Saifullah": {
+      "wheat": {
+        "area_000ha": 8.37,
+        "production_000t": 21.37,
+        "yield_tons_per_ha": 2.5532
+      }
+    },
+    "Sibi": {
+      "wheat": {
+        "area_000ha": 17.32,
+        "production_000t": 44.08,
+        "yield_tons_per_ha": 2.545
+      }
+    },
+    "Ziarat": {
+      "wheat": {
+        "area_000ha": 0.53,
+        "production_000t": 1.33,
+        "yield_tons_per_ha": 2.5094
+      }
+    },
+    "Kohlu": {
+      "wheat": {
+        "area_000ha": 10.3,
+        "production_000t": 26.03,
+        "yield_tons_per_ha": 2.5272
+      }
+    },
+    "Dera Bugti": {
+      "wheat": {
+        "area_000ha": 27.4,
+        "production_000t": 48.8,
+        "yield_tons_per_ha": 1.781
+      },
+      "rice": {
+        "area_000ha": 0.17,
+        "production_000t": 0.47,
+        "yield_tons_per_ha": 2.7647
+      }
+    },
+    "Nasirabad": {
+      "wheat": {
+        "area_000ha": 93.25,
+        "production_000t": 325.62,
+        "yield_tons_per_ha": 3.4919
+      }
+    },
+    "Jafarabad": {
+      "wheat": {
+        "area_000ha": 73.98,
+        "production_000t": 214.54,
+        "yield_tons_per_ha": 2.9
+      },
+      "rice": {
+        "area_000ha": 75.15,
+        "production_000t": 85.51,
+        "yield_tons_per_ha": 1.1379
+      },
+      "sugarcane": {
+        "area_000ha": 0.01,
+        "production_000t": 0.53,
+        "yield_tons_per_ha": 53.0
+      }
+    },
+    "Kachhi": {
+      "wheat": {
+        "area_000ha": 30.99,
+        "production_000t": 86.61,
+        "yield_tons_per_ha": 2.7948
+      }
+    },
+    "Jhal Magsi": {
+      "wheat": {
+        "area_000ha": 58.53,
+        "production_000t": 174.68,
+        "yield_tons_per_ha": 2.9845
+      },
+      "rice": {
+        "area_000ha": 0.21,
+        "production_000t": 0.16,
+        "yield_tons_per_ha": 0.7619
+      }
+    },
+    "Kalat": {
+      "wheat": {
+        "area_000ha": 7.58,
+        "production_000t": 19.76,
+        "yield_tons_per_ha": 2.6069
+      }
+    },
+    "Mastung": {
+      "wheat": {
+        "area_000ha": 4.9,
+        "production_000t": 13.18,
+        "yield_tons_per_ha": 2.6898
+      }
+    },
+    "Khuzdar": {
+      "wheat": {
+        "area_000ha": 67.0,
+        "production_000t": 182.51,
+        "yield_tons_per_ha": 2.724
+      },
+      "rice": {
+        "area_000ha": 1.29,
+        "production_000t": 3.24,
+        "yield_tons_per_ha": 2.5116
+      }
+    },
+    "Awaran": {
+      "wheat": {
+        "area_000ha": 21.0,
+        "production_000t": 55.66,
+        "yield_tons_per_ha": 2.6505
+      },
+      "rice": {
+        "area_000ha": 0.28,
+        "production_000t": 0.62,
+        "yield_tons_per_ha": 2.2143
+      }
+    },
+    "Kharan": {
+      "wheat": {
+        "area_000ha": 9.73,
+        "production_000t": 25.75,
+        "yield_tons_per_ha": 2.6465
+      }
+    },
+    "Lasbela": {
+      "wheat": {
+        "area_000ha": 25.52,
+        "production_000t": 71.47,
+        "yield_tons_per_ha": 2.8005
+      },
+      "sugarcane": {
+        "area_000ha": 0.01,
+        "production_000t": 0.36,
+        "yield_tons_per_ha": 36.0
+      }
+    },
+    "Kech": {
+      "wheat": {
+        "area_000ha": 5.21,
+        "production_000t": 13.57,
+        "yield_tons_per_ha": 2.6046
+      },
+      "rice": {
+        "area_000ha": 1.02,
+        "production_000t": 2.19,
+        "yield_tons_per_ha": 2.1471
+      }
+    },
+    "Panjgur": {
+      "wheat": {
+        "area_000ha": 6.49,
+        "production_000t": 13.64,
+        "yield_tons_per_ha": 2.1017
+      },
+      "rice": {
+        "area_000ha": 0.02,
+        "production_000t": 0.03,
+        "yield_tons_per_ha": 1.5
+      }
+    },
+    "Gwadar": {
+      "wheat": {
+        "area_000ha": 0.42,
+        "production_000t": 0.92,
+        "yield_tons_per_ha": 2.1905
+      }
+    }
+  },
+  "2021-22": {
+    "Attock": {
+      "wheat": {
+        "area_000ha": 182.92,
+        "production_000t": 310.34,
+        "yield_tons_per_ha": 1.6966
+      }
+    },
+    "Rawalpindi": {
+      "wheat": {
+        "area_000ha": 159.85,
+        "production_000t": 311.16,
+        "yield_tons_per_ha": 1.9466
+      }
+    },
+    "Islamabad Capital Territory": {
+      "wheat": {
+        "area_000ha": 32.78,
+        "production_000t": 59.68,
+        "yield_tons_per_ha": 1.8206
+      }
+    },
+    "Jhelum": {
+      "wheat": {
+        "area_000ha": 77.29,
+        "production_000t": 152.22,
+        "yield_tons_per_ha": 1.9695
+      }
+    },
+    "Chakwal": {
+      "wheat": {
+        "area_000ha": 150.53,
+        "production_000t": 252.02,
+        "yield_tons_per_ha": 1.6742
+      },
+      "rice": {
+        "area_000ha": 0.4,
+        "production_000t": 0.97,
+        "yield_tons_per_ha": 2.425
+      }
+    },
+    "Sargodha": {
+      "wheat": {
+        "area_000ha": 195.05,
+        "production_000t": 545.62,
+        "yield_tons_per_ha": 2.7973
+      },
+      "cotton": {
+        "area_000ha": 1.62,
+        "production_000t": 2.67,
+        "yield_tons_per_ha": 1.6481
+      },
+      "sugarcane": {
+        "area_000ha": 64.75,
+        "production_000t": 4761.6,
+        "yield_tons_per_ha": 73.5382
+      }
+    },
+    "Khushab": {
+      "wheat": {
+        "area_000ha": 139.21,
+        "production_000t": 287.97,
+        "yield_tons_per_ha": 2.0686
+      },
+      "cotton": {
+        "area_000ha": 0.4,
+        "production_000t": 0.64,
+        "yield_tons_per_ha": 1.6
+      },
+      "sugarcane": {
+        "area_000ha": 7.28,
+        "production_000t": 426.24,
+        "yield_tons_per_ha": 58.5495
+      }
+    },
+    "Mianwali": {
+      "wheat": {
+        "area_000ha": 200.32,
+        "production_000t": 539.96,
+        "yield_tons_per_ha": 2.6955
+      },
+      "cotton": {
+        "area_000ha": 30.35,
+        "production_000t": 125.63,
+        "yield_tons_per_ha": 4.1394
+      },
+      "rice": {
+        "area_000ha": 55.85,
+        "production_000t": 113.48,
+        "yield_tons_per_ha": 2.0319
+      },
+      "sugarcane": {
+        "area_000ha": 5.26,
+        "production_000t": 353.08,
+        "yield_tons_per_ha": 67.1255
+      }
+    },
+    "Bhakkar": {
+      "wheat": {
+        "area_000ha": 180.08,
+        "production_000t": 475.43,
+        "yield_tons_per_ha": 2.6401
+      },
+      "cotton": {
+        "area_000ha": 3.24,
+        "production_000t": 11.52,
+        "yield_tons_per_ha": 3.5556
+      },
+      "rice": {
+        "area_000ha": 25.5,
+        "production_000t": 50.86,
+        "yield_tons_per_ha": 1.9945
+      },
+      "sugarcane": {
+        "area_000ha": 35.21,
+        "production_000t": 2554.32,
+        "yield_tons_per_ha": 72.5453
+      }
+    },
+    "Faisalabad": {
+      "wheat": {
+        "area_000ha": 240.78,
+        "production_000t": 788.73,
+        "yield_tons_per_ha": 3.2757
+      },
+      "cotton": {
+        "area_000ha": 4.86,
+        "production_000t": 21.94,
+        "yield_tons_per_ha": 4.5144
+      },
+      "rice": {
+        "area_000ha": 5.26,
+        "production_000t": 13.14,
+        "yield_tons_per_ha": 2.4981
+      },
+      "sugarcane": {
+        "area_000ha": 93.08,
+        "production_000t": 6357.2,
+        "yield_tons_per_ha": 68.2982
+      }
+    },
+    "Toba Tek Singh": {
+      "wheat": {
+        "area_000ha": 135.16,
+        "production_000t": 451.3,
+        "yield_tons_per_ha": 3.339
+      },
+      "cotton": {
+        "area_000ha": 6.47,
+        "production_000t": 22.75,
+        "yield_tons_per_ha": 3.5162
+      },
+      "rice": {
+        "area_000ha": 1.62,
+        "production_000t": 3.34,
+        "yield_tons_per_ha": 2.0617
+      },
+      "sugarcane": {
+        "area_000ha": 38.85,
+        "production_000t": 2630.4,
+        "yield_tons_per_ha": 67.7066
+      }
+    },
+    "Jhang": {
+      "wheat": {
+        "area_000ha": 255.76,
+        "production_000t": 810.73,
+        "yield_tons_per_ha": 3.1699
+      },
+      "cotton": {
+        "area_000ha": 4.45,
+        "production_000t": 14.56,
+        "yield_tons_per_ha": 3.2719
+      },
+      "rice": {
+        "area_000ha": 93.88,
+        "production_000t": 218.53,
+        "yield_tons_per_ha": 2.3278
+      },
+      "sugarcane": {
+        "area_000ha": 118.97,
+        "production_000t": 8952.24,
+        "yield_tons_per_ha": 75.2479
+      }
+    },
+    "Gujrat": {
+      "wheat": {
+        "area_000ha": 157.02,
+        "production_000t": 321.88,
+        "yield_tons_per_ha": 2.0499
+      },
+      "rice": {
+        "area_000ha": 161.07,
+        "production_000t": 385.57,
+        "yield_tons_per_ha": 2.3938
+      },
+      "sugarcane": {
+        "area_000ha": 3.24,
+        "production_000t": 135.68,
+        "yield_tons_per_ha": 41.8765
+      }
+    },
+    "Mandi Bahauddin": {
+      "wheat": {
+        "area_000ha": 127.07,
+        "production_000t": 355.7,
+        "yield_tons_per_ha": 2.7992
+      },
+      "rice": {
+        "area_000ha": 52.21,
+        "production_000t": 132.84,
+        "yield_tons_per_ha": 2.5443
+      },
+      "sugarcane": {
+        "area_000ha": 26.3,
+        "production_000t": 1435.2,
+        "yield_tons_per_ha": 54.5703
+      }
+    },
+    "Sialkot": {
+      "wheat": {
+        "area_000ha": 185.34,
+        "production_000t": 462.4,
+        "yield_tons_per_ha": 2.4949
+      },
+      "rice": {
+        "area_000ha": 38.44,
+        "production_000t": 70.49,
+        "yield_tons_per_ha": 1.8338
+      },
+      "sugarcane": {
+        "area_000ha": 2.43,
+        "production_000t": 129.36,
+        "yield_tons_per_ha": 53.2346
+      }
+    },
+    "Narowal": {
+      "wheat": {
+        "area_000ha": 123.43,
+        "production_000t": 279.72,
+        "yield_tons_per_ha": 2.2662
+      },
+      "rice": {
+        "area_000ha": 94.3,
+        "production_000t": 206.0,
+        "yield_tons_per_ha": 2.1845
+      },
+      "sugarcane": {
+        "area_000ha": 1.62,
+        "production_000t": 58.88,
+        "yield_tons_per_ha": 36.3457
+      }
+    },
+    "Gujranwala": {
+      "wheat": {
+        "area_000ha": 230.67,
+        "production_000t": 685.14,
+        "yield_tons_per_ha": 2.9702
+      },
+      "rice": {
+        "area_000ha": 167.94,
+        "production_000t": 251.76,
+        "yield_tons_per_ha": 1.4991
+      },
+      "sugarcane": {
+        "area_000ha": 1.21,
+        "production_000t": 70.32,
+        "yield_tons_per_ha": 58.1157
+      }
+    },
+    "Hafizabad": {
+      "wheat": {
+        "area_000ha": 146.9,
+        "production_000t": 483.81,
+        "yield_tons_per_ha": 3.2935
+      },
+      "rice": {
+        "area_000ha": 72.03,
+        "production_000t": 115.55,
+        "yield_tons_per_ha": 1.6042
+      },
+      "sugarcane": {
+        "area_000ha": 6.47,
+        "production_000t": 388.48,
+        "yield_tons_per_ha": 60.0433
+      }
+    },
+    "Sheikhpura": {
+      "wheat": {
+        "area_000ha": 346.4,
+        "production_000t": 1096.36,
+        "yield_tons_per_ha": 3.165
+      },
+      "rice": {
+        "area_000ha": 411.15,
+        "production_000t": 926.3,
+        "yield_tons_per_ha": 2.2529
+      },
+      "sugarcane": {
+        "area_000ha": 13.36,
+        "production_000t": 831.76,
+        "yield_tons_per_ha": 62.2575
+      }
+    },
+    "Lahore": {
+      "wheat": {
+        "area_000ha": 43.71,
+        "production_000t": 150.12,
+        "yield_tons_per_ha": 3.4345
+      },
+      "sugarcane": {
+        "area_000ha": 0.81,
+        "production_000t": 49.36,
+        "yield_tons_per_ha": 60.9383
+      }
+    },
+    "Kasur": {
+      "wheat": {
+        "area_000ha": 129.9,
+        "production_000t": 406.26,
+        "yield_tons_per_ha": 3.1275
+      },
+      "cotton": {
+        "area_000ha": 1.21,
+        "production_000t": 1.75,
+        "yield_tons_per_ha": 1.4463
+      },
+      "rice": {
+        "area_000ha": 243.21,
+        "production_000t": 483.04,
+        "yield_tons_per_ha": 1.9861
+      },
+      "sugarcane": {
+        "area_000ha": 24.28,
+        "production_000t": 1363.2,
+        "yield_tons_per_ha": 56.145
+      }
+    },
+    "Okara": {
+      "wheat": {
+        "area_000ha": 133.14,
+        "production_000t": 502.58,
+        "yield_tons_per_ha": 3.7748
+      },
+      "cotton": {
+        "area_000ha": 3.24,
+        "production_000t": 17.78,
+        "yield_tons_per_ha": 5.4877
+      },
+      "rice": {
+        "area_000ha": 113.71,
+        "production_000t": 273.49,
+        "yield_tons_per_ha": 2.4052
+      },
+      "sugarcane": {
+        "area_000ha": 12.95,
+        "production_000t": 998.4,
+        "yield_tons_per_ha": 77.0965
+      }
+    },
+    "Sahiwal": {
+      "wheat": {
+        "area_000ha": 112.91,
+        "production_000t": 384.91,
+        "yield_tons_per_ha": 3.409
+      },
+      "cotton": {
+        "area_000ha": 15.78,
+        "production_000t": 65.49,
+        "yield_tons_per_ha": 4.1502
+      },
+      "rice": {
+        "area_000ha": 32.38,
+        "production_000t": 68.21,
+        "yield_tons_per_ha": 2.1065
+      },
+      "sugarcane": {
+        "area_000ha": 4.05,
+        "production_000t": 238.0,
+        "yield_tons_per_ha": 58.7654
+      }
+    },
+    "Pakpattan": {
+      "wheat": {
+        "area_000ha": 93.89,
+        "production_000t": 323.5,
+        "yield_tons_per_ha": 3.4455
+      },
+      "cotton": {
+        "area_000ha": 3.24,
+        "production_000t": 13.57,
+        "yield_tons_per_ha": 4.1883
+      },
+      "rice": {
+        "area_000ha": 99.95,
+        "production_000t": 225.46,
+        "yield_tons_per_ha": 2.2557
+      },
+      "sugarcane": {
+        "area_000ha": 2.02,
+        "production_000t": 111.6,
+        "yield_tons_per_ha": 55.2475
+      }
+    },
+    "Multan": {
+      "wheat": {
+        "area_000ha": 176.84,
+        "production_000t": 642.04,
+        "yield_tons_per_ha": 3.6306
+      },
+      "cotton": {
+        "area_000ha": 81.34,
+        "production_000t": 354.93,
+        "yield_tons_per_ha": 4.3635
+      },
+      "rice": {
+        "area_000ha": 156.61,
+        "production_000t": 461.36,
+        "yield_tons_per_ha": 2.9459
+      },
+      "sugarcane": {
+        "area_000ha": 4.05,
+        "production_000t": 270.0,
+        "yield_tons_per_ha": 66.6667
+      }
+    },
+    "Lodhran": {
+      "wheat": {
+        "area_000ha": 165.51,
+        "production_000t": 622.83,
+        "yield_tons_per_ha": 3.7631
+      },
+      "cotton": {
+        "area_000ha": 95.5,
+        "production_000t": 469.25,
+        "yield_tons_per_ha": 4.9136
+      },
+      "rice": {
+        "area_000ha": 44.52,
+        "production_000t": 107.04,
+        "yield_tons_per_ha": 2.4043
+      },
+      "sugarcane": {
+        "area_000ha": 4.86,
+        "production_000t": 364.8,
+        "yield_tons_per_ha": 75.0617
+      }
+    },
+    "Khanewal": {
+      "wheat": {
+        "area_000ha": 214.88,
+        "production_000t": 792.89,
+        "yield_tons_per_ha": 3.6899
+      },
+      "cotton": {
+        "area_000ha": 88.62,
+        "production_000t": 334.34,
+        "yield_tons_per_ha": 3.7727
+      },
+      "rice": {
+        "area_000ha": 105.21,
+        "production_000t": 256.63,
+        "yield_tons_per_ha": 2.4392
+      },
+      "sugarcane": {
+        "area_000ha": 7.28,
+        "production_000t": 504.0,
+        "yield_tons_per_ha": 69.2308
+      }
+    },
+    "Vihari": {
+      "wheat": {
+        "area_000ha": 180.49,
+        "production_000t": 629.04,
+        "yield_tons_per_ha": 3.4852
+      },
+      "cotton": {
+        "area_000ha": 46.54,
+        "production_000t": 179.5,
+        "yield_tons_per_ha": 3.8569
+      },
+      "rice": {
+        "area_000ha": 34.4,
+        "production_000t": 73.68,
+        "yield_tons_per_ha": 2.1419
+      },
+      "sugarcane": {
+        "area_000ha": 18.21,
+        "production_000t": 1258.2,
+        "yield_tons_per_ha": 69.0939
+      }
+    },
+    "Muzaffargarh": {
+      "wheat": {
+        "area_000ha": 242.4,
+        "production_000t": 736.05,
+        "yield_tons_per_ha": 3.0365
+      },
+      "cotton": {
+        "area_000ha": 89.43,
+        "production_000t": 324.13,
+        "yield_tons_per_ha": 3.6244
+      },
+      "rice": {
+        "area_000ha": 29.13,
+        "production_000t": 56.97,
+        "yield_tons_per_ha": 1.9557
+      },
+      "sugarcane": {
+        "area_000ha": 52.61,
+        "production_000t": 3811.6,
+        "yield_tons_per_ha": 72.4501
+      }
+    },
+    "Layyah": {
+      "wheat": {
+        "area_000ha": 273.16,
+        "production_000t": 817.83,
+        "yield_tons_per_ha": 2.994
+      },
+      "cotton": {
+        "area_000ha": 31.97,
+        "production_000t": 111.26,
+        "yield_tons_per_ha": 3.4801
+      },
+      "rice": {
+        "area_000ha": 79.32,
+        "production_000t": 187.94,
+        "yield_tons_per_ha": 2.3694
+      },
+      "sugarcane": {
+        "area_000ha": 17.81,
+        "production_000t": 1135.2,
+        "yield_tons_per_ha": 63.7395
+      }
+    },
+    "Dera Ghazi Khan": {
+      "wheat": {
+        "area_000ha": 237.95,
+        "production_000t": 755.46,
+        "yield_tons_per_ha": 3.1749
+      },
+      "cotton": {
+        "area_000ha": 45.73,
+        "production_000t": 163.85,
+        "yield_tons_per_ha": 3.583
+      },
+      "rice": {
+        "area_000ha": 57.06,
+        "production_000t": 142.01,
+        "yield_tons_per_ha": 2.4888
+      },
+      "sugarcane": {
+        "area_000ha": 10.12,
+        "production_000t": 770.0,
+        "yield_tons_per_ha": 76.087
+      }
+    },
+    "Rajanpur": {
+      "wheat": {
+        "area_000ha": 193.84,
+        "production_000t": 672.21,
+        "yield_tons_per_ha": 3.4679
+      },
+      "cotton": {
+        "area_000ha": 77.29,
+        "production_000t": 301.3,
+        "yield_tons_per_ha": 3.8983
+      },
+      "rice": {
+        "area_000ha": 41.28,
+        "production_000t": 85.04,
+        "yield_tons_per_ha": 2.0601
+      },
+      "sugarcane": {
+        "area_000ha": 54.63,
+        "production_000t": 4357.8,
+        "yield_tons_per_ha": 79.7694
+      }
+    },
+    "Bahawalpur": {
+      "wheat": {
+        "area_000ha": 295.82,
+        "production_000t": 1052.06,
+        "yield_tons_per_ha": 3.5564
+      },
+      "cotton": {
+        "area_000ha": 217.72,
+        "production_000t": 871.06,
+        "yield_tons_per_ha": 4.0008
+      },
+      "sugarcane": {
+        "area_000ha": 24.28,
+        "production_000t": 1557.6,
+        "yield_tons_per_ha": 64.1516
+      }
+    },
+    "Rahim Yar Khan": {
+      "wheat": {
+        "area_000ha": 277.2,
+        "production_000t": 1028.05,
+        "yield_tons_per_ha": 3.7087
+      },
+      "cotton": {
+        "area_000ha": 180.08,
+        "production_000t": 736.1,
+        "yield_tons_per_ha": 4.0876
+      },
+      "rice": {
+        "area_000ha": 5.67,
+        "production_000t": 12.62,
+        "yield_tons_per_ha": 2.2257
+      },
+      "sugarcane": {
+        "area_000ha": 198.69,
+        "production_000t": 17401.04,
+        "yield_tons_per_ha": 87.5788
+      }
+    },
+    "Bahawalnagar": {
+      "wheat": {
+        "area_000ha": 424.91,
+        "production_000t": 1513.89,
+        "yield_tons_per_ha": 3.5628
+      },
+      "cotton": {
+        "area_000ha": 250.12,
+        "production_000t": 1023.98,
+        "yield_tons_per_ha": 4.094
+      },
+      "rice": {
+        "area_000ha": 87.81,
+        "production_000t": 273.31,
+        "yield_tons_per_ha": 3.1125
+      },
+      "sugarcane": {
+        "area_000ha": 14.57,
+        "production_000t": 969.12,
+        "yield_tons_per_ha": 66.5148
+      }
+    },
+    "Khairpur": {
+      "wheat": {
+        "area_000ha": 107.88,
+        "production_000t": 362.56,
+        "yield_tons_per_ha": 3.3608
+      },
+      "cotton": {
+        "area_000ha": 82.47,
+        "production_000t": 311.15,
+        "yield_tons_per_ha": 3.7729
+      }
+    },
+    "Ghotki": {
+      "wheat": {
+        "area_000ha": 108.83,
+        "production_000t": 288.13,
+        "yield_tons_per_ha": 2.6475
+      },
+      "cotton": {
+        "area_000ha": 89.61,
+        "production_000t": 408.93,
+        "yield_tons_per_ha": 4.5634
+      }
+    },
+    "Sukkur": {
+      "wheat": {
+        "area_000ha": 52.1,
+        "production_000t": 154.49,
+        "yield_tons_per_ha": 2.9653
+      },
+      "cotton": {
+        "area_000ha": 33.94,
+        "production_000t": 174.27,
+        "yield_tons_per_ha": 5.1346
+      }
+    },
+    "Naushehro Feroze": {
+      "wheat": {
+        "area_000ha": 109.41,
+        "production_000t": 380.09,
+        "yield_tons_per_ha": 3.474
+      },
+      "cotton": {
+        "area_000ha": 38.5,
+        "production_000t": 227.57,
+        "yield_tons_per_ha": 5.9109
+      }
+    },
+    "Nawabshah": {
+      "wheat": {
+        "area_000ha": 90.3,
+        "production_000t": 319.68,
+        "yield_tons_per_ha": 3.5402
+      },
+      "cotton": {
+        "area_000ha": 64.9,
+        "production_000t": 286.93,
+        "yield_tons_per_ha": 4.4211
+      }
+    },
+    "Jacobabad": {
+      "wheat": {
+        "area_000ha": 32.17,
+        "production_000t": 88.66,
+        "yield_tons_per_ha": 2.756
+      },
+      "rice": {
+        "area_000ha": 115.3,
+        "production_000t": 388.23,
+        "yield_tons_per_ha": 3.3671
+      }
+    },
+    "Kashmore": {
+      "wheat": {
+        "area_000ha": 34.91,
+        "production_000t": 103.63,
+        "yield_tons_per_ha": 2.9685
+      },
+      "rice": {
+        "area_000ha": 70.03,
+        "production_000t": 173.66,
+        "yield_tons_per_ha": 2.4798
+      }
+    },
+    "Shikarpur": {
+      "wheat": {
+        "area_000ha": 38.11,
+        "production_000t": 120.55,
+        "yield_tons_per_ha": 3.1632
+      },
+      "cotton": {
+        "area_000ha": 0.11,
+        "production_000t": 0.24,
+        "yield_tons_per_ha": 2.1818
+      },
+      "rice": {
+        "area_000ha": 111.32,
+        "production_000t": 395.37,
+        "yield_tons_per_ha": 3.5517
+      }
+    },
+    "Qambar Shahdadkot": {
+      "wheat": {
+        "area_000ha": 56.14,
+        "production_000t": 122.36,
+        "yield_tons_per_ha": 2.1796
+      },
+      "rice": {
+        "area_000ha": 78.38,
+        "production_000t": 249.97,
+        "yield_tons_per_ha": 3.1892
+      }
+    },
+    "Sanghar": {
+      "wheat": {
+        "area_000ha": 112.71,
+        "production_000t": 317.5,
+        "yield_tons_per_ha": 2.817
+      },
+      "cotton": {
+        "area_000ha": 104.94,
+        "production_000t": 593.97,
+        "yield_tons_per_ha": 5.6601
+      }
+    },
+    "Tharparkar": {
+      "wheat": {
+        "area_000ha": 2.48,
+        "production_000t": 6.83,
+        "yield_tons_per_ha": 2.754
+      },
+      "cotton": {
+        "area_000ha": 0.89,
+        "production_000t": 4.86,
+        "yield_tons_per_ha": 5.4607
+      }
+    },
+    "Mirpurkhas": {
+      "wheat": {
+        "area_000ha": 64.5,
+        "production_000t": 177.81,
+        "yield_tons_per_ha": 2.7567
+      },
+      "cotton": {
+        "area_000ha": 37.96,
+        "production_000t": 215.49,
+        "yield_tons_per_ha": 5.6768
+      }
+    },
+    "Umerkot": {
+      "wheat": {
+        "area_000ha": 40.16,
+        "production_000t": 77.64,
+        "yield_tons_per_ha": 1.9333
+      },
+      "cotton": {
+        "area_000ha": 27.8,
+        "production_000t": 156.71,
+        "yield_tons_per_ha": 5.6371
+      }
+    },
+    "Dadu": {
+      "wheat": {
+        "area_000ha": 79.09,
+        "production_000t": 250.08,
+        "yield_tons_per_ha": 3.162
+      },
+      "cotton": {
+        "area_000ha": 12.34,
+        "production_000t": 53.84,
+        "yield_tons_per_ha": 4.363
+      },
+      "rice": {
+        "area_000ha": 43.1,
+        "production_000t": 152.58,
+        "yield_tons_per_ha": 3.5401
+      }
+    },
+    "Jamshoro": {
+      "wheat": {
+        "area_000ha": 39.05,
+        "production_000t": 105.46,
+        "yield_tons_per_ha": 2.7006
+      },
+      "cotton": {
+        "area_000ha": 13.23,
+        "production_000t": 76.04,
+        "yield_tons_per_ha": 5.7475
+      }
+    },
+    "Hyderabad": {
+      "wheat": {
+        "area_000ha": 16.26,
+        "production_000t": 61.06,
+        "yield_tons_per_ha": 3.7552
+      },
+      "cotton": {
+        "area_000ha": 4.94,
+        "production_000t": 30.71,
+        "yield_tons_per_ha": 6.2166
+      },
+      "rice": {
+        "area_000ha": 0.93,
+        "production_000t": 3.52,
+        "yield_tons_per_ha": 3.7849
+      }
+    },
+    "Matiari": {
+      "wheat": {
+        "area_000ha": 41.65,
+        "production_000t": 175.76,
+        "yield_tons_per_ha": 4.2199
+      },
+      "cotton": {
+        "area_000ha": 38.72,
+        "production_000t": 234.23,
+        "yield_tons_per_ha": 6.0493
+      }
+    },
+    "Tando Allahyar": {
+      "wheat": {
+        "area_000ha": 31.08,
+        "production_000t": 112.12,
+        "yield_tons_per_ha": 3.6075
+      },
+      "cotton": {
+        "area_000ha": 22.55,
+        "production_000t": 137.37,
+        "yield_tons_per_ha": 6.0918
+      }
+    },
+    "Tando Muhammad Khan": {
+      "wheat": {
+        "area_000ha": 15.62,
+        "production_000t": 43.41,
+        "yield_tons_per_ha": 2.7791
+      },
+      "cotton": {
+        "area_000ha": 2.98,
+        "production_000t": 14.53,
+        "yield_tons_per_ha": 4.8758
+      },
+      "rice": {
+        "area_000ha": 14.75,
+        "production_000t": 50.03,
+        "yield_tons_per_ha": 3.3919
+      }
+    },
+    "Badin": {
+      "wheat": {
+        "area_000ha": 35.15,
+        "production_000t": 52.12,
+        "yield_tons_per_ha": 1.4828
+      },
+      "cotton": {
+        "area_000ha": 12.34,
+        "production_000t": 52.93,
+        "yield_tons_per_ha": 4.2893
+      },
+      "rice": {
+        "area_000ha": 116.21,
+        "production_000t": 481.11,
+        "yield_tons_per_ha": 4.14
+      }
+    },
+    "Thatta": {
+      "wheat": {
+        "area_000ha": 18.55,
+        "production_000t": 45.26,
+        "yield_tons_per_ha": 2.4399
+      },
+      "cotton": {
+        "area_000ha": 5.13,
+        "production_000t": 16.76,
+        "yield_tons_per_ha": 3.2671
+      },
+      "rice": {
+        "area_000ha": 84.52,
+        "production_000t": 301.16,
+        "yield_tons_per_ha": 3.5632
+      }
+    },
+    "Karachi": {
+      "wheat": {
+        "area_000ha": 1.55,
+        "production_000t": 4.48,
+        "yield_tons_per_ha": 2.8903
+      },
+      "cotton": {
+        "area_000ha": 0.39,
+        "production_000t": 1.18,
+        "yield_tons_per_ha": 3.0256
+      }
+    },
+    "Bannu": {
+      "wheat": {
+        "area_000ha": 19.39,
+        "production_000t": 36.53,
+        "yield_tons_per_ha": 1.884
+      },
+      "rice": {
+        "area_000ha": 2.99,
+        "production_000t": 5.79,
+        "yield_tons_per_ha": 1.9365
+      }
+    },
+    "Lakki Marwat": {
+      "wheat": {
+        "area_000ha": 17.81,
+        "production_000t": 19.67,
+        "yield_tons_per_ha": 1.1044
+      },
+      "rice": {
+        "area_000ha": 0.2,
+        "production_000t": 0.31,
+        "yield_tons_per_ha": 1.55
+      }
+    },
+    "Dera Ismail Khan": {
+      "wheat": {
+        "area_000ha": 68.88,
+        "production_000t": 153.57,
+        "yield_tons_per_ha": 2.2295
+      },
+      "rice": {
+        "area_000ha": 11.5,
+        "production_000t": 31.52,
+        "yield_tons_per_ha": 2.7409
+      }
+    },
+    "Tank": {
+      "wheat": {
+        "area_000ha": 13.5,
+        "production_000t": 34.25,
+        "yield_tons_per_ha": 2.537
+      },
+      "rice": {
+        "area_000ha": 0.65,
+        "production_000t": 1.04,
+        "yield_tons_per_ha": 1.6
+      }
+    },
+    "Abbottabad": {
+      "wheat": {
+        "area_000ha": 14.11,
+        "production_000t": 20.12,
+        "yield_tons_per_ha": 1.4259
+      }
+    },
+    "Battagram": {
+      "wheat": {
+        "area_000ha": 8.09,
+        "production_000t": 12.78,
+        "yield_tons_per_ha": 1.5797
+      },
+      "rice": {
+        "area_000ha": 1.66,
+        "production_000t": 3.63,
+        "yield_tons_per_ha": 2.1867
+      }
+    },
+    "Haripur": {
+      "wheat": {
+        "area_000ha": 35.24,
+        "production_000t": 48.17,
+        "yield_tons_per_ha": 1.3669
+      }
+    },
+    "Kohistan": {
+      "wheat": {
+        "area_000ha": 2.05,
+        "production_000t": 3.12,
+        "yield_tons_per_ha": 1.522
+      },
+      "rice": {
+        "area_000ha": 0.08,
+        "production_000t": 0.19,
+        "yield_tons_per_ha": 2.375
+      }
+    },
+    "Mansehra": {
+      "wheat": {
+        "area_000ha": 36.63,
+        "production_000t": 60.02,
+        "yield_tons_per_ha": 1.6385
+      },
+      "rice": {
+        "area_000ha": 1.42,
+        "production_000t": 3.73,
+        "yield_tons_per_ha": 2.6268
+      }
+    },
+    "Kohat": {
+      "wheat": {
+        "area_000ha": 29.03,
+        "production_000t": 46.2,
+        "yield_tons_per_ha": 1.5915
+      },
+      "rice": {
+        "area_000ha": 0.01,
+        "production_000t": 0.01,
+        "yield_tons_per_ha": 1.0
+      }
+    },
+    "Karak": {
+      "wheat": {
+        "area_000ha": 6.07,
+        "production_000t": 2.7,
+        "yield_tons_per_ha": 0.4448
+      }
+    },
+    "Hangu": {
+      "wheat": {
+        "area_000ha": 8.56,
+        "production_000t": 11.0,
+        "yield_tons_per_ha": 1.285
+      },
+      "rice": {
+        "area_000ha": 0.31,
+        "production_000t": 0.55,
+        "yield_tons_per_ha": 1.7742
+      }
+    },
+    "Mardan": {
+      "wheat": {
+        "area_000ha": 43.44,
+        "production_000t": 92.75,
+        "yield_tons_per_ha": 2.1351
+      },
+      "rice": {
+        "area_000ha": 2.56,
+        "production_000t": 4.27,
+        "yield_tons_per_ha": 1.668
+      }
+    },
+    "Swabi": {
+      "wheat": {
+        "area_000ha": 37.22,
+        "production_000t": 89.02,
+        "yield_tons_per_ha": 2.3917
+      },
+      "rice": {
+        "area_000ha": 0.47,
+        "production_000t": 0.72,
+        "yield_tons_per_ha": 1.5319
+      }
+    },
+    "Buner": {
+      "wheat": {
+        "area_000ha": 48.1,
+        "production_000t": 59.15,
+        "yield_tons_per_ha": 1.2297
+      },
+      "rice": {
+        "area_000ha": 0.25,
+        "production_000t": 0.49,
+        "yield_tons_per_ha": 1.96
+      }
+    },
+    "Chitral": {
+      "wheat": {
+        "area_000ha": 8.35,
+        "production_000t": 14.94,
+        "yield_tons_per_ha": 1.7892
+      },
+      "rice": {
+        "area_000ha": 1.83,
+        "production_000t": 5.24,
+        "yield_tons_per_ha": 2.8634
+      }
+    },
+    "Malakand": {
+      "wheat": {
+        "area_000ha": 25.45,
+        "production_000t": 30.0,
+        "yield_tons_per_ha": 1.1788
+      },
+      "rice": {
+        "area_000ha": 4.75,
+        "production_000t": 11.67,
+        "yield_tons_per_ha": 2.4568
+      }
+    },
+    "Lower Dir": {
+      "wheat": {
+        "area_000ha": 29.03,
+        "production_000t": 53.95,
+        "yield_tons_per_ha": 1.8584
+      },
+      "rice": {
+        "area_000ha": 9.04,
+        "production_000t": 21.43,
+        "yield_tons_per_ha": 2.3706
+      }
+    },
+    "Upper Dir": {
+      "wheat": {
+        "area_000ha": 24.88,
+        "production_000t": 44.78,
+        "yield_tons_per_ha": 1.7998
+      },
+      "rice": {
+        "area_000ha": 7.48,
+        "production_000t": 14.14,
+        "yield_tons_per_ha": 1.8904
+      }
+    },
+    "Shangla": {
+      "wheat": {
+        "area_000ha": 24.9,
+        "production_000t": 35.06,
+        "yield_tons_per_ha": 1.408
+      },
+      "rice": {
+        "area_000ha": 1.4,
+        "production_000t": 3.93,
+        "yield_tons_per_ha": 2.8071
+      }
+    },
+    "Swat": {
+      "wheat": {
+        "area_000ha": 58.9,
+        "production_000t": 115.3,
+        "yield_tons_per_ha": 1.9576
+      },
+      "rice": {
+        "area_000ha": 6.23,
+        "production_000t": 22.14,
+        "yield_tons_per_ha": 3.5538
+      }
+    },
+    "Peshawar": {
+      "wheat": {
+        "area_000ha": 35.45,
+        "production_000t": 77.92,
+        "yield_tons_per_ha": 2.198
+      },
+      "rice": {
+        "area_000ha": 0.04,
+        "production_000t": 0.15,
+        "yield_tons_per_ha": 3.75
+      }
+    },
+    "Charsadda": {
+      "wheat": {
+        "area_000ha": 35.1,
+        "production_000t": 95.48,
+        "yield_tons_per_ha": 2.7202
+      },
+      "rice": {
+        "area_000ha": 0.05,
+        "production_000t": 0.12,
+        "yield_tons_per_ha": 2.4
+      }
+    },
+    "Nowshera": {
+      "wheat": {
+        "area_000ha": 27.34,
+        "production_000t": 65.8,
+        "yield_tons_per_ha": 2.4067
+      },
+      "rice": {
+        "area_000ha": 0.03,
+        "production_000t": 0.05,
+        "yield_tons_per_ha": 1.6667
+      }
+    },
+    "Bajaur": {
+      "wheat": {
+        "area_000ha": 36.25,
+        "production_000t": 35.37,
+        "yield_tons_per_ha": 0.9757
+      },
+      "rice": {
+        "area_000ha": 4.79,
+        "production_000t": 7.58,
+        "yield_tons_per_ha": 1.5825
+      }
+    },
+    "Khyber": {
+      "wheat": {
+        "area_000ha": 11.15,
+        "production_000t": 17.92,
+        "yield_tons_per_ha": 1.6072
+      }
+    },
+    "Kurram": {
+      "wheat": {
+        "area_000ha": 24.29,
+        "production_000t": 43.13,
+        "yield_tons_per_ha": 1.7756
+      },
+      "rice": {
+        "area_000ha": 5.97,
+        "production_000t": 17.91,
+        "yield_tons_per_ha": 3.0
+      }
+    },
+    "Mohmand": {
+      "wheat": {
+        "area_000ha": 7.42,
+        "production_000t": 9.68,
+        "yield_tons_per_ha": 1.3046
+      }
+    },
+    "North Waziristan": {
+      "wheat": {
+        "area_000ha": 5.09,
+        "production_000t": 8.4,
+        "yield_tons_per_ha": 1.6503
+      },
+      "rice": {
+        "area_000ha": 0.17,
+        "production_000t": 0.27,
+        "yield_tons_per_ha": 1.5882
+      }
+    },
+    "South Waziristan": {
+      "wheat": {
+        "area_000ha": 8.66,
+        "production_000t": 11.9,
+        "yield_tons_per_ha": 1.3741
+      }
+    },
+    "Orakzai": {
+      "wheat": {
+        "area_000ha": 4.13,
+        "production_000t": 5.4,
+        "yield_tons_per_ha": 1.3075
+      },
+      "rice": {
+        "area_000ha": 0.38,
+        "production_000t": 0.7,
+        "yield_tons_per_ha": 1.8421
+      }
+    },
+    "Quetta": {
+      "wheat": {
+        "area_000ha": 2.44,
+        "production_000t": 5.94,
+        "yield_tons_per_ha": 2.4344
+      }
+    },
+    "Pishin": {
+      "wheat": {
+        "area_000ha": 3.81,
+        "production_000t": 9.2,
+        "yield_tons_per_ha": 2.4147
+      }
+    },
+    "Qilla Abdullah": {
+      "wheat": {
+        "area_000ha": 1.57,
+        "production_000t": 3.39,
+        "yield_tons_per_ha": 2.1592
+      }
+    },
+    "Chagai": {
+      "wheat": {
+        "area_000ha": 7.0,
+        "production_000t": 14.9,
+        "yield_tons_per_ha": 2.1286
+      }
+    },
+    "Nushki": {
+      "wheat": {
+        "area_000ha": 7.93,
+        "production_000t": 18.78,
+        "yield_tons_per_ha": 2.3682
+      }
+    },
+    "Loralai": {
+      "wheat": {
+        "area_000ha": 10.03,
+        "production_000t": 24.57,
+        "yield_tons_per_ha": 2.4497
+      }
+    },
+    "Musakhel": {
+      "wheat": {
+        "area_000ha": 2.55,
+        "production_000t": 4.64,
+        "yield_tons_per_ha": 1.8196
+      }
+    },
+    "Barkhan": {
+      "wheat": {
+        "area_000ha": 15.89,
+        "production_000t": 41.0,
+        "yield_tons_per_ha": 2.5802
+      }
+    },
+    "Zhob": {
+      "wheat": {
+        "area_000ha": 6.5,
+        "production_000t": 12.47,
+        "yield_tons_per_ha": 1.9185
+      }
+    },
+    "Qilla Saifullah": {
+      "wheat": {
+        "area_000ha": 8.21,
+        "production_000t": 20.06,
+        "yield_tons_per_ha": 2.4434
+      }
+    },
+    "Sibi": {
+      "wheat": {
+        "area_000ha": 16.54,
+        "production_000t": 40.47,
+        "yield_tons_per_ha": 2.4468
+      }
+    },
+    "Ziarat": {
+      "wheat": {
+        "area_000ha": 0.46,
+        "production_000t": 0.95,
+        "yield_tons_per_ha": 2.0652
+      },
+      "rice": {
+        "area_000ha": 0.05,
+        "production_000t": 0.14,
+        "yield_tons_per_ha": 2.8
+      }
+    },
+    "Kohlu": {
+      "wheat": {
+        "area_000ha": 8.43,
+        "production_000t": 19.76,
+        "yield_tons_per_ha": 2.344
+      }
+    },
+    "Dera Bugti": {
+      "wheat": {
+        "area_000ha": 25.65,
+        "production_000t": 61.48,
+        "yield_tons_per_ha": 2.3969
+      }
+    },
+    "Nasirabad": {
+      "wheat": {
+        "area_000ha": 86.26,
+        "production_000t": 262.68,
+        "yield_tons_per_ha": 3.0452
+      },
+      "rice": {
+        "area_000ha": 0.1,
+        "production_000t": 0.29,
+        "yield_tons_per_ha": 2.9
+      }
+    },
+    "Jafarabad": {
+      "wheat": {
+        "area_000ha": 79.99,
+        "production_000t": 236.2,
+        "yield_tons_per_ha": 2.9529
+      },
+      "rice": {
+        "area_000ha": 65.11,
+        "production_000t": 216.43,
+        "yield_tons_per_ha": 3.3241
+      },
+      "sugarcane": {
+        "area_000ha": 0.02,
+        "production_000t": 0.8,
+        "yield_tons_per_ha": 40.0
+      }
+    },
+    "Kachhi": {
+      "wheat": {
+        "area_000ha": 8.65,
+        "production_000t": 22.89,
+        "yield_tons_per_ha": 2.6462
+      },
+      "rice": {
+        "area_000ha": 93.53,
+        "production_000t": 301.52,
+        "yield_tons_per_ha": 3.2238
+      }
+    },
+    "Jhal Magsi": {
+      "wheat": {
+        "area_000ha": 55.74,
+        "production_000t": 145.06,
+        "yield_tons_per_ha": 2.6024
+      },
+      "rice": {
+        "area_000ha": 0.19,
+        "production_000t": 0.57,
+        "yield_tons_per_ha": 3.0
+      }
+    },
+    "Kalat": {
+      "wheat": {
+        "area_000ha": 4.1,
+        "production_000t": 10.5,
+        "yield_tons_per_ha": 2.561
+      }
+    },
+    "Mastung": {
+      "wheat": {
+        "area_000ha": 3.32,
+        "production_000t": 8.64,
+        "yield_tons_per_ha": 2.6024
+      }
+    },
+    "Khuzdar": {
+      "wheat": {
+        "area_000ha": 52.42,
+        "production_000t": 130.33,
+        "yield_tons_per_ha": 2.4863
+      },
+      "rice": {
+        "area_000ha": 1.19,
+        "production_000t": 2.95,
+        "yield_tons_per_ha": 2.479
+      }
+    },
+    "Awaran": {
+      "wheat": {
+        "area_000ha": 17.22,
+        "production_000t": 41.3,
+        "yield_tons_per_ha": 2.3984
+      },
+      "rice": {
+        "area_000ha": 0.28,
+        "production_000t": 0.61,
+        "yield_tons_per_ha": 2.1786
+      }
+    },
+    "Kharan": {
+      "wheat": {
+        "area_000ha": 11.68,
+        "production_000t": 27.12,
+        "yield_tons_per_ha": 2.3219
+      }
+    },
+    "Lasbela": {
+      "wheat": {
+        "area_000ha": 17.67,
+        "production_000t": 46.94,
+        "yield_tons_per_ha": 2.6565
+      },
+      "sugarcane": {
+        "area_000ha": 0.01,
+        "production_000t": 0.62,
+        "yield_tons_per_ha": 62.0
+      }
+    },
+    "Kech": {
+      "wheat": {
+        "area_000ha": 3.24,
+        "production_000t": 8.2,
+        "yield_tons_per_ha": 2.5309
+      },
+      "rice": {
+        "area_000ha": 0.98,
+        "production_000t": 2.25,
+        "yield_tons_per_ha": 2.2959
+      }
+    },
+    "Panjgur": {
+      "wheat": {
+        "area_000ha": 5.8,
+        "production_000t": 13.67,
+        "yield_tons_per_ha": 2.3569
+      }
+    },
+    "Gwadar": {
+      "wheat": {
+        "area_000ha": 0.2,
+        "production_000t": 0.06,
+        "yield_tons_per_ha": 0.3
+      }
+    }
+  }
+}
