@@ -1,139 +1,609 @@
 {
-  "generated_note": "Phase 3 Track D integration -- real live national Sentinel-1/JRC screen using the trained Week 10 flood classifier. Decision made with you after seeing this result: NOT merged into district_alerts.json as trigger rows -- reported here instead.",
+  "generated_note": "Week 27 (Track I, precipitation attempt): v3 (real Sentinel-1 SAR + JRC + CHIRPS precipitation) PROMOTED and WIRED into exposure_risk.py/trigger_engine.py, real fair-test validated (STATUS_WEEK26.md). No longer informational-only.",
+  "model_version": "v3_precip (promoted Week 27, Track I)",
+  "status": "wired_into_trigger_engine",
+  "real_fair_test_validation": {
+    "note": "The decisive real test (2024, 14 positive + 112 negative districts, never seen in training) -- the same structural cross-year validation Track K did for the fire model.",
+    "original_model": {
+      "n": 1890,
+      "n_positive": 210,
+      "tp": 163,
+      "fp": 1050,
+      "fn": 47,
+      "tn": 630,
+      "precision": 0.13437757625721353,
+      "recall": 0.7761904761904762,
+      "f1": 0.22909346451159524,
+      "roc_auc": 0.6017630385487529
+    },
+    "v2_model_rejected": {
+      "n": 1890,
+      "n_positive": 210,
+      "tp": 78,
+      "fp": 649,
+      "fn": 132,
+      "tn": 1031,
+      "precision": 0.10729023383768914,
+      "recall": 0.37142857142857144,
+      "f1": 0.1664887940234792,
+      "roc_auc": 0.5193792517006802
+    },
+    "v3_model_deployed": {
+      "n": 1890,
+      "n_positive": 210,
+      "tp": 181,
+      "fp": 770,
+      "fn": 29,
+      "tn": 910,
+      "precision": 0.19032597266035753,
+      "recall": 0.861904761904762,
+      "f1": 0.31180017226528856,
+      "roc_auc": 0.7614399092970522
+    },
+    "score_separation_diagnostic": {
+      "original": {
+        "mean_score_flooded": 0.7067716500326422,
+        "mean_score_not_flooded": 0.6108159078291931,
+        "separation_gap": 0.09595574220344905
+      },
+      "v2": {
+        "mean_score_flooded": 0.4829047757892922,
+        "mean_score_not_flooded": 0.4708519808990848,
+        "separation_gap": 0.012052794890207386
+      },
+      "v3_precip": {
+        "mean_score_flooded": 0.8229683986528293,
+        "mean_score_not_flooded": 0.49136101785878594,
+        "separation_gap": 0.3316073807940434
+      },
+      "note": "v2's real failure mode (STATUS_WEEK14.md) was a near-zero separation gap (0.012) despite a real precision/recall drop -- a globally suppressed, barely-discriminative score, not genuine learned discrimination. Checked here for v3 specifically so an apparent live-replay improvement isn't mistaken for a real fix without this same diagnostic passing."
+    }
+  },
   "during_window": [
-    "2026-07-20",
-    "2026-08-19"
+    "2026-07-28",
+    "2026-08-27"
   ],
   "pre_monsoon_baseline_window": [
     "2026-03-01",
     "2026-04-15"
   ],
   "flag_threshold": 0.5,
-  "n_districts_flagged_raw": 122,
+  "n_districts_flagged_raw": 9,
   "n_districts_total": 126,
   "score_distribution": {
     "n": 126,
-    "min": 0.4445,
-    "max": 0.938,
-    "p10": 0.559,
-    "p25": 0.6202,
-    "median": 0.6832,
-    "p75": 0.7551,
-    "p90": 0.8161,
-    "mean": 0.6834
+    "min": 0.0227,
+    "max": 0.8231,
+    "p10": 0.0539,
+    "p25": 0.0898,
+    "median": 0.1451,
+    "p75": 0.2046,
+    "p90": 0.3932,
+    "mean": 0.1896
   },
   "districts_below_threshold": [
     {
-      "district": "Malakand",
-      "mean_model_score": 0.4445
+      "district": "Khairpur",
+      "mean_model_score": 0.0227
     },
     {
-      "district": "Bannu",
-      "mean_model_score": 0.4538
+      "district": "Thatta",
+      "mean_model_score": 0.033
     },
     {
-      "district": "Sargodha",
-      "mean_model_score": 0.4783
+      "district": "Jamshoro",
+      "mean_model_score": 0.0381
+    },
+    {
+      "district": "Sanghar",
+      "mean_model_score": 0.0412
+    },
+    {
+      "district": "Karachi",
+      "mean_model_score": 0.0449
+    },
+    {
+      "district": "Mirpurkhas",
+      "mean_model_score": 0.0453
+    },
+    {
+      "district": "Badin",
+      "mean_model_score": 0.0471
+    },
+    {
+      "district": "Naushehro Feroze",
+      "mean_model_score": 0.0488
+    },
+    {
+      "district": "Matiari",
+      "mean_model_score": 0.0515
+    },
+    {
+      "district": "Umerkot",
+      "mean_model_score": 0.0527
+    },
+    {
+      "district": "Rahim Yar Khan",
+      "mean_model_score": 0.0532
+    },
+    {
+      "district": "Ghotki",
+      "mean_model_score": 0.0535
+    },
+    {
+      "district": "Hyderabad",
+      "mean_model_score": 0.0539
+    },
+    {
+      "district": "Sukkur",
+      "mean_model_score": 0.0539
+    },
+    {
+      "district": "Tando Allahyar",
+      "mean_model_score": 0.0546
+    },
+    {
+      "district": "Muzaffargarh",
+      "mean_model_score": 0.0548
+    },
+    {
+      "district": "Tank",
+      "mean_model_score": 0.057
+    },
+    {
+      "district": "Dera Ghazi Khan",
+      "mean_model_score": 0.0573
+    },
+    {
+      "district": "Dera Ismail Khan",
+      "mean_model_score": 0.0635
+    },
+    {
+      "district": "Barkhan",
+      "mean_model_score": 0.0659
+    },
+    {
+      "district": "Charsadda",
+      "mean_model_score": 0.0699
+    },
+    {
+      "district": "Mohmand",
+      "mean_model_score": 0.0704
+    },
+    {
+      "district": "Tharparkar",
+      "mean_model_score": 0.072
+    },
+    {
+      "district": "Dadu",
+      "mean_model_score": 0.0768
+    },
+    {
+      "district": "Dera Bugti",
+      "mean_model_score": 0.0814
+    },
+    {
+      "district": "Layyah",
+      "mean_model_score": 0.0814
+    },
+    {
+      "district": "Lasbela",
+      "mean_model_score": 0.0828
+    },
+    {
+      "district": "Tando Muhammad Khan",
+      "mean_model_score": 0.0833
+    },
+    {
+      "district": "Nasirabad",
+      "mean_model_score": 0.0855
+    },
+    {
+      "district": "Jhang",
+      "mean_model_score": 0.0858
+    },
+    {
+      "district": "Jafarabad",
+      "mean_model_score": 0.0873
+    },
+    {
+      "district": "Peshawar",
+      "mean_model_score": 0.0898
     },
     {
       "district": "Lodhran",
-      "mean_model_score": 0.487
+      "mean_model_score": 0.0942
+    },
+    {
+      "district": "Kurram",
+      "mean_model_score": 0.0955
+    },
+    {
+      "district": "Gwadar",
+      "mean_model_score": 0.0963
+    },
+    {
+      "district": "Sargodha",
+      "mean_model_score": 0.097
+    },
+    {
+      "district": "Faisalabad",
+      "mean_model_score": 0.0982
+    },
+    {
+      "district": "Hafizabad",
+      "mean_model_score": 0.1001
+    },
+    {
+      "district": "Bannu",
+      "mean_model_score": 0.1006
+    },
+    {
+      "district": "Multan",
+      "mean_model_score": 0.1008
+    },
+    {
+      "district": "Mardan",
+      "mean_model_score": 0.1014
+    },
+    {
+      "district": "Khanewal",
+      "mean_model_score": 0.1021
+    },
+    {
+      "district": "Nawabshah",
+      "mean_model_score": 0.1105
+    },
+    {
+      "district": "Sheikhpura",
+      "mean_model_score": 0.1109
+    },
+    {
+      "district": "Okara",
+      "mean_model_score": 0.1124
+    },
+    {
+      "district": "North Waziristan",
+      "mean_model_score": 0.1139
+    },
+    {
+      "district": "Jacobabad",
+      "mean_model_score": 0.114
+    },
+    {
+      "district": "Kasur",
+      "mean_model_score": 0.1146
+    },
+    {
+      "district": "Kohat",
+      "mean_model_score": 0.1164
+    },
+    {
+      "district": "Hangu",
+      "mean_model_score": 0.1192
+    },
+    {
+      "district": "Toba Tek Singh",
+      "mean_model_score": 0.1213
+    },
+    {
+      "district": "Bahawalnagar",
+      "mean_model_score": 0.1216
+    },
+    {
+      "district": "Bhakkar",
+      "mean_model_score": 0.1221
+    },
+    {
+      "district": "Lower Dir",
+      "mean_model_score": 0.1221
+    },
+    {
+      "district": "Qilla Saifullah",
+      "mean_model_score": 0.1222
+    },
+    {
+      "district": "Bajaur",
+      "mean_model_score": 0.1249
+    },
+    {
+      "district": "Swat",
+      "mean_model_score": 0.1265
+    },
+    {
+      "district": "South Waziristan",
+      "mean_model_score": 0.1275
+    },
+    {
+      "district": "Kachhi",
+      "mean_model_score": 0.13
+    },
+    {
+      "district": "Rajanpur",
+      "mean_model_score": 0.1312
+    },
+    {
+      "district": "Shikarpur",
+      "mean_model_score": 0.1324
+    },
+    {
+      "district": "Khyber",
+      "mean_model_score": 0.1408
+    },
+    {
+      "district": "Nowshera",
+      "mean_model_score": 0.1414
+    },
+    {
+      "district": "Qilla Abdullah",
+      "mean_model_score": 0.1451
+    },
+    {
+      "district": "Sibi",
+      "mean_model_score": 0.1456
+    },
+    {
+      "district": "Zhob",
+      "mean_model_score": 0.1461
+    },
+    {
+      "district": "Sahiwal",
+      "mean_model_score": 0.1492
+    },
+    {
+      "district": "Shangla",
+      "mean_model_score": 0.1521
+    },
+    {
+      "district": "Musakhel",
+      "mean_model_score": 0.1564
+    },
+    {
+      "district": "Mianwali",
+      "mean_model_score": 0.1581
+    },
+    {
+      "district": "Lakki Marwat",
+      "mean_model_score": 0.1613
+    },
+    {
+      "district": "Jhal Magsi",
+      "mean_model_score": 0.1616
+    },
+    {
+      "district": "Pakpattan",
+      "mean_model_score": 0.1622
+    },
+    {
+      "district": "Malakand",
+      "mean_model_score": 0.1626
+    },
+    {
+      "district": "Karak",
+      "mean_model_score": 0.1652
+    },
+    {
+      "district": "Upper Dir",
+      "mean_model_score": 0.1652
+    },
+    {
+      "district": "Panjgur",
+      "mean_model_score": 0.1676
+    },
+    {
+      "district": "Pishin",
+      "mean_model_score": 0.1681
+    },
+    {
+      "district": "Astore",
+      "mean_model_score": 0.1706
+    },
+    {
+      "district": "Kohlu",
+      "mean_model_score": 0.1767
+    },
+    {
+      "district": "Gilgit",
+      "mean_model_score": 0.1847
+    },
+    {
+      "district": "Qambar Shahdadkot",
+      "mean_model_score": 0.1863
+    },
+    {
+      "district": "Awaran",
+      "mean_model_score": 0.1866
+    },
+    {
+      "district": "Quetta",
+      "mean_model_score": 0.1891
+    },
+    {
+      "district": "Loralai",
+      "mean_model_score": 0.1898
+    },
+    {
+      "district": "Khushab",
+      "mean_model_score": 0.1935
+    },
+    {
+      "district": "Kashmore",
+      "mean_model_score": 0.194
+    },
+    {
+      "district": "Mastung",
+      "mean_model_score": 0.1955
+    },
+    {
+      "district": "Nushki",
+      "mean_model_score": 0.1961
+    },
+    {
+      "district": "Kharmang",
+      "mean_model_score": 0.197
+    },
+    {
+      "district": "Skardu",
+      "mean_model_score": 0.1981
+    },
+    {
+      "district": "Diamer",
+      "mean_model_score": 0.2024
+    },
+    {
+      "district": "Khuzdar",
+      "mean_model_score": 0.2028
+    },
+    {
+      "district": "Bahawalpur",
+      "mean_model_score": 0.203
+    },
+    {
+      "district": "Orakzai",
+      "mean_model_score": 0.2046
+    },
+    {
+      "district": "Attock",
+      "mean_model_score": 0.2109
+    },
+    {
+      "district": "Gujranwala",
+      "mean_model_score": 0.2147
+    },
+    {
+      "district": "Kohistan",
+      "mean_model_score": 0.217
+    },
+    {
+      "district": "Kech",
+      "mean_model_score": 0.229
+    },
+    {
+      "district": "Vihari",
+      "mean_model_score": 0.234
+    },
+    {
+      "district": "Kalat",
+      "mean_model_score": 0.2418
+    },
+    {
+      "district": "Chitral",
+      "mean_model_score": 0.2436
+    },
+    {
+      "district": "Kharan",
+      "mean_model_score": 0.2535
+    },
+    {
+      "district": "Ziarat",
+      "mean_model_score": 0.2565
+    },
+    {
+      "district": "Battagram",
+      "mean_model_score": 0.2583
+    },
+    {
+      "district": "Chagai",
+      "mean_model_score": 0.264
+    },
+    {
+      "district": "Mansehra",
+      "mean_model_score": 0.2738
+    },
+    {
+      "district": "Mandi Bahauddin",
+      "mean_model_score": 0.2964
+    },
+    {
+      "district": "Ghizer",
+      "mean_model_score": 0.3227
+    },
+    {
+      "district": "Shigar",
+      "mean_model_score": 0.326
+    },
+    {
+      "district": "Nagar",
+      "mean_model_score": 0.3445
+    },
+    {
+      "district": "Swabi",
+      "mean_model_score": 0.3632
+    },
+    {
+      "district": "Buner",
+      "mean_model_score": 0.3737
+    },
+    {
+      "district": "Chakwal",
+      "mean_model_score": 0.3932
+    },
+    {
+      "district": "Ghanche",
+      "mean_model_score": 0.3951
+    },
+    {
+      "district": "Lahore",
+      "mean_model_score": 0.4214
+    },
+    {
+      "district": "Hunza",
+      "mean_model_score": 0.431
     }
   ],
   "top5_by_score": [
     {
-      "district": "Gwadar",
-      "mean_model_score": 0.938,
-      "n_rule_flagged": 1,
-      "n_points": 5
-    },
-    {
-      "district": "Ghanche",
-      "mean_model_score": 0.9085,
-      "n_rule_flagged": 2,
-      "n_points": 15
-    },
-    {
-      "district": "Shigar",
-      "mean_model_score": 0.8709,
-      "n_rule_flagged": 4,
-      "n_points": 15
-    },
-    {
-      "district": "Jhal Magsi",
-      "mean_model_score": 0.8532,
-      "n_rule_flagged": 6,
-      "n_points": 15
-    },
-    {
-      "district": "Nagar",
-      "mean_model_score": 0.8513,
-      "n_rule_flagged": 1,
-      "n_points": 15
-    }
-  ],
-  "bottom5_by_score": [
-    {
-      "district": "Malakand",
-      "mean_model_score": 0.4445,
+      "district": "Gujrat",
+      "mean_model_score": 0.8231,
+      "mean_precip_anomaly_pct": -45.88,
       "n_rule_flagged": 0,
       "n_points": 15
     },
     {
-      "district": "Bannu",
-      "mean_model_score": 0.4538,
-      "n_rule_flagged": 1,
-      "n_points": 15
-    },
-    {
-      "district": "Sargodha",
-      "mean_model_score": 0.4783,
+      "district": "Islamabad Capital Territory",
+      "mean_model_score": 0.7685,
+      "mean_precip_anomaly_pct": -69.24,
       "n_rule_flagged": 0,
       "n_points": 15
     },
     {
-      "district": "Lodhran",
-      "mean_model_score": 0.487,
+      "district": "Abbottabad",
+      "mean_model_score": 0.7346,
+      "mean_precip_anomaly_pct": -69.84,
       "n_rule_flagged": 0,
       "n_points": 15
     },
     {
-      "district": "Peshawar",
-      "mean_model_score": 0.523,
+      "district": "Rawalpindi",
+      "mean_model_score": 0.7307,
+      "mean_precip_anomaly_pct": -60.21,
+      "n_rule_flagged": 0,
+      "n_points": 15
+    },
+    {
+      "district": "Jhelum",
+      "mean_model_score": 0.7292,
+      "mean_precip_anomaly_pct": -48.54,
       "n_rule_flagged": 0,
       "n_points": 15
     }
   ],
-  "domain_shift_finding": {
-    "headline": "Live 2026 national-average Sentinel-1 stats sit almost exactly on the 2022 TRAINING DATA's 'flooded' class centroid, not the 'not-flooded' one -- the real reason 122/126 districts flag, and why this is read as a generalization gap, not evidence of real current flooding.",
-    "training_flooded_class_centroid": {
-      "VV_during": -10.564037406534364,
-      "VH_during": -18.197178076688104,
-      "VV_change": -0.40485597135814905,
-      "VH_change": -0.32714007952053,
-      "jrc_occurrence": 1.0631944444444446
-    },
-    "training_not_flooded_class_centroid": {
-      "VV_during": -9.899072900799604,
-      "VH_during": -16.949408878904975,
-      "VV_change": -1.9768454013326022,
-      "VH_change": -1.8077702667438096,
-      "jrc_occurrence": 0.13333333333333333
-    },
-    "live_2026_national_mean": {
-      "VV_during": -10.259057277844356,
-      "VH_during": -18.904024095490183,
-      "VV_change": -0.30535426714173397,
-      "VH_change": -0.3457804351645031,
-      "jrc_occurrence": 2.3916949002155863
-    },
-    "explanation": "Track D's non-flooded training examples were other real Pakistani districts during the SAME 2022 monsoon -- there is no example in training data of an ordinary, non-disaster monsoon year. The model learned 'monsoon-season SAR change' more than 'flood-disaster-specific SAR change' at this sampling density, and cannot yet tell them apart."
+  "nine_district_investigation": {
+    "headline": "The districts currently flagged do not always show the positive rainfall anomaly the training data's own signal points toward -- investigated (not assumed sound), found explainable: this real snapshot's national reference sample averages -72% anomaly (nearly the whole country is running below its historical norm right now), and every flagged district still sits at the 68th-94th percentile on ABSOLUTE precipitation despite that -- the wettest places in the country, even in a below-average year. Two districts additionally show real elevated JRC permanent-water signal.",
+    "caveat": "Not exhaustively verified for every hypothetical future flagged district -- a known, real, honestly-carried-forward limitation, not a closed case.",
+    "full_detail": "track_i_v3_9district_investigation.json, STATUS_WEEK27.md"
+  },
+  "threshold_decision": {
+    "national_illustrative": 0.225,
+    "demo": 0.0216,
+    "note": "Same shared thresholds as every other hazard, kept deliberately -- the same tier-confidence discipline crop_weight's per-crop R2 discount already established (a weak/less-trustworthy signal should work harder to fire the most consequential tier, not get a custom-lowered bar). Flood's real fair-test precision (0.190) structurally cannot clear the illustrative tier yet -- the honest result of its own real accuracy. It DOES clear the demo tier (7 real events) -- see STATUS_WEEK27.md for the full reasoning."
   },
   "caveats": [
-    "Trained on a single real disaster window (Aug-Sep 2022) and not validated against a second real flood event -- same single-window caveat every other Phase 3 track carries.",
-    "Track D's own permutation-importance check found jrc_occurrence contributes almost nothing to the model (0.0012 importance) -- the permanent-water baseline discounting it was included to provide may not be doing what it was designed to do. Score is driven mainly by real SAR backscatter change.",
-    "This integration did not attempt to recalibrate the 0.5 threshold to force a cleaner-looking result -- the real gradient (min 0.44, max 0.94) is reported as-is. A future recalibration pass would need a genuine non-disaster-monsoon negative class (e.g. Sentinel-1 from a Pakistani monsoon year with no declared calamity), not just a lower cutoff on the same confounded score."
+    "MODEL PROMOTED Week 27 (Track I, precipitation attempt): this is v3 (gbt_flood_classifier_v3_precip_fulltrain.joblib), trained on real Sentinel-1/JRC SAR features PLUS real CHIRPS precipitation (total + 20-year anomaly), replacing the original SAR/JRC-only model on real, fair-test evidence (F1 0.229->0.312, AUC 0.602->0.761, score-separation gap 0.096->0.332 on the same fair 2024 held-out year that caught the prior v2 attempt's failure -- see STATUS_WEEK26.md).",
+    "Real fair-test precision is 0.190 (2024 held-out year) -- most 'flooded' predictions are still wrong even in this model's best real evaluation so far. Read scores as a real, meaningfully-improved relative risk ranking, not a calibrated probability of actual flooding.",
+    "Week 27 investigation, real and not fully resolved: the districts this model currently flags do not always show the positive rainfall anomaly the training data's own signal points toward (flooded training points average +216-259% anomaly; several currently-flagged districts show a real negative anomaly instead). Investigated and found explainable by real SAR/JRC signal (persistent wetness/irrigation infrastructure) in most but not all flagged districts -- see track_i_v3_9district_investigation.json and STATUS_WEEK27.md for the specific, per-district real finding, not smoothed into a single blanket explanation.",
+    "Track D's own permutation-importance check found jrc_occurrence contributes almost nothing to the model (0.0012 importance) -- carried forward from the original model; not re-checked for v3 this week."
   ],
-  "not_merged_into_district_alerts": true,
-  "not_merged_reason": "Merging near-universal flags into the same district_alerts.json schema as the other 11 real hazard detectors risked this being read as a genuine national flood alert. merge_into_district_alerts.py exists and is real/tested but was deliberately not run this week."
+  "wired_into_trigger_engine": true,
+  "trigger_engine_effect": "7 real demo-threshold trigger events (0 at the illustrative/national threshold) -- see naip/backend/insurance_engine/trigger_summary_demo.json and trigger_summary_national.json."
 }

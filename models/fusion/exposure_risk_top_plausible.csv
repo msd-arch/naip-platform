@@ -1,5 +1,11 @@
 district,date,hazard,hazard_flag,hazard_confidence,crop,crop_stage,vulnerability_weight,crop_weight,interim_confidence_multiplier,exposure_score_before_confidence_discount,exposure_score,agronomically_plausible,crop_mix_source,crop_mix_share_of_4crop_area,lat,lon
+Sialkot,20260827,flood_risk,True,0.665,rice,flowering,0.9,0.3514,0.264,0.2103,0.0555,True,model_estimated_interim,0.35141631360943604,32.4719,74.5203
+Gujrat,20260827,flood_risk,True,0.8231,rice,flowering,0.9,0.2738,0.264,0.2029,0.0536,True,model_estimated_interim,0.2738468203972793,32.7036,73.9032
+Narowal,20260827,flood_risk,True,0.5816,rice,flowering,0.9,0.3283,0.264,0.1718,0.0454,True,model_estimated_interim,0.3282575811750626,32.2057,75.01
+Islamabad Capital Territory,20260827,flood_risk,True,0.7685,rice,flowering,0.9,0.2232,0.264,0.1544,0.0408,True,model_estimated_interim,0.22316831805168902,33.6678,73.0965
 Sialkot,20260720,hail,True,0.65,rice,vegetative,0.6,0.3514,0.264,0.1371,0.0362,True,model_estimated_interim,0.35141631360943604,32.424270516378186,74.52050975811137
+Abbottabad,20260827,flood_risk,True,0.7346,rice,flowering,0.9,0.2012,0.264,0.133,0.0351,True,model_estimated_interim,0.20117213593703712,34.1315,73.2242
+Jhelum,20260827,flood_risk,True,0.7292,rice,flowering,0.9,0.1964,0.264,0.1289,0.034,True,model_estimated_interim,0.19641130351919908,32.8434,73.2773
 Gwadar,20260708,frost,True,0.52,cotton,flowering,0.9,0.1309,0.428,0.0613,0.0262,True,model_estimated_interim,0.1309104406534809,25.403053323845104,63.26325114763529
 Hafizabad,20260712,hail,True,0.65,rice,establishment,0.4,0.366,0.264,0.0952,0.0251,True,model_estimated_interim,0.3659888695958485,31.985829168595675,73.4554526384932
 Sanghar,20260713,fog,True,0.75,cotton,flowering,0.3,0.2344,0.428,0.0527,0.0226,True,model_estimated_interim,0.23440340283302302,25.953402304996988,69.23325575602047
@@ -8,6 +14,7 @@ Awaran,20260708,frost,True,0.52,cotton,flowering,0.9,0.1112,0.428,0.0521,0.0223,
 Awaran,20260714,frost,True,0.52,cotton,flowering,0.9,0.1112,0.428,0.0521,0.0223,True,model_estimated_interim,0.11122275479683752,26.255203421584145,65.47340353192104
 Sanghar,20260623,uv_index,True,0.55,cotton,vegetative,0.4,0.2344,0.428,0.0516,0.0221,True,model_estimated_interim,0.23440340283302302,25.953402304996988,69.23325575602047
 Sukkur,20260712,fog,True,0.75,cotton,flowering,0.3,0.2245,0.428,0.0505,0.0216,True,model_estimated_interim,0.2244644022323676,27.521510752345886,69.11615993430854
+Rawalpindi,20260827,flood_risk,True,0.7307,rice,flowering,0.9,0.1247,0.264,0.082,0.0216,True,model_estimated_interim,0.1247422914143866,33.3645,73.1262
 Hafizabad,20260622,residue_burning,True,0.55,rice,establishment,0.4,0.366,0.264,0.0805,0.0213,True,model_estimated_interim,0.3659888695958485,31.985829168595675,73.4554526384932
 Hafizabad,20260623,uv_index,True,0.55,rice,establishment,0.4,0.366,0.264,0.0805,0.0213,True,model_estimated_interim,0.3659888695958485,31.985829168595675,73.4554526384932
 Gujranwala,20260715,frost,True,0.52,rice,vegetative,0.4,0.388,0.264,0.0807,0.0213,True,model_estimated_interim,0.3880130453164007,32.15422178347083,74.12874209292401
@@ -20,6 +27,7 @@ Kasur,20260714,frost,True,0.52,cotton,flowering,0.9,0.1028,0.428,0.0481,0.0206,T
 Sialkot,20260623,uv_index,True,0.55,rice,establishment,0.4,0.3514,0.264,0.0773,0.0204,True,model_estimated_interim,0.35141631360943604,32.424270516378186,74.52050975811137
 Matiari,20260623,uv_index,True,0.55,cotton,vegetative,0.4,0.2141,0.428,0.0471,0.0202,True,model_estimated_interim,0.21414042090820187,25.8206183400661,68.41778750435569
 Tando Allahyar,20260623,uv_index,True,0.55,cotton,vegetative,0.4,0.2073,0.428,0.0456,0.0195,True,model_estimated_interim,0.20725525665757996,25.440386667031124,68.78524324414445
+Haripur,20260827,flood_risk,True,0.5612,rice,flowering,0.9,0.1451,0.264,0.0733,0.0194,True,model_estimated_interim,0.14514500066988298,34.0316,72.8525
 Narowal,20260623,uv_index,True,0.55,rice,establishment,0.4,0.3283,0.264,0.0722,0.0191,True,model_estimated_interim,0.3282575811750626,32.2214987460121,74.89358932244859
 Kech,20260707,frost,True,0.52,cotton,flowering,0.9,0.0947,0.428,0.0443,0.019,True,model_estimated_interim,0.09469474018237696,25.979166383372352,63.200672288751605
 Sheikhpura,20260623,uv_index,True,0.55,rice,establishment,0.4,0.3239,0.264,0.0713,0.0188,True,model_estimated_interim,0.32393303651070066,31.557511187958458,73.8694134849586
@@ -41,11 +49,3 @@ Hyderabad,20260623,uv_index,True,0.55,cotton,vegetative,0.4,0.183,0.428,0.0403,0
 Khairpur,20260711,residue_burning,True,0.55,cotton,flowering,0.4,0.1833,0.428,0.0403,0.0172,True,model_estimated_interim,0.1833083831803935,26.8551437884378,68.98577019557749
 Nawabshah,20260623,uv_index,True,0.55,cotton,vegetative,0.4,0.182,0.428,0.04,0.0171,True,model_estimated_interim,0.1819973415250929,26.272782618303935,68.39749418172028
 Lodhran,20260706,fog,True,0.75,cotton,flowering,0.3,0.1775,0.428,0.0399,0.0171,True,model_estimated_interim,0.17749460733220643,29.6947473198121,71.73476503298319
-Lodhran,20260711,fog,True,0.75,cotton,flowering,0.3,0.1775,0.428,0.0399,0.0171,True,model_estimated_interim,0.17749460733220643,29.6947473198121,71.73476503298319
-Lodhran,20260712,fog,True,0.75,cotton,flowering,0.3,0.1775,0.428,0.0399,0.0171,True,model_estimated_interim,0.17749460733220643,29.6947473198121,71.73476503298319
-Rahim Yar Khan,20260709,fog,True,0.75,cotton,flowering,0.3,0.1751,0.428,0.0394,0.0169,True,model_estimated_interim,0.17514806645625366,28.524274232993303,70.5136351971601
-Rahim Yar Khan,20260714,fog,True,0.75,cotton,flowering,0.3,0.1751,0.428,0.0394,0.0169,True,model_estimated_interim,0.17514806645625366,28.524274232993303,70.5136351971601
-Umerkot,20260623,uv_index,True,0.55,cotton,vegetative,0.4,0.1783,0.428,0.0392,0.0168,True,model_estimated_interim,0.17834453152347804,25.37012575852144,69.82726207102694
-Lodhran,20260623,uv_index,True,0.55,cotton,vegetative,0.4,0.1775,0.428,0.039,0.0167,True,model_estimated_interim,0.17749460733220643,29.6947473198121,71.73476503298319
-Lodhran,20260715,residue_burning,True,0.55,cotton,flowering,0.4,0.1775,0.428,0.039,0.0167,True,model_estimated_interim,0.17749460733220643,29.6947473198121,71.73476503298319
-Chakwal,20260720,frost,True,0.75,cotton,flowering,0.9,0.0576,0.428,0.0389,0.0166,True,model_estimated_interim,0.057615891955652594,32.81478333618123,72.47731221100592

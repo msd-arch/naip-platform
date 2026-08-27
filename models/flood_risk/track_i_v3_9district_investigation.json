@@ -1,0 +1,225 @@
+{
+  "during_window": [
+    "2026-07-28",
+    "2026-08-27"
+  ],
+  "pre_window": [
+    "2026-03-01",
+    "2026-04-15"
+  ],
+  "flagged_9_districts": {
+    "Gujrat": {
+      "means": {
+        "VV_during": -9.147,
+        "VH_during": -16.688,
+        "VV_change": -1.879,
+        "VH_change": -0.746,
+        "jrc_occurrence": 0.0,
+        "precip_total_mm": 125.315,
+        "precip_anomaly_pct": -45.876
+      },
+      "reference_sample_percentile": {
+        "VV_during": 56.5,
+        "VH_during": 51.8,
+        "VV_change": 25.2,
+        "VH_change": 38.8,
+        "jrc_occurrence": 0.0,
+        "precip_total_mm": 93.6,
+        "precip_anomaly_pct": 85.9
+      }
+    },
+    "Islamabad Capital Territory": {
+      "means": {
+        "VV_during": -7.244,
+        "VH_during": -14.924,
+        "VV_change": -1.544,
+        "VH_change": -1.077,
+        "jrc_occurrence": 0.0,
+        "precip_total_mm": 93.536,
+        "precip_anomaly_pct": -69.235
+      },
+      "reference_sample_percentile": {
+        "VV_during": 85.6,
+        "VH_during": 77.4,
+        "VV_change": 31.8,
+        "VH_change": 33.9,
+        "jrc_occurrence": 0.0,
+        "precip_total_mm": 83.3,
+        "precip_anomaly_pct": 56.5
+      }
+    },
+    "Abbottabad": {
+      "means": {
+        "VV_during": -9.822,
+        "VH_during": -15.291,
+        "VV_change": -0.011,
+        "VH_change": 0.033,
+        "jrc_occurrence": 0.0,
+        "precip_total_mm": 92.175,
+        "precip_anomaly_pct": -69.836
+      },
+      "reference_sample_percentile": {
+        "VV_during": 45.6,
+        "VH_during": 73.6,
+        "VV_change": 60.2,
+        "VH_change": 55.3,
+        "jrc_occurrence": 0.0,
+        "precip_total_mm": 80.2,
+        "precip_anomaly_pct": 54.8
+      }
+    },
+    "Rawalpindi": {
+      "means": {
+        "VV_during": -9.348,
+        "VH_during": -15.917,
+        "VV_change": -1.313,
+        "VH_change": -0.615,
+        "jrc_occurrence": 0.0,
+        "precip_total_mm": 106.056,
+        "precip_anomaly_pct": -60.21
+      },
+      "reference_sample_percentile": {
+        "VV_during": 52.5,
+        "VH_during": 62.6,
+        "VV_change": 35.3,
+        "VH_change": 41.6,
+        "jrc_occurrence": 0.0,
+        "precip_total_mm": 89.2,
+        "precip_anomaly_pct": 72.0
+      }
+    },
+    "Jhelum": {
+      "means": {
+        "VV_during": -10.151,
+        "VH_during": -16.748,
+        "VV_change": -0.838,
+        "VH_change": -0.614,
+        "jrc_occurrence": 0.0,
+        "precip_total_mm": 116.06,
+        "precip_anomaly_pct": -48.54
+      },
+      "reference_sample_percentile": {
+        "VV_during": 41.4,
+        "VH_during": 50.6,
+        "VV_change": 44.5,
+        "VH_change": 41.6,
+        "jrc_occurrence": 0.0,
+        "precip_total_mm": 91.3,
+        "precip_anomaly_pct": 82.6
+      }
+    },
+    "Sialkot": {
+      "means": {
+        "VV_during": -9.096,
+        "VH_during": -17.873,
+        "VV_change": -0.853,
+        "VH_change": 0.859,
+        "jrc_occurrence": 0.0,
+        "precip_total_mm": 104.521,
+        "precip_anomaly_pct": -58.243
+      },
+      "reference_sample_percentile": {
+        "VV_during": 57.4,
+        "VH_during": 34.8,
+        "VV_change": 44.2,
+        "VH_change": 69.6,
+        "jrc_occurrence": 0.0,
+        "precip_total_mm": 88.7,
+        "precip_anomaly_pct": 74.8
+      }
+    },
+    "Narowal": {
+      "means": {
+        "VV_during": -10.453,
+        "VH_during": -19.58,
+        "VV_change": -0.782,
+        "VH_change": 2.505,
+        "jrc_occurrence": 0.0,
+        "precip_total_mm": 91.926,
+        "precip_anomaly_pct": -61.486
+      },
+      "reference_sample_percentile": {
+        "VV_during": 37.6,
+        "VH_during": 22.6,
+        "VV_change": 45.2,
+        "VH_change": 86.4,
+        "jrc_occurrence": 0.0,
+        "precip_total_mm": 80.0,
+        "precip_anomaly_pct": 70.6
+      }
+    },
+    "Azad Kashmir": {
+      "means": {
+        "VV_during": -8.71,
+        "VH_during": -15.076,
+        "VV_change": -0.421,
+        "VH_change": -1.189,
+        "jrc_occurrence": 0.8,
+        "precip_total_mm": 101.467,
+        "precip_anomaly_pct": -64.339
+      },
+      "reference_sample_percentile": {
+        "VV_during": 64.2,
+        "VH_during": 75.8,
+        "VV_change": 50.8,
+        "VH_change": 32.0,
+        "jrc_occurrence": 96.5,
+        "precip_total_mm": 88.0,
+        "precip_anomaly_pct": 64.7
+      }
+    },
+    "Haripur": {
+      "means": {
+        "VV_during": -10.0,
+        "VH_during": -16.434,
+        "VV_change": -0.983,
+        "VH_change": -0.477,
+        "jrc_occurrence": 6.467,
+        "precip_total_mm": 76.099,
+        "precip_anomaly_pct": -67.49
+      },
+      "reference_sample_percentile": {
+        "VV_during": 43.3,
+        "VH_during": 54.1,
+        "VV_change": 42.4,
+        "VH_change": 44.5,
+        "jrc_occurrence": 97.4,
+        "precip_total_mm": 68.9,
+        "precip_anomaly_pct": 61.4
+      }
+    }
+  },
+  "reference_sample_mean": {
+    "VV_during": -10.081327046689633,
+    "VH_during": -17.785238469828307,
+    "VV_change": -0.4024345191306271,
+    "VH_change": 0.02649896045414343,
+    "jrc_occurrence": 1.0235294117647058,
+    "precip_total_mm": 46.99657893300056,
+    "precip_anomaly_pct": -72.20992208017996
+  },
+  "reference_sample_districts": [
+    "Kashmore",
+    "Dera Ismail Khan",
+    "Khyber",
+    "Pakpattan",
+    "Bajaur",
+    "Battagram",
+    "Swat",
+    "Mianwali",
+    "Chagai",
+    "Kharan",
+    "Nagar",
+    "Bannu",
+    "Ziarat",
+    "Mansehra",
+    "Gwadar",
+    "Bahawalnagar",
+    "Buner",
+    "Lahore",
+    "Kohlu",
+    "Barkhan"
+  ],
+  "n_reference_points": 425,
+  "caveat": "Percentiles are against a real 29-district sample (the 9 flagged + 20 random others), not the full 126-district national distribution -- an earlier full-national attempt timed out GEE's reduceRegions with the 20-year climatology stack. Useful as a real, honest reference, not a precise national percentile."
+}

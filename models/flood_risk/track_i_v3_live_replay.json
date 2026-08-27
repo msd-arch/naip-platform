@@ -1,0 +1,1042 @@
+{
+  "generated": "2026-08-27T15:26:29.536061+00:00",
+  "during_window": [
+    "2026-07-28",
+    "2026-08-27"
+  ],
+  "pre_monsoon_baseline_window": [
+    "2026-03-01",
+    "2026-04-15"
+  ],
+  "flag_threshold": 0.5,
+  "n_districts_total": 126,
+  "original_model": {
+    "n_flagged": 118,
+    "mean_score": 0.6685174603174603,
+    "min_score": 0.4237,
+    "max_score": 0.9251
+  },
+  "v2_model": {
+    "n_flagged": 41,
+    "mean_score": 0.47832380952380954,
+    "min_score": 0.3548,
+    "max_score": 0.6373
+  },
+  "v3_model": {
+    "n_flagged": 9,
+    "mean_score": 0.1896484126984127,
+    "min_score": 0.0227,
+    "max_score": 0.8231
+  },
+  "district_results": [
+    {
+      "district": "Abbottabad",
+      "n_points": 15,
+      "orig_mean_score": 0.6618,
+      "v2_mean_score": 0.5164,
+      "v3_mean_score": 0.7346,
+      "mean_precip_anomaly_pct": -69.84
+    },
+    {
+      "district": "Astore",
+      "n_points": 15,
+      "orig_mean_score": 0.5865,
+      "v2_mean_score": 0.4847,
+      "v3_mean_score": 0.1706,
+      "mean_precip_anomaly_pct": -96.52
+    },
+    {
+      "district": "Attock",
+      "n_points": 15,
+      "orig_mean_score": 0.5322,
+      "v2_mean_score": 0.4292,
+      "v3_mean_score": 0.2109,
+      "mean_precip_anomaly_pct": -63.49
+    },
+    {
+      "district": "Awaran",
+      "n_points": 15,
+      "orig_mean_score": 0.7245,
+      "v2_mean_score": 0.5078,
+      "v3_mean_score": 0.1866,
+      "mean_precip_anomaly_pct": -94.66
+    },
+    {
+      "district": "Azad Kashmir",
+      "n_points": 15,
+      "orig_mean_score": 0.5058,
+      "v2_mean_score": 0.4794,
+      "v3_mean_score": 0.5789,
+      "mean_precip_anomaly_pct": -64.34
+    },
+    {
+      "district": "Badin",
+      "n_points": 15,
+      "orig_mean_score": 0.8079,
+      "v2_mean_score": 0.5865,
+      "v3_mean_score": 0.0471,
+      "mean_precip_anomaly_pct": -90.47
+    },
+    {
+      "district": "Bahawalnagar",
+      "n_points": 15,
+      "orig_mean_score": 0.6134,
+      "v2_mean_score": 0.5006,
+      "v3_mean_score": 0.1216,
+      "mean_precip_anomaly_pct": -31.63
+    },
+    {
+      "district": "Bahawalpur",
+      "n_points": 15,
+      "orig_mean_score": 0.7542,
+      "v2_mean_score": 0.6373,
+      "v3_mean_score": 0.203,
+      "mean_precip_anomaly_pct": -68.34
+    },
+    {
+      "district": "Bajaur",
+      "n_points": 15,
+      "orig_mean_score": 0.5648,
+      "v2_mean_score": 0.4276,
+      "v3_mean_score": 0.1249,
+      "mean_precip_anomaly_pct": -72.81
+    },
+    {
+      "district": "Bannu",
+      "n_points": 15,
+      "orig_mean_score": 0.5194,
+      "v2_mean_score": 0.4529,
+      "v3_mean_score": 0.1006,
+      "mean_precip_anomaly_pct": -56.83
+    },
+    {
+      "district": "Barkhan",
+      "n_points": 15,
+      "orig_mean_score": 0.7005,
+      "v2_mean_score": 0.4813,
+      "v3_mean_score": 0.0659,
+      "mean_precip_anomaly_pct": -88.09
+    },
+    {
+      "district": "Battagram",
+      "n_points": 15,
+      "orig_mean_score": 0.6978,
+      "v2_mean_score": 0.5295,
+      "v3_mean_score": 0.2583,
+      "mean_precip_anomaly_pct": -86.02
+    },
+    {
+      "district": "Bhakkar",
+      "n_points": 15,
+      "orig_mean_score": 0.7056,
+      "v2_mean_score": 0.4245,
+      "v3_mean_score": 0.1221,
+      "mean_precip_anomaly_pct": -65.58
+    },
+    {
+      "district": "Buner",
+      "n_points": 15,
+      "orig_mean_score": 0.5418,
+      "v2_mean_score": 0.4409,
+      "v3_mean_score": 0.3737,
+      "mean_precip_anomaly_pct": -74.44
+    },
+    {
+      "district": "Chagai",
+      "n_points": 15,
+      "orig_mean_score": 0.8395,
+      "v2_mean_score": 0.5486,
+      "v3_mean_score": 0.264,
+      "mean_precip_anomaly_pct": -100.0
+    },
+    {
+      "district": "Chakwal",
+      "n_points": 15,
+      "orig_mean_score": 0.4783,
+      "v2_mean_score": 0.3871,
+      "v3_mean_score": 0.3932,
+      "mean_precip_anomaly_pct": -64.96
+    },
+    {
+      "district": "Charsadda",
+      "n_points": 15,
+      "orig_mean_score": 0.4592,
+      "v2_mean_score": 0.4127,
+      "v3_mean_score": 0.0699,
+      "mean_precip_anomaly_pct": -62.01
+    },
+    {
+      "district": "Chitral",
+      "n_points": 15,
+      "orig_mean_score": 0.6948,
+      "v2_mean_score": 0.5183,
+      "v3_mean_score": 0.2436,
+      "mean_precip_anomaly_pct": -100.0
+    },
+    {
+      "district": "Dadu",
+      "n_points": 15,
+      "orig_mean_score": 0.7875,
+      "v2_mean_score": 0.4871,
+      "v3_mean_score": 0.0768,
+      "mean_precip_anomaly_pct": -92.63
+    },
+    {
+      "district": "Dera Bugti",
+      "n_points": 15,
+      "orig_mean_score": 0.726,
+      "v2_mean_score": 0.5397,
+      "v3_mean_score": 0.0814,
+      "mean_precip_anomaly_pct": -91.33
+    },
+    {
+      "district": "Dera Ghazi Khan",
+      "n_points": 15,
+      "orig_mean_score": 0.658,
+      "v2_mean_score": 0.4064,
+      "v3_mean_score": 0.0573,
+      "mean_precip_anomaly_pct": -89.85
+    },
+    {
+      "district": "Dera Ismail Khan",
+      "n_points": 15,
+      "orig_mean_score": 0.7538,
+      "v2_mean_score": 0.5371,
+      "v3_mean_score": 0.0635,
+      "mean_precip_anomaly_pct": -86.08
+    },
+    {
+      "district": "Diamer",
+      "n_points": 15,
+      "orig_mean_score": 0.6348,
+      "v2_mean_score": 0.4572,
+      "v3_mean_score": 0.2024,
+      "mean_precip_anomaly_pct": -99.51
+    },
+    {
+      "district": "Faisalabad",
+      "n_points": 15,
+      "orig_mean_score": 0.6089,
+      "v2_mean_score": 0.399,
+      "v3_mean_score": 0.0982,
+      "mean_precip_anomaly_pct": -49.87
+    },
+    {
+      "district": "Ghanche",
+      "n_points": 15,
+      "orig_mean_score": 0.9141,
+      "v2_mean_score": 0.5572,
+      "v3_mean_score": 0.3951,
+      "mean_precip_anomaly_pct": -60.16
+    },
+    {
+      "district": "Ghizer",
+      "n_points": 15,
+      "orig_mean_score": 0.7282,
+      "v2_mean_score": 0.5473,
+      "v3_mean_score": 0.3227,
+      "mean_precip_anomaly_pct": -100.0
+    },
+    {
+      "district": "Ghotki",
+      "n_points": 15,
+      "orig_mean_score": 0.6915,
+      "v2_mean_score": 0.4321,
+      "v3_mean_score": 0.0535,
+      "mean_precip_anomaly_pct": -89.38
+    },
+    {
+      "district": "Gilgit",
+      "n_points": 15,
+      "orig_mean_score": 0.6845,
+      "v2_mean_score": 0.5238,
+      "v3_mean_score": 0.1847,
+      "mean_precip_anomaly_pct": -99.7
+    },
+    {
+      "district": "Gujranwala",
+      "n_points": 15,
+      "orig_mean_score": 0.597,
+      "v2_mean_score": 0.4055,
+      "v3_mean_score": 0.2147,
+      "mean_precip_anomaly_pct": -64.96
+    },
+    {
+      "district": "Gujrat",
+      "n_points": 15,
+      "orig_mean_score": 0.5408,
+      "v2_mean_score": 0.4645,
+      "v3_mean_score": 0.8231,
+      "mean_precip_anomaly_pct": -45.88
+    },
+    {
+      "district": "Gwadar",
+      "n_points": 5,
+      "orig_mean_score": 0.9251,
+      "v2_mean_score": 0.483,
+      "v3_mean_score": 0.0963,
+      "mean_precip_anomaly_pct": -65.83
+    },
+    {
+      "district": "Hafizabad",
+      "n_points": 15,
+      "orig_mean_score": 0.6652,
+      "v2_mean_score": 0.463,
+      "v3_mean_score": 0.1001,
+      "mean_precip_anomaly_pct": -65.7
+    },
+    {
+      "district": "Hangu",
+      "n_points": 15,
+      "orig_mean_score": 0.6481,
+      "v2_mean_score": 0.4616,
+      "v3_mean_score": 0.1192,
+      "mean_precip_anomaly_pct": -75.58
+    },
+    {
+      "district": "Haripur",
+      "n_points": 15,
+      "orig_mean_score": 0.6591,
+      "v2_mean_score": 0.5158,
+      "v3_mean_score": 0.5612,
+      "mean_precip_anomaly_pct": -67.49
+    },
+    {
+      "district": "Hunza",
+      "n_points": 15,
+      "orig_mean_score": 0.7509,
+      "v2_mean_score": 0.554,
+      "v3_mean_score": 0.431,
+      "mean_precip_anomaly_pct": -77.78
+    },
+    {
+      "district": "Hyderabad",
+      "n_points": 15,
+      "orig_mean_score": 0.728,
+      "v2_mean_score": 0.461,
+      "v3_mean_score": 0.0539,
+      "mean_precip_anomaly_pct": -93.88
+    },
+    {
+      "district": "Islamabad Capital Territory",
+      "n_points": 15,
+      "orig_mean_score": 0.6269,
+      "v2_mean_score": 0.441,
+      "v3_mean_score": 0.7685,
+      "mean_precip_anomaly_pct": -69.24
+    },
+    {
+      "district": "Jacobabad",
+      "n_points": 15,
+      "orig_mean_score": 0.6196,
+      "v2_mean_score": 0.4181,
+      "v3_mean_score": 0.114,
+      "mean_precip_anomaly_pct": -94.18
+    },
+    {
+      "district": "Jafarabad",
+      "n_points": 15,
+      "orig_mean_score": 0.7687,
+      "v2_mean_score": 0.4994,
+      "v3_mean_score": 0.0873,
+      "mean_precip_anomaly_pct": -84.74
+    },
+    {
+      "district": "Jamshoro",
+      "n_points": 15,
+      "orig_mean_score": 0.6279,
+      "v2_mean_score": 0.408,
+      "v3_mean_score": 0.0381,
+      "mean_precip_anomaly_pct": -93.11
+    },
+    {
+      "district": "Jhal Magsi",
+      "n_points": 15,
+      "orig_mean_score": 0.8612,
+      "v2_mean_score": 0.519,
+      "v3_mean_score": 0.1616,
+      "mean_precip_anomaly_pct": -99.46
+    },
+    {
+      "district": "Jhang",
+      "n_points": 15,
+      "orig_mean_score": 0.5971,
+      "v2_mean_score": 0.4093,
+      "v3_mean_score": 0.0858,
+      "mean_precip_anomaly_pct": -40.83
+    },
+    {
+      "district": "Jhelum",
+      "n_points": 15,
+      "orig_mean_score": 0.5912,
+      "v2_mean_score": 0.462,
+      "v3_mean_score": 0.7292,
+      "mean_precip_anomaly_pct": -48.54
+    },
+    {
+      "district": "Kachhi",
+      "n_points": 15,
+      "orig_mean_score": 0.8678,
+      "v2_mean_score": 0.4843,
+      "v3_mean_score": 0.13,
+      "mean_precip_anomaly_pct": -99.14
+    },
+    {
+      "district": "Kalat",
+      "n_points": 15,
+      "orig_mean_score": 0.6588,
+      "v2_mean_score": 0.5615,
+      "v3_mean_score": 0.2418,
+      "mean_precip_anomaly_pct": -100.0
+    },
+    {
+      "district": "Karachi",
+      "n_points": 15,
+      "orig_mean_score": 0.6615,
+      "v2_mean_score": 0.3893,
+      "v3_mean_score": 0.0449,
+      "mean_precip_anomaly_pct": -93.39
+    },
+    {
+      "district": "Karak",
+      "n_points": 15,
+      "orig_mean_score": 0.7164,
+      "v2_mean_score": 0.4329,
+      "v3_mean_score": 0.1652,
+      "mean_precip_anomaly_pct": -64.6
+    },
+    {
+      "district": "Kashmore",
+      "n_points": 15,
+      "orig_mean_score": 0.7998,
+      "v2_mean_score": 0.5861,
+      "v3_mean_score": 0.194,
+      "mean_precip_anomaly_pct": -98.77
+    },
+    {
+      "district": "Kasur",
+      "n_points": 15,
+      "orig_mean_score": 0.5591,
+      "v2_mean_score": 0.4457,
+      "v3_mean_score": 0.1146,
+      "mean_precip_anomaly_pct": -41.71
+    },
+    {
+      "district": "Kech",
+      "n_points": 13,
+      "orig_mean_score": 0.7904,
+      "v2_mean_score": 0.5506,
+      "v3_mean_score": 0.229,
+      "mean_precip_anomaly_pct": -92.53
+    },
+    {
+      "district": "Khairpur",
+      "n_points": 15,
+      "orig_mean_score": 0.7794,
+      "v2_mean_score": 0.4365,
+      "v3_mean_score": 0.0227,
+      "mean_precip_anomaly_pct": -93.96
+    },
+    {
+      "district": "Khanewal",
+      "n_points": 15,
+      "orig_mean_score": 0.477,
+      "v2_mean_score": 0.4179,
+      "v3_mean_score": 0.1021,
+      "mean_precip_anomaly_pct": -37.15
+    },
+    {
+      "district": "Kharan",
+      "n_points": 15,
+      "orig_mean_score": 0.8414,
+      "v2_mean_score": 0.5069,
+      "v3_mean_score": 0.2535,
+      "mean_precip_anomaly_pct": -87.8
+    },
+    {
+      "district": "Kharmang",
+      "n_points": 15,
+      "orig_mean_score": 0.6775,
+      "v2_mean_score": 0.4422,
+      "v3_mean_score": 0.197,
+      "mean_precip_anomaly_pct": -97.73
+    },
+    {
+      "district": "Khushab",
+      "n_points": 15,
+      "orig_mean_score": 0.5888,
+      "v2_mean_score": 0.539,
+      "v3_mean_score": 0.1935,
+      "mean_precip_anomaly_pct": -55.0
+    },
+    {
+      "district": "Khuzdar",
+      "n_points": 15,
+      "orig_mean_score": 0.7388,
+      "v2_mean_score": 0.4993,
+      "v3_mean_score": 0.2028,
+      "mean_precip_anomaly_pct": -98.1
+    },
+    {
+      "district": "Khyber",
+      "n_points": 15,
+      "orig_mean_score": 0.7169,
+      "v2_mean_score": 0.4892,
+      "v3_mean_score": 0.1408,
+      "mean_precip_anomaly_pct": -82.39
+    },
+    {
+      "district": "Kohat",
+      "n_points": 15,
+      "orig_mean_score": 0.7047,
+      "v2_mean_score": 0.4887,
+      "v3_mean_score": 0.1164,
+      "mean_precip_anomaly_pct": -75.65
+    },
+    {
+      "district": "Kohistan",
+      "n_points": 15,
+      "orig_mean_score": 0.6782,
+      "v2_mean_score": 0.4906,
+      "v3_mean_score": 0.217,
+      "mean_precip_anomaly_pct": -100.0
+    },
+    {
+      "district": "Kohlu",
+      "n_points": 15,
+      "orig_mean_score": 0.7536,
+      "v2_mean_score": 0.574,
+      "v3_mean_score": 0.1767,
+      "mean_precip_anomaly_pct": -96.92
+    },
+    {
+      "district": "Kurram",
+      "n_points": 15,
+      "orig_mean_score": 0.66,
+      "v2_mean_score": 0.4659,
+      "v3_mean_score": 0.0955,
+      "mean_precip_anomaly_pct": -69.72
+    },
+    {
+      "district": "Lahore",
+      "n_points": 15,
+      "orig_mean_score": 0.588,
+      "v2_mean_score": 0.5045,
+      "v3_mean_score": 0.4214,
+      "mean_precip_anomaly_pct": -46.44
+    },
+    {
+      "district": "Lakki Marwat",
+      "n_points": 15,
+      "orig_mean_score": 0.7118,
+      "v2_mean_score": 0.413,
+      "v3_mean_score": 0.1613,
+      "mean_precip_anomaly_pct": -78.05
+    },
+    {
+      "district": "Lasbela",
+      "n_points": 14,
+      "orig_mean_score": 0.7508,
+      "v2_mean_score": 0.4571,
+      "v3_mean_score": 0.0828,
+      "mean_precip_anomaly_pct": -95.07
+    },
+    {
+      "district": "Layyah",
+      "n_points": 15,
+      "orig_mean_score": 0.6286,
+      "v2_mean_score": 0.4062,
+      "v3_mean_score": 0.0814,
+      "mean_precip_anomaly_pct": -84.46
+    },
+    {
+      "district": "Lodhran",
+      "n_points": 15,
+      "orig_mean_score": 0.4399,
+      "v2_mean_score": 0.4493,
+      "v3_mean_score": 0.0942,
+      "mean_precip_anomaly_pct": -66.14
+    },
+    {
+      "district": "Loralai",
+      "n_points": 15,
+      "orig_mean_score": 0.7676,
+      "v2_mean_score": 0.5897,
+      "v3_mean_score": 0.1898,
+      "mean_precip_anomaly_pct": -99.03
+    },
+    {
+      "district": "Lower Dir",
+      "n_points": 15,
+      "orig_mean_score": 0.5744,
+      "v2_mean_score": 0.4294,
+      "v3_mean_score": 0.1221,
+      "mean_precip_anomaly_pct": -73.25
+    },
+    {
+      "district": "Malakand",
+      "n_points": 15,
+      "orig_mean_score": 0.466,
+      "v2_mean_score": 0.4423,
+      "v3_mean_score": 0.1626,
+      "mean_precip_anomaly_pct": -76.23
+    },
+    {
+      "district": "Mandi Bahauddin",
+      "n_points": 15,
+      "orig_mean_score": 0.6057,
+      "v2_mean_score": 0.4829,
+      "v3_mean_score": 0.2964,
+      "mean_precip_anomaly_pct": -57.84
+    },
+    {
+      "district": "Mansehra",
+      "n_points": 15,
+      "orig_mean_score": 0.5996,
+      "v2_mean_score": 0.4813,
+      "v3_mean_score": 0.2738,
+      "mean_precip_anomaly_pct": -92.73
+    },
+    {
+      "district": "Mardan",
+      "n_points": 15,
+      "orig_mean_score": 0.6355,
+      "v2_mean_score": 0.4476,
+      "v3_mean_score": 0.1014,
+      "mean_precip_anomaly_pct": -73.35
+    },
+    {
+      "district": "Mastung",
+      "n_points": 15,
+      "orig_mean_score": 0.5938,
+      "v2_mean_score": 0.5214,
+      "v3_mean_score": 0.1955,
+      "mean_precip_anomaly_pct": -98.19
+    },
+    {
+      "district": "Matiari",
+      "n_points": 15,
+      "orig_mean_score": 0.7288,
+      "v2_mean_score": 0.4938,
+      "v3_mean_score": 0.0515,
+      "mean_precip_anomaly_pct": -92.62
+    },
+    {
+      "district": "Mianwali",
+      "n_points": 15,
+      "orig_mean_score": 0.5257,
+      "v2_mean_score": 0.4418,
+      "v3_mean_score": 0.1581,
+      "mean_precip_anomaly_pct": -72.28
+    },
+    {
+      "district": "Mirpurkhas",
+      "n_points": 15,
+      "orig_mean_score": 0.6744,
+      "v2_mean_score": 0.5084,
+      "v3_mean_score": 0.0453,
+      "mean_precip_anomaly_pct": -92.19
+    },
+    {
+      "district": "Mohmand",
+      "n_points": 15,
+      "orig_mean_score": 0.638,
+      "v2_mean_score": 0.4606,
+      "v3_mean_score": 0.0704,
+      "mean_precip_anomaly_pct": -79.63
+    },
+    {
+      "district": "Multan",
+      "n_points": 15,
+      "orig_mean_score": 0.6181,
+      "v2_mean_score": 0.4912,
+      "v3_mean_score": 0.1008,
+      "mean_precip_anomaly_pct": -51.14
+    },
+    {
+      "district": "Musakhel",
+      "n_points": 15,
+      "orig_mean_score": 0.7116,
+      "v2_mean_score": 0.5457,
+      "v3_mean_score": 0.1564,
+      "mean_precip_anomaly_pct": -90.06
+    },
+    {
+      "district": "Muzaffargarh",
+      "n_points": 15,
+      "orig_mean_score": 0.6394,
+      "v2_mean_score": 0.4716,
+      "v3_mean_score": 0.0548,
+      "mean_precip_anomaly_pct": -74.05
+    },
+    {
+      "district": "Nagar",
+      "n_points": 15,
+      "orig_mean_score": 0.8276,
+      "v2_mean_score": 0.5618,
+      "v3_mean_score": 0.3445,
+      "mean_precip_anomaly_pct": -100.0
+    },
+    {
+      "district": "Narowal",
+      "n_points": 15,
+      "orig_mean_score": 0.5893,
+      "v2_mean_score": 0.4672,
+      "v3_mean_score": 0.5816,
+      "mean_precip_anomaly_pct": -61.49
+    },
+    {
+      "district": "Nasirabad",
+      "n_points": 15,
+      "orig_mean_score": 0.6587,
+      "v2_mean_score": 0.3548,
+      "v3_mean_score": 0.0855,
+      "mean_precip_anomaly_pct": -86.71
+    },
+    {
+      "district": "Naushehro Feroze",
+      "n_points": 15,
+      "orig_mean_score": 0.5821,
+      "v2_mean_score": 0.4896,
+      "v3_mean_score": 0.0488,
+      "mean_precip_anomaly_pct": -87.74
+    },
+    {
+      "district": "Nawabshah",
+      "n_points": 15,
+      "orig_mean_score": 0.7354,
+      "v2_mean_score": 0.5374,
+      "v3_mean_score": 0.1105,
+      "mean_precip_anomaly_pct": -95.26
+    },
+    {
+      "district": "North Waziristan",
+      "n_points": 15,
+      "orig_mean_score": 0.6944,
+      "v2_mean_score": 0.4325,
+      "v3_mean_score": 0.1139,
+      "mean_precip_anomaly_pct": -58.87
+    },
+    {
+      "district": "Nowshera",
+      "n_points": 15,
+      "orig_mean_score": 0.5354,
+      "v2_mean_score": 0.4502,
+      "v3_mean_score": 0.1414,
+      "mean_precip_anomaly_pct": -60.04
+    },
+    {
+      "district": "Nushki",
+      "n_points": 15,
+      "orig_mean_score": 0.7803,
+      "v2_mean_score": 0.4801,
+      "v3_mean_score": 0.1961,
+      "mean_precip_anomaly_pct": -100.0
+    },
+    {
+      "district": "Okara",
+      "n_points": 15,
+      "orig_mean_score": 0.7798,
+      "v2_mean_score": 0.4936,
+      "v3_mean_score": 0.1124,
+      "mean_precip_anomaly_pct": -28.52
+    },
+    {
+      "district": "Orakzai",
+      "n_points": 15,
+      "orig_mean_score": 0.6455,
+      "v2_mean_score": 0.4654,
+      "v3_mean_score": 0.2046,
+      "mean_precip_anomaly_pct": -86.78
+    },
+    {
+      "district": "Pakpattan",
+      "n_points": 15,
+      "orig_mean_score": 0.7058,
+      "v2_mean_score": 0.5147,
+      "v3_mean_score": 0.1622,
+      "mean_precip_anomaly_pct": -10.12
+    },
+    {
+      "district": "Panjgur",
+      "n_points": 15,
+      "orig_mean_score": 0.6853,
+      "v2_mean_score": 0.4627,
+      "v3_mean_score": 0.1676,
+      "mean_precip_anomaly_pct": -92.56
+    },
+    {
+      "district": "Peshawar",
+      "n_points": 15,
+      "orig_mean_score": 0.5078,
+      "v2_mean_score": 0.3952,
+      "v3_mean_score": 0.0898,
+      "mean_precip_anomaly_pct": -72.41
+    },
+    {
+      "district": "Pishin",
+      "n_points": 15,
+      "orig_mean_score": 0.7916,
+      "v2_mean_score": 0.4619,
+      "v3_mean_score": 0.1681,
+      "mean_precip_anomaly_pct": -100.0
+    },
+    {
+      "district": "Qambar Shahdadkot",
+      "n_points": 15,
+      "orig_mean_score": 0.7726,
+      "v2_mean_score": 0.5089,
+      "v3_mean_score": 0.1863,
+      "mean_precip_anomaly_pct": -94.46
+    },
+    {
+      "district": "Qilla Abdullah",
+      "n_points": 15,
+      "orig_mean_score": 0.734,
+      "v2_mean_score": 0.5205,
+      "v3_mean_score": 0.1451,
+      "mean_precip_anomaly_pct": -100.0
+    },
+    {
+      "district": "Qilla Saifullah",
+      "n_points": 15,
+      "orig_mean_score": 0.7976,
+      "v2_mean_score": 0.4777,
+      "v3_mean_score": 0.1222,
+      "mean_precip_anomaly_pct": -97.12
+    },
+    {
+      "district": "Quetta",
+      "n_points": 15,
+      "orig_mean_score": 0.714,
+      "v2_mean_score": 0.4994,
+      "v3_mean_score": 0.1891,
+      "mean_precip_anomaly_pct": -100.0
+    },
+    {
+      "district": "Rahim Yar Khan",
+      "n_points": 15,
+      "orig_mean_score": 0.6677,
+      "v2_mean_score": 0.4181,
+      "v3_mean_score": 0.0532,
+      "mean_precip_anomaly_pct": -86.14
+    },
+    {
+      "district": "Rajanpur",
+      "n_points": 15,
+      "orig_mean_score": 0.7038,
+      "v2_mean_score": 0.444,
+      "v3_mean_score": 0.1312,
+      "mean_precip_anomaly_pct": -94.98
+    },
+    {
+      "district": "Rawalpindi",
+      "n_points": 15,
+      "orig_mean_score": 0.4237,
+      "v2_mean_score": 0.3927,
+      "v3_mean_score": 0.7307,
+      "mean_precip_anomaly_pct": -60.21
+    },
+    {
+      "district": "Sahiwal",
+      "n_points": 15,
+      "orig_mean_score": 0.6062,
+      "v2_mean_score": 0.4512,
+      "v3_mean_score": 0.1492,
+      "mean_precip_anomaly_pct": -17.56
+    },
+    {
+      "district": "Sanghar",
+      "n_points": 15,
+      "orig_mean_score": 0.6359,
+      "v2_mean_score": 0.486,
+      "v3_mean_score": 0.0412,
+      "mean_precip_anomaly_pct": -90.5
+    },
+    {
+      "district": "Sargodha",
+      "n_points": 15,
+      "orig_mean_score": 0.4913,
+      "v2_mean_score": 0.4087,
+      "v3_mean_score": 0.097,
+      "mean_precip_anomaly_pct": -56.31
+    },
+    {
+      "district": "Shangla",
+      "n_points": 15,
+      "orig_mean_score": 0.685,
+      "v2_mean_score": 0.5487,
+      "v3_mean_score": 0.1521,
+      "mean_precip_anomaly_pct": -90.82
+    },
+    {
+      "district": "Sheikhpura",
+      "n_points": 15,
+      "orig_mean_score": 0.4717,
+      "v2_mean_score": 0.4032,
+      "v3_mean_score": 0.1109,
+      "mean_precip_anomaly_pct": -56.38
+    },
+    {
+      "district": "Shigar",
+      "n_points": 15,
+      "orig_mean_score": 0.8451,
+      "v2_mean_score": 0.5199,
+      "v3_mean_score": 0.326,
+      "mean_precip_anomaly_pct": -77.65
+    },
+    {
+      "district": "Shikarpur",
+      "n_points": 15,
+      "orig_mean_score": 0.6688,
+      "v2_mean_score": 0.4869,
+      "v3_mean_score": 0.1324,
+      "mean_precip_anomaly_pct": -100.0
+    },
+    {
+      "district": "Sialkot",
+      "n_points": 15,
+      "orig_mean_score": 0.6595,
+      "v2_mean_score": 0.4534,
+      "v3_mean_score": 0.665,
+      "mean_precip_anomaly_pct": -58.24
+    },
+    {
+      "district": "Sibi",
+      "n_points": 15,
+      "orig_mean_score": 0.6842,
+      "v2_mean_score": 0.45,
+      "v3_mean_score": 0.1456,
+      "mean_precip_anomaly_pct": -100.0
+    },
+    {
+      "district": "Skardu",
+      "n_points": 15,
+      "orig_mean_score": 0.7123,
+      "v2_mean_score": 0.4715,
+      "v3_mean_score": 0.1981,
+      "mean_precip_anomaly_pct": -100.0
+    },
+    {
+      "district": "South Waziristan",
+      "n_points": 15,
+      "orig_mean_score": 0.671,
+      "v2_mean_score": 0.5124,
+      "v3_mean_score": 0.1275,
+      "mean_precip_anomaly_pct": -73.41
+    },
+    {
+      "district": "Sukkur",
+      "n_points": 15,
+      "orig_mean_score": 0.7885,
+      "v2_mean_score": 0.4093,
+      "v3_mean_score": 0.0539,
+      "mean_precip_anomaly_pct": -90.7
+    },
+    {
+      "district": "Swabi",
+      "n_points": 15,
+      "orig_mean_score": 0.5498,
+      "v2_mean_score": 0.5488,
+      "v3_mean_score": 0.3632,
+      "mean_precip_anomaly_pct": -66.9
+    },
+    {
+      "district": "Swat",
+      "n_points": 15,
+      "orig_mean_score": 0.5556,
+      "v2_mean_score": 0.4323,
+      "v3_mean_score": 0.1265,
+      "mean_precip_anomaly_pct": -95.39
+    },
+    {
+      "district": "Tando Allahyar",
+      "n_points": 15,
+      "orig_mean_score": 0.6358,
+      "v2_mean_score": 0.5358,
+      "v3_mean_score": 0.0546,
+      "mean_precip_anomaly_pct": -92.9
+    },
+    {
+      "district": "Tando Muhammad Khan",
+      "n_points": 15,
+      "orig_mean_score": 0.7036,
+      "v2_mean_score": 0.4313,
+      "v3_mean_score": 0.0833,
+      "mean_precip_anomaly_pct": -95.97
+    },
+    {
+      "district": "Tank",
+      "n_points": 15,
+      "orig_mean_score": 0.7363,
+      "v2_mean_score": 0.5308,
+      "v3_mean_score": 0.057,
+      "mean_precip_anomaly_pct": -84.39
+    },
+    {
+      "district": "Tharparkar",
+      "n_points": 15,
+      "orig_mean_score": 0.6015,
+      "v2_mean_score": 0.4571,
+      "v3_mean_score": 0.072,
+      "mean_precip_anomaly_pct": -87.9
+    },
+    {
+      "district": "Thatta",
+      "n_points": 15,
+      "orig_mean_score": 0.7967,
+      "v2_mean_score": 0.5192,
+      "v3_mean_score": 0.033,
+      "mean_precip_anomaly_pct": -89.93
+    },
+    {
+      "district": "Toba Tek Singh",
+      "n_points": 15,
+      "orig_mean_score": 0.5327,
+      "v2_mean_score": 0.4501,
+      "v3_mean_score": 0.1213,
+      "mean_precip_anomaly_pct": -26.77
+    },
+    {
+      "district": "Umerkot",
+      "n_points": 15,
+      "orig_mean_score": 0.7037,
+      "v2_mean_score": 0.4396,
+      "v3_mean_score": 0.0527,
+      "mean_precip_anomaly_pct": -90.43
+    },
+    {
+      "district": "Upper Dir",
+      "n_points": 15,
+      "orig_mean_score": 0.6157,
+      "v2_mean_score": 0.4296,
+      "v3_mean_score": 0.1652,
+      "mean_precip_anomaly_pct": -96.13
+    },
+    {
+      "district": "Vihari",
+      "n_points": 15,
+      "orig_mean_score": 0.763,
+      "v2_mean_score": 0.6018,
+      "v3_mean_score": 0.234,
+      "mean_precip_anomaly_pct": -7.83
+    },
+    {
+      "district": "Zhob",
+      "n_points": 15,
+      "orig_mean_score": 0.7547,
+      "v2_mean_score": 0.4716,
+      "v3_mean_score": 0.1461,
+      "mean_precip_anomaly_pct": -75.59
+    },
+    {
+      "district": "Ziarat",
+      "n_points": 15,
+      "orig_mean_score": 0.6823,
+      "v2_mean_score": 0.5354,
+      "v3_mean_score": 0.2565,
+      "mean_precip_anomaly_pct": -100.0
+    }
+  ],
+  "caution_note": "A better-looking live-replay number alone is not evidence of a real fix -- v2 looked better live (122->29) purely from global score suppression, caught only by the fair 2024 labeled test (track_i_v3_2024_full_eval.json). Read this alongside that file, not instead of it."
+}

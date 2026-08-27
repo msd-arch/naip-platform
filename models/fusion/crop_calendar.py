@@ -93,6 +93,16 @@ HAZARD_STAGE_VULNERABILITY = {
                       "grain_fill_maturation": 0.3, "harvest": 0.5},
     "drought":      {"establishment": 0.6, "vegetative": 0.6, "flowering": 0.9,
                       "grain_fill_maturation": 0.8, "harvest": 0.3},
+    # WEEK 27 (Track I, flood v3 wiring): flood is illustrative agronomic
+    # knowledge like every other row here, NOT locally fitted -- physical
+    # inundation is destructive at nearly every stage (higher floor than
+    # heavy_rain's table), most severe during flowering/grain-fill (standing
+    # crop, can't be harvested early) and still substantial at establishment
+    # (young plants/seedlings washed out) -- lowest, but not low, at harvest
+    # (mature/cut crop already less vulnerable to being uprooted, but still
+    # exposed to spoilage/inaccessibility).
+    "flood_risk":   {"establishment": 0.6, "vegetative": 0.7, "flowering": 0.9,
+                      "grain_fill_maturation": 0.85, "harvest": 0.6},
 }
 DEFAULT_VULNERABILITY = 0.4  # hazard/stage combos not in the table above (uv_index, cloud_burst, etc.)
 

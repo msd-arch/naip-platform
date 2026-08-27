@@ -33,6 +33,7 @@ cropland trap and Week 8's dominant-crop trap should have applied earlier.
 """
 import json
 import os
+from datetime import datetime, timezone
 
 import numpy as np
 import pandas as pd
@@ -150,6 +151,21 @@ def main():
     tier_counts = merged.groupby("tier")["district"].nunique().to_dict()
 
     out = {
+        "last_computed_utc": datetime.now(timezone.utc).isoformat(),
+        "refresh_cadence_note": "Recomputed on a real weekly schedule (naip/pipelines/scheduler/"
+                                 "drought_weekly_refresh.py, Task Scheduler task 'NAIP-DroughtWeekly'), "
+                                 "not Track H's 15-min MSG cadence -- Sentinel-2 itself only revisits a "
+                                 "given point roughly every 5 real days, and vegetation/drought trends "
+                                 "develop over weeks, not minutes, so a 15-min poll would just re-check "
+                                 "unchanged data. IMPORTANT, stated honestly: last_computed_utc reflects "
+                                 "when this SCRIPT last ran, not when the underlying satellite "
+                                 "observations were last refreshed -- the current-period Sentinel-2 "
+                                 "(from Track F's phenology_features.csv) and MODIS current-period "
+                                 "extraction are both bound to a fixed Nov 2022-Oct 2023 season, not a "
+                                 "rolling window, so recomputing weekly currently re-validates the "
+                                 "pipeline runs correctly but will not surface new real vegetation change "
+                                 "until that extraction is itself rebuilt for a new season -- a separate, "
+                                 "larger, not-yet-scoped task, flagged here rather than silently implied.",
         "generated_note": "Phase 4 Track M -- real national NDVI drought/vegetation-stress "
                            "signal, replacing the original 27km MSG-grid / 2-cluster version. "
                            "Real Sentinel-2 current signal (10m, reused from Track F + this "

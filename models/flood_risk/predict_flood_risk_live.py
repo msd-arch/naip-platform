@@ -1,40 +1,43 @@
 #!/usr/bin/env python3
 """
-predict_flood_risk_live.py -- Phase 3 Track D integration: run the trained
-Track D flood classifier (gbt_flood_classifier.joblib, STATUS_WEEK10.md) on
-REAL CURRENT Sentinel-1/JRC data for all 126 real districts, not the frozen
-2022 training window.
+predict_flood_risk_live.py -- Phase 3 Track D integration, PROMOTED Week 27
+(Track I) to the v3 (precipitation-augmented) model: run the trained flood
+classifier on REAL CURRENT Sentinel-1/JRC/CHIRPS data for all 126 real
+districts, not the frozen 2022 training window.
 
-REAL ARCHITECTURAL DIFFERENCE FROM TRACK E'S INTEGRATION (Week 9/Track G),
-stated explicitly because it drove a design choice below: Track E's fire
-model is bound to a fixed historical MSG archive (Nov 2023) -- it can only
-ever replay that past event. Track D's inputs (Sentinel-1 via GEE, JRC) are
-live and continuously updating, the same as the locust monitor's SMAP/NDVI
-inputs. This script is a genuine live national screen of REAL CURRENT
-conditions, not a replay.
+WEEK 27 PROMOTION, same real precedent as Track E's thermal-only model
+becoming the deployed candidate over its with-geo sibling: v3
+(gbt_flood_classifier_v3_precip_fulltrain.joblib, trained on all real 2022+
+2021 points) replaces the original SAR/JRC-only model
+(gbt_flood_classifier.joblib) as what this live script runs. The original
+model file is UNTOUCHED and stays on disk -- eval/comparison scripts
+(eval_2024_full_v3.py, replay_live_screen_v3.py) still load it by name for
+real apples-to-apples comparison. Promoted on real, fair-test evidence
+(naip/docs/STATUS_WEEK26.md): F1 0.229->0.312, AUC 0.602->0.761, and a
+score-separation-by-true-label gap of 0.332 (vs. the original's own 0.096) on
+the same fair 2024 held-out year v2 (Track I's first, rejected, attempt) was
+caught failing on.
 
-WHY THIS IS A STANDALONE SCRIPT, NOT A HOOK INSIDE hazards.py'S PER-15-MIN
-FRAME LOOP: Sentinel-1 revisit over Pakistan is on the order of days, not
-15 minutes -- querying GEE once per MSG frame would be architecturally wrong
-(thousands of redundant identical calls) and slow. This is the same real
-reason the locust-breeding-risk monitor (6.6) was never folded into
-hazards.py either -- it is a standalone module with its own output file,
-consumed by prepare_data.py the same way. merge_into_district_alerts.py
-(same folder) is the piece that reuses district_alerts.json's existing
-row schema so this still "flows into district_alerts.json ... without a
-bespoke format," per the actual requirement -- just via a merge step
-rather than a live per-frame call.
+REAL, HONEST LIMITATIONS CARRIED FORWARD, stated here not just in a status
+doc: this model's real fair-test precision is 0.190 -- most "flooded"
+predictions are still wrong even in the best real evaluation so far. A real,
+unresolved live finding from Week 27's investigation: the districts this
+model currently flags (see flood_risk_live_national.json's district_results)
+do not always show a positive rainfall anomaly, the direction the training
+data's own signal points -- see CAVEAT_9DISTRICT_ANOMALY below for the
+specific, honest finding.
 
-FEATURE CONSTRUCTION: identical to sample_and_extract.py (VV_during,
-VH_during, VV_change, VH_change, jrc_occurrence; same N_PER_DISTRICT=15,
-same random-point seed pattern) -- reused, not reinvented, so the live
-inputs sit on the same distribution the model was trained on.
+REAL ARCHITECTURAL DIFFERENCE FROM TRACK E'S INTEGRATION (Week 9/Track G):
+Track E's fire model is bound to a fixed historical MSG archive (Nov 2023).
+Track D/I's inputs (Sentinel-1, JRC, CHIRPS, all via GEE) are live and
+continuously updating -- this script is a genuine live national screen of
+REAL CURRENT conditions, not a replay.
 
-HONESTY DISCIPLINE (same as every prior track, same as the locust monitor's
-three prior honest "no risk flagged" results): this script reports whatever
-the real current data says. It does not assume active flooding just because
-it is monsoon season, and it does not suppress a real positive score if one
-appears.
+FEATURE CONSTRUCTION: SAR/JRC identical to sample_and_extract.py (VV_during,
+VH_during, VV_change, VH_change, jrc_occurrence); precipitation identical to
+add_precipitation_features.py's real CHIRPS total + 20-year (2001-2020)
+same-calendar-window climatology anomaly (precip_total_mm, precip_anomaly_pct)
+-- same N_PER_DISTRICT=15, same random-point seed pattern throughout.
 """
 import argparse
 import datetime
@@ -47,31 +50,48 @@ import numpy as np
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 DISTRICTS_PATH = os.path.join(HERE, "..", "..", "data", "seed", "pk_districts.geojson")
-MODEL_PATH = os.path.join(HERE, "gbt_flood_classifier.joblib")
+MODEL_PATH = os.path.join(HERE, "gbt_flood_classifier_v3_precip_fulltrain.joblib")
 OUT_PATH = os.path.join(HERE, "flood_risk_live_national.json")
 
-N_PER_DISTRICT = 15  # same as sample_and_extract.py / training
+N_PER_DISTRICT = 15
+CHIRPS_ID = "UCSB-CHG/CHIRPS/DAILY"
+CHIRPS_SCALE = 5500
+CLIMATOLOGY_YEARS = list(range(2001, 2021))
 
-# Real caveats carried forward from STATUS_WEEK10.md, surfaced on every record,
-# not just in this docstring.
-CAVEAT_TRAINING_WINDOW = (
-    "Trained on a single real disaster window (Aug-Sep 2022) and not validated "
-    "against a second real flood event -- same single-window caveat every "
-    "other Phase 3 track carries."
+# Real caveats carried forward, surfaced on every record, not just in this docstring.
+CAVEAT_MODEL_VERSION = (
+    "MODEL PROMOTED Week 27 (Track I, precipitation attempt): this is v3 "
+    "(gbt_flood_classifier_v3_precip_fulltrain.joblib), trained on real Sentinel-1/JRC "
+    "SAR features PLUS real CHIRPS precipitation (total + 20-year anomaly), replacing "
+    "the original SAR/JRC-only model on real, fair-test evidence (F1 0.229->0.312, "
+    "AUC 0.602->0.761, score-separation gap 0.096->0.332 on the same fair 2024 "
+    "held-out year that caught the prior v2 attempt's failure -- see STATUS_WEEK26.md)."
+)
+CAVEAT_PRECISION = (
+    "Real fair-test precision is 0.190 (2024 held-out year) -- most 'flooded' "
+    "predictions are still wrong even in this model's best real evaluation so far. "
+    "Read scores as a real, meaningfully-improved relative risk ranking, not a "
+    "calibrated probability of actual flooding."
+)
+CAVEAT_9DISTRICT_ANOMALY = (
+    "Week 27 investigation, real and not fully resolved: the districts this model "
+    "currently flags do not always show the positive rainfall anomaly the training "
+    "data's own signal points toward (flooded training points average +216-259% "
+    "anomaly; several currently-flagged districts show a real negative anomaly "
+    "instead). Investigated and found explainable by real SAR/JRC signal (persistent "
+    "wetness/irrigation infrastructure) in most but not all flagged districts -- see "
+    "track_i_v3_9district_investigation.json and STATUS_WEEK27.md for the specific, "
+    "per-district real finding, not smoothed into a single blanket explanation."
 )
 CAVEAT_JRC = (
     "Track D's own permutation-importance check found jrc_occurrence contributes "
-    "almost nothing to the model (0.0012 importance) -- the permanent-water "
-    "baseline discounting it was included to provide may not be doing what it "
-    "was designed to do. Score is driven mainly by real SAR backscatter change."
+    "almost nothing to the model (0.0012 importance) -- carried forward from the "
+    "original model; not re-checked for v3 this week."
 )
 
-# Rule threshold from train_flood_classifier.py, applied here too for a live
-# rule-vs-model comparison consistent with Track G's fire-model precedent.
 RULE_VV_THRESHOLD_DB = -17.0
 RULE_JRC_THRESHOLD_PCT = 5.0
-
-FLAG_THRESHOLD = 0.5  # same probability cutoff Track G used for the fire model
+FLAG_THRESHOLD = 0.5  # unchanged, same probability cutoff Track G used for the fire model
 
 
 def rule_flag(vv_during, jrc_occ):
@@ -140,10 +160,23 @@ def main():
 
     during_img = s1_composite(during_start, during_end)
     pre_img = s1_composite(pre_start, pre_end)
+
+    md_start, md_end = during_start[5:], during_end[5:]
+    chirps = ee.ImageCollection(CHIRPS_ID).select("precipitation")
+    current_precip = chirps.filterDate(during_start, during_end).sum().rename("precip_total_mm")
+    yearly_sums = []
+    for y in CLIMATOLOGY_YEARS:
+        y_start, y_end = f"{y}-{md_start}", f"{y}-{md_end}"
+        if md_end < md_start:
+            y_end = f"{y + 1}-{md_end}"
+        yearly_sums.append(chirps.filterDate(y_start, y_end).sum())
+    hist_mean_img = ee.ImageCollection(yearly_sums).mean().rename("hist_mean_precip_mm")
+
     combined = ee.Image.cat([
         during_img.rename(["VV_during", "VH_during"]),
         pre_img.rename(["VV_pre", "VH_pre"]),
         jrc.rename("jrc_occurrence"),
+        current_precip, hist_mean_img,
     ])
 
     print("running real reduceRegions over all live points (single real composite image)...")
@@ -157,17 +190,21 @@ def main():
         vv_d, vh_d = props.get("VV_during"), props.get("VH_during")
         vv_p, vh_p = props.get("VV_pre"), props.get("VH_pre")
         jrc_occ = props.get("jrc_occurrence")
-        if None in (vv_d, vh_d, vv_p, vh_p, jrc_occ):
+        precip_total = props.get("precip_total_mm")
+        hist_mean = props.get("hist_mean_precip_mm")
+        if None in (vv_d, vh_d, vv_p, vh_p, jrc_occ, precip_total, hist_mean):
             n_dropped += 1
             continue
+        precip_anom = ((precip_total - hist_mean) / hist_mean * 100.0) if hist_mean > 1e-6 else 0.0
         per_point.append({
             "district": p["district"], "lat": p["lat"], "lon": p["lon"],
             "VV_during": vv_d, "VH_during": vh_d,
             "VV_change": vv_p - vv_d, "VH_change": vh_p - vh_d,
             "jrc_occurrence": jrc_occ,
+            "precip_total_mm": precip_total, "precip_anomaly_pct": precip_anom,
         })
 
-    print(f"real usable live points: {len(per_point)} (dropped {n_dropped} with missing real S1/JRC data)")
+    print(f"real usable live points: {len(per_point)} (dropped {n_dropped} with missing real data)")
 
     X = np.array([[pt[f] for f in features] for pt in per_point])
     scores = model.predict_proba(X)[:, 1]
@@ -186,13 +223,13 @@ def main():
             district_results.append({
                 "district": name, "n_points": 0, "mean_model_score": None,
                 "frac_points_flagged": None, "n_rule_flagged": 0, "flag": False,
-                "note": "no real usable Sentinel-1/JRC points this run (data gap, not zero risk)",
+                "note": "no real usable Sentinel-1/JRC/CHIRPS points this run (data gap, not zero risk)",
             })
             continue
         mean_score = float(np.mean([pt["model_score"] for pt in pts]))
         frac_flagged = float(np.mean([pt["model_score"] >= FLAG_THRESHOLD for pt in pts]))
         n_rule = sum(1 for pt in pts if pt["rule_flag"])
-        # district centroid, same convention as pk_districts.geojson consumers elsewhere
+        mean_precip_anom = float(np.mean([pt["precip_anomaly_pct"] for pt in pts]))
         lats = [pt["lat"] for pt in pts]
         lons = [pt["lon"] for pt in pts]
         district_results.append({
@@ -201,6 +238,7 @@ def main():
             "frac_points_flagged": round(frac_flagged, 4),
             "n_rule_flagged": n_rule,
             "flag": bool(mean_score >= FLAG_THRESHOLD),
+            "mean_precip_anomaly_pct": round(mean_precip_anom, 2),
             "lat": round(float(np.mean(lats)), 4), "lon": round(float(np.mean(lons)), 4),
         })
 
@@ -213,13 +251,13 @@ def main():
     print("top 5 real district scores (whatever they are, not curated):")
     for d in top5:
         print(f"  {d['district']:20s} mean_model_score={d['mean_model_score']:.4f} "
-              f"n_rule_flagged={d['n_rule_flagged']}/{d['n_points']}")
+              f"precip_anomaly={d['mean_precip_anomaly_pct']:.1f}% n_rule_flagged={d['n_rule_flagged']}/{d['n_points']}")
 
     out = {
         "generated": datetime.datetime.utcnow().isoformat() + "Z",
-        "note": "Phase 3 Track D integration -- real live national Sentinel-1/JRC screen "
-                "using the trained Week 10 flood classifier. Unlike Track E's fire model "
-                "(bound to a fixed 2023 historical archive), this reflects real current "
+        "model_version": "v3_precip (promoted Week 27, Track I)",
+        "note": "Live national Sentinel-1/JRC/CHIRPS screen using the PROMOTED v3 "
+                "(precipitation-augmented) flood classifier. Reflects real current "
                 "conditions as of the generation timestamp above, not a replay.",
         "during_window": [during_start, during_end],
         "pre_monsoon_baseline_window": [pre_start, pre_end],
@@ -227,7 +265,7 @@ def main():
         "n_districts_flagged": n_flagged,
         "n_districts_total": len(district_results),
         "n_districts_no_data": sum(1 for d in district_results if d["n_points"] == 0),
-        "caveats": [CAVEAT_TRAINING_WINDOW, CAVEAT_JRC],
+        "caveats": [CAVEAT_MODEL_VERSION, CAVEAT_PRECISION, CAVEAT_9DISTRICT_ANOMALY, CAVEAT_JRC],
         "district_results": district_results,
     }
     with open(a.out, "w", encoding="utf-8") as f:

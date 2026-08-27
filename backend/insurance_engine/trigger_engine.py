@@ -92,6 +92,32 @@ BASIS_RISK_NOTE = (
     "real-world crop) required ~2.1x. See STATUS_WEEK21.md for the real before/after."
 )
 
+# WEEK 27 (Track I wiring): flood_risk is the first hazard driven by a
+# trained ML classifier's continuous probability score rather than
+# hazards.py's rule-based detectors -- its own, distinct basis-risk sources
+# are appended (not substituted) onto BASIS_RISK_NOTE above, kept verbatim,
+# whenever the triggering hazard is flood_risk.
+FLOOD_BASIS_RISK_ADDENDUM = (
+    " FLOOD_RISK-SPECIFIC (Week 27, Track I): this hazard's confidence comes from a trained "
+    "ML classifier (Sentinel-1 SAR + JRC + real CHIRPS precipitation), not one of hazards.py's "
+    "11 rule-based detectors. Real fair-test precision is 0.190 (2024 held-out year, "
+    "STATUS_WEEK26.md) -- most 'flooded' predictions are still wrong even in this model's best "
+    "real evaluation so far; read hazard_confidence here as a real, meaningfully-improved "
+    "relative risk ranking, not a calibrated probability of actual flooding. A real, "
+    "not-fully-resolved Week 27 finding: this model's currently-flagged districts do not always "
+    "show the positive rainfall anomaly the training data's own signal points toward -- "
+    "investigated and found explainable in the cases checked (real high absolute precipitation "
+    "and/or real SAR/JRC wetness signal despite a below-normal anomaly this particular year), "
+    "but not exhaustively verified for every possible future flagged district -- see "
+    "STATUS_WEEK27.md and track_i_v3_9district_investigation.json for the specific finding."
+)
+
+
+def basis_risk_note_for(hazard):
+    if hazard == "flood_risk":
+        return BASIS_RISK_NOTE + FLOOD_BASIS_RISK_ADDENDUM
+    return BASIS_RISK_NOTE
+
 RAAST_STUB_NOTE = (
     "Raast (SBP instant-payment rail) is an integration point only, per architecture.md -- no real "
     "payment execution exists or is attempted here. This is a logged INTENT, not a transaction. "
@@ -141,7 +167,7 @@ def build_audit_record(row, threshold, registry):
         "lat": row.get("lat"), "lon": row.get("lon"),
         "n_real_farms_matched_in_district": len(farms_in_district),
         "matched_farm_ids": [f.farm_id for f in farms_in_district],
-        "basis_risk_note": BASIS_RISK_NOTE,
+        "basis_risk_note": basis_risk_note_for(row["hazard"]),
         "payout": {
             "status": "STUBBED_INTENT_ONLY",
             "note": RAAST_STUB_NOTE,
