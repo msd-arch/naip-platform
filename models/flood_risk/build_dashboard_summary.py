@@ -109,6 +109,11 @@ def main():
                     "yet -- the honest result of its own real accuracy. It DOES clear the demo "
                     "tier (7 real events) -- see STATUS_WEEK27.md for the full reasoning.",
         },
+        "district_results": [
+            {"district": d["district"], "mean_model_score": d["mean_model_score"],
+             "flag": d["flag"], "mean_precip_anomaly_pct": d.get("mean_precip_anomaly_pct"),
+             "lat": d.get("lat"), "lon": d.get("lon")} for d in results
+        ],
         "caveats": live["caveats"],
         "wired_into_trigger_engine": True,
         "trigger_engine_effect": "7 real demo-threshold trigger events (0 at the illustrative/"

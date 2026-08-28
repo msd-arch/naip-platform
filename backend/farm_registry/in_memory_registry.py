@@ -25,6 +25,7 @@ same honest gap as the SQL schema, not hidden by this being in-memory.
 """
 import json
 import os
+import uuid
 from dataclasses import dataclass, field
 from typing import Optional
 
@@ -65,6 +66,19 @@ class Farm:
     plra_khasra_ref: Optional[str] = None
     crop_calendar: list = field(default_factory=list)  # list[CropCalendarEntry], empty = real gap
 
+    def resolved_crop_type(self) -> Optional[str]:
+        """Track P precedence rule: a real farmer-reported crop_calendar entry
+        always wins over an ndvi_classifier (model-estimated) one for the same
+        farm, per schema.sql's documented crop_calendar.source enum ('manual'
+        | 'ndvi_classifier' | 'farmer_reported'). Multiple entries of the same
+        source are allowed (Kharif/Rabi over time) -- this takes the most
+        recently appended entry of the winning source, not the first."""
+        by_source: dict[str, str] = {}
+        for entry in self.crop_calendar:
+            if entry.crop_type:
+                by_source[entry.source] = entry.crop_type
+        return by_source.get("farmer_reported") or by_source.get("ndvi_classifier") or by_source.get("manual")
+
 
 class FarmRegistry:
     def __init__(self):
@@ -99,7 +113,111 @@ def _assign_district(centroid_lon, centroid_lat, district_features):
     return best
 
 
-def load_registry(farms_geojson_path, districts_geojson_path):
+def _default_submissions_path(farms_geojson_path):
+    return os.path.join(os.path.dirname(os.path.abspath(farms_geojson_path)), "farmer_submissions.json")
+
+
+def _load_submissions(submissions_path):
+    if not submissions_path or not os.path.exists(submissions_path):
+        return []
+    with open(submissions_path, encoding="utf-8") as f:
+        return json.load(f)
+
+
+def _apply_submission(registry, submission, district_features):
+    """The one real place a farmer submission becomes Farmer/Farm rows --
+    used both to replay persisted submissions on every load_registry() call
+    and by register_farmer_submission() for a brand-new one, so there is
+    exactly one code path, not a parallel "real" one and a test bypass.
+
+    Required identity fields (farmer_name, cnic, phone_number) are real PII,
+    provided directly by the person they describe -- validated as present,
+    never fabricated or defaulted. district is ALWAYS recomputed from the
+    real boundary via point-in-polygon (schema.sql: "Populated via
+    ST_Within... not hand-entered"), never trusted from the submission's own
+    (possibly test-placeholder) district field.
+    """
+    for required in ("farmer_name", "cnic", "phone_number", "farm_id", "farm_boundary"):
+        if not submission.get(required):
+            raise ValueError(f"farmer submission missing required field: {required}")
+
+    cnic = submission["cnic"]
+    existing_farmer_id = next(
+        (fid for fid, f in registry.farmers.items() if f.cnic == cnic), None
+    )
+    if existing_farmer_id:
+        farmer_id = existing_farmer_id
+        farmer = registry.farmers[farmer_id]
+        farmer.full_name = submission["farmer_name"]
+        farmer.phone_number = submission["phone_number"]
+    else:
+        farmer_id = f"farmer-{uuid.uuid4().hex[:12]}"
+        registry.farmers[farmer_id] = Farmer(
+            farmer_id=farmer_id,
+            cnic=cnic,
+            full_name=submission["farmer_name"],
+            phone_number=submission["phone_number"],
+        )
+
+    geom = submission["farm_boundary"]
+    poly = shape({"type": geom["type"], "coordinates": geom["coordinates"]})
+    centroid = poly.centroid
+    district = _assign_district(centroid.x, centroid.y, district_features)
+
+    crop_calendar = []
+    if submission.get("crop_type_declared"):
+        crop_calendar.append(CropCalendarEntry(
+            crop_type=submission["crop_type_declared"], source="farmer_reported"))
+    if submission.get("crop_type_model_estimated"):
+        crop_calendar.append(CropCalendarEntry(
+            crop_type=submission["crop_type_model_estimated"], source="ndvi_classifier"))
+
+    farm_id = submission["farm_id"]
+    registry.farms[farm_id] = Farm(
+        farm_id=farm_id,
+        boundary_geojson=geom,
+        centroid_lat=centroid.y,
+        centroid_lon=centroid.x,
+        area_ha=poly.area * 111.0 * 111.0 * 100,
+        district=district,
+        source_dataset="farmer_submissions.json",
+        source_feature_id=farm_id,
+        farmer_id=farmer_id,
+        crop_calendar=crop_calendar,
+    )
+    return registry.farms[farm_id]
+
+
+def register_farmer_submission(registry, submission, districts_geojson_path, submissions_path=None):
+    """Track P Part 1: the real write path for a farmer-submitted identity +
+    farm record. Validates, applies via _apply_submission (real district
+    point-in-polygon, real CNIC dedup), then persists to submissions_path
+    (append-only JSON list) so the record survives a fresh load_registry()
+    call, not just this process. submissions_path defaults next to the real
+    120-farm seed file, gitignored (data/seed/farmer_submissions.json) --
+    real PII, never committed."""
+    with open(districts_geojson_path, encoding="utf-8") as f:
+        districts_fc = json.load(f)
+    district_features = [
+        (feat["properties"]["shapeName"], shape(feat["geometry"]))
+        for feat in districts_fc["features"]
+    ]
+
+    farm = _apply_submission(registry, submission, district_features)
+
+    if submissions_path is None:
+        submissions_path = os.path.join(os.path.dirname(os.path.abspath(districts_geojson_path)), "farmer_submissions.json")
+    existing = _load_submissions(submissions_path)
+    existing = [s for s in existing if s.get("farm_id") != submission["farm_id"]]
+    existing.append(submission)
+    os.makedirs(os.path.dirname(submissions_path), exist_ok=True)
+    with open(submissions_path, "w", encoding="utf-8") as f:
+        json.dump(existing, f, indent=2, ensure_ascii=False)
+
+    return farm
+
+
+def load_registry(farms_geojson_path, districts_geojson_path, submissions_path=None):
     registry = FarmRegistry()
 
     with open(districts_geojson_path, encoding="utf-8") as f:
@@ -133,6 +251,16 @@ def load_registry(farms_geojson_path, districts_geojson_path):
             source_feature_id=source_feature_id,
             crop_calendar=[],  # real gap: no crop_type source exists, not fabricated
         )
+
+    # Real Track P farmer submissions (identity-collection path), if any exist
+    # yet -- replayed on every load so a registered farmer/farm is visible to
+    # every consumer (trigger_engine.py, run_end_to_end_demo.py) that calls
+    # load_registry() fresh, not just the process that wrote them.
+    if submissions_path is None:
+        submissions_path = _default_submissions_path(farms_geojson_path)
+    for submission in _load_submissions(submissions_path):
+        _apply_submission(registry, submission, district_features)
+
     return registry
 
 

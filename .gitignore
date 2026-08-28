@@ -35,6 +35,11 @@ data/live_nowcast/cycle.lock
 logs/
 data/live_nowcast/*.sh
 
+# Real farmer identity submissions (Track P: name/CNIC/phone are genuine PII,
+# not seed/demo data) -- financial-sector-grade handling per CLAUDE.md, never
+# committed to a public repo, even a single real test record.
+data/seed/farmer_submissions.json
+
 # Python
 __pycache__/
 *.pyc
