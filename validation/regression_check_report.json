@@ -1,0 +1,15 @@
+{
+  "generated_utc": "2026-08-29T13:10:05.319555+00:00",
+  "data_dir": "C:\\Users\\USER\\Downloads\\naip_dashboard\\public\\data",
+  "n_files_checked": 18,
+  "n_findings": 1,
+  "n_errors": 0,
+  "findings": [
+    {
+      "file": "audit_log_national.json",
+      "severity": "warn",
+      "check": "row_presence",
+      "detail": "no real rows found to check row-level fields against (row_field=<top-level list>)"
+    }
+  ]
+}

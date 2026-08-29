@@ -29,6 +29,15 @@
     "wheat": {
       "n_real_yield_cells_2022_23": 2152,
       "n_real_yield_cells_2021_22": 2248,
+      "real_yield_label_distribution": {
+        "n": 4400,
+        "min": 0.3,
+        "max": 4.2199,
+        "mean": 2.529275386363636,
+        "std": 0.7846260200833874,
+        "n_near_zero": 0,
+        "n_iqr_outliers": 0
+      },
       "direction_A_train2122_test2223": {
         "n_train_rows": 2248,
         "n_test_rows": 2152,
@@ -91,6 +100,15 @@
     "cotton": {
       "n_real_yield_cells_2022_23": 731,
       "n_real_yield_cells_2021_22": 761,
+      "real_yield_label_distribution": {
+        "n": 1492,
+        "min": 1.0937,
+        "max": 6.2166,
+        "mean": 3.5062632707774806,
+        "std": 1.345387959586787,
+        "n_near_zero": 0,
+        "n_iqr_outliers": 0
+      },
       "direction_A_train2122_test2223": {
         "n_train_rows": 761,
         "n_test_rows": 731,
@@ -153,6 +171,15 @@
     "rice": {
       "n_real_yield_cells_2022_23": 1418,
       "n_real_yield_cells_2021_22": 1301,
+      "real_yield_label_distribution": {
+        "n": 2719,
+        "min": 0.7619,
+        "max": 7.6959,
+        "mean": 2.388603677822729,
+        "std": 0.7872919575591857,
+        "n_near_zero": 0,
+        "n_iqr_outliers": 49
+      },
       "direction_A_train2122_test2223": {
         "n_train_rows": 1301,
         "n_test_rows": 1418,
@@ -215,6 +242,15 @@
     "sugarcane": {
       "n_real_yield_cells_2022_23": 628,
       "n_real_yield_cells_2021_22": 611,
+      "real_yield_label_distribution": {
+        "n": 1239,
+        "min": 36.0,
+        "max": 101.5216,
+        "mean": 64.6739839386602,
+        "std": 12.028602317489288,
+        "n_near_zero": 0,
+        "n_iqr_outliers": 53
+      },
       "direction_A_train2122_test2223": {
         "n_train_rows": 611,
         "n_test_rows": 628,

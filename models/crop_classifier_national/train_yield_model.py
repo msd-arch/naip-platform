@@ -36,6 +36,7 @@ yield for that district/crop"?).
 """
 import json
 import os
+import sys
 
 import numpy as np
 import pandas as pd
@@ -43,6 +44,9 @@ from sklearn.ensemble import HistGradientBoostingRegressor
 from sklearn.inspection import permutation_importance
 from sklearn.linear_model import LinearRegression
 from sklearn.metrics import mean_absolute_error, r2_score
+
+sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "..", "validation"))
+from standard_checks import regression_distribution_report  # noqa: E402
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 FEATURES_2223_PATH = os.path.join(HERE, "phenology_features.csv")
@@ -159,9 +163,17 @@ def main():
         print(f"  real rows: 2022-23={len(data_2223)} (of {n_before_2223} candidate), "
               f"2021-22={len(data_2122)} (of {n_before_2122} candidate)")
 
+        # Track U retrofit: real distribution/outlier check on the real yield
+        # label, before training -- makes STATUS_WEEK22.md's one-off manual
+        # finding (7 near-zero print-precision cells, 1 genuine outlier)
+        # repeatable code instead of a session-log-only claim.
+        all_yield = pd.concat([data_2223["label_yield"], data_2122["label_yield"]], ignore_index=True)
+        yield_distribution = regression_distribution_report(all_yield.values)
+
         result = {
             "n_real_yield_cells_2022_23": len(data_2223),
             "n_real_yield_cells_2021_22": len(data_2122),
+            "real_yield_label_distribution": yield_distribution,
         }
         result["direction_A_train2122_test2223"] = run_crop_direction(
             crop, "train=2021-22, test=2022-23", data_2122, data_2223)

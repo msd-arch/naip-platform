@@ -237,3 +237,30 @@ def count_farms(dsn):
             return dict(cur.fetchall())
     finally:
         conn.close()
+
+
+def identity_coverage_summary(dsn):
+    """Real, aggregate-only counts for the Farm Data submission page's
+    read-only summary view -- counts filtered by is_synthetic=false
+    throughout, never blending the 630 real synthetic farms into the
+    real-farm coverage numbers (the exact real/synthetic separation Track R
+    was built to protect). Never returns a raw identity field -- if a true
+    admin view with raw CNIC/phone access is ever wanted, that needs a real,
+    separate authentication layer first, not this function."""
+    conn = psycopg2.connect(dsn)
+    try:
+        with conn.cursor() as cur:
+            cur.execute("SELECT COUNT(*) FROM farms WHERE is_synthetic = false")
+            n_real_total = cur.fetchone()[0]
+            cur.execute("SELECT COUNT(*) FROM farms WHERE is_synthetic = false AND farmer_id IS NOT NULL")
+            n_real_with_identity = cur.fetchone()[0]
+            cur.execute("SELECT COUNT(*) FROM farms WHERE is_synthetic = true")
+            n_synthetic_total = cur.fetchone()[0]
+        return {
+            "n_real_farms_total": n_real_total,
+            "n_real_farms_with_identity": n_real_with_identity,
+            "n_real_farms_pending": n_real_total - n_real_with_identity,
+            "n_synthetic_farms_total_for_context_only": n_synthetic_total,
+        }
+    finally:
+        conn.close()
