@@ -239,6 +239,68 @@ def count_farms(dsn):
         conn.close()
 
 
+def registered_farms(dsn):
+    """Real, non-synthetic farms with a real identity linked
+    (is_synthetic=false AND farmer_id IS NOT NULL) -- for the Farm Data
+    page's map. Deliberately never selects farmers.cnic/full_name/
+    phone_number -- location + district + when it was registered only, same
+    write-only display discipline as the registration form itself."""
+    conn = psycopg2.connect(dsn)
+    try:
+        with conn.cursor(cursor_factory=RealDictCursor) as cur:
+            cur.execute(
+                """
+                SELECT f.farm_id, f.district, f.area_ha, f.created_at,
+                       ST_Y(ST_Centroid(f.boundary)) AS centroid_lat,
+                       ST_X(ST_Centroid(f.boundary)) AS centroid_lon
+                FROM farms f
+                WHERE f.is_synthetic = false AND f.farmer_id IS NOT NULL
+                ORDER BY f.created_at DESC
+                """
+            )
+            return cur.fetchall()
+    finally:
+        conn.close()
+
+
+def lookup_farmer(dsn, cnic_digits=None, phone_number=None):
+    """Real lookup by CNIC or phone -- for the Farm Data page's "find my
+    registration" flow (a farmer looking up their OWN record, not an open
+    directory). Returns a real, minimal, non-identity summary only: whether
+    a match exists, how many real farms are linked, their districts, and a
+    masked CNIC reference -- never the full CNIC, phone, or name, matching
+    this page's write-only display design even on the read side. Exactly
+    one of cnic_digits/phone_number should be given."""
+    conn = psycopg2.connect(dsn)
+    try:
+        with conn.cursor(cursor_factory=RealDictCursor) as cur:
+            if cnic_digits:
+                cur.execute("SELECT farmer_id, cnic FROM farmers WHERE cnic = %s", (cnic_digits,))
+            elif phone_number:
+                cur.execute("SELECT farmer_id, cnic FROM farmers WHERE phone_number = %s", (phone_number,))
+            else:
+                return None
+            farmer = cur.fetchone()
+            if not farmer:
+                return None
+            cur.execute(
+                "SELECT district, area_ha, created_at FROM farms WHERE farmer_id = %s AND is_synthetic = false ORDER BY created_at",
+                (farmer["farmer_id"],),
+            )
+            farms = cur.fetchall()
+            cnic = farmer["cnic"] or ""
+            masked = f"*****-*******-{cnic[-1]}" if len(cnic) == 13 else "****"
+            return {
+                "found": True,
+                "masked_cnic": masked,
+                "n_real_farms": len(farms),
+                "districts": [f["district"] for f in farms],
+                "farms": [{"district": f["district"], "area_ha": f["area_ha"], "registered": f["created_at"].isoformat()} for f in farms],
+            }
+    finally:
+        conn.close()
+
+
 def identity_coverage_summary(dsn):
     """Real, aggregate-only counts for the Farm Data submission page's
     read-only summary view -- counts filtered by is_synthetic=false

@@ -45,6 +45,16 @@ Endpoints:
                           identity_coverage_summary() -- never a raw
                           identity field, real/synthetic counts always kept
                           separate.
+  GET  /api/farms     -- real, non-synthetic, identity-linked farms
+                          (registered_farms()) for the map -- location,
+                          district, area, when registered; never a raw
+                          identity field.
+  GET  /api/lookup?cnic=... or ?phone=... -- a farmer looking up their OWN
+                          registration (lookup_farmer()) -- returns whether
+                          a match exists, real farm count/districts, and a
+                          masked CNIC reference only, never the full CNIC/
+                          phone/name, same write-only display design as the
+                          registration form itself.
 
 No farm-selection endpoint exists, deliberately: register_farmer_submission()
 always creates a brand-new farm row from the submission's own boundary --
@@ -56,6 +66,7 @@ import math
 import os
 import re
 from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
+from urllib.parse import urlparse, parse_qs
 
 import db_registry
 
@@ -158,14 +169,55 @@ class Handler(BaseHTTPRequestHandler):
         self.end_headers()
 
     def do_GET(self):
-        if self.path != "/api/summary":
-            return self._send_json(404, {"error": "not found"})
-        try:
-            dsn = db_registry.load_dsn()
-            summary = db_registry.identity_coverage_summary(dsn)
-            self._send_json(200, {"success": True, **summary})
-        except Exception as e:  # real, honest failure surfaced, not swallowed
-            self._send_json(500, {"success": False, "error": f"real error computing summary: {e}"})
+        parsed = urlparse(self.path)
+        path, qs = parsed.path, parse_qs(parsed.query)
+
+        if path == "/api/summary":
+            try:
+                dsn = db_registry.load_dsn()
+                summary = db_registry.identity_coverage_summary(dsn)
+                return self._send_json(200, {"success": True, **summary})
+            except Exception as e:  # real, honest failure surfaced, not swallowed
+                return self._send_json(500, {"success": False, "error": f"real error computing summary: {e}"})
+
+        if path == "/api/farms":
+            try:
+                dsn = db_registry.load_dsn()
+                farms = db_registry.registered_farms(dsn)
+                out = [
+                    {
+                        "farm_id": str(f["farm_id"]), "district": f["district"], "area_ha": f["area_ha"],
+                        "lat": f["centroid_lat"], "lon": f["centroid_lon"], "registered": f["created_at"].isoformat(),
+                    }
+                    for f in farms
+                ]
+                return self._send_json(200, {"success": True, "farms": out})
+            except Exception as e:
+                return self._send_json(500, {"success": False, "error": f"real error listing farms: {e}"})
+
+        if path == "/api/lookup":
+            raw_cnic = (qs.get("cnic") or [""])[0].strip()
+            raw_phone = (qs.get("phone") or [""])[0].strip()
+            if not raw_cnic and not raw_phone:
+                return self._send_json(400, {"success": False, "error": "provide cnic or phone as a query parameter"})
+            try:
+                dsn = db_registry.load_dsn()
+                if raw_cnic:
+                    cnic_digits = "".join(ch for ch in raw_cnic if ch.isdigit())
+                    if len(cnic_digits) != 13:
+                        return self._send_json(400, {"success": False, "error": "cnic must contain 13 real digits"})
+                    result = db_registry.lookup_farmer(dsn, cnic_digits=cnic_digits)
+                else:
+                    if not PHONE_PATTERN.match(raw_phone):
+                        return self._send_json(400, {"success": False, "error": "phone must be a real Pakistani mobile number"})
+                    result = db_registry.lookup_farmer(dsn, phone_number=raw_phone)
+                if result is None:
+                    return self._send_json(200, {"success": True, "found": False})
+                return self._send_json(200, {"success": True, **result})
+            except Exception as e:
+                return self._send_json(500, {"success": False, "error": f"real error during lookup: {e}"})
+
+        return self._send_json(404, {"error": "not found"})
 
     def do_POST(self):
         if self.path != "/api/register":
