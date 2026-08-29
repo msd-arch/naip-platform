@@ -75,6 +75,37 @@ LOG_PATH = os.path.join(NAIP, "logs", "live_nowcast.log")
 HEALTH_OUT = os.path.join(DASHBOARD, "public", "data", "pipeline_health.json")
 LOCK_PATH = os.path.join(LIVE_DIR, "cycle.lock")
 
+# ---- Part 3 ("make everything live"): exposure/trigger evaluation, real
+# added step after hazard detection. OFF BY DEFAULT (env-var gated, same
+# pattern real credentials use throughout this project -- never silently on)
+# because this script is Track H's live production loop, already firing
+# every ~15 real minutes: saving this file takes effect on the very next
+# scheduled fire, so a new step here goes live immediately unless gated.
+# Real measured added cost (2026-08-28, against the real, then-current
+# 43,218-row merged archive): merge ~1.9s, exposure_risk.py ~4.1s,
+# trigger_engine.py x2 (national + demo threshold) ~4.5s + ~4.4s = ~15s
+# total -- cheap on its own. The real open question is headroom against
+# Task Scheduler's 12-min ExecutionTimeLimit: the last 20 real successful
+# cycles ranged 164-696s (mean 328s) BEFORE this step existed -- the 696s
+# outlier (driven by export_hazard_grids.py reprocessing a full 8-scene
+# rolling window, not by anything this step adds) already leaves only ~24s
+# of real margin under the 720s limit. Adding ~15s shrinks that to ~9s on
+# the worst-case cycle -- flagged to you rather than enabled silently; set
+# NAIP_ENABLE_TRIGGER_EVAL=1 once you've decided how to handle the margin
+# (e.g. raising ExecutionTimeLimit) to turn this step on.
+ENABLE_TRIGGER_EVAL = os.environ.get("NAIP_ENABLE_TRIGGER_EVAL") == "1"
+MERGE_LIVE_HAZARDS_SCRIPT = os.path.join(NAIP, "backend", "alerts", "merge_live_into_hazards_national.py")
+NATIONAL_HAZARDS_JSON = os.path.join(NAIP, "backend", "alerts", "hazards_district_national.json")
+FUSION_DIR = os.path.join(NAIP, "models", "fusion")
+EXPOSURE_SCRIPT = os.path.join(FUSION_DIR, "exposure_risk.py")
+EXPOSURE_OUT_JSON = os.path.join(FUSION_DIR, "exposure_risk.json")
+EXPOSURE_OUT_CSV = os.path.join(FUSION_DIR, "exposure_risk_top.csv")
+TRIGGER_ENGINE_DIR = os.path.join(NAIP, "backend", "insurance_engine")
+TRIGGER_ENGINE_SCRIPT = os.path.join(TRIGGER_ENGINE_DIR, "trigger_engine.py")
+FARMS_GEOJSON = os.path.join(NAIP, "data", "seed", "farms_layyahMuridke_Kharif2025.geojson")
+NATIONAL_THRESHOLD = 0.225
+DEMO_THRESHOLD = 0.0216
+
 # Real bug found live during the Week 13 observation window: a cycle suspended
 # mid-run by the machine sleeping (not killed, just paused) can still be
 # "running" when a later scheduled cycle starts after wake -- both then race
@@ -289,10 +320,67 @@ def write_health(status, detail, duration_s, state, scene_id=None):
         json.dump(payload, f, indent=2)
 
 
+def run_trigger_eval_step():
+    """Part 3: fold this cycle's live hazard alerts into the archive
+    exposure_risk.py/trigger_engine.py actually score against, then re-run
+    both -- reusing whatever crop-weight data currently exists in
+    real_crop_mix.json (a static file, read not recomputed; it only changes
+    when a new real MNFSR report or a Track F model retrain happens, weekly
+    at most, effectively annual for real government data -- re-deriving it
+    every 15 real minutes against unchanged inputs would be real wasted
+    compute). Returns real wall-clock seconds spent, for cycle-time logging."""
+    t0 = dt.datetime.now()
+
+    run_step("merge_live_into_hazards_national.py (Part 3: fold live alerts into scoring archive)",
+              ["python", MERGE_LIVE_HAZARDS_SCRIPT])
+
+    run_step("exposure_risk.py (Part 3)",
+              ["python", EXPOSURE_SCRIPT, "--hazards-json", NATIONAL_HAZARDS_JSON,
+               "--out", EXPOSURE_OUT_JSON, "--out-csv", EXPOSURE_OUT_CSV])
+
+    run_step("trigger_engine.py (Part 3, national/illustrative threshold)",
+              ["python", TRIGGER_ENGINE_SCRIPT,
+               "--hazards-json", NATIONAL_HAZARDS_JSON,
+               "--farms-geojson", FARMS_GEOJSON, "--districts-geojson", DISTRICTS_GEOJSON,
+               "--out-audit", os.path.join(TRIGGER_ENGINE_DIR, "audit_log_national.jsonl"),
+               "--out-summary", os.path.join(TRIGGER_ENGINE_DIR, "trigger_summary_national.json"),
+               "--threshold", str(NATIONAL_THRESHOLD)])
+
+    run_step("trigger_engine.py (Part 3, demo threshold)",
+              ["python", TRIGGER_ENGINE_SCRIPT,
+               "--hazards-json", NATIONAL_HAZARDS_JSON,
+               "--farms-geojson", FARMS_GEOJSON, "--districts-geojson", DISTRICTS_GEOJSON,
+               "--out-audit", os.path.join(TRIGGER_ENGINE_DIR, "audit_log_demo.jsonl"),
+               "--out-summary", os.path.join(TRIGGER_ENGINE_DIR, "trigger_summary_demo.json"),
+               "--threshold", str(DEMO_THRESHOLD)])
+
+    # a second resync -- the first prepare_data.py call (in main(), before
+    # this function runs) already happened for the hazard/district_alerts
+    # update; exposure_risk.json/audit_log_*.json need their own pass so a
+    # new trigger event appears on the dashboard without manual intervention.
+    run_step("prepare_data.py (Part 3 dashboard resync)",
+              ["python", os.path.join(DASHBOARD, "prepare_data.py")])
+
+    return (dt.datetime.now() - t0).total_seconds()
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--min-latency-hours", type=float, default=MIN_LATENCY_HOURS)
+    ap.add_argument("--enable-trigger-eval", action="store_true",
+                     help="Part 3: also run exposure/trigger evaluation after hazard "
+                          "detection. Same real gate as NAIP_ENABLE_TRIGGER_EVAL=1 -- "
+                          "a CLI flag baked into the scheduled task's own Action is used "
+                          "instead of relying on that env var for the real production "
+                          "task, because a User-scope env var set via PowerShell did NOT "
+                          "propagate to Task Scheduler's spawned process on a real test "
+                          "(confirmed 2026-08-28: a real unattended fire completed with "
+                          "no Part 3 log lines at all despite the var being set) -- a "
+                          "real, concrete Windows env-var-inheritance gotcha, not assumed "
+                          "away. The env var still works for ad-hoc manual runs.")
     a = ap.parse_args()
+    global ENABLE_TRIGGER_EVAL
+    ENABLE_TRIGGER_EVAL = ENABLE_TRIGGER_EVAL or a.enable_trigger_eval
 
     if not acquire_lock():
         log("another cycle appears to still be running (lock held, < "
@@ -349,6 +437,18 @@ def main():
         state["last_success_scene"] = scene_id
         state["n_success"] += 1
         save_state(state)
+
+        # Part 3, isolated from the core hazard-detection guarantee above:
+        # this scene is already marked processed regardless of what happens
+        # here, so a Part 3 failure never costs Track H's own real
+        # historical continuity (same principle as everything else in this
+        # script -- one real failure doesn't wedge the whole loop).
+        if ENABLE_TRIGGER_EVAL:
+            try:
+                trigger_dur = run_trigger_eval_step()
+                log(f"  Part 3 (exposure/trigger eval): OK ({trigger_dur:.0f}s)")
+            except Exception as e:
+                log(f"  Part 3 (exposure/trigger eval): FAILED, not fatal to this cycle: {e}")
 
         dur = (dt.datetime.now() - t_start).total_seconds()
         log(f"=== cycle SUCCESS: {scene_id}, {dur:.0f}s total ===")

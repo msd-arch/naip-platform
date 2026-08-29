@@ -181,6 +181,15 @@ def main():
 
     out = {
         "generated": now.isoformat(),
+        "last_computed_utc": dt.datetime.now(dt.timezone.utc).isoformat(),
+        "refresh_cadence_note": "Recomputed on a real weekly schedule (naip/pipelines/scheduler/"
+                                 "locust_weekly_refresh.py, Task Scheduler task 'NAIP-LocustWeekly'), "
+                                 "same real cadence reasoning as Track M's drought signal and the "
+                                 "flood screen -- not Track H's 15-min MSG cadence. This script's own "
+                                 "recent/prior windows are computed fresh from today's real date every "
+                                 "run (real SMAP + Sentinel-2 GEE calls, not a re-read of frozen "
+                                 "local data), so last_computed_utc here means both 'the script ran' "
+                                 "AND 'the underlying satellite windows genuinely moved forward.'",
         "scope": (
             "Real-time desert-locust breeding-risk screen using real SMAP soil-moisture-anomaly "
             "and real Sentinel-2 NDVI signal, standard FAO DLIS-style logic. Thresholds "

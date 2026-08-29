@@ -21,21 +21,27 @@ only Meta's default `hello_world` (plus its standard "jaspers_market_*" demo
 samples, none fitting a hazard alert) were APPROVED on this real account --
 no custom template existed yet. A real, custom `hazard_alert` template
 (placeholders: hazard, district, confidence; category UTILITY) was submitted
-this week (id 1732666884606981) and is PENDING -- template approval is not
-instant and is out of this project's control; this module works either way
-by checking the real, current template status at runtime, not assuming one
-state.
+that week (id 1732666884606981) and stayed PENDING for a real week+ (approval
+timing is out of this project's control) -- **now APPROVED** (confirmed live
+against the Graph API's message_templates endpoint the week after, once the
+account's short-lived access token -- these expire in ~24h, a real thing to
+watch for -- was refreshed). This module worked correctly through both real
+states without a code change, exactly as designed: it checks the real,
+current template status at runtime, never assuming one.
 
 WHATSAPP TEMPLATE HANDLING, real not assumed: `hello_world` has ZERO
 parameters (its body/header/footer are fixed text, confirmed by reading its
-real Graph API definition) -- when it's the active template, this module
-sends its fixed generic content and says so plainly in the delivery record,
-never claiming that generic text is the real hazard-alert wording. Once
-`hazard_alert` is APPROVED, this module automatically switches to it (its
-real positional {{1}}={hazard}, {{2}}={district}, {{3}}={confidence}
-parameters, checked against the account's live template definition, not
-assumed from the submission payload) and sends the actual real,
-hazard-specific bilingual (EN/UR) content.
+real Graph API definition) -- when it was the active template (before
+approval), this module sent its fixed generic content and said so plainly in
+the delivery record, never claiming that generic text was the real
+hazard-alert wording. Now that `hazard_alert` is APPROVED, this module
+automatically switches to it (its real positional {{1}}={hazard},
+{{2}}={district}, {{3}}={confidence} parameters, checked against the
+account's live template definition, not assumed from the submission payload)
+and sends the actual real, hazard-specific bilingual (EN/UR) content --
+confirmed via one real send (Sialkot/flood_risk/rice,
+whatsapp_message_id=wamid.HBgMOTIzMzM1MTMzNTkyFQIAERgSQ0FCQTA2QTA4NjFEQzdFQzBFAA==),
+real message text delivered, not hello_world's placeholder.
 
 REAL DELIVERY-STATUS SCOPE, checked and deliberately limited: WhatsApp's API
 returns a real message id synchronously on accept -- this module records

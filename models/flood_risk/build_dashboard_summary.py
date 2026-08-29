@@ -54,6 +54,8 @@ def main():
                            "JRC + CHIRPS precipitation) PROMOTED and WIRED into "
                            "exposure_risk.py/trigger_engine.py, real fair-test validated "
                            "(STATUS_WEEK26.md). No longer informational-only.",
+        "last_computed_utc": live.get("last_computed_utc"),
+        "refresh_cadence_note": live.get("refresh_cadence_note"),
         "model_version": "v3_precip (promoted Week 27, Track I)",
         "status": "wired_into_trigger_engine",
         "real_fair_test_validation": {

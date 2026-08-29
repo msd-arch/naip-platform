@@ -1,17 +1,19 @@
 {
-  "generated": "2026-08-27T15:59:58.183144",
+  "generated": "2026-08-29T00:57:52.659994",
+  "last_computed_utc": "2026-08-29T00:57:52.659994+00:00",
+  "refresh_cadence_note": "Part 3 ('make everything live'): re-evaluated as part of Track H's real ~15-min live nowcasting cycle (live_nowcast_cycle.py, gated by NAIP_ENABLE_TRIGGER_EVAL) whenever enabled -- a new trigger event from fresh live hazard data appears here without manual intervention. Reuses whatever crop-weight data currently exists in real_crop_mix.json (read, not recomputed every cycle -- crop shares only change when a new real MNFSR report or model retrain happens).",
   "threshold": 0.0216,
   "threshold_note": "Illustrative, chosen to produce a workable demo-week trigger count -- NOT actuarially calibrated against real loss/claims data (none exists accessibly for this project, same data-gap pattern as every other week).",
-  "n_source_rows": 141624,
-  "n_nonzero_exposure": 1266,
-  "n_triggered": 16,
+  "n_source_rows": 192024,
+  "n_nonzero_exposure": 1315,
+  "n_triggered": 18,
   "n_triggered_with_real_farms_matched": 1,
   "basis_risk_note": "Index trigger, NOT confirmed farm-level loss. Real, unmitigated basis-risk sources: (1) the crop-mix check is district-level regardless of source -- even where Phase 2 Track C's real MNFSR district-area data applies (see this record's crop_mix_source), it's still a district-wide proportion, not proof of what any individual farm within a triggered district grows; districts still on the Week 4 hand-classified mask (crop_mix_source == 'hand_classified_mask') carry the same coarseness as ever; (2) the underlying hazard reading is a single 0.25 deg (~27km) grid-cell sample per district, not confirmed uniform across the whole district; (3) PHASE 4 FINAL ITEM: crop_mix_source == 'model_estimated_interim' means this record's crop-mix share came from Track F's trained model's real prediction, NOT a government survey -- used only for a real growing season MNFSR has no report for at all, and per Track J's own finding, genuinely unvalidatable until a future real MNFSR report arrives to check it against. A trigger event on an interim-tier record carries this extra, real, model-estimation uncertainty on top of sources (1) and (2), not instead of them. A trigger event here is a reason to investigate/pay against an index, not proof of individual loss. PHASE 3 WEEK 9 (Track G): exposure_score now bakes in crop_weight (the real crop_mix_share where available) rather than only gating on presence -- this reduces but does NOT eliminate basis risk source (1): a district-wide 48.95% rice share still means 51.05% of that district's real cropped area is something else. THRESHOLD RECALIBRATION (real, tier-and-crop-aware, structural not just prose): exposure_score itself now bakes in a real per-crop confidence discount for model_estimated_interim rows -- see this record's 'interim_confidence_multiplier' and 'exposure_score_before_confidence_discount'. The multiplier is the mean of Track F's own validated cross-year R2 per crop (wheat 0.4725, cotton 0.428, rice 0.264, sugarcane 0.1225), applied directly with no further transform -- real_district_area/hand_classified_mask rows are unaffected (multiplier 1.0). This means an interim-tier trigger on a weak-R2 crop (sugarcane) required a real raw score ~8.2x higher than a real-tier row would to clear the same threshold; even wheat (the model's best real-world crop) required ~2.1x. See STATUS_WEEK21.md for the real before/after.",
   "raast_note": "Raast (SBP instant-payment rail) is an integration point only, per architecture.md -- no real payment execution exists or is attempted here. This is a logged INTENT, not a transaction. No transaction ID, no money movement, nothing fabricated to look like a real payment record.",
   "top_triggers": [
     {
-      "event_id": "cabc233f-aaad-47ac-a8fe-a6553e17e7e8",
-      "logged_at_utc": "2026-08-27T15:59:58.180319",
+      "event_id": "9d670b79-7edf-473b-8505-7b42f2343ed3",
+      "logged_at_utc": "2026-08-29T00:57:52.654341",
       "trigger_rule": "exposure_score >= 0.0216 AND agronomically_plausible == true",
       "district": "Sialkot",
       "date": "20260827",
@@ -41,8 +43,8 @@
       }
     },
     {
-      "event_id": "8d9b44db-7818-4d3b-b2c2-586fdd7d445f",
-      "logged_at_utc": "2026-08-27T15:59:58.180319",
+      "event_id": "6b29b426-5aaf-46d8-bcb7-11ce05a434bb",
+      "logged_at_utc": "2026-08-29T00:57:52.654341",
       "trigger_rule": "exposure_score >= 0.0216 AND agronomically_plausible == true",
       "district": "Gujrat",
       "date": "20260827",
@@ -72,8 +74,8 @@
       }
     },
     {
-      "event_id": "4c7a35b6-f42e-4424-b18f-cb7a8e6c5441",
-      "logged_at_utc": "2026-08-27T15:59:58.180319",
+      "event_id": "fe217653-42d8-45ef-8b80-14daed01be05",
+      "logged_at_utc": "2026-08-29T00:57:52.654341",
       "trigger_rule": "exposure_score >= 0.0216 AND agronomically_plausible == true",
       "district": "Narowal",
       "date": "20260827",
@@ -103,8 +105,8 @@
       }
     },
     {
-      "event_id": "6a5a4302-837e-40fe-b6f6-34ebf32a3c57",
-      "logged_at_utc": "2026-08-27T15:59:58.180319",
+      "event_id": "316070a2-78b7-420c-8e85-14ec8e14d08e",
+      "logged_at_utc": "2026-08-29T00:57:52.654341",
       "trigger_rule": "exposure_score >= 0.0216 AND agronomically_plausible == true",
       "district": "Islamabad Capital Territory",
       "date": "20260827",
@@ -134,8 +136,8 @@
       }
     },
     {
-      "event_id": "04b38d90-000a-44fd-93eb-72b5278feccf",
-      "logged_at_utc": "2026-08-27T15:59:58.180319",
+      "event_id": "b50d2d16-333d-419e-be1e-65ab42209105",
+      "logged_at_utc": "2026-08-29T00:57:52.654341",
       "trigger_rule": "exposure_score >= 0.0216 AND agronomically_plausible == true",
       "district": "Sialkot",
       "date": "20260720",
@@ -165,8 +167,8 @@
       }
     },
     {
-      "event_id": "c0a9265f-72c2-42f4-80e0-96c326042f90",
-      "logged_at_utc": "2026-08-27T15:59:58.180319",
+      "event_id": "f210a94c-f7c9-4fdc-8a2b-7b4e0cdf71aa",
+      "logged_at_utc": "2026-08-29T00:57:52.654341",
       "trigger_rule": "exposure_score >= 0.0216 AND agronomically_plausible == true",
       "district": "Abbottabad",
       "date": "20260827",
@@ -196,8 +198,8 @@
       }
     },
     {
-      "event_id": "56d7f5d0-cef9-46c5-b2b3-389eebd91af9",
-      "logged_at_utc": "2026-08-27T15:59:58.180319",
+      "event_id": "614af8c0-b879-4864-9aff-0720d2f6ee78",
+      "logged_at_utc": "2026-08-29T00:57:52.654341",
       "trigger_rule": "exposure_score >= 0.0216 AND agronomically_plausible == true",
       "district": "Jhelum",
       "date": "20260827",
@@ -227,8 +229,8 @@
       }
     },
     {
-      "event_id": "52a5a4a1-5261-4c1d-8ffc-a9645b1a6b64",
-      "logged_at_utc": "2026-08-27T15:59:58.180319",
+      "event_id": "ebd6caac-2bd8-455a-81fc-2e188a943313",
+      "logged_at_utc": "2026-08-29T00:57:52.654341",
       "trigger_rule": "exposure_score >= 0.0216 AND agronomically_plausible == true",
       "district": "Gwadar",
       "date": "20260708",
@@ -258,8 +260,8 @@
       }
     },
     {
-      "event_id": "b7702fe7-d8fd-4a28-8fd3-17d6ef27e94b",
-      "logged_at_utc": "2026-08-27T15:59:58.180319",
+      "event_id": "a443aa68-8107-4ca9-973d-3041da98b523",
+      "logged_at_utc": "2026-08-29T00:57:52.654341",
       "trigger_rule": "exposure_score >= 0.0216 AND agronomically_plausible == true",
       "district": "Hafizabad",
       "date": "20260712",
@@ -289,8 +291,39 @@
       }
     },
     {
-      "event_id": "333697e9-4e0d-4c34-a5a5-2f0886f0ab4f",
-      "logged_at_utc": "2026-08-27T15:59:58.180319",
+      "event_id": "352a7805-bd80-4e1a-81c7-ca8ffe51ee83",
+      "logged_at_utc": "2026-08-29T00:57:52.654341",
+      "trigger_rule": "exposure_score >= 0.0216 AND agronomically_plausible == true",
+      "district": "Mansehra",
+      "date": "20260828",
+      "hazard": "hail",
+      "hazard_confidence": 0.65,
+      "crop": "rice",
+      "crop_stage": "flowering",
+      "vulnerability_weight": 0.9,
+      "crop_weight": 0.1535,
+      "interim_confidence_multiplier": 0.264,
+      "exposure_score_before_confidence_discount": 0.0898,
+      "exposure_score": 0.0237,
+      "threshold": 0.0216,
+      "agronomically_plausible": true,
+      "crop_mix_source": "model_estimated_interim",
+      "crop_mix_share_of_4crop_area": 0.15347764603997796,
+      "lat": 34.66967253689031,
+      "lon": 73.34549478620973,
+      "n_real_farms_matched_in_district": 0,
+      "matched_farm_ids": [],
+      "basis_risk_note": "Index trigger, NOT confirmed farm-level loss. Real, unmitigated basis-risk sources: (1) the crop-mix check is district-level regardless of source -- even where Phase 2 Track C's real MNFSR district-area data applies (see this record's crop_mix_source), it's still a district-wide proportion, not proof of what any individual farm within a triggered district grows; districts still on the Week 4 hand-classified mask (crop_mix_source == 'hand_classified_mask') carry the same coarseness as ever; (2) the underlying hazard reading is a single 0.25 deg (~27km) grid-cell sample per district, not confirmed uniform across the whole district; (3) PHASE 4 FINAL ITEM: crop_mix_source == 'model_estimated_interim' means this record's crop-mix share came from Track F's trained model's real prediction, NOT a government survey -- used only for a real growing season MNFSR has no report for at all, and per Track J's own finding, genuinely unvalidatable until a future real MNFSR report arrives to check it against. A trigger event on an interim-tier record carries this extra, real, model-estimation uncertainty on top of sources (1) and (2), not instead of them. A trigger event here is a reason to investigate/pay against an index, not proof of individual loss. PHASE 3 WEEK 9 (Track G): exposure_score now bakes in crop_weight (the real crop_mix_share where available) rather than only gating on presence -- this reduces but does NOT eliminate basis risk source (1): a district-wide 48.95% rice share still means 51.05% of that district's real cropped area is something else. THRESHOLD RECALIBRATION (real, tier-and-crop-aware, structural not just prose): exposure_score itself now bakes in a real per-crop confidence discount for model_estimated_interim rows -- see this record's 'interim_confidence_multiplier' and 'exposure_score_before_confidence_discount'. The multiplier is the mean of Track F's own validated cross-year R2 per crop (wheat 0.4725, cotton 0.428, rice 0.264, sugarcane 0.1225), applied directly with no further transform -- real_district_area/hand_classified_mask rows are unaffected (multiplier 1.0). This means an interim-tier trigger on a weak-R2 crop (sugarcane) required a real raw score ~8.2x higher than a real-tier row would to clear the same threshold; even wheat (the model's best real-world crop) required ~2.1x. See STATUS_WEEK21.md for the real before/after.",
+      "payout": {
+        "status": "STUBBED_INTENT_ONLY",
+        "note": "Raast (SBP instant-payment rail) is an integration point only, per architecture.md -- no real payment execution exists or is attempted here. This is a logged INTENT, not a transaction. No transaction ID, no money movement, nothing fabricated to look like a real payment record.",
+        "amount": null,
+        "transaction_id": null
+      }
+    },
+    {
+      "event_id": "6527ab0c-c60d-4bc2-8327-08a0f68d5652",
+      "logged_at_utc": "2026-08-29T00:57:52.654341",
       "trigger_rule": "exposure_score >= 0.0216 AND agronomically_plausible == true",
       "district": "Sanghar",
       "date": "20260713",
@@ -320,8 +353,8 @@
       }
     },
     {
-      "event_id": "231c82ea-338a-4827-829b-592654db3931",
-      "logged_at_utc": "2026-08-27T15:59:58.180319",
+      "event_id": "65ef0c42-c420-4d0a-b709-1224a2eda165",
+      "logged_at_utc": "2026-08-29T00:57:52.654341",
       "trigger_rule": "exposure_score >= 0.0216 AND agronomically_plausible == true",
       "district": "Gujranwala",
       "date": "20260623",
@@ -370,8 +403,8 @@
       }
     },
     {
-      "event_id": "f0d5c750-076f-41b4-8e08-1714bc8955d7",
-      "logged_at_utc": "2026-08-27T15:59:58.180319",
+      "event_id": "adfa1a8e-3ae0-4f5f-903c-746561868a33",
+      "logged_at_utc": "2026-08-29T00:57:52.654341",
       "trigger_rule": "exposure_score >= 0.0216 AND agronomically_plausible == true",
       "district": "Awaran",
       "date": "20260708",
@@ -401,8 +434,8 @@
       }
     },
     {
-      "event_id": "71c74778-26ed-4b2e-8486-0aea2aa41fd5",
-      "logged_at_utc": "2026-08-27T15:59:58.180319",
+      "event_id": "11125cf0-962e-4801-ac5c-8da2f11bdd5c",
+      "logged_at_utc": "2026-08-29T00:57:52.655407",
       "trigger_rule": "exposure_score >= 0.0216 AND agronomically_plausible == true",
       "district": "Awaran",
       "date": "20260714",
@@ -432,8 +465,8 @@
       }
     },
     {
-      "event_id": "96db185a-6b48-44ee-8f8d-c7715bfa8a18",
-      "logged_at_utc": "2026-08-27T15:59:58.180319",
+      "event_id": "9f1ac628-22cf-4545-94f2-74557a98545d",
+      "logged_at_utc": "2026-08-29T00:57:52.655407",
       "trigger_rule": "exposure_score >= 0.0216 AND agronomically_plausible == true",
       "district": "Sanghar",
       "date": "20260623",
@@ -463,8 +496,39 @@
       }
     },
     {
-      "event_id": "6f083f59-ee64-4cab-bef8-dc6f40acc64f",
-      "logged_at_utc": "2026-08-27T15:59:58.180319",
+      "event_id": "7d3e4853-21a1-4fad-9ccf-9f7d54898a96",
+      "logged_at_utc": "2026-08-29T00:57:52.655512",
+      "trigger_rule": "exposure_score >= 0.0216 AND agronomically_plausible == true",
+      "district": "Khairpur",
+      "date": "20260828",
+      "hazard": "cloud_burst",
+      "hazard_confidence": 0.7,
+      "crop": "cotton",
+      "crop_stage": "flowering",
+      "vulnerability_weight": 0.4,
+      "crop_weight": 0.1833,
+      "interim_confidence_multiplier": 0.428,
+      "exposure_score_before_confidence_discount": 0.0513,
+      "exposure_score": 0.022,
+      "threshold": 0.0216,
+      "agronomically_plausible": true,
+      "crop_mix_source": "model_estimated_interim",
+      "crop_mix_share_of_4crop_area": 0.1833083831803935,
+      "lat": 26.8551437884378,
+      "lon": 68.98577019557749,
+      "n_real_farms_matched_in_district": 0,
+      "matched_farm_ids": [],
+      "basis_risk_note": "Index trigger, NOT confirmed farm-level loss. Real, unmitigated basis-risk sources: (1) the crop-mix check is district-level regardless of source -- even where Phase 2 Track C's real MNFSR district-area data applies (see this record's crop_mix_source), it's still a district-wide proportion, not proof of what any individual farm within a triggered district grows; districts still on the Week 4 hand-classified mask (crop_mix_source == 'hand_classified_mask') carry the same coarseness as ever; (2) the underlying hazard reading is a single 0.25 deg (~27km) grid-cell sample per district, not confirmed uniform across the whole district; (3) PHASE 4 FINAL ITEM: crop_mix_source == 'model_estimated_interim' means this record's crop-mix share came from Track F's trained model's real prediction, NOT a government survey -- used only for a real growing season MNFSR has no report for at all, and per Track J's own finding, genuinely unvalidatable until a future real MNFSR report arrives to check it against. A trigger event on an interim-tier record carries this extra, real, model-estimation uncertainty on top of sources (1) and (2), not instead of them. A trigger event here is a reason to investigate/pay against an index, not proof of individual loss. PHASE 3 WEEK 9 (Track G): exposure_score now bakes in crop_weight (the real crop_mix_share where available) rather than only gating on presence -- this reduces but does NOT eliminate basis risk source (1): a district-wide 48.95% rice share still means 51.05% of that district's real cropped area is something else. THRESHOLD RECALIBRATION (real, tier-and-crop-aware, structural not just prose): exposure_score itself now bakes in a real per-crop confidence discount for model_estimated_interim rows -- see this record's 'interim_confidence_multiplier' and 'exposure_score_before_confidence_discount'. The multiplier is the mean of Track F's own validated cross-year R2 per crop (wheat 0.4725, cotton 0.428, rice 0.264, sugarcane 0.1225), applied directly with no further transform -- real_district_area/hand_classified_mask rows are unaffected (multiplier 1.0). This means an interim-tier trigger on a weak-R2 crop (sugarcane) required a real raw score ~8.2x higher than a real-tier row would to clear the same threshold; even wheat (the model's best real-world crop) required ~2.1x. See STATUS_WEEK21.md for the real before/after.",
+      "payout": {
+        "status": "STUBBED_INTENT_ONLY",
+        "note": "Raast (SBP instant-payment rail) is an integration point only, per architecture.md -- no real payment execution exists or is attempted here. This is a logged INTENT, not a transaction. No transaction ID, no money movement, nothing fabricated to look like a real payment record.",
+        "amount": null,
+        "transaction_id": null
+      }
+    },
+    {
+      "event_id": "0731f700-0bf2-45f9-9b53-18d834e53114",
+      "logged_at_utc": "2026-08-29T00:57:52.655512",
       "trigger_rule": "exposure_score >= 0.0216 AND agronomically_plausible == true",
       "district": "Sukkur",
       "date": "20260712",
@@ -494,8 +558,8 @@
       }
     },
     {
-      "event_id": "ad2955df-43da-468a-8810-85c7e5fcc394",
-      "logged_at_utc": "2026-08-27T15:59:58.180319",
+      "event_id": "3a0107c5-357e-4b4d-9402-dbbb0e29f254",
+      "logged_at_utc": "2026-08-29T00:57:52.655512",
       "trigger_rule": "exposure_score >= 0.0216 AND agronomically_plausible == true",
       "district": "Rawalpindi",
       "date": "20260827",

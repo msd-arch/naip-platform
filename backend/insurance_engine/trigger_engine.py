@@ -212,6 +212,14 @@ def main():
     n_with_farms = sum(1 for r in audit_records if r["n_real_farms_matched_in_district"] > 0)
     summary = {
         "generated": dt.datetime.utcnow().isoformat(),
+        "last_computed_utc": dt.datetime.now(dt.timezone.utc).isoformat(),
+        "refresh_cadence_note": "Part 3 ('make everything live'): re-evaluated as part of Track H's "
+                                 "real ~15-min live nowcasting cycle (live_nowcast_cycle.py, gated by "
+                                 "NAIP_ENABLE_TRIGGER_EVAL) whenever enabled -- a new trigger event "
+                                 "from fresh live hazard data appears here without manual "
+                                 "intervention. Reuses whatever crop-weight data currently exists in "
+                                 "real_crop_mix.json (read, not recomputed every cycle -- crop shares "
+                                 "only change when a new real MNFSR report or model retrain happens).",
         "threshold": a.threshold,
         "threshold_note": "Illustrative, chosen to produce a workable demo-week trigger count -- "
                            "NOT actuarially calibrated against real loss/claims data (none exists "

@@ -255,6 +255,19 @@ def main():
 
     out = {
         "generated": datetime.datetime.utcnow().isoformat() + "Z",
+        "last_computed_utc": datetime.datetime.now(datetime.timezone.utc).isoformat(),
+        "refresh_cadence_note": "Recomputed on a real weekly schedule (naip/pipelines/scheduler/"
+                                 "flood_weekly_refresh.py, Task Scheduler task 'NAIP-FloodWeekly'), "
+                                 "same real cadence reasoning as Track M's drought signal -- unlike "
+                                 "Track H's 15-min MSG cadence, this pulls Sentinel-1/CHIRPS via GEE "
+                                 "(a real network call, not a local re-read), and flood conditions "
+                                 "here are screened over a rolling 30-day SAR window, not something "
+                                 "that meaningfully changes minute-to-minute. Unlike drought's real "
+                                 "limitation (frozen current-period extraction), THIS script's "
+                                 "during_window/pre_monsoon_baseline_window above are computed fresh "
+                                 "from today's real date every run -- last_computed_utc here means "
+                                 "both 'the script ran' AND 'the underlying Sentinel-1/CHIRPS window "
+                                 "genuinely moved forward.'",
         "model_version": "v3_precip (promoted Week 27, Track I)",
         "note": "Live national Sentinel-1/JRC/CHIRPS screen using the PROMOTED v3 "
                 "(precipitation-augmented) flood classifier. Reflects real current "
