@@ -41,6 +41,12 @@ data/live_nowcast/*.sh
 data/seed/farmer_submissions.json
 backend/farm_registry/test_farmer_entry*.json
 
+# Track S1: cached raw GFS forecast-hour .npz files -- regenerable (each real
+# run refetches whatever the latest real GFS cycle is), grows unbounded over
+# time as new cycles get cached, not meaningful to version control. The real
+# output (forecast_alerts.json) is kept.
+models/forecast/gfs_cache/
+
 # Python
 __pycache__/
 *.pyc
