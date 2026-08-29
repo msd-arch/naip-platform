@@ -102,7 +102,6 @@ EXPOSURE_OUT_JSON = os.path.join(FUSION_DIR, "exposure_risk.json")
 EXPOSURE_OUT_CSV = os.path.join(FUSION_DIR, "exposure_risk_top.csv")
 TRIGGER_ENGINE_DIR = os.path.join(NAIP, "backend", "insurance_engine")
 TRIGGER_ENGINE_SCRIPT = os.path.join(TRIGGER_ENGINE_DIR, "trigger_engine.py")
-FARMS_GEOJSON = os.path.join(NAIP, "data", "seed", "farms_layyahMuridke_Kharif2025.geojson")
 NATIONAL_THRESHOLD = 0.225
 DEMO_THRESHOLD = 0.0216
 
@@ -338,10 +337,16 @@ def run_trigger_eval_step():
               ["python", EXPOSURE_SCRIPT, "--hazards-json", NATIONAL_HAZARDS_JSON,
                "--out", EXPOSURE_OUT_JSON, "--out-csv", EXPOSURE_OUT_CSV])
 
+    # Track R cutover: trigger_engine.py now matches farms against the real
+    # live database itself (db_registry.py) -- no --farms-geojson/
+    # --districts-geojson args anymore. If the DB is unreachable this raises
+    # inside trigger_engine.py, run_step() surfaces it as a real failure with
+    # the real traceback in the log, and the outer try/except around this
+    # whole function logs it clearly without crashing the core hazard cycle
+    # -- loud and visible, never a silent revert to a stand-in.
     run_step("trigger_engine.py (Part 3, national/illustrative threshold)",
               ["python", TRIGGER_ENGINE_SCRIPT,
                "--hazards-json", NATIONAL_HAZARDS_JSON,
-               "--farms-geojson", FARMS_GEOJSON, "--districts-geojson", DISTRICTS_GEOJSON,
                "--out-audit", os.path.join(TRIGGER_ENGINE_DIR, "audit_log_national.jsonl"),
                "--out-summary", os.path.join(TRIGGER_ENGINE_DIR, "trigger_summary_national.json"),
                "--threshold", str(NATIONAL_THRESHOLD)])
@@ -349,7 +354,6 @@ def run_trigger_eval_step():
     run_step("trigger_engine.py (Part 3, demo threshold)",
               ["python", TRIGGER_ENGINE_SCRIPT,
                "--hazards-json", NATIONAL_HAZARDS_JSON,
-               "--farms-geojson", FARMS_GEOJSON, "--districts-geojson", DISTRICTS_GEOJSON,
                "--out-audit", os.path.join(TRIGGER_ENGINE_DIR, "audit_log_demo.jsonl"),
                "--out-summary", os.path.join(TRIGGER_ENGINE_DIR, "trigger_summary_demo.json"),
                "--threshold", str(DEMO_THRESHOLD)])

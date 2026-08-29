@@ -61,8 +61,6 @@ import sys
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 HAZARDS_JSON = os.path.join(HERE, "backend", "alerts", "hazards_district_national.json")
-FARMS_GEOJSON = os.path.join(HERE, "data", "seed", "farms_layyahMuridke_Kharif2025.geojson")
-DISTRICTS_GEOJSON = os.path.join(HERE, "data", "seed", "pk_districts.geojson")
 TRIGGER_ENGINE = os.path.join(HERE, "backend", "insurance_engine", "trigger_engine.py")
 SMS_DELIVERY = os.path.join(HERE, "delivery", "sms_ussd_ivr", "sms_delivery.py")
 AUDIT_OUT = os.path.join(HERE, "backend", "insurance_engine", "audit_log_demo.jsonl")
@@ -106,8 +104,6 @@ def main():
     subprocess.run([
         sys.executable, TRIGGER_ENGINE,
         "--hazards-json", HAZARDS_JSON,
-        "--farms-geojson", FARMS_GEOJSON,
-        "--districts-geojson", DISTRICTS_GEOJSON,
         "--out-audit", AUDIT_OUT,
         "--out-summary", SUMMARY_OUT,
         "--threshold", str(a.threshold),
@@ -131,10 +127,11 @@ def main():
     print(f"  basis_risk_note: {chosen['basis_risk_note'][:120]}...")
     print(f"  payout: {chosen['payout']['status']} -- {chosen['payout']['note'][:100]}...")
 
-    step(4, "Farm Registry match (in_memory_registry.py, real farm polygons)")
-    print(f"  {chosen['n_real_farms_matched_in_district']} real farms in "
-          f"{FARMS_GEOJSON.split(os.sep)[-1]} resolved to district={chosen['district']} "
-          "via real point-in-polygon (no live PostGIS -- see farm_registry status)")
+    step(4, "Farm Registry match (db_registry.py, real live PostGIS database)")
+    print(f"  {chosen['n_real_farms_matched_in_district']} real farms (plus "
+          f"{chosen['n_synthetic_farms_matched_in_district']} synthetic, kept separate) matched "
+          f"in district={chosen['district']} via real point-in-polygon, real live Postgres+PostGIS "
+          "(Track R cutover -- no in-memory stand-in)")
 
     step(5, "Multi-channel delivery (sms_delivery.py)")
     with open(AUDIT_OUT, encoding="utf-8") as f:
@@ -150,7 +147,7 @@ def main():
     print(f"\n{'=' * 70}\nEND-TO-END PATH COMPLETE for {chosen['district']}\n{'=' * 70}")
     print("hazards.py (real MSG detection) -> exposure_risk.py x crop_plausibility.py "
           "(fused, constrained) -> trigger_engine.py (audited, basis-risk-stated, "
-          "payout-stubbed) -> in_memory_registry.py (real farm match) -> sms_delivery.py "
+          "payout-stubbed) -> db_registry.py (real live PostGIS farm match) -> sms_delivery.py "
           "(real or honestly-stubbed send)")
 
 

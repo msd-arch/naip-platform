@@ -1,5 +1,15 @@
 #!/usr/bin/env python3
 """
+SUPERSEDED 2026-08-29 (Track R cutover) -- kept for historical reference and
+as the documented origin of the real logic db_registry.py migrated (the
+write path, CNIC dedup, resolved_crop_type() precedence rule), NOT imported
+by any real live code path anymore. trigger_engine.py, run_end_to_end_demo.py,
+and naip_dashboard/prepare_data.py all now use backend/farm_registry/
+db_registry.py against the real live PostgreSQL+PostGIS database (Supabase).
+Do not reach for this module for anything real going forward -- if you find
+yourself about to import in_memory_registry, that's a sign something didn't
+get migrated to db_registry.py and should be, not a sign to fall back to this.
+
 in_memory_registry.py -- Farm Registry, in-memory this week.
 
 WHY: no Docker/PostGIS on this machine since Week 1 (checked again this

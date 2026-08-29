@@ -60,7 +60,7 @@ import uuid
 sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "..", "models", "fusion"))
 sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "farm_registry"))
 from exposure_risk import compute_exposure_rows  # noqa: E402
-from in_memory_registry import load_registry  # noqa: E402
+import db_registry  # noqa: E402
 
 BASIS_RISK_NOTE = (
     "Index trigger, NOT confirmed farm-level loss. Real, unmitigated basis-risk sources: "
@@ -133,11 +133,24 @@ def evaluate_triggers(exposure_rows, threshold):
     return sorted(triggered, key=lambda r: r["exposure_score"], reverse=True)
 
 
-def build_audit_record(row, threshold, registry):
+def build_audit_record(row, threshold, dsn):
     """Every field a payout decision would need to trace back to real
     underlying data -- hazard reading, threshold, crop-calendar stage,
-    plausibility check, matched real farms, basis risk, timestamp."""
-    farms_in_district = registry.farms_in_district(row["district"]) if registry else []
+    plausibility check, matched real farms, basis risk, timestamp.
+
+    Track R cutover: farm matching now queries the real live database
+    (db_registry.py), no in-memory fallback -- a DB error here raises and
+    propagates, it is never caught and silently treated as "zero farms."
+
+    Real, deliberate design point (Track R step 4): n_real_farms_matched_in_district
+    counts ONLY real (non-synthetic) farms -- the field's own name says
+    "real," and the 630 Track R synthetic farms would otherwise silently
+    inflate a statistic a payout decision might actually read. Synthetic
+    matches are surfaced separately (n_synthetic_farms_matched_in_district),
+    never blended into the "real" count."""
+    all_matches = db_registry.farms_in_district(dsn, row["district"], include_synthetic=True) if dsn else []
+    real_matches = [f for f in all_matches if not f["is_synthetic"]]
+    synthetic_matches = [f for f in all_matches if f["is_synthetic"]]
     return {
         "event_id": str(uuid.uuid4()),
         "logged_at_utc": dt.datetime.utcnow().isoformat(),
@@ -165,8 +178,10 @@ def build_audit_record(row, threshold, registry):
                             # (Week 4 fallback, 11 GB/AJK districts) -- never silently indistinguishable
         "crop_mix_share_of_4crop_area": row.get("crop_mix_share_of_4crop_area"),
         "lat": row.get("lat"), "lon": row.get("lon"),
-        "n_real_farms_matched_in_district": len(farms_in_district),
-        "matched_farm_ids": [f.farm_id for f in farms_in_district],
+        "n_real_farms_matched_in_district": len(real_matches),
+        "matched_farm_ids": [str(f["farm_id"]) for f in real_matches],
+        "n_synthetic_farms_matched_in_district": len(synthetic_matches),
+        "matched_synthetic_farm_ids": [str(f["farm_id"]) for f in synthetic_matches],
         "basis_risk_note": basis_risk_note_for(row["hazard"]),
         "payout": {
             "status": "STUBBED_INTENT_ONLY",
@@ -180,9 +195,10 @@ def build_audit_record(row, threshold, registry):
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--hazards-json", required=True)
-    ap.add_argument("--farms-geojson", default=None,
-                     help="if given, match triggered districts against real farm polygons")
-    ap.add_argument("--districts-geojson", default=None)
+    ap.add_argument("--no-farm-match", action="store_true",
+                     help="skip real farm matching entirely (e.g. a quick dry run) -- default is "
+                          "to always match against the real live database; this does NOT fall "
+                          "back to any stand-in on its own, it only skips matching if asked")
     ap.add_argument("--out-audit", default="audit_log.jsonl")
     ap.add_argument("--out-summary", default="trigger_summary.json")
     ap.add_argument("--threshold", type=float, default=0.35,
@@ -191,17 +207,24 @@ def main():
 
     data, rows = compute_exposure_rows(a.hazards_json)
 
-    registry = None
-    if a.farms_geojson and a.districts_geojson:
-        registry = load_registry(a.farms_geojson, a.districts_geojson)
-        print(f"loaded {len(registry.farms)} real farms for district matching")
+    # Track R cutover: the real live database is the only farm-matching path.
+    # No in-memory fallback -- if the DB is unreachable, db_registry.load_dsn()/
+    # psycopg2.connect() raises here and the process exits with a real
+    # traceback, loud and visible, exactly like every other real failure this
+    # project has handled (never silently treated as "zero farms matched").
+    dsn = None
+    if not a.no_farm_match:
+        dsn = db_registry.load_dsn()
+        counts = db_registry.count_farms(dsn)
+        print(f"connected to real live database -- farms: {counts.get(False, 0)} real, "
+              f"{counts.get(True, 0)} synthetic")
 
     triggered = evaluate_triggers(rows, a.threshold)
     print(f"{len(triggered)} trigger events at threshold >= {a.threshold} "
           f"(agronomically-plausible only, out of {sum(1 for r in rows if r['exposure_score'] > 0)} "
           f"total nonzero-exposure rows)")
 
-    audit_records = [build_audit_record(r, a.threshold, registry) for r in triggered]
+    audit_records = [build_audit_record(r, a.threshold, dsn) for r in triggered]
 
     with open(a.out_audit, "w", encoding="utf-8") as f:
         for rec in audit_records:
@@ -210,6 +233,7 @@ def main():
           "one real trigger event per line)")
 
     n_with_farms = sum(1 for r in audit_records if r["n_real_farms_matched_in_district"] > 0)
+    n_with_synthetic_farms = sum(1 for r in audit_records if r["n_synthetic_farms_matched_in_district"] > 0)
     summary = {
         "generated": dt.datetime.utcnow().isoformat(),
         "last_computed_utc": dt.datetime.now(dt.timezone.utc).isoformat(),
@@ -228,6 +252,14 @@ def main():
         "n_nonzero_exposure": sum(1 for r in rows if r["exposure_score"] > 0),
         "n_triggered": len(triggered),
         "n_triggered_with_real_farms_matched": n_with_farms,
+        "n_triggered_with_synthetic_farms_matched": n_with_synthetic_farms,
+        "farm_registry_note": "Track R (real live database, cutover complete): real farm matching "
+                               "covers only the 122 real farms (120 Layyah/Muridke seed + 2 real "
+                               "Track P submissions), still concentrated in Sheikhpura/Layyah/"
+                               "Gujranwala/Bhakkar. 630 real synthetic (is_synthetic=true) farms "
+                               "now exist across all 126 districts for realistic-scale testing -- "
+                               "counted separately (n_triggered_with_synthetic_farms_matched), "
+                               "never blended into the 'real farms matched' figures above.",
         "basis_risk_note": BASIS_RISK_NOTE,
         "raast_note": RAAST_STUB_NOTE,
         "top_triggers": audit_records[:20],
@@ -235,10 +267,9 @@ def main():
     with open(a.out_summary, "w", encoding="utf-8") as f:
         json.dump(summary, f, indent=2, ensure_ascii=False)
     print(f"wrote {a.out_summary}")
-    print(f"\n{n_with_farms}/{len(triggered)} trigger events matched at least one real farm "
-          f"(only Layyah/Muridke-cluster districts have real farm polygons -- everywhere else "
-          "triggers correctly, just with 0 matched farms, an honest reflection of the seed data's "
-          "real geographic limit)")
+    print(f"\n{n_with_farms}/{len(triggered)} trigger events matched at least one REAL farm; "
+          f"{n_with_synthetic_farms}/{len(triggered)} matched at least one synthetic farm "
+          "(kept as a separate figure, never counted as real)")
 
 
 if __name__ == "__main__":

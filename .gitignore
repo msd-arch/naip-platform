@@ -39,6 +39,7 @@ data/live_nowcast/*.sh
 # not seed/demo data) -- financial-sector-grade handling per CLAUDE.md, never
 # committed to a public repo, even a single real test record.
 data/seed/farmer_submissions.json
+backend/farm_registry/test_farmer_entry*.json
 
 # Python
 __pycache__/
