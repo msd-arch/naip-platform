@@ -1,6 +1,6 @@
 {
   "generated_note": "Week 27 (Track I, precipitation attempt): v3 (real Sentinel-1 SAR + JRC + CHIRPS precipitation) PROMOTED and WIRED into exposure_risk.py/trigger_engine.py, real fair-test validated (STATUS_WEEK26.md). No longer informational-only.",
-  "last_computed_utc": "2026-08-31T15:59:50.473996+00:00",
+  "last_computed_utc": "2026-08-31T20:03:33.938443+00:00",
   "refresh_cadence_note": "Recomputed on a real weekly schedule (naip/pipelines/scheduler/flood_weekly_refresh.py, Task Scheduler task 'NAIP-FloodWeekly'), same real cadence reasoning as Track M's drought signal -- unlike Track H's 15-min MSG cadence, this pulls Sentinel-1/CHIRPS via GEE (a real network call, not a local re-read), and flood conditions here are screened over a rolling 30-day SAR window, not something that meaningfully changes minute-to-minute. Unlike drought's real limitation (frozen current-period extraction), THIS script's during_window/pre_monsoon_baseline_window above are computed fresh from today's real date every run -- last_computed_utc here means both 'the script ran' AND 'the underlying Sentinel-1/CHIRPS window genuinely moved forward.'",
   "model_version": "v3_precip (promoted Week 27, Track I)",
   "status": "wired_into_trigger_engine",
