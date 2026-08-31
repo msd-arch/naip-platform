@@ -1,6 +1,6 @@
 {
-  "generated": "2026-08-28T20:59:39.504503",
-  "last_computed_utc": "2026-08-28T21:01:29.960902+00:00",
+  "generated": "2026-08-31T15:39:48.880596",
+  "last_computed_utc": "2026-08-31T15:42:40.914256+00:00",
   "refresh_cadence_note": "Recomputed on a real weekly schedule (naip/pipelines/scheduler/locust_weekly_refresh.py, Task Scheduler task 'NAIP-LocustWeekly'), same real cadence reasoning as Track M's drought signal and the flood screen -- not Track H's 15-min MSG cadence. This script's own recent/prior windows are computed fresh from today's real date every run (real SMAP + Sentinel-2 GEE calls, not a re-read of frozen local data), so last_computed_utc here means both 'the script ran' AND 'the underlying satellite windows genuinely moved forward.'",
   "scope": "Real-time desert-locust breeding-risk screen using real SMAP soil-moisture-anomaly and real Sentinel-2 NDVI signal, standard FAO DLIS-style logic. Thresholds (SM anomaly >= 0.02 m3/m3, NDVI delta >= -0.05) were RECALIBRATED in Phase 2 Week 5 against a real backtest of 49 confirmed PK hopper/band events from the FAO Desert Locusts Observations dataset (2020 upsurge tail, Jan-May 2020) -- the original NDVI delta >= 0.03 'green-up' requirement only caught 3/49 (6.1%) of real events because real median NDVI delta at confirmed events was -0.011 (slightly browning, not greening, in these arid regions); relaxed to -0.05 raises real recall to 12/49 (24.5%). NOTE: this backtest only had real positive events, no real confirmed-absence cases, so it validates recall only -- false-alarm rate/precision is still unvalidated. Cholistan has no official boundary anywhere (see per-region boundary_note) -- proxy geometry substantially overstates true desert extent.",
   "regions": [
@@ -9,18 +9,18 @@
       "boundary_type": "real_district",
       "boundary_note": "real district polygon(s) from geoBoundaries ADM2",
       "window_recent": [
-        "2026-07-29",
-        "2026-08-28"
+        "2026-08-01",
+        "2026-08-31"
       ],
       "window_prior": [
-        "2026-06-29",
-        "2026-07-29"
+        "2026-07-02",
+        "2026-08-01"
       ],
-      "sm_surface_m3m3": 0.1563,
-      "sm_surface_anomaly_m3m3": -0.0257,
+      "sm_surface_m3m3": 0.1538,
+      "sm_surface_anomaly_m3m3": -0.0303,
       "ndvi_recent_30d": 0.132,
-      "ndvi_prior_30d": 0.072,
-      "ndvi_delta": 0.06,
+      "ndvi_prior_30d": 0.074,
+      "ndvi_delta": 0.058,
       "soil_favorable_for_egglaying": false,
       "vegetation_not_browning": true,
       "breeding_risk_flag": false,
@@ -32,18 +32,18 @@
       "boundary_type": "real_district",
       "boundary_note": "real district polygon(s) from geoBoundaries ADM2",
       "window_recent": [
-        "2026-07-29",
-        "2026-08-28"
+        "2026-08-01",
+        "2026-08-31"
       ],
       "window_prior": [
-        "2026-06-29",
-        "2026-07-29"
+        "2026-07-02",
+        "2026-08-01"
       ],
-      "sm_surface_m3m3": 0.0498,
-      "sm_surface_anomaly_m3m3": -0.0187,
-      "ndvi_recent_30d": 0.054,
-      "ndvi_prior_30d": 0.045,
-      "ndvi_delta": 0.009,
+      "sm_surface_m3m3": 0.0499,
+      "sm_surface_anomaly_m3m3": -0.0183,
+      "ndvi_recent_30d": 0.055,
+      "ndvi_prior_30d": 0.046,
+      "ndvi_delta": 0.01,
       "soil_favorable_for_egglaying": false,
       "vegetation_not_browning": true,
       "breeding_risk_flag": false,
@@ -55,18 +55,18 @@
       "boundary_type": "proxy_district_union",
       "boundary_note": "NO official Cholistan boundary exists anywhere accessible (checked OSM, zero results) -- this is the real-geometry union of the 3 Punjab districts (Bahawalpur, Bahawalnagar, Rahim Yar Khan) reported to contain the Cholistan Desert, NOT a Cholistan-specific boundary. Substantially overstates true desert extent.",
       "window_recent": [
-        "2026-07-29",
-        "2026-08-28"
+        "2026-08-01",
+        "2026-08-31"
       ],
       "window_prior": [
-        "2026-06-29",
-        "2026-07-29"
+        "2026-07-02",
+        "2026-08-01"
       ],
-      "sm_surface_m3m3": 0.1024,
-      "sm_surface_anomaly_m3m3": -0.0163,
-      "ndvi_recent_30d": 0.287,
-      "ndvi_prior_30d": 0.223,
-      "ndvi_delta": 0.064,
+      "sm_surface_m3m3": 0.0988,
+      "sm_surface_anomaly_m3m3": -0.0191,
+      "ndvi_recent_30d": 0.291,
+      "ndvi_prior_30d": 0.225,
+      "ndvi_delta": 0.066,
       "soil_favorable_for_egglaying": false,
       "vegetation_not_browning": true,
       "breeding_risk_flag": false,

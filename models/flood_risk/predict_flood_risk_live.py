@@ -118,10 +118,40 @@ def main():
     pre_start = a.pre_start or f"{today.year}-03-01"
     pre_end = a.pre_end or f"{today.year}-04-15"
 
+    ee.Initialize(project=a.project)
+
+    # REAL BUG FOUND AND FIXED LIVE (2026-08-31): during_end used to default
+    # to literal "today" unconditionally, but CHIRPS/DAILY is a real,
+    # gauge-corrected precipitation product with a genuine publication lag
+    # (confirmed live: on 2026-08-31, CHIRPS's real most-recent published
+    # image was 2026-07-31 -- the entire current month had zero real
+    # images). Requesting a during-window past CHIRPS's real latest date
+    # made precip_total_mm null for every one of 1890 real sampled points,
+    # which then dropped every point (all 7 features required non-null),
+    # leaving zero usable rows and crashing at model.predict_proba(). Same
+    # live-probe-don't-assume discipline this project already applies to
+    # EUMETSAT/GFS cadence: only auto-clamp when --during-end wasn't
+    # explicitly given, so an explicit real request is never silently
+    # overridden.
+    if not a.during_end:
+        chirps_latest = (
+            ee.ImageCollection(CHIRPS_ID)
+            .select("precipitation")
+            .sort("system:time_start", False)
+            .first()
+        )
+        chirps_latest_date = ee.Date(chirps_latest.get("system:time_start")).format("YYYY-MM-dd").getInfo()
+        if chirps_latest_date < during_end:
+            print(f"real CHIRPS latency found: latest real published image is {chirps_latest_date}, "
+                  f"clamping during_end back from {during_end} to that real date")
+            during_end = chirps_latest_date
+            if not a.during_start:
+                during_start = (
+                    datetime.date.fromisoformat(chirps_latest_date) - datetime.timedelta(days=30)
+                ).isoformat()
+
     print(f"real live during-window: {during_start}..{during_end}")
     print(f"real pre-monsoon dry baseline: {pre_start}..{pre_end}")
-
-    ee.Initialize(project=a.project)
 
     bundle = joblib.load(MODEL_PATH)
     model, features = bundle["model"], bundle["features"]

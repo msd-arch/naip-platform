@@ -1,15 +1,51 @@
 {
-  "generated_utc": "2026-08-29T13:10:05.319555+00:00",
+  "generated_utc": "2026-08-31T12:00:03.083612+00:00",
   "data_dir": "C:\\Users\\USER\\Downloads\\naip_dashboard\\public\\data",
   "n_files_checked": 18,
-  "n_findings": 1,
-  "n_errors": 0,
+  "n_findings": 7,
+  "n_errors": 5,
   "findings": [
+    {
+      "file": "water_stress.json",
+      "severity": "error",
+      "check": "field_presence",
+      "detail": "top-level field 'canal_name' missing (dashboard's types.ts expects it)"
+    },
+    {
+      "file": "water_stress.json",
+      "severity": "error",
+      "check": "field_presence",
+      "detail": "top-level field 'n_segments' missing (dashboard's types.ts expects it)"
+    },
+    {
+      "file": "water_stress.json",
+      "severity": "error",
+      "check": "field_presence",
+      "detail": "top-level field 'segments' missing (dashboard's types.ts expects it)"
+    },
+    {
+      "file": "water_stress.json",
+      "severity": "error",
+      "check": "field_presence",
+      "detail": "top-level field 'head_vs_tail' missing (dashboard's types.ts expects it)"
+    },
+    {
+      "file": "water_stress.json",
+      "severity": "warn",
+      "check": "row_presence",
+      "detail": "no real rows found to check row-level fields against (row_field=segments)"
+    },
     {
       "file": "audit_log_national.json",
       "severity": "warn",
       "check": "row_presence",
       "detail": "no real rows found to check row-level fields against (row_field=<top-level list>)"
+    },
+    {
+      "file": "forecast_alerts.json",
+      "severity": "error",
+      "check": "freshness",
+      "detail": "real data is 54.8h old, exceeds expected max 30h (GFS publishes 4x daily (~6h cadence)) -- the scheduled task producing this file may have stopped"
     }
   ]
 }

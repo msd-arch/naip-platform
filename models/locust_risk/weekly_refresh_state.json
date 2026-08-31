@@ -1,7 +1,7 @@
 {
-  "n_success": 2,
-  "n_failure": 1,
-  "last_success_utc": "2026-08-28T21:01:30.777520+00:00",
-  "last_failure_utc": "2026-08-28T20:58:58.873923+00:00",
-  "last_computed_utc_written": "2026-08-28T21:01:29.960902+00:00"
+  "n_success": 3,
+  "n_failure": 2,
+  "last_success_utc": "2026-08-31T15:42:45.676825+00:00",
+  "last_failure_utc": "2026-08-30T11:11:08.115529+00:00",
+  "last_computed_utc_written": "2026-08-31T15:42:40.914256+00:00"
 }

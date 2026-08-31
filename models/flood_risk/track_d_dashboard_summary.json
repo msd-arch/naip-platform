@@ -1,6 +1,6 @@
 {
   "generated_note": "Week 27 (Track I, precipitation attempt): v3 (real Sentinel-1 SAR + JRC + CHIRPS precipitation) PROMOTED and WIRED into exposure_risk.py/trigger_engine.py, real fair-test validated (STATUS_WEEK26.md). No longer informational-only.",
-  "last_computed_utc": "2026-08-28T20:57:21.728005+00:00",
+  "last_computed_utc": "2026-08-31T15:59:50.473996+00:00",
   "refresh_cadence_note": "Recomputed on a real weekly schedule (naip/pipelines/scheduler/flood_weekly_refresh.py, Task Scheduler task 'NAIP-FloodWeekly'), same real cadence reasoning as Track M's drought signal -- unlike Track H's 15-min MSG cadence, this pulls Sentinel-1/CHIRPS via GEE (a real network call, not a local re-read), and flood conditions here are screened over a rolling 30-day SAR window, not something that meaningfully changes minute-to-minute. Unlike drought's real limitation (frozen current-period extraction), THIS script's during_window/pre_monsoon_baseline_window above are computed fresh from today's real date every run -- last_computed_utc here means both 'the script ran' AND 'the underlying Sentinel-1/CHIRPS window genuinely moved forward.'",
   "model_version": "v3_precip (promoted Week 27, Track I)",
   "status": "wired_into_trigger_engine",
@@ -62,547 +62,539 @@
     }
   },
   "during_window": [
-    "2026-07-29",
-    "2026-08-28"
+    "2026-07-01",
+    "2026-07-31"
   ],
   "pre_monsoon_baseline_window": [
     "2026-03-01",
     "2026-04-15"
   ],
   "flag_threshold": 0.5,
-  "n_districts_flagged_raw": 5,
+  "n_districts_flagged_raw": 7,
   "n_districts_total": 126,
   "score_distribution": {
     "n": 126,
-    "min": 0.0227,
-    "max": 0.7346,
-    "p10": 0.0539,
-    "p25": 0.0851,
-    "median": 0.1304,
-    "p75": 0.2002,
-    "p90": 0.346,
-    "mean": 0.1707
+    "min": 0.004,
+    "max": 0.8109,
+    "p10": 0.056,
+    "p25": 0.091,
+    "median": 0.2167,
+    "p75": 0.3922,
+    "p90": 0.4736,
+    "mean": 0.2499
   },
   "districts_below_threshold": [
     {
-      "district": "Khairpur",
-      "mean_model_score": 0.0227
-    },
-    {
-      "district": "Thatta",
-      "mean_model_score": 0.033
-    },
-    {
-      "district": "Jamshoro",
-      "mean_model_score": 0.0381
-    },
-    {
-      "district": "Sanghar",
-      "mean_model_score": 0.0412
-    },
-    {
-      "district": "Karachi",
-      "mean_model_score": 0.0449
-    },
-    {
-      "district": "Mirpurkhas",
-      "mean_model_score": 0.0453
-    },
-    {
-      "district": "Badin",
-      "mean_model_score": 0.0471
-    },
-    {
-      "district": "Naushehro Feroze",
-      "mean_model_score": 0.0499
-    },
-    {
-      "district": "Matiari",
-      "mean_model_score": 0.0515
-    },
-    {
-      "district": "Umerkot",
-      "mean_model_score": 0.0527
-    },
-    {
-      "district": "Ghotki",
-      "mean_model_score": 0.0535
-    },
-    {
-      "district": "Hyderabad",
-      "mean_model_score": 0.0539
-    },
-    {
-      "district": "Sukkur",
-      "mean_model_score": 0.0539
-    },
-    {
-      "district": "Tando Allahyar",
-      "mean_model_score": 0.0546
-    },
-    {
-      "district": "Rahim Yar Khan",
-      "mean_model_score": 0.0604
-    },
-    {
-      "district": "Muzaffargarh",
-      "mean_model_score": 0.0618
-    },
-    {
-      "district": "Barkhan",
-      "mean_model_score": 0.0648
-    },
-    {
-      "district": "Dera Ismail Khan",
-      "mean_model_score": 0.0652
-    },
-    {
-      "district": "Charsadda",
-      "mean_model_score": 0.0707
-    },
-    {
-      "district": "Sahiwal",
-      "mean_model_score": 0.0707
-    },
-    {
-      "district": "Mohmand",
-      "mean_model_score": 0.072
-    },
-    {
-      "district": "Tharparkar",
-      "mean_model_score": 0.0733
-    },
-    {
-      "district": "Dera Ghazi Khan",
-      "mean_model_score": 0.0736
-    },
-    {
-      "district": "Tank",
-      "mean_model_score": 0.0762
-    },
-    {
-      "district": "Dadu",
-      "mean_model_score": 0.0768
-    },
-    {
-      "district": "Dera Bugti",
-      "mean_model_score": 0.0772
-    },
-    {
-      "district": "Pakpattan",
-      "mean_model_score": 0.08
-    },
-    {
-      "district": "Lasbela",
-      "mean_model_score": 0.0818
-    },
-    {
-      "district": "Tando Muhammad Khan",
-      "mean_model_score": 0.0833
-    },
-    {
-      "district": "Jafarabad",
-      "mean_model_score": 0.0836
-    },
-    {
-      "district": "Okara",
-      "mean_model_score": 0.0841
-    },
-    {
-      "district": "Jhang",
-      "mean_model_score": 0.0851
-    },
-    {
-      "district": "Nasirabad",
-      "mean_model_score": 0.0855
-    },
-    {
-      "district": "Rajanpur",
-      "mean_model_score": 0.0857
-    },
-    {
-      "district": "Bannu",
-      "mean_model_score": 0.0879
-    },
-    {
-      "district": "Peshawar",
-      "mean_model_score": 0.0898
-    },
-    {
-      "district": "Gwadar",
-      "mean_model_score": 0.0903
-    },
-    {
-      "district": "Kasur",
-      "mean_model_score": 0.0911
-    },
-    {
-      "district": "Layyah",
-      "mean_model_score": 0.0911
-    },
-    {
-      "district": "Sheikhpura",
-      "mean_model_score": 0.0929
-    },
-    {
-      "district": "Lodhran",
-      "mean_model_score": 0.0946
-    },
-    {
-      "district": "Multan",
-      "mean_model_score": 0.0961
-    },
-    {
-      "district": "Lakki Marwat",
-      "mean_model_score": 0.0967
-    },
-    {
-      "district": "Sargodha",
-      "mean_model_score": 0.0974
-    },
-    {
-      "district": "Hafizabad",
-      "mean_model_score": 0.1007
-    },
-    {
-      "district": "Mardan",
-      "mean_model_score": 0.1014
-    },
-    {
-      "district": "Bahawalnagar",
-      "mean_model_score": 0.1056
-    },
-    {
-      "district": "South Waziristan",
-      "mean_model_score": 0.1093
-    },
-    {
-      "district": "Nawabshah",
-      "mean_model_score": 0.1105
-    },
-    {
-      "district": "Faisalabad",
-      "mean_model_score": 0.1119
-    },
-    {
-      "district": "Lower Dir",
-      "mean_model_score": 0.1139
-    },
-    {
-      "district": "Jacobabad",
-      "mean_model_score": 0.114
-    },
-    {
-      "district": "North Waziristan",
-      "mean_model_score": 0.1164
-    },
-    {
-      "district": "Kurram",
-      "mean_model_score": 0.1184
-    },
-    {
-      "district": "Hangu",
-      "mean_model_score": 0.1211
-    },
-    {
-      "district": "Khanewal",
-      "mean_model_score": 0.1243
-    },
-    {
-      "district": "Qilla Saifullah",
-      "mean_model_score": 0.1262
-    },
-    {
-      "district": "Swat",
-      "mean_model_score": 0.1265
-    },
-    {
-      "district": "Bahawalpur",
-      "mean_model_score": 0.1266
-    },
-    {
-      "district": "Qilla Abdullah",
-      "mean_model_score": 0.1269
-    },
-    {
-      "district": "Kohat",
-      "mean_model_score": 0.1276
-    },
-    {
-      "district": "Toba Tek Singh",
-      "mean_model_score": 0.1289
-    },
-    {
-      "district": "Nowshera",
-      "mean_model_score": 0.1292
-    },
-    {
-      "district": "Bhakkar",
-      "mean_model_score": 0.1304
-    },
-    {
-      "district": "Bajaur",
-      "mean_model_score": 0.1313
-    },
-    {
-      "district": "Awaran",
-      "mean_model_score": 0.1321
-    },
-    {
-      "district": "Shikarpur",
-      "mean_model_score": 0.1324
-    },
-    {
-      "district": "Sibi",
-      "mean_model_score": 0.1354
-    },
-    {
-      "district": "Kachhi",
-      "mean_model_score": 0.1427
-    },
-    {
-      "district": "Musakhel",
-      "mean_model_score": 0.1474
-    },
-    {
-      "district": "Zhob",
-      "mean_model_score": 0.152
-    },
-    {
-      "district": "Shangla",
-      "mean_model_score": 0.1521
-    },
-    {
-      "district": "Pishin",
-      "mean_model_score": 0.155
-    },
-    {
-      "district": "Mianwali",
-      "mean_model_score": 0.1599
-    },
-    {
-      "district": "Malakand",
-      "mean_model_score": 0.1608
-    },
-    {
-      "district": "Jhal Magsi",
-      "mean_model_score": 0.1636
-    },
-    {
-      "district": "Upper Dir",
-      "mean_model_score": 0.1654
-    },
-    {
-      "district": "Quetta",
-      "mean_model_score": 0.1673
-    },
-    {
-      "district": "Khyber",
-      "mean_model_score": 0.1674
-    },
-    {
-      "district": "Lahore",
-      "mean_model_score": 0.1681
-    },
-    {
-      "district": "Gujranwala",
-      "mean_model_score": 0.1717
-    },
-    {
-      "district": "Mandi Bahauddin",
-      "mean_model_score": 0.172
-    },
-    {
-      "district": "Panjgur",
-      "mean_model_score": 0.1723
-    },
-    {
-      "district": "Karak",
-      "mean_model_score": 0.1725
-    },
-    {
-      "district": "Kohlu",
-      "mean_model_score": 0.1767
-    },
-    {
-      "district": "Nushki",
-      "mean_model_score": 0.1801
-    },
-    {
-      "district": "Qambar Shahdadkot",
-      "mean_model_score": 0.1829
-    },
-    {
-      "district": "Loralai",
-      "mean_model_score": 0.1872
-    },
-    {
-      "district": "Khushab",
-      "mean_model_score": 0.1919
-    },
-    {
-      "district": "Kashmore",
-      "mean_model_score": 0.1927
-    },
-    {
-      "district": "Kharmang",
-      "mean_model_score": 0.197
-    },
-    {
-      "district": "Gilgit",
-      "mean_model_score": 0.1976
-    },
-    {
-      "district": "Skardu",
-      "mean_model_score": 0.1981
-    },
-    {
-      "district": "Astore",
-      "mean_model_score": 0.1992
-    },
-    {
-      "district": "Mastung",
-      "mean_model_score": 0.2002
-    },
-    {
-      "district": "Orakzai",
-      "mean_model_score": 0.2048
-    },
-    {
-      "district": "Khuzdar",
-      "mean_model_score": 0.207
-    },
-    {
-      "district": "Kalat",
-      "mean_model_score": 0.2102
-    },
-    {
-      "district": "Attock",
-      "mean_model_score": 0.2109
-    },
-    {
-      "district": "Diamer",
-      "mean_model_score": 0.2112
-    },
-    {
-      "district": "Kohistan",
-      "mean_model_score": 0.217
-    },
-    {
-      "district": "Vihari",
-      "mean_model_score": 0.2191
-    },
-    {
-      "district": "Kharan",
-      "mean_model_score": 0.2279
-    },
-    {
-      "district": "Kech",
-      "mean_model_score": 0.23
-    },
-    {
-      "district": "Chitral",
-      "mean_model_score": 0.2436
-    },
-    {
-      "district": "Chagai",
-      "mean_model_score": 0.264
-    },
-    {
-      "district": "Battagram",
-      "mean_model_score": 0.2672
-    },
-    {
-      "district": "Mansehra",
-      "mean_model_score": 0.2738
-    },
-    {
-      "district": "Ziarat",
-      "mean_model_score": 0.3055
-    },
-    {
-      "district": "Jhelum",
-      "mean_model_score": 0.308
-    },
-    {
-      "district": "Ghizer",
-      "mean_model_score": 0.3227
-    },
-    {
-      "district": "Swabi",
-      "mean_model_score": 0.3286
-    },
-    {
-      "district": "Nagar",
-      "mean_model_score": 0.3445
-    },
-    {
-      "district": "Narowal",
-      "mean_model_score": 0.346
-    },
-    {
-      "district": "Buner",
-      "mean_model_score": 0.3507
-    },
-    {
-      "district": "Chakwal",
-      "mean_model_score": 0.3573
-    },
-    {
-      "district": "Shigar",
-      "mean_model_score": 0.3685
+      "district": "Sialkot",
+      "mean_model_score": 0.004
     },
     {
       "district": "Gujrat",
-      "mean_model_score": 0.3826
+      "mean_model_score": 0.0048
     },
     {
-      "district": "Ghanche",
-      "mean_model_score": 0.4028
+      "district": "Narowal",
+      "mean_model_score": 0.0224
+    },
+    {
+      "district": "Karachi",
+      "mean_model_score": 0.0268
+    },
+    {
+      "district": "Nawabshah",
+      "mean_model_score": 0.0306
+    },
+    {
+      "district": "Sukkur",
+      "mean_model_score": 0.0387
+    },
+    {
+      "district": "Dadu",
+      "mean_model_score": 0.0395
+    },
+    {
+      "district": "Ghotki",
+      "mean_model_score": 0.0442
+    },
+    {
+      "district": "Mirpurkhas",
+      "mean_model_score": 0.0447
+    },
+    {
+      "district": "Khairpur",
+      "mean_model_score": 0.0502
+    },
+    {
+      "district": "Layyah",
+      "mean_model_score": 0.0535
+    },
+    {
+      "district": "Kashmore",
+      "mean_model_score": 0.0553
+    },
+    {
+      "district": "Badin",
+      "mean_model_score": 0.056
+    },
+    {
+      "district": "Lasbela",
+      "mean_model_score": 0.0565
+    },
+    {
+      "district": "Muzaffargarh",
+      "mean_model_score": 0.0582
+    },
+    {
+      "district": "Matiari",
+      "mean_model_score": 0.0594
+    },
+    {
+      "district": "Jamshoro",
+      "mean_model_score": 0.0604
+    },
+    {
+      "district": "Naushehro Feroze",
+      "mean_model_score": 0.0621
+    },
+    {
+      "district": "Jhal Magsi",
+      "mean_model_score": 0.0623
+    },
+    {
+      "district": "Dera Bugti",
+      "mean_model_score": 0.064
+    },
+    {
+      "district": "Jhelum",
+      "mean_model_score": 0.0642
+    },
+    {
+      "district": "Sanghar",
+      "mean_model_score": 0.0662
+    },
+    {
+      "district": "Kachhi",
+      "mean_model_score": 0.0668
+    },
+    {
+      "district": "Rajanpur",
+      "mean_model_score": 0.0679
+    },
+    {
+      "district": "Lahore",
+      "mean_model_score": 0.0708
+    },
+    {
+      "district": "Tando Allahyar",
+      "mean_model_score": 0.0747
+    },
+    {
+      "district": "Rahim Yar Khan",
+      "mean_model_score": 0.0805
+    },
+    {
+      "district": "Shikarpur",
+      "mean_model_score": 0.0844
+    },
+    {
+      "district": "Jacobabad",
+      "mean_model_score": 0.0864
+    },
+    {
+      "district": "Qambar Shahdadkot",
+      "mean_model_score": 0.0872
+    },
+    {
+      "district": "Dera Ghazi Khan",
+      "mean_model_score": 0.0886
+    },
+    {
+      "district": "Jafarabad",
+      "mean_model_score": 0.091
+    },
+    {
+      "district": "Awaran",
+      "mean_model_score": 0.095
+    },
+    {
+      "district": "Multan",
+      "mean_model_score": 0.1044
+    },
+    {
+      "district": "Tando Muhammad Khan",
+      "mean_model_score": 0.1064
+    },
+    {
+      "district": "Lodhran",
+      "mean_model_score": 0.1087
+    },
+    {
+      "district": "Sibi",
+      "mean_model_score": 0.1092
+    },
+    {
+      "district": "Nasirabad",
+      "mean_model_score": 0.1136
+    },
+    {
+      "district": "Khuzdar",
+      "mean_model_score": 0.1143
+    },
+    {
+      "district": "Umerkot",
+      "mean_model_score": 0.1176
+    },
+    {
+      "district": "Thatta",
+      "mean_model_score": 0.1181
+    },
+    {
+      "district": "Kharan",
+      "mean_model_score": 0.119
+    },
+    {
+      "district": "Bahawalpur",
+      "mean_model_score": 0.1227
+    },
+    {
+      "district": "Ziarat",
+      "mean_model_score": 0.1412
+    },
+    {
+      "district": "Gujranwala",
+      "mean_model_score": 0.1425
+    },
+    {
+      "district": "Tharparkar",
+      "mean_model_score": 0.1458
+    },
+    {
+      "district": "Mandi Bahauddin",
+      "mean_model_score": 0.1487
+    },
+    {
+      "district": "Barkhan",
+      "mean_model_score": 0.1515
+    },
+    {
+      "district": "Panjgur",
+      "mean_model_score": 0.1526
     },
     {
       "district": "Azad Kashmir",
-      "mean_model_score": 0.4335
+      "mean_model_score": 0.1567
     },
     {
-      "district": "Hunza",
-      "mean_model_score": 0.4398
+      "district": "Kohlu",
+      "mean_model_score": 0.1617
+    },
+    {
+      "district": "Kalat",
+      "mean_model_score": 0.1634
+    },
+    {
+      "district": "Abbottabad",
+      "mean_model_score": 0.1643
+    },
+    {
+      "district": "Khanewal",
+      "mean_model_score": 0.1654
+    },
+    {
+      "district": "Dera Ismail Khan",
+      "mean_model_score": 0.1729
+    },
+    {
+      "district": "Loralai",
+      "mean_model_score": 0.1764
+    },
+    {
+      "district": "Qilla Abdullah",
+      "mean_model_score": 0.1807
+    },
+    {
+      "district": "Kech",
+      "mean_model_score": 0.1825
+    },
+    {
+      "district": "Chagai",
+      "mean_model_score": 0.1978
+    },
+    {
+      "district": "Rawalpindi",
+      "mean_model_score": 0.1995
+    },
+    {
+      "district": "Hyderabad",
+      "mean_model_score": 0.2022
+    },
+    {
+      "district": "Pishin",
+      "mean_model_score": 0.2023
+    },
+    {
+      "district": "Jhang",
+      "mean_model_score": 0.2091
+    },
+    {
+      "district": "Tank",
+      "mean_model_score": 0.2167
+    },
+    {
+      "district": "Mastung",
+      "mean_model_score": 0.2183
+    },
+    {
+      "district": "Lakki Marwat",
+      "mean_model_score": 0.2216
+    },
+    {
+      "district": "Nushki",
+      "mean_model_score": 0.226
+    },
+    {
+      "district": "Musakhel",
+      "mean_model_score": 0.2306
+    },
+    {
+      "district": "Quetta",
+      "mean_model_score": 0.2326
+    },
+    {
+      "district": "Battagram",
+      "mean_model_score": 0.2399
+    },
+    {
+      "district": "Gwadar",
+      "mean_model_score": 0.2478
+    },
+    {
+      "district": "Bhakkar",
+      "mean_model_score": 0.2526
+    },
+    {
+      "district": "Zhob",
+      "mean_model_score": 0.2792
+    },
+    {
+      "district": "Qilla Saifullah",
+      "mean_model_score": 0.2798
+    },
+    {
+      "district": "Mohmand",
+      "mean_model_score": 0.2802
+    },
+    {
+      "district": "Buner",
+      "mean_model_score": 0.2818
+    },
+    {
+      "district": "Toba Tek Singh",
+      "mean_model_score": 0.2874
+    },
+    {
+      "district": "Mianwali",
+      "mean_model_score": 0.2901
+    },
+    {
+      "district": "Peshawar",
+      "mean_model_score": 0.2905
+    },
+    {
+      "district": "Sheikhpura",
+      "mean_model_score": 0.2912
+    },
+    {
+      "district": "Swabi",
+      "mean_model_score": 0.2952
+    },
+    {
+      "district": "South Waziristan",
+      "mean_model_score": 0.3057
+    },
+    {
+      "district": "Mansehra",
+      "mean_model_score": 0.3197
+    },
+    {
+      "district": "Bannu",
+      "mean_model_score": 0.321
+    },
+    {
+      "district": "Charsadda",
+      "mean_model_score": 0.3253
+    },
+    {
+      "district": "Upper Dir",
+      "mean_model_score": 0.3304
+    },
+    {
+      "district": "Islamabad Capital Territory",
+      "mean_model_score": 0.3475
+    },
+    {
+      "district": "Karak",
+      "mean_model_score": 0.363
+    },
+    {
+      "district": "Khyber",
+      "mean_model_score": 0.3659
+    },
+    {
+      "district": "Swat",
+      "mean_model_score": 0.3739
+    },
+    {
+      "district": "Khushab",
+      "mean_model_score": 0.3744
+    },
+    {
+      "district": "Vihari",
+      "mean_model_score": 0.3751
+    },
+    {
+      "district": "Attock",
+      "mean_model_score": 0.3759
+    },
+    {
+      "district": "Lower Dir",
+      "mean_model_score": 0.3809
+    },
+    {
+      "district": "Bajaur",
+      "mean_model_score": 0.3922
+    },
+    {
+      "district": "Chakwal",
+      "mean_model_score": 0.3958
+    },
+    {
+      "district": "Astore",
+      "mean_model_score": 0.3967
+    },
+    {
+      "district": "Chitral",
+      "mean_model_score": 0.4013
+    },
+    {
+      "district": "Kohat",
+      "mean_model_score": 0.4123
+    },
+    {
+      "district": "Nowshera",
+      "mean_model_score": 0.4133
+    },
+    {
+      "district": "Sahiwal",
+      "mean_model_score": 0.4138
+    },
+    {
+      "district": "Hafizabad",
+      "mean_model_score": 0.4164
+    },
+    {
+      "district": "Faisalabad",
+      "mean_model_score": 0.4196
+    },
+    {
+      "district": "Shangla",
+      "mean_model_score": 0.4366
+    },
+    {
+      "district": "Gilgit",
+      "mean_model_score": 0.44
+    },
+    {
+      "district": "Malakand",
+      "mean_model_score": 0.4522
+    },
+    {
+      "district": "Kohistan",
+      "mean_model_score": 0.458
+    },
+    {
+      "district": "Nagar",
+      "mean_model_score": 0.4599
+    },
+    {
+      "district": "Mardan",
+      "mean_model_score": 0.4615
+    },
+    {
+      "district": "Sargodha",
+      "mean_model_score": 0.4637
+    },
+    {
+      "district": "Bahawalnagar",
+      "mean_model_score": 0.4658
+    },
+    {
+      "district": "Hangu",
+      "mean_model_score": 0.4702
+    },
+    {
+      "district": "North Waziristan",
+      "mean_model_score": 0.4712
+    },
+    {
+      "district": "Okara",
+      "mean_model_score": 0.4736
+    },
+    {
+      "district": "Kurram",
+      "mean_model_score": 0.4807
+    },
+    {
+      "district": "Kasur",
+      "mean_model_score": 0.4813
+    },
+    {
+      "district": "Orakzai",
+      "mean_model_score": 0.4814
+    },
+    {
+      "district": "Haripur",
+      "mean_model_score": 0.4939
+    },
+    {
+      "district": "Diamer",
+      "mean_model_score": 0.4967
     }
   ],
   "top5_by_score": [
     {
-      "district": "Abbottabad",
-      "mean_model_score": 0.7346,
-      "mean_precip_anomaly_pct": -69.77,
+      "district": "Shigar",
+      "mean_model_score": 0.8109,
+      "mean_precip_anomaly_pct": 513.9,
+      "n_rule_flagged": 3,
+      "n_points": 15
+    },
+    {
+      "district": "Skardu",
+      "mean_model_score": 0.7544,
+      "mean_precip_anomaly_pct": 207.88,
+      "n_rule_flagged": 2,
+      "n_points": 15
+    },
+    {
+      "district": "Kharmang",
+      "mean_model_score": 0.7519,
+      "mean_precip_anomaly_pct": 129.87,
       "n_rule_flagged": 0,
       "n_points": 15
     },
     {
-      "district": "Islamabad Capital Territory",
-      "mean_model_score": 0.7188,
-      "mean_precip_anomaly_pct": -70.17,
-      "n_rule_flagged": 0,
+      "district": "Ghanche",
+      "mean_model_score": 0.6396,
+      "mean_precip_anomaly_pct": 77.73,
+      "n_rule_flagged": 1,
       "n_points": 15
     },
     {
-      "district": "Rawalpindi",
-      "mean_model_score": 0.6069,
-      "mean_precip_anomaly_pct": -67.17,
-      "n_rule_flagged": 0,
-      "n_points": 15
-    },
-    {
-      "district": "Sialkot",
-      "mean_model_score": 0.5491,
-      "mean_precip_anomaly_pct": -68.07,
-      "n_rule_flagged": 0,
-      "n_points": 15
-    },
-    {
-      "district": "Haripur",
-      "mean_model_score": 0.5402,
-      "mean_precip_anomaly_pct": -68.11,
-      "n_rule_flagged": 0,
+      "district": "Hunza",
+      "mean_model_score": 0.5771,
+      "mean_precip_anomaly_pct": 142.06,
+      "n_rule_flagged": 1,
       "n_points": 15
     }
   ],
@@ -619,119 +611,119 @@
   "district_results": [
     {
       "district": "Abbottabad",
-      "mean_model_score": 0.7346,
-      "flag": true,
-      "mean_precip_anomaly_pct": -69.77,
+      "mean_model_score": 0.1643,
+      "flag": false,
+      "mean_precip_anomaly_pct": 7.41,
       "lat": 34.1315,
       "lon": 73.2242
     },
     {
       "district": "Astore",
-      "mean_model_score": 0.1992,
+      "mean_model_score": 0.3967,
       "flag": false,
-      "mean_precip_anomaly_pct": -100.0,
+      "mean_precip_anomaly_pct": 75.5,
       "lat": 35.12,
       "lon": 74.8459
     },
     {
       "district": "Attock",
-      "mean_model_score": 0.2109,
+      "mean_model_score": 0.3759,
       "flag": false,
-      "mean_precip_anomaly_pct": -63.14,
+      "mean_precip_anomaly_pct": -5.73,
       "lat": 33.4259,
       "lon": 72.258
     },
     {
       "district": "Awaran",
-      "mean_model_score": 0.1321,
+      "mean_model_score": 0.095,
       "flag": false,
-      "mean_precip_anomaly_pct": -94.01,
+      "mean_precip_anomaly_pct": -61.38,
       "lat": 26.1578,
       "lon": 65.6221
     },
     {
       "district": "Azad Kashmir",
-      "mean_model_score": 0.4335,
+      "mean_model_score": 0.1567,
       "flag": false,
-      "mean_precip_anomaly_pct": -80.13,
+      "mean_precip_anomaly_pct": 30.06,
       "lat": 33.8002,
       "lon": 73.8383
     },
     {
       "district": "Badin",
-      "mean_model_score": 0.0471,
+      "mean_model_score": 0.056,
       "flag": false,
-      "mean_precip_anomaly_pct": -89.65,
+      "mean_precip_anomaly_pct": -63.29,
       "lat": 24.6194,
       "lon": 68.7721
     },
     {
       "district": "Bahawalnagar",
-      "mean_model_score": 0.1056,
+      "mean_model_score": 0.4658,
       "flag": false,
-      "mean_precip_anomaly_pct": -54.05,
+      "mean_precip_anomaly_pct": 67.67,
       "lat": 29.5824,
       "lon": 72.9755
     },
     {
       "district": "Bahawalpur",
-      "mean_model_score": 0.1266,
+      "mean_model_score": 0.1227,
       "flag": false,
-      "mean_precip_anomaly_pct": -83.38,
+      "mean_precip_anomaly_pct": 4.08,
       "lat": 28.826,
       "lon": 71.8481
     },
     {
       "district": "Bajaur",
-      "mean_model_score": 0.1313,
+      "mean_model_score": 0.3922,
       "flag": false,
-      "mean_precip_anomaly_pct": -71.91,
+      "mean_precip_anomaly_pct": 24.85,
       "lat": 34.7104,
       "lon": 71.4853
     },
     {
       "district": "Bannu",
-      "mean_model_score": 0.0879,
+      "mean_model_score": 0.321,
       "flag": false,
-      "mean_precip_anomaly_pct": -56.74,
+      "mean_precip_anomaly_pct": -3.35,
       "lat": 32.8337,
       "lon": 70.6789
     },
     {
       "district": "Barkhan",
-      "mean_model_score": 0.0648,
+      "mean_model_score": 0.1515,
       "flag": false,
-      "mean_precip_anomaly_pct": -87.69,
+      "mean_precip_anomaly_pct": -37.88,
       "lat": 29.8121,
       "lon": 69.5301
     },
     {
       "district": "Battagram",
-      "mean_model_score": 0.2672,
+      "mean_model_score": 0.2399,
       "flag": false,
-      "mean_precip_anomaly_pct": -86.32,
+      "mean_precip_anomaly_pct": 20.61,
       "lat": 34.7879,
       "lon": 73.0731
     },
     {
       "district": "Bhakkar",
-      "mean_model_score": 0.1304,
+      "mean_model_score": 0.2526,
       "flag": false,
-      "mean_precip_anomaly_pct": -64.47,
+      "mean_precip_anomaly_pct": -10.93,
       "lat": 31.66,
       "lon": 71.3048
     },
     {
       "district": "Buner",
-      "mean_model_score": 0.3507,
+      "mean_model_score": 0.2818,
       "flag": false,
-      "mean_precip_anomaly_pct": -75.05,
+      "mean_precip_anomaly_pct": 11.59,
       "lat": 34.4553,
       "lon": 72.4905
     },
     {
       "district": "Chagai",
-      "mean_model_score": 0.264,
+      "mean_model_score": 0.1978,
       "flag": false,
       "mean_precip_anomaly_pct": -100.0,
       "lat": 29.0884,
@@ -739,583 +731,583 @@
     },
     {
       "district": "Chakwal",
-      "mean_model_score": 0.3573,
+      "mean_model_score": 0.3958,
       "flag": false,
-      "mean_precip_anomaly_pct": -66.84,
+      "mean_precip_anomaly_pct": -4.87,
       "lat": 32.9316,
       "lon": 72.5146
     },
     {
       "district": "Charsadda",
-      "mean_model_score": 0.0707,
+      "mean_model_score": 0.3253,
       "flag": false,
-      "mean_precip_anomaly_pct": -61.74,
+      "mean_precip_anomaly_pct": 18.14,
       "lat": 34.1926,
       "lon": 71.7338
     },
     {
       "district": "Chitral",
-      "mean_model_score": 0.2436,
+      "mean_model_score": 0.4013,
       "flag": false,
-      "mean_precip_anomaly_pct": -100.0,
+      "mean_precip_anomaly_pct": 42.73,
       "lat": 36.0602,
       "lon": 71.9022
     },
     {
       "district": "Dadu",
-      "mean_model_score": 0.0768,
+      "mean_model_score": 0.0395,
       "flag": false,
-      "mean_precip_anomaly_pct": -92.06,
+      "mean_precip_anomaly_pct": -77.61,
       "lat": 26.7189,
       "lon": 67.4936
     },
     {
       "district": "Dera Bugti",
-      "mean_model_score": 0.0772,
+      "mean_model_score": 0.064,
       "flag": false,
-      "mean_precip_anomaly_pct": -91.11,
+      "mean_precip_anomaly_pct": -58.65,
       "lat": 28.9243,
       "lon": 69.0845
     },
     {
       "district": "Dera Ghazi Khan",
-      "mean_model_score": 0.0736,
+      "mean_model_score": 0.0886,
       "flag": false,
-      "mean_precip_anomaly_pct": -90.03,
+      "mean_precip_anomaly_pct": -33.03,
       "lat": 30.0474,
       "lon": 70.2789
     },
     {
       "district": "Dera Ismail Khan",
-      "mean_model_score": 0.0652,
+      "mean_model_score": 0.1729,
       "flag": false,
-      "mean_precip_anomaly_pct": -85.88,
+      "mean_precip_anomaly_pct": -9.41,
       "lat": 31.7861,
       "lon": 70.587
     },
     {
       "district": "Diamer",
-      "mean_model_score": 0.2112,
+      "mean_model_score": 0.4967,
       "flag": false,
-      "mean_precip_anomaly_pct": -100.0,
+      "mean_precip_anomaly_pct": 51.39,
       "lat": 35.5364,
       "lon": 74.0033
     },
     {
       "district": "Faisalabad",
-      "mean_model_score": 0.1119,
+      "mean_model_score": 0.4196,
       "flag": false,
-      "mean_precip_anomaly_pct": -52.49,
+      "mean_precip_anomaly_pct": 40.72,
       "lat": 31.1957,
       "lon": 73.0712
     },
     {
       "district": "Ghanche",
-      "mean_model_score": 0.4028,
-      "flag": false,
-      "mean_precip_anomaly_pct": -55.26,
+      "mean_model_score": 0.6396,
+      "flag": true,
+      "mean_precip_anomaly_pct": 77.73,
       "lat": 35.2594,
       "lon": 76.8633
     },
     {
       "district": "Ghizer",
-      "mean_model_score": 0.3227,
-      "flag": false,
-      "mean_precip_anomaly_pct": -100.0,
+      "mean_model_score": 0.575,
+      "flag": true,
+      "mean_precip_anomaly_pct": 53.2,
       "lat": 36.2567,
       "lon": 73.3955
     },
     {
       "district": "Ghotki",
-      "mean_model_score": 0.0535,
+      "mean_model_score": 0.0442,
       "flag": false,
-      "mean_precip_anomaly_pct": -89.14,
+      "mean_precip_anomaly_pct": -64.94,
       "lat": 27.7468,
       "lon": 69.602
     },
     {
       "district": "Gilgit",
-      "mean_model_score": 0.1976,
+      "mean_model_score": 0.44,
       "flag": false,
-      "mean_precip_anomaly_pct": -100.0,
+      "mean_precip_anomaly_pct": 285.11,
       "lat": 35.9517,
       "lon": 74.4188
     },
     {
       "district": "Gujranwala",
-      "mean_model_score": 0.1717,
+      "mean_model_score": 0.1425,
       "flag": false,
-      "mean_precip_anomaly_pct": -74.76,
+      "mean_precip_anomaly_pct": 77.73,
       "lat": 32.1318,
       "lon": 74.062
     },
     {
       "district": "Gujrat",
-      "mean_model_score": 0.3826,
+      "mean_model_score": 0.0048,
       "flag": false,
-      "mean_precip_anomaly_pct": -74.05,
+      "mean_precip_anomaly_pct": 68.4,
       "lat": 32.7036,
       "lon": 73.9032
     },
     {
       "district": "Gwadar",
-      "mean_model_score": 0.0903,
+      "mean_model_score": 0.2478,
       "flag": false,
-      "mean_precip_anomaly_pct": -64.13,
-      "lat": 25.3945,
-      "lon": 64.1627
+      "mean_precip_anomaly_pct": -99.48,
+      "lat": 25.3546,
+      "lon": 63.2584
     },
     {
       "district": "Hafizabad",
-      "mean_model_score": 0.1007,
+      "mean_model_score": 0.4164,
       "flag": false,
-      "mean_precip_anomaly_pct": -66.86,
+      "mean_precip_anomaly_pct": 30.92,
       "lat": 31.9432,
       "lon": 73.4737
     },
     {
       "district": "Hangu",
-      "mean_model_score": 0.1211,
+      "mean_model_score": 0.4702,
       "flag": false,
-      "mean_precip_anomaly_pct": -75.26,
+      "mean_precip_anomaly_pct": 10.11,
       "lat": 33.3416,
       "lon": 70.7934
     },
     {
       "district": "Haripur",
-      "mean_model_score": 0.5402,
-      "flag": true,
-      "mean_precip_anomaly_pct": -68.11,
+      "mean_model_score": 0.4939,
+      "flag": false,
+      "mean_precip_anomaly_pct": -1.42,
       "lat": 34.0316,
       "lon": 72.8525
     },
     {
       "district": "Hunza",
-      "mean_model_score": 0.4398,
-      "flag": false,
-      "mean_precip_anomaly_pct": -86.67,
+      "mean_model_score": 0.5771,
+      "flag": true,
+      "mean_precip_anomaly_pct": 142.06,
       "lat": 36.6082,
       "lon": 75.0519
     },
     {
       "district": "Hyderabad",
-      "mean_model_score": 0.0539,
+      "mean_model_score": 0.2022,
       "flag": false,
-      "mean_precip_anomaly_pct": -93.55,
+      "mean_precip_anomaly_pct": -70.63,
       "lat": 25.3878,
       "lon": 68.5162
     },
     {
       "district": "Islamabad Capital Territory",
-      "mean_model_score": 0.7188,
-      "flag": true,
-      "mean_precip_anomaly_pct": -70.17,
+      "mean_model_score": 0.3475,
+      "flag": false,
+      "mean_precip_anomaly_pct": -11.45,
       "lat": 33.6678,
       "lon": 73.0965
     },
     {
       "district": "Jacobabad",
-      "mean_model_score": 0.114,
+      "mean_model_score": 0.0864,
       "flag": false,
-      "mean_precip_anomaly_pct": -93.65,
+      "mean_precip_anomaly_pct": -86.3,
       "lat": 28.1559,
       "lon": 68.5985
     },
     {
       "district": "Jafarabad",
-      "mean_model_score": 0.0836,
+      "mean_model_score": 0.091,
       "flag": false,
-      "mean_precip_anomaly_pct": -82.78,
+      "mean_precip_anomaly_pct": -76.62,
       "lat": 28.2761,
       "lon": 68.272
     },
     {
       "district": "Jamshoro",
-      "mean_model_score": 0.0381,
+      "mean_model_score": 0.0604,
       "flag": false,
-      "mean_precip_anomaly_pct": -92.6,
+      "mean_precip_anomaly_pct": -84.21,
       "lat": 25.5041,
       "lon": 67.7734
     },
     {
       "district": "Jhal Magsi",
-      "mean_model_score": 0.1636,
+      "mean_model_score": 0.0623,
       "flag": false,
-      "mean_precip_anomaly_pct": -99.4,
+      "mean_precip_anomaly_pct": -26.32,
       "lat": 28.3722,
       "lon": 67.5892
     },
     {
       "district": "Jhang",
-      "mean_model_score": 0.0851,
+      "mean_model_score": 0.2091,
       "flag": false,
-      "mean_precip_anomaly_pct": -40.38,
+      "mean_precip_anomaly_pct": 4.49,
       "lat": 31.2861,
       "lon": 72.2671
     },
     {
       "district": "Jhelum",
-      "mean_model_score": 0.308,
+      "mean_model_score": 0.0642,
       "flag": false,
-      "mean_precip_anomaly_pct": -73.49,
+      "mean_precip_anomaly_pct": 38.98,
       "lat": 32.8434,
       "lon": 73.2773
     },
     {
       "district": "Kachhi",
-      "mean_model_score": 0.1427,
+      "mean_model_score": 0.0668,
       "flag": false,
-      "mean_precip_anomaly_pct": -99.08,
+      "mean_precip_anomaly_pct": -29.93,
       "lat": 29.095,
       "lon": 67.7656
     },
     {
       "district": "Kalat",
-      "mean_model_score": 0.2102,
+      "mean_model_score": 0.1634,
       "flag": false,
-      "mean_precip_anomaly_pct": -100.0,
+      "mean_precip_anomaly_pct": -31.21,
       "lat": 28.8643,
       "lon": 66.7949
     },
     {
       "district": "Karachi",
-      "mean_model_score": 0.0449,
+      "mean_model_score": 0.0268,
       "flag": false,
-      "mean_precip_anomaly_pct": -92.93,
+      "mean_precip_anomaly_pct": -86.32,
       "lat": 25.0218,
       "lon": 67.2505
     },
     {
       "district": "Karak",
-      "mean_model_score": 0.1725,
+      "mean_model_score": 0.363,
       "flag": false,
-      "mean_precip_anomaly_pct": -64.73,
+      "mean_precip_anomaly_pct": -10.94,
       "lat": 33.0903,
       "lon": 71.1189
     },
     {
       "district": "Kashmore",
-      "mean_model_score": 0.1927,
+      "mean_model_score": 0.0553,
       "flag": false,
-      "mean_precip_anomaly_pct": -98.7,
+      "mean_precip_anomaly_pct": -59.0,
       "lat": 28.2143,
       "lon": 69.3505
     },
     {
       "district": "Kasur",
-      "mean_model_score": 0.0911,
+      "mean_model_score": 0.4813,
       "flag": false,
-      "mean_precip_anomaly_pct": -56.14,
+      "mean_precip_anomaly_pct": 51.28,
       "lat": 31.0561,
       "lon": 74.0741
     },
     {
       "district": "Kech",
-      "mean_model_score": 0.23,
+      "mean_model_score": 0.1825,
       "flag": false,
-      "mean_precip_anomaly_pct": -98.15,
-      "lat": 26.0829,
-      "lon": 63.1424
+      "mean_precip_anomaly_pct": -41.63,
+      "lat": 26.0175,
+      "lon": 63.1707
     },
     {
       "district": "Khairpur",
-      "mean_model_score": 0.0227,
+      "mean_model_score": 0.0502,
       "flag": false,
-      "mean_precip_anomaly_pct": -93.64,
+      "mean_precip_anomaly_pct": -65.64,
       "lat": 26.6134,
       "lon": 69.2026
     },
     {
       "district": "Khanewal",
-      "mean_model_score": 0.1243,
+      "mean_model_score": 0.1654,
       "flag": false,
-      "mean_precip_anomaly_pct": -50.51,
+      "mean_precip_anomaly_pct": -12.07,
       "lat": 30.4193,
       "lon": 71.9504
     },
     {
       "district": "Kharan",
-      "mean_model_score": 0.2279,
+      "mean_model_score": 0.119,
       "flag": false,
-      "mean_precip_anomaly_pct": -87.83,
+      "mean_precip_anomaly_pct": -60.57,
       "lat": 27.7881,
       "lon": 64.757
     },
     {
       "district": "Kharmang",
-      "mean_model_score": 0.197,
-      "flag": false,
-      "mean_precip_anomaly_pct": -97.73,
+      "mean_model_score": 0.7519,
+      "flag": true,
+      "mean_precip_anomaly_pct": 129.87,
       "lat": 34.9278,
       "lon": 76.0996
     },
     {
       "district": "Khushab",
-      "mean_model_score": 0.1919,
+      "mean_model_score": 0.3744,
       "flag": false,
-      "mean_precip_anomaly_pct": -54.01,
+      "mean_precip_anomaly_pct": -8.24,
       "lat": 32.1374,
       "lon": 72.0144
     },
     {
       "district": "Khuzdar",
-      "mean_model_score": 0.207,
+      "mean_model_score": 0.1143,
       "flag": false,
-      "mean_precip_anomaly_pct": -97.93,
+      "mean_precip_anomaly_pct": -43.49,
       "lat": 27.1677,
       "lon": 66.8003
     },
     {
       "district": "Khyber",
-      "mean_model_score": 0.1674,
+      "mean_model_score": 0.3659,
       "flag": false,
-      "mean_precip_anomaly_pct": -82.83,
+      "mean_precip_anomaly_pct": 36.61,
       "lat": 33.9039,
       "lon": 71.0156
     },
     {
       "district": "Kohat",
-      "mean_model_score": 0.1276,
+      "mean_model_score": 0.4123,
       "flag": false,
-      "mean_precip_anomaly_pct": -74.96,
+      "mean_precip_anomaly_pct": 5.65,
       "lat": 33.4407,
       "lon": 71.5055
     },
     {
       "district": "Kohistan",
-      "mean_model_score": 0.217,
+      "mean_model_score": 0.458,
       "flag": false,
-      "mean_precip_anomaly_pct": -100.0,
+      "mean_precip_anomaly_pct": 17.4,
       "lat": 35.3207,
       "lon": 73.213
     },
     {
       "district": "Kohlu",
-      "mean_model_score": 0.1767,
+      "mean_model_score": 0.1617,
       "flag": false,
-      "mean_precip_anomaly_pct": -96.84,
+      "mean_precip_anomaly_pct": -40.82,
       "lat": 29.509,
       "lon": 68.717
     },
     {
       "district": "Kurram",
-      "mean_model_score": 0.1184,
+      "mean_model_score": 0.4807,
       "flag": false,
-      "mean_precip_anomaly_pct": -71.95,
+      "mean_precip_anomaly_pct": 50.11,
       "lat": 33.5862,
       "lon": 70.3726
     },
     {
       "district": "Lahore",
-      "mean_model_score": 0.1681,
+      "mean_model_score": 0.0708,
       "flag": false,
-      "mean_precip_anomaly_pct": -78.02,
+      "mean_precip_anomaly_pct": 68.4,
       "lat": 31.4457,
       "lon": 74.3176
     },
     {
       "district": "Lakki Marwat",
-      "mean_model_score": 0.0967,
+      "mean_model_score": 0.2216,
       "flag": false,
-      "mean_precip_anomaly_pct": -77.92,
+      "mean_precip_anomaly_pct": -2.33,
       "lat": 32.5444,
       "lon": 70.8104
     },
     {
       "district": "Lasbela",
-      "mean_model_score": 0.0818,
+      "mean_model_score": 0.0565,
       "flag": false,
-      "mean_precip_anomaly_pct": -94.67,
+      "mean_precip_anomaly_pct": -79.43,
       "lat": 25.7354,
       "lon": 66.6853
     },
     {
       "district": "Layyah",
-      "mean_model_score": 0.0911,
+      "mean_model_score": 0.0535,
       "flag": false,
-      "mean_precip_anomaly_pct": -84.47,
+      "mean_precip_anomaly_pct": -31.1,
       "lat": 30.9905,
       "lon": 71.151
     },
     {
       "district": "Lodhran",
-      "mean_model_score": 0.0946,
+      "mean_model_score": 0.1087,
       "flag": false,
-      "mean_precip_anomaly_pct": -69.15,
+      "mean_precip_anomaly_pct": -23.03,
       "lat": 29.7432,
       "lon": 71.7535
     },
     {
       "district": "Loralai",
-      "mean_model_score": 0.1872,
+      "mean_model_score": 0.1764,
       "flag": false,
-      "mean_precip_anomaly_pct": -99.02,
+      "mean_precip_anomaly_pct": -11.7,
       "lat": 30.2073,
       "lon": 68.6212
     },
     {
       "district": "Lower Dir",
-      "mean_model_score": 0.1139,
+      "mean_model_score": 0.3809,
       "flag": false,
-      "mean_precip_anomaly_pct": -78.43,
+      "mean_precip_anomaly_pct": 36.44,
       "lat": 34.8144,
       "lon": 71.8185
     },
     {
       "district": "Malakand",
-      "mean_model_score": 0.1608,
+      "mean_model_score": 0.4522,
       "flag": false,
-      "mean_precip_anomaly_pct": -76.54,
+      "mean_precip_anomaly_pct": 11.68,
       "lat": 34.4985,
       "lon": 71.9018
     },
     {
       "district": "Mandi Bahauddin",
-      "mean_model_score": 0.172,
+      "mean_model_score": 0.1487,
       "flag": false,
-      "mean_precip_anomaly_pct": -72.5,
+      "mean_precip_anomaly_pct": 52.97,
       "lat": 32.4167,
       "lon": 73.4536
     },
     {
       "district": "Mansehra",
-      "mean_model_score": 0.2738,
+      "mean_model_score": 0.3197,
       "flag": false,
-      "mean_precip_anomaly_pct": -92.79,
+      "mean_precip_anomaly_pct": 25.16,
       "lat": 34.6472,
       "lon": 73.3522
     },
     {
       "district": "Mardan",
-      "mean_model_score": 0.1014,
+      "mean_model_score": 0.4615,
       "flag": false,
-      "mean_precip_anomaly_pct": -73.67,
+      "mean_precip_anomaly_pct": 5.99,
       "lat": 34.305,
       "lon": 72.0405
     },
     {
       "district": "Mastung",
-      "mean_model_score": 0.2002,
+      "mean_model_score": 0.2183,
       "flag": false,
-      "mean_precip_anomaly_pct": -97.97,
+      "mean_precip_anomaly_pct": -74.96,
       "lat": 29.799,
       "lon": 66.983
     },
     {
       "district": "Matiari",
-      "mean_model_score": 0.0515,
+      "mean_model_score": 0.0594,
       "flag": false,
-      "mean_precip_anomaly_pct": -92.04,
+      "mean_precip_anomaly_pct": -80.75,
       "lat": 25.829,
       "lon": 68.3838
     },
     {
       "district": "Mianwali",
-      "mean_model_score": 0.1599,
+      "mean_model_score": 0.2901,
       "flag": false,
-      "mean_precip_anomaly_pct": -71.87,
+      "mean_precip_anomaly_pct": -4.02,
       "lat": 32.5411,
       "lon": 71.4871
     },
     {
       "district": "Mirpurkhas",
-      "mean_model_score": 0.0453,
+      "mean_model_score": 0.0447,
       "flag": false,
-      "mean_precip_anomaly_pct": -91.57,
+      "mean_precip_anomaly_pct": -57.23,
       "lat": 25.2699,
       "lon": 69.1176
     },
     {
       "district": "Mohmand",
-      "mean_model_score": 0.072,
+      "mean_model_score": 0.2802,
       "flag": false,
-      "mean_precip_anomaly_pct": -79.26,
+      "mean_precip_anomaly_pct": 20.32,
       "lat": 34.4367,
       "lon": 71.2908
     },
     {
       "district": "Multan",
-      "mean_model_score": 0.0961,
+      "mean_model_score": 0.1044,
       "flag": false,
-      "mean_precip_anomaly_pct": -58.65,
+      "mean_precip_anomaly_pct": -36.01,
       "lat": 29.9236,
       "lon": 71.398
     },
     {
       "district": "Musakhel",
-      "mean_model_score": 0.1474,
+      "mean_model_score": 0.2306,
       "flag": false,
-      "mean_precip_anomaly_pct": -89.33,
+      "mean_precip_anomaly_pct": -23.14,
       "lat": 30.7682,
       "lon": 69.9271
     },
     {
       "district": "Muzaffargarh",
-      "mean_model_score": 0.0618,
+      "mean_model_score": 0.0582,
       "flag": false,
-      "mean_precip_anomaly_pct": -81.82,
+      "mean_precip_anomaly_pct": -27.67,
       "lat": 29.7455,
       "lon": 70.9273
     },
     {
       "district": "Nagar",
-      "mean_model_score": 0.3445,
+      "mean_model_score": 0.4599,
       "flag": false,
-      "mean_precip_anomaly_pct": -100.0,
+      "mean_precip_anomaly_pct": 54.87,
       "lat": 36.2084,
       "lon": 74.6913
     },
     {
       "district": "Narowal",
-      "mean_model_score": 0.346,
+      "mean_model_score": 0.0224,
       "flag": false,
-      "mean_precip_anomaly_pct": -72.48,
+      "mean_precip_anomaly_pct": 111.71,
       "lat": 32.2057,
       "lon": 75.01
     },
     {
       "district": "Nasirabad",
-      "mean_model_score": 0.0855,
+      "mean_model_score": 0.1136,
       "flag": false,
-      "mean_precip_anomaly_pct": -85.68,
+      "mean_precip_anomaly_pct": -62.29,
       "lat": 28.5302,
       "lon": 68.1698
     },
     {
       "district": "Naushehro Feroze",
-      "mean_model_score": 0.0499,
+      "mean_model_score": 0.0621,
       "flag": false,
-      "mean_precip_anomaly_pct": -86.38,
+      "mean_precip_anomaly_pct": -91.66,
       "lat": 26.8578,
       "lon": 68.1573
     },
     {
       "district": "Nawabshah",
-      "mean_model_score": 0.1105,
+      "mean_model_score": 0.0306,
       "flag": false,
-      "mean_precip_anomaly_pct": -94.96,
+      "mean_precip_anomaly_pct": -82.45,
       "lat": 26.2448,
       "lon": 68.3535
     },
     {
       "district": "North Waziristan",
-      "mean_model_score": 0.1164,
+      "mean_model_score": 0.4712,
       "flag": false,
-      "mean_precip_anomaly_pct": -58.19,
+      "mean_precip_anomaly_pct": 30.28,
       "lat": 32.8526,
       "lon": 70.0394
     },
     {
       "district": "Nowshera",
-      "mean_model_score": 0.1292,
+      "mean_model_score": 0.4133,
       "flag": false,
-      "mean_precip_anomaly_pct": -59.07,
+      "mean_precip_anomaly_pct": 21.33,
       "lat": 33.8609,
       "lon": 71.9649
     },
     {
       "district": "Nushki",
-      "mean_model_score": 0.1801,
+      "mean_model_score": 0.226,
       "flag": false,
       "mean_precip_anomaly_pct": -100.0,
       "lat": 29.4535,
@@ -1323,305 +1315,305 @@
     },
     {
       "district": "Okara",
-      "mean_model_score": 0.0841,
+      "mean_model_score": 0.4736,
       "flag": false,
-      "mean_precip_anomaly_pct": -33.21,
+      "mean_precip_anomaly_pct": 62.87,
       "lat": 30.6578,
       "lon": 73.6521
     },
     {
       "district": "Orakzai",
-      "mean_model_score": 0.2048,
+      "mean_model_score": 0.4814,
       "flag": false,
-      "mean_precip_anomaly_pct": -87.42,
+      "mean_precip_anomaly_pct": 12.21,
       "lat": 33.6385,
       "lon": 71.1269
     },
     {
       "district": "Pakpattan",
-      "mean_model_score": 0.08,
-      "flag": false,
-      "mean_precip_anomaly_pct": -29.85,
+      "mean_model_score": 0.541,
+      "flag": true,
+      "mean_precip_anomaly_pct": 69.53,
       "lat": 30.3194,
       "lon": 73.2359
     },
     {
       "district": "Panjgur",
-      "mean_model_score": 0.1723,
+      "mean_model_score": 0.1526,
       "flag": false,
-      "mean_precip_anomaly_pct": -92.3,
+      "mean_precip_anomaly_pct": -44.86,
       "lat": 26.8161,
       "lon": 64.1839
     },
     {
       "district": "Peshawar",
-      "mean_model_score": 0.0898,
+      "mean_model_score": 0.2905,
       "flag": false,
-      "mean_precip_anomaly_pct": -72.02,
+      "mean_precip_anomaly_pct": 26.54,
       "lat": 33.939,
       "lon": 71.5884
     },
     {
       "district": "Pishin",
-      "mean_model_score": 0.155,
+      "mean_model_score": 0.2023,
       "flag": false,
-      "mean_precip_anomaly_pct": -100.0,
+      "mean_precip_anomaly_pct": -0.55,
       "lat": 30.8037,
       "lon": 67.4384
     },
     {
       "district": "Qambar Shahdadkot",
-      "mean_model_score": 0.1829,
+      "mean_model_score": 0.0872,
       "flag": false,
-      "mean_precip_anomaly_pct": -94.09,
+      "mean_precip_anomaly_pct": -71.35,
       "lat": 27.5592,
       "lon": 67.8405
     },
     {
       "district": "Qilla Abdullah",
-      "mean_model_score": 0.1269,
+      "mean_model_score": 0.1807,
       "flag": false,
-      "mean_precip_anomaly_pct": -100.0,
+      "mean_precip_anomaly_pct": 27.42,
       "lat": 30.8744,
       "lon": 66.8238
     },
     {
       "district": "Qilla Saifullah",
-      "mean_model_score": 0.1262,
+      "mean_model_score": 0.2798,
       "flag": false,
-      "mean_precip_anomaly_pct": -96.88,
+      "mean_precip_anomaly_pct": 29.72,
       "lat": 30.9343,
       "lon": 68.5036
     },
     {
       "district": "Quetta",
-      "mean_model_score": 0.1673,
+      "mean_model_score": 0.2326,
       "flag": false,
-      "mean_precip_anomaly_pct": -100.0,
+      "mean_precip_anomaly_pct": -85.04,
       "lat": 30.092,
       "lon": 66.7952
     },
     {
       "district": "Rahim Yar Khan",
-      "mean_model_score": 0.0604,
+      "mean_model_score": 0.0805,
       "flag": false,
-      "mean_precip_anomaly_pct": -87.73,
+      "mean_precip_anomaly_pct": -42.7,
       "lat": 28.3729,
       "lon": 70.5365
     },
     {
       "district": "Rajanpur",
-      "mean_model_score": 0.0857,
+      "mean_model_score": 0.0679,
       "flag": false,
-      "mean_precip_anomaly_pct": -94.95,
+      "mean_precip_anomaly_pct": -55.24,
       "lat": 29.0299,
       "lon": 70.1691
     },
     {
       "district": "Rawalpindi",
-      "mean_model_score": 0.6069,
-      "flag": true,
-      "mean_precip_anomaly_pct": -67.17,
+      "mean_model_score": 0.1995,
+      "flag": false,
+      "mean_precip_anomaly_pct": -0.0,
       "lat": 33.3645,
       "lon": 73.1262
     },
     {
       "district": "Sahiwal",
-      "mean_model_score": 0.0707,
+      "mean_model_score": 0.4138,
       "flag": false,
-      "mean_precip_anomaly_pct": -31.82,
+      "mean_precip_anomaly_pct": 50.41,
       "lat": 30.5762,
       "lon": 72.8929
     },
     {
       "district": "Sanghar",
-      "mean_model_score": 0.0412,
+      "mean_model_score": 0.0662,
       "flag": false,
-      "mean_precip_anomaly_pct": -89.94,
+      "mean_precip_anomaly_pct": -50.5,
       "lat": 25.9251,
       "lon": 69.3811
     },
     {
       "district": "Sargodha",
-      "mean_model_score": 0.0974,
+      "mean_model_score": 0.4637,
       "flag": false,
-      "mean_precip_anomaly_pct": -56.65,
+      "mean_precip_anomaly_pct": 0.32,
       "lat": 32.0503,
       "lon": 72.7598
     },
     {
       "district": "Shangla",
-      "mean_model_score": 0.1521,
+      "mean_model_score": 0.4366,
       "flag": false,
-      "mean_precip_anomaly_pct": -90.9,
+      "mean_precip_anomaly_pct": 19.62,
       "lat": 34.8477,
       "lon": 72.6963
     },
     {
       "district": "Sheikhpura",
-      "mean_model_score": 0.0929,
+      "mean_model_score": 0.2912,
       "flag": false,
-      "mean_precip_anomaly_pct": -70.69,
+      "mean_precip_anomaly_pct": 82.43,
       "lat": 31.5782,
       "lon": 73.969
     },
     {
       "district": "Shigar",
-      "mean_model_score": 0.3685,
-      "flag": false,
-      "mean_precip_anomaly_pct": -99.06,
+      "mean_model_score": 0.8109,
+      "flag": true,
+      "mean_precip_anomaly_pct": 513.9,
       "lat": 35.7109,
       "lon": 75.7795
     },
     {
       "district": "Shikarpur",
-      "mean_model_score": 0.1324,
+      "mean_model_score": 0.0844,
       "flag": false,
-      "mean_precip_anomaly_pct": -100.0,
+      "mean_precip_anomaly_pct": -84.19,
       "lat": 27.8592,
       "lon": 68.5977
     },
     {
       "district": "Sialkot",
-      "mean_model_score": 0.5491,
-      "flag": true,
-      "mean_precip_anomaly_pct": -68.07,
+      "mean_model_score": 0.004,
+      "flag": false,
+      "mean_precip_anomaly_pct": 86.15,
       "lat": 32.4719,
       "lon": 74.5203
     },
     {
       "district": "Sibi",
-      "mean_model_score": 0.1354,
+      "mean_model_score": 0.1092,
       "flag": false,
-      "mean_precip_anomaly_pct": -100.0,
+      "mean_precip_anomaly_pct": -23.13,
       "lat": 29.851,
       "lon": 67.9089
     },
     {
       "district": "Skardu",
-      "mean_model_score": 0.1981,
-      "flag": false,
-      "mean_precip_anomaly_pct": -100.0,
+      "mean_model_score": 0.7544,
+      "flag": true,
+      "mean_precip_anomaly_pct": 207.88,
       "lat": 35.1731,
       "lon": 75.5195
     },
     {
       "district": "South Waziristan",
-      "mean_model_score": 0.1093,
+      "mean_model_score": 0.3057,
       "flag": false,
-      "mean_precip_anomaly_pct": -71.46,
+      "mean_precip_anomaly_pct": -1.05,
       "lat": 32.096,
       "lon": 69.921
     },
     {
       "district": "Sukkur",
-      "mean_model_score": 0.0539,
+      "mean_model_score": 0.0387,
       "flag": false,
-      "mean_precip_anomaly_pct": -90.24,
+      "mean_precip_anomaly_pct": -74.49,
       "lat": 27.4087,
       "lon": 69.2537
     },
     {
       "district": "Swabi",
-      "mean_model_score": 0.3286,
+      "mean_model_score": 0.2952,
       "flag": false,
-      "mean_precip_anomaly_pct": -67.52,
+      "mean_precip_anomaly_pct": 8.92,
       "lat": 34.1272,
       "lon": 72.4292
     },
     {
       "district": "Swat",
-      "mean_model_score": 0.1265,
+      "mean_model_score": 0.3739,
       "flag": false,
-      "mean_precip_anomaly_pct": -95.31,
+      "mean_precip_anomaly_pct": 32.71,
       "lat": 35.2129,
       "lon": 72.5015
     },
     {
       "district": "Tando Allahyar",
-      "mean_model_score": 0.0546,
+      "mean_model_score": 0.0747,
       "flag": false,
-      "mean_precip_anomaly_pct": -92.41,
+      "mean_precip_anomaly_pct": -61.86,
       "lat": 25.4227,
       "lon": 68.8279
     },
     {
       "district": "Tando Muhammad Khan",
-      "mean_model_score": 0.0833,
+      "mean_model_score": 0.1064,
       "flag": false,
-      "mean_precip_anomaly_pct": -95.7,
+      "mean_precip_anomaly_pct": -68.36,
       "lat": 24.9263,
       "lon": 68.4522
     },
     {
       "district": "Tank",
-      "mean_model_score": 0.0762,
+      "mean_model_score": 0.2167,
       "flag": false,
-      "mean_precip_anomaly_pct": -83.9,
+      "mean_precip_anomaly_pct": -10.79,
       "lat": 32.1641,
       "lon": 70.3444
     },
     {
       "district": "Tharparkar",
-      "mean_model_score": 0.0733,
+      "mean_model_score": 0.1458,
       "flag": false,
-      "mean_precip_anomaly_pct": -86.68,
+      "mean_precip_anomaly_pct": -17.42,
       "lat": 24.7262,
       "lon": 70.1566
     },
     {
       "district": "Thatta",
-      "mean_model_score": 0.033,
+      "mean_model_score": 0.1181,
       "flag": false,
-      "mean_precip_anomaly_pct": -88.89,
+      "mean_precip_anomaly_pct": -77.55,
       "lat": 24.2572,
       "lon": 68.0445
     },
     {
       "district": "Toba Tek Singh",
-      "mean_model_score": 0.1289,
+      "mean_model_score": 0.2874,
       "flag": false,
-      "mean_precip_anomaly_pct": -25.03,
+      "mean_precip_anomaly_pct": 31.51,
       "lat": 30.8842,
       "lon": 72.4734
     },
     {
       "district": "Umerkot",
-      "mean_model_score": 0.0527,
+      "mean_model_score": 0.1176,
       "flag": false,
-      "mean_precip_anomaly_pct": -89.96,
+      "mean_precip_anomaly_pct": -15.33,
       "lat": 25.4289,
       "lon": 69.8595
     },
     {
       "district": "Upper Dir",
-      "mean_model_score": 0.1654,
+      "mean_model_score": 0.3304,
       "flag": false,
-      "mean_precip_anomaly_pct": -97.0,
+      "mean_precip_anomaly_pct": 35.38,
       "lat": 35.2716,
       "lon": 72.0786
     },
     {
       "district": "Vihari",
-      "mean_model_score": 0.2191,
+      "mean_model_score": 0.3751,
       "flag": false,
-      "mean_precip_anomaly_pct": -24.92,
+      "mean_precip_anomaly_pct": 36.78,
       "lat": 30.0217,
       "lon": 72.3922
     },
     {
       "district": "Zhob",
-      "mean_model_score": 0.152,
+      "mean_model_score": 0.2792,
       "flag": false,
-      "mean_precip_anomaly_pct": -73.33,
+      "mean_precip_anomaly_pct": 6.74,
       "lat": 31.3719,
       "lon": 69.2413
     },
     {
       "district": "Ziarat",
-      "mean_model_score": 0.3055,
+      "mean_model_score": 0.1412,
       "flag": false,
-      "mean_precip_anomaly_pct": -100.0,
+      "mean_precip_anomaly_pct": -12.47,
       "lat": 30.3974,
       "lon": 67.5847
     }

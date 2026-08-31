@@ -1,8 +1,8 @@
 {
   "n_clean": 2,
-  "n_findings": 0,
+  "n_findings": 2,
   "n_script_error": 0,
-  "last_run_utc": "2026-08-29T13:10:05.187704+00:00",
+  "last_run_utc": "2026-08-31T12:00:02.389702+00:00",
   "last_clean_utc": "2026-08-29T13:10:05.358021+00:00",
-  "last_findings_utc": null
+  "last_findings_utc": "2026-08-31T12:00:03.217344+00:00"
 }
