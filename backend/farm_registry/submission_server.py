@@ -46,9 +46,20 @@ Endpoints:
                           identity field, real/synthetic counts always kept
                           separate.
   GET  /api/farms     -- real, non-synthetic, identity-linked farms
-                          (registered_farms()) for the map -- location,
-                          district, area, when registered; never a raw
-                          identity field.
+                          (registered_farms()) -- the small "identity
+                          coverage" list. Superseded as the map's data
+                          source by /api/farms-map below (kept, unused by
+                          the new map, in case anything else still calls
+                          it).
+  GET  /api/farms-map -- ALL 752 real+synthetic farms
+                          (all_farms_with_tier()), each tagged with its
+                          real tier (identity_linked / pending /
+                          synthetic) -- for the Farm Data page's
+                          three-tier point map. Location, district, area,
+                          resolved crop type, when registered; never a
+                          raw identity field (no JOIN against farmers at
+                          all, same real boundary every farm-listing
+                          endpoint here keeps).
   GET  /api/lookup?cnic=... or ?phone=... -- a farmer looking up their OWN
                           registration (lookup_farmer()) -- returns whether
                           a match exists, real farm count/districts, and a
@@ -231,6 +242,28 @@ class Handler(BaseHTTPRequestHandler):
                 return self._send_json(200, {"success": True, "farms": out})
             except Exception as e:
                 return self._send_json(500, {"success": False, "error": f"real error listing farms: {e}"})
+
+        if path == "/api/farms-map":
+            try:
+                dsn = db_registry.load_dsn()
+                farms = db_registry.all_farms_with_tier(dsn)
+                out = [
+                    {
+                        "farm_id": str(f["farm_id"]),
+                        "district": f["district"],
+                        "area_ha": f["area_ha"],
+                        "lat": f["centroid_lat"], "lon": f["centroid_lon"],
+                        "registered": f["created_at"].isoformat() if f["created_at"] else None,
+                        "crop_type": f["crop_type"],
+                        "tier": "identity_linked" if (not f["is_synthetic"] and f["has_identity"])
+                                else "pending" if not f["is_synthetic"]
+                                else "synthetic",
+                    }
+                    for f in farms
+                ]
+                return self._send_json(200, {"success": True, "farms": out})
+            except Exception as e:
+                return self._send_json(500, {"success": False, "error": f"real error listing farms-map: {e}"})
 
         if path == "/api/lookup":
             raw_cnic = (qs.get("cnic") or [""])[0].strip()

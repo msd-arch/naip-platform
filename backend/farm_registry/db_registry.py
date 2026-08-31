@@ -229,6 +229,42 @@ def all_farms(dsn):
         conn.close()
 
 
+def all_farms_with_tier(dsn):
+    """Real, full farm export for the Farm Data page's three-tier map --
+    all 752 real+synthetic farms, tagged with which of the three real
+    categories each belongs to (identity-linked / pending / synthetic),
+    plus centroid, district, resolved crop type, and real registration
+    date. Deliberately never touches farmers.cnic/full_name/phone_number
+    (no JOIN against the farmers table at all) -- same write-only
+    boundary registered_farms()/all_farms() already keep, extended here
+    rather than re-litigated, since this endpoint now also needs to
+    include synthetic and pending-identity farms those two functions
+    each deliberately exclude.
+
+    resolved_crop_type(farm_id) is called once per row in the SELECT
+    list -- Postgres executes this server-side inside the single query
+    plan, not as 752 separate round trips, so this stays one real query
+    regardless of farm count."""
+    conn = psycopg2.connect(dsn)
+    try:
+        with conn.cursor(cursor_factory=RealDictCursor) as cur:
+            cur.execute(
+                """
+                SELECT f.farm_id, f.district, f.is_synthetic,
+                       (f.farmer_id IS NOT NULL) AS has_identity,
+                       f.area_ha, f.created_at,
+                       ST_Y(ST_Centroid(f.boundary)) AS centroid_lat,
+                       ST_X(ST_Centroid(f.boundary)) AS centroid_lon,
+                       resolved_crop_type(f.farm_id) AS crop_type
+                FROM farms f
+                ORDER BY f.created_at DESC
+                """
+            )
+            return cur.fetchall()
+    finally:
+        conn.close()
+
+
 def count_farms(dsn):
     conn = psycopg2.connect(dsn)
     try:
