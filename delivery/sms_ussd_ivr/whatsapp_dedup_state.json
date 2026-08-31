@@ -1,4 +1,14 @@
 {
-  "notified": {},
-  "sends_by_utc_date": {}
+  "notified": {
+    "Gujranwala|20260623|uv_index|rice": {
+      "first_sent_utc": "2026-08-31T11:46:52.025249",
+      "whatsapp_message_id": "wamid.HBgMOTIzMzM1MTMzNTkyFQIAERgSQ0NFMkE4MDBCREE2RkJCNzAzAA==",
+      "matched_rules": [
+        "looser_demo_gujranwala_only"
+      ]
+    }
+  },
+  "sends_by_utc_date": {
+    "2026-08-31": 1
+  }
 }
