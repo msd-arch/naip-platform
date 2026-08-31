@@ -105,6 +105,23 @@ TRIGGER_ENGINE_SCRIPT = os.path.join(TRIGGER_ENGINE_DIR, "trigger_engine.py")
 NATIONAL_THRESHOLD = 0.225
 DEMO_THRESHOLD = 0.0216
 
+# WhatsApp automation, real trigger-driven alerts -- gated the same way
+# ENABLE_TRIGGER_EVAL is (env var AND a CLI flag baked into the scheduled
+# task's own Action, for the same real Windows env-var-inheritance reason
+# documented on --enable-trigger-eval below). Off by default: this can
+# send a REAL WhatsApp message to a real device, so it must never turn on
+# silently just because this file was saved. Real measured added cost
+# (2026-08-31, against the real current audit logs, 0 national + 1
+# Gujranwala-demo candidate, one real failed send attempt due to an
+# expired token): ~1.5s -- negligible against Part 3's own ~15s and the
+# 900s ExecutionTimeLimit headroom established for Part 3 itself.
+ENABLE_WHATSAPP_NOTIFY = os.environ.get("NAIP_ENABLE_WHATSAPP_NOTIFY") == "1"
+WHATSAPP_DIR = os.path.join(NAIP, "delivery", "sms_ussd_ivr")
+WHATSAPP_NOTIFY_SCRIPT = os.path.join(WHATSAPP_DIR, "whatsapp_notify.py")
+AUDIT_LOG_NATIONAL = os.path.join(TRIGGER_ENGINE_DIR, "audit_log_national.jsonl")
+AUDIT_LOG_DEMO = os.path.join(TRIGGER_ENGINE_DIR, "audit_log_demo.jsonl")
+WHATSAPP_DELIVERY_LOG = os.path.join(WHATSAPP_DIR, "delivery_log.jsonl")
+
 # Real bug found live during the Week 13 observation window: a cycle suspended
 # mid-run by the machine sleeping (not killed, just paused) can still be
 # "running" when a later scheduled cycle starts after wake -- both then race
@@ -358,6 +375,27 @@ def run_trigger_eval_step():
                "--out-summary", os.path.join(TRIGGER_ENGINE_DIR, "trigger_summary_demo.json"),
                "--threshold", str(DEMO_THRESHOLD)])
 
+    # WhatsApp automation: real, automatic sends for real qualifying
+    # trigger events, right after trigger evaluation as required. Own gate
+    # (ENABLE_WHATSAPP_NOTIFY), separate from ENABLE_TRIGGER_EVAL -- this
+    # can send a real message, trigger evaluation alone cannot, so being
+    # able to run Part 3 (dashboard scoring) without WhatsApp turned on is
+    # a real, deliberate degree of freedom, not an oversight. Real
+    # dedup/cap/failure-handling all live inside whatsapp_notify.py itself
+    # (its own module docstring); this call just wires it into the cycle.
+    # Its own failures are handled internally and logged (never raised),
+    # so a send failure here surfaces in the log without this run_step()
+    # treating it as a Part 3 failure -- only a genuine crash would.
+    if ENABLE_WHATSAPP_NOTIFY:
+        run_step("whatsapp_notify.py (Part 3: real trigger-driven WhatsApp alerts)",
+                  ["python", WHATSAPP_NOTIFY_SCRIPT,
+                   "--national-audit", AUDIT_LOG_NATIONAL,
+                   "--demo-audit", AUDIT_LOG_DEMO,
+                   "--delivery-log", WHATSAPP_DELIVERY_LOG])
+    else:
+        log("  whatsapp_notify.py: SKIPPED (NAIP_ENABLE_WHATSAPP_NOTIFY not set / "
+            "--enable-whatsapp-notify not passed)")
+
     # a second resync -- the first prepare_data.py call (in main(), before
     # this function runs) already happened for the hazard/district_alerts
     # update; exposure_risk.json/audit_log_*.json need their own pass so a
@@ -382,9 +420,19 @@ def main():
                           "no Part 3 log lines at all despite the var being set) -- a "
                           "real, concrete Windows env-var-inheritance gotcha, not assumed "
                           "away. The env var still works for ad-hoc manual runs.")
+    ap.add_argument("--enable-whatsapp-notify", action="store_true",
+                     help="Part 3: also send real WhatsApp alerts for real qualifying "
+                          "trigger events (see whatsapp_notify.py). Same real "
+                          "CLI-flag-baked-into-the-task's-own-Action reason as "
+                          "--enable-trigger-eval -- a User-scope env var alone did not "
+                          "survive into Task Scheduler's spawned process on a real test. "
+                          "Requires --enable-trigger-eval (or its env var) too, since "
+                          "there's nothing to notify on without Part 3's own trigger "
+                          "evaluation having just run.")
     a = ap.parse_args()
-    global ENABLE_TRIGGER_EVAL
+    global ENABLE_TRIGGER_EVAL, ENABLE_WHATSAPP_NOTIFY
     ENABLE_TRIGGER_EVAL = ENABLE_TRIGGER_EVAL or a.enable_trigger_eval
+    ENABLE_WHATSAPP_NOTIFY = ENABLE_WHATSAPP_NOTIFY or a.enable_whatsapp_notify
 
     if not acquire_lock():
         log("another cycle appears to still be running (lock held, < "
