@@ -65,6 +65,8 @@ import json
 import math
 import os
 import re
+import time
+from collections import defaultdict, deque
 from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
 from urllib.parse import urlparse, parse_qs
 
@@ -73,6 +75,39 @@ import db_registry
 HERE = os.path.dirname(os.path.abspath(__file__))
 DISTRICTS_GEOJSON = os.path.join(HERE, "..", "..", "data", "seed", "pk_districts.geojson")
 PORT = 8420
+
+# Real allowed origins -- localhost for local dev, plus the real deployed
+# GitHub Pages origin now that a Cloudflare Tunnel makes this server
+# reachable from the public internet (Free Deployment kickoff, real
+# requirement: "point the deployed frontend's Farm Data submission calls
+# at the real Cloudflare Tunnel URL instead of localhost" -- that only
+# works end to end if this server's own CORS allowlist includes the real
+# public site origin, not just localhost:3000).
+ALLOWED_ORIGINS = {"http://localhost:3000", "https://msd-arch.github.io"}
+
+# Real per-IP rate limit -- added specifically because the Cloudflare
+# Tunnel makes POST /api/register (a real database write, creating a real
+# farm + farmer row) reachable by anyone on the public internet for as
+# long as the tunnel runs, not just this machine's private network. The
+# existing CNIC/phone/bbox/area validation stops malformed submissions,
+# not a flood of well-formed ones -- a real, distinct threat this adds a
+# real, if simple, defense against: an in-memory sliding window, no new
+# dependency, sized for a real small pilot audience (a demo/presentation
+# crowd), not a public product's real production traffic.
+RATE_LIMIT_MAX = 5
+RATE_LIMIT_WINDOW_S = 600
+_submission_times = defaultdict(deque)
+
+
+def _rate_limited(ip):
+    now = time.time()
+    q = _submission_times[ip]
+    while q and now - q[0] > RATE_LIMIT_WINDOW_S:
+        q.popleft()
+    if len(q) >= RATE_LIMIT_MAX:
+        return True
+    q.append(now)
+    return False
 
 # Real national bbox (west, south, east, north) -- same real value used
 # throughout this project (see fetch_firms_pakistan.py's PAKISTAN_BBOX).
@@ -146,11 +181,13 @@ def _validate(body):
 
 class Handler(BaseHTTPRequestHandler):
     def _cors(self):
-        # Local dev only -- the dashboard's dev server (npm run dev) runs on
-        # localhost:3000. The public GitHub Pages origin is deliberately NOT
-        # allowed here (see module docstring): this server never leaves the
-        # developer's own machine, and CORS is not a substitute for that.
-        self.send_header("Access-Control-Allow-Origin", "http://localhost:3000")
+        # Reflects the request's real Origin header against ALLOWED_ORIGINS
+        # rather than a single hardcoded value -- this server now serves
+        # both local dev (localhost:3000) and the real deployed GitHub
+        # Pages site (via the Cloudflare Tunnel), and CORS must allow both.
+        origin = self.headers.get("Origin", "")
+        if origin in ALLOWED_ORIGINS:
+            self.send_header("Access-Control-Allow-Origin", origin)
         self.send_header("Access-Control-Allow-Methods", "GET, POST, OPTIONS")
         self.send_header("Access-Control-Allow-Headers", "Content-Type")
 
@@ -219,9 +256,31 @@ class Handler(BaseHTTPRequestHandler):
 
         return self._send_json(404, {"error": "not found"})
 
+    def _real_client_ip(self):
+        # Behind the Cloudflare Tunnel, self.client_address is the tunnel's
+        # own local loopback connection, not the real public visitor --
+        # Cloudflare sets CF-Connecting-IP on every proxied request (more
+        # trustworthy than X-Forwarded-For, which it also sets but which a
+        # direct localhost caller could forge). Falls back to
+        # X-Forwarded-For, then the raw socket address for real plain
+        # local-dev calls with neither header.
+        return (
+            self.headers.get("CF-Connecting-IP")
+            or self.headers.get("X-Forwarded-For", "").split(",")[0].strip()
+            or self.client_address[0]
+        )
+
     def do_POST(self):
         if self.path != "/api/register":
             return self._send_json(404, {"error": "not found"})
+
+        ip = self._real_client_ip()
+        if _rate_limited(ip):
+            return self._send_json(
+                429,
+                {"success": False, "error": f"too many submissions from this connection -- max {RATE_LIMIT_MAX} per {RATE_LIMIT_WINDOW_S // 60} minutes"},
+            )
+
         try:
             length = int(self.headers.get("Content-Length", 0))
             body = json.loads(self.rfile.read(length) or b"{}")
