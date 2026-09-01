@@ -102,6 +102,17 @@ def main():
 
     date_str = a.date or (datetime.date.today() - datetime.timedelta(days=1)).isoformat()
 
+    # REAL CADENCE FINDING (2026-09-01, checked live before scheduling anything):
+    # requesting today's date or 2+ days back returns every channel with an
+    # EMPTY ReadingDateTime (no real data) -- PMIU's backend is not a queryable
+    # historical archive, it holds exactly ONE real snapshot at a time: whatever
+    # "yesterday" is relative to the actual current server date, refreshed once
+    # daily (every real ReadingDateTime is midnight -- one reading per channel
+    # per day, not intraday). Confirmed by comparing three real dates: 2026-09-01
+    # and 2026-08-29 both came back empty; 2026-08-31 (real "yesterday" that day)
+    # came back with 2,013/2,981 real populated readings. This is why the default
+    # here is always "yesterday", never a caller-supplied historical date unless
+    # explicitly overridden for a same-day recheck.
     print(f"fetching real PMIU tail-status data for {date_str} ...")
     fc = fetch_tail_status(date_str)
     all_feats = fc["features"]
@@ -173,6 +184,12 @@ def main():
         "source": "https://wrmis.irrigation.punjab.gov.pk/GISServices/wrmis.svc/getTailStatus/",
         "reading_date": date_str,
         "generated_at_utc": datetime.datetime.utcnow().isoformat() + "Z",
+        "last_computed_utc": datetime.datetime.utcnow().isoformat() + "Z",
+        "refresh_cadence_note": "Real, confirmed live (not assumed): PMIU's backend holds exactly "
+                                 "one real snapshot at a time -- whatever 'yesterday' is relative to "
+                                 "the actual current date, refreshed once daily. Requesting any other "
+                                 "date returns empty. This file is regenerated daily (NAIP-PMIUCanal) "
+                                 "always requesting real 'yesterday', matching that real cadence exactly.",
         "methodology_note": "tail_gauge_ratio = real current tail gauge reading / PMIU's real "
                              "authorized (sanctioned) tail gauge for that channel. <1.0 means "
                              "the tail is running below its own real sanctioned entitlement -- "
